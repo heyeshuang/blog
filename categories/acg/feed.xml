@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acg on 贺叶霜的树：III</title>
+    <link>https://heyeshuang.github.io/blog/categories/acg/</link>
+    <description>Recent content in Acg on 贺叶霜的树：III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 19 Apr 2013 13:50:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://heyeshuang.github.io/blog/categories/acg/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Limited Gear Works</title>
+      <link>https://heyeshuang.github.io/blog/2013/04/19/limited-gear-works/</link>
+      <pubDate>Fri, 19 Apr 2013 13:50:50 +0000</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2013/04/19/limited-gear-works/</guid>
+      <description>总之是一个画齿轮的canvas， 没用 而且速度慢，不过最终至少像那么回事了。 地址</description>
+    </item>
+    
+    <item>
+      <title>html5-世界变动率计数器（仮）</title>
+      <link>https://heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/</link>
+      <pubDate>Sat, 14 Jul 2012 08:32:13 +0000</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/</guid>
+      <description>here 其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。 代码简单到自己都觉</description>
+    </item>
+    
+  </channel>
+</rss>
