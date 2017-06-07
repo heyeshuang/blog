@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emf on 贺叶霜的树：III</title>
+    <link>/tags/emf/</link>
+    <description>Recent content in Emf on 贺叶霜的树：III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 13 Jan 2017 11:44:43 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/emf/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title>
+      <link>/2017/01/13/ms-word-vector-support-sucks/</link>
+      <pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate>
+      
+      <guid>/2017/01/13/ms-word-vector-support-sucks/</guid>
+      <description>把EMF里的所有文字转换成路径就能解决了 应该是辣鸡windows的文字渲染问题 Word的bug在哪里报，挺急的</description>
+    </item>
+    
+  </channel>
+</rss>
