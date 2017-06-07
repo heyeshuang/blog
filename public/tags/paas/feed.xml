@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paas on 贺叶霜的树：III</title>
-    <link>/tags/paas/</link>
+    <link>//heyeshuang.github.io/blog/tags/paas/</link>
     <description>Recent content in Paas on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 29 Mar 2013 08:47:24 +0000</lastBuildDate>
     
-	<atom:link href="/tags/paas/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//heyeshuang.github.io/blog/tags/paas/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>我的云上逃亡，或，google reader的替代品</title>
-      <link>/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link>
+      <link>//heyeshuang.github.io/blog/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link>
       <pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate>
       
-      <guid>/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid>
+      <guid>//heyeshuang.github.io/blog/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid>
       <description>之前也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！</description>
     </item>
     
