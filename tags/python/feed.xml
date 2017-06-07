@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 贺叶霜的树：III</title>
-    <link>//heyeshuang.github.io/blog/tags/python/</link>
+    <link>http://heyeshuang.github.io/blog/tags/python/</link>
     <description>Recent content in Python on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 11 Sep 2012 15:30:08 +0000</lastBuildDate>
     
-	<atom:link href="//heyeshuang.github.io/blog/tags/python/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heyeshuang.github.io/blog/tags/python/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>flask似乎不错</title>
-      <link>//heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</link>
+      <link>http://heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</link>
       <pubDate>Tue, 11 Sep 2012 15:30:08 +0000</pubDate>
       
-      <guid>//heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</guid>
+      <guid>http://heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</guid>
       <description>首先接触的web框架是karrigell，也最后作出了点东西，感觉简单实用但是好像有点非主流。然后看到Django好像很流行，然后就在ope</description>
     </item>
     
