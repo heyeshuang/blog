@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on 贺叶霜的树：III</title>
+    <link>https://heyeshuang.github.io/blog/tags/git/</link>
+    <description>Recent content in Git on 贺叶霜的树：III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 07 Jun 2017 22:07:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://heyeshuang.github.io/blog/tags/git/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>迁移到hugo，第二部分：部署到github</title>
+      <link>https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/</link>
+      <pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/</guid>
+      <description>书接上文 （虽然我是先写的这一篇），当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很</description>
+    </item>
+    
+  </channel>
+</rss>
