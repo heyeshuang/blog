@@ -1,4 +1,4 @@
-baseURL = "//heyeshuang.github.io/blog/"
+baseURL = "http://heyeshuang.github.io/blog/"
 languageCode = "cn"
 title = "贺叶霜的树：III"
 theme = "blackburn"

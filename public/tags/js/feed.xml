@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Js on 贺叶霜的树：III</title>
-    <link>//heyeshuang.github.io/blog/tags/js/</link>
+    <link>http://heyeshuang.github.io/blog/tags/js/</link>
     <description>Recent content in Js on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 03 May 2016 17:01:02 +0000</lastBuildDate>
     
-	<atom:link href="//heyeshuang.github.io/blog/tags/js/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heyeshuang.github.io/blog/tags/js/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>一个简单的在线LRC编辑器</title>
-      <link>//heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <link>http://heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
       <pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate>
       
-      <guid>//heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <guid>http://heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
       <description>地址：http://heyeshuang.github.io/hieda-lrc-editor/ GITHUB：https://github.</description>
     </item>
     
     <item>
       <title>SFW：治疗拖延症的一次有益尝试</title>
-      <link>//heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link>
+      <link>http://heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link>
       <pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate>
       
-      <guid>//heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid>
+      <guid>http://heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid>
       <description>在这里安装 源码 总而言之，是一个（某种程度上）减缓拖延症症状的脚本。 在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下</description>
     </item>
     
     <item>
       <title>Limited Gear Works</title>
-      <link>//heyeshuang.github.io/blog/2013/04/19/limited-gear-works/</link>
+      <link>http://heyeshuang.github.io/blog/2013/04/19/limited-gear-works/</link>
       <pubDate>Fri, 19 Apr 2013 13:50:50 +0000</pubDate>
       
-      <guid>//heyeshuang.github.io/blog/2013/04/19/limited-gear-works/</guid>
+      <guid>http://heyeshuang.github.io/blog/2013/04/19/limited-gear-works/</guid>
       <description>总之是一个画齿轮的canvas， 没用 而且速度慢，不过最终至少像那么回事了。 地址</description>
     </item>
     
     <item>
       <title>html5-世界变动率计数器（仮）</title>
-      <link>//heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/</link>
+      <link>http://heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/</link>
       <pubDate>Sat, 14 Jul 2012 08:32:13 +0000</pubDate>
       
-      <guid>//heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/</guid>
+      <guid>http://heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/</guid>
       <description>here 其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。 代码简单到自己都觉</description>
     </item>
     
