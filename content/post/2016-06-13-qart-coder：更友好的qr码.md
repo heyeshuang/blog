@@ -7,8 +7,6 @@ date: 2016-06-13T13:02:36+00:00
 url: /2016/06/13/qart-coder：更友好的qr码/
 aliases:
   - /2016/06/13/qart-coder：更友好的qr码/
-aliases:
-  - /2016/06/13/qart-coder：更友好的qr码/
 dsq_thread_id:
   - "4906771733"
 categories:

@@ -16,7 +16,7 @@ baseName = "feed"
 
 [indexes]
   tag = "tags"
-  topic = "topics"
+  topic = "categories"
 
 [params]
   # Shown in the home page
