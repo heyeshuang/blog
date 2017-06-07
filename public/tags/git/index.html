@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.21" />
 
-  <title>Dota 2里，什么技能的冷却时间最短？ &middot; 贺叶霜的树：III</title>
+  <title>Git &middot; 贺叶霜的树：III</title>
 
   
   
@@ -36,6 +36,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  
+  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/tags/git/feed.xml" />
   
 
   
@@ -93,6 +95,10 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/tags/git/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
     
 
     
@@ -200,100 +206,56 @@
 
 
 <div class="header">
-  <h1>Dota 2里，什么技能的冷却时间最短？</h1>
-  <h2></h2>
+  <h1>Git</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/">迁移到hugo，第二部分：部署到github</a></h2>
+
+    <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Mar 25, 13:13</time>
+    <time>2017 Jun 07, 22:07</time>
   </div>
 
   
 
   
 
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/hugo">hugo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/git">git</a>
+    
+  </div>
+  
   
 
 </div>
 
-  <p>答案是各种法球~开玩笑的~</p>
+  </header>
 
-<p>最近沉迷Dota2的一个RPG： <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=717356279">Legends of Dota:Redux</a>（当然是人机），在挑技能的时候常常需要一些短cd的技能，但是<a href="http://dota2.gamepedia.com/Abilities">wiki</a>里居然没有技能冷却时间的排序！</p>
-
-<p>所以我就自己排了一个：<a href="https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6">https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6</a></p>
-
-<p>数据来源是客户端里面<code>\dota2\steamapps\common\dota 2 beta\game\dota\scripts\npc\npc\_abilities.txt</code>，在下可不是页游玩家！</p>
-
-<p>这个文件看起来特别像是JSON，但是是用空格分割的，而且还有\\注释。本来把这东西转换成JSON才是工作的大头，可是我懒了：找到了另一个玩家的<a href="http://uglyvpn.com/2015/03/01/dota-2-items-txt-to-xmljson-tool/">Dota 2 items.txt/npc_abilities.txt to xml/json tool v1.1</a>，然后就是简单的排序了~</p>
-
-<p>另外，除了法球，还有许多技能也是0秒CD的哦，比如幽鬼的降临什么的~</p>
-
-<pre><code class="language-json">{
-  &quot;Name&quot;: &quot; reality&quot;,
-  &quot;HeroName&quot;: &quot;spectre&quot;,
-  &quot;ID&quot;: &quot;5338&quot;,
-  &quot;Cooldown&quot;: 0.0
-},
-</code></pre>
-
+  <p>
+  书接上文 （虽然我是先写的这一篇），当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很
+  </p>
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-    <a href="https://heyeshuang.github.io/blog/2017/01/15/%E4%BA%94%E5%B9%B4/"><i class="fa fa-chevron-left"></i></a>
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="https://heyeshuang.github.io/blog/2017/01/15/%E4%BA%94%E5%B9%B4/">五年</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/">迁移到hugo，第二部分：部署到github</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
+  <footer>
+    <a href="/blog/post/moving-to-hugo-with-git/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'HeYSH';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
 </div>
 
 </div>
@@ -316,4 +278,3 @@
 
 </body>
 </html>
-

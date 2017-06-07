@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 25 Mar 2017 13:13:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jun 2017 22:07:44 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>迁移到hugo，第二部分：部署到github</title>
+      <link>https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/</link>
+      <pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/</guid>
+      <description>书接上文 （虽然我是先写的这一篇），当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很</description>
+    </item>
     
     <item>
       <title>Dota 2里，什么技能的冷却时间最短？</title>
