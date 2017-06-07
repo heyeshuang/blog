@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gvim on 贺叶霜的树：III</title>
+    <link>/tags/gvim/</link>
+    <description>Recent content in Gvim on 贺叶霜的树：III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 17 May 2013 13:38:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gvim/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vim again</title>
+      <link>/2013/05/17/vim-again/</link>
+      <pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate>
+      
+      <guid>/2013/05/17/vim-again/</guid>
+      <description>vim是一种信仰。 上面这句话应该是从某个披头散发1年没洗澡的*技术大牛*嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑</description>
+    </item>
+    
+  </channel>
+</rss>
