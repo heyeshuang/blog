@@ -9,6 +9,9 @@ author = "HeYSH"
 canonifyurls = false
 paginate = 10
 
+[permalinks]
+post = "/:year/:month/:day/:filename/"
+
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"

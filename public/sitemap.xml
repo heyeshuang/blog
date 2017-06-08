@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/post/moving-to-hugo/</loc>
+    <loc>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/</loc>
     <lastmod>2017-06-07T22:14:47+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/post/moving-to-hugo-with-git/</loc>
+    <loc>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo-with-git/</loc>
     <lastmod>2017-06-07T22:07:44+08:00</lastmod>
   </url>
   
@@ -288,6 +288,11 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/feed/chicken/</loc>
+    <lastmod>2012-06-22T06:32:32+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/about/</loc>
     <lastmod>2012-06-22T06:32:32+00:00</lastmod>
   </url>
@@ -365,6 +370,12 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/feed/</loc>
+    <lastmod>2012-06-22T06:32:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/tags/firefox/</loc>
     <lastmod>2013-05-28T08:48:31+00:00</lastmod>
     <priority>0</priority>
@@ -437,14 +448,14 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/tags/linux/</loc>
-    <lastmod>2013-05-17T07:47:31+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/categories/linux/</loc>
+    <lastmod>2017-01-13T12:25:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/linux/</loc>
-    <lastmod>2017-01-13T12:25:31+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/tags/linux/</loc>
+    <lastmod>2013-05-17T07:47:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -491,13 +502,13 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/tags/python/</loc>
+    <loc>https://heyeshuang.github.io/blog/categories/python/</loc>
     <lastmod>2012-09-11T15:30:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/python/</loc>
+    <loc>https://heyeshuang.github.io/blog/tags/python/</loc>
     <lastmod>2012-09-11T15:30:08+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -557,14 +568,14 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/tags/web/</loc>
-    <lastmod>2015-09-09T13:58:27+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/categories/web/</loc>
+    <lastmod>2017-06-07T22:14:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/web/</loc>
-    <lastmod>2017-06-07T22:14:47+08:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/tags/web/</loc>
+    <lastmod>2015-09-09T13:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
