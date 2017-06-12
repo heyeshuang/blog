@@ -103,6 +103,15 @@
     </item>
     
     <item>
+      <title>Feed</title>
+      <link>https://heyeshuang.github.io/blog/tags/feed/</link>
+      <pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/tags/feed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Firefox</title>
       <link>https://heyeshuang.github.io/blog/tags/firefox/</link>
       <pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate>
@@ -168,7 +177,7 @@
     <item>
       <title>Hugo</title>
       <link>https://heyeshuang.github.io/blog/tags/hugo/</link>
-      <pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate>
+      <pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate>
       
       <guid>https://heyeshuang.github.io/blog/tags/hugo/</guid>
       <description></description>
