@@ -10,6 +10,62 @@
     <atom:link href="https://heyeshuang.github.io/blog/feed/chicken/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title>
+      <link>https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/</link>
+      <pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/</guid>
+      <description>&lt;p&gt;之前在 &lt;a href=&#34;http://heyeshuang.tk&#34;&gt;http://heyeshuang.tk&lt;/a&gt; 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href=&#34;http://heyeshuang.tk/feed/&#34;&gt;http://heyeshuang.tk/feed/&lt;/a&gt; ，但是hugo提供的RSS地址是&lt;code&gt;index.xml&lt;/code&gt;样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p&gt;
+
+&lt;p&gt;所以只能改模版了，思路是把&lt;code&gt;/feed&lt;/code&gt;目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;rss version=&amp;quot;2.0&amp;quot; xmlns:atom=&amp;quot;http://www.w3.org/2005/Atom&amp;quot;&amp;gt;
+  &amp;lt;channel&amp;gt;
+    &amp;lt;title&amp;gt;{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/title&amp;gt;
+    &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
+    &amp;lt;description&amp;gt;Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/description&amp;gt;
+    &amp;lt;generator&amp;gt;Hugo -- gohugo.io&amp;lt;/generator&amp;gt;{{ with .Site.LanguageCode }}
+    &amp;lt;language&amp;gt;{{.}}&amp;lt;/language&amp;gt;{{end}}{{ with .Site.Author.email }}
+    &amp;lt;managingEditor&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/managingEditor&amp;gt;{{end}}{{ with .Site.Author.email }}
+    &amp;lt;webMaster&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/webMaster&amp;gt;{{end}}{{ with .Site.Copyright }}
+    &amp;lt;copyright&amp;gt;{{.}}&amp;lt;/copyright&amp;gt;{{end}}{{ if not .Date.IsZero }}
+    &amp;lt;lastBuildDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/lastBuildDate&amp;gt;{{ end }}
+    &amp;lt;atom:link href=&amp;quot;{{.Permalink}}&amp;quot; rel=&amp;quot;self&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; /&amp;gt;
+    {{ range .Site.RegularPages }}
+    &amp;lt;item&amp;gt;
+      &amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
+      &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
+      &amp;lt;pubDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/pubDate&amp;gt;
+      {{ with .Site.Author.email }}&amp;lt;author&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/author&amp;gt;{{end}}
+      &amp;lt;guid&amp;gt;{{ .Permalink }}&amp;lt;/guid&amp;gt;
+      &amp;lt;description&amp;gt;{{ .Content | html }}&amp;lt;/description&amp;gt;
+    &amp;lt;/item&amp;gt;
+    {{ end }}
+  &amp;lt;/channel&amp;gt;
+&amp;lt;/rss&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;基本上就是hugo自带的RSS模板，除了把&lt;code&gt;{{ range .Data.Pages }}&lt;/code&gt;改成了&lt;code&gt;{{ range .Site.RegularPages }}&lt;/code&gt;，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;https://github.com/yoshiharuyamashita/blackburn&lt;/a&gt;，稍微改了一些小bug，还换了个颜色。&lt;del&gt;哪天我要把名字改成greenfreeze。&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;然后别忘了新建一个&lt;code&gt;\content\feed\chicken.md&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: &#39;chicken&#39;
+author: HeYSH
+date: 2012-06-22T06:32:32+00:00
+aliases:
+  - /%3ffeed%3drss2
+---
+Nothing here.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当然，类似&lt;code&gt;/?feed=rss2&lt;/code&gt;这样的地址就用不了了，我试过的。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>由wordpress到hugo：I</title>
       <link>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/</link>
       <pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 07 Jun 2017 22:14:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jun 2017 22:25:07 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/categories/web/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title>
+      <link>https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/</link>
+      <pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/</guid>
+      <description>之前在 http://heyeshuang.tk 这个域名下的时候，wordpress提供的RSS feed地址格式类似 http://heyeshuang.tk/feed/ ，但是hugo提供的RSS地址是index.xml样子的，而且</description>
+    </item>
     
     <item>
       <title>由wordpress到hugo：I</title>
