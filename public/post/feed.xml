@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 12 Jun 2017 22:25:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Aug 2017 13:04:03 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/post/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在网络的荒山野岭</title>
+      <link>https://heyeshuang.github.io/blog/2017/08/12/2017-08-12-recent/</link>
+      <pubDate>Sat, 12 Aug 2017 13:04:03 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/08/12/2017-08-12-recent/</guid>
+      <description>今年七月从学校滚蛋以后，我来到了某个不能说的国企。住在国民党留下来的建筑物里面，我看着被剪断的网线，感觉自己的指甲在疯狂生长。 然后，我就——</description>
+    </item>
     
     <item>
       <title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title>
