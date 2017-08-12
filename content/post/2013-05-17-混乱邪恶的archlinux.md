@@ -29,4 +29,4 @@ tags:
 
 用一张图表达我的感想：
 
-![evil](/evil.png)
+![evil](/blog/evil.png)
