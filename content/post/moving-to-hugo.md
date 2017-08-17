@@ -11,8 +11,7 @@ type = "post"
 
 我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距[上次]({{<relref "2015-08-23-为什么我的手机用不了ipv6？.md">}})我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。
 
-wordpress的文章是通过[wordpress-to-hugo-exporter
-](https://github.com/SchumacherFM/wordpress-to-hugo-exporter)导出的，但是导出的文件有一些小问题：
+wordpress的文章是通过[wordpress-to-hugo-exporter](https://github.com/SchumacherFM/wordpress-to-hugo-exporter)导出的，但是导出的文件有一些小问题：
 
 * 标题里都是`<span>`
 * 正文还是`HTML`格式
