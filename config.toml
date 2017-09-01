@@ -25,7 +25,7 @@ baseName = "feed"
   # Shown in the home page
   subtitle = "第三根树苗"
   brand = "mark III"
-  googleAnalytics = "Your Google Analytics tracking ID" #TODO
+  googleAnalytics = "UA-40522664-1"
   disqus = "HeYSH" 
   # CSS name for highlight.js
   highlightjs = "atom-one-light"
