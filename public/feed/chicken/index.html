@@ -10,6 +10,45 @@
     <atom:link href="https://heyeshuang.github.io/blog/feed/chicken/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title>
+      <link>https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/</link>
+      <pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/</guid>
+      <description>&lt;p&gt;As a vim-user and Chinese-speaker, I prefer &lt;a href=&#34;https://atom.io/packages/vim-mode-plus&#34;&gt;vim-mode-plus&lt;/a&gt; for Atom editor, but always disrupted by the IME in normal mode, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/blog/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If we could &lt;a href=&#34;https://github.com/t9md/atom-vim-mode-plus/issues/446&#34;&gt;disable IMEs in normal mode&lt;/a&gt; then everything will be fine again. However, due to &lt;a href=&#34;https://github.com/atom/atom/issues/1092&#34;&gt;the lack of the APIs&lt;/a&gt;, it is hardly possible to solve the problem in the editor.&lt;/p&gt;
+
+&lt;p&gt;Thus, we could solve it &lt;em&gt;out of the box&lt;/em&gt;. There is a package named &lt;a href=&#34;https://atom.io/packages/vim-mode-plus-auto-ime&#34;&gt;atom-vim-mode-plus-auto-ime&lt;/a&gt;, which could run a custom command when the mode changes. The goal now is to find some commands to control the IME:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;macOS users can use &lt;a href=&#34;https://github.com/vovkasm/input-source-switcher&#34;&gt;input-source-switcher&lt;/a&gt; to toogle the IME.&lt;/li&gt;
+&lt;li&gt;For Linux, the IME &lt;code&gt;fcitx&lt;/code&gt; has a command &lt;code&gt;fcitx-remote&lt;/code&gt; to control itself.&lt;/li&gt;
+&lt;li&gt;And for Windows, I wrote a &lt;a href=&#34;https://github.com/heyeshuang/ime_helper&#34;&gt;python script&lt;/a&gt; to switch the IME of the &lt;em&gt;foreground window&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then we could configure this package.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#windows:
+python E:\\path\\to\\ime_helper.py --current #Get Current Input Source
+python E:\\path\\to\\ime_helper.py --dec ${source} #insert
+python E:\\path\\to\\ime_helper.py --locale en_US #normal
+python E:\\path\\to\\ime_helper.py --locale en_US #visual
+#linux:
+/usr/bin/fcitx-remote #Get Current Input Source
+/usr/bin/fcitx-remote -o #insert
+/usr/bin/fcitx-remote -c #normal
+/usr/bin/fcitx-remote -c #visual
+#macOS: just use the default config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/blog/atom-vim-configure.png&#34; alt=&#34;configure&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>在网络的荒山野岭</title>
       <link>https://heyeshuang.github.io/blog/2017/08/12/2017-08-12-recent/</link>
       <pubDate>Sat, 12 Aug 2017 13:04:03 +0800</pubDate>
