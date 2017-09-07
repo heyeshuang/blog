@@ -12,4 +12,4 @@ date: 2017-09-06T19:46:55+08:00
 draft: true
 ---
 
-[昨天]({{<ref "atom-vim-mode-auto-switch-IME.md">}})
+~~昨天~~前天我用鸟语写了一篇[说明]({{<ref "atom-vim-mode-auto-switch-IME.md">}})
