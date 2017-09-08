@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>Python &middot; 贺叶霜的树：III</title>
+  <title>关于那个IME helper &middot; 贺叶霜的树：III</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/categories/python/feed.xml" />
   
 
   
@@ -101,10 +99,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/categories/python/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -212,16 +206,12 @@
 
 
 <div class="header">
-  <h1>Python</h1>
+  <h1>关于那个IME helper</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/">关于那个IME helper</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -250,146 +240,80 @@
 
 </div>
 
-  </header>
+  <p><del>昨天</del>前天我用鸟语写了一篇贼 <em>正经</em> 的<a href="https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/">说明</a>，今天，我准备稍微介绍一下那里面的<code>IME helper</code>。</p>
 
-  <p>
-  昨天前天我用鸟语写了一篇贼 正经 的说明，今天，我准备稍微介绍一下那里面的IME helper。 正如之前所说，那东西是为了配合atom插件自动开关
-  </p>
+<p>正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢</p>
 
-  
-  <footer>
-    <a href="/blog/2017/09/06/gossip_about_ime_helper/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<p>嗯，这种需求，我听过一个叫AHK的语言……</p>
 
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/">Auto-Switch IME in Vim-Mode-Plus for Atom Editor</a></h2>
+<pre><code>;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
+;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
+setChineseLayout(){
+	;发送中文输入法切换快捷键，请根据实际情况设置。
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Up}
+}
+</code></pre>
 
-    <div class="post-meta">
+<p>哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &gt;﹏&lt;。)</p>
 
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Sep 05, 21:03</time>
-  </div>
+<p>然后就愉快地决定用 Python+ctypes 干这种脏活了，然后发现：windows API真是太难写了！一个更改输入法有4种写法！而且都不能用！</p>
 
-  
+<p>最后居然还是抄的<a href="http://www.ahk8.com/thread-3751.html?highlight=%E8%BE%93%E5%85%A5%E6%B3%95">AHK社区的东西</a>……亏我还像白痴一样疯狂翻MSDN……</p>
 
-  
+<p>另外，pyinstaller生成的单文件exe<del>跑得不够快</del>用起来有延迟，大概是因为解压吧……</p>
+
 
   
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/atom">atom</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/vim">vim</a>
+    <a href="https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
-  
-  
-
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/">Auto-Switch IME in Vim-Mode-Plus for Atom Editor</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  <p>As a vim-user and Chinese-speaker, I prefer <a href="https://atom.io/packages/vim-mode-plus">vim-mode-plus</a> for Atom editor, but always disrupted by the IME in normal mode, like this:</p>
-
-<p><img src="/blog/IME-in-atom.png" alt="IME-in-atom" />
-</p>
-  </p>
 
   
-  <footer>
-    <a href="/blog/2017/09/05/atom-vim-mode-auto-switch-ime/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/">flask似乎不错</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Sep 11, 15:30</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+(function() {
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/python">python</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/web">web</a>
-    
-  </div>
-  
-  
+    if (window.location.hostname == "localhost")
+        return;
 
-</div>
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'HeYSH';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-  </header>
 
-  <p>
-  首先接触的web框架是karrigell，也最后作出了点东西，感觉简单实用但是好像有点非主流。然后看到Django好像很流行，然后就在ope
-  </p>
-
-  
-  <footer>
-    <a href="/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/">phpwind论坛刷分脚本（可用于openwrt）</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Sep 11, 04:56</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  用Python2写成，为什么不用Lua？因为我不会 ''' Created on 2012-9-10 @author: hh ''' import cookielib import urllib2 import urllib import time username=&quot;Chetter.Hummin&quot; password=&quot;password&quot; def login(usr, pwd): 'login function' cj = cookielib.CookieJar() opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj)) opener.addheaders = [('User-agent','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1')] url_login = 'http://bbs.sarabalst.com/2b/login.php' body={&quot;step&quot;:&quot;2&quot;,&quot;pwuser&quot;:usr,&quot;cktime&quot;:&quot;31536000&quot;,&quot;pwpwd&quot;:pwd,&quot;lgt&quot;:&quot;0&quot;} print
-  </p>
-
-  
-  <footer>
-    <a href="/blog/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
 </div>
 
 </div>
@@ -412,3 +336,4 @@
 
 </body>
 </html>
+
