@@ -10,6 +10,40 @@
     <atom:link href="https://heyeshuang.github.io/blog/feed/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>关于那个IME helper</title>
+      <link>https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/</link>
+      <pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/</guid>
+      <description>&lt;p&gt;&lt;del&gt;昨天&lt;/del&gt;前天我用鸟语写了一篇贼 &lt;em&gt;正经&lt;/em&gt; 的&lt;a href=&#34;https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/&#34;&gt;说明&lt;/a&gt;，今天，我准备稍微介绍一下那里面的&lt;code&gt;IME helper&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p&gt;
+
+&lt;p&gt;嗯，这种需求，我听过一个叫AHK的语言……&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
+;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
+setChineseLayout(){
+	;发送中文输入法切换快捷键，请根据实际情况设置。
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Up}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p&gt;
+
+&lt;p&gt;然后就愉快地决定用 Python+ctypes 干这种脏活了，然后发现：windows API真是太难写了！一个更改输入法有4种写法！而且都不能用！&lt;/p&gt;
+
+&lt;p&gt;最后居然还是抄的&lt;a href=&#34;http://www.ahk8.com/thread-3751.html?highlight=%E8%BE%93%E5%85%A5%E6%B3%95&#34;&gt;AHK社区的东西&lt;/a&gt;……亏我还像白痴一样疯狂翻MSDN……&lt;/p&gt;
+
+&lt;p&gt;另外，pyinstaller生成的单文件exe&lt;del&gt;跑得不够快&lt;/del&gt;用起来有延迟，大概是因为解压吧……&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title>
       <link>https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/</link>
       <pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate>
