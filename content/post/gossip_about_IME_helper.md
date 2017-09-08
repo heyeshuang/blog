@@ -9,7 +9,7 @@ categories :
     - python
 title: "关于那个IME helper"
 date: 2017-09-06T19:46:55+08:00
-draft: true
+draft: false
 ---
 
 ~~昨天~~前天我用鸟语写了一篇贼 *正经* 的[说明]({{<ref "atom-vim-mode-auto-switch-IME.md">}})，今天，我准备稍微介绍一下那里面的`IME helper`。
