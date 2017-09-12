@@ -26,25 +26,41 @@ paginate = 10
   [[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
+<<<<<<< HEAD
     weight = 0
+=======
+    weight = 1
+>>>>>>> f112f1ee0a2053873788f89eac1f16344b3b1a55
     identifier = "home"
     url = "/"
   [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
+<<<<<<< HEAD
     weight = 1
+=======
+    weight = 2
+>>>>>>> f112f1ee0a2053873788f89eac1f16344b3b1a55
     identifier = "post"
     url = "/post/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
+<<<<<<< HEAD
     weight = 2
+=======
+    weight = 3
+>>>>>>> f112f1ee0a2053873788f89eac1f16344b3b1a55
     identifier = "about"
     url = "/about/"
   [[menu.main]]
     name = "Contact"
     pre = "<i class='fa fa-phone fa-fw'></i>"
+<<<<<<< HEAD
     weight = 3
+=======
+    weight = 4
+>>>>>>> f112f1ee0a2053873788f89eac1f16344b3b1a55
     url = "/contact/"
 
 [social]
