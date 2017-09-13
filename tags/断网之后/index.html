@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor &middot; 贺叶霜的树：III</title>
+  <title>断网之后 &middot; 贺叶霜的树：III</title>
 
   
   
@@ -36,6 +36,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  
+  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/tags/%E6%96%AD%E7%BD%91%E4%B9%8B%E5%90%8E/feed.xml" />
   
 
   
@@ -100,6 +102,10 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/tags/%E6%96%AD%E7%BD%91%E4%B9%8B%E5%90%8E/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
     
 
     
@@ -207,16 +213,20 @@
 
 
 <div class="header">
-  <h1>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</h1>
-  <h2></h2>
+  <h1>断网之后</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://heyeshuang.github.io/blog/2017/09/09/2017-09-03-jour-to-lib/">首都图书馆半日游</a></h2>
+
+    <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Sep 05, 21:03</time>
+    <time>2017 Sep 09, 12:44</time>
   </div>
 
   
@@ -229,9 +239,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/atom">atom</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/vim">vim</a>
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/%E6%96%AD%E7%BD%91%E4%B9%8B%E5%90%8E">断网之后</a>
     
   </div>
   
@@ -239,91 +247,20 @@
 
 </div>
 
-  <p>As a vim-user and Chinese-speaker, I prefer <a href="https://atom.io/packages/vim-mode-plus">vim-mode-plus</a> for Atom editor, but always disrupted by the IME in normal mode, like this:</p>
+  </header>
 
-<p><img src="/blog/IME-in-atom.png" alt="IME-in-atom" />
-</p>
-
-<p>If we could <a href="https://github.com/t9md/atom-vim-mode-plus/issues/446">disable IMEs in normal mode</a> then everything will be fine again. However, due to <a href="https://github.com/atom/atom/issues/1092">the lack of the APIs</a>, it is hardly possible to solve the problem in the editor.</p>
-
-<p>Thus, we could solve it <em>out of the box</em>. There is a package named <a href="https://atom.io/packages/vim-mode-plus-auto-ime">atom-vim-mode-plus-auto-ime</a>, which could run a custom command when the mode changes. The goal now is to find some commands to control the IME:</p>
-
-<ul>
-<li>macOS users can use <a href="https://github.com/vovkasm/input-source-switcher">input-source-switcher</a> to toogle the IME.</li>
-<li>For Linux, the IME <code>fcitx</code> has a command <code>fcitx-remote</code> to control itself.</li>
-<li>And for Windows, I wrote a <a href="https://github.com/heyeshuang/ime_helper">python script</a> to switch the IME of the <em>foreground window</em>.</li>
-</ul>
-
-<p>Then we could configure this package.</p>
-
-<pre><code class="language-bash">#windows:
-python E:\\path\\to\\ime_helper.py --current #Get Current Input Source
-python E:\\path\\to\\ime_helper.py --dec ${source} #insert
-python E:\\path\\to\\ime_helper.py --locale en_US #normal
-python E:\\path\\to\\ime_helper.py --locale en_US #visual
-#linux:
-/usr/bin/fcitx-remote #Get Current Input Source
-/usr/bin/fcitx-remote -o #insert
-/usr/bin/fcitx-remote -c #normal
-/usr/bin/fcitx-remote -c #visual
-#macOS: just use the default config
-</code></pre>
-
-<p><img src="/blog/atom-vim-configure.png" alt="configure" /></p>
+  <p>
+  之前说过我因为网瘾被送去荒山改造，不得不说，这还是颇有些效果的。比如，上上周日我久违地踏出了屋门，而且也并没有被阳光化为灰烬。也许再过上几个
+  </p>
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-    <a href="https://heyeshuang.github.io/blog/2017/09/03/2017-09-03-ipv6-for-unicomm/"><i class="fa fa-chevron-left"></i></a>
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="https://heyeshuang.github.io/blog/2017/09/03/2017-09-03-ipv6-for-unicomm/">短消息：联通IPV6</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/">关于那个IME helper</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
+  <footer>
+    <a href="/blog/2017/09/09/2017-09-03-jour-to-lib/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'HeYSH';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
 </div>
 
 </div>
@@ -346,4 +283,3 @@ python E:\\path\\to\\ime_helper.py --locale en_US #visual
 
 </body>
 </html>
-
