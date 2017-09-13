@@ -5,7 +5,13 @@ tags :
     - 无
 categories :
     - 未分类
-title: "短消息：Ipv6 for Unicomm"
+title: "短消息：联通IPV6"
 date: 2017-09-03T23:11:32+08:00
-draft: true
+draft: false
 ---
+似乎是使用teredo。Good Job！
+
+<!--more-->
+
+{{%figure src="/blog/ipv6-test.png" title="IPV6测试"%}}
+{{%figure src="/blog/torrent.png" title="PT测试"%}}
