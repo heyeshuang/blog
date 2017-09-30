@@ -14,7 +14,7 @@ duoshuo_thread_id:
 dsq_thread_id:
   - "3667750326"
 categories:
-  - 未分类
+  - 奇怪的小玩意
 
 ---
 UPDATE at 15年平安夜：<https://wiki.openwrt.org/doc/howto/wrtbwmon>
@@ -41,4 +41,3 @@ TL;DR：请在[这里](https://gist.github.com/heyeshuang/9305089)下载修改�
 [自带的教程](http://code.google.com/p/wrtbwmon/wiki/Deploying)写的crontab似乎跟OpenWRT不兼容……*这里的一定是雨林木风精简版OpenWRT！*
 
 又及：为了凑字数，关于如何在nat后面使用isatap的方法参见[这里](http://wiki.tuna.tsinghua.edu.cn/IsatapBehindNat)
-

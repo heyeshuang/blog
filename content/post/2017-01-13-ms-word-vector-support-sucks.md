@@ -10,9 +10,10 @@ aliases:
 dsq_thread_id:
   - "5541138982"
 categories:
-  - M$
+  - 折腾
 tags:
   - EMF
+  - windows
   - WORD
   - 矢量图
 
@@ -25,4 +26,3 @@ tags:
 ![使用后](http://p1.bqimg.com/1949/3fc7d26cd830bc93.png)
 
 ~~Word的bug在哪里报，挺急的~~
-

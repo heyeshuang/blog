@@ -10,7 +10,7 @@ aliases:
 dsq_thread_id:
   - "4906771733"
 categories:
-  - 未分类
+  - 折腾
 
 ---
 通过在网址后面加\#tag，可以让QR码显示成更漂亮（是的，比中间贴膏药还要漂亮）的样子，Russ Cox管这个叫做[QArt](http://research.swtch.com/qart)。
@@ -37,4 +37,3 @@ categories:
 
 
 似乎更漂亮些的样子，不过对于像素控来说还是喜欢上面这个\~
-

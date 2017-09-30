@@ -334,7 +334,7 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/acg/</loc>
+    <loc>https://heyeshuang.github.io/blog/tags/acg/</loc>
     <lastmod>2013-04-19T13:50:50+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -359,7 +359,6 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/categories/</loc>
-    <lastmod>2013-04-19T13:50:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -425,7 +424,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/firefox/</loc>
-    <lastmod>2013-05-28T08:48:31+00:00</lastmod>
+    <lastmod>2015-12-17T13:03:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -460,8 +459,14 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/tags/html/</loc>
+    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/categories/html/</loc>
-    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
+    <lastmod>2014-05-16T15:09:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -520,8 +525,8 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/m/</loc>
-    <lastmod>2017-01-13T11:44:43+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/categories/meta/</loc>
+    <lastmod>2017-01-15T08:14:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -534,6 +539,12 @@
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/paas/</loc>
     <lastmod>2013-03-29T08:47:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/tags/pentadactyl/</loc>
+    <lastmod>2015-12-17T13:03:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -557,12 +568,6 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/python/</loc>
-    <lastmod>2012-09-11T15:30:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://heyeshuang.github.io/blog/categories/python/</loc>
     <lastmod>2017-09-06T19:46:55+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -623,13 +628,19 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/web/</loc>
-    <lastmod>2015-09-09T13:58:27+00:00</lastmod>
+    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://heyeshuang.github.io/blog/categories/web/</loc>
     <lastmod>2017-06-12T22:25:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/tags/windows/</loc>
+    <lastmod>2017-01-13T11:44:43+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -682,14 +693,20 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA/</loc>
-    <lastmod>2017-01-15T08:14:45+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F/</loc>
+    <lastmod>2017-09-06T19:46:55+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2015-02-14T15:44:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/categories/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2017-01-13T11:44:43+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -701,12 +718,6 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/%E6%97%A0/</loc>
-    <lastmod>2017-09-03T23:11:32+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://heyeshuang.github.io/blog/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
     <lastmod>2017-09-03T23:11:32+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -756,6 +767,12 @@
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/%E7%9F%A2%E9%87%8F%E5%9B%BE/</loc>
     <lastmod>2017-01-13T11:44:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/categories/%E7%9F%AD%E6%B6%88%E6%81%AF/</loc>
+    <lastmod>2017-09-03T23:11:32+08:00</lastmod>
     <priority>0</priority>
   </url>
   

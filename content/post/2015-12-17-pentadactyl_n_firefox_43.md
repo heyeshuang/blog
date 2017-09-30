@@ -9,8 +9,11 @@ aliases:
   - /2015/12/17/pentadactyl_n_firefox_43/
 dsq_thread_id:
   - "4411610995"
+tags:
+  - firefox
+  - pentadactyl
 categories:
-  - 未分类
+  - 折腾
 
 ---
 UPDATE:

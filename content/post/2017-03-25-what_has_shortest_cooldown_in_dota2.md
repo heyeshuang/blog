@@ -10,7 +10,7 @@ aliases:
 dsq_thread_id:
   - "5664702825"
 categories:
-  - 未分类
+  - 奇怪的小玩意
 
 ---
 答案是各种法球\~开玩笑的\~

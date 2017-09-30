@@ -12,7 +12,7 @@ duoshuo_thread_id:
 dsq_thread_id:
   - "3889687679"
 categories:
-  - 未分类
+  - meta
 
 ---
 > 国内的免费主机始终是不靠谱的啊……
@@ -52,4 +52,3 @@ updated
 四百多秒的延迟……果然国内连amazon的主机就是悲剧……\
 
 希望GFW不要盯上亚马逊啊啊啊啊
-

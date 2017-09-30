@@ -4,8 +4,9 @@ type : "post"
 tags :
     - atom
     - vim
-categories :
     - python
+categories :
+    - 奇怪的小玩意
 title: "Auto-Switch IME in Vim-Mode-Plus for Atom Editor"
 date: 2017-09-05T21:03:41+08:00
 draft: false

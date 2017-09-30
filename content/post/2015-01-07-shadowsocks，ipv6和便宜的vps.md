@@ -15,7 +15,6 @@ duoshuo_thread_id:
   - "1239563020875595818"
 categories:
   - linux
-  - web
 tags:
   - GFW
   - ipv6
@@ -85,4 +84,3 @@ update2：从[这里](https://github.com/shadowsocks/shadowsocks/wiki/Connect-to
 如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的`.ovpn`文件（`etcopenvpnserver.ovpn`）修改为tcp模式。
 
 8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。
-

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 09 Sep 2015 13:58:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 May 2016 17:01:02 +0000</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/tags/web/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一个简单的在线LRC编辑器</title>
+      <link>https://heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>地址：http://heyeshuang.github.io/hieda-lrc-editor/ GITHUB：https://github.</description>
+    </item>
     
     <item>
       <title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title>
@@ -19,6 +28,15 @@
       
       <guid>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid>
       <description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description>
+    </item>
+    
+    <item>
+      <title>SFW：治疗拖延症的一次有益尝试</title>
+      <link>https://heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link>
+      <pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid>
+      <description>在这里安装 源码 总而言之，是一个（某种程度上）减缓拖延症症状的脚本。 在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下</description>
     </item>
     
     <item>

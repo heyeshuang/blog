@@ -12,7 +12,7 @@ duoshuo_thread_id:
 dsq_thread_id:
   - "3667750938"
 categories:
-  - 奇奇怪怪
+  - 奇怪的小玩意
 tags:
   - iCalendar
   - vCal

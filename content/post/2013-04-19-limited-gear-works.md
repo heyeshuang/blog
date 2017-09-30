@@ -14,10 +14,9 @@ duoshuo_thread_id:
 dsq_thread_id:
   - "3887843621"
 categories:
-  - acg
-  - html
   - 咱家本来是学机械的来着
 tags:
+  - acg
   - html5
   - js
   - web
@@ -28,4 +27,3 @@ tags:
 
 
 [地址](http://heyeshuang.github.io/LGW/)
-

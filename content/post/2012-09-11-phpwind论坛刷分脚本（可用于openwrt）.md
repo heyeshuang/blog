@@ -14,6 +14,8 @@ duoshuo_thread_id:
 dsq_thread_id:
   - "3667750831"
 categories:
+  - 折腾
+tags:
   - python
 
 ---
@@ -66,4 +68,3 @@ categories:
 
 在openwrt上测试成功。理论上可以加入crontab，现在还没测试（时间不够）\
 update :鉴于论坛和路由器双重不给力，给urllib2设了超时
-
