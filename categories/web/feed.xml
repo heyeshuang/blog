@@ -49,30 +49,12 @@
     </item>
     
     <item>
-      <title>一个简单的在线LRC编辑器</title>
-      <link>https://heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
-      <pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate>
-      
-      <guid>https://heyeshuang.github.io/blog/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
-      <description>地址：http://heyeshuang.github.io/hieda-lrc-editor/ GITHUB：https://github.</description>
-    </item>
-    
-    <item>
       <title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title>
       <link>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link>
       <pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate>
       
       <guid>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid>
       <description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description>
-    </item>
-    
-    <item>
-      <title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title>
-      <link>https://heyeshuang.github.io/blog/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link>
-      <pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate>
-      
-      <guid>https://heyeshuang.github.io/blog/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid>
-      <description>那个……我还活着呢。 前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树</description>
     </item>
     
     <item>
@@ -85,30 +67,12 @@
     </item>
     
     <item>
-      <title>SFW：治疗拖延症的一次有益尝试</title>
-      <link>https://heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link>
-      <pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate>
-      
-      <guid>https://heyeshuang.github.io/blog/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid>
-      <description>在这里安装 源码 总而言之，是一个（某种程度上）减缓拖延症症状的脚本。 在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下</description>
-    </item>
-    
-    <item>
       <title>个人主页上线</title>
       <link>https://heyeshuang.github.io/blog/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link>
       <pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate>
       
       <guid>https://heyeshuang.github.io/blog/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid>
       <description>http://heyeshuang.github.io 请使用现代浏览器并开启硬件加速</description>
-    </item>
-    
-    <item>
-      <title>测试VimRepress</title>
-      <link>https://heyeshuang.github.io/blog/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</link>
-      <pubDate>Sun, 26 May 2013 08:05:33 +0000</pubDate>
-      
-      <guid>https://heyeshuang.github.io/blog/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</guid>
-      <description>本来这时候我是应该滚去写实验报告的但却写了博客 不过大概这种东西应该花不了多久吧 –我这样安慰着自己 总而言之，VimRepress是一个在VIM</description>
     </item>
     
     <item>
@@ -119,15 +83,6 @@
       <guid>https://heyeshuang.github.io/blog/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid>
       <description>github
 live demo(slow)</description>
-    </item>
-    
-    <item>
-      <title>我的云上逃亡，或，google reader的替代品</title>
-      <link>https://heyeshuang.github.io/blog/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link>
-      <pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate>
-      
-      <guid>https://heyeshuang.github.io/blog/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid>
-      <description>之前也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！</description>
     </item>
     
   </channel>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 May 2013 08:48:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Dec 2015 13:03:26 +0000</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/tags/firefox/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>pentadactyl 和 Firefox 43</title>
+      <link>https://heyeshuang.github.io/blog/2015/12/17/pentadactyl_n_firefox_43/</link>
+      <pubDate>Thu, 17 Dec 2015 13:03:26 +0000</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2015/12/17/pentadactyl_n_firefox_43/</guid>
+      <description>UPDATE: https://addons.mozilla.org/en-US/firefox/addon/pentadactyl-nightly-un</description>
+    </item>
     
     <item>
       <title>firefox主页被绑架</title>
