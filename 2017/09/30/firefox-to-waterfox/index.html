@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>贺叶霜的树：III</title>
+  <title>Yesterday Once More: Firefox to Waterfox &middot; 贺叶霜的树：III</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/feed.xml" />
   
 
   
@@ -102,10 +100,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -213,21 +207,16 @@
 
 
 <div class="header">
-  <h1>贺叶霜的树：III</h1>
-  <h2>第三根树苗</h2>
+  <h1>Yesterday Once More: Firefox to Waterfox</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/">html5-世界变动率计数器（仮）</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Jul 14, 08:32</time>
+    <time>2017 Sep 30, 23:44</time>
   </div>
 
   
@@ -240,11 +229,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/acg">acg</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/firefox">Firefox</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/html5">html5</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/js">js</a>
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/waterfox">Waterfox</a>
     
   </div>
   
@@ -252,114 +239,90 @@
 
 </div>
 
-  </header>
+  
 
-  <p>
-  here 其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。 代码简单到自己都觉
-  </p>
+<p><a href="https://www.mozilla.org/en-US/firefox/quantum/">Firefox Quantum</a>（就是Firefox 57） 发布了 beta 版，主动放弃了<code>XUL</code>和老版本扩展。我不知道这会不会又是一个“燃烧的平台”，只想体验一下Quantum传说中的新技术——顺便看看和Chrome有什么区别。</p>
+
+<p>当然，在升级57之前，需要给 Firefox 的状态存个盘。Waterfox是一个很好的选择：</p>
+
+<ul>
+<li>不久前刚刚引入了自己的配置文件，可以和Firefox同时开启；</li>
+<li>对比Pale Moon（另一个Firefox的Fork），分叉时间更晚，对“现代”扩展支持得更好。</li>
+</ul>
+
+<h2 id="迁移">迁移</h2>
+
+<p>迁移的过程还是很简单的：只要还没升级到57，就可以用<code>FEBE</code>扩展进行备份和恢复。注意在恢复到Waterfox的时候（选择“恢复配置”），需要新建一个Profile。</p>
+
+<h2 id="中文">中文</h2>
+
+<p>为了显示中文界面，需要安装<a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/">Chinese Simplified (zh-CN) Language Pack</a>，并访问<code>about:config</code>，将<code>intl.locale.matchOS</code>改为<code>true</code>。这样，<del>Firefox</del> Waterfox就可以按照系统的语言来显示了。</p>
+
+<h2 id="pentadactyl">Pentadactyl</h2>
+
+<p>Waterfox默认开启了多进程模式，会导致<code>Pentadactyl</code>不能正常工作：</p>
+
+<pre><code>Error: Permission denied to access property &quot;length&quot;
+</code></pre>
+
+<p>仍然是在<code>about:config</code>页面，查找<code>browser.tabs.remote.autostart</code>，把所有找到的项都改成<code>false</code>。</p>
+
+<pre><code>browser.tabs.remote.autostart=false
+browser.tabs.remote.autostart.2=false
+</code></pre>
+
+<p>OK，保存完成，是时候升级<a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum</a>了。</p>
+
+<p>啊对了，本文同时发在<a href="heyeshuang.tk">我的博客</a>和Steemit上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。</p>
+
+<p>——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。</p>
+
 
   
-  <footer>
-    <a href="/blog/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%E4%BB%AE/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2012/06/25/%E6%80%BB%E7%BB%93%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/">总结：简单的vCal/iCalendar/.ics格式说明</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Jun 25, 08:12</time>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://heyeshuang.github.io/blog/2017/09/09/2017-09-03-jour-to-lib/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <div class="pure-u-10-24">
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/icalendar">iCalendar</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/vcal">vCal</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/%E6%A0%BC%E5%BC%8F%E8%A7%A3%E6%9E%90">格式解析</a>
+    <nav class="prev">
+      <a href="https://heyeshuang.github.io/blog/2017/09/09/2017-09-03-jour-to-lib/">首都图书馆半日游</a>
+    </nav>
     
   </div>
-  
-  
-
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  E文好的话建议去看直接去看IETF的RFC5545定义; 中文版： 政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下
-  </p>
 
   
-  <footer>
-    <a href="/blog/2012/06/25/%E6%80%BB%E7%BB%93%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2012/06/22/hello-again/">Hello Again~</a></h2>
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
 
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Jun 22, 07:15</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  国内的免费主机始终是不靠谱的啊…… ——以上为结论 由于这样那样的原因，上一个博客化为了*时代的眼泪*，确切的说是*全灭*。于是，这里作为博客N
-  </p>
-
-  
-  <footer>
-    <a href="/blog/2012/06/22/hello-again/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-
-  
-
-
-<nav class="pagination" role="pagination">
-  
-  <a href="/blog/page/6/"><i class="fa fa-chevron-left"></i></a>
-  
-  <span>&nbsp;7 / 7&nbsp;</span>
-  
-  <i class="fa fa-chevron-right"></i>
-  
-</nav>
-
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'HeYSH';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

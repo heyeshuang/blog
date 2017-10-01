@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</loc>
+    <lastmod>2017-09-30T23:44:33+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/2017/09/09/2017-09-03-jour-to-lib/</loc>
     <lastmod>2017-09-09T12:44:02+08:00</lastmod>
   </url>
@@ -424,7 +429,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/firefox/</loc>
-    <lastmod>2015-12-17T13:03:26+00:00</lastmod>
+    <lastmod>2017-09-30T23:44:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -550,7 +555,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/post/</loc>
-    <lastmod>2017-09-09T12:44:02+08:00</lastmod>
+    <lastmod>2017-09-30T23:44:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -623,6 +628,12 @@
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/vps/</loc>
     <lastmod>2015-01-07T15:05:56+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/tags/waterfox/</loc>
+    <lastmod>2017-09-30T23:44:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -706,7 +717,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2017-01-13T11:44:43+00:00</lastmod>
+    <lastmod>2017-09-30T23:44:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -784,7 +795,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/</loc>
-    <lastmod>2017-09-09T12:44:02+08:00</lastmod>
+    <lastmod>2017-09-30T23:44:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
