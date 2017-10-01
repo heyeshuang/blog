@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Sep 2017 12:44:02 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 Sep 2017 23:44:33 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yesterday Once More: Firefox to Waterfox</title>
+      <link>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</link>
+      <pubDate>Sat, 30 Sep 2017 23:44:33 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</guid>
+      <description>Firefox Quantum（就是Firefox 57） 发布了 beta 版，主动放弃了XUL和老版本扩展。我不知道这会不会又是一个“燃烧的平台”，只想体验一下Qu</description>
+    </item>
     
     <item>
       <title>首都图书馆半日游</title>

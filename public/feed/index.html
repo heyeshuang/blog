@@ -10,6 +10,52 @@
     <atom:link href="https://heyeshuang.github.io/blog/feed/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Yesterday Once More: Firefox to Waterfox</title>
+      <link>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</link>
+      <pubDate>Sat, 30 Sep 2017 23:44:33 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/en-US/firefox/quantum/&#34;&gt;Firefox Quantum&lt;/a&gt;（就是Firefox 57） 发布了 beta 版，主动放弃了&lt;code&gt;XUL&lt;/code&gt;和老版本扩展。我不知道这会不会又是一个“燃烧的平台”，只想体验一下Quantum传说中的新技术——顺便看看和Chrome有什么区别。&lt;/p&gt;
+
+&lt;p&gt;当然，在升级57之前，需要给 Firefox 的状态存个盘。Waterfox是一个很好的选择：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;不久前刚刚引入了自己的配置文件，可以和Firefox同时开启；&lt;/li&gt;
+&lt;li&gt;对比Pale Moon（另一个Firefox的Fork），分叉时间更晚，对“现代”扩展支持得更好。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;迁移&#34;&gt;迁移&lt;/h2&gt;
+
+&lt;p&gt;迁移的过程还是很简单的：只要还没升级到57，就可以用&lt;code&gt;FEBE&lt;/code&gt;扩展进行备份和恢复。注意在恢复到Waterfox的时候（选择“恢复配置”），需要新建一个Profile。&lt;/p&gt;
+
+&lt;h2 id=&#34;中文&#34;&gt;中文&lt;/h2&gt;
+
+&lt;p&gt;为了显示中文界面，需要安装&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/&#34;&gt;Chinese Simplified (zh-CN) Language Pack&lt;/a&gt;，并访问&lt;code&gt;about:config&lt;/code&gt;，将&lt;code&gt;intl.locale.matchOS&lt;/code&gt;改为&lt;code&gt;true&lt;/code&gt;。这样，&lt;del&gt;Firefox&lt;/del&gt; Waterfox就可以按照系统的语言来显示了。&lt;/p&gt;
+
+&lt;h2 id=&#34;pentadactyl&#34;&gt;Pentadactyl&lt;/h2&gt;
+
+&lt;p&gt;Waterfox默认开启了多进程模式，会导致&lt;code&gt;Pentadactyl&lt;/code&gt;不能正常工作：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Error: Permission denied to access property &amp;quot;length&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;仍然是在&lt;code&gt;about:config&lt;/code&gt;页面，查找&lt;code&gt;browser.tabs.remote.autostart&lt;/code&gt;，把所有找到的项都改成&lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;browser.tabs.remote.autostart=false
+browser.tabs.remote.autostart.2=false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OK，保存完成，是时候升级&lt;a href=&#34;https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta&#34;&gt;Firefox Quantum&lt;/a&gt;了。&lt;/p&gt;
+
+&lt;p&gt;啊对了，本文同时发在&lt;a href=&#34;heyeshuang.tk&#34;&gt;我的博客&lt;/a&gt;和Steemit上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p&gt;
+
+&lt;p&gt;——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>首都图书馆半日游</title>
       <link>https://heyeshuang.github.io/blog/2017/09/09/2017-09-03-jour-to-lib/</link>
       <pubDate>Sat, 09 Sep 2017 12:44:02 +0800</pubDate>
