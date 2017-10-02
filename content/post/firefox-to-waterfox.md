@@ -38,6 +38,6 @@ browser.tabs.remote.autostart.2=false
 
 OK，保存完成，是时候升级[Firefox Quantum](https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta)了。
 
-啊对了，本文同时发在[我的博客](heyeshuang.tk)和Steemit上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。
+啊对了，本文同时发在[我的博客](http://heyeshuang.tk)和[Steemit](https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox)上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。
 
 ——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。

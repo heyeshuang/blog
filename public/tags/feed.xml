@@ -141,9 +141,18 @@
     <item>
       <title>Firefox</title>
       <link>https://heyeshuang.github.io/blog/tags/firefox/</link>
-      <pubDate>Sat, 30 Sep 2017 23:44:33 +0800</pubDate>
+      <pubDate>Sun, 01 Oct 2017 10:29:28 +0800</pubDate>
       
       <guid>https://heyeshuang.github.io/blog/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firefox Quantum</title>
+      <link>https://heyeshuang.github.io/blog/tags/firefox-quantum/</link>
+      <pubDate>Sun, 01 Oct 2017 10:29:28 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/tags/firefox-quantum/</guid>
       <description></description>
     </item>
     
@@ -414,6 +423,15 @@
       <pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate>
       
       <guid>https://heyeshuang.github.io/blog/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Extension</title>
+      <link>https://heyeshuang.github.io/blog/tags/web-extension/</link>
+      <pubDate>Sun, 01 Oct 2017 10:29:28 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/tags/web-extension/</guid>
       <description></description>
     </item>
     
