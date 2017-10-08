@@ -11,7 +11,7 @@ a:focus {
   text-decoration: underline;
 }
 a:visited {
-  color: #2f5d50;
+  color: #00665F;
 }
 
 .small-print {
@@ -74,4 +74,19 @@ i {
 
 .pagination a {
   color: #265778;
+}
+summary {
+  display: block;
+}
+
+  summary::-webkit-details-marker {
+  display: none;
+}
+
+summary h4::before {
+  content: '\25B6';
+}
+
+details[open] > summary h4::before {
+  content: '\25BC';
 }
