@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 12 Jun 2017 22:25:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Oct 2017 22:25:35 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/tags/hugo/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在Hugo中折叠部分内容</title>
+      <link>https://heyeshuang.github.io/blog/2017/10/07/collapsible-contents-for-hugo/</link>
+      <pubDate>Sat, 07 Oct 2017 22:25:35 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/10/07/collapsible-contents-for-hugo/</guid>
+      <description>之前疯狂粘贴自己的扩展 凑字数 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 shortcode 功</description>
+    </item>
     
     <item>
       <title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title>
