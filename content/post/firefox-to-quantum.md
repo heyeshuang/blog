@@ -7,7 +7,8 @@ tags :
     - Web Extension
 categories :
     - 折腾
-title: "Brave New World: Firefox to Quantum，升级、降级和废弃"
+title: "Brave New World: Firefox to Quantum"
+description: "升级、降级和废弃"
 date: 2017-10-01T10:29:28+08:00
 draft: false
 ---
