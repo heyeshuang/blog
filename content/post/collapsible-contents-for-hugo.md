@@ -10,11 +10,7 @@ categories :
     - html
 title: "在Hugo中折叠部分内容"
 date: 2017-10-07T22:25:35+08:00
-<<<<<<< HEAD
 draft: false
-=======
-draft: true
->>>>>>> e1bfe4fe4a8094f027cce0debcda5407303dbabf
 ---
 之前疯狂粘贴自己的[扩展]({{%ref "firefox-to-quantum.md"%}}) ~~凑字数~~ 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 `shortcode` 功能自己写了一个。
 
