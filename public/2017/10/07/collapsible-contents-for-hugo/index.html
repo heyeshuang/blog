@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.29" />
 
-  <title>Hugo &middot; 贺叶霜的树：III</title>
+  <title>在Hugo中折叠部分内容 &middot; 贺叶霜的树：III</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/tags/hugo/feed.xml" />
   
 
   
@@ -102,10 +100,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/tags/hugo/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -213,16 +207,12 @@
 
 
 <div class="header">
-  <h1>Hugo</h1>
+  <h1>在Hugo中折叠部分内容</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2017/10/07/collapsible-contents-for-hugo/">在Hugo中折叠部分内容</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -253,155 +243,90 @@
 
 </div>
 
-  </header>
+  <p>之前疯狂粘贴自己的<a href="https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/">扩展</a> <del>凑字数</del> 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 <code>shortcode</code> 功能自己写了一个。</p>
 
-  <p>
-  之前疯狂粘贴自己的扩展 凑字数 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 shortcode 功
-  </p>
+<p><code>Shortcode</code> 的介绍在<a href="https://gohugo.io/templates/shortcode-templates/">这里</a>，主要难度在于go的html模板引擎。</p>
+
+<p>折叠部分用了 HTML5 的新特性：<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">&lt;details&gt;</a>，不支持 edge，这个浏览器应该没有人用吧……</p>
+
+<p>下面是shortcode的代码，放在<code>/themes/&lt;THEME&gt;/layouts/shortcodes/spoiler.html</code>下：
+<details>
+<summary>
+  <h4>
+    shortcode，点击展开
+  </h4>
+</summary>
+<pre><code class="language-html">&lt;details&gt;
+&lt;summary&gt;
+  &lt;h4&gt;
+    {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
+  &lt;/h4&gt;
+&lt;/summary&gt;
+{{.Inner}}
+&lt;/details&gt;
+</code></pre>
+
+</details>
+</p>
+
+<p>用法是这样的：</p>
+
+<pre><code class="language-html">{{% spoiler &quot;You killed my father!&quot; %}}
+I am your father.
+NOOOOOOO!
+{{% /spoiler %}}
+</code></pre>
+
+<p>当然，我还稍微改了一下CSS，之后会在模板里面更新。</p>
+
 
   
-  <footer>
-    <a href="/blog/2017/10/07/collapsible-contents-for-hugo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/">迁移到hugo，第三部分：可是我想要更多的feed地址…</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Jun 12, 22:25</time>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <div class="pure-u-10-24">
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/feed">feed</a>
+    <nav class="prev">
+      <a href="https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/">Brave New World: Firefox to Quantum</a>
+    </nav>
     
   </div>
-  
-  
-
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  之前在 http://heyeshuang.tk 这个域名下的时候，wordpress提供的RSS feed地址格式类似 http://heyeshuang.tk/feed/ ，但是hugo提供的RSS地址是index.xml样子的，而且
-  </p>
 
   
-  <footer>
-    <a href="/blog/2017/06/12/moving-to-hugo-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/">由wordpress到hugo：I</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Jun 07, 22:14</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+(function() {
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/hugo">hugo</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/wordpress">wordpress</a>
-    
-  </div>
-  
-  
+    if (window.location.hostname == "localhost")
+        return;
 
-</div>
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'HeYSH';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-  </header>
 
-  <p>
-  我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距上次我更换博客后台过了快两年时间，wordpress（或
-  </p>
-
-  
-  <footer>
-    <a href="/blog/2017/06/07/moving-to-hugo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo-with-git/">迁移到hugo，第二部分：部署到github</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Jun 07, 22:07</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/git">git</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  书接上文 （虽然我是先写的这一篇），当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很
-  </p>
-
-  
-  <footer>
-    <a href="/blog/2017/06/07/moving-to-hugo-with-git/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
 </div>
 
 </div>
@@ -424,3 +349,4 @@
 
 </body>
 </html>
+
