@@ -41,3 +41,5 @@ NOOOOOOO!
 ```
 
 当然，我还稍微改了一下CSS，之后会在模板里面更新。
+
+spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8
