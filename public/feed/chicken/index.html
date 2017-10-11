@@ -10,6 +10,57 @@
     <atom:link href="https://heyeshuang.github.io/blog/feed/chicken/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>对Steem的一些细节考察 / A closer look to Steem</title>
+      <link>https://heyeshuang.github.io/blog/2017/10/08/about-steem/</link>
+      <pubDate>Sun, 08 Oct 2017 22:56:21 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/10/08/about-steem/</guid>
+      <description>
+
+&lt;h2 id=&#34;我的文章保存在哪里-会保存多久&#34;&gt;我的文章保存在哪里？会保存多久？&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;保存在各个矿工 (Miner / Witness Node) 的区块链上；很可能是永久保存。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;和大多数区块链技术一样，一个矿工必须有完整的节点信息才可以进行挖矿。当然，具体的挖矿形式有一些区别，steem不需要超强的计算能力去破解hash，但是要求很低的网络延迟。&lt;/p&gt;
+
+&lt;p&gt;这听起来好像跟&lt;a href=&#34;https://ipfs.io&#34;&gt;IPFS&lt;/a&gt;和&lt;a href=&#34;https://zeronet.io/&#34;&gt;ZeroNet&lt;/a&gt;差不多。分布式存储并不是什么新鲜事物，很久以前的bittorrent，emule什么的就已经做到了，但是问题是什么呢？&lt;/p&gt;
+
+&lt;p&gt;当你上网去寻找一份200x年的、并不是十分热门的资料，但是只找到一个种子的时候，问题就出现了：这份信息被网络所遗忘了，也就是说，它死掉了。一份信息的死亡，并不是因为它自己有什么问题，只是因为不够红而已。&lt;/p&gt;
+
+&lt;p&gt;当然，如果你恰巧拥有（原来的）迅雷会员，故事又将另当别论。在这个方面，商业公司比分布式存储更善良，或者说，记忆力更好。但是，当商业公司倒闭/转型/关闭离线下载服务的时候，我们就只能去爬虫的巢穴碰运气了。&lt;/p&gt;
+
+&lt;p&gt;举个例子。在&lt;a href=&#34;http://www.rongshuxia.com/&#34;&gt;榕树下&lt;/a&gt;如日中天，起点还没有出现的时候，我曾经看到过一篇名为《魂系大榕树》的知青文学，那种生活深深吸引了年幼的我。但是，这几天我再去找的时候，榕树下早已不复当时的枝繁叶茂，而且那篇文字，名字改成了《榕树魂》，散落在了互联网的各个角落。&lt;/p&gt;
+
+&lt;p&gt;听起来十分先进的IPFS和ZeroNet似乎并没有解决这个问题。现在，ZeroNet上搭建的一些网站已经无法访问了。但是，虽然Steem的评分规则也极端倾向热门文章，但这种技术确实让我看到了冷门信息生存的希望：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Steem是以一个整体存储的，区块链技术保证了这一点。即使是大鲸的文章也是一样。&lt;/li&gt;
+&lt;li&gt;Steem主要保存文字内容，这并不是什么优点，但可以称为一种妥协。
+
+&lt;ul&gt;
+&lt;li&gt;截止到2017.9.25日，整个Steem链子的体积大概是43GB（&lt;a href=&#34;https://steemit.com/steem/@crokkon/steem-blockchain-size&#34;&gt;来源&lt;/a&gt;），考虑到一张双层蓝光光碟的容量大概是50Gb，这并不是一个很大的数字。&lt;/li&gt;
+&lt;li&gt;作为一个小小的提醒，现在Steemit上的图片都保存在&lt;a href=&#34;https://steemitimages.com/&#34;&gt;https://steemitimages.com/&lt;/a&gt;这个服务器上。&lt;a href=&#34;https://steemit.com/censorship/@mynameisbrian/storing-images-on-the-steem-blockchain-censorship-resistant-images&#34;&gt;有人&lt;/a&gt;正在尝试直接保存在区块链中，对此我持谨慎悲观态度，毕竟已经有文字可以保存了。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;金钱。这个理由真的是太充足了，充足到之前的一切都变得毫无意义。让商业公司变得“善良”的动力，在steem这里也是一样。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，Steem的各位，希望你们能够尽量产出更多的优秀内容，托你们的福，像我们这样不讨人喜欢的家伙们，也可以在互联网上找到一个不会被轻易遗忘的地方。&lt;/p&gt;
+
+&lt;h2 id=&#34;那么-我可以把自己的博客搬到这里来吗&#34;&gt;那么，我可以把自己的博客搬到这里来吗？&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;对我来说，暂时还不行。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;正是因为Steem的记忆力太好，想要抹掉什么几乎不可能，所以很多东西并不适合写在上面。另外，一些 &lt;em&gt;特别&lt;/em&gt; 不讨人喜欢的东西，我也不会放到这里，请移步&lt;a href=&#34;https://heyeshuang.github.io/blog&#34;&gt;我的博客&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;气温骤降，我必须更加谨慎一些。&lt;/p&gt;
+
+&lt;h2 id=&#34;另外的一些细节&#34;&gt;另外的一些细节&lt;/h2&gt;
+
+&lt;p&gt;Steemit使用的markdown解析器是&lt;code&gt;remarkable&lt;/code&gt;，并通过&lt;code&gt;sanitize&lt;/code&gt;对HTML进行清洁。更加精细的排版问题，我会另外找时间尝试一下。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>在Hugo中折叠部分内容</title>
       <link>https://heyeshuang.github.io/blog/2017/10/07/collapsible-contents-for-hugo/</link>
       <pubDate>Sat, 07 Oct 2017 22:25:35 +0800</pubDate>
@@ -50,6 +101,8 @@ NOOOOOOO!
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p&gt;
+
+&lt;p&gt;spoiler在steemit社区的讨论：&lt;a href=&#34;https://github.com/steemit/condenser/issues/8&#34;&gt;https://github.com/steemit/condenser/issues/8&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

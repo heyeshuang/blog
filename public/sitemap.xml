@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/2017/10/08/about-steem/</loc>
+    <lastmod>2017-10-08T22:56:21+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/2017/10/07/collapsible-contents-for-hugo/</loc>
     <lastmod>2017-10-07T22:25:35+08:00</lastmod>
   </url>
@@ -583,7 +588,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/post/</loc>
-    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
+    <lastmod>2017-10-08T22:56:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -620,6 +625,18 @@
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/spoiler/</loc>
     <lastmod>2017-10-07T22:25:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/tags/steem/</loc>
+    <lastmod>2017-10-08T22:56:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heyeshuang.github.io/blog/tags/steemit/</loc>
+    <lastmod>2017-10-08T22:56:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -757,7 +774,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2017-10-01T10:29:28+08:00</lastmod>
+    <lastmod>2017-10-08T22:56:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -835,7 +852,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/</loc>
-    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
+    <lastmod>2017-10-08T22:56:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   

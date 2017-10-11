@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Oct 2017 22:25:35 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Oct 2017 22:56:21 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/post/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>对Steem的一些细节考察 / A closer look to Steem</title>
+      <link>https://heyeshuang.github.io/blog/2017/10/08/about-steem/</link>
+      <pubDate>Sun, 08 Oct 2017 22:56:21 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/10/08/about-steem/</guid>
+      <description>我的文章保存在哪里？会保存多久？ 保存在各个矿工 (Miner / Witness Node) 的区块链上；很可能是永久保存。 和大多数区块链技术一样，一个矿工必须有完整的节点信息才可</description>
+    </item>
     
     <item>
       <title>在Hugo中折叠部分内容</title>

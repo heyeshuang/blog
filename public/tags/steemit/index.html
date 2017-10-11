@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.29" />
 
-  <title>在Hugo中折叠部分内容 &middot; 贺叶霜的树：III</title>
+  <title>Steemit &middot; 贺叶霜的树：III</title>
 
   
   
@@ -36,6 +36,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  
+  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/tags/steemit/feed.xml" />
   
 
   
@@ -100,6 +102,10 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/tags/steemit/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
     
 
     
@@ -207,16 +213,20 @@
 
 
 <div class="header">
-  <h1>在Hugo中折叠部分内容</h1>
-  <h2></h2>
+  <h1>Steemit</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://heyeshuang.github.io/blog/2017/10/08/about-steem/">对Steem的一些细节考察 / A closer look to Steem</a></h2>
+
+    <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Oct 07, 22:25</time>
+    <time>2017 Oct 08, 22:56</time>
   </div>
 
   
@@ -229,13 +239,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/hugo">hugo</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/steem">steem</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/spoiler">spoiler</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/collapsible-contents">collapsible contents</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/hidden-contents">hidden contents</a>
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/steemit">steemit</a>
     
   </div>
   
@@ -243,98 +249,20 @@
 
 </div>
 
-  <p>之前疯狂粘贴自己的<a href="https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/">扩展</a> <del>凑字数</del> 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 <code>shortcode</code> 功能自己写了一个。</p>
+  </header>
 
-<p><code>Shortcode</code> 的介绍在<a href="https://gohugo.io/templates/shortcode-templates/">这里</a>，主要难度在于go的html模板引擎。</p>
-
-<p>折叠部分用了 HTML5 的新特性：<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">&lt;details&gt;</a>，不支持 edge，这个浏览器应该没有人用吧……</p>
-
-<p>下面是shortcode的代码，放在<code>/themes/&lt;THEME&gt;/layouts/shortcodes/spoiler.html</code>下：
-<details>
-<summary>
-  <h4>
-    shortcode，点击展开
-  </h4>
-</summary>
-<pre><code class="language-html">&lt;details&gt;
-&lt;summary&gt;
-  &lt;h4&gt;
-    {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
-  &lt;/h4&gt;
-&lt;/summary&gt;
-{{.Inner}}
-&lt;/details&gt;
-</code></pre>
-
-</details>
-</p>
-
-<p>用法是这样的：</p>
-
-<pre><code class="language-html">{{% spoiler &quot;You killed my father!&quot; %}}
-I am your father.
-NOOOOOOO!
-{{% /spoiler %}}
-</code></pre>
-
-<p>当然，我还稍微改了一下CSS，之后会在模板里面更新。</p>
-
-<p>spoiler在steemit社区的讨论：<a href="https://github.com/steemit/condenser/issues/8">https://github.com/steemit/condenser/issues/8</a></p>
-
+  <p>
+  我的文章保存在哪里？会保存多久？ 保存在各个矿工 (Miner / Witness Node) 的区块链上；很可能是永久保存。 和大多数区块链技术一样，一个矿工必须有完整的节点信息才可
+  </p>
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-    <a href="https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/"><i class="fa fa-chevron-left"></i></a>
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/">Brave New World: Firefox to Quantum</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://heyeshuang.github.io/blog/2017/10/08/about-steem/">对Steem的一些细节考察 / A closer look to Steem</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://heyeshuang.github.io/blog/2017/10/08/about-steem/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
+  <footer>
+    <a href="/blog/2017/10/08/about-steem/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'HeYSH';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
 </div>
 
 </div>
@@ -357,4 +285,3 @@ NOOOOOOO!
 
 </body>
 </html>
-
