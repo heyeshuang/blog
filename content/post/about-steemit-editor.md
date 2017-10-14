@@ -42,7 +42,9 @@ strike, sup, sub
 
 当然，编辑器好心地提供了几个class来控制文字和图像的位置：
 
-['pull-right', 'pull-left', 'text-justify', 'text-rtl', 'text-center', 'text-right', 'videoWrapper']
+```
+'pull-right', 'pull-left', 'text-justify', 'text-rtl', 'text-center', 'text-right', 'videoWrapper'
+```
 
 用法大概是 `< div class="pull-right"> < img src="imglink" />< /div >`，或者看[这里](https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying)的介绍。
 
