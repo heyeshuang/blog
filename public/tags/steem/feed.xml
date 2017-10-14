@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 08 Oct 2017 22:56:21 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Oct 2017 23:04:00 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/tags/steem/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>更琐碎的编辑器细节 / Some more trival details about Steemit</title>
+      <link>https://heyeshuang.github.io/blog/2017/10/14/about-steemit-editor/</link>
+      <pubDate>Sat, 14 Oct 2017 23:04:00 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/10/14/about-steemit-editor/</guid>
+      <description>Steemit的前端代码在https://github.com/steemit/condenser/，读一读它的源代码，可以了解一些关于编辑</description>
+    </item>
     
     <item>
       <title>对Steem的一些细节考察 / A closer look to Steem</title>
