@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 22 Oct 2017 13:37:58 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Oct 2017 18:42:21 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>不要脸的乞讨时间</title>
+      <link>https://heyeshuang.github.io/blog/wallet/</link>
+      <pubDate>Sat, 28 Oct 2017 18:42:21 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/wallet/</guid>
+      <description>万一有人想给我转账呢……梦想总是要有的…… 所以说下面是我的各种钱包地址…… BITCOIN：1Eb1smwqf9oGAG74Xkn52p19Z</description>
+    </item>
     
     <item>
       <title>为hugo加入数学公式支持</title>
