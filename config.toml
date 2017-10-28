@@ -63,6 +63,13 @@ baseName = "feed"
     identifier = "sentences"
     url = "/sentences/"
 
+  [[menu.main]]
+    name = "Begging"
+    pre = "<i class='fa fa-money fa-fw'></i>"
+    weight = 3
+    identifier = "begging"
+    url = "/wallet/"
+
 [social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
