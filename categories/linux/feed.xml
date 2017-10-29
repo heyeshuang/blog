@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 13 Jan 2017 12:25:31 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Oct 2017 13:40:50 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017年的fontconfig设置</title>
+      <link>https://heyeshuang.github.io/blog/2017/10/29/2017-10-29-fontconfig-for-7012/</link>
+      <pubDate>Sun, 29 Oct 2017 13:40:50 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/10/29/2017-10-29-fontconfig-for-7012/</guid>
+      <description>都7012年了linux还要自己设置字体…… 不过思源（Noto）系列字体真的是开源界的福音，字重多，字符全，自带hinting，长得还漂亮，</description>
+    </item>
     
     <item>
       <title>用nethogs实时监控每个程序的流量使用</title>
