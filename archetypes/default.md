@@ -7,5 +7,5 @@ categories :
     - 未分类
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
 ---

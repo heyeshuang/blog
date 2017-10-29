@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="使用思源宋体和思源黑体">
   <meta name="generator" content="Hugo 0.30.2" />
 
-  <title>Categories &middot; 贺叶霜的树：III</title>
+  <title>2017年的fontconfig设置 &middot; 贺叶霜的树：III</title>
 
   
   
@@ -41,8 +41,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js"></script>
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="贺叶霜的树：III" href="https://heyeshuang.github.io/blog/categories/feed.xml" />
   
 
   
@@ -113,10 +111,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://heyeshuang.github.io/blog/categories/feed.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -224,63 +218,145 @@
 
 
 <div class="header">
-  <h1>Categories</h1>
+  <h1>2017年的fontconfig设置</h1>
+  <h2>使用思源宋体和思源黑体</h2>
 </div>
 <div class="content">
-  <ul>
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017 Oct 29, 13:40</time>
+  </div>
+
+  
+
+  
+
   
   
-    <li>
-      <a href="%E6%9E%AF%E5%8F%B6%E5%A0%86%E5%86%85">枯叶堆内</a>
-      <span>&#40;15&#41;</span>
-    </li>
   
-    <li>
-      <a href="%E6%8A%98%E8%85%BE">折腾</a>
-      <span>&#40;14&#41;</span>
-    </li>
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/font">font</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/%E6%80%9D%E6%BA%90">思源</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/noto">Noto</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://heyeshuang.github.io/blog/tags/linux">linux</a>
+    
+  </div>
   
-    <li>
-      <a href="linux">linux</a>
-      <span>&#40;13&#41;</span>
-    </li>
   
-    <li>
-      <a href="%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F">奇怪的小玩意</a>
-      <span>&#40;12&#41;</span>
-    </li>
+
+</div>
+
+
   
-    <li>
-      <a href="web">web</a>
-      <span>&#40;8&#41;</span>
-    </li>
+
+<p>都7012年了linux还要自己设置字体……</p>
+
+<p>不过思源（Noto）系列字体真的是开源界的福音，字重多，字符全，自带hinting，长得还漂亮，换上以后整个系统都显得高级起来了～</p>
+
+<p>为了获得“高级感”，首先你需要安装<code>noto-fonts</code>和<code>noto-fonts-cjk</code>。因为是7012年，中文字体里自带的英文字符也不算太丑，所以不需要像<a href="https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_Font_Configurations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Windows.C2.AE.E6.98.BE.E7.A4.BA.E6.95.88.E6.9E.9C.E7.9A.84.E5.AD.97.E4.BD.93.E5.8F.82.E8.80.83.E9.85.8D.E7.BD.AE">ArchWiki</a>和<a href="https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/">这篇博文</a>一样，分别定义中文和英文。全用Noto就好！（而且，分别定义的方法在chrome上有些小问题……）</p>
+
+<p><code>~/.config/fontconfig/fonts.conf</code>的内容附在<a href="https://gist.github.com/heyeshuang/03d69c1823b8cf769819d36b34f34f71">这里</a>，保存之后用<code>fc-cache --force --verbose</code>更新字体缓存就行了。</p>
+
+<h2 id="接下来是截图时间">接下来是截图时间：</h2>
+
+<p>
+<figure >
+    
+        <img src="/blog/font/5.png" width="50%" />
+    
+    
+    <figcaption>
+        <h4>这才是真正的宋体</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<figure >
+    
+        <img src="/blog/font/3.png" width="50%" />
+    
+    
+    <figcaption>
+        <h4>在正文也毫无压力</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<figure >
+    
+        <img src="/blog/font/4.png" width="50%" />
+    
+    
+    <figcaption>
+        <h4>还有这个light字重</h4>
+        
+    </figcaption>
+    
+</figure>
+</p>
+
+<p>题外话，中文可用的字体实在是太少了。因为<code>SimSun</code>太渣，windows下的中文连个可用的<code>serif</code>字体都没有，每天只能对着呆板的雅黑干瞪眼……</p>
+
+
   
-    <li>
-      <a href="meta">meta</a>
-      <span>&#40;5&#41;</span>
-    </li>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://heyeshuang.github.io/blog/2017/10/22/added-math-support/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://heyeshuang.github.io/blog/2017/10/22/added-math-support/">为hugo加入数学公式支持</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
   
-    <li>
-      <a href="%E5%92%B1%E5%AE%B6%E6%9C%AC%E6%9D%A5%E6%98%AF%E5%AD%A6%E6%9C%BA%E6%A2%B0%E7%9A%84%E6%9D%A5%E7%9D%80">咱家本来是学机械的来着</a>
-      <span>&#40;4&#41;</span>
-    </li>
-  
-    <li>
-      <a href="html">html</a>
-      <span>&#40;2&#41;</span>
-    </li>
-  
-    <li>
-      <a href="%E7%94%9F%E6%B4%BB">生活</a>
-      <span>&#40;2&#41;</span>
-    </li>
-  
-    <li>
-      <a href="%E7%9F%AD%E6%B6%88%E6%81%AF">短消息</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-  </ul>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'HeYSH';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
@@ -304,3 +380,4 @@
 <script>renderMathInElement(document.body);</script>
 </body>
 </html>
+

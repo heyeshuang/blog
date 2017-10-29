@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/2017/10/29/2017-10-29-fontconfig-for-7012/</loc>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/wallet/</loc>
     <lastmod>2017-10-28T18:42:21+08:00</lastmod>
   </url>
@@ -476,6 +481,12 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/tags/font/</loc>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/tags/gfw/</loc>
     <lastmod>2015-01-07T15:05:56+00:00</lastmod>
     <priority>0</priority>
@@ -567,13 +578,13 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/tags/linux/</loc>
-    <lastmod>2013-05-17T07:47:31+00:00</lastmod>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://heyeshuang.github.io/blog/categories/linux/</loc>
-    <lastmod>2017-01-13T12:25:31+00:00</lastmod>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -602,6 +613,12 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/tags/noto/</loc>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/tags/openwrt/</loc>
     <lastmod>2015-09-09T13:58:27+00:00</lastmod>
     <priority>0</priority>
@@ -621,7 +638,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/post/</loc>
-    <lastmod>2017-10-22T13:37:58+08:00</lastmod>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -800,6 +817,12 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/tags/%E6%80%9D%E6%BA%90/</loc>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/tags/%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2015-02-14T15:44:05+00:00</lastmod>
     <priority>0</priority>
@@ -885,7 +908,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/</loc>
-    <lastmod>2017-10-28T18:42:21+08:00</lastmod>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
