@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 14 Oct 2017 23:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2017 19:17:38 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/tags/steemit/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aeolipile: your code and formula on Steem</title>
+      <link>https://heyeshuang.github.io/blog/2017/11/02/2017-11-02-aeolipile-your-code-and-formula-on-steem/</link>
+      <pubDate>Thu, 02 Nov 2017 19:17:38 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/11/02/2017-11-02-aeolipile-your-code-and-formula-on-steem/</guid>
+      <description>https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem
+Please click ↑ to read the post!
+Steem is a blockchain-based rewards platform for publishers to monetize content and grow community. However, the Steemit editor does not provide advanced markdown features, like code highlight, mathematical notation, etc. The lack makes it hard to write technical posts on Steem.
+So I made this webpage to render Steem discussion with more markdown syntax enabled. Then we can use Steem for some...boring contents.</description>
+    </item>
     
     <item>
       <title>更琐碎的编辑器细节 / Some more trival details about Steemit</title>
