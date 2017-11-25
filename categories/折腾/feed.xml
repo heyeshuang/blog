@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 18 Nov 2017 16:36:55 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Nov 2017 12:35:54 +0800</lastBuildDate>
     
 	<atom:link href="https://heyeshuang.github.io/blog/categories/%E6%8A%98%E8%85%BE/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VPS初始化checklist</title>
+      <link>https://heyeshuang.github.io/blog/2017/11/25/virmach-init/</link>
+      <pubDate>Sat, 25 Nov 2017 12:35:54 +0800</pubDate>
+      
+      <guid>https://heyeshuang.github.io/blog/2017/11/25/virmach-init/</guid>
+      <description>仅供存档。另外，virmach黑五大减价了，KVM主机5.6$一年美滋滋。 这是我的邀请链接：https://billing.virmach.</description>
+    </item>
     
     <item>
       <title>利用kcpraw流量加速</title>
@@ -18,7 +27,7 @@
       <pubDate>Sat, 18 Nov 2017 16:36:55 +0800</pubDate>
       
       <guid>https://heyeshuang.github.io/blog/2017/11/18/2017-11-18-kcpraw-speed-up/</guid>
-      <description>2015年和2016年，我写过两篇关于*科学上网*的博客，之后，又在VPS上安装了v2ray，这个应用直接支持mKCP，在丢包严重的网络环境</description>
+      <description>2015年和2016年，我写过两篇关于 科学上网 的博客，之后，又在VPS上安装了v2ray，这个应用直接支持mKCP，在丢包严重的网络环境下效</description>
     </item>
     
     <item>
