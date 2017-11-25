@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/2017/11/25/virmach-init/</loc>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/2017/11/18/2017-11-18-kcpraw-speed-up/</loc>
     <lastmod>2017-11-18T16:36:55+08:00</lastmod>
   </url>
@@ -553,14 +558,14 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/tags/html/</loc>
-    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/categories/html/</loc>
+    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/html/</loc>
-    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/tags/html/</loc>
+    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -625,13 +630,13 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/tags/linux/</loc>
+    <loc>https://heyeshuang.github.io/blog/categories/linux/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/linux/</loc>
+    <loc>https://heyeshuang.github.io/blog/tags/linux/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -686,7 +691,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/post/</loc>
-    <lastmod>2017-11-18T16:36:55+08:00</lastmod>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -775,8 +780,14 @@
   </url>
   
   <url>
+    <loc>https://heyeshuang.github.io/blog/tags/virmach/</loc>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heyeshuang.github.io/blog/tags/vps/</loc>
-    <lastmod>2015-01-07T15:05:56+00:00</lastmod>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -787,14 +798,14 @@
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/tags/web/</loc>
-    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/categories/web/</loc>
+    <lastmod>2017-06-12T22:25:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heyeshuang.github.io/blog/categories/web/</loc>
-    <lastmod>2017-06-12T22:25:07+08:00</lastmod>
+    <loc>https://heyeshuang.github.io/blog/tags/web/</loc>
+    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -878,7 +889,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2017-11-18T16:36:55+08:00</lastmod>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -962,7 +973,7 @@
   
   <url>
     <loc>https://heyeshuang.github.io/blog/</loc>
-    <lastmod>2017-11-18T16:36:55+08:00</lastmod>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
