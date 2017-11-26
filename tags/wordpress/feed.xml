@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wordpress on 贺叶霜的树：III</title>
-    <link>https://blog.heysh.eu.org/tags/wordpress/</link>
+    <link>https://heyeshuang.github.io/blog/tags/wordpress/</link>
     <description>Recent content in Wordpress on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 07 Jun 2017 22:14:47 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.heysh.eu.org/tags/wordpress/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heyeshuang.github.io/blog/tags/wordpress/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>由wordpress到hugo：I</title>
-      <link>https://blog.heysh.eu.org/2017/06/07/moving-to-hugo/</link>
+      <link>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/</link>
       <pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2017/06/07/moving-to-hugo/</guid>
+      <guid>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/</guid>
       <description>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距上次我更换博客后台过了快两年时间，wordpress（或</description>
     </item>
     

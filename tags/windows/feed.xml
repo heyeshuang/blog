@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on 贺叶霜的树：III</title>
-    <link>https://blog.heysh.eu.org/tags/windows/</link>
+    <link>https://heyeshuang.github.io/blog/tags/windows/</link>
     <description>Recent content in Windows on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 13 Jan 2017 11:44:43 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.heysh.eu.org/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heyeshuang.github.io/blog/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title>
-      <link>https://blog.heysh.eu.org/2017/01/13/ms-word-vector-support-sucks/</link>
+      <link>https://heyeshuang.github.io/blog/2017/01/13/ms-word-vector-support-sucks/</link>
       <pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2017/01/13/ms-word-vector-support-sucks/</guid>
+      <guid>https://heyeshuang.github.io/blog/2017/01/13/ms-word-vector-support-sucks/</guid>
       <description>把EMF里的所有文字转换成路径就能解决了 应该是辣鸡windows的文字渲染问题 Word的bug在哪里报，挺急的</description>
     </item>
     
     <item>
       <title>firefox主页被绑架</title>
-      <link>https://blog.heysh.eu.org/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link>
+      <link>https://heyeshuang.github.io/blog/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link>
       <pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid>
+      <guid>https://heyeshuang.github.io/blog/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid>
       <description>如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样恼羞成怒，抱着“就是不让你挣钱”的扭曲心态，直接修改C:\Window</description>
     </item>
     

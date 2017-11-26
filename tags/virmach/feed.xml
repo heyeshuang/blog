@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virmach on 贺叶霜的树：III</title>
-    <link>https://blog.heysh.eu.org/tags/virmach/</link>
+    <link>https://heyeshuang.github.io/blog/tags/virmach/</link>
     <description>Recent content in Virmach on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 25 Nov 2017 12:35:54 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.heysh.eu.org/tags/virmach/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heyeshuang.github.io/blog/tags/virmach/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VPS初始化checklist</title>
-      <link>https://blog.heysh.eu.org/2017/11/25/virmach-init/</link>
+      <link>https://heyeshuang.github.io/blog/2017/11/25/virmach-init/</link>
       <pubDate>Sat, 25 Nov 2017 12:35:54 +0800</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2017/11/25/virmach-init/</guid>
+      <guid>https://heyeshuang.github.io/blog/2017/11/25/virmach-init/</guid>
       <description>仅供存档。另外，virmach黑五大减价了，KVM主机5.6$一年美滋滋。 这是我的邀请链接：https://billing.virmach.</description>
     </item>
     
