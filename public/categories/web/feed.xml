@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/categories/web/</link>
+    <link>https://blog.heysh.eu.org/categories/web/</link>
     <description>Recent content in Web on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 12 Jun 2017 22:25:07 +0800</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/categories/web/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.eu.org/categories/web/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title>
-      <link>https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/</link>
+      <link>https://blog.heysh.eu.org/2017/06/12/moving-to-hugo-3/</link>
       <pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/06/12/moving-to-hugo-3/</guid>
+      <guid>https://blog.heysh.eu.org/2017/06/12/moving-to-hugo-3/</guid>
       <description>之前在 http://heyeshuang.tk 这个域名下的时候，wordpress提供的RSS feed地址格式类似 http://heyeshuang.tk/feed/ ，但是hugo提供的RSS地址是index.xml样子的，而且</description>
     </item>
     
     <item>
       <title>由wordpress到hugo：I</title>
-      <link>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/</link>
+      <link>https://blog.heysh.eu.org/2017/06/07/moving-to-hugo/</link>
       <pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo/</guid>
+      <guid>https://blog.heysh.eu.org/2017/06/07/moving-to-hugo/</guid>
       <description>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距上次我更换博客后台过了快两年时间，wordpress（或</description>
     </item>
     
     <item>
       <title>迁移到hugo，第二部分：部署到github</title>
-      <link>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo-with-git/</link>
+      <link>https://blog.heysh.eu.org/2017/06/07/moving-to-hugo-with-git/</link>
       <pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/06/07/moving-to-hugo-with-git/</guid>
+      <guid>https://blog.heysh.eu.org/2017/06/07/moving-to-hugo-with-git/</guid>
       <description>书接上文 （虽然我是先写的这一篇），当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很</description>
     </item>
     
     <item>
       <title>shadowsocks 2016: 一次性认证，KCP及其他</title>
-      <link>https://heyeshuang.github.io/blog/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link>
+      <link>https://blog.heysh.eu.org/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link>
       <pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid>
+      <guid>https://blog.heysh.eu.org/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid>
       <description>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~ 距我上次配置</description>
     </item>
     
     <item>
       <title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title>
-      <link>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link>
+      <link>https://blog.heysh.eu.org/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link>
       <pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid>
+      <guid>https://blog.heysh.eu.org/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid>
       <description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description>
     </item>
     
     <item>
       <title>红色楼梯</title>
-      <link>https://heyeshuang.github.io/blog/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link>
+      <link>https://blog.heysh.eu.org/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link>
       <pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid>
+      <guid>https://blog.heysh.eu.org/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid>
       <description>用three.js试着做了点东西 Live demo : http://heyeshuang.github.io/three-stairs/ –你的下一句话是：“又做了没用的东西！” –是啊。 –咦？这算是猜对了吗？</description>
     </item>
     
     <item>
       <title>个人主页上线</title>
-      <link>https://heyeshuang.github.io/blog/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link>
+      <link>https://blog.heysh.eu.org/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link>
       <pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid>
+      <guid>https://blog.heysh.eu.org/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid>
       <description>http://heyeshuang.github.io 请使用现代浏览器并开启硬件加速</description>
     </item>
     
     <item>
       <title>贺叶霜的树</title>
-      <link>https://heyeshuang.github.io/blog/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link>
+      <link>https://blog.heysh.eu.org/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link>
       <pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid>
+      <guid>https://blog.heysh.eu.org/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid>
       <description>github
 live demo(slow)</description>
     </item>

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arch on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/tags/arch/</link>
+    <link>https://blog.heysh.eu.org/tags/arch/</link>
     <description>Recent content in Arch on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 17 May 2013 07:47:31 +0000</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/tags/arch/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.eu.org/tags/arch/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>邪恶的Archlinux</title>
-      <link>https://heyeshuang.github.io/blog/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</link>
+      <link>https://blog.heysh.eu.org/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</link>
       <pubDate>Fri, 17 May 2013 07:47:31 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</guid>
+      <guid>https://blog.heysh.eu.org/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</guid>
       <description>前几天archlinux更新后无法启动，提示”/bin/systemd not exist”，于是乖乖等官网说明，顺理成章的没等到。于是开始goog</description>
     </item>
     
     <item>
       <title>如果你像我一样主力使用xfce但又觉得GNOME3也许会变得好一点于是安装之后才发现果然还是无法接受</title>
-      <link>https://heyeshuang.github.io/blog/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</link>
+      <link>https://blog.heysh.eu.org/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</link>
       <pubDate>Fri, 29 Mar 2013 07:21:48 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</guid>
+      <guid>https://blog.heysh.eu.org/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</guid>
       <description>这时全部删除GNOME却发现xfce变得特别丑陋的原因是GNOME-settings-daemon与xfdsetting冲突于是后者被自动关</description>
     </item>
     
     <item>
       <title>Texlive 在archlinux上的安装，以及中文字体的设置</title>
-      <link>https://heyeshuang.github.io/blog/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://blog.heysh.eu.org/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://blog.heysh.eu.org/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
       <description>texmacs已经不能满足我了！ 其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！ 然后发现大魔王令人绝望的实力 然后用S/L大法加</description>
     </item>
     
