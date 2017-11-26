@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firefox on 贺叶霜的树：III</title>
-    <link>https://blog.heysh.eu.org/tags/firefox/</link>
+    <link>https://heyeshuang.github.io/blog/tags/firefox/</link>
     <description>Recent content in Firefox on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 01 Oct 2017 10:29:28 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.heysh.eu.org/tags/firefox/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heyeshuang.github.io/blog/tags/firefox/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Brave New World: Firefox to Quantum</title>
-      <link>https://blog.heysh.eu.org/2017/10/01/firefox-to-quantum/</link>
+      <link>https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/</link>
       <pubDate>Sun, 01 Oct 2017 10:29:28 +0800</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2017/10/01/firefox-to-quantum/</guid>
+      <guid>https://heyeshuang.github.io/blog/2017/10/01/firefox-to-quantum/</guid>
       <description>在把现在的配置导入Waterfox之后，就可以升级Firefox Quantum了。强烈建议用离线模式启动，并取消登陆Firefox账号，防止</description>
     </item>
     
     <item>
       <title>Yesterday Once More: Firefox to Waterfox</title>
-      <link>https://blog.heysh.eu.org/2017/09/30/firefox-to-waterfox/</link>
+      <link>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</link>
       <pubDate>Sat, 30 Sep 2017 23:44:33 +0800</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2017/09/30/firefox-to-waterfox/</guid>
+      <guid>https://heyeshuang.github.io/blog/2017/09/30/firefox-to-waterfox/</guid>
       <description>Firefox Quantum（就是Firefox 57） 发布了 beta 版，主动放弃了XUL和老版本扩展。我不知道这会不会又是一个“燃烧的平台”，只想体验一下Qu</description>
     </item>
     
     <item>
       <title>pentadactyl 和 Firefox 43</title>
-      <link>https://blog.heysh.eu.org/2015/12/17/pentadactyl_n_firefox_43/</link>
+      <link>https://heyeshuang.github.io/blog/2015/12/17/pentadactyl_n_firefox_43/</link>
       <pubDate>Thu, 17 Dec 2015 13:03:26 +0000</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2015/12/17/pentadactyl_n_firefox_43/</guid>
+      <guid>https://heyeshuang.github.io/blog/2015/12/17/pentadactyl_n_firefox_43/</guid>
       <description>UPDATE: https://addons.mozilla.org/en-US/firefox/addon/pentadactyl-nightly-un</description>
     </item>
     
     <item>
       <title>firefox主页被绑架</title>
-      <link>https://blog.heysh.eu.org/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link>
+      <link>https://heyeshuang.github.io/blog/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link>
       <pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid>
+      <guid>https://heyeshuang.github.io/blog/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid>
       <description>如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样恼羞成怒，抱着“就是不让你挣钱”的扭曲心态，直接修改C:\Window</description>
     </item>
     

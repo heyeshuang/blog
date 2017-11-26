@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ctypes on 贺叶霜的树：III</title>
-    <link>https://blog.heysh.eu.org/tags/ctypes/</link>
+    <link>https://heyeshuang.github.io/blog/tags/ctypes/</link>
     <description>Recent content in Ctypes on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Sep 2017 19:46:55 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.heysh.eu.org/tags/ctypes/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heyeshuang.github.io/blog/tags/ctypes/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于那个IME helper</title>
-      <link>https://blog.heysh.eu.org/2017/09/06/gossip_about_ime_helper/</link>
+      <link>https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/</link>
       <pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2017/09/06/gossip_about_ime_helper/</guid>
+      <guid>https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/</guid>
       <description>昨天前天我用鸟语写了一篇贼 正经 的说明，今天，我准备稍微介绍一下那里面的IME helper。 正如之前所说，那东西是为了配合atom插件自动开关</description>
     </item>
     

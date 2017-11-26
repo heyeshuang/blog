@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ctex on 贺叶霜的树：III</title>
-    <link>https://blog.heysh.eu.org/tags/ctex/</link>
+    <link>https://heyeshuang.github.io/blog/tags/ctex/</link>
     <description>Recent content in Ctex on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 21 Dec 2012 16:38:48 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.heysh.eu.org/tags/ctex/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heyeshuang.github.io/blog/tags/ctex/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Texlive 在archlinux上的安装，以及中文字体的设置</title>
-      <link>https://blog.heysh.eu.org/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://heyeshuang.github.io/blog/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate>
       
-      <guid>https://blog.heysh.eu.org/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://heyeshuang.github.io/blog/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
       <description>texmacs已经不能满足我了！ 其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！ 然后发现大魔王令人绝望的实力 然后用S/L大法加</description>
     </item>
     
