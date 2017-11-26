@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meta on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/categories/meta/</link>
+    <link>https://blog.heysh.eu.org/categories/meta/</link>
     <description>Recent content in Meta on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 22 Oct 2017 13:37:58 +0800</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/categories/meta/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.eu.org/categories/meta/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>为hugo加入数学公式支持</title>
-      <link>https://heyeshuang.github.io/blog/2017/10/22/added-math-support/</link>
+      <link>https://blog.heysh.eu.org/2017/10/22/added-math-support/</link>
       <pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/10/22/added-math-support/</guid>
+      <guid>https://blog.heysh.eu.org/2017/10/22/added-math-support/</guid>
       <description>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。 官方文档中其实有这一部分内容，但是那里是用MathJax的，而且在标准m</description>
     </item>
     
     <item>
       <title>五年</title>
-      <link>https://heyeshuang.github.io/blog/2017/01/15/%E4%BA%94%E5%B9%B4/</link>
+      <link>https://blog.heysh.eu.org/2017/01/15/%E4%BA%94%E5%B9%B4/</link>
       <pubDate>Sun, 15 Jan 2017 08:14:45 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/01/15/%E4%BA%94%E5%B9%B4/</guid>
+      <guid>https://blog.heysh.eu.org/2017/01/15/%E4%BA%94%E5%B9%B4/</guid>
       <description>距离实现永生：5/∞ 新的一年也要好好活下去哦~</description>
     </item>
     
     <item>
       <title>我失去了heysh.tk域名</title>
-      <link>https://heyeshuang.github.io/blog/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</link>
+      <link>https://blog.heysh.eu.org/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Tue, 24 May 2016 14:35:24 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</guid>
+      <guid>https://blog.heysh.eu.org/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</guid>
       <description>Dear 叶霜 贺, The Freenom Review Team has visited your website today. Unfortunately we have to say that today we cancelled your domain HEYSH.TK. The reason for the cancellation is that the website address you used for your free domain name was not accessible or did not follow the guidelines set in our terms and conditions. At this stage, anyone, including yourself, is able to (re)register the cancelled</description>
     </item>
     
     <item>
       <title>blog再次复活</title>
-      <link>https://heyeshuang.github.io/blog/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</link>
+      <link>https://blog.heysh.eu.org/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</link>
       <pubDate>Fri, 01 Feb 2013 04:45:08 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</guid>
+      <guid>https://blog.heysh.eu.org/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</guid>
       <description>rhcloud.com被墙了，没办法用wordpress的android版更新实在令人愤怒，幸好我还有个免费域名，虽然不上档次，不过恰好合适</description>
     </item>
     
     <item>
       <title>Hello Again~</title>
-      <link>https://heyeshuang.github.io/blog/2012/06/22/hello-again/</link>
+      <link>https://blog.heysh.eu.org/2012/06/22/hello-again/</link>
       <pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2012/06/22/hello-again/</guid>
+      <guid>https://blog.heysh.eu.org/2012/06/22/hello-again/</guid>
       <description>国内的免费主机始终是不靠谱的啊…… ——以上为结论 由于这样那样的原因，上一个博客化为了*时代的眼泪*，确切的说是*全灭*。于是，这里作为博客N</description>
     </item>
     

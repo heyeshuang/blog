@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openwrt on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/tags/openwrt/</link>
+    <link>https://blog.heysh.eu.org/tags/openwrt/</link>
     <description>Recent content in Openwrt on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 09 Sep 2015 13:58:27 +0000</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/tags/openwrt/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.eu.org/tags/openwrt/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title>
-      <link>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link>
+      <link>https://blog.heysh.eu.org/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link>
       <pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid>
+      <guid>https://blog.heysh.eu.org/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid>
       <description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description>
     </item>
     
