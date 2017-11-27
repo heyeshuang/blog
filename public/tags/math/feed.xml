@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/tags/math/</link>
+    <link>https://blog.heysh.xyz/tags/math/</link>
     <description>Recent content in Math on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 22 Oct 2017 13:37:58 +0800</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/tags/math/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.xyz/tags/math/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>为hugo加入数学公式支持</title>
-      <link>https://heyeshuang.github.io/blog/2017/10/22/added-math-support/</link>
+      <link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link>
       <pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/10/22/added-math-support/</guid>
+      <guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid>
       <description>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。 官方文档中其实有这一部分内容，但是那里是用MathJax的，而且在标准m</description>
     </item>
     

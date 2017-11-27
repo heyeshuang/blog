@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Feeds on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/feed/</link>
+    <link>https://blog.heysh.xyz/feed/</link>
     <description>Recent content in Feeds on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 22 Jun 2012 06:32:32 +0000</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/feed/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.xyz/feed/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>chicken</title>
-      <link>https://heyeshuang.github.io/blog/feed/chicken/</link>
+      <link>https://blog.heysh.xyz/feed/chicken/</link>
       <pubDate>Fri, 22 Jun 2012 06:32:32 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/feed/chicken/</guid>
+      <guid>https://blog.heysh.xyz/feed/chicken/</guid>
       <description>Nothing here.</description>
     </item>
     

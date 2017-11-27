@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/tags/python/</link>
+    <link>https://blog.heysh.xyz/tags/python/</link>
     <description>Recent content in Python on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Sep 2017 19:46:55 +0800</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/tags/python/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.xyz/tags/python/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于那个IME helper</title>
-      <link>https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/</link>
+      <link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link>
       <pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/09/06/gossip_about_ime_helper/</guid>
+      <guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid>
       <description>昨天前天我用鸟语写了一篇贼 正经 的说明，今天，我准备稍微介绍一下那里面的IME helper。 正如之前所说，那东西是为了配合atom插件自动开关</description>
     </item>
     
     <item>
       <title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title>
-      <link>https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/</link>
+      <link>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</link>
       <pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2017/09/05/atom-vim-mode-auto-switch-ime/</guid>
+      <guid>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</guid>
       <description>&lt;p&gt;As a vim-user and Chinese-speaker, I prefer &lt;a href=&#34;https://atom.io/packages/vim-mode-plus&#34;&gt;vim-mode-plus&lt;/a&gt; for Atom editor, but always disrupted by the IME in normal mode, like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://heyeshuang.github.io/blog/blog/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.heysh.xyz/blog/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34; /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>flask似乎不错</title>
-      <link>https://heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</link>
+      <link>https://blog.heysh.xyz/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</link>
       <pubDate>Tue, 11 Sep 2012 15:30:08 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</guid>
+      <guid>https://blog.heysh.xyz/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</guid>
       <description>首先接触的web框架是karrigell，也最后作出了点东西，感觉简单实用但是好像有点非主流。然后看到Django好像很流行，然后就在ope</description>
     </item>
     
     <item>
       <title>phpwind论坛刷分脚本（可用于openwrt）</title>
-      <link>https://heyeshuang.github.io/blog/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/</link>
+      <link>https://blog.heysh.xyz/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/</link>
       <pubDate>Tue, 11 Sep 2012 04:56:26 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/</guid>
+      <guid>https://blog.heysh.xyz/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/</guid>
       <description>用Python2写成，为什么不用Lua？因为我不会 &#39;&#39;&#39; Created on 2012-9-10 @author: hh &#39;&#39;&#39; import cookielib import urllib2 import urllib import time username=&amp;quot;Chetter.Hummin&amp;quot; password=&amp;quot;password&amp;quot; def login(usr, pwd): &#39;login function&#39; cj = cookielib.CookieJar() opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj)) opener.addheaders = [(&#39;User-agent&#39;,&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1&#39;)] url_login = &#39;http://bbs.sarabalst.com/2b/login.php&#39; body={&amp;quot;step&amp;quot;:&amp;quot;2&amp;quot;,&amp;quot;pwuser&amp;quot;:usr,&amp;quot;cktime&amp;quot;:&amp;quot;31536000&amp;quot;,&amp;quot;pwpwd&amp;quot;:pwd,&amp;quot;lgt&amp;quot;:&amp;quot;0&amp;quot;} print</description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shadowsocks on 贺叶霜的树：III</title>
-    <link>https://heyeshuang.github.io/blog/tags/shadowsocks/</link>
+    <link>https://blog.heysh.xyz/tags/shadowsocks/</link>
     <description>Recent content in Shadowsocks on 贺叶霜的树：III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 07 Jan 2015 15:05:56 +0000</lastBuildDate>
     
-	<atom:link href="https://heyeshuang.github.io/blog/tags/shadowsocks/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.heysh.xyz/tags/shadowsocks/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title>
-      <link>https://heyeshuang.github.io/blog/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link>
+      <link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link>
       <pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate>
       
-      <guid>https://heyeshuang.github.io/blog/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid>
+      <guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid>
       <description>那个……我还活着呢。 前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树</description>
     </item>
     
