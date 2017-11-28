@@ -13,5 +13,5 @@ draft: false
 
 <!--more-->
 
-{{%figure src="/blog/ipv6-test.png" title="IPV6测试"%}}
-{{%figure src="/blog/torrent.png" title="PT测试"%}}
+{{%figure src="/ipv6-test.png" title="IPV6测试"%}}
+{{%figure src="/torrent.png" title="PT测试"%}}

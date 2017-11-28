@@ -24,8 +24,8 @@ draft: false
 
 ## 接下来是截图时间：
 
-{{% figure src="/blog/font/5.png" title="这才是真正的宋体" width="50%"%}}
-{{% figure src="/blog/font/3.png" title="在正文也毫无压力" width="50%"%}}
-{{% figure src="/blog/font/4.png" title="还有这个light字重" width="50%"%}}
+{{% figure src="/font/5.png" title="这才是真正的宋体" width="50%"%}}
+{{% figure src="/font/3.png" title="在正文也毫无压力" width="50%"%}}
+{{% figure src="/font/4.png" title="还有这个light字重" width="50%"%}}
 
 题外话，中文可用的字体实在是太少了。因为`SimSun`太渣，windows下的中文连个可用的`serif`字体都没有，每天只能对着呆板的雅黑干瞪眼……
