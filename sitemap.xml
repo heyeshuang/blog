@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.heysh.xyz/2017/11/25/virmach-init/</loc>
+    <loc>https://blog.heysh.xyz/2017/11/27/2017-11-27-%E6%96%B0%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</loc>
     <lastmod>2017-11-25T12:35:54+08:00</lastmod>
   </url>
   
@@ -433,6 +438,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/blog/</loc>
+    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/categories/</loc>
     <priority>0</priority>
   </url>
@@ -691,7 +702,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
+    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -870,6 +881,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F/</loc>
     <lastmod>2017-11-12T22:12:00+08:00</lastmod>
     <priority>0</priority>
@@ -889,7 +906,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
+    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -973,7 +990,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
+    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   

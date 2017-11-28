@@ -7,17 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 25 Nov 2017 12:35:54 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Nov 2017 22:59:56 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>换了个新域名</title>
+      <link>https://blog.heysh.xyz/2017/11/27/2017-11-27-%E6%96%B0%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Mon, 27 Nov 2017 22:59:56 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2017/11/27/2017-11-27-%E6%96%B0%E5%9F%9F%E5%90%8D/</guid>
+      <description>距我丢掉heysh.tk这个域名已经一年多了。在那之后，我失去了对tk域名的信任，趁着换hugo的功夫，直接使用github.io的二级地址</description>
+    </item>
+    
+    <item>
       <title>VPS初始化checklist</title>
-      <link>https://blog.heysh.xyz/2017/11/25/virmach-init/</link>
+      <link>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</link>
       <pubDate>Sat, 25 Nov 2017 12:35:54 +0800</pubDate>
       
-      <guid>https://blog.heysh.xyz/2017/11/25/virmach-init/</guid>
+      <guid>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</guid>
       <description>仅供存档。另外，virmach黑五大减价了，KVM主机5.6$一年美滋滋。 这是我的邀请链接：https://billing.virmach.</description>
     </item>
     
