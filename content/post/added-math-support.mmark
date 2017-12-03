@@ -37,4 +37,4 @@ inline $$\sqrt{b^2-4ac}$$`会转成`\(\sqrt{b^2-4ac}\)`
 
 $$\hat{y}= \sigma(\omega^T X+b)=\frac{1}{1+e^{-(\omega^T X+b)}}$$
 
-另外，还有一种更加复杂的`<shortcode>`[方法](http://www.latkin.org/blog/2016/08/07/better-tex-math-typesetting-in-hugo/)，如果你是完美主义者的话。
+另外，还有一种更加复杂的`<shortcode>`[方法](http://www.latkin.org/2016/08/07/better-tex-math-typesetting-in-hugo/)，如果你是完美主义者的话。

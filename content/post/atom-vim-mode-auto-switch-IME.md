@@ -15,7 +15,7 @@ languageCode : "en"
 
 As a vim-user and Chinese-speaker, I prefer [vim-mode-plus](https://atom.io/packages/vim-mode-plus) for Atom editor, but always disrupted by the IME in normal mode, like this:
 
-![IME-in-atom](/blog/IME-in-atom.png)
+![IME-in-atom](/IME-in-atom.png)
 <!--more-->
 
 If we could [disable IMEs in normal mode](https://github.com/t9md/atom-vim-mode-plus/issues/446) then everything will be fine again. However, due to [the lack of the APIs](https://github.com/atom/atom/issues/1092), it is hardly possible to solve the problem in the editor.
@@ -40,4 +40,4 @@ python E:\\path\\to\\ime_helper.py --locale en_US #visual
 /usr/bin/fcitx-remote -c #visual
 #macOS: just use the default config
 ```
-![configure](/blog/atom-vim-configure.png)
+![configure](/atom-vim-configure.png)
