@@ -6,7 +6,7 @@ This is a modified version by He Yeshuang.
 
 ## Overview
 
-* Based on Yahoo's [Pure CSS] (http://purecss.io/) (v1.0.0)
+* Based on Yahoo's [Pure CSS](http://purecss.io/) (v1.0.0)
 * Fixed sidebar with social links:
   * Twitter
   * GNU social
@@ -95,6 +95,10 @@ paginate = 10
   # (relative to /static folder)
   custom_css = ["css/my.css"]
   custom_js = ["js/my.js"]
+
+  [params.piwikAnalytics]
+    siteid = 2
+    piwikroot = "//analytics.example.com/"
 
 [menu]
   # Shown in the side menu.
