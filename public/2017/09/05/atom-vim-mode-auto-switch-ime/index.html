@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Sep 05, 21:03</time>
+    <time>2017-09-05 21:03</time>
   </div>
 
   
@@ -269,20 +268,17 @@
 </ul>
 
 <p>Then we could configure this package.</p>
-
-<pre><code class="language-bash">#windows:
-python E:\\path\\to\\ime_helper.py --current #Get Current Input Source
-python E:\\path\\to\\ime_helper.py --dec ${source} #insert
-python E:\\path\\to\\ime_helper.py --locale en_US #normal
-python E:\\path\\to\\ime_helper.py --locale en_US #visual
-#linux:
-/usr/bin/fcitx-remote #Get Current Input Source
-/usr/bin/fcitx-remote -o #insert
-/usr/bin/fcitx-remote -c #normal
-/usr/bin/fcitx-remote -c #visual
-#macOS: just use the default config
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#09f;font-style:italic">#windows:
+</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --current <span style="color:#09f;font-style:italic">#Get Current Input Source
+</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --dec <span style="color:#a00">${</span><span style="color:#033">source</span><span style="color:#a00">}</span> <span style="color:#09f;font-style:italic">#insert
+</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --locale en_US <span style="color:#09f;font-style:italic">#normal
+</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --locale en_US <span style="color:#09f;font-style:italic">#visual
+</span><span style="color:#09f;font-style:italic">#linux:
+</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote <span style="color:#09f;font-style:italic">#Get Current Input Source
+</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote -o <span style="color:#09f;font-style:italic">#insert
+</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote -c <span style="color:#09f;font-style:italic">#normal
+</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote -c <span style="color:#09f;font-style:italic">#visual
+</span><span style="color:#09f;font-style:italic"></span>#macOS: just use the default config</code></pre></div>
 <p><img src="/atom-vim-configure.png" alt="configure" /></p>
 
   

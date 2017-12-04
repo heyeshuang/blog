@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Sep 30, 23:44</time>
+    <time>2017-09-30 23:44</time>
   </div>
 
   
@@ -273,16 +272,10 @@
 <h2 id="pentadactyl">Pentadactyl</h2>
 
 <p>Waterfox默认开启了多进程模式，会导致<code>Pentadactyl</code>不能正常工作：</p>
-
-<pre><code>Error: Permission denied to access property &quot;length&quot;
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Error: Permission denied to access property &#34;length&#34;</pre></div>
 <p>仍然是在<code>about:config</code>页面，查找<code>browser.tabs.remote.autostart</code>，把所有找到的项都改成<code>false</code>。</p>
-
-<pre><code>browser.tabs.remote.autostart=false
-browser.tabs.remote.autostart.2=false
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">browser.tabs.remote.autostart=false
+browser.tabs.remote.autostart.2=false</pre></div>
 <p>OK，保存完成，是时候升级<a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum</a>了。</p>
 
 <p>啊对了，本文同时发在<a href="http://heyeshuang.tk">我的博客</a>和<a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit</a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。</p>

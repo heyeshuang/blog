@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Nov 25, 12:35</time>
+    <time>2017-11-25 12:35</time>
   </div>
 
   
@@ -260,55 +259,34 @@
 <h2 id="新建用户">新建用户</h2>
 
 <p>感谢<a href="https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/">https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/</a></p>
-
-<pre><code>adduser hh
-gpasswd -a hh sudo
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">adduser hh
+gpasswd -a hh sudo</pre></div>
 <h2 id="添加ssh-key验证并禁用root用户ssh远程登录">添加SSH-KEY验证并禁用root用户SSH远程登录</h2>
-
-<pre><code>su - demo
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">su - demo
 mkdir .ssh
 chmod 700 .ssh
-vi .ssh/authorized_keys
-</code></pre>
-
-<pre><code>#vi /etc/ssh/sshd_config
+vi .ssh/authorized_keys</pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">#vi /etc/ssh/sshd_config
 PermitRootLogin no
 PasswordAuthentication no
-Port 22222
-</code></pre>
-
-<pre><code class="language-bash">sudo systemctl restart ssh
-</code></pre>
-
+Port 22222</pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl restart ssh</code></pre></div>
 <h2 id="安装配置防火墙-ufw">安装配置防火墙 (ufw)</h2>
-
-<pre><code>sudo apt-get update&amp;&amp;sudo apt-get upgrade
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">sudo apt-get update&amp;&amp;sudo apt-get upgrade
 sudo apt-get install ufw
 sudo ufw allow 22222 #允许SSH
-sudo ufw enable
-</code></pre>
-
+sudo ufw enable</pre></div>
 <h2 id="安装vim">安装vim</h2>
 
 <h2 id="安装shadowsocks-libev">安装shadowsocks-libev</h2>
-
-<pre><code>sudo sh -c 'printf &quot;deb http://httpredir.debian.org/debian jessie-backports main&quot; &gt; /etc/apt/sources.list.d/jessie-backports.list'
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">sudo sh -c &#39;printf &#34;deb http://httpredir.debian.org/debian jessie-backports main&#34; &gt; /etc/apt/sources.list.d/jessie-backports.list&#39;
 sudo apt update
 sudo apt -t jessie-backports install shadowsocks-libev
 sudo vim /etc/shadowsocks-libev/config.json
 sudo ufw allow &lt;PORT&gt;
 sudo systemctl start shadowsocks-libev
-sudo systemctl enable shadowsocks-libev
-</code></pre>
-
+sudo systemctl enable shadowsocks-libev</pre></div>
 <h2 id="安装4-x内核">安装4.x内核</h2>
-
-<pre><code>sudo apt-get install -t jessie-backports linux-image-amd64
-sudo update-grub
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">sudo apt-get install -t jessie-backports linux-image-amd64
+sudo update-grub</pre></div>
 <h2 id="启用bbr">启用BBR</h2>
 
 <p><a href="https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr">https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr</a></p>

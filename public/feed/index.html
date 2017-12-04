@@ -10,6 +10,36 @@
     <atom:link href="https://blog.heysh.xyz/feed/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>最近对博客的改动</title>
+      <link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link>
+      <pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid>
+      <description>
+
+&lt;h2 id=&#34;用chroma进行语法高亮&#34;&gt;用chroma进行语法高亮&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.30&#34;&gt;最近&lt;/a&gt;hugo内置了&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;chroma&lt;/a&gt;，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code&gt;highlight.js&lt;/code&gt;等脚本文件，理论上可以提高网页加载的速度。&lt;/p&gt;
+
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+
+&lt;p&gt;在&lt;code&gt;config.toml&lt;/code&gt;中加入以下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-TOML&#34; data-lang=&#34;TOML&#34;&gt;pygmentsCodefences = &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#高亮markdown的代码块&lt;/span&gt;
+pygmentsCodefencesGuessSyntax = &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#高亮markdown中没有标注语言的代码块&lt;/span&gt;
+pygmentsStyle = &lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;manni&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#高亮主题&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;可用的主题见&lt;a href=&#34;http://help.farbox.com/pygments.html&#34;&gt;这里&lt;/a&gt;。更多的设置可以参见hugo&lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;帮助&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;用typography-js修改样式&#34;&gt;用typography.js修改样式&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://kyleamathews.github.io/typography.js/&#34;&gt;Typography.js&lt;/a&gt;是生成网页字体排印格式的库。只要简单地利用已有的主题，就可以生成较为完善的CSS格式。当然，如果需要更精确的中文排版，请移步&lt;a href=&#34;https://hanzi.pro/&#34;&gt;汉字标准格式&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：&lt;a href=&#34;https://github.com/heyeshuang/typography2css&#34;&gt;typography2CSS&lt;/a&gt;，用来直接生成CSS文件。&lt;/p&gt;
+
+&lt;p&gt;之后，经过少量修改，即可用于现有的主题，效果如此博客所示。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>换了个新域名</title>
       <link>https://blog.heysh.xyz/2017/11/27/2017-11-27-%E6%96%B0%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Mon, 27 Nov 2017 22:59:56 +0800</pubDate>
@@ -40,55 +70,34 @@
 &lt;h2 id=&#34;新建用户&#34;&gt;新建用户&lt;/h2&gt;
 
 &lt;p&gt;感谢&lt;a href=&#34;https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/&#34;&gt;https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;adduser hh
-gpasswd -a hh sudo
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;adduser hh
+gpasswd -a hh sudo&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;添加ssh-key验证并禁用root用户ssh远程登录&#34;&gt;添加SSH-KEY验证并禁用root用户SSH远程登录&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;su - demo
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;su - demo
 mkdir .ssh
 chmod 700 .ssh
-vi .ssh/authorized_keys
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;#vi /etc/ssh/sshd_config
+vi .ssh/authorized_keys&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;#vi /etc/ssh/sshd_config
 PermitRootLogin no
 PasswordAuthentication no
-Port 22222
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo systemctl restart ssh
-&lt;/code&gt;&lt;/pre&gt;
-
+Port 22222&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl restart ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;安装配置防火墙-ufw&#34;&gt;安装配置防火墙 (ufw)&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get update&amp;amp;&amp;amp;sudo apt-get upgrade
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;sudo apt-get update&amp;amp;&amp;amp;sudo apt-get upgrade
 sudo apt-get install ufw
 sudo ufw allow 22222 #允许SSH
-sudo ufw enable
-&lt;/code&gt;&lt;/pre&gt;
-
+sudo ufw enable&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;安装vim&#34;&gt;安装vim&lt;/h2&gt;
 
 &lt;h2 id=&#34;安装shadowsocks-libev&#34;&gt;安装shadowsocks-libev&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo sh -c &#39;printf &amp;quot;deb http://httpredir.debian.org/debian jessie-backports main&amp;quot; &amp;gt; /etc/apt/sources.list.d/jessie-backports.list&#39;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;sudo sh -c &amp;#39;printf &amp;#34;deb http://httpredir.debian.org/debian jessie-backports main&amp;#34; &amp;gt; /etc/apt/sources.list.d/jessie-backports.list&amp;#39;
 sudo apt update
 sudo apt -t jessie-backports install shadowsocks-libev
 sudo vim /etc/shadowsocks-libev/config.json
 sudo ufw allow &amp;lt;PORT&amp;gt;
 sudo systemctl start shadowsocks-libev
-sudo systemctl enable shadowsocks-libev
-&lt;/code&gt;&lt;/pre&gt;
-
+sudo systemctl enable shadowsocks-libev&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;安装4-x内核&#34;&gt;安装4.x内核&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install -t jessie-backports linux-image-amd64
-sudo update-grub
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;sudo apt-get install -t jessie-backports linux-image-amd64
+sudo update-grub&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;启用bbr&#34;&gt;启用BBR&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr&#34;&gt;https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr&lt;/a&gt;&lt;/p&gt;
@@ -121,18 +130,12 @@ sudo update-grub
 &lt;h2 id=&#34;服务器端&#34;&gt;服务器端&lt;/h2&gt;
 
 &lt;h3 id=&#34;下载kcpraw&#34;&gt;下载kcpraw&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;mkdir ~/kcpraw
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;mkdir ~/kcpraw
 cd ~/kcpraw
 wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
-tar zxvf kcpraw-linux-amd64-20171021.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
+tar zxvf kcpraw-linux-amd64-20171021.tar.gz&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id=&#34;在后台开启kcpraw&#34;&gt;在后台开启kcpraw&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt; sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64  -t &amp;quot;127.0.0.1:443&amp;quot; -l &amp;quot;:8388&amp;quot; -mode fast2 &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt; sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64  -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;其中，&lt;code&gt;443&lt;/code&gt;是要包装的shadowsocks端口，同时，&lt;code&gt;8388&lt;/code&gt;是kcpraw使用的端口，请保证服务器防火墙允许&lt;code&gt;8388&lt;/code&gt;端口通过。&lt;/p&gt;
 
 &lt;h2 id=&#34;客户端&#34;&gt;客户端&lt;/h2&gt;
@@ -142,10 +145,7 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;p&gt;对于最新版本的Windows10，原版的&lt;code&gt;winpcap&lt;/code&gt;和&lt;code&gt;win10pcap&lt;/code&gt;似乎都不能用，可以使用兼容的&lt;a href=&#34;https://github.com/nmap/npcap&#34;&gt;npcap&lt;/a&gt;。&lt;/p&gt;
 
 &lt;h3 id=&#34;运行kcpraw&#34;&gt;运行kcpraw&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;kcpraw_client_windows_amd64 -r &amp;quot;&amp;lt;服务器IP&amp;gt;:8388&amp;quot; -l &amp;quot;:1082&amp;quot; -mode fast2
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;kcpraw_client_windows_amd64 -r &amp;#34;&amp;lt;服务器IP&amp;gt;:8388&amp;#34; -l &amp;#34;:1082&amp;#34; -mode fast2&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;其中&lt;code&gt;1082&lt;/code&gt;是设定的本地kcpraw端口。&lt;/p&gt;
 
 &lt;h3 id=&#34;修改shadowsocks客户端配置&#34;&gt;修改shadowsocks客户端配置&lt;/h3&gt;
@@ -280,10 +280,7 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;p&gt;言归正传。Aeolipile是一个Steem文章的渲染工具，（明面上的）用途是为了增强Steemit的Markdown功能，比如说代码、公式什么的。比如这篇文章，可能也需要访问&lt;a href=&#34;https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile&#34;&gt;这个页面&lt;/a&gt;才能看到脚注。具体支持的功能，可以看&lt;a href=&#34;https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem&#34;&gt;这篇文章&lt;/a&gt;。大体上说，你可以在这里使用几乎所有Markdown的扩展语法。（而且之后我可能会把页面做得更好看些……也许）&lt;/p&gt;
 
 &lt;p&gt;已有的文章都可以用Aeolipile渲染，只要访问这个页面就行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;和Steemit本身链接的构成差不多。&lt;/p&gt;
 
 &lt;p&gt;如果你也想使用这个工具的话，我建议：&lt;/p&gt;
@@ -362,10 +359,7 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
 
 &lt;p&gt;You can easily append author name and post link after &lt;a href=&#34;https://heyeshuang.github.io/aeolipile/#/&#34;&gt;https://heyeshuang.github.io/aeolipile/#/&lt;/a&gt;, like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Similar with the Steemit URL. And you can simply add this link before your post, just like me. :wink:&lt;/p&gt;
 
 &lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
@@ -376,12 +370,9 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;h4 id=&#34;code&#34;&gt;Code!&lt;/h4&gt;
 
 &lt;p&gt;Place your code between ``` like &lt;a href=&#34;https://help.github.com/articles/creating-and-highlighting-code-blocks/&#34;&gt;this&lt;/a&gt;, then you&#39;ll get a codeblock:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;redcarpet&#39;
-markdown = Redcarpet.new(&amp;quot;Hello World!&amp;quot;)
-puts markdown.to_html
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;color:#366&#34;&gt;require&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;redcarpet&amp;#39;&lt;/span&gt;
+markdown &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#360&#34;&gt;Redcarpet&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;new(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#366&#34;&gt;puts&lt;/span&gt; markdown&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;to_html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id=&#34;math&#34;&gt;Math!&lt;/h4&gt;
 
 &lt;p&gt;You can write TeX between &lt;code&gt;$$&lt;/code&gt; tags.&lt;/p&gt;
@@ -501,10 +492,7 @@ puts markdown.to_html
 &lt;p&gt;官方文档中其实有&lt;a href=&#34;https://gohugo.io/content-management/formats/#mathjax-with-hugo&#34;&gt;这一部分内容&lt;/a&gt;，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href=&#34;http://nosubstance.me/post/a-great-toolset-for-static-blogging/&#34;&gt;这里&lt;/a&gt;一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p&gt;
 
 &lt;p&gt;Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code&gt;.mmark&lt;/code&gt;后缀就行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new post/some-name.mmark
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new post/some-name.mmark&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href=&#34;https://github.com/miekg/mmark/wiki/Syntax&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;用这种渲染器，用&lt;code&gt;$$&lt;/code&gt;包裹的文字会自动转成用&lt;code&gt;\[&lt;/code&gt;或者&lt;code&gt;\(&lt;/code&gt;包裹，比如，&lt;code&gt;inline $$\sqrt{b^2-4ac}$$&lt;/code&gt;会转成&lt;code&gt;\(\sqrt{b^2-4ac}\)&lt;/code&gt;&lt;/p&gt;
@@ -548,22 +536,16 @@ puts markdown.to_html
 &lt;h3 id=&#34;那么用html实现高级功能呢&#34;&gt;那么用HTML实现高级功能呢？&lt;/h3&gt;
 
 &lt;p&gt;很遗憾，这也不大可能。经过&lt;a href=&#34;https://github.com/steemit/condenser/blob/4d9c1d8f76366097d9a7159b1760f51d45201eb0/src/app/utils/SanitizeConfig.js&#34;&gt;sanitize&lt;/a&gt;过滤，编辑器只支持以下几个标签：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;div, iframe, del,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;div, iframe, del,
 a, p, b, i, q, br, ul, li, ol, img,
 h1, h2, h3, h4, h5, h6, hr,
 blockquote, pre, code, em, strong, center,
 table, thead, tbody, tr, th, td,
-strike, sup, sub
-&lt;/code&gt;&lt;/pre&gt;
-
+strike, sup, sub&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;并没有什么超过Markdown语法的新功能。&lt;/p&gt;
 
 &lt;p&gt;当然，编辑器好心地提供了几个class来控制文字和图像的位置：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&#39;pull-right&#39;, &#39;pull-left&#39;, &#39;text-justify&#39;, &#39;text-rtl&#39;, &#39;text-center&#39;, &#39;text-right&#39;, &#39;videoWrapper&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;用法大概是 &lt;code&gt;&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code&gt;，或者看&lt;a href=&#34;https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying&#34;&gt;这里&lt;/a&gt;的介绍。&lt;/p&gt;
 
 &lt;h2 id=&#34;文章的url生成原理&#34;&gt;文章的URL生成原理&lt;/h2&gt;
@@ -648,27 +630,22 @@ strike, sup, sub
     shortcode，点击展开
   &lt;/h4&gt;
 &lt;/summary&gt;
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;
-  &amp;lt;h4&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;details&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;summary&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;h4&lt;/span&gt;&amp;gt;
     {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
-  &amp;lt;/h4&amp;gt;
-&amp;lt;/summary&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;h4&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;summary&lt;/span&gt;&amp;gt;
 {{.Inner}}
-&amp;lt;/details&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
+&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;details&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/details&gt;
 &lt;/p&gt;
 
 &lt;p&gt;用法是这样的：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{% spoiler &amp;quot;You killed my father!&amp;quot; %}}
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
 I am your father.
 NOOOOOOO!
-{{% /spoiler %}}
-&lt;/code&gt;&lt;/pre&gt;
-
+{{% /spoiler %}}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p&gt;
 
 &lt;p&gt;spoiler在steemit社区的讨论：&lt;a href=&#34;https://github.com/steemit/condenser/issues/8&#34;&gt;https://github.com/steemit/condenser/issues/8&lt;/a&gt;&lt;/p&gt;
@@ -881,16 +858,10 @@ Incognito This Tab&lt;/a&gt;
 &lt;h2 id=&#34;pentadactyl&#34;&gt;Pentadactyl&lt;/h2&gt;
 
 &lt;p&gt;Waterfox默认开启了多进程模式，会导致&lt;code&gt;Pentadactyl&lt;/code&gt;不能正常工作：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Error: Permission denied to access property &amp;quot;length&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;Error: Permission denied to access property &amp;#34;length&amp;#34;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;仍然是在&lt;code&gt;about:config&lt;/code&gt;页面，查找&lt;code&gt;browser.tabs.remote.autostart&lt;/code&gt;，把所有找到的项都改成&lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;browser.tabs.remote.autostart=false
-browser.tabs.remote.autostart.2=false
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;browser.tabs.remote.autostart=false
+browser.tabs.remote.autostart.2=false&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;OK，保存完成，是时候升级&lt;a href=&#34;https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta&#34;&gt;Firefox Quantum&lt;/a&gt;了。&lt;/p&gt;
 
 &lt;p&gt;啊对了，本文同时发在&lt;a href=&#34;http://heyeshuang.tk&#34;&gt;我的博客&lt;/a&gt;和&lt;a href=&#34;https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox&#34;&gt;Steemit&lt;/a&gt;上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p&gt;
@@ -954,8 +925,7 @@ browser.tabs.remote.autostart.2=false
 &lt;p&gt;正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p&gt;
 
 &lt;p&gt;嗯，这种需求，我听过一个叫AHK的语言……&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
 ;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
 setChineseLayout(){
     ;发送中文输入法切换快捷键，请根据实际情况设置。
@@ -964,9 +934,7 @@ setChineseLayout(){
     send {Ctrl Down}{Shift}
     send {Ctrl Down},
     send {Ctrl Up}
-}
-&lt;/code&gt;&lt;/pre&gt;
-
+}&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p&gt;
 
 &lt;p&gt;然后就愉快地决定用 Python+ctypes 干这种脏活了，然后发现：windows API真是太难写了！一个更改输入法有4种写法！而且都不能用！&lt;/p&gt;
@@ -999,20 +967,17 @@ setChineseLayout(){
 &lt;/ul&gt;
 
 &lt;p&gt;Then we could configure this package.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#windows:
-python E:\\path\\to\\ime_helper.py --current #Get Current Input Source
-python E:\\path\\to\\ime_helper.py --dec ${source} #insert
-python E:\\path\\to\\ime_helper.py --locale en_US #normal
-python E:\\path\\to\\ime_helper.py --locale en_US #visual
-#linux:
-/usr/bin/fcitx-remote #Get Current Input Source
-/usr/bin/fcitx-remote -o #insert
-/usr/bin/fcitx-remote -c #normal
-/usr/bin/fcitx-remote -c #visual
-#macOS: just use the default config
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#windows:
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --current &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --dec &lt;span style=&#34;color:#a00&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#linux:
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -o &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;#macOS: just use the default config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&#34;/atom-vim-configure.png&#34; alt=&#34;configure&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
@@ -1108,47 +1073,41 @@ python E:\\path\\to\\ime_helper.py --locale en_US #visual
 &lt;p&gt;所以只能改模版了，思路是把&lt;code&gt;/feed&lt;/code&gt;目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code&gt;：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;rss version=&amp;quot;2.0&amp;quot; xmlns:atom=&amp;quot;http://www.w3.org/2005/Atom&amp;quot;&amp;gt;
-  &amp;lt;channel&amp;gt;
-    &amp;lt;title&amp;gt;{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/title&amp;gt;
-    &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
-    &amp;lt;description&amp;gt;Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/description&amp;gt;
-    &amp;lt;generator&amp;gt;Hugo -- gohugo.io&amp;lt;/generator&amp;gt;{{ with .Site.LanguageCode }}
-    &amp;lt;language&amp;gt;{{.}}&amp;lt;/language&amp;gt;{{end}}{{ with .Site.Author.email }}
-    &amp;lt;managingEditor&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/managingEditor&amp;gt;{{end}}{{ with .Site.Author.email }}
-    &amp;lt;webMaster&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/webMaster&amp;gt;{{end}}{{ with .Site.Copyright }}
-    &amp;lt;copyright&amp;gt;{{.}}&amp;lt;/copyright&amp;gt;{{end}}{{ if not .Date.IsZero }}
-    &amp;lt;lastBuildDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/lastBuildDate&amp;gt;{{ end }}
-    &amp;lt;atom:link href=&amp;quot;{{.Permalink}}&amp;quot; rel=&amp;quot;self&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; /&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;rss&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;version&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;2.0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;xmlns:atom&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;channel&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;link&lt;/span&gt;&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;link&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;description&lt;/span&gt;&amp;gt;Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;description&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;generator&lt;/span&gt;&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;generator&lt;/span&gt;&amp;gt;{{ with .Site.LanguageCode }}
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;language&lt;/span&gt;&amp;gt;{{.}}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;language&lt;/span&gt;&amp;gt;{{end}}{{ with .Site.Author.email }}
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;managingEditor&lt;/span&gt;&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;managingEditor&lt;/span&gt;&amp;gt;{{end}}{{ with .Site.Author.email }}
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;webMaster&lt;/span&gt;&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;webMaster&lt;/span&gt;&amp;gt;{{end}}{{ with .Site.Copyright }}
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;copyright&lt;/span&gt;&amp;gt;{{.}}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;copyright&lt;/span&gt;&amp;gt;{{end}}{{ if not .Date.IsZero }}
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;lastBuildDate&lt;/span&gt;&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;lastBuildDate&lt;/span&gt;&amp;gt;{{ end }}
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;atom:link&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;{{.Permalink}}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;self&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;application/rss+xml&amp;#34;&lt;/span&gt; /&amp;gt;
     {{ range .Site.RegularPages }}
-    &amp;lt;item&amp;gt;
-      &amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
-      &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
-      &amp;lt;pubDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/pubDate&amp;gt;
-      {{ with .Site.Author.email }}&amp;lt;author&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/author&amp;gt;{{end}}
-      &amp;lt;guid&amp;gt;{{ .Permalink }}&amp;lt;/guid&amp;gt;
-      &amp;lt;description&amp;gt;{{ .Content | html }}&amp;lt;/description&amp;gt;
-    &amp;lt;/item&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;item&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;link&lt;/span&gt;&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;link&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;pubDate&lt;/span&gt;&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;pubDate&lt;/span&gt;&amp;gt;
+      {{ with .Site.Author.email }}&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;author&lt;/span&gt;&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;author&lt;/span&gt;&amp;gt;{{end}}
+      &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;guid&lt;/span&gt;&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;guid&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;description&lt;/span&gt;&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;description&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;item&lt;/span&gt;&amp;gt;
     {{ end }}
-  &amp;lt;/channel&amp;gt;
-&amp;lt;/rss&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
+  &amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;channel&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;rss&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;基本上就是hugo自带的RSS模板，除了把&lt;code&gt;{{ range .Data.Pages }}&lt;/code&gt;改成了&lt;code&gt;{{ range .Site.RegularPages }}&lt;/code&gt;，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;https://github.com/yoshiharuyamashita/blackburn&lt;/a&gt;，稍微改了一些小bug，还换了个颜色。&lt;del&gt;哪天我要把名字改成greenfreeze。&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;然后别忘了新建一个&lt;code&gt;\content\feed\chicken.md&lt;/code&gt;：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title: &#39;chicken&#39;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;---
+title: &amp;#39;chicken&amp;#39;
 author: HeYSH
 date: 2012-06-22T06:32:32+00:00
 aliases:
   - /%3ffeed%3drss2
 ---
-Nothing here.
-&lt;/code&gt;&lt;/pre&gt;
-
+Nothing here.&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;当然，类似&lt;code&gt;/?feed=rss2&lt;/code&gt;这样的地址就用不了了，我试过的。&lt;/p&gt;
 </description>
     </item>
@@ -1170,21 +1129,18 @@ Nothing here.
 &lt;/ul&gt;
 
 &lt;p&gt;对于正文，可以用&lt;code&gt;pandoc&lt;/code&gt;和&lt;code&gt;pypandoc&lt;/code&gt;转换：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;pypandoc&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;os&lt;/span&gt;
+root &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;./content&amp;#34;&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pypandoc,os
-root = &amp;quot;./content&amp;quot;
-
-for rt, dirs, files in os.walk(root):
-    for filename in files:
-        with open(os.path.join(rt, filename), &#39;r&#39;, encoding=&#39;utf-8&#39;) as fin:
-            data = fin.read()
-        ds = data.split(&#39;---&#39;)
-        ds[2] = pypandoc.convert_text(ds[2], &#39;md&#39;, format=&#39;html&#39;)
-        do = &#39;---\n&#39;.join(ds)
-        with open(filename, &#39;w&#39;, encoding=&#39;utf-8&#39;) as file:
-            file.write(do)
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; rt, dirs, files &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;walk(root):
+    &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; filename &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; files:
+        &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;open&lt;/span&gt;(os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;join(rt, filename), &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;, encoding&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; fin:
+            data &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; fin&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;read()
+        ds &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; data&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;---&amp;#39;&lt;/span&gt;)
+        ds[&lt;span style=&#34;color:#f60&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; pypandoc&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;convert_text(ds[&lt;span style=&#34;color:#f60&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;md&amp;#39;&lt;/span&gt;, format&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;html&amp;#39;&lt;/span&gt;)
+        do &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;---&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;join(ds)
+        &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;open&lt;/span&gt;(filename, &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;, encoding&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;file&lt;/span&gt;:
+            &lt;span style=&#34;color:#366&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;write(do)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;其他的……手改保平安……&lt;/p&gt;
 
 &lt;p&gt;……&lt;/p&gt;
@@ -1199,27 +1155,24 @@ for rt, dirs, files in os.walk(root):
 &lt;p&gt;为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code&gt;aliases&lt;/code&gt;行，可以将原来的地址转发到新地址。&lt;/p&gt;
 
 &lt;p&gt;同样的，我也写了一个辣鸡脚本：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pypandoc
-import os
-root = &amp;quot;./content&amp;quot;
-for rt, dirs, files in os.walk(root):
-    for filename in files:
-        with open(os.path.join(rt, filename), &#39;r&#39;, encoding=&#39;utf-8&#39;) as fin:
-            data = fin.readlines()
-            try:
-                urlIndex = [n for n, l in enumerate(data) if l.find(&amp;quot;url:&amp;quot;) != -1][0]
-                url = data[urlIndex].split(&amp;quot;url:&amp;quot;)[1]
-                aliasLine = &amp;quot;  -&amp;quot; + url
-                data.insert(urlIndex + 1, aliasLine)
-                data.insert(urlIndex + 1, &amp;quot;aliases:\n&amp;quot;)
-            except:
-                pass
-        with open(filename, &#39;w&#39;, encoding=&#39;utf-8&#39;) as file:
-            for d in data:
-                file.write(d)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;pypandoc&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;os&lt;/span&gt;
+root &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;./content&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; rt, dirs, files &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;walk(root):
+    &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; filename &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; files:
+        &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;open&lt;/span&gt;(os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;join(rt, filename), &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;, encoding&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; fin:
+            data &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; fin&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;readlines()
+            &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;try&lt;/span&gt;:
+                urlIndex &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; [n &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; n, l &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;enumerate&lt;/span&gt;(data) &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; l&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;find(&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;url:&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#555&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt;][&lt;span style=&#34;color:#f60&#34;&gt;0&lt;/span&gt;]
+                url &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; data[urlIndex]&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;url:&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt;]
+                aliasLine &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;  -&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; url
+                data&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;insert(urlIndex &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt;, aliasLine)
+                data&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;insert(urlIndex &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;aliases:&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;)
+            &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;except&lt;/span&gt;:
+                &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;pass&lt;/span&gt;
+        &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;open&lt;/span&gt;(filename, &lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;, encoding&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;file&lt;/span&gt;:
+            &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; d &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; data:
+                &lt;span style=&#34;color:#366&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;write(d)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -1231,8 +1184,7 @@ for rt, dirs, files in os.walk(root):
       <description>&lt;p&gt;书接上文 &lt;del&gt;（虽然我是先写的这一篇）&lt;/del&gt;，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code&gt;/public&lt;/code&gt;目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code&gt;master&lt;/code&gt;分支保存源文件，&lt;code&gt;gh-page&lt;/code&gt;分支来展示，像&lt;a href=&#34;http://www.gohugo.org/doc/tutorials/github-pages-blog/&#34;&gt;这里&lt;/a&gt;说的那样。&lt;/p&gt;
 
 &lt;p&gt;这里假设你已经&lt;code&gt;init&lt;/code&gt;过了你的&lt;code&gt;hugo&lt;/code&gt;目录：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Create a new orphand branch (no commit history) named gh-pages
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;# Create a new orphand branch (no commit history) named gh-pages
 git checkout --orphan gh-pages
 
 # Unstage all files
@@ -1243,7 +1195,7 @@ git checkout master README.md
 
 # Add and commit that file
 git add .
-git commit -m &amp;quot;INIT: initial commit on gh-pages branch&amp;quot;
+git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
 
 # Push to remote gh-pages branch
 git push origin gh-pages
@@ -1269,21 +1221,16 @@ hugo
 git add -A
 
 # Commit and push to master
-git commit -m &amp;quot;Updating site&amp;quot; &amp;amp;&amp;amp; git push origin master
+git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
 
 # Push the public subtree to the gh-pages branch
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code&gt;&lt;/pre&gt;
-
+git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;之后每次更新需要&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo
 git add -A
-git commit -m &amp;quot;some messages&amp;quot;
+git commit -m &amp;#34;some messages&amp;#34;
 git push origin master
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code&gt;&lt;/pre&gt;
-
+git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;像我这样的强迫症可以把主题也做一个&lt;code&gt;subtree&lt;/code&gt;出来。&lt;/p&gt;
 </description>
     </item>
@@ -1305,15 +1252,12 @@ git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;p&gt;这个文件看起来特别像是JSON，但是是用空格分割的，而且还有\\注释。本来把这东西转换成JSON才是工作的大头，可是我懒了：找到了另一个玩家的&lt;a href=&#34;http://uglyvpn.com/2015/03/01/dota-2-items-txt-to-xmljson-tool/&#34;&gt;Dota 2 items.txt/npc_abilities.txt to xml/json tool v1.1&lt;/a&gt;，然后就是简单的排序了~&lt;/p&gt;
 
 &lt;p&gt;另外，除了法球，还有许多技能也是0秒CD的哦，比如幽鬼的降临什么的~&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;Name&amp;quot;: &amp;quot; reality&amp;quot;,
-  &amp;quot;HeroName&amp;quot;: &amp;quot;spectre&amp;quot;,
-  &amp;quot;ID&amp;quot;: &amp;quot;5338&amp;quot;,
-  &amp;quot;Cooldown&amp;quot;: 0.0
-},
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+  &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34; reality&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;HeroName&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;spectre&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;ID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;5338&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Cooldown&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f60&#34;&gt;0.0&lt;/span&gt;
+}&lt;span style=&#34;color:#a00;background-color:#faa&#34;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -1342,44 +1286,32 @@ git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;li&gt;安装nethogs&lt;/li&gt;
 &lt;li&gt;创建&lt;code&gt;/root/monitor.sh&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;TIMEOUT=3600
-TIMESTAMP=`date +%b_%d_%Y_%H_%M_%S`
-OUTPUT=/var/log/nethogs/$TIMESTAMP.log
-bash -ic &amp;quot;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;$OUTPUT;kill 0;) | (sleep $TIMEOUT;kill 0; )&amp;quot; 3&amp;gt;&amp;amp;1 2&amp;gt;/dev/null
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#033&#34;&gt;TIMEOUT&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f60&#34;&gt;3600&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;TIMESTAMP&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;date +%b_%d_%Y_%H_%M_%S&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;OUTPUT&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;/var/log/nethogs/&lt;span style=&#34;color:#033&#34;&gt;$TIMESTAMP&lt;/span&gt;.log
+bash -ic &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$OUTPUT&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;;kill 0;) | (sleep &lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$TIMEOUT&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;;kill 0; )&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f60&#34;&gt;3&lt;/span&gt;&amp;gt;&amp;amp;&lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f60&#34;&gt;2&lt;/span&gt;&amp;gt;/dev/null&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;/etc/systemd/system/nethogs.timer&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[Unit]
-Description=Nethogs Daemon
-[Timer]
-OnBootSec=1min
-OnUnitActiveSec=1h
-[Install]
-WantedBy=timers.target
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt;Unit&lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;Nethogs Daemon
+&lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt;Timer&lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;OnBootSec&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;1min
+&lt;span style=&#34;color:#033&#34;&gt;OnUnitActiveSec&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;1h
+&lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt;Install&lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;WantedBy&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;timers.target&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;/etc/systemd/system/nethogs.service&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[Unit]
-Description=Nethogs run
-[Service]
-Type=oneshot
-ExecStart=/root/monitor.sh
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt;Unit&lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;Nethogs run
+&lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;Type&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;oneshot
+&lt;span style=&#34;color:#033&#34;&gt;ExecStart&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;/root/monitor.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;查看使用情况用&lt;a href=&#34;https://github.com/boopathi/nethogs-parser&#34;&gt;Nethogs parser&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./hogs -type=pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./hogs -type&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;pretty /var/log/nethogs/Jan_03_2017_09_20_36.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -1646,25 +1578,22 @@ process.&lt;/p&gt;
       <description>&lt;p&gt;背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p&gt;
 
 &lt;p&gt;大概上思路和&lt;a href=&#34;http://talk.withme.me/?p=51&#34;&gt;这里&lt;/a&gt;一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code&gt;6ndp&lt;/code&gt;,&lt;code&gt;ndppd&lt;/code&gt;和&lt;code&gt;radvd&lt;/code&gt;都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code&gt;/etc/config/dhcp&lt;/code&gt;的关键几行大概应该是这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# /etc/config/dhcp:
-config dhcp &#39;lan&#39;
-        option interface &#39;lan&#39;
-        option start &#39;100&#39;
-        option limit &#39;150&#39;
-        option leasetime &#39;12h&#39;
-#       option dhcpv6 &#39;server&#39;
-        option ra &#39;relay&#39;
-        option ndp &#39;relay&#39;
-#config dhcp &#39;wan&#39;
-        #option interface &#39;wan&#39;
-        #option ignore &#39;1&#39;
-config dhcp &#39;wan6&#39;
-        option ra &#39;relay&#39;
-        option ndp &#39;relay&#39;
-        option master &#39;1&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;# /etc/config/dhcp:
+config dhcp &amp;#39;lan&amp;#39;
+        option interface &amp;#39;lan&amp;#39;
+        option start &amp;#39;100&amp;#39;
+        option limit &amp;#39;150&amp;#39;
+        option leasetime &amp;#39;12h&amp;#39;
+#       option dhcpv6 &amp;#39;server&amp;#39;
+        option ra &amp;#39;relay&amp;#39;
+        option ndp &amp;#39;relay&amp;#39;
+#config dhcp &amp;#39;wan&amp;#39;
+        #option interface &amp;#39;wan&amp;#39;
+        #option ignore &amp;#39;1&amp;#39;
+config dhcp &amp;#39;wan6&amp;#39;
+        option ra &amp;#39;relay&amp;#39;
+        option ndp &amp;#39;relay&amp;#39;
+        option master &amp;#39;1&amp;#39;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;另外，还需要把&lt;code&gt;luci&lt;/code&gt;的&lt;code&gt;interface&lt;/code&gt;页面下的&lt;code&gt;IPv6 ULA-Prefix&lt;/code&gt;删掉。&lt;/p&gt;
 
 &lt;p&gt;现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启&lt;code&gt;/etc/init.d/odhcpd&lt;/code&gt;；不管了，我先在这里存个盘。&lt;/p&gt;
@@ -1694,10 +1623,7 @@ config dhcp &#39;wan6&#39;
 &lt;p&gt;解决方案：把内核参数改了就行。在su以后&lt;code&gt;sysctl -w net.ipv6.conf.wlan0.accept_ra_defrtr=1&lt;/code&gt;可以坚持到下次启动。&lt;/p&gt;
 
 &lt;p&gt;更详细的说明见&lt;a href=&#34;http://www.cnfy.me/2013/04/miuiwifiipv6.html&#34;&gt;这里&lt;/a&gt;。简单概括一下，你需要在&lt;code&gt;/etc/sysctl.conf&lt;/code&gt;里加上&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;net.ipv6.conf.wlan0.accept_ra_defrtr=1
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;net.ipv6.conf.wlan0.accept_ra_defrtr=1&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;这一行，然后每次启动*尽量晚的*以su身份运行&lt;code&gt;sysctl -p&lt;/code&gt;就行，因为&lt;code&gt;/init_qcom.sh&lt;/code&gt;运行的就挺晚的，所以直接写在&lt;code&gt;/etc/init.d/&lt;/code&gt;里是不行的。&lt;/p&gt;
 
 &lt;p&gt;另外，这次应该是高通不知道在想什么user space，小米只是背锅。&lt;/p&gt;
@@ -1896,19 +1822,16 @@ Order》，近日有关新Servant“Saber”的信息也已经曝光，而这个
 &lt;p&gt;然后是shadowsocks，按照&lt;a href=&#34;https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E&#34;&gt;这里&lt;/a&gt;的办法安装。根据&lt;a href=&#34;http://blog.robotshell.org/2014/about-shadowsocks/&#34;&gt;这里&lt;/a&gt;的说法，就用python版的服务端就好。&lt;/p&gt;
 
 &lt;p&gt;为了看起来像是技术文档的样子，下面是&lt;code&gt;/etc/shadowsocks.json&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;server&amp;quot;:[&amp;quot;[::0]&amp;quot;,&amp;quot;0.0.0.0&amp;quot;],
-    &amp;quot;server_port&amp;quot;:443,
-    &amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
-    &amp;quot;local_port&amp;quot;:1080,
-    &amp;quot;password&amp;quot;:&amp;quot;******&amp;quot;,
-    &amp;quot;timeout&amp;quot;:300,
-    &amp;quot;method&amp;quot;:&amp;quot;aes-256-cfb&amp;quot;,
-    &amp;quot;fast_open&amp;quot;: false
-}
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;{
+    &amp;#34;server&amp;#34;:[&amp;#34;[::0]&amp;#34;,&amp;#34;0.0.0.0&amp;#34;],
+    &amp;#34;server_port&amp;#34;:443,
+    &amp;#34;local_address&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,
+    &amp;#34;local_port&amp;#34;:1080,
+    &amp;#34;password&amp;#34;:&amp;#34;******&amp;#34;,
+    &amp;#34;timeout&amp;#34;:300,
+    &amp;#34;method&amp;#34;:&amp;#34;aes-256-cfb&amp;#34;,
+    &amp;#34;fast_open&amp;#34;: false
+}&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1929,27 +1852,18 @@ Order》，近日有关新Servant“Saber”的信息也已经曝光，而这个
 &lt;p&gt;update2：从&lt;a href=&#34;https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks&#34;&gt;这里&lt;/a&gt;看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p&gt;
 
 &lt;p&gt;在服务器运行这个：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;然后设中转：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
 iptables -I FORWARD 1 -s 10.8.0.0/24 -j ACCEPT
 iptables -I FORWARD 2 -d 10.8.0.0/24 -j ACCEPT
-iptables -I FORWARD 3 -j LOG --log-prefix &amp;quot;FORWARD-LOG &amp;quot;
-iptables -I FORWARD 4 -j DROP
-&lt;/code&gt;&lt;/pre&gt;
-
+iptables -I FORWARD 3 -j LOG --log-prefix &amp;#34;FORWARD-LOG &amp;#34;
+iptables -I FORWARD 4 -j DROP&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;把在&lt;code&gt;/root/&lt;/code&gt;生成的&lt;code&gt;.ovpn&lt;/code&gt;文件复制到本机，这时我发现chrome并没有自带SCP……&lt;/p&gt;
 
 &lt;p&gt;在得到的&lt;code&gt;.ovpn&lt;/code&gt;文件里加两行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;socks-proxy 127.0.0.1 1080
-route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;socks-proxy 127.0.0.1 1080
+route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;然后去下&lt;a href=&#34;https://openvpn.net/index.php/open-source/downloads.html&#34;&gt;客户端&lt;/a&gt;，不要手贱点xp版本，否则今天下午就没空写作业了~&lt;/p&gt;
 
 &lt;p&gt;如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的&lt;code&gt;.ovpn&lt;/code&gt;文件（&lt;code&gt;etcopenvpnserver.ovpn&lt;/code&gt;）修改为tcp模式。&lt;/p&gt;
@@ -1997,16 +1911,13 @@ route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
 &lt;p&gt;TL;DR：请在&lt;a href=&#34;https://gist.github.com/heyeshuang/9305089&#34;&gt;这里&lt;/a&gt;下载修改过的版本，在本人的2成新db-120上测试通过。&lt;/p&gt;
 
 &lt;p&gt;把上面那东西扔到&lt;code&gt;/bin&lt;/code&gt;里之后，在crontab里添上这么一段：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* * * * * /bin/wrtbwmon setup br0
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;* * * * * /bin/wrtbwmon setup br0
 */30 0-3 * * * /bin/wrtbwmon update /tmp/usage.db peak
 */30,59 4-8 * * * /bin/wrtbwmon update /tmp/usage.db offpeak
 */30 9-23 * * * /bin/wrtbwmon update /tmp/usage.db peak
 */30 * * * * /bin/wrtbwmon publish /tmp/usage.db /tmp/usage.htm /tmp/dhcp.leases
 30 * * * * cp /tmp/usage.db /root/usage.db
-* * * * * [ ! -f /tmp/usage.db ] &amp;amp;&amp;amp; cp /root/usage.db /tmp/usage.db
-&lt;/code&gt;&lt;/pre&gt;
-
+* * * * * [ ! -f /tmp/usage.db ] &amp;amp;&amp;amp; cp /root/usage.db /tmp/usage.db&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&#34;http://code.google.com/p/wrtbwmon/wiki/Deploying&#34;&gt;自带的教程&lt;/a&gt;写的crontab似乎跟OpenWRT不兼容……&lt;em&gt;这里的一定是雨林木风精简版OpenWRT！&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;又及：为了凑字数，关于如何在nat后面使用isatap的方法参见&lt;a href=&#34;http://wiki.tuna.tsinghua.edu.cn/IsatapBehindNat&#34;&gt;这里&lt;/a&gt;&lt;/p&gt;
@@ -2228,10 +2139,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p&gt;&lt;/li&gt;
       
       <guid>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid>
       <description>&lt;p&gt;如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样&lt;strong&gt;恼羞成怒&lt;/strong&gt;，抱着“就是不让你挣钱”的扭曲心态，直接修改&lt;code&gt;C:\Windows\System32\drivers\etc\hosts&lt;/code&gt;加上一行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;127.0.0.1   ww w.dyy55.c om
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;127.0.0.1   ww w.dyy55.c om&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;（去掉空格）&lt;/p&gt;
 
 &lt;p&gt;这样虽然有效，但是过于简单粗暴（But I’m lovin’ it）&lt;/p&gt;
@@ -2523,15 +2431,12 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;今天在互联网上hang about的时候，发现了&lt;a href=&#34;http://www.maylin.net/Fireworks.html&#34;&gt;这个&lt;/a&gt;：&lt;/p&gt;
 
 &lt;p&gt;在h1位置就大张旗鼓的用p标签写着Posted July 2002，也完全是2002年的风格：table式排版，内嵌font，还有 &lt;em&gt;大家都喜欢的&lt;/em&gt; comic sans；再一看head，是长成这样的：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;meta content=&amp;quot;text/html; charset=windows-1252&amp;quot; http-equiv=&amp;quot;Content-Type&amp;quot;&amp;gt;
-&amp;lt;meta content=&amp;quot;Microsoft FrontPage 6.0&amp;quot; name=&amp;quot;GENERATOR&amp;quot;&amp;gt;
-&amp;lt;meta content=&amp;quot;FrontPage.Editor.Document&amp;quot; name=&amp;quot;ProgId&amp;quot;&amp;gt;
-&amp;lt;meta content=&amp;quot;no&amp;quot; http-equiv=&amp;quot;imagetoolbar&amp;quot;&amp;gt;
-&amp;lt;title&amp;gt;Fireworks&amp;lt;/title&amp;gt;
-&amp;lt;meta content=&amp;quot;none, default&amp;quot; name=&amp;quot;Microsoft Border&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;text/html; charset=windows-1252&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Microsoft FrontPage 6.0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;GENERATOR&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;FrontPage.Editor.Document&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;ProgId&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;no&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;imagetoolbar&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;Fireworks&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;none, default&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Microsoft Border&amp;#34;&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;看到了吗？死掉的FrontPage……&lt;/p&gt;
 
 &lt;p&gt;然而，打开java以后，这网页是这样的：&lt;/p&gt;
@@ -2806,21 +2711,18 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p&gt;&lt;/li&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;按照&lt;a href=&#34;http://www.road2stat.com/cn/tex/archtex.html&#34;&gt;这里&lt;/a&gt;的安装方式&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su –
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;su –
 wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
 mkdir /mnt/tex
 mount -o loop texlive2012.iso /mnt/tex/
-cd /mnt/tex/
+&lt;span style=&#34;color:#366&#34;&gt;cd&lt;/span&gt; /mnt/tex/
 ./install-tl
-vim /etc/profile #在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……
-tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+vim /etc/profile &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
 tlmgr update –self
 tlmgr update –all
 umount /mnt/tex
-rm -rf /mnt/tex
-&lt;/code&gt;&lt;/pre&gt;
-
+rm -rf /mnt/tex&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;然后发现没有字体……&lt;/p&gt;
 
 &lt;p&gt;然后在&lt;a href=&#34;http://tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf&#34;&gt;这里&lt;/a&gt;发现要：&lt;/p&gt;
@@ -2844,13 +2746,10 @@ rm -rf /mnt/tex
 &lt;p&gt;把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p&gt;
 
 &lt;p&gt;编译用例：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\documentclass{ctexart}
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;\documentclass{ctexart}
 \begin{document}
 为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
-\end{document}
-&lt;/code&gt;&lt;/pre&gt;
-
+\end{document}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;用的编译命令是xelatex……&lt;/p&gt;
 
 &lt;p&gt;然后……要是提示缺少&lt;code&gt;Adobe Song Std&lt;/code&gt;什么的，应该&lt;code&gt;yaourt acroread-font-chinese-simplified&lt;/code&gt;就行了吧……&lt;/p&gt;
@@ -2900,10 +2799,7 @@ rm -rf /mnt/tex
 &lt;p&gt;程序自带的手册很详细，不过因为中文化好像出了一些小问题，那么可以直接去&lt;a href=&#34;http://www.texmacs.org/tmweb/manual/web-manual.en.html&#34;&gt;http://www.texmacs.org/tmweb/manual/web-manual.en.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;关于字体，见&lt;a href=&#34;http://www.texmacs.org/tmweb/download/fonts.en.html&#34;&gt;http://www.texmacs.org/tmweb/download/fonts.en.html&lt;/a&gt; ，大概就是要下一个字体放到～/.TeXmacs/fonts/truetype里面然后运行&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;texmacs --delete-font-cache &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;texmacs --delete-font-cache &amp;amp;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;亲测Simsun，wqy可用～&lt;/p&gt;
 
 &lt;p&gt;关于插入图片，似乎在win下只能插入png的样子，然后更改宽高还要写成”800px”，谁知道还要加单位啊……&lt;/p&gt;
@@ -2980,50 +2876,47 @@ canvas实现（太复杂的我都不会），还专门找了物理引擎——&l
       
       <guid>https://blog.heysh.xyz/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/</guid>
       <description>&lt;p&gt;用Python2写成，为什么不用Lua？因为我不会&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&#39;&#39;&#39;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&amp;#39;&amp;#39;&amp;#39;
 Created on 2012-9-10
 @author: hh
-&#39;&#39;&#39;
+&amp;#39;&amp;#39;&amp;#39;
 import cookielib
 import urllib2
 import urllib
 import time
-username=&amp;quot;Chetter.Hummin&amp;quot;
-password=&amp;quot;password&amp;quot;
+username=&amp;#34;Chetter.Hummin&amp;#34;
+password=&amp;#34;password&amp;#34;
 def login(usr, pwd):
-    &#39;login function&#39;
+    &amp;#39;login function&amp;#39;
     cj = cookielib.CookieJar()
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-    opener.addheaders = [(&#39;User-agent&#39;,&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1&#39;)]
-    url_login = &#39;http://bbs.sarabalst.com/2b/login.php&#39;
-    body={&amp;quot;step&amp;quot;:&amp;quot;2&amp;quot;,&amp;quot;pwuser&amp;quot;:usr,&amp;quot;cktime&amp;quot;:&amp;quot;31536000&amp;quot;,&amp;quot;pwpwd&amp;quot;:pwd,&amp;quot;lgt&amp;quot;:&amp;quot;0&amp;quot;}
-    print &#39;login to get cookies&#39;
+    opener.addheaders = [(&amp;#39;User-agent&amp;#39;,&amp;#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1&amp;#39;)]
+    url_login = &amp;#39;http://bbs.sarabalst.com/2b/login.php&amp;#39;
+    body={&amp;#34;step&amp;#34;:&amp;#34;2&amp;#34;,&amp;#34;pwuser&amp;#34;:usr,&amp;#34;cktime&amp;#34;:&amp;#34;31536000&amp;#34;,&amp;#34;pwpwd&amp;#34;:pwd,&amp;#34;lgt&amp;#34;:&amp;#34;0&amp;#34;}
+    print &amp;#39;login to get cookies&amp;#39;
     urllib2.install_opener(opener)
     req = urllib2.Request(url_login,urllib.urlencode(body))
     resp = urllib2.urlopen(req)
     #print (resp.read())
 
-if __name__ == &#39;__main__&#39;:
+if __name__ == &amp;#39;__main__&amp;#39;:
     login(username,password)
-    print &amp;quot;login success&amp;quot;
-    print (time.strftime(&#39;%Y-%m-%d %H:%M&#39;,time.localtime(time.time())))
+    print &amp;#34;login success&amp;#34;
+    print (time.strftime(&amp;#39;%Y-%m-%d %H:%M&amp;#39;,time.localtime(time.time())))
     for i in range(0,23):
         try:
-            str=urllib2.urlopen(&amp;quot;http://bbs.sarabalst.com/2b/&amp;quot;,timeout=100).read()
-            #print &amp;quot;success&amp;quot;
+            str=urllib2.urlopen(&amp;#34;http://bbs.sarabalst.com/2b/&amp;#34;,timeout=100).read()
+            #print &amp;#34;success&amp;#34;
         except:
-            str=&amp;quot;&amp;quot;
-            #print &amp;quot;fail&amp;quot;
-        if str!=&amp;quot;&amp;quot;:
+            str=&amp;#34;&amp;#34;
+            #print &amp;#34;fail&amp;#34;
+        if str!=&amp;#34;&amp;#34;:
             print str
-            print &amp;quot;refresh success&amp;quot;
+            print &amp;#34;refresh success&amp;#34;
         else:
-            print &amp;quot;refresh fail&amp;quot;
-        print (time.strftime(&#39;%Y-%m-%d %H:%M&#39;,time.localtime(time.time())))
-        time.sleep(300);
-&lt;/code&gt;&lt;/pre&gt;
-
+            print &amp;#34;refresh fail&amp;#34;
+        print (time.strftime(&amp;#39;%Y-%m-%d %H:%M&amp;#39;,time.localtime(time.time())))
+        time.sleep(300);&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;在openwrt上测试成功。理论上可以加入crontab，现在还没测试（时间不够）&lt;br /&gt;
 update :鉴于论坛和路由器双重不给力，给urllib2设了超时&lt;/p&gt;
 </description>
@@ -3113,8 +3006,7 @@ update :鉴于论坛和路由器双重不给力，给urllib2设了超时&lt;/p&g
 &lt;/blockquote&gt;
 
 &lt;p&gt;ical格式大概是这样的：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;BEGIN:VCALENDAR
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;BEGIN:VCALENDAR
 
 PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
 
@@ -3174,9 +3066,7 @@ SUMMARY:实验2
 
 END:VEVENT
 
-END:VCALENDAR
-&lt;/code&gt;&lt;/pre&gt;
-
+END:VCALENDAR&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;基本上只要修改中文部分的内容就好了&lt;/p&gt;
 
 &lt;h4 id=&#34;tips&#34;&gt;tips：&lt;/h4&gt;
@@ -3196,15 +3086,12 @@ END:VCALENDAR
 &lt;/ul&gt;
 
 &lt;p&gt;最后补一些相关代码段（javascript）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$vCalArea.append(&#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&#39;);
-/***************生成文件头****************/
-$vCalArea.append(&amp;quot;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;quot; + strBT + &amp;quot;nDTEND;TZID=Asia/Shanghai:&amp;quot; + strET + &amp;quot;nDTSTAMP:20120622T160054ZnUID:&amp;quot; + uid + &amp;quot;nCREATED:20120622T154824ZnDESCRIPTION:&amp;quot; + Data.courseInfo + &amp;quot;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;quot; + Data.place + &amp;quot;nSTATUS:CONFIRMEDnSUMMARY:&amp;quot; + Data.courseName + &amp;quot;nEND:VEVENTn&amp;quot;)
-/****************VEVENT部分***************/
-$vCalArea.append(&#39;END:VCALENDAR&#39;);
-/****************文件尾****************/
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;$vCalArea.append(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;/***************生成文件头****************/&lt;/span&gt;
+$vCalArea.append(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; strBT &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; strET &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; uid &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; Data.courseInfo &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; Data.place &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; Data.courseName &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;/****************VEVENT部分***************/&lt;/span&gt;
+$vCalArea.append(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;END:VCALENDAR&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;/****************文件尾****************/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;全部脚本见&lt;a href=&#34;http://code.google.com/p/js-thu-cal-outputer/&#34;&gt;http://code.google.com/p/js-thu-cal-outputer/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

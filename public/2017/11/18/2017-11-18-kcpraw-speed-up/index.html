@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Nov 18, 16:36</time>
+    <time>2017-11-18 16:36</time>
   </div>
 
   
@@ -275,18 +274,12 @@
 <h2 id="服务器端">服务器端</h2>
 
 <h3 id="下载kcpraw">下载kcpraw</h3>
-
-<pre><code>mkdir ~/kcpraw
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">mkdir ~/kcpraw
 cd ~/kcpraw
 wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
-tar zxvf kcpraw-linux-amd64-20171021.tar.gz
-</code></pre>
-
+tar zxvf kcpraw-linux-amd64-20171021.tar.gz</pre></div>
 <h3 id="在后台开启kcpraw">在后台开启kcpraw</h3>
-
-<pre><code> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64  -t &quot;127.0.0.1:443&quot; -l &quot;:8388&quot; -mode fast2 &amp;
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64  -t &#34;127.0.0.1:443&#34; -l &#34;:8388&#34; -mode fast2 &amp;</pre></div>
 <p>其中，<code>443</code>是要包装的shadowsocks端口，同时，<code>8388</code>是kcpraw使用的端口，请保证服务器防火墙允许<code>8388</code>端口通过。</p>
 
 <h2 id="客户端">客户端</h2>
@@ -296,10 +289,7 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 <p>对于最新版本的Windows10，原版的<code>winpcap</code>和<code>win10pcap</code>似乎都不能用，可以使用兼容的<a href="https://github.com/nmap/npcap">npcap</a>。</p>
 
 <h3 id="运行kcpraw">运行kcpraw</h3>
-
-<pre><code>kcpraw_client_windows_amd64 -r &quot;&lt;服务器IP&gt;:8388&quot; -l &quot;:1082&quot; -mode fast2
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">kcpraw_client_windows_amd64 -r &#34;&lt;服务器IP&gt;:8388&#34; -l &#34;:1082&#34; -mode fast2</pre></div>
 <p>其中<code>1082</code>是设定的本地kcpraw端口。</p>
 
 <h3 id="修改shadowsocks客户端配置">修改shadowsocks客户端配置</h3>

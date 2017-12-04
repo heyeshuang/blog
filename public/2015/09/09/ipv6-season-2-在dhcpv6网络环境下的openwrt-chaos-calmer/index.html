@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2015 Sep 09, 13:58</time>
+    <time>2015-09-09 13:58</time>
   </div>
 
   
@@ -256,25 +255,22 @@
   <p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。</p>
 
 <p>大概上思路和<a href="http://talk.withme.me/?p=51">这里</a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为<code>6ndp</code>,<code>ndppd</code>和<code>radvd</code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，<code>/etc/config/dhcp</code>的关键几行大概应该是这样：</p>
-
-<pre><code># /etc/config/dhcp:
-config dhcp 'lan'
-        option interface 'lan'
-        option start '100'
-        option limit '150'
-        option leasetime '12h'
-#       option dhcpv6 'server'
-        option ra 'relay'
-        option ndp 'relay'
-#config dhcp 'wan'
-        #option interface 'wan'
-        #option ignore '1'
-config dhcp 'wan6'
-        option ra 'relay'
-        option ndp 'relay'
-        option master '1'
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># /etc/config/dhcp:
+config dhcp &#39;lan&#39;
+        option interface &#39;lan&#39;
+        option start &#39;100&#39;
+        option limit &#39;150&#39;
+        option leasetime &#39;12h&#39;
+#       option dhcpv6 &#39;server&#39;
+        option ra &#39;relay&#39;
+        option ndp &#39;relay&#39;
+#config dhcp &#39;wan&#39;
+        #option interface &#39;wan&#39;
+        #option ignore &#39;1&#39;
+config dhcp &#39;wan6&#39;
+        option ra &#39;relay&#39;
+        option ndp &#39;relay&#39;
+        option master &#39;1&#39;</pre></div>
 <p>另外，还需要把<code>luci</code>的<code>interface</code>页面下的<code>IPv6 ULA-Prefix</code>删掉。</p>
 
 <p>现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启<code>/etc/init.d/odhcpd</code>；不管了，我先在这里存个盘。</p>

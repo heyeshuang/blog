@@ -8,6 +8,11 @@ author = "HeYSH"
 # Shown in the side menu
 canonifyurls = false
 paginate = 10
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = 'manni'
+# pygmentsUseClasses=true
+# pygmentsOptions = "linenos=table,noclasses=true"
 
 [permalinks]
 post = "/:year/:month/:day/:filename/"
@@ -24,16 +29,16 @@ baseName = "feed"
 [params]
   # Shown in the home page
   subtitle = "第三根树苗"
-  brand = "mark III"
+  brand = "Rei III"
   googleAnalytics = "UA-40522664-1"
   disqus = "HeYSH"
   # CSS name for highlight.js
-  highlightjs = "atom-one-light"
-  dateFormat = "2006 Jan 02, 15:04"
+  # highlightjs = "atom-one-light"
+  dateFormat = "2006-01-02 15:04"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
-#   custom_css = ["css/my.css"]
-#   custom_js = ["js/my.js"]
+  custom_css = ["css/typo.css","css/custom.css"]
+  # custom_js = ["js/my.js"]
 
 [menu]
 # Shown in the side menu.
@@ -42,7 +47,7 @@ baseName = "feed"
     pre = "<i class='fa fa-home fa-fw'></i>"
     weight = 1
     identifier = "home"
-    url = "/"
+    url = "https://heysh.xyz/"
   [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
