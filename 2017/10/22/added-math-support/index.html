@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Oct 22, 13:37</time>
+    <time>2017-10-22 13:37</time>
   </div>
 
   
@@ -260,10 +259,7 @@
 <p>官方文档中其实有<a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容</a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像<a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里</a>一样使用KaTeX+Mmark，写起来会方便许多。</p>
 
 <p>Hugo自带Mmark的支持，只要在新建文章的时候使用<code>.mmark</code>后缀就行：</p>
-
-<pre><code>hugo new post/some-name.mmark
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new post/some-name.mmark</pre></div>
 <p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看<a href="https://github.com/miekg/mmark/wiki/Syntax">这里</a>。</p>
 
 <p>用这种渲染器，用<code>$$</code>包裹的文字会自动转成用<code>\[</code>或者<code>\(</code>包裹，比如，<code>inline $$\sqrt{b^2-4ac}$$</code>会转成<code>\(\sqrt{b^2-4ac}\)</code></p>

@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Nov 02, 19:17</time>
+    <time>2017-11-02 19:17</time>
   </div>
 
   
@@ -262,10 +261,7 @@
 <h2 id="usage">Usage</h2>
 
 <p>You can easily append author name and post link after <a href="https://heyeshuang.github.io/aeolipile/#/">https://heyeshuang.github.io/aeolipile/#/</a>, like this:</p>
-
-<pre><code>https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/</pre></div>
 <p>Similar with the Steemit URL. And you can simply add this link before your post, just like me. :wink:</p>
 
 <h3 id="features">Features</h3>
@@ -276,12 +272,9 @@
 <h4 id="code">Code!</h4>
 
 <p>Place your code between ``` like <a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">this</a>, then you'll get a codeblock:</p>
-
-<pre><code class="language-ruby">require 'redcarpet'
-markdown = Redcarpet.new(&quot;Hello World!&quot;)
-puts markdown.to_html
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#366">require</span> <span style="color:#c30">&#39;redcarpet&#39;</span>
+markdown <span style="color:#555">=</span> <span style="color:#360">Redcarpet</span><span style="color:#555">.</span>new(<span style="color:#c30">&#34;Hello World!&#34;</span>)
+<span style="color:#366">puts</span> markdown<span style="color:#555">.</span>to_html</code></pre></div>
 <h4 id="math">Math!</h4>
 
 <p>You can write TeX between <code>$$</code> tags.</p>

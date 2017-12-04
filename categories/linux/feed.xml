@@ -27,7 +27,7 @@
       <pubDate>Fri, 13 Jan 2017 12:25:31 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</guid>
-      <description>适用于（没有cron和init的）debian 8.0 安装nethogs 创建/root/monitor.sh TIMEOUT=3600 TIMESTAMP=`date +%b_%d_%Y_%H_%M_%S` OUTPUT=/var/log/nethogs/$TIMESTAMP.log bash -ic &amp;quot;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;$OUTPUT;kill 0;) | (sleep $TIMEOUT;kill 0; )&amp;quot; 3&amp;gt;&amp;amp;1 2&amp;gt;/dev/null /etc/systemd/system/nethogs.timer</description>
+      <description>适用于（没有cron和init的）debian 8.0 安装nethogs 创建/root/monitor.sh TIMEOUT=3600 TIMESTAMP=`date +%b_%d_%Y_%H_%M_%S` OUTPUT=/var/log/nethogs/$TIMESTAMP.log bash -ic &amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;$OUTPUT;kill 0;) | (sleep $TIMEOUT;kill 0; )&amp;#34; 3&amp;gt;&amp;amp;1 2&amp;gt;/dev/null /etc/systemd/system/nethogs.timer</description>
     </item>
     
     <item>

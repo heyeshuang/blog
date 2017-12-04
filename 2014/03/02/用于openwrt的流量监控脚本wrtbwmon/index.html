@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2014 Mar 02, 11:38</time>
+    <time>2014-03-02 11:38</time>
   </div>
 
   
@@ -252,16 +251,13 @@
 <p>TL;DR：请在<a href="https://gist.github.com/heyeshuang/9305089">这里</a>下载修改过的版本，在本人的2成新db-120上测试通过。</p>
 
 <p>把上面那东西扔到<code>/bin</code>里之后，在crontab里添上这么一段：</p>
-
-<pre><code>* * * * * /bin/wrtbwmon setup br0
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">* * * * * /bin/wrtbwmon setup br0
 */30 0-3 * * * /bin/wrtbwmon update /tmp/usage.db peak
 */30,59 4-8 * * * /bin/wrtbwmon update /tmp/usage.db offpeak
 */30 9-23 * * * /bin/wrtbwmon update /tmp/usage.db peak
 */30 * * * * /bin/wrtbwmon publish /tmp/usage.db /tmp/usage.htm /tmp/dhcp.leases
 30 * * * * cp /tmp/usage.db /root/usage.db
-* * * * * [ ! -f /tmp/usage.db ] &amp;&amp; cp /root/usage.db /tmp/usage.db
-</code></pre>
-
+* * * * * [ ! -f /tmp/usage.db ] &amp;&amp; cp /root/usage.db /tmp/usage.db</pre></div>
 <p><a href="http://code.google.com/p/wrtbwmon/wiki/Deploying">自带的教程</a>写的crontab似乎跟OpenWRT不兼容……<em>这里的一定是雨林木风精简版OpenWRT！</em></p>
 
 <p>又及：为了凑字数，关于如何在nat后面使用isatap的方法参见<a href="http://wiki.tuna.tsinghua.edu.cn/IsatapBehindNat">这里</a></p>

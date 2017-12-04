@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Jun 07, 22:07</time>
+    <time>2017-06-07 22:07</time>
   </div>
 
   
@@ -254,8 +253,7 @@
   <p>书接上文 <del>（虽然我是先写的这一篇）</del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把<code>/public</code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的<code>master</code>分支保存源文件，<code>gh-page</code>分支来展示，像<a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里</a>说的那样。</p>
 
 <p>这里假设你已经<code>init</code>过了你的<code>hugo</code>目录：</p>
-
-<pre><code># Create a new orphand branch (no commit history) named gh-pages
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># Create a new orphand branch (no commit history) named gh-pages
 git checkout --orphan gh-pages
 
 # Unstage all files
@@ -266,7 +264,7 @@ git checkout master README.md
 
 # Add and commit that file
 git add .
-git commit -m &quot;INIT: initial commit on gh-pages branch&quot;
+git commit -m &#34;INIT: initial commit on gh-pages branch&#34;
 
 # Push to remote gh-pages branch
 git push origin gh-pages
@@ -292,21 +290,16 @@ hugo
 git add -A
 
 # Commit and push to master
-git commit -m &quot;Updating site&quot; &amp;&amp; git push origin master
+git commit -m &#34;Updating site&#34; &amp;&amp; git push origin master
 
 # Push the public subtree to the gh-pages branch
-git subtree push --prefix=public &lt;你的.git地址&gt; gh-pages
-</code></pre>
-
+git subtree push --prefix=public &lt;你的.git地址&gt; gh-pages</pre></div>
 <p>之后每次更新需要</p>
-
-<pre><code>hugo
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo
 git add -A
-git commit -m &quot;some messages&quot;
+git commit -m &#34;some messages&#34;
 git push origin master
-git subtree push --prefix=public &lt;你的.git地址&gt; gh-pages
-</code></pre>
-
+git subtree push --prefix=public &lt;你的.git地址&gt; gh-pages</pre></div>
 <p>像我这样的强迫症可以把主题也做一个<code>subtree</code>出来。</p>
 
 

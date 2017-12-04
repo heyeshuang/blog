@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Dec 21, 16:38</time>
+    <time>2012-12-21 16:38</time>
   </div>
 
   
@@ -294,21 +293,18 @@
 </blockquote>
 
 <p>按照<a href="http://www.road2stat.com/cn/tex/archtex.html">这里</a>的安装方式</p>
-
-<pre><code class="language-bash">su –
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su –
 wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
 mkdir /mnt/tex
 mount -o loop texlive2012.iso /mnt/tex/
-cd /mnt/tex/
+<span style="color:#366">cd</span> /mnt/tex/
 ./install-tl
-vim /etc/profile #在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……
-tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+vim /etc/profile <span style="color:#09f;font-style:italic">#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……
+</span><span style="color:#09f;font-style:italic"></span>tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
 tlmgr update –self
 tlmgr update –all
 umount /mnt/tex
-rm -rf /mnt/tex
-</code></pre>
-
+rm -rf /mnt/tex</code></pre></div>
 <p>然后发现没有字体……</p>
 
 <p>然后在<a href="http://tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf">这里</a>发现要：</p>
@@ -332,13 +328,10 @@ rm -rf /mnt/tex
 <p>把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312</p>
 
 <p>编译用例：</p>
-
-<pre><code class="language-tex">\documentclass{ctexart}
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">\documentclass{ctexart}
 \begin{document}
 为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
-\end{document}
-</code></pre>
-
+\end{document}</code></pre></div>
 <p>用的编译命令是xelatex……</p>
 
 <p>然后……要是提示缺少<code>Adobe Song Std</code>什么的，应该<code>yaourt acroread-font-chinese-simplified</code>就行了吧……</p>

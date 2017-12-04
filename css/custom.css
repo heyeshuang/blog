@@ -1,0 +1,18 @@
+article {
+  margin: 1.56rem 0;
+}
+article header h2{
+  margin-bottom: 0.39rem;
+}
+article header h3{
+  color: #929292;
+  margin-bottom: 0.39rem;
+  font-weight: 500;
+}
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-meta div{
+  margin-right: 20px;
+}

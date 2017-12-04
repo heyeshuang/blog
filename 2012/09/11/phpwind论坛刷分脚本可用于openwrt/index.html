@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Sep 11, 04:56</time>
+    <time>2012-09-11 04:56</time>
   </div>
 
   
@@ -250,50 +249,47 @@
 
 
   <p>用Python2写成，为什么不用Lua？因为我不会</p>
-
-<pre><code>'''
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&#39;&#39;&#39;
 Created on 2012-9-10
 @author: hh
-'''
+&#39;&#39;&#39;
 import cookielib
 import urllib2
 import urllib
 import time
-username=&quot;Chetter.Hummin&quot;
-password=&quot;password&quot;
+username=&#34;Chetter.Hummin&#34;
+password=&#34;password&#34;
 def login(usr, pwd):
-    'login function'
+    &#39;login function&#39;
     cj = cookielib.CookieJar()
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-    opener.addheaders = [('User-agent','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1')]
-    url_login = 'http://bbs.sarabalst.com/2b/login.php'
-    body={&quot;step&quot;:&quot;2&quot;,&quot;pwuser&quot;:usr,&quot;cktime&quot;:&quot;31536000&quot;,&quot;pwpwd&quot;:pwd,&quot;lgt&quot;:&quot;0&quot;}
-    print 'login to get cookies'
+    opener.addheaders = [(&#39;User-agent&#39;,&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1&#39;)]
+    url_login = &#39;http://bbs.sarabalst.com/2b/login.php&#39;
+    body={&#34;step&#34;:&#34;2&#34;,&#34;pwuser&#34;:usr,&#34;cktime&#34;:&#34;31536000&#34;,&#34;pwpwd&#34;:pwd,&#34;lgt&#34;:&#34;0&#34;}
+    print &#39;login to get cookies&#39;
     urllib2.install_opener(opener)
     req = urllib2.Request(url_login,urllib.urlencode(body))
     resp = urllib2.urlopen(req)
     #print (resp.read())
 
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     login(username,password)
-    print &quot;login success&quot;
-    print (time.strftime('%Y-%m-%d %H:%M',time.localtime(time.time())))
+    print &#34;login success&#34;
+    print (time.strftime(&#39;%Y-%m-%d %H:%M&#39;,time.localtime(time.time())))
     for i in range(0,23):
         try:
-            str=urllib2.urlopen(&quot;http://bbs.sarabalst.com/2b/&quot;,timeout=100).read()
-            #print &quot;success&quot;
+            str=urllib2.urlopen(&#34;http://bbs.sarabalst.com/2b/&#34;,timeout=100).read()
+            #print &#34;success&#34;
         except:
-            str=&quot;&quot;
-            #print &quot;fail&quot;
-        if str!=&quot;&quot;:
+            str=&#34;&#34;
+            #print &#34;fail&#34;
+        if str!=&#34;&#34;:
             print str
-            print &quot;refresh success&quot;
+            print &#34;refresh success&#34;
         else:
-            print &quot;refresh fail&quot;
-        print (time.strftime('%Y-%m-%d %H:%M',time.localtime(time.time())))
-        time.sleep(300);
-</code></pre>
-
+            print &#34;refresh fail&#34;
+        print (time.strftime(&#39;%Y-%m-%d %H:%M&#39;,time.localtime(time.time())))
+        time.sleep(300);</pre></div>
 <p>在openwrt上测试成功。理论上可以加入crontab，现在还没测试（时间不够）<br />
 update :鉴于论坛和路由器双重不给力，给urllib2设了超时</p>
 

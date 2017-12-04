@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2012 Jun 25, 08:12</time>
+    <time>2012-06-25 08:12</time>
   </div>
 
   
@@ -265,8 +264,7 @@
 </blockquote>
 
 <p>ical格式大概是这样的：</p>
-
-<pre><code>BEGIN:VCALENDAR
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">BEGIN:VCALENDAR
 
 PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
 
@@ -326,9 +324,7 @@ SUMMARY:实验2
 
 END:VEVENT
 
-END:VCALENDAR
-</code></pre>
-
+END:VCALENDAR</pre></div>
 <p>基本上只要修改中文部分的内容就好了</p>
 
 <h4 id="tips">tips：</h4>
@@ -348,15 +344,12 @@ END:VCALENDAR
 </ul>
 
 <p>最后补一些相关代码段（javascript）：</p>
-
-<pre><code class="language-javascript">$vCalArea.append('BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn');
-/***************生成文件头****************/
-$vCalArea.append(&quot;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&quot; + strBT + &quot;nDTEND;TZID=Asia/Shanghai:&quot; + strET + &quot;nDTSTAMP:20120622T160054ZnUID:&quot; + uid + &quot;nCREATED:20120622T154824ZnDESCRIPTION:&quot; + Data.courseInfo + &quot;nLAST-MODIFIED:20120622T160041ZnLOCATION:&quot; + Data.place + &quot;nSTATUS:CONFIRMEDnSUMMARY:&quot; + Data.courseName + &quot;nEND:VEVENTn&quot;)
-/****************VEVENT部分***************/
-$vCalArea.append('END:VCALENDAR');
-/****************文件尾****************/
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">$vCalArea.append(<span style="color:#c30">&#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&#39;</span>);
+<span style="color:#09f;font-style:italic">/***************生成文件头****************/</span>
+$vCalArea.append(<span style="color:#c30">&#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&#34;</span> <span style="color:#555">+</span> strBT <span style="color:#555">+</span> <span style="color:#c30">&#34;nDTEND;TZID=Asia/Shanghai:&#34;</span> <span style="color:#555">+</span> strET <span style="color:#555">+</span> <span style="color:#c30">&#34;nDTSTAMP:20120622T160054ZnUID:&#34;</span> <span style="color:#555">+</span> uid <span style="color:#555">+</span> <span style="color:#c30">&#34;nCREATED:20120622T154824ZnDESCRIPTION:&#34;</span> <span style="color:#555">+</span> Data.courseInfo <span style="color:#555">+</span> <span style="color:#c30">&#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&#34;</span> <span style="color:#555">+</span> Data.place <span style="color:#555">+</span> <span style="color:#c30">&#34;nSTATUS:CONFIRMEDnSUMMARY:&#34;</span> <span style="color:#555">+</span> Data.courseName <span style="color:#555">+</span> <span style="color:#c30">&#34;nEND:VEVENTn&#34;</span>)
+<span style="color:#09f;font-style:italic">/****************VEVENT部分***************/</span>
+$vCalArea.append(<span style="color:#c30">&#39;END:VCALENDAR&#39;</span>);
+<span style="color:#09f;font-style:italic">/****************文件尾****************/</span></code></pre></div>
 <p>全部脚本见<a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/</a></p>
 
 

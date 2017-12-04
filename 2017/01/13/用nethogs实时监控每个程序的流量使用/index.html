@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Jan 13, 12:25</time>
+    <time>2017-01-13 12:25</time>
   </div>
 
   
@@ -245,44 +244,32 @@
 <li>安装nethogs</li>
 <li>创建<code>/root/monitor.sh</code></li>
 </ul>
-
-<pre><code class="language-bash">TIMEOUT=3600
-TIMESTAMP=`date +%b_%d_%Y_%H_%M_%S`
-OUTPUT=/var/log/nethogs/$TIMESTAMP.log
-bash -ic &quot;(/usr/local/sbin/nethogs -t -d 30&amp;&gt;$OUTPUT;kill 0;) | (sleep $TIMEOUT;kill 0; )&quot; 3&gt;&amp;1 2&gt;/dev/null
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#033">TIMEOUT</span><span style="color:#555">=</span><span style="color:#f60">3600</span>
+<span style="color:#033">TIMESTAMP</span><span style="color:#555">=</span><span style="color:#c30">`</span>date +%b_%d_%Y_%H_%M_%S<span style="color:#c30">`</span>
+<span style="color:#033">OUTPUT</span><span style="color:#555">=</span>/var/log/nethogs/<span style="color:#033">$TIMESTAMP</span>.log
+bash -ic <span style="color:#c30">&#34;(/usr/local/sbin/nethogs -t -d 30&amp;&gt;</span><span style="color:#033">$OUTPUT</span><span style="color:#c30">;kill 0;) | (sleep </span><span style="color:#033">$TIMEOUT</span><span style="color:#c30">;kill 0; )&#34;</span> <span style="color:#f60">3</span>&gt;&amp;<span style="color:#f60">1</span> <span style="color:#f60">2</span>&gt;/dev/null</code></pre></div>
 <ul>
 <li><code>/etc/systemd/system/nethogs.timer</code></li>
 </ul>
-
-<pre><code class="language-bash">[Unit]
-Description=Nethogs Daemon
-[Timer]
-OnBootSec=1min
-OnUnitActiveSec=1h
-[Install]
-WantedBy=timers.target
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#555">[</span>Unit<span style="color:#555">]</span>
+<span style="color:#033">Description</span><span style="color:#555">=</span>Nethogs Daemon
+<span style="color:#555">[</span>Timer<span style="color:#555">]</span>
+<span style="color:#033">OnBootSec</span><span style="color:#555">=</span>1min
+<span style="color:#033">OnUnitActiveSec</span><span style="color:#555">=</span>1h
+<span style="color:#555">[</span>Install<span style="color:#555">]</span>
+<span style="color:#033">WantedBy</span><span style="color:#555">=</span>timers.target</code></pre></div>
 <ul>
 <li><code>/etc/systemd/system/nethogs.service</code></li>
 </ul>
-
-<pre><code class="language-bash">[Unit]
-Description=Nethogs run
-[Service]
-Type=oneshot
-ExecStart=/root/monitor.sh
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#555">[</span>Unit<span style="color:#555">]</span>
+<span style="color:#033">Description</span><span style="color:#555">=</span>Nethogs run
+<span style="color:#555">[</span>Service<span style="color:#555">]</span>
+<span style="color:#033">Type</span><span style="color:#555">=</span>oneshot
+<span style="color:#033">ExecStart</span><span style="color:#555">=</span>/root/monitor.sh</code></pre></div>
 <ul>
 <li>查看使用情况用<a href="https://github.com/boopathi/nethogs-parser">Nethogs parser</a></li>
 </ul>
-
-<pre><code class="language-bash">./hogs -type=pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./hogs -type<span style="color:#555">=</span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log</code></pre></div>
 
   
 <div class="prev-next-post pure-g">

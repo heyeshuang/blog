@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Jun 12, 22:25</time>
+    <time>2017-06-12 22:25</time>
   </div>
 
   
@@ -256,47 +255,41 @@
 <p>所以只能改模版了，思路是把<code>/feed</code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：</p>
 
 <p><code>\themes\&lt;主题名字&gt;\layouts\feed\list.html</code>：</p>
-
-<pre><code class="language-html">&lt;rss version=&quot;2.0&quot; xmlns:atom=&quot;http://www.w3.org/2005/Atom&quot;&gt;
-  &lt;channel&gt;
-    &lt;title&gt;{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&lt;/title&gt;
-    &lt;link&gt;{{ .Permalink }}&lt;/link&gt;
-    &lt;description&gt;Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&lt;/description&gt;
-    &lt;generator&gt;Hugo -- gohugo.io&lt;/generator&gt;{{ with .Site.LanguageCode }}
-    &lt;language&gt;{{.}}&lt;/language&gt;{{end}}{{ with .Site.Author.email }}
-    &lt;managingEditor&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;/managingEditor&gt;{{end}}{{ with .Site.Author.email }}
-    &lt;webMaster&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;/webMaster&gt;{{end}}{{ with .Site.Copyright }}
-    &lt;copyright&gt;{{.}}&lt;/copyright&gt;{{end}}{{ if not .Date.IsZero }}
-    &lt;lastBuildDate&gt;{{ .Date.Format &quot;Mon, 02 Jan 2006 15:04:05 -0700&quot; | safeHTML }}&lt;/lastBuildDate&gt;{{ end }}
-    &lt;atom:link href=&quot;{{.Permalink}}&quot; rel=&quot;self&quot; type=&quot;application/rss+xml&quot; /&gt;
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">rss</span> <span style="color:#309">version</span><span style="color:#555">=</span><span style="color:#c30">&#34;2.0&#34;</span> <span style="color:#309">xmlns:atom</span><span style="color:#555">=</span><span style="color:#c30">&#34;http://www.w3.org/2005/Atom&#34;</span>&gt;
+  &lt;<span style="color:#309;font-weight:bold">channel</span>&gt;
+    &lt;<span style="color:#309;font-weight:bold">title</span>&gt;{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&lt;/<span style="color:#309;font-weight:bold">title</span>&gt;
+    &lt;<span style="color:#309;font-weight:bold">link</span>&gt;{{ .Permalink }}&lt;/<span style="color:#309;font-weight:bold">link</span>&gt;
+    &lt;<span style="color:#309;font-weight:bold">description</span>&gt;Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&lt;/<span style="color:#309;font-weight:bold">description</span>&gt;
+    &lt;<span style="color:#309;font-weight:bold">generator</span>&gt;Hugo -- gohugo.io&lt;/<span style="color:#309;font-weight:bold">generator</span>&gt;{{ with .Site.LanguageCode }}
+    &lt;<span style="color:#309;font-weight:bold">language</span>&gt;{{.}}&lt;/<span style="color:#309;font-weight:bold">language</span>&gt;{{end}}{{ with .Site.Author.email }}
+    &lt;<span style="color:#309;font-weight:bold">managingEditor</span>&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;/<span style="color:#309;font-weight:bold">managingEditor</span>&gt;{{end}}{{ with .Site.Author.email }}
+    &lt;<span style="color:#309;font-weight:bold">webMaster</span>&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;/<span style="color:#309;font-weight:bold">webMaster</span>&gt;{{end}}{{ with .Site.Copyright }}
+    &lt;<span style="color:#309;font-weight:bold">copyright</span>&gt;{{.}}&lt;/<span style="color:#309;font-weight:bold">copyright</span>&gt;{{end}}{{ if not .Date.IsZero }}
+    &lt;<span style="color:#309;font-weight:bold">lastBuildDate</span>&gt;{{ .Date.Format &#34;Mon, 02 Jan 2006 15:04:05 -0700&#34; | safeHTML }}&lt;/<span style="color:#309;font-weight:bold">lastBuildDate</span>&gt;{{ end }}
+    &lt;<span style="color:#309;font-weight:bold">atom:link</span> <span style="color:#309">href</span><span style="color:#555">=</span><span style="color:#c30">&#34;{{.Permalink}}&#34;</span> <span style="color:#309">rel</span><span style="color:#555">=</span><span style="color:#c30">&#34;self&#34;</span> <span style="color:#309">type</span><span style="color:#555">=</span><span style="color:#c30">&#34;application/rss+xml&#34;</span> /&gt;
     {{ range .Site.RegularPages }}
-    &lt;item&gt;
-      &lt;title&gt;{{ .Title }}&lt;/title&gt;
-      &lt;link&gt;{{ .Permalink }}&lt;/link&gt;
-      &lt;pubDate&gt;{{ .Date.Format &quot;Mon, 02 Jan 2006 15:04:05 -0700&quot; | safeHTML }}&lt;/pubDate&gt;
-      {{ with .Site.Author.email }}&lt;author&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;/author&gt;{{end}}
-      &lt;guid&gt;{{ .Permalink }}&lt;/guid&gt;
-      &lt;description&gt;{{ .Content | html }}&lt;/description&gt;
-    &lt;/item&gt;
+    &lt;<span style="color:#309;font-weight:bold">item</span>&gt;
+      &lt;<span style="color:#309;font-weight:bold">title</span>&gt;{{ .Title }}&lt;/<span style="color:#309;font-weight:bold">title</span>&gt;
+      &lt;<span style="color:#309;font-weight:bold">link</span>&gt;{{ .Permalink }}&lt;/<span style="color:#309;font-weight:bold">link</span>&gt;
+      &lt;<span style="color:#309;font-weight:bold">pubDate</span>&gt;{{ .Date.Format &#34;Mon, 02 Jan 2006 15:04:05 -0700&#34; | safeHTML }}&lt;/<span style="color:#309;font-weight:bold">pubDate</span>&gt;
+      {{ with .Site.Author.email }}&lt;<span style="color:#309;font-weight:bold">author</span>&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;/<span style="color:#309;font-weight:bold">author</span>&gt;{{end}}
+      &lt;<span style="color:#309;font-weight:bold">guid</span>&gt;{{ .Permalink }}&lt;/<span style="color:#309;font-weight:bold">guid</span>&gt;
+      &lt;<span style="color:#309;font-weight:bold">description</span>&gt;{{ .Content | html }}&lt;/<span style="color:#309;font-weight:bold">description</span>&gt;
+    &lt;/<span style="color:#309;font-weight:bold">item</span>&gt;
     {{ end }}
-  &lt;/channel&gt;
-&lt;/rss&gt;
-</code></pre>
-
+  &lt;/<span style="color:#309;font-weight:bold">channel</span>&gt;
+&lt;/<span style="color:#309;font-weight:bold">rss</span>&gt;</code></pre></div>
 <p>基本上就是hugo自带的RSS模板，除了把<code>{{ range .Data.Pages }}</code>改成了<code>{{ range .Site.RegularPages }}</code>，因为我需要生成整个网站的RSS。另外，修改过的主题在<a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn</a>，稍微改了一些小bug，还换了个颜色。<del>哪天我要把名字改成greenfreeze。</del></p>
 
 <p>然后别忘了新建一个<code>\content\feed\chicken.md</code>：</p>
-
-<pre><code>---
-title: 'chicken'
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">---
+title: &#39;chicken&#39;
 author: HeYSH
 date: 2012-06-22T06:32:32+00:00
 aliases:
   - /%3ffeed%3drss2
 ---
-Nothing here.
-</code></pre>
-
+Nothing here.</pre></div>
 <p>当然，类似<code>/?feed=rss2</code>这样的地址就用不了了，我试过的。</p>
 
 

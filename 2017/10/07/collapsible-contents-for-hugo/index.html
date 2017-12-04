@@ -44,14 +44,13 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
 
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+  
+    <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
   
   
 
@@ -69,7 +68,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">mark III</a>
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
 
 
   <div class="pure-menu">
@@ -77,7 +76,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -227,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017 Oct 07, 22:25</time>
+    <time>2017-10-07 22:25</time>
   </div>
 
   
@@ -268,27 +267,22 @@
     shortcode，点击展开
   </h4>
 </summary>
-<pre><code class="language-html">&lt;details&gt;
-&lt;summary&gt;
-  &lt;h4&gt;
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">details</span>&gt;
+&lt;<span style="color:#309;font-weight:bold">summary</span>&gt;
+  &lt;<span style="color:#309;font-weight:bold">h4</span>&gt;
     {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
-  &lt;/h4&gt;
-&lt;/summary&gt;
+  &lt;/<span style="color:#309;font-weight:bold">h4</span>&gt;
+&lt;/<span style="color:#309;font-weight:bold">summary</span>&gt;
 {{.Inner}}
-&lt;/details&gt;
-</code></pre>
-
+&lt;/<span style="color:#309;font-weight:bold">details</span>&gt;</code></pre></div>
 </details>
 </p>
 
 <p>用法是这样的：</p>
-
-<pre><code class="language-html">{{% spoiler &quot;You killed my father!&quot; %}}
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{% spoiler &#34;You killed my father!&#34; %}}
 I am your father.
 NOOOOOOO!
-{{% /spoiler %}}
-</code></pre>
-
+{{% /spoiler %}}</code></pre></div>
 <p>当然，我还稍微改了一下CSS，之后会在模板里面更新。</p>
 
 <p>spoiler在steemit社区的讨论：<a href="https://github.com/steemit/condenser/issues/8">https://github.com/steemit/condenser/issues/8</a></p>
