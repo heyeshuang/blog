@@ -2,15 +2,14 @@
   <header>
     <h2>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{if .Description}}
-      <div><small>{{ .Description }}</small></div>
-      {{end}}
     </h2>
 
-    {{ partial "post_meta.html" . }}
-
+      {{if .Description}}
+      <h3>{{ .Description }}</h3>
+      {{end}}
   </header>
 
+  {{ partial "post_meta.html" . }}
 
   <!-- {{ if .Truncated }}
   <footer>
