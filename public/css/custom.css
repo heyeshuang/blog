@@ -1,5 +1,5 @@
 article {
-  margin: 1.56rem 0;
+  margin-top: 1.56rem;
 }
 article header h2{
   margin-bottom: 0.39rem;
@@ -12,6 +12,7 @@ article header h3{
 .post-meta {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1.56rem;
 }
 .post-meta div{
   margin-right: 20px;
