@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chroma语法高亮和Typography.js">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.30.2" />
 
-  <title>最近对博客的改动 &middot; 贺叶霜的树：III</title>
+  <title>学习笔记：神经网络的优化策略 &middot; 贺叶霜的树：III</title>
 
   
   
@@ -217,8 +217,8 @@
 
 
 <div class="header">
-  <h1>最近对博客的改动</h1>
-  <h2>Chroma语法高亮和Typography.js</h2>
+  <h1>学习笔记：神经网络的优化策略</h1>
+  <h2></h2>
 </div>
 <div class="content">
 
@@ -226,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2017-12-04 20:56</time>
+    <time>2017-12-09 16:53</time>
   </div>
 
   
@@ -239,11 +239,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/typography">typography</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/ml">ML</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/chroma">Chroma</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/hugo">hugo</a>
+      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/deeplearning.ai">deeplearning.ai</a>
     
   </div>
   
@@ -254,38 +252,133 @@
 
   
 
-<h2 id="用chroma进行语法高亮">用chroma进行语法高亮</h2>
+<blockquote>
+<p>本文基本上是 <em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</em> 的知识点大纲。</p>
 
-<p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近</a>hugo内置了<a href="https://github.com/alecthomas/chroma">chroma</a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要<code>highlight.js</code>等脚本文件，理论上可以提高网页加载的速度。</p>
+<p>具体的公式和理论，可以看<a href="http://binweber.top/tags/ML/">Bin Weber的博客</a>。</p>
+</blockquote>
 
-<h3 id="使用方法">使用方法</h3>
+<h2 id="训练-开发-测试集-train-dev-test">训练/开发/测试集（Train/dev/test）</h2>
 
-<p>在<code>config.toml</code>中加入以下内容：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TOML" data-lang="TOML">pygmentsCodefences = <span style="color:#069;font-weight:bold">true</span> <span style="color:#09f;font-style:italic">#高亮markdown的代码块</span>
-pygmentsCodefencesGuessSyntax = <span style="color:#069;font-weight:bold">true</span> <span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块</span>
-pygmentsStyle = <span style="color:#c30">&#39;manni&#39;</span> <span style="color:#09f;font-style:italic">#高亮主题</span></code></pre></div>
-<p>可用的主题见<a href="http://help.farbox.com/pygments.html">这里</a>。更多的设置可以参见hugo<a href="https://gohugo.io/content-management/syntax-highlighting/">帮助</a>。</p>
+<ul>
+<li>数据量10000之内：70/30（免去dev）或60/20/20</li>
+<li>更多数据：保证dev/test足够（~10000）即可</li>
+</ul>
 
-<h2 id="用typography-js修改样式">用typography.js修改样式</h2>
+<h2 id="过拟合">过拟合</h2>
 
-<p><a href="http://kyleamathews.github.io/typography.js/">Typography.js</a>是生成网页字体排印格式的库。只要简单地利用已有的主题，就可以生成较为完善的CSS格式。当然，如果需要更精确的中文排版，请移步<a href="https://hanzi.pro/">汉字标准格式</a>。</p>
+<ul>
+<li>引入更多训练样本</li>
+<li>正则化（Normalization<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>）
 
-<p>Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：<a href="https://github.com/heyeshuang/typography2css">typography2CSS</a>，用来直接生成CSS文件。</p>
+<ul>
+<li>目的：减小||W|| ←此时熵最大，可能性最高</li>
+<li>L2正则化：在cost function上附加一个W，使W最小</li>
+<li>dropout：随机关闭一些节点</li>
+</ul></li>
+</ul>
 
-<p>之后，经过少量修改，即可用于现有的主题，效果如此博客所示。</p>
+<h2 id="欠拟合">欠拟合</h2>
+
+<ul>
+<li>增加神经网络的隐含层数</li>
+<li>隐含层中的节点数</li>
+<li>训练更长时间</li>
+</ul>
+
+<h2 id="初始化输入数据和参数">初始化输入数据和参数</h2>
+
+<ul>
+<li>输入数据标准化（Normalization<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>）：使每个维度在(-1,1)之间</li>
+<li>权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
+
+<ul>
+<li>即Xavier初始化的变种，He初始化</li>
+</ul></li>
+</ul>
+
+<h2 id="提高梯度下降速度-mini-batch">提高梯度下降速度：mini-batch</h2>
+
+<p>由于内存/计算单元不够（always），每次计算部分数据</p>
+
+<h3 id="提高mini-batch的稳定性-减小摆动">提高mini-batch的稳定性，减小摆动</h3>
+
+<ul>
+<li>将每个batch的优化结果进行指数加权平均（Momentum）</li>
+<li>RMSPROP</li>
+<li>Adam：综合以上两种方法</li>
+<li>学习率衰减</li>
+</ul>
+
+<h2 id="超参数的选择">超参数的选择</h2>
+
+<h3 id="需要的超参数">需要的超参数</h3>
+
+<ul>
+<li>α，学习率/learning rate</li>
+<li>β1~0.9，β2~0.999，ε~1e-8（Adam中的参数）</li>
+<li>层数</li>
+<li>每层单元</li>
+<li>学习率衰减</li>
+<li>mini-batch 尺寸（2的整数次方，大概是512之内？）</li>
+</ul>
+
+<h3 id="选择方案">选择方案</h3>
+
+<ul>
+<li>随机</li>
+<li>对于α和β，以对数形式随机</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r<span style="color:#555">=-</span><span style="color:#f60">4</span><span style="color:#555">*</span>np<span style="color:#555">.</span>random<span style="color:#555">.</span>rand()
+a<span style="color:#555">=</span><span style="color:#f60">10</span><span style="color:#555">**</span>r</code></pre></div>
+<h2 id="batch-norm">Batch-Norm</h2>
+
+<ul>
+<li>对每一层的线性计算结果Z进行标准化</li>
+<li>每层标准化的参数γ和β通过学习得到</li>
+<li>提高收敛速度（与对初始值X的操作类似）</li>
+</ul>
+
+<blockquote>
+<p>采用批标准化之后，尽管每一层的z还是在不断变化，但是它们的均值和方差将基本保持不变，这就使得后面的数据更加稳定，减少前面层与后面层的耦合 （via Bin Weber）</p>
+</blockquote>
+
+<h2 id="softmax">Softmax</h2>
+
+<p>当分类器需要分出更多类时使用</p>
+
+<h2 id="检验方程的梯度计算是否存在问题-梯度检验">检验方程的梯度计算是否存在问题：梯度检验</h2>
+
+<p>用计算斜率的方式近似梯度</p>
+
+<h2 id="深度学习是否会陷入局部最优问题">深度学习是否会陷入局部最优问题？</h2>
+
+<ul>
+<li>由于参数很多，对所有参数都为峰值基本上不可能</li>
+<li>相比而言，鞍点更加普遍</li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">意义似乎略有不同
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://blog.heysh.xyz/2017/11/27/2017-11-27-%E6%96%B0%E5%9F%9F%E5%90%8D/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://blog.heysh.xyz/2017/11/27/2017-11-27-%E6%96%B0%E5%9F%9F%E5%90%8D/">换了个新域名</a>
+      <a href="https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/">最近对博客的改动</a>
     </nav>
     
   </div>
@@ -294,14 +387,8 @@ pygmentsStyle = <span style="color:#c30">&#39;manni&#39;</span> <span style="col
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记：神经网络的优化策略</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
