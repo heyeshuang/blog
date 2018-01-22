@@ -1189,12 +1189,12 @@ browser.tabs.remote.autostart.2=false&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
 ;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
 setChineseLayout(){
-    ;发送中文输入法切换快捷键，请根据实际情况设置。
-    send {Ctrl Down}{Shift}
-    send {Ctrl Down},
-    send {Ctrl Down}{Shift}
-    send {Ctrl Down},
-    send {Ctrl Up}
+	;发送中文输入法切换快捷键，请根据实际情况设置。
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Up}
 }&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p&gt;
 
@@ -1235,7 +1235,7 @@ setChineseLayout(){
 &lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual
 &lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#linux:
 &lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -o &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;((&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;))&lt;/span&gt;;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;then&lt;/span&gt; /usr/bin/fcitx-remote -c; &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;else&lt;/span&gt; /usr/bin/fcitx-remote -o ;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;fi&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert
 &lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal
 &lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual
 &lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;#macOS: just use the default config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -3007,10 +3007,10 @@ rm -rf /mnt/tex&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p&gt;
 
 &lt;p&gt;编译用例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;\documentclass{ctexart}
-\begin{document}
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\documentclass&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;ctexart&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\begin&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;document&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
 为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
-\end{document}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\end&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;document&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;用的编译命令是xelatex……&lt;/p&gt;
 
 &lt;p&gt;然后……要是提示缺少&lt;code&gt;Adobe Song Std&lt;/code&gt;什么的，应该&lt;code&gt;yaourt acroread-font-chinese-simplified&lt;/code&gt;就行了吧……&lt;/p&gt;
