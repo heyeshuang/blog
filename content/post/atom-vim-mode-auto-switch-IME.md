@@ -35,7 +35,7 @@ python E:\\path\\to\\ime_helper.py --locale en_US #normal
 python E:\\path\\to\\ime_helper.py --locale en_US #visual
 #linux:
 /usr/bin/fcitx-remote #Get Current Input Source
-/usr/bin/fcitx-remote -o #insert
+if (( "${source}" <= "1" ));then /usr/bin/fcitx-remote -c; else /usr/bin/fcitx-remote -o ;fi #insert
 /usr/bin/fcitx-remote -c #normal
 /usr/bin/fcitx-remote -c #visual
 #macOS: just use the default config
