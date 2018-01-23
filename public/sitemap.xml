@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</loc>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/2017/12/16/zipf-law/</loc>
     <lastmod>2017-12-16T20:48:36+08:00</lastmod>
   </url>
@@ -435,6 +440,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/altcoin/</loc>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/android/</loc>
     <lastmod>2015-08-23T14:25:21+00:00</lastmod>
     <priority>0</priority>
@@ -453,8 +464,20 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/bitcoin/</loc>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/blog/</loc>
     <lastmod>2017-11-27T22:59:56+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/btc/</loc>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -735,7 +758,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2017-12-16T20:48:36+08:00</lastmod>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -957,7 +980,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2017-11-27T22:59:56+08:00</lastmod>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1053,7 +1076,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2017-12-16T20:48:36+08:00</lastmod>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
