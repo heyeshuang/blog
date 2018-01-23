@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 27 Nov 2017 22:59:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 17:31:33 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>History Data for Bitcoin and Altcoins/以及一些闲话</title>
+      <link>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</link>
+      <pubDate>Tue, 23 Jan 2018 17:31:33 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</guid>
+      <description>Link In this package, you&amp;rsquo;ll find: History data for Bitcoin price, with highest, lowest and volume, per hour Close price for 200+ Altcoins, also per hour And the Altcoin Market Indices Before 2017-12-23. These data (and honor) belong to alt19.com. This website says: Any information on Alt19.com is provided free and &amp;ldquo;as is&amp;rdquo; and solely for informational purposes, not for trading purposes or advice, and may be delayed. No action</description>
+    </item>
     
     <item>
       <title>换了个新域名</title>
