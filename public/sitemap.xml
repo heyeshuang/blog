@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.heysh.xyz/2018/02/09/nypl/</loc>
+    <lastmod>2018-02-09T22:03:59+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</loc>
     <lastmod>2018-01-23T17:31:33+08:00</lastmod>
   </url>
@@ -758,7 +763,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <lastmod>2018-02-09T22:03:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -980,7 +985,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <lastmod>2018-02-09T22:03:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1063,6 +1068,18 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/%E7%B4%A0%E6%9D%90/</loc>
+    <lastmod>2018-02-09T22:03:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/%E7%BA%BD%E7%BA%A6%E5%85%AC%E4%BC%97%E5%9B%BE%E4%B9%A6%E9%A6%86/</loc>
+    <lastmod>2018-02-09T22:03:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2017-11-18T16:36:55+08:00</lastmod>
     <priority>0</priority>
@@ -1076,7 +1093,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <lastmod>2018-02-09T22:03:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
