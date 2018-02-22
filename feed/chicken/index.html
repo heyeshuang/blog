@@ -10,6 +10,81 @@
     <atom:link href="https://blog.heysh.xyz/feed/chicken/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>这次是纽约公共图书馆……的第二天！</title>
+      <link>https://blog.heysh.xyz/2018/02/22/nypl2/</link>
+      <pubDate>Thu, 22 Feb 2018 16:03:59 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/02/22/nypl2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;（精神上）坐在图书馆里，我想：能不能把这些旧书借走呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;当然是可以的！贴心的图书管理员已经提供了API接口：&lt;a href=&#34;http://api.repo.nypl.org/&#34;&gt;http://api.repo.nypl.org/&lt;/a&gt;，申请账号之后，就可以做各种各样的事了~&lt;/p&gt;
+
+&lt;p&gt;当然，如果只是想下片的话，用&lt;a href=&#34;https://github.com/NYPL-publicdomain/api-client&#34;&gt;digital-collections&lt;/a&gt;可能会更简单一些：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;digital-collections -t API_TOKEN -s UUID -o OUTPUT.json&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其中，&lt;code&gt;API_TOKEN&lt;/code&gt;在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href=&#34;https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50&#34;&gt;比如这个&lt;/a&gt;）下面，可以看到&lt;code&gt;UUID&lt;/code&gt;；运行这条命令之后，图片的信息列表会保存在&lt;code&gt;OUTPUT.json&lt;/code&gt;里。&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/nypl/clip.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;对，就是那个Universal Unique Identifier&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;之后，获得的json文件大概像是这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;uuid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageLinks&amp;#34;&lt;/span&gt;: {
+        &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageLink&amp;#34;&lt;/span&gt;: [
+            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=w&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=r&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=t&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=b&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=f&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;
+        ]
+    },
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;apiUri&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;typeOfResource&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;still image&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;1125721&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;sortString&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;0000000001|0000000002|0000000001&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;itemLink&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;highResLink&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Dandelion.&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;dateDigitized&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;2016-08-04T04:53:12Z&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;rightsStatement&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&amp;#34;From The New York Public Library,\&amp;#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;rightsStatementURI&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;之后，只要下载&lt;code&gt;imageLink&lt;/code&gt;就好了。我用了一个简单的python脚本来做这件事。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# 注意：这玩意没有经过测试，可能会爆炸&lt;/span&gt;
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# 啊对了，而且是python3.6&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;urllib.request&lt;/span&gt; &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;ur&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;json&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#0cf;font-weight:bold&#34;&gt;os&lt;/span&gt;
+
+dir_name&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Himalayan_plants&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#可能要改这里……&lt;/span&gt;
+os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;mkdir(dir_name)
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;open&lt;/span&gt;(&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;OUTPUT.json&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;r&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; source: &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#……还有这里&lt;/span&gt;
+    source_dict&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;json&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;load(source)
+
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;for&lt;/span&gt; _i,_s &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#366&#34;&gt;enumerate&lt;/span&gt;(source_dict):
+    file_name&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;dir_name&lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;str&lt;/span&gt;(_i)&lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;.jpg&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;exists(file_name)&lt;span style=&#34;color:#555&#34;&gt;==&lt;/span&gt;False:
+        &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;try&lt;/span&gt;:
+            ur&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;urlretrieve(_s[&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;imageLinks&amp;#34;&lt;/span&gt;][&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;imageLink&amp;#34;&lt;/span&gt;][&lt;span style=&#34;color:#f60&#34;&gt;0&lt;/span&gt;],file_name)
+        &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#c00;font-weight:bold&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;as&lt;/span&gt; e:
+            &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;print&lt;/span&gt;(_i)
+            &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#366&#34;&gt;str&lt;/span&gt;(e))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>这次是纽约公共图书馆……</title>
       <link>https://blog.heysh.xyz/2018/02/21/nypl/</link>
       <pubDate>Wed, 21 Feb 2018 22:03:59 +0800</pubDate>
