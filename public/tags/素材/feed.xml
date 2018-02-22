@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/heyeshuang&#34;&gt;He Yeshuang&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 21 Feb 2018 22:03:59 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Feb 2018 16:03:59 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/tags/%E7%B4%A0%E6%9D%90/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>这次是纽约公共图书馆……的第二天！</title>
+      <link>https://blog.heysh.xyz/2018/02/22/nypl2/</link>
+      <pubDate>Thu, 22 Feb 2018 16:03:59 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/02/22/nypl2/</guid>
+      <description>（精神上）坐在图书馆里，我想：能不能把这些旧书借走呢？ 当然是可以的！贴心的图书管理员已经提供了API接口：http://api.repo.n</description>
+    </item>
     
     <item>
       <title>这次是纽约公共图书馆……</title>
