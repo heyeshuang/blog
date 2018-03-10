@@ -1,0 +1,23 @@
+sudo: false
+
+language: go
+
+git:
+  depth: 1
+
+install: go get -v github.com/spf13/hugo
+
+script:
+  - hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  # token is set in travis-ci.org dashboard
+  github_token: $GITHUB_API_KEY
+  on:
+    branch: master
+  local_dir: public
+  target_branch: gh-pages
+  email: deploy@travis-ci.org
+  name: deployment-bot
