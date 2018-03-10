@@ -13,6 +13,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
+  keep-history： true
   # token is set in travis-ci.org dashboard
   github_token: $GITHUB_API_KEY
   on:
