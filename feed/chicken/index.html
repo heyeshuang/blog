@@ -21,7 +21,7 @@
 
 &lt;p&gt;之前下到了一叠厚厚的&lt;a href=&#34;https://digitalcollections.nypl.org/collections/trait-des-arbres-et-arbustes-que-lon-cultive-en-france-en-pleine-terre#/?tab=about&#34;&gt;图集&lt;/a&gt;，可是要真正用起来，还需要一点点简单的处理，比如说，沿着边线把图案剪下来：
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/nypl/before.jpg&#34; /&gt;
     
@@ -34,7 +34,7 @@
 &lt;/figure&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/nypl/after.png&#34; /&gt;
     
@@ -76,7 +76,7 @@
 &lt;p&gt;其中，&lt;code&gt;API_TOKEN&lt;/code&gt;在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href=&#34;https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50&#34;&gt;比如这个&lt;/a&gt;）下面，可以看到&lt;code&gt;UUID&lt;/code&gt;；运行这条命令之后，图片的信息列表会保存在&lt;code&gt;OUTPUT.json&lt;/code&gt;里。&lt;/p&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/nypl/clip.png&#34; /&gt;
     
@@ -91,26 +91,26 @@
 
 &lt;p&gt;之后，获得的json文件大概像是这样：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;uuid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageLinks&amp;#34;&lt;/span&gt;: {
-        &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageLink&amp;#34;&lt;/span&gt;: [
-            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=w&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=r&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=t&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=b&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=f&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;
-        ]
-    },
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;apiUri&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;typeOfResource&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;still image&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;1125721&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;sortString&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;0000000001|0000000002|0000000001&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;itemLink&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;highResLink&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Dandelion.&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;dateDigitized&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;2016-08-04T04:53:12Z&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;rightsStatement&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&amp;#34;From The New York Public Library,\&amp;#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;rightsStatementURI&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;uuid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageLinks&amp;#34;&lt;/span&gt;: {
+		&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageLink&amp;#34;&lt;/span&gt;: [
+			&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=w&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+			&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=r&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+			&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=t&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+			&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=b&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;,
+			&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=f&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span&gt;
+		]
+	},
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;apiUri&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;typeOfResource&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;still image&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;imageID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;1125721&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;sortString&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;0000000001|0000000002|0000000001&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;itemLink&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;highResLink&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Dandelion.&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;dateDigitized&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;2016-08-04T04:53:12Z&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;rightsStatement&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&amp;#34;From The New York Public Library,\&amp;#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&amp;#34;&lt;/span&gt;,
+	&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;rightsStatementURI&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span&gt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;之后，只要下载&lt;code&gt;imageLink&lt;/code&gt;就好了。我用了一个简单的python脚本来做这件事。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# 注意：这玩意没有经过测试，可能会爆炸&lt;/span&gt;
@@ -155,7 +155,7 @@ os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;mkdir(dir_name)
 &lt;h3 id=&#34;看看喜马拉雅山上都长些什么-https-digitalcollections-nypl-org-collections-nature-illustrated-flowers-plants-and-trees-1550-1900-tab-navigation-roots-11-c51cb7e0-c6ba-012f-206d-3c075448cc4b&#34;&gt;&lt;a href=&#34;https://digitalcollections.nypl.org/collections/nature-illustrated-flowers-plants-and-trees-1550-1900#/?tab=navigation&amp;amp;roots=11:c51cb7e0-c6ba-012f-206d-3c075448cc4b&#34;&gt;看看喜马拉雅山上都长些什么&lt;/a&gt;&lt;/h3&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg&#34; /&gt;
     
@@ -171,7 +171,7 @@ os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;mkdir(dir_name)
 &lt;h3 id=&#34;学习下最新的流行风尚-https-digitalcollections-nypl-org-collections-newest-styles-for-men-tab-about&#34;&gt;&lt;a href=&#34;https://digitalcollections.nypl.org/collections/newest-styles-for-men#/?tab=about&#34;&gt;学习下最新的流行风尚&lt;/a&gt;&lt;/h3&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg&#34; /&gt;
     
@@ -187,7 +187,7 @@ os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;mkdir(dir_name)
 &lt;h3 id=&#34;或者来辆新车-https-digitalcollections-nypl-org-collections-album-of-illustrations-of-imperial-royal-state-carriages-together-with-other-tab-about&#34;&gt;&lt;a href=&#34;https://digitalcollections.nypl.org/collections/album-of-illustrations-of-imperial-royal-state-carriages-together-with-other#/?tab=about&#34;&gt;或者来辆新车？&lt;/a&gt;&lt;/h3&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg&#34; /&gt;
     
@@ -294,7 +294,7 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;xscale(&lt;span style=&#
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;yscale(&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/zipf/output_5_0.png&#34; /&gt;
     
@@ -326,7 +326,7 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;xscale(&lt;span style=&#
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;yscale(&lt;span style=&#34;color:#c30&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show() &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#指数分布&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/zipf/output_9_0.png&#34; /&gt;
     
@@ -369,7 +369,7 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show()&lt;/code&gt;&lt;/
 
 &lt;p&gt;好的，我们得到了 *基于曲别针的互联网系统*——至少可以算是个物联网。在这个网络里，（大概）80%的曲别针在20%的链子中，余下的曲别针散落在另外的地方。我们叫那些链子“曲别针巨头”。随着连接次数越来越多，链子越来越长，分散的曲别针越来越少，这就是“链子中心化”，我们现在互联网的状态。&lt;/p&gt;
 
-&lt;p&gt;当继续这个过程的时候，最终（很快）就只剩下唯一一条长链，这就是我们互联网的末日&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;当继续这个过程的时候，最终（很快）就只剩下唯一一条长链，这就是我们互联网的末日&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
 
 &lt;p&gt;刘慈欣在还没有现在这么出名的时候，写过一篇叫做《赡养人类》的作品，提到了有关“终产者”的概念。当时，有人评论大刘“不懂政治，也不懂经济”，我十分希望这个人是对的。&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
@@ -409,7 +409,7 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show()&lt;/code&gt;&lt;/
 
 &lt;ul&gt;
 &lt;li&gt;引入更多训练样本&lt;/li&gt;
-&lt;li&gt;正则化（Normalization&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）
+&lt;li&gt;正则化（Normalization&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）
 
 &lt;ul&gt;
 &lt;li&gt;目的：减小||W|| ←此时熵最大，可能性最高&lt;/li&gt;
@@ -429,7 +429,7 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show()&lt;/code&gt;&lt;/
 &lt;h2 id=&#34;初始化输入数据和参数&#34;&gt;初始化输入数据和参数&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;输入数据标准化（Normalization&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）：使每个维度在(-1,1)之间&lt;/li&gt;
+&lt;li&gt;输入数据标准化（Normalization&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）：使每个维度在(-1,1)之间&lt;/li&gt;
 &lt;li&gt;权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
 
 &lt;ul&gt;
@@ -912,7 +912,7 @@ markdown &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#
 &lt;h2 id=&#34;接下来是截图时间&#34;&gt;接下来是截图时间：&lt;/h2&gt;
 
 &lt;p&gt;
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/font/5.png&#34; width=&#34;50%&#34; /&gt;
     
@@ -925,7 +925,7 @@ markdown &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#
 &lt;/figure&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/font/3.png&#34; width=&#34;50%&#34; /&gt;
     
@@ -938,7 +938,7 @@ markdown &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#
 &lt;/figure&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/font/4.png&#34; width=&#34;50%&#34; /&gt;
     
@@ -1381,7 +1381,7 @@ browser.tabs.remote.autostart.2=false&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;这当然是在开玩笑，除了我踏出屋门这件事以外。那天我去了首都图书馆。拿到了教官/总长/特首的出门许可之后，中午，我穿过垃圾场，跳过泥潭，走过柳林，再从围墙的缺口钻过去，然后，又回到了文明世界。&lt;/p&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/yard-of-chaos.jpg&#34; /&gt;
     
@@ -1428,12 +1428,12 @@ browser.tabs.remote.autostart.2=false&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
 ;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
 setChineseLayout(){
-    ;发送中文输入法切换快捷键，请根据实际情况设置。
-    send {Ctrl Down}{Shift}
-    send {Ctrl Down},
-    send {Ctrl Down}{Shift}
-    send {Ctrl Down},
-    send {Ctrl Up}
+	;发送中文输入法切换快捷键，请根据实际情况设置。
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Down}{Shift}
+	send {Ctrl Down},
+	send {Ctrl Up}
 }&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p&gt;
 
@@ -1492,7 +1492,7 @@ setChineseLayout(){
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/ipv6-test.png&#34; /&gt;
     
@@ -1505,7 +1505,7 @@ setChineseLayout(){
 &lt;/figure&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/torrent.png&#34; /&gt;
     
@@ -1536,7 +1536,7 @@ setChineseLayout(){
 &lt;/ul&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;/speed.png&#34; /&gt;
     
@@ -3246,10 +3246,10 @@ rm -rf /mnt/tex&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p&gt;
 
 &lt;p&gt;编译用例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;\documentclass{ctexart}
-\begin{document}
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\documentclass&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;ctexart&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\begin&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;document&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
 为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
-\end{document}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\end&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;document&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;用的编译命令是xelatex……&lt;/p&gt;
 
 &lt;p&gt;然后……要是提示缺少&lt;code&gt;Adobe Song Std&lt;/code&gt;什么的，应该&lt;code&gt;yaourt acroread-font-chinese-simplified&lt;/code&gt;就行了吧……&lt;/p&gt;
@@ -3591,7 +3591,8 @@ END:VCALENDAR&lt;/pre&gt;&lt;/div&gt;
 $vCalArea.append(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; strBT &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; strET &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; uid &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; Data.courseInfo &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; Data.place &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; Data.courseName &lt;span style=&#34;color:#555&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span&gt;)
 &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;/****************VEVENT部分***************/&lt;/span&gt;
 $vCalArea.append(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;END:VCALENDAR&amp;#39;&lt;/span&gt;);
-&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;/****************文件尾****************/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;/****************文件尾****************/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;全部脚本见&lt;a href=&#34;http://code.google.com/p/js-thu-cal-outputer/&#34;&gt;http://code.google.com/p/js-thu-cal-outputer/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

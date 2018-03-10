@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.38-DEV" />
 
   <title>Texlive 在archlinux上的安装，以及中文字体的设置 &middot; 贺叶霜的树：III</title>
 
@@ -328,10 +328,10 @@ rm -rf /mnt/tex</code></pre></div>
 <p>把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312</p>
 
 <p>编译用例：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">\documentclass{ctexart}
-\begin{document}
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#069;font-weight:bold">\documentclass</span><span style="color:#366">{</span>ctexart<span style="color:#366">}</span>
+<span style="color:#069;font-weight:bold">\begin</span><span style="color:#366">{</span>document<span style="color:#366">}</span>
 为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
-\end{document}</code></pre></div>
+<span style="color:#069;font-weight:bold">\end</span><span style="color:#366">{</span>document<span style="color:#366">}</span></code></pre></div>
 <p>用的编译命令是xelatex……</p>
 
 <p>然后……要是提示缺少<code>Adobe Song Std</code>什么的，应该<code>yaourt acroread-font-chinese-simplified</code>就行了吧……</p>

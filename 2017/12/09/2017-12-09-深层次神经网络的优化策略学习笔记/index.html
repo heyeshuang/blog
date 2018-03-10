@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.38-DEV" />
 
   <title>学习笔记：神经网络的优化策略 &middot; 贺叶霜的树：III</title>
 
@@ -269,7 +269,7 @@
 
 <ul>
 <li>引入更多训练样本</li>
-<li>正则化（Normalization<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>）
+<li>正则化（Normalization<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>）
 
 <ul>
 <li>目的：减小||W|| ←此时熵最大，可能性最高</li>
@@ -289,7 +289,7 @@
 <h2 id="初始化输入数据和参数">初始化输入数据和参数</h2>
 
 <ul>
-<li>输入数据标准化（Normalization<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>）：使每个维度在(-1,1)之间</li>
+<li>输入数据标准化（Normalization<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>）：使每个维度在(-1,1)之间</li>
 <li>权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
 
 <ul>

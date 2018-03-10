@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.38-DEV" />
 
   <title>这次是纽约公共图书馆……的第二天！ &middot; 贺叶霜的树：III</title>
 
@@ -261,7 +261,7 @@
 <p>其中，<code>API_TOKEN</code>在申请账号以后会得到一个；在你想要下载的专辑（<a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;scroll=50">比如这个</a>）下面，可以看到<code>UUID</code>；运行这条命令之后，图片的信息列表会保存在<code>OUTPUT.json</code>里。</p>
 
 
-<figure >
+<figure>
     
         <img src="/nypl/clip.png" />
     
@@ -276,26 +276,26 @@
 
 <p>之后，获得的json文件大概像是这样：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#309;font-weight:bold">&#34;uuid&#34;</span>: <span style="color:#c30">&#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;imageLinks&#34;</span>: {
-        <span style="color:#309;font-weight:bold">&#34;imageLink&#34;</span>: [
-            <span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=w&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
-            <span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=r&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
-            <span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=t&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
-            <span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=b&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
-            <span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=f&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>
-        ]
-    },
-    <span style="color:#309;font-weight:bold">&#34;apiUri&#34;</span>: <span style="color:#c30">&#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;typeOfResource&#34;</span>: <span style="color:#c30">&#34;still image&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;imageID&#34;</span>: <span style="color:#c30">&#34;1125721&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;sortString&#34;</span>: <span style="color:#c30">&#34;0000000001|0000000002|0000000001&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;itemLink&#34;</span>: <span style="color:#c30">&#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;highResLink&#34;</span>: <span style="color:#c30">&#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;title&#34;</span>: <span style="color:#c30">&#34;Dandelion.&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;dateDigitized&#34;</span>: <span style="color:#c30">&#34;2016-08-04T04:53:12Z&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;rightsStatement&#34;</span>: <span style="color:#c30">&#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&#34;From The New York Public Library,\&#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&#34;</span>,
-    <span style="color:#309;font-weight:bold">&#34;rightsStatementURI&#34;</span>: <span style="color:#c30">&#34;http://rightsstatements.org/vocab/NoC-US/1.0/&#34;</span>
+	<span style="color:#309;font-weight:bold">&#34;uuid&#34;</span>: <span style="color:#c30">&#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;imageLinks&#34;</span>: {
+		<span style="color:#309;font-weight:bold">&#34;imageLink&#34;</span>: [
+			<span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=w&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
+			<span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=r&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
+			<span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=t&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
+			<span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=b&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>,
+			<span style="color:#c30">&#34;http://images.nypl.org/index.php?id=1125721&amp;t=f&amp;download=1&amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&#34;</span>
+		]
+	},
+	<span style="color:#309;font-weight:bold">&#34;apiUri&#34;</span>: <span style="color:#c30">&#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;typeOfResource&#34;</span>: <span style="color:#c30">&#34;still image&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;imageID&#34;</span>: <span style="color:#c30">&#34;1125721&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;sortString&#34;</span>: <span style="color:#c30">&#34;0000000001|0000000002|0000000001&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;itemLink&#34;</span>: <span style="color:#c30">&#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;highResLink&#34;</span>: <span style="color:#c30">&#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;title&#34;</span>: <span style="color:#c30">&#34;Dandelion.&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;dateDigitized&#34;</span>: <span style="color:#c30">&#34;2016-08-04T04:53:12Z&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;rightsStatement&#34;</span>: <span style="color:#c30">&#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&#34;From The New York Public Library,\&#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&#34;</span>,
+	<span style="color:#309;font-weight:bold">&#34;rightsStatementURI&#34;</span>: <span style="color:#c30">&#34;http://rightsstatements.org/vocab/NoC-US/1.0/&#34;</span>
 }</code></pre></div>
 <p>之后，只要下载<code>imageLink</code>就好了。我用了一个简单的python脚本来做这件事。</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸</span>
