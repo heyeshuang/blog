@@ -8,7 +8,8 @@ tags :
 
 categories :
     - 折腾
-title: "History Data for Bitcoin and Altcoins/以及一些闲话"
+title: "History Data for Bitcoin and Altcoins"
+description: "以及一些闲话"
 date: 2018-01-23T17:31:33+08:00
 draft: false
 ---
