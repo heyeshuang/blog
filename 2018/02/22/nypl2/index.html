@@ -304,16 +304,16 @@
 <span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">json</span>
 <span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">os</span>
 
-dir_name<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#34;Himalayan_plants&#34;</span> <span style="color:#09f;font-style:italic">#可能要改这里……</span>
+dir_name<span style="color:#555">=</span><span style="color:#c30">&#34;Himalayan_plants&#34;</span> <span style="color:#09f;font-style:italic">#可能要改这里……</span>
 os<span style="color:#555">.</span>mkdir(dir_name)
-<span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(<span style="color:#c30"></span><span style="color:#c30">&#34;OUTPUT.json&#34;</span>,<span style="color:#c30"></span><span style="color:#c30">&#34;r&#34;</span>) <span style="color:#069;font-weight:bold">as</span> source: <span style="color:#09f;font-style:italic">#……还有这里</span>
+<span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(<span style="color:#c30">&#34;OUTPUT.json&#34;</span>,<span style="color:#c30">&#34;r&#34;</span>) <span style="color:#069;font-weight:bold">as</span> source: <span style="color:#09f;font-style:italic">#……还有这里</span>
     source_dict<span style="color:#555">=</span>json<span style="color:#555">.</span>load(source)
 
 <span style="color:#069;font-weight:bold">for</span> _i,_s <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">enumerate</span>(source_dict):
-    file_name<span style="color:#555">=</span>dir_name<span style="color:#555">+</span><span style="color:#c30"></span><span style="color:#c30">&#34;/&#34;</span><span style="color:#555">+</span><span style="color:#366">str</span>(_i)<span style="color:#555">+</span><span style="color:#c30"></span><span style="color:#c30">&#34;.jpg&#34;</span>
+    file_name<span style="color:#555">=</span>dir_name<span style="color:#555">+</span><span style="color:#c30">&#34;/&#34;</span><span style="color:#555">+</span><span style="color:#366">str</span>(_i)<span style="color:#555">+</span><span style="color:#c30">&#34;.jpg&#34;</span>
     <span style="color:#069;font-weight:bold">if</span> os<span style="color:#555">.</span>path<span style="color:#555">.</span>exists(file_name)<span style="color:#555">==</span>False:
         <span style="color:#069;font-weight:bold">try</span>:
-            ur<span style="color:#555">.</span>urlretrieve(_s[<span style="color:#c30"></span><span style="color:#c30">&#34;imageLinks&#34;</span>][<span style="color:#c30"></span><span style="color:#c30">&#34;imageLink&#34;</span>][<span style="color:#f60">0</span>],file_name)
+            ur<span style="color:#555">.</span>urlretrieve(_s[<span style="color:#c30">&#34;imageLinks&#34;</span>][<span style="color:#c30">&#34;imageLink&#34;</span>][<span style="color:#f60">0</span>],file_name)
         <span style="color:#069;font-weight:bold">except</span> <span style="color:#c00;font-weight:bold">Exception</span> <span style="color:#069;font-weight:bold">as</span> e:
             <span style="color:#069;font-weight:bold">print</span>(_i)
             <span style="color:#069;font-weight:bold">print</span>(<span style="color:#366">str</span>(e))</code></pre></div>

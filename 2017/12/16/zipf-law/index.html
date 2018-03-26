@@ -280,16 +280,16 @@
 <p>一只猴子（我们叫它Shashi Biya）在打字机上乱敲，它敲二十六个字母和空格概率都相等。那么，咱们能不能看出他的用词习惯？答案是肯定的。</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">string</span><span style="color:#555">,</span><span style="color:#0cf;font-weight:bold">random</span>
 <span style="color:#069;font-weight:bold">from</span> <span style="color:#0cf;font-weight:bold">collections</span> <span style="color:#069;font-weight:bold">import</span> Counter
-s<span style="color:#555">=</span>string<span style="color:#555">.</span>ascii_lowercase<span style="color:#555">+</span><span style="color:#c30"></span><span style="color:#c30">&#34; &#34;</span>
-s<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#34;abcd &#34;</span>
-monkey<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#39;&#39;</span><span style="color:#555">.</span>join(random<span style="color:#555">.</span>choices(s, k<span style="color:#555">=</span><span style="color:#f60">10000000</span>))
-monkey<span style="color:#555">=</span>[m <span style="color:#069;font-weight:bold">for</span> m <span style="color:#000;font-weight:bold">in</span> monkey<span style="color:#555">.</span>split(<span style="color:#c30"></span><span style="color:#c30">&#34; &#34;</span>) <span style="color:#069;font-weight:bold">if</span> m]
+s<span style="color:#555">=</span>string<span style="color:#555">.</span>ascii_lowercase<span style="color:#555">+</span><span style="color:#c30">&#34; &#34;</span>
+s<span style="color:#555">=</span><span style="color:#c30">&#34;abcd &#34;</span>
+monkey<span style="color:#555">=</span><span style="color:#c30">&#39;&#39;</span><span style="color:#555">.</span>join(random<span style="color:#555">.</span>choices(s, k<span style="color:#555">=</span><span style="color:#f60">10000000</span>))
+monkey<span style="color:#555">=</span>[m <span style="color:#069;font-weight:bold">for</span> m <span style="color:#000;font-weight:bold">in</span> monkey<span style="color:#555">.</span>split(<span style="color:#c30">&#34; &#34;</span>) <span style="color:#069;font-weight:bold">if</span> m]
 c<span style="color:#555">=</span>Counter(monkey)
 common<span style="color:#555">=</span>c<span style="color:#555">.</span>most_common()[:<span style="color:#f60">10000</span>]
 fre<span style="color:#555">=</span>[value <span style="color:#069;font-weight:bold">for</span> (key,value) <span style="color:#000;font-weight:bold">in</span> common]
 plt<span style="color:#555">.</span>plot(fre)
-plt<span style="color:#555">.</span>xscale(<span style="color:#c30"></span><span style="color:#c30">&#39;log&#39;</span>)
-plt<span style="color:#555">.</span>yscale(<span style="color:#c30"></span><span style="color:#c30">&#39;log&#39;</span>)
+plt<span style="color:#555">.</span>xscale(<span style="color:#c30">&#39;log&#39;</span>)
+plt<span style="color:#555">.</span>yscale(<span style="color:#c30">&#39;log&#39;</span>)
 plt<span style="color:#555">.</span>show()</code></pre></div>
 
 <figure>
@@ -320,8 +320,8 @@ plt<span style="color:#555">.</span>show()</code></pre></div>
     k<span style="color:#555">=</span>np<span style="color:#555">.</span>random<span style="color:#555">.</span>choice(l,<span style="color:#f60">1</span>, p<span style="color:#555">=</span>p)
     <span style="color:#366">list</span>[k]<span style="color:#555">+=</span><span style="color:#f60">1</span>
 plt<span style="color:#555">.</span>plot(<span style="color:#366">sorted</span>(<span style="color:#366">list</span>,reverse<span style="color:#555">=</span>True))
-plt<span style="color:#555">.</span>xscale(<span style="color:#c30"></span><span style="color:#c30">&#39;log&#39;</span>)
-plt<span style="color:#555">.</span>yscale(<span style="color:#c30"></span><span style="color:#c30">&#39;log&#39;</span>)
+plt<span style="color:#555">.</span>xscale(<span style="color:#c30">&#39;log&#39;</span>)
+plt<span style="color:#555">.</span>yscale(<span style="color:#c30">&#39;log&#39;</span>)
 plt<span style="color:#555">.</span>show() <span style="color:#09f;font-style:italic">#指数分布</span></code></pre></div>
 
 <figure>
@@ -360,8 +360,8 @@ l<span style="color:#555">=</span><span style="color:#f60">20000</span>
 toc<span style="color:#555">=</span>timeit<span style="color:#555">.</span>default_timer()
 <span style="color:#069;font-weight:bold">print</span>(toc<span style="color:#555">-</span>tic)
 plt<span style="color:#555">.</span>plot(<span style="color:#366">sorted</span>(<span style="color:#366">list</span>,reverse<span style="color:#555">=</span>True))
-plt<span style="color:#555">.</span>xscale(<span style="color:#c30"></span><span style="color:#c30">&#39;log&#39;</span>)
-plt<span style="color:#555">.</span>yscale(<span style="color:#c30"></span><span style="color:#c30">&#39;log&#39;</span>)
+plt<span style="color:#555">.</span>xscale(<span style="color:#c30">&#39;log&#39;</span>)
+plt<span style="color:#555">.</span>yscale(<span style="color:#c30">&#39;log&#39;</span>)
 plt<span style="color:#555">.</span>show()</code></pre></div>
 <p><img src="/zipf/output_13_0.png" alt="png" /></p>
 

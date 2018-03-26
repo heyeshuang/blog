@@ -262,16 +262,16 @@
 
 <p>对于正文，可以用<code>pandoc</code>和<code>pypandoc</code>转换：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pypandoc</span><span style="color:#555">,</span><span style="color:#0cf;font-weight:bold">os</span>
-root <span style="color:#555">=</span> <span style="color:#c30"></span><span style="color:#c30">&#34;./content&#34;</span>
+root <span style="color:#555">=</span> <span style="color:#c30">&#34;./content&#34;</span>
 
 <span style="color:#069;font-weight:bold">for</span> rt, dirs, files <span style="color:#000;font-weight:bold">in</span> os<span style="color:#555">.</span>walk(root):
     <span style="color:#069;font-weight:bold">for</span> filename <span style="color:#000;font-weight:bold">in</span> files:
-        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(os<span style="color:#555">.</span>path<span style="color:#555">.</span>join(rt, filename), <span style="color:#c30"></span><span style="color:#c30">&#39;r&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> fin:
+        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(os<span style="color:#555">.</span>path<span style="color:#555">.</span>join(rt, filename), <span style="color:#c30">&#39;r&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> fin:
             data <span style="color:#555">=</span> fin<span style="color:#555">.</span>read()
-        ds <span style="color:#555">=</span> data<span style="color:#555">.</span>split(<span style="color:#c30"></span><span style="color:#c30">&#39;---&#39;</span>)
-        ds[<span style="color:#f60">2</span>] <span style="color:#555">=</span> pypandoc<span style="color:#555">.</span>convert_text(ds[<span style="color:#f60">2</span>], <span style="color:#c30"></span><span style="color:#c30">&#39;md&#39;</span>, format<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#39;html&#39;</span>)
-        do <span style="color:#555">=</span> <span style="color:#c30"></span><span style="color:#c30">&#39;---</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#39;</span><span style="color:#555">.</span>join(ds)
-        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(filename, <span style="color:#c30"></span><span style="color:#c30">&#39;w&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> <span style="color:#366">file</span>:
+        ds <span style="color:#555">=</span> data<span style="color:#555">.</span>split(<span style="color:#c30">&#39;---&#39;</span>)
+        ds[<span style="color:#f60">2</span>] <span style="color:#555">=</span> pypandoc<span style="color:#555">.</span>convert_text(ds[<span style="color:#f60">2</span>], <span style="color:#c30">&#39;md&#39;</span>, format<span style="color:#555">=</span><span style="color:#c30">&#39;html&#39;</span>)
+        do <span style="color:#555">=</span> <span style="color:#c30">&#39;---</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#39;</span><span style="color:#555">.</span>join(ds)
+        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(filename, <span style="color:#c30">&#39;w&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> <span style="color:#366">file</span>:
             <span style="color:#366">file</span><span style="color:#555">.</span>write(do)</code></pre></div>
 <p>其他的……手改保平安……</p>
 
@@ -289,20 +289,20 @@ root <span style="color:#555">=</span> <span style="color:#c30"></span><span sty
 <p>同样的，我也写了一个辣鸡脚本：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">pypandoc</span>
 <span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">os</span>
-root <span style="color:#555">=</span> <span style="color:#c30"></span><span style="color:#c30">&#34;./content&#34;</span>
+root <span style="color:#555">=</span> <span style="color:#c30">&#34;./content&#34;</span>
 <span style="color:#069;font-weight:bold">for</span> rt, dirs, files <span style="color:#000;font-weight:bold">in</span> os<span style="color:#555">.</span>walk(root):
     <span style="color:#069;font-weight:bold">for</span> filename <span style="color:#000;font-weight:bold">in</span> files:
-        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(os<span style="color:#555">.</span>path<span style="color:#555">.</span>join(rt, filename), <span style="color:#c30"></span><span style="color:#c30">&#39;r&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> fin:
+        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(os<span style="color:#555">.</span>path<span style="color:#555">.</span>join(rt, filename), <span style="color:#c30">&#39;r&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> fin:
             data <span style="color:#555">=</span> fin<span style="color:#555">.</span>readlines()
             <span style="color:#069;font-weight:bold">try</span>:
-                urlIndex <span style="color:#555">=</span> [n <span style="color:#069;font-weight:bold">for</span> n, l <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">enumerate</span>(data) <span style="color:#069;font-weight:bold">if</span> l<span style="color:#555">.</span>find(<span style="color:#c30"></span><span style="color:#c30">&#34;url:&#34;</span>) <span style="color:#555">!=</span> <span style="color:#555">-</span><span style="color:#f60">1</span>][<span style="color:#f60">0</span>]
-                url <span style="color:#555">=</span> data[urlIndex]<span style="color:#555">.</span>split(<span style="color:#c30"></span><span style="color:#c30">&#34;url:&#34;</span>)[<span style="color:#f60">1</span>]
-                aliasLine <span style="color:#555">=</span> <span style="color:#c30"></span><span style="color:#c30">&#34;  -&#34;</span> <span style="color:#555">+</span> url
+                urlIndex <span style="color:#555">=</span> [n <span style="color:#069;font-weight:bold">for</span> n, l <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">enumerate</span>(data) <span style="color:#069;font-weight:bold">if</span> l<span style="color:#555">.</span>find(<span style="color:#c30">&#34;url:&#34;</span>) <span style="color:#555">!=</span> <span style="color:#555">-</span><span style="color:#f60">1</span>][<span style="color:#f60">0</span>]
+                url <span style="color:#555">=</span> data[urlIndex]<span style="color:#555">.</span>split(<span style="color:#c30">&#34;url:&#34;</span>)[<span style="color:#f60">1</span>]
+                aliasLine <span style="color:#555">=</span> <span style="color:#c30">&#34;  -&#34;</span> <span style="color:#555">+</span> url
                 data<span style="color:#555">.</span>insert(urlIndex <span style="color:#555">+</span> <span style="color:#f60">1</span>, aliasLine)
-                data<span style="color:#555">.</span>insert(urlIndex <span style="color:#555">+</span> <span style="color:#f60">1</span>, <span style="color:#c30"></span><span style="color:#c30">&#34;aliases:</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#34;</span>)
+                data<span style="color:#555">.</span>insert(urlIndex <span style="color:#555">+</span> <span style="color:#f60">1</span>, <span style="color:#c30">&#34;aliases:</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#34;</span>)
             <span style="color:#069;font-weight:bold">except</span>:
                 <span style="color:#069;font-weight:bold">pass</span>
-        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(filename, <span style="color:#c30"></span><span style="color:#c30">&#39;w&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30"></span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> <span style="color:#366">file</span>:
+        <span style="color:#069;font-weight:bold">with</span> <span style="color:#366">open</span>(filename, <span style="color:#c30">&#39;w&#39;</span>, encoding<span style="color:#555">=</span><span style="color:#c30">&#39;utf-8&#39;</span>) <span style="color:#069;font-weight:bold">as</span> <span style="color:#366">file</span>:
             <span style="color:#069;font-weight:bold">for</span> d <span style="color:#000;font-weight:bold">in</span> data:
                 <span style="color:#366">file</span><span style="color:#555">.</span>write(d)</code></pre></div>
 
