@@ -2,7 +2,7 @@ baseURL = "https://blog.heysh.xyz/"
 languageCode = "zh-cn"
 title = "贺叶霜的树：III"
 theme = "blackburn"
-copyright = "&copy; <a href=\"https://github.com/heyeshuang\">He Yeshuang</a>"
+copyright = "&copy;<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\">CC BY-SA</a>"
 hasCJKLanguage = true
 author = "HeYSH"
 # Shown in the side menu
