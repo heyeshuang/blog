@@ -110,3 +110,8 @@ plt.show()
 刘慈欣在还没有现在这么出名的时候，写过一篇叫做《赡养人类》的作品，提到了有关“终产者”的概念。当时，有人评论大刘“不懂政治，也不懂经济”，我十分希望这个人是对的。
 
 [^1]:这似乎和[Net neutrality](https://act.eff.org/action/protect-the-open-internet-order)并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。
+
+---
+2018年4年3日的编辑：
+
+[这里](https://mp.weixin.qq.com/s/ccNUtbywz9JgDI9pj6FJlw)有另一个Zipf's Law的例子，可以看出，其仍然满足马太效应的性质。~~另外，别人的故事编的还是好啊。~~
