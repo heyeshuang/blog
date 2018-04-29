@@ -7,7 +7,7 @@
   <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
   <!-- CSS -->
-  {{ $purecss := "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/" }}
+  {{ $purecss := "https://cdn.bootcss.com/pure/1.0.0/" }}
   <link rel="stylesheet" href="{{ $purecss }}pure-min.css">
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}
@@ -30,12 +30,12 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="//fonts.proxy.ustclug.org/css?family=Raleway" rel="stylesheet" type="text/css">
 
   <!-- KaTeX -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.css">
+  <script src="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.js"></script>
+  <script src="//cdn.bootcss.com/KaTeX/0.9.0/contrib/auto-render.min.js"></script>
 
  <!-- RSS -->
   {{ if .RSSLink }}
@@ -43,10 +43,10 @@
   {{ end }}
 
   {{ with .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/{{ . }}.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   {{ range $.Site.Params.highlightjs_extra_languages }}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
   {{ end }}
   <script>hljs.initHighlightingOnLoad();</script>
   {{ end }}
