@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</loc>
+    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</loc>
     <lastmod>2018-03-26T21:03:21+08:00</lastmod>
   </url>
@@ -778,7 +783,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2018-03-26T21:03:21+08:00</lastmod>
+    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -939,6 +944,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/%E4%B8%8D%E6%98%AF%E4%B8%AA%E5%A5%BD%E4%B8%BB%E6%84%8F/</loc>
+    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/%E4%B8%BB%E9%A1%B5/</loc>
     <lastmod>2013-05-28T08:48:31+00:00</lastmod>
     <priority>0</priority>
@@ -1036,7 +1047,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%AD%A3%E7%BB%8F/</loc>
-    <lastmod>2018-03-26T21:03:21+08:00</lastmod>
+    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1108,13 +1119,13 @@
   
   <url>
     <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2018-03-26T21:03:21+08:00</lastmod>
+    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.heysh.xyz/tags/%E9%A2%84%E6%B5%8B%E6%9C%AA%E6%9D%A5/</loc>
-    <lastmod>2018-03-26T21:03:21+08:00</lastmod>
+    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
