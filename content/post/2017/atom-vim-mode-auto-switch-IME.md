@@ -13,6 +13,10 @@ draft: false
 languageCode : "en"
 ---
 
+Update 2018-5: Now vim-mode-plus introduced [new method](https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300) to disable IME in the setting page. It's time for this post to retire.
+
+---
+
 As a vim-user and Chinese-speaker, I prefer [vim-mode-plus](https://atom.io/packages/vim-mode-plus) for Atom editor, but always disrupted by the IME in normal mode, like this:
 
 ![IME-in-atom](/IME-in-atom.png)
