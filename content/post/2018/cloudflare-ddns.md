@@ -9,7 +9,7 @@ categories :
     - web
 title: "用Cloudflare的v4 API实现动态DNS（DDNS）"
 date: 2018-07-05T21:41:42+08:00
-draft: true
+draft: false
 ---
 如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。
 
