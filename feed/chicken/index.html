@@ -10,6 +10,66 @@
     <atom:link href="https://blog.heysh.xyz/feed/chicken/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>用Cloudflare的v4 API实现动态DNS（DDNS）</title>
+      <link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link>
+      <pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid>
+      <description>&lt;p&gt;如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p&gt;
+
+&lt;p&gt;之前我用的是&lt;a href=&#34;https://lifely.today/2015/05/%E7%82%BA-cloudflare-%E8%A8%AD%E5%AE%9A%E5%8B%95%E6%85%8B-dns-ddns/&#34;&gt;这里&lt;/a&gt;的方法，不过最近cloudflare更新了&lt;a href=&#34;https://api.cloudflare.com/&#34;&gt;第四代API&lt;/a&gt;，那个方法已经失效。于是水博文的机会来了。&lt;/p&gt;
+
+&lt;p&gt;原料：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;一个域名，并用Cloudflare管理&lt;/li&gt;
+&lt;li&gt;一台经常开着的，有计划任务或者cron，可以运行curl的电脑&lt;/li&gt;
+&lt;li&gt;（可选）如果API地址被屏蔽的话，可能需要可用的代理&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;步骤：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;去&lt;a href=&#34;https://dash.cloudflare.com/&#34;&gt;https://dash.cloudflare.com/&lt;/a&gt;找到你域名的&lt;code&gt;zone ID&lt;/code&gt;并新建一个&lt;code&gt;API_KEY&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;新建一条子域名的A记录，IP写什么都行。&lt;/li&gt;
+&lt;li&gt;查询这条记录的&lt;code&gt;RECORD_ID&lt;/code&gt;，在终端运行：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -X GET &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -H &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -H &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -H &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -x http://localhost:8087&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其中 &lt;code&gt;-x&lt;/code&gt;是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;保存下面的脚本，修改&lt;code&gt;&amp;lt;ZONE_ID&amp;gt;&lt;/code&gt;，&lt;code&gt;&amp;lt;RECORD_ID&amp;gt;&lt;/code&gt;，&lt;code&gt;邮箱地址&lt;/code&gt;，&lt;code&gt;API_KEY&lt;/code&gt;，&lt;code&gt;子域名&lt;/code&gt;什么的。如果不需要代理的话删除&lt;code&gt;-x&lt;/code&gt;那一行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#099&#34;&gt;#!/bin/sh
+&lt;/span&gt;&lt;span style=&#34;color:#099&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;NEW_IP&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;curl -s http://ns1.dnspod.net:6666&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;
+&lt;span style=&#34;color:#033&#34;&gt;CURRENT_IP&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;cat /var/tmp/current_ip.txt&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$NEW_IP&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$CURRENT_IP&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;then&lt;/span&gt;
+     &lt;span style=&#34;color:#366&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;else&lt;/span&gt;
+     curl -X PUT &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -x http://localhost:8087 &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -H &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -H &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     -H &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;&lt;/span&gt;     --data &lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$NEW_IP&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span&gt;
+     &lt;span style=&#34;color:#366&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#033&#34;&gt;$NEW_IP&lt;/span&gt; &amp;gt; /var/tmp/current_ip.txt
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;接下来让它每两个小时运行一次就好了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# crontab -e
+&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;*/120 * * * * /path/of/your/script.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;del&gt;写字好累（躺&lt;/del&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>另一些预测未来的尝试，以及问题</title>
       <link>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</link>
       <pubDate>Wed, 02 May 2018 20:30:20 +0800</pubDate>
