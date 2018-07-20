@@ -667,14 +667,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/html/</loc>
-    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
+    <loc>https://blog.heysh.xyz/categories/html/</loc>
+    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/html/</loc>
-    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
+    <loc>https://blog.heysh.xyz/tags/html/</loc>
+    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -739,13 +739,13 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/linux/</loc>
+    <loc>https://blog.heysh.xyz/categories/linux/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/linux/</loc>
+    <loc>https://blog.heysh.xyz/tags/linux/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -919,14 +919,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/web/</loc>
-    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
+    <loc>https://blog.heysh.xyz/categories/web/</loc>
+    <lastmod>2018-07-05T21:41:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/web/</loc>
-    <lastmod>2018-07-05T21:41:42+08:00</lastmod>
+    <loc>https://blog.heysh.xyz/tags/web/</loc>
+    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
