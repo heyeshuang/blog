@@ -33,9 +33,15 @@
   <link href="//fonts.proxy.ustclug.org/css?family=Raleway" rel="stylesheet" type="text/css">
 
   <!-- KaTeX -->
+<<<<<<< HEAD
   <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.css">
   <script src="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.js"></script>
   <script src="//cdn.bootcss.com/KaTeX/0.9.0/contrib/auto-render.min.js"></script>
+=======
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js"></script>
+>>>>>>> 4099b54e91916616a36b946fef89b480c6f857d0
 
  <!-- RSS -->
   {{ if .RSSLink }}
@@ -54,10 +60,18 @@
   {{ partial "favicon.html" . }}
 
   {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ if findRE "https?://" . }}
+        <link rel="stylesheet" href="{{ . }}">
+    {{ else }}
+        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
   {{ end }}
   {{ range .Site.Params.custom_js }}
-    <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ if findRE "https?://" . }}
+        <script src="{{ . }}"></script>
+    {{ else }}
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
   {{ end }}
 
 </head>
