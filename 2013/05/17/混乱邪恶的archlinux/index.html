@@ -300,25 +300,19 @@
 
 
 
-  
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'HeYSH';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://blog.heysh.xyz/js/Valine.min.js"></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 't7xAhuTsStq91vofdFBaMyoG-gzGzoHsz',
+        appKey: '',
+        placeholder: '歪，在吗？',
+        notify: true,
+        visitor: true,
+    })
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 
 </div>
 
