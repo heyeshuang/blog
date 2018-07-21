@@ -1,0 +1,13 @@
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="{{ .Site.BaseURL }}js/Valine.min.js"></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '{{ .Site.Params.valine_id }}',
+        appKey: '{{ .Site.Params.valine_key }}',
+        placeholder: '歪，在吗？',
+        notify: true,
+        visitor: true,
+    })
+</script>

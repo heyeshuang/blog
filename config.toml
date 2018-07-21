@@ -32,6 +32,8 @@ baseName = "feed"
   brand = "Rei III"
   googleAnalytics = "UA-40522664-1"
   disqus = "HeYSH"
+  valine_id = "t7xAhuTsStq91vofdFBaMyoG-gzGzoHsz"
+  caline_key = "NdrP2qik4G319EwHthKo9lSC"
   # CSS name for highlight.js
   # highlightjs = "atom-one-light"
   dateFormat = "2006-01-02 15:04"
