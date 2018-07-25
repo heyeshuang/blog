@@ -3,6 +3,11 @@ background: url("/img/ilex_aquifolium.png") no-repeat right bottom;
 background-attachment: fixed;
 background-size: auto 80%;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
 article {
   margin-top: 1.56rem;
 }
