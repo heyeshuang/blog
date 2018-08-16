@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy;&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 05 Jul 2018 21:41:42 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Aug 2018 20:35:30 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于BitMEX的杠杆</title>
+      <link>https://blog.heysh.xyz/2018/08/16/about-leverage/</link>
+      <pubDate>Thu, 16 Aug 2018 20:35:30 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/08/16/about-leverage/</guid>
+      <description>在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在</description>
+    </item>
     
     <item>
       <title>用Cloudflare的v4 API实现动态DNS（DDNS）</title>

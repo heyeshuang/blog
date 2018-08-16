@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy;&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 24 Feb 2018 00:03:59 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Aug 2018 20:35:30 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于BitMEX的杠杆</title>
+      <link>https://blog.heysh.xyz/2018/08/16/about-leverage/</link>
+      <pubDate>Thu, 16 Aug 2018 20:35:30 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/08/16/about-leverage/</guid>
+      <description>在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在</description>
+    </item>
     
     <item>
       <title>这次是纽约公共图书馆……而且居然还有第三部分？</title>

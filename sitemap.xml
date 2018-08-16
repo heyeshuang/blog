@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.heysh.xyz/2018/08/16/about-leverage/</loc>
+    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</loc>
     <lastmod>2018-07-05T21:41:42+08:00</lastmod>
   </url>
@@ -495,7 +500,13 @@
   
   <url>
     <loc>https://blog.heysh.xyz/tags/bitcoin/</loc>
-    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/bitmex/</loc>
+    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -667,14 +678,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/html/</loc>
-    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
+    <loc>https://blog.heysh.xyz/categories/html/</loc>
+    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/html/</loc>
-    <lastmod>2017-10-07T22:25:35+08:00</lastmod>
+    <loc>https://blog.heysh.xyz/tags/html/</loc>
+    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -739,13 +750,13 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/linux/</loc>
+    <loc>https://blog.heysh.xyz/categories/linux/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/linux/</loc>
+    <loc>https://blog.heysh.xyz/tags/linux/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -806,7 +817,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2018-07-05T21:41:42+08:00</lastmod>
+    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -919,14 +930,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/web/</loc>
-    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
+    <loc>https://blog.heysh.xyz/categories/web/</loc>
+    <lastmod>2018-07-05T21:41:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/web/</loc>
-    <lastmod>2018-07-05T21:41:42+08:00</lastmod>
+    <loc>https://blog.heysh.xyz/tags/web/</loc>
+    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1034,7 +1045,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2018-02-24T00:03:59+08:00</lastmod>
+    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1142,7 +1153,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2018-07-05T21:41:42+08:00</lastmod>
+    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   

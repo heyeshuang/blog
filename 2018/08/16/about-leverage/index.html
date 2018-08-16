@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.47-DEV" />
+
+  <title>关于BitMEX的杠杆 &middot; 贺叶霜的树：III</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://blog.heysh.xyz/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://blog.heysh.xyz/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://blog.heysh.xyz/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="//fonts.proxy.ustclug.org/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.css">
+  <script src="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.js"></script>
+  <script src="//cdn.bootcss.com/KaTeX/0.9.0/contrib/auto-render.min.js"></script>
+
+ 
+  
+
+  
+
+  <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://blog.heysh.xyz/css/typo.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://blog.heysh.xyz/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">Rei III</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://heysh.xyz/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/sentences/"><i class='fa fa-video-camera fa-fw'></i>Theatre</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/wallet/"><i class='fa fa-money fa-fw'></i>Begging</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/heyeshuang" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/heyeshuang" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy;<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA</a></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>关于BitMEX的杠杆</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018-08-16 20:35</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/bitcoin">bitcoin</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/bitmex">bitmex</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在账户上然后去睡觉，神经衰弱的一系列症状大约会加重。</p>
+
+<p>所以<a href="https://www.bitmex.com/register/O3rmQq">BitMEX</a>（这里是个返利链接）用XBT计算盈亏就显得很有趣了：当比特币上涨的时候，大家都很开心；可是万一下跌的话，实际盈亏还要乘上汇率的缩水，一不小心就会得到双倍的悲伤。这种时候，理解账户数字的 <em>实际价值</em><sup class="footnote-ref" id="fnref:pizza"><a class="footnote" href="#fn:pizza">1</a></sup>，可能对控制风险有更为重要的价值。</p>
+
+<p>根据<a href="https://www.bitmex.com/app/pnlGuide">官方指南</a>，盈利的XBT数目可以这样计算：</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">win_BTC_long<span style="color:#555">=</span>(<span style="color:#f60">1</span><span style="color:#555">/</span>price_before<span style="color:#555">-</span><span style="color:#f60">1</span><span style="color:#555">/</span>price_after)<span style="color:#555">*</span>count <span style="color:#09f;font-style:italic">#做多</span>
+win_BTC_short<span style="color:#555">=</span>(<span style="color:#555">-</span><span style="color:#f60">1</span><span style="color:#555">/</span>price_before<span style="color:#555">+</span><span style="color:#f60">1</span><span style="color:#555">/</span>price_after)<span style="color:#555">*</span>count <span style="color:#09f;font-style:italic">#做空</span></code></pre></div>
+<p>那么，经过这部分操作之后，账户的最终价值是：</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">win_BTC_long<span style="color:#555">*</span>price_after<span style="color:#555">+</span>cash<span style="color:#555">/</span>price_before<span style="color:#555">*</span>price_after <span style="color:#09f;font-style:italic">#做多，或</span>
+win_BTC_short<span style="color:#555">*</span>price_after<span style="color:#555">+</span>cash<span style="color:#555">/</span>price_before<span style="color:#555">*</span>price_after <span style="color:#09f;font-style:italic">#做空</span></code></pre></div>
+<p>其中，<code>cash</code>是操作前账户的实际价值，<span  class="math">\(cash*leverage=count\)</span>。</p>
+
+<p>例如，当价格从1000$升至1250$，或从1250$降至1000$时，选用不同杠杆的盈亏如下：</p>
+
+<table>
+<thead>
+<tr>
+<th>leverage</th>
+<th>作多，跌</th>
+<th>作多，涨</th>
+<th>作空，跌</th>
+<th>作空，涨</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0.0</td>
+<td>800.0</td>
+<td>1250.0</td>
+<td>800.0</td>
+<td>1250.0</td>
+</tr>
+
+<tr>
+<td>0.1</td>
+<td>780.0</td>
+<td>1275.0</td>
+<td>820.0</td>
+<td>1225.0</td>
+</tr>
+
+<tr>
+<td>0.2</td>
+<td>760.0</td>
+<td>1300.0</td>
+<td>840.0</td>
+<td>1200.0</td>
+</tr>
+
+<tr>
+<td>0.3</td>
+<td>740.0</td>
+<td>1325.0</td>
+<td>860.0</td>
+<td>1175.0</td>
+</tr>
+
+<tr>
+<td>0.4</td>
+<td>720.0</td>
+<td>1350.0</td>
+<td>880.0</td>
+<td>1150.0</td>
+</tr>
+
+<tr>
+<td>0.5</td>
+<td>700.0</td>
+<td>1375.0</td>
+<td>900.0</td>
+<td>1125.0</td>
+</tr>
+
+<tr>
+<td>0.6</td>
+<td>680.0</td>
+<td>1400.0</td>
+<td>920.0</td>
+<td>1100.0</td>
+</tr>
+
+<tr>
+<td>0.7</td>
+<td>660.0</td>
+<td>1425.0</td>
+<td>940.0</td>
+<td>1075.0</td>
+</tr>
+
+<tr>
+<td>0.8</td>
+<td>640.0</td>
+<td>1450.0</td>
+<td>960.0</td>
+<td>1050.0</td>
+</tr>
+
+<tr>
+<td>0.9</td>
+<td>620.0</td>
+<td>1475.0</td>
+<td>980.0</td>
+<td>1025.0</td>
+</tr>
+
+<tr>
+<td>1.0</td>
+<td>600.0</td>
+<td>1500.0</td>
+<td>1000.0</td>
+<td>1000.0</td>
+</tr>
+
+<tr>
+<td>1.1</td>
+<td>580.0</td>
+<td>1525.0</td>
+<td>1020.0</td>
+<td>975.0</td>
+</tr>
+
+<tr>
+<td>1.2</td>
+<td>560.0</td>
+<td>1550.0</td>
+<td>1040.0</td>
+<td>950.0</td>
+</tr>
+
+<tr>
+<td>1.3</td>
+<td>540.0</td>
+<td>1575.0</td>
+<td>1060.0</td>
+<td>925.0</td>
+</tr>
+
+<tr>
+<td>1.4</td>
+<td>520.0</td>
+<td>1600.0</td>
+<td>1080.0</td>
+<td>900.0</td>
+</tr>
+
+<tr>
+<td>1.5</td>
+<td>500.0</td>
+<td>1625.0</td>
+<td>1100.0</td>
+<td>875.0</td>
+</tr>
+
+<tr>
+<td>1.6</td>
+<td>480.0</td>
+<td>1650.0</td>
+<td>1120.0</td>
+<td>850.0</td>
+</tr>
+
+<tr>
+<td>1.7</td>
+<td>460.0</td>
+<td>1675.0</td>
+<td>1140.0</td>
+<td>825.0</td>
+</tr>
+
+<tr>
+<td>1.8</td>
+<td>440.0</td>
+<td>1700.0</td>
+<td>1160.0</td>
+<td>800.0</td>
+</tr>
+
+<tr>
+<td>1.9</td>
+<td>420.0</td>
+<td>1725.0</td>
+<td>1180.0</td>
+<td>775.0</td>
+</tr>
+
+<tr>
+<td>2.0</td>
+<td>400.0</td>
+<td>1750.0</td>
+<td>1200.0</td>
+<td>750.0</td>
+</tr>
+
+<tr>
+<td>2.1</td>
+<td>380.0</td>
+<td>1775.0</td>
+<td>1220.0</td>
+<td>725.0</td>
+</tr>
+
+<tr>
+<td>2.2</td>
+<td>360.0</td>
+<td>1800.0</td>
+<td>1240.0</td>
+<td>700.0</td>
+</tr>
+
+<tr>
+<td>2.3</td>
+<td>340.0</td>
+<td>1825.0</td>
+<td>1260.0</td>
+<td>675.0</td>
+</tr>
+
+<tr>
+<td>2.4</td>
+<td>320.0</td>
+<td>1850.0</td>
+<td>1280.0</td>
+<td>650.0</td>
+</tr>
+
+<tr>
+<td>2.5</td>
+<td>300.0</td>
+<td>1875.0</td>
+<td>1300.0</td>
+<td>625.0</td>
+</tr>
+
+<tr>
+<td>2.6</td>
+<td>280.0</td>
+<td>1900.0</td>
+<td>1320.0</td>
+<td>600.0</td>
+</tr>
+
+<tr>
+<td>2.7</td>
+<td>260.0</td>
+<td>1925.0</td>
+<td>1340.0</td>
+<td>575.0</td>
+</tr>
+
+<tr>
+<td>2.8</td>
+<td>240.0</td>
+<td>1950.0</td>
+<td>1360.0</td>
+<td>550.0</td>
+</tr>
+
+<tr>
+<td>2.9</td>
+<td>220.0</td>
+<td>1975.0</td>
+<td>1380.0</td>
+<td>525.0</td>
+</tr>
+
+<tr>
+<td>3.0</td>
+<td>200.0</td>
+<td>2000.0</td>
+<td>1400.0</td>
+<td>500.0</td>
+</tr>
+
+<tr>
+<td>3.1</td>
+<td>180.0</td>
+<td>2025.0</td>
+<td>1420.0</td>
+<td>475.0</td>
+</tr>
+
+<tr>
+<td>3.2</td>
+<td>160.0</td>
+<td>2050.0</td>
+<td>1440.0</td>
+<td>450.0</td>
+</tr>
+
+<tr>
+<td>3.3</td>
+<td>140.0</td>
+<td>2075.0</td>
+<td>1460.0</td>
+<td>425.0</td>
+</tr>
+
+<tr>
+<td>3.4</td>
+<td>120.0</td>
+<td>2100.0</td>
+<td>1480.0</td>
+<td>400.0</td>
+</tr>
+
+<tr>
+<td>3.5</td>
+<td>100.0</td>
+<td>2125.0</td>
+<td>1500.0</td>
+<td>375.0</td>
+</tr>
+
+<tr>
+<td>3.6</td>
+<td>80.0</td>
+<td>2150.0</td>
+<td>1520.0</td>
+<td>350.0</td>
+</tr>
+
+<tr>
+<td>3.7</td>
+<td>60.0</td>
+<td>2175.0</td>
+<td>1540.0</td>
+<td>325.0</td>
+</tr>
+
+<tr>
+<td>3.8</td>
+<td>40.0</td>
+<td>2200.0</td>
+<td>1560.0</td>
+<td>300.0</td>
+</tr>
+
+<tr>
+<td>3.9</td>
+<td>20.0</td>
+<td>2225.0</td>
+<td>1580.0</td>
+<td>275.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>这样，通过恰当地选择做多和做空杠杆，可以使做空和做多的回撤接近。比如说，同样是在1000到1250之间运动，做空2.5倍的最大亏损与做多0.9倍类似。如果在两个方向都使用2.5倍杠杆，可能会造成不必要的损失。</p>
+
+<p>——当然，以上分析对比特币狂信者来说并没有什么意义。</p>
+<div class="footnotes">
+
+<hr>
+
+<ol>
+<li id="fn:pizza">无意冒犯，这里的实际价值指的是能够换多少个比萨饼。
+ <a class="footnote-return" href="#fnref:pizza"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">用Cloudflare的v4 API实现动态DNS（DDNS）</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://blog.heysh.xyz/js/Valine.min.js"></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 't7xAhuTsStq91vofdFBaMyoG-gzGzoHsz',
+        appKey: 'NdrP2qik4G319EwHthKo9lSC',
+        placeholder: '歪，在吗？',
+        notify: true,
+        visitor: true,
+    })
+</script>
+
+</div>
+
+</div>
+</div>
+<script src="https://blog.heysh.xyz/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40522664-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+<script>renderMathInElement(document.body);</script>
+</body>
+</html>
+
