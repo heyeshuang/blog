@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.47-DEV" />
+  <meta name="generator" content="Hugo 0.50-DEV" />
 
   <title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor &middot; 贺叶霜的树：III</title>
 
@@ -276,17 +276,17 @@
 </ul>
 
 <p>Then we could configure this package.</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#09f;font-style:italic">#windows:
-</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --current <span style="color:#09f;font-style:italic">#Get Current Input Source
-</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --dec <span style="color:#a00">${</span><span style="color:#033">source</span><span style="color:#a00">}</span> <span style="color:#09f;font-style:italic">#insert
-</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --locale en_US <span style="color:#09f;font-style:italic">#normal
-</span><span style="color:#09f;font-style:italic"></span>python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --locale en_US <span style="color:#09f;font-style:italic">#visual
-</span><span style="color:#09f;font-style:italic">#linux:
-</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote <span style="color:#09f;font-style:italic">#Get Current Input Source
-</span><span style="color:#09f;font-style:italic"></span><span style="color:#069;font-weight:bold">if</span> <span style="color:#555">((</span> <span style="color:#c30">&#34;</span><span style="color:#a00">${</span><span style="color:#033">source</span><span style="color:#a00">}</span><span style="color:#c30">&#34;</span> &lt;<span style="color:#555">=</span> <span style="color:#c30">&#34;1&#34;</span> <span style="color:#555">))</span>;<span style="color:#069;font-weight:bold">then</span> /usr/bin/fcitx-remote -c; <span style="color:#069;font-weight:bold">else</span> /usr/bin/fcitx-remote -o ;<span style="color:#069;font-weight:bold">fi</span> <span style="color:#09f;font-style:italic">#insert
-</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote -c <span style="color:#09f;font-style:italic">#normal
-</span><span style="color:#09f;font-style:italic"></span>/usr/bin/fcitx-remote -c <span style="color:#09f;font-style:italic">#visual
-</span><span style="color:#09f;font-style:italic"></span>#macOS: just use the default config</code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#09f;font-style:italic">#windows:</span>
+python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --current <span style="color:#09f;font-style:italic">#Get Current Input Source</span>
+python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --dec <span style="color:#a00">${</span><span style="color:#033">source</span><span style="color:#a00">}</span> <span style="color:#09f;font-style:italic">#insert</span>
+python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --locale en_US <span style="color:#09f;font-style:italic">#normal</span>
+python E:<span style="color:#c30;font-weight:bold">\\</span>path<span style="color:#c30;font-weight:bold">\\</span>to<span style="color:#c30;font-weight:bold">\\</span>ime_helper.py --locale en_US <span style="color:#09f;font-style:italic">#visual</span>
+<span style="color:#09f;font-style:italic">#linux:</span>
+/usr/bin/fcitx-remote <span style="color:#09f;font-style:italic">#Get Current Input Source</span>
+<span style="color:#069;font-weight:bold">if</span> <span style="color:#555">((</span> <span style="color:#c30">&#34;</span><span style="color:#a00">${</span><span style="color:#033">source</span><span style="color:#a00">}</span><span style="color:#c30">&#34;</span> &lt;<span style="color:#555">=</span> <span style="color:#c30">&#34;1&#34;</span> <span style="color:#555">))</span>;<span style="color:#069;font-weight:bold">then</span> /usr/bin/fcitx-remote -c; <span style="color:#069;font-weight:bold">else</span> /usr/bin/fcitx-remote -o ;<span style="color:#069;font-weight:bold">fi</span> <span style="color:#09f;font-style:italic">#insert</span>
+/usr/bin/fcitx-remote -c <span style="color:#09f;font-style:italic">#normal</span>
+/usr/bin/fcitx-remote -c <span style="color:#09f;font-style:italic">#visual</span>
+<span style="color:#09f;font-style:italic">#macOS: just use the default config</span></code></pre></div>
 <p><img src="/atom-vim-configure.png" alt="configure" /></p>
 
   

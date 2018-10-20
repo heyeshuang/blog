@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="环境：Virmach的KVM架构">
-  <meta name="generator" content="Hugo 0.47-DEV" />
+  <meta name="generator" content="Hugo 0.50-DEV" />
 
   <title>VPS初始化checklist &middot; 贺叶霜的树：III</title>
 
@@ -266,7 +266,7 @@
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">adduser hh
 gpasswd -a hh sudo</pre></div>
 <h2 id="添加ssh-key验证并禁用root用户ssh远程登录">添加SSH-KEY验证并禁用root用户SSH远程登录</h2>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">su - demo
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">su - hh
 mkdir .ssh
 chmod 700 .ssh
 vi .ssh/authorized_keys</pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">#vi /etc/ssh/sshd_config

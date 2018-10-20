@@ -430,11 +430,10 @@ win_BTC_short&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;price_after&lt
 &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;接下来让它每两个小时运行一次就好了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# crontab -e
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;*/120 * * * * /path/of/your/script.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# crontab -e&lt;/span&gt;
+*/120 * * * * /path/of/your/script.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;del&gt;写字好累（躺&lt;/del&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;del&gt;写字好累（躺&lt;/del&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -506,21 +505,11 @@ win_BTC_short&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;price_after&lt
 
 &lt;p&gt;当然，作为实验民工的话，&lt;code&gt;正交试验法&lt;/code&gt;、&lt;code&gt;典型相关分析&lt;/code&gt;和&lt;code&gt;主成分分析&lt;/code&gt;是找到复杂特性的好手段。可是，现实生活中，并不存在重复实验的条件，而且，我们甚至不能将所有参数一一列举出来。最糟糕的情况下，重要的原因仍然藏在水底。&lt;/p&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/img/iceberg.png&#34; alt=&#34;大家喜闻乐见的冰山图.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        大家喜闻乐见的冰山图.jpg
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/img/iceberg.png&#34;
+         alt=&#34;大家喜闻乐见的冰山图.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;大家喜闻乐见的冰山图.jpg&lt;/p&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -658,30 +647,16 @@ win_BTC_short&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;price_after&lt
 &lt;/blockquote&gt;
 
 &lt;p&gt;之前下到了一叠厚厚的&lt;a href=&#34;https://digitalcollections.nypl.org/collections/trait-des-arbres-et-arbustes-que-lon-cultive-en-france-en-pleine-terre#/?tab=about&#34;&gt;图集&lt;/a&gt;，可是要真正用起来，还需要一点点简单的处理，比如说，沿着边线把图案剪下来：
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/nypl/before.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;加工前&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/nypl/before.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;加工前&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/nypl/after.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;加工后&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/nypl/after.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;加工后&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 
@@ -713,17 +688,10 @@ win_BTC_short&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;price_after&lt
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;digital-collections -t API_TOKEN -s UUID -o OUTPUT.json&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;其中，&lt;code&gt;API_TOKEN&lt;/code&gt;在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href=&#34;https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50&#34;&gt;比如这个&lt;/a&gt;）下面，可以看到&lt;code&gt;UUID&lt;/code&gt;；运行这条命令之后，图片的信息列表会保存在&lt;code&gt;OUTPUT.json&lt;/code&gt;里。&lt;/p&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/nypl/clip.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;对，就是那个Universal Unique Identifier&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/nypl/clip.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;对，就是那个Universal Unique Identifier&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -792,49 +760,28 @@ os&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;mkdir(dir_name)
 
 &lt;h3 id=&#34;看看喜马拉雅山上都长些什么-https-digitalcollections-nypl-org-collections-nature-illustrated-flowers-plants-and-trees-1550-1900-tab-navigation-roots-11-c51cb7e0-c6ba-012f-206d-3c075448cc4b&#34;&gt;&lt;a href=&#34;https://digitalcollections.nypl.org/collections/nature-illustrated-flowers-plants-and-trees-1550-1900#/?tab=navigation&amp;amp;roots=11:c51cb7e0-c6ba-012f-206d-3c075448cc4b&#34;&gt;看看喜马拉雅山上都长些什么&lt;/a&gt;&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;嗯，是杂草&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;嗯，是杂草&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
 &lt;h3 id=&#34;学习下最新的流行风尚-https-digitalcollections-nypl-org-collections-newest-styles-for-men-tab-about&#34;&gt;&lt;a href=&#34;https://digitalcollections.nypl.org/collections/newest-styles-for-men#/?tab=about&#34;&gt;学习下最新的流行风尚&lt;/a&gt;&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;唔哦，好男人&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;唔哦，好男人&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
 &lt;h3 id=&#34;或者来辆新车-https-digitalcollections-nypl-org-collections-album-of-illustrations-of-imperial-royal-state-carriages-together-with-other-tab-about&#34;&gt;&lt;a href=&#34;https://digitalcollections.nypl.org/collections/album-of-illustrations-of-imperial-royal-state-carriages-together-with-other#/?tab=about&#34;&gt;或者来辆新车？&lt;/a&gt;&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;如果从这时候就开始摇号的话……&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;如果从这时候就开始摇号的话……&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -935,17 +882,10 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;plot(fre)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;xscale(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;yscale(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/zipf/output_5_0.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;阶梯形状可能是由于概率相等&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/zipf/output_5_0.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;阶梯形状可能是由于概率相等&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -967,17 +907,10 @@ plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;plot(&lt;span style=&#34
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;xscale(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;yscale(&lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;log&amp;#39;&lt;/span&gt;)
 plt&lt;span style=&#34;color:#555&#34;&gt;.&lt;/span&gt;show() &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#指数分布&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/zipf/output_9_0.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;可惜这只是个指数分布&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/zipf/output_9_0.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;可惜这只是个指数分布&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -1221,7 +1154,7 @@ pygmentsStyle = &lt;span style=&#34;color:#c30&#34;&gt;&amp;#39;manni&amp;#39;&l
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;adduser hh
 gpasswd -a hh sudo&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;添加ssh-key验证并禁用root用户ssh远程登录&#34;&gt;添加SSH-KEY验证并禁用root用户SSH远程登录&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;su - demo
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;su - hh
 mkdir .ssh
 chmod 700 .ssh
 vi .ssh/authorized_keys&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;#vi /etc/ssh/sshd_config
@@ -1559,43 +1492,22 @@ markdown &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#
 
 &lt;h2 id=&#34;接下来是截图时间&#34;&gt;接下来是截图时间：&lt;/h2&gt;
 
-&lt;p&gt;
-&lt;figure&gt;
-    
-        &lt;img src=&#34;/font/5.png&#34; width=&#34;50%&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;这才是真正的宋体&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+&lt;p&gt;&lt;figure&gt;
+    &lt;img src=&#34;/font/5.png&#34; width=&#34;50%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;这才是真正的宋体&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/font/3.png&#34; width=&#34;50%&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;在正文也毫无压力&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/font/3.png&#34; width=&#34;50%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;在正文也毫无压力&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/font/4.png&#34; width=&#34;50%&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;还有这个light字重&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/font/4.png&#34; width=&#34;50%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;还有这个light字重&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 
@@ -2028,17 +1940,10 @@ browser.tabs.remote.autostart.2=false&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;这当然是在开玩笑，除了我踏出屋门这件事以外。那天我去了首都图书馆。拿到了教官/总长/特首的出门许可之后，中午，我穿过垃圾场，跳过泥潭，走过柳林，再从围墙的缺口钻过去，然后，又回到了文明世界。&lt;/p&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/yard-of-chaos.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;我的部分旅途，右上角为文明世界&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/yard-of-chaos.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;我的部分旅途，右上角为文明世界&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -2119,17 +2024,17 @@ setChineseLayout(){
 &lt;/ul&gt;
 
 &lt;p&gt;Then we could configure this package.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#windows:
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --current &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --dec &lt;span style=&#34;color:#a00&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#linux:
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;((&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;))&lt;/span&gt;;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;then&lt;/span&gt; /usr/bin/fcitx-remote -c; &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;else&lt;/span&gt; /usr/bin/fcitx-remote -o ;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;fi&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;#macOS: just use the default config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#windows:&lt;/span&gt;
+python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --current &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source&lt;/span&gt;
+python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --dec &lt;span style=&#34;color:#a00&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert&lt;/span&gt;
+python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal&lt;/span&gt;
+python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;path&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;to&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual&lt;/span&gt;
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#linux:&lt;/span&gt;
+/usr/bin/fcitx-remote &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#Get Current Input Source&lt;/span&gt;
+&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;((&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#a00&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;))&lt;/span&gt;;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;then&lt;/span&gt; /usr/bin/fcitx-remote -c; &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;else&lt;/span&gt; /usr/bin/fcitx-remote -o ;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;fi&lt;/span&gt; &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#insert&lt;/span&gt;
+/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#normal&lt;/span&gt;
+/usr/bin/fcitx-remote -c &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#visual&lt;/span&gt;
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#macOS: just use the default config&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&#34;/atom-vim-configure.png&#34; alt=&#34;configure&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
@@ -2143,30 +2048,16 @@ setChineseLayout(){
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;
-&lt;figure&gt;
-    
-        &lt;img src=&#34;/ipv6-test.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;IPV6测试&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+&lt;p&gt;&lt;figure&gt;
+    &lt;img src=&#34;/ipv6-test.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;IPV6测试&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/torrent.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;PT测试&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/torrent.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;PT测试&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;</description>
     </item>
@@ -2187,17 +2078,10 @@ setChineseLayout(){
 &lt;li&gt;2G用尽以后，会限速到3G速率，虽然似乎还是用的4G网络。&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;/speed.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;而且这速度居然可以看斗鱼&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;/speed.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;而且这速度居然可以看斗鱼&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -3871,8 +3755,8 @@ mkdir /mnt/tex
 mount -o loop texlive2012.iso /mnt/tex/
 &lt;span style=&#34;color:#366&#34;&gt;cd&lt;/span&gt; /mnt/tex/
 ./install-tl
-vim /etc/profile &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……
-&lt;/span&gt;&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;&lt;/span&gt;tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+vim /etc/profile &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……&lt;/span&gt;
+tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
 tlmgr update –self
 tlmgr update –all
 umount /mnt/tex

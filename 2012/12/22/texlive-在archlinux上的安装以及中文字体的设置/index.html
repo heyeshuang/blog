@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.47-DEV" />
+  <meta name="generator" content="Hugo 0.50-DEV" />
 
   <title>Texlive 在archlinux上的安装，以及中文字体的设置 &middot; 贺叶霜的树：III</title>
 
@@ -303,8 +303,8 @@ mkdir /mnt/tex
 mount -o loop texlive2012.iso /mnt/tex/
 <span style="color:#366">cd</span> /mnt/tex/
 ./install-tl
-vim /etc/profile <span style="color:#09f;font-style:italic">#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……
-</span><span style="color:#09f;font-style:italic"></span>tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+vim /etc/profile <span style="color:#09f;font-style:italic">#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……</span>
+tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
 tlmgr update –self
 tlmgr update –all
 umount /mnt/tex
