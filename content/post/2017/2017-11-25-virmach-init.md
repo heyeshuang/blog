@@ -24,7 +24,7 @@ gpasswd -a hh sudo
 ```
 ## 添加SSH-KEY验证并禁用root用户SSH远程登录
 ```
-su - demo
+su - hh
 mkdir .ssh
 chmod 700 .ssh
 vi .ssh/authorized_keys
