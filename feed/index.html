@@ -10,6 +10,80 @@
     <atom:link href="https://blog.heysh.xyz/feed/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>笔记软件踩雷</title>
+      <link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link>
+      <pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid>
+      <description>
+
+&lt;p&gt;大概是2017年的时候，我一直在使用的笔记软件为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。&lt;/p&gt;
+
+&lt;p&gt;如果对自己的要求有清楚的认识，当查找*poor man&amp;rsquo;s somewares*时，&lt;a href=&#34;https://alternativeto.net/software/evernote/&#34;&gt;AlternativeTo&lt;/a&gt;和&lt;a href=&#34;https://www.slant.co/topics/2463/~best-evernote-alternatives&#34;&gt;Slant&lt;/a&gt;这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;（扩展的）Markdown格式，支持代码块和公式&lt;/li&gt;
+&lt;li&gt;支持多种格式的附件，而不是只支持图片
+
+&lt;ul&gt;
+&lt;li&gt;附件的链接可以插入笔记中&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;导入导出方便，不要像臭名昭著的有道笔记一样&lt;/li&gt;
+&lt;li&gt;网页剪辑&lt;/li&gt;
+&lt;li&gt;跨平台&lt;/li&gt;
+&lt;li&gt;支持同步&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这样的话，类似google keep、evernote的软件和收费软件（……）就首先被排除了；在markdown出现之前的老牌笔记软件也自动忽略。然后我试用了当红的boostnote和……什么来着，但这两个软件对附件的支持都不太好。最后，有两个软件满足我的大部分要求：&lt;/p&gt;
+
+&lt;h2 id=&#34;vnote-https-tamlok-github-io-vnote&#34;&gt;&lt;a href=&#34;https://tamlok.github.io/vnote/&#34;&gt;VNote&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;美丽的Qt程序，纯Markdown保存，直接粘贴HTML到笔记，甚至还有Vim按键绑定，一切都很好，除了没有同步和Android客户端；当然，纯文本文件可以很容易地用git同步，所以问题变成了另外两个：没有合适的git Android，以及没有Android上的Markdown阅读器&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;joplin-https-joplin-cozic-net&#34;&gt;&lt;a href=&#34;https://joplin.cozic.net&#34;&gt;Joplin&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;用javascript写应用虽然被很多人鄙视，但确实真正解决了跨平台运行的问题。这个程序似乎连Android客户端都在同一个代码仓库里，如果不在意肉眼可见的卡顿的话，react native能够让人少写好多代码，反观qt-Android……&lt;/p&gt;
+
+&lt;p&gt;咳咳，扯远了。总之Joplin有Android客户端，而且自带onedrive同步功能。Nothing to complain&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;另外还有两个小问题。&lt;/p&gt;
+
+&lt;h2 id=&#34;关于文章剪辑&#34;&gt;关于文章剪辑&lt;/h2&gt;
+
+&lt;p&gt;试图将HTML转回markdown，就像是试图将pdf转回TEX、减少宇宙的熵、或者是把石头推上山一样徒劳，不过，仍然有&lt;a href=&#34;https://github.com/domchristie/turndown&#34;&gt;勇士&lt;/a&gt;在尝试这个任务，效果嘛……差强人意，从两个方面理解都可以。&lt;/p&gt;
+
+&lt;h2 id=&#34;关于为知笔记导出&#34;&gt;关于为知笔记导出&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;感觉基本上没什么戏……&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#099&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;dir&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;ltr&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#309&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……&lt;/p&gt;
+
+&lt;p&gt;理论上，这些都可以用一个脚本来解决，不过我看着自己一百多篇各种格式的笔记，决定还是把它们仍在硬盘里吧。“反正以后光纤也跟我没关系了……”……大概吧。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;在VNote的某个Issue里提到过&lt;a href=&#34;https://github.com/gsantner/markor&#34;&gt;Markor&lt;/a&gt;，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;除了导出文件时的一个&lt;a href=&#34;https://github.com/laurent22/joplin/issues/853&#34;&gt;issue&lt;/a&gt;。It looks like Chinese to me.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>关于BitMEX的杠杆</title>
       <link>https://blog.heysh.xyz/2018/08/16/about-leverage/</link>
       <pubDate>Thu, 16 Aug 2018 20:35:30 +0800</pubDate>
@@ -17,7 +91,7 @@
       <guid>https://blog.heysh.xyz/2018/08/16/about-leverage/</guid>
       <description>&lt;p&gt;在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在账户上然后去睡觉，神经衰弱的一系列症状大约会加重。&lt;/p&gt;
 
-&lt;p&gt;所以&lt;a href=&#34;https://www.bitmex.com/register/O3rmQq&#34;&gt;BitMEX&lt;/a&gt;（这里是个返利链接）用XBT计算盈亏就显得很有趣了：当比特币上涨的时候，大家都很开心；可是万一下跌的话，实际盈亏还要乘上汇率的缩水，一不小心就会得到双倍的悲伤。这种时候，理解账户数字的 &lt;em&gt;实际价值&lt;/em&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:pizza&#34;&gt;&lt;a class=&#34;footnote&#34; href=&#34;#fn:pizza&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，可能对控制风险有更为重要的价值。&lt;/p&gt;
+&lt;p&gt;所以&lt;a href=&#34;https://www.bitmex.com/register/O3rmQq&#34;&gt;BitMEX&lt;/a&gt;（这里是个返利链接）用XBT计算盈亏就显得很有趣了：当比特币上涨的时候，大家都很开心；可是万一下跌的话，实际盈亏还要乘上汇率的缩水，一不小心就会得到双倍的悲伤。这种时候，理解账户数字的 &lt;em&gt;实际价值&lt;/em&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:pizza&#34;&gt;&lt;a class=&#34;footnote&#34; href=&#34;#fn:pizza&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，可能对控制风险有更为重要的意义。&lt;/p&gt;
 
 &lt;p&gt;根据&lt;a href=&#34;https://www.bitmex.com/app/pnlGuide&#34;&gt;官方指南&lt;/a&gt;，盈利的XBT数目可以这样计算：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;win_BTC_long&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;/&lt;/span&gt;price_before&lt;span style=&#34;color:#555&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f60&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;/&lt;/span&gt;price_after)&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;count &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#做多&lt;/span&gt;
@@ -2010,8 +2084,7 @@ setChineseLayout(){
 
 &lt;p&gt;As a vim-user and Chinese-speaker, I prefer &lt;a href=&#34;https://atom.io/packages/vim-mode-plus&#34;&gt;vim-mode-plus&lt;/a&gt; for Atom editor, but always disrupted by the IME in normal mode, like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If we could &lt;a href=&#34;https://github.com/t9md/atom-vim-mode-plus/issues/446&#34;&gt;disable IMEs in normal mode&lt;/a&gt; then everything will be fine again. However, due to &lt;a href=&#34;https://github.com/atom/atom/issues/1092&#34;&gt;the lack of the APIs&lt;/a&gt;, it is hardly possible to solve the problem in the editor.&lt;/p&gt;
 
@@ -2045,8 +2118,6 @@ python E:&lt;span style=&#34;color:#c30;font-weight:bold&#34;&gt;\\&lt;/span&gt;
       
       <guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid>
       <description>&lt;p&gt;似乎是使用teredo。Good Job！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;figure&gt;
     &lt;img src=&#34;/ipv6-test.png&#34;/&gt; &lt;figcaption&gt;

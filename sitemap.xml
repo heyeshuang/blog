@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.heysh.xyz/2018/11/17/which-notebook/</loc>
+    <lastmod>2018-11-17T18:26:30+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/2018/08/16/about-leverage/</loc>
     <lastmod>2018-08-16T20:35:30+08:00</lastmod>
   </url>
@@ -817,7 +822,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
+    <lastmod>2018-11-17T18:26:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1045,7 +1050,7 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
+    <lastmod>2018-11-17T18:26:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1128,6 +1133,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-11-17T18:26:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/%E7%B4%A0%E6%9D%90/</loc>
     <lastmod>2018-02-24T00:03:59+08:00</lastmod>
     <priority>0</priority>
@@ -1153,7 +1164,13 @@
   
   <url>
     <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2018-08-16T20:35:30+08:00</lastmod>
+    <lastmod>2018-11-17T18:26:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2018-11-17T18:26:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
