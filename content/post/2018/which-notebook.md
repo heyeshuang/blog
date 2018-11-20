@@ -13,7 +13,7 @@ draft: false
 
 大概是2017年的时候，我一直在使用的笔记软件为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。
 
-如果对自己的要求有清楚的认识，当查找*poor man's somewares*时，[AlternativeTo](https://alternativeto.net/software/evernote/)和[Slant](https://www.slant.co/topics/2463/~best-evernote-alternatives)这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：
+如果对自己的要求有清楚的认识，当查找 *poor man's somewares* 时，[AlternativeTo](https://alternativeto.net/software/evernote/)和[Slant](https://www.slant.co/topics/2463/~best-evernote-alternatives)这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：
 
 - （扩展的）Markdown格式，支持代码块和公式
 - 支持多种格式的附件，而不是只支持图片
@@ -46,19 +46,11 @@ draft: false
 > 感觉基本上没什么戏……
 
 为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-```
+`<!DOCTYPE html><html lang="en"（下略`
 才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……
 
-理论上，这些都可以用一个脚本来解决，不过我看着自己一百多篇各种格式的笔记，决定还是把它们仍在硬盘里吧。“反正以后光纤也跟我没关系了……”……大概吧。
+理论上，这些都可以用一个脚本来解决，不过我看着自己一百多篇各种格式的笔记，决定还是把它们扔在硬盘里吧。“反正以后光纤也跟我没关系了……”……大概吧。
 
 [^1]:在VNote的某个Issue里提到过[Markor](https://github.com/gsantner/markor)，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。
 
-[^2]:除了导出文件时的一个[issue](https://github.com/laurent22/joplin/issues/853)。It looks like Chinese to me.
+[^2]:除了导出文件时的一个[issue](https://github.com/laurent22/joplin/issues/853)。It looks like Chinese to me. *18-11-20更新：* 开发者回复我了！开心～
