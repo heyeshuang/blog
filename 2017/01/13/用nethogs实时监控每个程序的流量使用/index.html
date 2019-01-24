@@ -11,13 +11,13 @@
 
   
   
-  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,19 +30,23 @@
   <link rel="stylesheet" href="https://blog.heysh.xyz/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 
   
-  <link href="//fonts.proxy.ustclug.org/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="//cdn.jsdelivr.net/npm/raleway-webfont@3.0.1/raleway.min.css" rel="stylesheet" type="text/css">
 
   
-  <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.css">
-  <script src="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.js"></script>
-  <script src="//cdn.bootcss.com/KaTeX/0.9.0/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y"
+        crossorigin="anonymous">
+    
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx"
+        crossorigin="anonymous"></script>
+    
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe"
+        crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
  
-  
-
   
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
@@ -246,34 +250,33 @@
 
 <ul>
 <li>安装nethogs</li>
-<li>创建<code>/root/monitor.sh</code></li>
-</ul>
+
+<li><p>创建<code>/root/monitor.sh</code></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#033">TIMEOUT</span><span style="color:#555">=</span><span style="color:#f60">3600</span>
 <span style="color:#033">TIMESTAMP</span><span style="color:#555">=</span><span style="color:#c30">`</span>date +%b_%d_%Y_%H_%M_%S<span style="color:#c30">`</span>
 <span style="color:#033">OUTPUT</span><span style="color:#555">=</span>/var/log/nethogs/<span style="color:#033">$TIMESTAMP</span>.log
-bash -ic <span style="color:#c30">&#34;(/usr/local/sbin/nethogs -t -d 30&amp;&gt;</span><span style="color:#033">$OUTPUT</span><span style="color:#c30">;kill 0;) | (sleep </span><span style="color:#033">$TIMEOUT</span><span style="color:#c30">;kill 0; )&#34;</span> <span style="color:#f60">3</span>&gt;&amp;<span style="color:#f60">1</span> <span style="color:#f60">2</span>&gt;/dev/null</code></pre></div>
-<ul>
-<li><code>/etc/systemd/system/nethogs.timer</code></li>
-</ul>
+bash -ic <span style="color:#c30">&#34;(/usr/local/sbin/nethogs -t -d 30&amp;&gt;</span><span style="color:#033">$OUTPUT</span><span style="color:#c30">;kill 0;) | (sleep </span><span style="color:#033">$TIMEOUT</span><span style="color:#c30">;kill 0; )&#34;</span> <span style="color:#f60">3</span>&gt;&amp;<span style="color:#f60">1</span> <span style="color:#f60">2</span>&gt;/dev/null</code></pre></div></li>
+
+<li><p><code>/etc/systemd/system/nethogs.timer</code></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#555">[</span>Unit<span style="color:#555">]</span>
 <span style="color:#033">Description</span><span style="color:#555">=</span>Nethogs Daemon
 <span style="color:#555">[</span>Timer<span style="color:#555">]</span>
 <span style="color:#033">OnBootSec</span><span style="color:#555">=</span>1min
 <span style="color:#033">OnUnitActiveSec</span><span style="color:#555">=</span>1h
 <span style="color:#555">[</span>Install<span style="color:#555">]</span>
-<span style="color:#033">WantedBy</span><span style="color:#555">=</span>timers.target</code></pre></div>
-<ul>
-<li><code>/etc/systemd/system/nethogs.service</code></li>
-</ul>
+<span style="color:#033">WantedBy</span><span style="color:#555">=</span>timers.target</code></pre></div></li>
+
+<li><p><code>/etc/systemd/system/nethogs.service</code></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#555">[</span>Unit<span style="color:#555">]</span>
 <span style="color:#033">Description</span><span style="color:#555">=</span>Nethogs run
 <span style="color:#555">[</span>Service<span style="color:#555">]</span>
 <span style="color:#033">Type</span><span style="color:#555">=</span>oneshot
-<span style="color:#033">ExecStart</span><span style="color:#555">=</span>/root/monitor.sh</code></pre></div>
-<ul>
-<li>查看使用情况用<a href="https://github.com/boopathi/nethogs-parser">Nethogs parser</a></li>
+<span style="color:#033">ExecStart</span><span style="color:#555">=</span>/root/monitor.sh</code></pre></div></li>
+
+<li><p>查看使用情况用<a href="https://github.com/boopathi/nethogs-parser">Nethogs parser</a></p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./hogs -type<span style="color:#555">=</span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log</code></pre></div></li>
 </ul>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./hogs -type<span style="color:#555">=</span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log</code></pre></div>
+
 
   
 <div class="prev-next-post pure-g">
@@ -344,7 +347,6 @@ bash -ic <span style="color:#c30">&#34;(/usr/local/sbin/nethogs -t -d 30&amp;&gt
 
 
 
-<script>renderMathInElement(document.body);</script>
 
 
 <script>
@@ -354,7 +356,7 @@ bash -ic <span style="color:#c30">&#34;(/usr/local/sbin/nethogs -t -d 30&amp;&gt
   o.src = u;
   if (c) { o.addEventListener('load', function(e) { c(e); }); }
   s.parentNode.insertBefore(o, s);
-})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
+})('//cdn.jsdelivr.net/npm/pangu@3.3.0/dist/browser/pangu.min.js', function() {
   pangu.spacingPage();
 });
 </script>

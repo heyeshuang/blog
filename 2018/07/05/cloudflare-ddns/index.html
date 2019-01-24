@@ -11,13 +11,13 @@
 
   
   
-  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,19 +30,23 @@
   <link rel="stylesheet" href="https://blog.heysh.xyz/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 
   
-  <link href="//fonts.proxy.ustclug.org/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="//cdn.jsdelivr.net/npm/raleway-webfont@3.0.1/raleway.min.css" rel="stylesheet" type="text/css">
 
   
-  <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.css">
-  <script src="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.js"></script>
-  <script src="//cdn.bootcss.com/KaTeX/0.9.0/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y"
+        crossorigin="anonymous">
+    
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx"
+        crossorigin="anonymous"></script>
+    
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe"
+        crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
  
-  
-
   
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
@@ -273,39 +277,41 @@
 <ul>
 <li>去<a href="https://dash.cloudflare.com/">https://dash.cloudflare.com/</a>找到你域名的<code>zone ID</code>并新建一个<code>API_KEY</code>。</li>
 <li>新建一条子域名的A记录，IP写什么都行。</li>
-<li>查询这条记录的<code>RECORD_ID</code>，在终端运行：</li>
-</ul>
+
+<li><p>查询这条记录的<code>RECORD_ID</code>，在终端运行：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -X GET <span style="color:#c30">&#34;https://api.cloudflare.com/client/v4/zones/&lt;ZONE_ID&gt;/dns_records&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -H <span style="color:#c30">&#34;X-Auth-Email: &lt;邮箱地址&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -H <span style="color:#c30">&#34;X-Auth-Key: &lt;API_KEY&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -H <span style="color:#c30">&#34;Content-Type: application/json&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -x http://localhost:8087</code></pre></div>
+</span><span style="color:#c30;font-weight:bold"></span> -H <span style="color:#c30">&#34;X-Auth-Email: &lt;邮箱地址&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -H <span style="color:#c30">&#34;X-Auth-Key: &lt;API_KEY&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -H <span style="color:#c30">&#34;Content-Type: application/json&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -x http://localhost:8087</code></pre></div></li>
+</ul>
+
 <p>其中 <code>-x</code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。</p>
 
 <ul>
-<li>保存下面的脚本，修改<code>&lt;ZONE_ID&gt;</code>，<code>&lt;RECORD_ID&gt;</code>，<code>邮箱地址</code>，<code>API_KEY</code>，<code>子域名</code>什么的。如果不需要代理的话删除<code>-x</code>那一行。</li>
-</ul>
+<li><p>保存下面的脚本，修改<code>&lt;ZONE_ID&gt;</code>，<code>&lt;RECORD_ID&gt;</code>，<code>邮箱地址</code>，<code>API_KEY</code>，<code>子域名</code>什么的。如果不需要代理的话删除<code>-x</code>那一行。</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#099">#!/bin/sh
 </span><span style="color:#099"></span><span style="color:#033">NEW_IP</span><span style="color:#555">=</span><span style="color:#c30">`</span>curl -s http://ns1.dnspod.net:6666<span style="color:#c30">`</span>
 <span style="color:#033">CURRENT_IP</span><span style="color:#555">=</span><span style="color:#c30">`</span>cat /var/tmp/current_ip.txt<span style="color:#c30">`</span>
 <span style="color:#069;font-weight:bold">if</span> <span style="color:#555">[</span> <span style="color:#c30">&#34;</span><span style="color:#033">$NEW_IP</span><span style="color:#c30">&#34;</span> <span style="color:#555">=</span> <span style="color:#c30">&#34;</span><span style="color:#033">$CURRENT_IP</span><span style="color:#c30">&#34;</span> <span style="color:#555">]</span>
 <span style="color:#069;font-weight:bold">then</span>
-     <span style="color:#366">echo</span> <span style="color:#c30">&#34;No Change in IP Adddress&#34;</span>
+ <span style="color:#366">echo</span> <span style="color:#c30">&#34;No Change in IP Adddress&#34;</span>
 <span style="color:#069;font-weight:bold">else</span>
-     curl -X PUT <span style="color:#c30">&#34;https://api.cloudflare.com/client/v4/zones/&lt;ZONE_ID&gt;/dns_records/&lt;RECORD_ID&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -x http://localhost:8087 <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -H <span style="color:#c30">&#34;X-Auth-Email: &lt;邮箱地址&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -H <span style="color:#c30">&#34;X-Auth-Key: &lt;API_KEY&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     -H <span style="color:#c30">&#34;Content-Type: application/json&#34;</span> <span style="color:#c30;font-weight:bold">\
-</span><span style="color:#c30;font-weight:bold"></span>     --data <span style="color:#c30">&#39;{&#34;type&#34;:&#34;A&#34;,&#34;name&#34;:&#34;&lt;子域名地址&gt;&#34;,&#34;content&#34;:&#34;&#39;</span><span style="color:#033">$NEW_IP</span><span style="color:#c30">&#39;&#34;,&#34;ttl&#34;:1}&#39;</span>
-     <span style="color:#366">echo</span> <span style="color:#033">$NEW_IP</span> &gt; /var/tmp/current_ip.txt
-<span style="color:#069;font-weight:bold">fi</span></code></pre></div>
-<ul>
+ curl -X PUT <span style="color:#c30">&#34;https://api.cloudflare.com/client/v4/zones/&lt;ZONE_ID&gt;/dns_records/&lt;RECORD_ID&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -x http://localhost:8087 <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -H <span style="color:#c30">&#34;X-Auth-Email: &lt;邮箱地址&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -H <span style="color:#c30">&#34;X-Auth-Key: &lt;API_KEY&gt;&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> -H <span style="color:#c30">&#34;Content-Type: application/json&#34;</span> <span style="color:#c30;font-weight:bold">\
+</span><span style="color:#c30;font-weight:bold"></span> --data <span style="color:#c30">&#39;{&#34;type&#34;:&#34;A&#34;,&#34;name&#34;:&#34;&lt;子域名地址&gt;&#34;,&#34;content&#34;:&#34;&#39;</span><span style="color:#033">$NEW_IP</span><span style="color:#c30">&#39;&#34;,&#34;ttl&#34;:1}&#39;</span>
+ <span style="color:#366">echo</span> <span style="color:#033">$NEW_IP</span> &gt; /var/tmp/current_ip.txt
+<span style="color:#069;font-weight:bold">fi</span></code></pre></div></li>
+
 <li><p>接下来让它每两个小时运行一次就好了。</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#09f;font-style:italic"># crontab -e</span>
-*/120 * * * * /path/of/your/script.sh</code></pre></div>
-<p><del>写字好累（躺</del></p></li>
+*/120 * * * * /path/of/your/script.sh</code></pre></div></li>
 </ul>
+
+<p><del>写字好累（躺</del></p>
 
 
   
@@ -377,7 +383,6 @@
 
 
 
-<script>renderMathInElement(document.body);</script>
 
 
 <script>
@@ -387,7 +392,7 @@
   o.src = u;
   if (c) { o.addEventListener('load', function(e) { c(e); }); }
   s.parentNode.insertBefore(o, s);
-})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
+})('//cdn.jsdelivr.net/npm/pangu@3.3.0/dist/browser/pangu.min.js', function() {
   pangu.spacingPage();
 });
 </script>
