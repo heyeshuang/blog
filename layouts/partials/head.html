@@ -7,7 +7,7 @@
   <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
   <!-- CSS -->
-  {{ $purecss := "https://cdn.bootcss.com/pure/1.0.0/" }}
+  {{ $purecss := "//cdn.jsdelivr.net/npm/purecss@1.0.0/build/" }}
   <link rel="stylesheet" href="{{ $purecss }}pure-min.css">
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}
@@ -27,28 +27,25 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/blackburn.css">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 
   <!-- Fonts -->
-  <link href="//fonts.proxy.ustclug.org/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="//cdn.jsdelivr.net/npm/raleway-webfont@3.0.1/raleway.min.css" rel="stylesheet" type="text/css">
 
   <!-- KaTeX -->
-  <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.css">
-  <script src="//cdn.bootcss.com/KaTeX/0.9.0/katex.min.js"></script>
-  <script src="//cdn.bootcss.com/KaTeX/0.9.0/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y"
+        crossorigin="anonymous">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx"
+        crossorigin="anonymous"></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe"
+        crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
  <!-- RSS -->
   {{ if .RSSLink }}
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
-  {{ end }}
-
-  {{ with .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/{{ . }}.min.css">
-  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  {{ range $.Site.Params.highlightjs_extra_languages }}
-  <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
-  {{ end }}
-  <script>hljs.initHighlightingOnLoad();</script>
   {{ end }}
 
   {{ partial "favicon.html" . }}
