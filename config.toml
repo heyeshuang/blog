@@ -45,28 +45,34 @@ baseName = "feed"
 [menu]
 # Shown in the side menu.
   [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 1
-    identifier = "home"
-    url = "https://heysh.xyz/"
-  [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 1
     identifier = "post"
     url = "/post/"
   [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Categories"
+    pre = "<i class='fa fa-folder fa-fw'></i>"
+    url = "/categories/"  
+    weight = 2
+
+  [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 2
+    weight = 3
     identifier = "about"
     url = "/about/"
 
   [[menu.main]]
     name = "Theatre"
     pre = "<i class='fa fa-video-camera fa-fw'></i>"
-    weight = 2
+    weight = 3
     identifier = "sentences"
     url = "/sentences/"
 
@@ -76,6 +82,12 @@ baseName = "feed"
     weight = 3
     identifier = "begging"
     url = "/wallet/"
+  [[menu.main]]
+    name = "Bud"
+    pre = "<i class='fa fa-pagelines fa-fw'></i>"
+    weight = 3
+    identifier = "home"
+    url = "https://heysh.xyz/"
 
 [social]
   # Link your social networking accounts to the side menu
