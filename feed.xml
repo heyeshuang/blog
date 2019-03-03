@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy;&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 27 Jan 2019 00:22:48 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Mar 2019 23:19:02 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title>
+      <link>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</link>
+      <pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</guid>
+      <description>呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。 事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro</description>
+    </item>
     
     <item>
       <title>我的2018</title>
