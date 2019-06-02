@@ -4,13 +4,30 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/</loc>
-    <lastmod>2019-03-02T23:19:02+08:00</lastmod>
+    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2019-03-02T23:19:02+08:00</lastmod>
+    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2019/06/02/a-script/</loc>
+    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/categories/%E6%9E%AF%E5%8F%B6%E5%A0%86%E5%86%85/</loc>
+    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/</loc>
+    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,12 +57,6 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2019-03-02T23:19:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/</loc>
     <lastmod>2019-03-02T23:19:02+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -376,12 +387,6 @@
   <url>
     <loc>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</loc>
     <lastmod>2017-11-04T11:55:46+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/categories/%E6%9E%AF%E5%8F%B6%E5%A0%86%E5%86%85/</loc>
-    <lastmod>2017-11-04T11:48:41+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
