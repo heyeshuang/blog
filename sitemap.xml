@@ -4,13 +4,54 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/</loc>
-    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.heysh.xyz/post/</loc>
-    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/python/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2019/08/04/python-for-optics/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/%E5%B7%A5%E4%BD%9C%E9%87%8F%E4%B8%8D%E9%A5%B1%E5%92%8C%E7%9A%84%E8%AF%81%E6%8D%AE/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/categories/%E6%AD%A3%E7%BB%8F/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/</loc>
+    <lastmod>2019-08-04T20:03:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -22,18 +63,6 @@
   <url>
     <loc>https://blog.heysh.xyz/categories/%E6%9E%AF%E5%8F%B6%E5%A0%86%E5%86%85/</loc>
     <lastmod>2019-06-02T19:18:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/</loc>
-    <lastmod>2019-06-02T19:18:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/tags/</loc>
-    <lastmod>2019-03-02T23:19:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,12 +187,6 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/categories/%E6%AD%A3%E7%BB%8F/</loc>
-    <lastmod>2018-05-02T20:30:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/%E9%A2%84%E6%B5%8B%E6%9C%AA%E6%9D%A5/</loc>
     <lastmod>2018-05-02T20:30:20+08:00</lastmod>
     <priority>0</priority>
@@ -202,6 +225,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/altcoin/</loc>
+    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/btc/</loc>
     <lastmod>2018-01-23T17:31:33+08:00</lastmod>
     <priority>0</priority>
@@ -213,19 +242,13 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/altcoin/</loc>
-    <lastmod>2018-01-23T17:31:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/tags/zipf/</loc>
+    <loc>https://blog.heysh.xyz/tags/math/</loc>
     <lastmod>2017-12-16T20:48:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/math/</loc>
+    <loc>https://blog.heysh.xyz/tags/zipf/</loc>
     <lastmod>2017-12-16T20:48:36+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -242,13 +265,13 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/ml/</loc>
+    <loc>https://blog.heysh.xyz/tags/deeplearning.ai/</loc>
     <lastmod>2017-12-09T16:53:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/deeplearning.ai/</loc>
+    <loc>https://blog.heysh.xyz/tags/ml/</loc>
     <lastmod>2017-12-09T16:53:50+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -311,6 +334,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/virmach/</loc>
+    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/vps/</loc>
     <lastmod>2017-11-25T12:35:54+08:00</lastmod>
     <priority>0</priority>
@@ -319,12 +348,6 @@
   <url>
     <loc>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</loc>
     <lastmod>2017-11-25T12:35:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/tags/virmach/</loc>
-    <lastmod>2017-11-25T12:35:54+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -405,12 +428,6 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/noto/</loc>
-    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/font/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
@@ -418,6 +435,12 @@
   
   <url>
     <loc>https://blog.heysh.xyz/categories/linux/</loc>
+    <lastmod>2017-10-29T13:40:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/noto/</loc>
     <lastmod>2017-10-29T13:40:50+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -495,6 +518,12 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/firefox/</loc>
+    <lastmod>2017-10-01T10:29:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/tags/firefox-quantum/</loc>
     <lastmod>2017-10-01T10:29:28+08:00</lastmod>
     <priority>0</priority>
@@ -502,12 +531,6 @@
   
   <url>
     <loc>https://blog.heysh.xyz/tags/web-extension/</loc>
-    <lastmod>2017-10-01T10:29:28+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/tags/firefox/</loc>
     <lastmod>2017-10-01T10:29:28+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -535,12 +558,6 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/ime/</loc>
-    <lastmod>2017-09-06T19:46:55+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/atom/</loc>
     <lastmod>2017-09-06T19:46:55+08:00</lastmod>
     <priority>0</priority>
@@ -553,7 +570,7 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/python/</loc>
+    <loc>https://blog.heysh.xyz/tags/ime/</loc>
     <lastmod>2017-09-06T19:46:55+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -700,12 +717,6 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/tags/lrc/</loc>
-    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/html5/</loc>
     <lastmod>2016-05-03T17:01:02+00:00</lastmod>
     <priority>0</priority>
@@ -713,6 +724,12 @@
   
   <url>
     <loc>https://blog.heysh.xyz/tags/js/</loc>
+    <lastmod>2016-05-03T17:01:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/tags/lrc/</loc>
     <lastmod>2016-05-03T17:01:02+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -750,18 +767,18 @@
   </url>
   
   <url>
+    <loc>https://blog.heysh.xyz/tags/ipv6/</loc>
+    <lastmod>2015-09-09T13:58:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</loc>
     <lastmod>2015-09-09T13:58:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.heysh.xyz/tags/openwrt/</loc>
-    <lastmod>2015-09-09T13:58:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.heysh.xyz/tags/ipv6/</loc>
     <lastmod>2015-09-09T13:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -832,14 +849,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</loc>
-    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/html/</loc>
     <lastmod>2013-12-21T07:24:39+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</loc>
+    <lastmod>2013-12-21T07:24:39+00:00</lastmod>
   </url>
   
   <url>
@@ -1020,14 +1037,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/2013/04/19/limited-gear-works/</loc>
-    <lastmod>2013-04-19T13:50:50+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/acg/</loc>
     <lastmod>2013-04-19T13:50:50+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2013/04/19/limited-gear-works/</loc>
+    <lastmod>2013-04-19T13:50:50+00:00</lastmod>
   </url>
   
   <url>
@@ -1075,14 +1092,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/2013/03/21/catia%E6%98%AF%E4%B8%AA%E5%A5%BD%E8%BD%AF%E4%BB%B6-2/</loc>
-    <lastmod>2013-03-21T05:18:05+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/catia/</loc>
     <lastmod>2013-03-21T05:18:05+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2013/03/21/catia%E6%98%AF%E4%B8%AA%E5%A5%BD%E8%BD%AF%E4%BB%B6-2/</loc>
+    <lastmod>2013-03-21T05:18:05+00:00</lastmod>
   </url>
   
   <url>
@@ -1096,11 +1113,6 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2012-12-21T16:38:48+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.heysh.xyz/tags/ctex/</loc>
     <lastmod>2012-12-21T16:38:48+00:00</lastmod>
     <priority>0</priority>
@@ -1110,6 +1122,11 @@
     <loc>https://blog.heysh.xyz/tags/tex/</loc>
     <lastmod>2012-12-21T16:38:48+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2012-12-21T16:38:48+00:00</lastmod>
   </url>
   
   <url>
@@ -1199,14 +1216,14 @@
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/feed/</loc>
+    <loc>https://blog.heysh.xyz/feed/chicken/</loc>
     <lastmod>2012-06-22T06:32:32+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.heysh.xyz/feed/chicken/</loc>
+    <loc>https://blog.heysh.xyz/feed/</loc>
     <lastmod>2012-06-22T06:32:32+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
