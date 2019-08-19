@@ -32,6 +32,7 @@ baseName = "feed"
   brand = "Rei III"
   googleAnalytics = "UA-40522664-1"
   disqus = "HeYSH"
+  disqus_proxy = "disqus-proxy.yeshuanghe.now.sh"
   valine_id = "t7xAhuTsStq91vofdFBaMyoG-gzGzoHsz"
   valine_key = "NdrP2qik4G319EwHthKo9lSC"
   # CSS name for highlight.js
