@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.57.0-DEV" />
+  <meta name="generator" content="Hugo 0.58.0-DEV" />
 
   <title>关于BitMEX的杠杆 &middot; 贺叶霜的树：III</title>
 
@@ -664,19 +664,28 @@ win_BTC_short<span style="color:#555">*</span>price_after<span style="color:#555
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
-<div id="vcomments"></div>
+  
+<div id="disqus_thread"></div>
+
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: 't7xAhuTsStq91vofdFBaMyoG-gzGzoHsz',
-        appKey: 'NdrP2qik4G319EwHthKo9lSC',
-        placeholder: '歪，在吗？',
-        notify: true,
-        visitor: true,
-    })
+    window.disqusProxy = {
+        username: 'HeYSH',  
+        server: 'disqus-proxy.yeshuanghe.now.sh', 
+        port: 5050, 
+        https: true,
+        identifier: window.location.href 
+    };
+    window.disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.href;
+    };
+    var s = document.createElement('script');
+    s.src = 'https:\/\/blog.heysh.xyz\/js/main.b17dff3c.js"'; 
+    s.async = true;
+    document.body.appendChild(s);
 </script>
+
+<link rel="stylesheet" href="https://blog.heysh.xyz/css/main.331fc925.css">
 
 </div>
 
