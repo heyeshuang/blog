@@ -34,6 +34,7 @@ baseName = "feed"
   disqus = "heysh"
   # disqus_proxy = "disqus-proxy.yeshuanghe.now.sh"
   disqus_php_api = "https://disqus-php.yeshuanghe.now.sh/api"
+  disqus_php_baseURL = "https://blog.heysh.xyz"
   valine_id = "t7xAhuTsStq91vofdFBaMyoG-gzGzoHsz"
   valine_key = "NdrP2qik4G319EwHthKo9lSC"
   # CSS name for highlight.js

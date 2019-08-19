@@ -6,7 +6,7 @@
         var disq = new iDisqus('comment', {
             forum: '{{ .Site.Params.disqus }}',
             api: '{{ .Site.Params.disqus_php_api }}',
-            site: '{{ .Site.BaseURL }}',
+            site: '{{ .Site.Params.disqus_php_baseURL }}',
             mode: 1,
             timeout: 3000,
             init: true
