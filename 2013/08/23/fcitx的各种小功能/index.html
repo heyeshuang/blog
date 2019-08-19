@@ -337,28 +337,20 @@
 
 
 
-  
-<div id="disqus_thread"></div>
+<link rel="stylesheet" href="https://blog.heysh.xyz/css/iDisqus.min.css" />
+<div id="comment"></div>
+<script src="https://blog.heysh.xyz/js/iDisqus.min.js"></script>
 
 <script>
-    window.disqusProxy = {
-        username: 'HeYSH',  
-        server: 'disqus-proxy.yeshuanghe.now.sh', 
-        port: 5050, 
-        https: true,
-        identifier: window.location.href 
-    };
-    window.disqus_config = function () {
-        this.page.url = window.location.href;
-        this.page.identifier = window.location.href;
-    };
-    var s = document.createElement('script');
-    s.src = 'https:\/\/blog.heysh.xyz\/js/main.b17dff3c.js"'; 
-    s.async = true;
-    document.body.appendChild(s);
+        var disq = new iDisqus('comment', {
+            forum: 'heysh',
+            api: 'https:\/\/disqus-php.yeshuanghe.now.sh\/api',
+            site: 'https:\/\/blog.heysh.xyz\/',
+            mode: 1,
+            timeout: 3000,
+            init: true
+    });
 </script>
-
-<link rel="stylesheet" href="https://blog.heysh.xyz/css/main.331fc925.css">
 
 </div>
 
