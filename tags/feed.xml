@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy;&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 04 Aug 2019 20:03:49 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2019 20:24:27 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/tags/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>unicode</title>
+      <link>https://blog.heysh.xyz/tags/unicode/</link>
+      <pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/tags/unicode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>和我最讨厌的</title>
+      <link>https://blog.heysh.xyz/tags/%E5%92%8C%E6%88%91%E6%9C%80%E8%AE%A8%E5%8E%8C%E7%9A%84/</link>
+      <pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/tags/%E5%92%8C%E6%88%91%E6%9C%80%E8%AE%A8%E5%8E%8C%E7%9A%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数学</title>
+      <link>https://blog.heysh.xyz/tags/%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/tags/%E6%95%B0%E5%AD%A6/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python</title>
@@ -472,7 +499,7 @@
     </item>
     
     <item>
-      <title>Atom</title>
+      <title>atom</title>
       <link>https://blog.heysh.xyz/tags/atom/</link>
       <pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate>
       
@@ -729,15 +756,6 @@
       <pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/tags/fcitx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unicode</title>
-      <link>https://blog.heysh.xyz/tags/unicode/</link>
-      <pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate>
-      
-      <guid>https://blog.heysh.xyz/tags/unicode/</guid>
       <description></description>
     </item>
     
