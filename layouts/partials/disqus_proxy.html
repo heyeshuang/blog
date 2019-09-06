@@ -1,0 +1,22 @@
+<!-- see https://github.com/szhielelp/disqus-proxy/ -->
+<div id="disqus_thread"></div>
+
+<script>
+    window.disqusProxy = {
+        username: '{{ .Site.Params.disqus }}',  // 你的 Disqus username
+        server: '{{ .Site.Params.disqus_proxy }}', // 你的 VPS IP
+        port: 5050, // 服务端对应的端口, 如果没有端口那么就忽略这个 Attr
+        https: true,
+        identifier: window.location.href // 页面 identifier, 一般就是页面 url
+    };
+    window.disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.href;
+    };
+    var s = document.createElement('script');
+    s.src = '{{ .Site.BaseURL }}js/main.b17dff3c.js'; //引用 static 文件夹下面的 JS
+    s.async = true;
+    document.body.appendChild(s);
+</script>
+<!-- 引用 static 文件夹下面的 CSS -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.331fc925.css">
