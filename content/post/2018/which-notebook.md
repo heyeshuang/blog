@@ -61,7 +61,7 @@ draft: false
 
 最近在V2EX上看到了一个叫[notable](https://github.com/notable/notable)的软件，思路上和VNote类似，也是使用文件夹代替数据库，笔记用纯文本格式保存在磁盘中，而且对于图片和附件的位置处理得也很聪明。
 
-另外，在这个项目的主页上还列出了很多常见的笔记软件，而且画了个漂亮的表格，来比较他们的区别，对某些功能有执念的朋友可以去看看。
+另外，在这个项目的主页上还列出了很多常见的笔记软件，而且画了个漂亮的表格（在[这里](https://raw.githubusercontent.com/notable/notable/master/resources/comparison/table.png)），来比较他们的区别，对某些功能有执念的朋友可以去看看。
 
 当然我还是继续用joplin。*feels good man.*
 
