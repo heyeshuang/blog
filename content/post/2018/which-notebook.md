@@ -11,7 +11,7 @@ date: 2018-11-17T18:26:30+08:00
 draft: false
 ---
 
-大概是2017年的时候，我一直在使用的笔记软件为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。
+大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。
 
 如果对自己的要求有清楚的认识，当查找 *poor man's somewares* 时，[AlternativeTo](https://alternativeto.net/software/evernote/)和[Slant](https://www.slant.co/topics/2463/~best-evernote-alternatives)这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：
 
@@ -54,3 +54,13 @@ draft: false
 [^1]:在VNote的某个Issue里提到过[Markor](https://github.com/gsantner/markor)，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。
 
 [^2]:除了导出文件时的一个[issue](https://github.com/laurent22/joplin/issues/853)。It looks like Chinese to me. *18-11-20更新：* 开发者回复我了！开心～
+
+---
+
+来自2019-09-18的更新：
+
+最近在V2EX上看到了一个叫[notable](https://github.com/notable/notable)的软件，思路上和VNote类似，也是使用文件夹代替数据库，笔记用纯文本格式保存在磁盘中，而且对于图片和附件的位置处理得也很聪明。
+
+另外，在这个项目的主页上还列出了很多常见的笔记软件，而且画了个漂亮的表格，来比较他们的区别，对某些功能有执念的朋友可以去看看。
+
+当然我还是继续用joplin。*feels good man.*
