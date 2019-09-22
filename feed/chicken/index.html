@@ -10,7 +10,46 @@
     <atom:link href="https://blog.heysh.xyz/feed/chicken/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Unicode与数学</title>
+      <title>自动输入剪贴板中的内容</title>
+      <link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link>
+      <pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然地连不上了。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;正好上次薅的羊毛也快要过期了，又到了交保护费的时间。&lt;/p&gt;
+
+&lt;p&gt;其实之前我有两页关于VPS（价格）的笔记，不过计划赶不上变化，今天看到了一个叫Veesp的公司，很便宜，而且速度居然也还不错。&lt;/p&gt;
+
+&lt;p&gt;惟一的缺点是，&lt;del&gt;我买不到红墨水&lt;/del&gt;那里的终端noVNC不支持粘贴。&lt;/p&gt;
+
+&lt;p&gt;以上是（无关紧要的）背景。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;针对noVNC的问题，根据&lt;a href=&#34;https://forum.proxmox.com/threads/novnc-copy-paste-not-works.19773/#post-101013&#34;&gt;这个帖子&lt;/a&gt;，可以用&lt;code&gt;xdotool&lt;/code&gt;来解决。&lt;/p&gt;
+
+&lt;p&gt;现在我用的KDE自带剪贴板管理程序&lt;code&gt;Klipper&lt;/code&gt;，能够配置自定义动作处理剪贴板中的内容。这里的动作是&lt;code&gt;xdotool type &#39;%s&#39;&lt;/code&gt;，如图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/klipper.png&#34; alt=&#34;setting&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;另外，在我这里&lt;code&gt;在当前剪贴板上手动执行动作&lt;/code&gt;的快捷键&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt;似乎有冲突，我改成了&lt;kbd&gt;Ctrl+Shift+Alt+R&lt;/kbd&gt;。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;之后在noVNC界面上按刚才的快捷键就行。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;其实我还有点期待&lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt;标签能出个什么特殊格式呢……
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unicode与数学公式</title>
       <link>https://blog.heysh.xyz/2019/09/05/unicodemath/</link>
       <pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate>
       
@@ -1497,7 +1536,9 @@ gpasswd -a hh sudo&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;su - hh
 mkdir .ssh
 chmod 700 .ssh
-vi .ssh/authorized_keys&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;#vi /etc/ssh/sshd_config
+vi .ssh/authorized_keys&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;在这里粘贴你的公钥。什么？noVNC无法粘贴？我写了篇&lt;a href=&#34;/2019/09/22/klipper-autotype/&#34;&gt;博文&lt;/a&gt;来解决这个。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;#vi /etc/ssh/sshd_config
 PermitRootLogin no
 PasswordAuthentication no
 Port 22222&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl restart ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

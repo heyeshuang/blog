@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 贺叶霜的树：III</title>
@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy;&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 05 Sep 2019 20:24:27 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2019 20:54:15 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.heysh.xyz/categories/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>折腾</title>
       <link>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</link>
-      <pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate>
+      <pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate>
       
       <guid>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</guid>
       <description></description>

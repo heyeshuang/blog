@@ -284,7 +284,9 @@ gpasswd -a hh sudo</pre></div>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">su - hh
 mkdir .ssh
 chmod 700 .ssh
-vi .ssh/authorized_keys</pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">#vi /etc/ssh/sshd_config
+vi .ssh/authorized_keys</pre></div>
+<p>在这里粘贴你的公钥。什么？noVNC无法粘贴？我写了篇<a href="/2019/09/22/klipper-autotype/">博文</a>来解决这个。</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">#vi /etc/ssh/sshd_config
 PermitRootLogin no
 PasswordAuthentication no
 Port 22222</pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl restart ssh</code></pre></div>
