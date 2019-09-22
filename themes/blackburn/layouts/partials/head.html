@@ -45,8 +45,8 @@
 
  <!-- RSS -->
   {{ if .OutputFormats.Get "RSS" }}
-  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
-    href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
+  <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}"
+    href='{{ with .OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}' />
   {{ end }}
 
   {{ partial "favicon.html" . }}

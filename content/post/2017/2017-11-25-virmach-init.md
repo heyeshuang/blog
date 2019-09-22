@@ -29,7 +29,7 @@ mkdir .ssh
 chmod 700 .ssh
 vi .ssh/authorized_keys
 ```
-
+在这里粘贴你的公钥。什么？noVNC无法粘贴？我写了篇[博文]({{<relref "klipper-autotype.md">}})来解决这个。
 ```
 #vi /etc/ssh/sshd_config
 PermitRootLogin no
