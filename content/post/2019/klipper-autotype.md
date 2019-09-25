@@ -22,6 +22,10 @@ draft: false
 
 > 以上是（无关紧要的）背景。
 
+{{%spoiler "附：Veesp的测速情况" %}}
+![北京联通表示情绪稳定](/img/veesp-speedtest.png)
+{{%/spoiler%}}
+
 针对noVNC的问题，根据[这个帖子](https://forum.proxmox.com/threads/novnc-copy-paste-not-works.19773/#post-101013)，可以用`xdotool`来解决。
 
 现在我用的KDE自带剪贴板管理程序`Klipper`，能够配置自定义动作处理剪贴板中的内容。这里的动作是`xdotool type '%s'`，如图：
