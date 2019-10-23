@@ -65,3 +65,15 @@ Rezonator其实不能算是Python库，不过倒也是免费的，而且做的�
 具体上来说，这玩意也包含几何光学和衍射光学的相关内容，而且在它的说明文档里直接体现了[高斯光谐振腔矩阵计算](https://github.com/opticspy/Optics/blob/master/GeometricOptics/resonator_geometric_optics.ipynb)和[强衍射条件下谐振腔的计算](https://opticspy.github.io/lightpipes/examples_of_lightpipes_for_python.html#laser-examples)（虽然我还没有看懂）。
 
 之后，可能会在这个的基础上对激光器进行一些分析——如果计划没有变更的话。
+
+---
+
+> 来自2019-10-23的更新：
+
+## [Finesse and PyKat](http://www.gwoptics.org/finesse/)
+
+为了LIGO设计的语言，用于引力波探测器的光路设计。Finesse有一种十分简单而复古的语法，而[PyKat](http://www.gwoptics.org/pykat)与其说是它的 *封装* ，倒不如说是拿报纸包了一下。
+
+当然，该程序的功能还是挺强大的，甚至还有一些量子光学的内容[^scs]。如果有人想要尝试的话，可以从[这里](http://www.gwoptics.org/learn/)开始。
+
+[^scs]: 比如[语法说明](http://www.gwoptics.org/finesse/reference/)里提到了squeezed vacuum input source。不要问我[那是什么](https://en.wikipedia.org/wiki/Squeezed_coherent_state)。
