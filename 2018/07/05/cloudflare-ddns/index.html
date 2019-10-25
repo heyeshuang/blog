@@ -302,7 +302,7 @@
 <ul>
 <li><p>保存下面的脚本，修改<code>&lt;ZONE_ID&gt;</code>，<code>&lt;RECORD_ID&gt;</code>，<code>邮箱地址</code>，<code>API_KEY</code>，<code>子域名</code>什么的。如果不需要代理的话删除<code>-x</code>那一行。</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#099">#!/bin/sh
-</span><span style="color:#099"></span><span style="color:#033">NEW_IP</span><span style="color:#555">=</span><span style="color:#c30">`</span>curl -s http://ns1.dnspod.net:6666<span style="color:#c30">`</span>
+</span><span style="color:#099"></span><span style="color:#033">NEW_IP</span><span style="color:#555">=</span><span style="color:#c30">`</span>curl http://members.3322.org/dyndns/getip<span style="color:#c30">`</span>
 <span style="color:#033">CURRENT_IP</span><span style="color:#555">=</span><span style="color:#c30">`</span>cat /var/tmp/current_ip.txt<span style="color:#c30">`</span>
 <span style="color:#069;font-weight:bold">if</span> <span style="color:#555">[</span> <span style="color:#c30">&#34;</span><span style="color:#033">$NEW_IP</span><span style="color:#c30">&#34;</span> <span style="color:#555">=</span> <span style="color:#c30">&#34;</span><span style="color:#033">$CURRENT_IP</span><span style="color:#c30">&#34;</span> <span style="color:#555">]</span>
 <span style="color:#069;font-weight:bold">then</span>
@@ -323,6 +323,10 @@
 </ul>
 
 <p><del>写字好累（躺</del></p>
+
+<hr />
+
+<p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。</p>
 
 
   

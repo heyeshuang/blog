@@ -823,7 +823,7 @@ win_BTC_short&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;price_after&lt
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;保存下面的脚本，修改&lt;code&gt;&amp;lt;ZONE_ID&amp;gt;&lt;/code&gt;，&lt;code&gt;&amp;lt;RECORD_ID&amp;gt;&lt;/code&gt;，&lt;code&gt;邮箱地址&lt;/code&gt;，&lt;code&gt;API_KEY&lt;/code&gt;，&lt;code&gt;子域名&lt;/code&gt;什么的。如果不需要代理的话删除&lt;code&gt;-x&lt;/code&gt;那一行。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#099&#34;&gt;#!/bin/sh
-&lt;/span&gt;&lt;span style=&#34;color:#099&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;NEW_IP&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;curl -s http://ns1.dnspod.net:6666&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#099&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;NEW_IP&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;curl http://members.3322.org/dyndns/getip&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;
 &lt;span style=&#34;color:#033&#34;&gt;CURRENT_IP&lt;/span&gt;&lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;cat /var/tmp/current_ip.txt&lt;span style=&#34;color:#c30&#34;&gt;`&lt;/span&gt;
 &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$NEW_IP&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#033&#34;&gt;$CURRENT_IP&lt;/span&gt;&lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;then&lt;/span&gt;
@@ -844,6 +844,10 @@ win_BTC_short&lt;span style=&#34;color:#555&#34;&gt;*&lt;/span&gt;price_after&lt
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;del&gt;写字好累（躺&lt;/del&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。&lt;/p&gt;
 </description>
     </item>
     
