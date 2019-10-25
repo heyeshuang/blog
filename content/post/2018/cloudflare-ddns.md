@@ -40,7 +40,7 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records" \
 
 ```bash
 #!/bin/sh
-NEW_IP=`curl -s http://ns1.dnspod.net:6666`
+NEW_IP=`curl http://members.3322.org/dyndns/getip`
 CURRENT_IP=`cat /var/tmp/current_ip.txt`
 if [ "$NEW_IP" = "$CURRENT_IP" ]
 then
@@ -63,3 +63,6 @@ fi
 ```
 
 ~~写字好累（躺~~
+
+---
+来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。
