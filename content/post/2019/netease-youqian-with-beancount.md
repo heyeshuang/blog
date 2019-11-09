@@ -99,7 +99,7 @@ bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv > 
 
 来导入。
 
-另外，我还写了中国银行和招商银行对账单的导入脚本，当然基本上是从[这里](https://yuchi.me/post/beancount-intro/)抄袭的。
+另外，我还写了中国银行、招商银行和微信钱包对账单的导入脚本，当然基本上是从[这里](https://yuchi.me/post/beancount-intro/)抄袭的。
 
 ---
 
