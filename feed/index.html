@@ -10,6 +10,118 @@
     <atom:link href="https://blog.heysh.xyz/feed/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Beancount试用</title>
+      <link>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</link>
+      <pubDate>Thu, 07 Nov 2019 21:58:22 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</guid>
+      <description>
+
+&lt;p&gt;自从2017年开始，我一直使用 &lt;em&gt;网易有钱&lt;/em&gt; 记账。不得不说，如果像某落水狗讲的那样，“中国人不在乎隐私”的话，这确实是一个非常好用的APP，下载账单、导入数据一气呵成，连余额宝的利息都能够算得分毫不差——&lt;/p&gt;
+
+&lt;p&gt;直到最近，大概是骂挨得太多，或是界面里终于塞不下更多广告，这个APP①用“维护中”挡住了所有同步按钮，并且②停止了维护。&lt;/p&gt;
+
+&lt;p&gt;用8元买回了本属于自己的数据后，我想起之前听说过的&lt;a href=&#34;https://www.byvoid.com/zht/blog/beancount-bookkeeping-1&#34;&gt;Beancount&lt;/a&gt;。于是，我给那些数据找到了一些新用途。&lt;/p&gt;
+
+&lt;p&gt;首先，我阅读了&lt;a href=&#34;https://yuchi.me/post/beancount-intro/&#34;&gt;这篇博文&lt;/a&gt;，搭起了Beancount。接着，我又写了一些其它的&lt;a href=&#34;https://github.com/heyeshuang/beancount-homemade-importers&#34;&gt;脚本&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;自动建立收支账户&#34;&gt;自动建立收支账户&lt;/h2&gt;
+
+&lt;p&gt;之前的理财软件大多会提供一些初始分类，比如说mint所用的类别列表在&lt;a href=&#34;https://www.mint.com/mint-categories&#34;&gt;这里&lt;/a&gt;。
+对于本人&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:self&#34;&gt;&lt;a href=&#34;#fn:self&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;之前的账本，有过记录的大概是这样几类：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+{&#39;交通,&#39;,
+ &#39;交通,打车&#39;,
+ &#39;交通,机票&#39;,
+ &#39;交通,火车&#39;,
+ &#39;人情,&#39;,
+ &#39;住房,&#39;,
+ &#39;住房,家具&#39;,
+ &#39;住房,家纺&#39;,
+ &#39;住房,物业水电&#39;,
+ &#39;住房,装修&#39;,
+ &#39;其他,&#39;,
+ &#39;医疗,&#39;,
+ &#39;医疗,药品&#39;,
+ &#39;娱乐,&#39;,
+ &#39;娱乐,电影&#39;,
+ &#39;投资亏损,&#39;,
+ &#39;文教,&#39;,
+ &#39;文教,书刊&#39;,
+ &#39;文教,文具&#39;,
+ &#39;旅行,&#39;,
+ &#39;旅行,景点门票&#39;,
+ &#39;旅行,酒店&#39;,
+ &#39;汽车,&#39;,
+ &#39;购物,&#39;,
+ &#39;购物,数码&#39;,
+ &#39;购物,日用&#39;,
+ &#39;购物,玩具&#39;,
+ &#39;购物,电器&#39;,
+ &#39;购物,美妆&#39;,
+ &#39;购物,运动用品&#39;,
+ &#39;购物,鞋服&#39;,
+ &#39;购物,饰品&#39;,
+ &#39;通讯,&#39;,
+ &#39;通讯,话费&#39;,
+ &#39;零食烟酒,&#39;,
+ &#39;零食烟酒,水果&#39;,
+ &#39;零食烟酒,烟酒&#39;,
+ &#39;零食烟酒,茶水&#39;,
+ &#39;零食烟酒,零食&#39;,
+ &#39;零食烟酒,饮料&#39;,
+ &#39;餐饮,&#39;,
+ &#39;餐饮,三餐&#39;,
+ &#39;餐饮,食材&#39;}
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;对这些分类，利用人工&lt;del&gt;智能&lt;/del&gt;，为每一项建立了对应的&lt;code&gt;account&lt;/code&gt;，形成了一个&lt;a href=&#34;https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/youqian/youqianDict.py&#34;&gt;dict&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果你已经下载了&lt;a href=&#34;https://github.com/heyeshuang/beancount-homemade-importers&#34;&gt;beancount-homemade-importers&lt;/a&gt;，你可以用里面的&lt;code&gt;importers/
+youqian/accountInit.py&lt;/code&gt;来自动建立这些&lt;code&gt;accounts&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
+&lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;# 或：如果之前已经建立了一些账户的话&lt;/span&gt;
+python importers/youqian/accountInit.py Existing_Accounts.bean &amp;gt; New_Accounts.bean&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;导入网易有钱的收入-支出数据&#34;&gt;导入网易有钱的收入、支出数据&lt;/h2&gt;
+
+&lt;p&gt;Beancount的&lt;a href=&#34;https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#&#34;&gt;文档&lt;/a&gt;里已经对导入脚本进行了比较详细的说明。从&lt;a href=&#34;https://bitbucket.org/blais/beancount/src/tip/examples/ingest/office/importers/utrade/&#34;&gt;这个例子&lt;/a&gt;开始，基本上只要实现几个函数就行。&lt;/p&gt;
+
+&lt;p&gt;在&lt;a href=&#34;https://github.com/heyeshuang/beancount-homemade-importers&#34;&gt;beancount-homemade-importers&lt;/a&gt;中，我写了一个简单的网易有钱导入脚本。在使用之前，需要用excel把默认的&lt;code&gt;xlsx&lt;/code&gt;格式转换为&lt;code&gt;收入.csv&lt;/code&gt;和&lt;code&gt;支出.csv&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;之后，使用&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
+bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &amp;gt; 收入.bean&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;来导入。&lt;/p&gt;
+
+&lt;p&gt;另外，我还写了中国银行、招商银行和微信钱包对账单的导入脚本，当然基本上是从&lt;a href=&#34;https://yuchi.me/post/beancount-intro/&#34;&gt;这里&lt;/a&gt;抄袭的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;又及：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我跟你港，这次的内容超适合作Python教程的，还能顺便学英语！只要学会了这个，年薪百万不是梦！&lt;/p&gt;
+
+&lt;p&gt;现在诚征 100 个&lt;del&gt;凯子&lt;/del&gt;幸运读者给我打钱，我的支付宝是：……&lt;/p&gt;
+
+&lt;p&gt;呃，对不起。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;以上不代表博主观点。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:self&#34;&gt;一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:self&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>自动输入剪贴板中的内容</title>
       <link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link>
       <pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate>

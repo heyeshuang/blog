@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网易有钱 on 贺叶霜的树：III</title>
+    <link>https://blog.heysh.xyz/tags/%E7%BD%91%E6%98%93%E6%9C%89%E9%92%B1/</link>
+    <description>Recent content in 网易有钱 on 贺叶霜的树：III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy;&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 07 Nov 2019 21:58:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.heysh.xyz/tags/%E7%BD%91%E6%98%93%E6%9C%89%E9%92%B1/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beancount试用</title>
+      <link>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</link>
+      <pubDate>Thu, 07 Nov 2019 21:58:22 +0800</pubDate>
+      
+      <guid>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</guid>
+      <description>自从2017年开始，我一直使用 网易有钱 记账。不得不说，如果像某落水狗讲的那样，“中国人不在乎隐私”的话，这确实是一个非常好用的APP，下载账</description>
+    </item>
+    
+  </channel>
+</rss>

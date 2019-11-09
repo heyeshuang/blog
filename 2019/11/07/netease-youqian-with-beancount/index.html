@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="批量建立账户，以及导入网易有钱账本">
   <meta name="generator" content="Hugo 0.60.0-DEV" />
 
-  <title>贺叶霜的树：III</title>
+  <title>Beancount试用 &middot; 贺叶霜的树：III</title>
 
   
   
@@ -47,9 +47,6 @@
         onload="renderMathInElement(document.body);"></script>
 
  
-  
-  <link rel="alternate" type="application/atom+xml" title="贺叶霜的树：III"
-    href='https://blog.heysh.xyz/feed.xml' />
   
 
   <link rel="shortcut icon" href="https://blog.heysh.xyz/img/favicon.ico" type="image/x-icon" />
@@ -132,11 +129,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href='/feed.xml'><i
-          class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -244,22 +236,10 @@
 
 
 <div class="header">
-  <h1>贺叶霜的树：III</h1>
-  <h2>第三根树苗</h2>
+  <h1>Beancount试用</h1>
+  <h2>批量建立账户，以及导入网易有钱账本</h2>
 </div>
-
 <div class="content">
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/">Beancount试用</a>
-    </h2>
-
-      
-      <h3>批量建立账户，以及导入网易有钱账本</h3>
-      
-  </header>
 
   <div class="post-meta">
 
@@ -294,395 +274,151 @@
 
 
   
-</article>
+
+<p>自从2017年开始，我一直使用 <em>网易有钱</em> 记账。不得不说，如果像某落水狗讲的那样，“中国人不在乎隐私”的话，这确实是一个非常好用的APP，下载账单、导入数据一气呵成，连余额宝的利息都能够算得分毫不差——</p>
+
+<p>直到最近，大概是骂挨得太多，或是界面里终于塞不下更多广告，这个APP①用“维护中”挡住了所有同步按钮，并且②停止了维护。</p>
+
+<p>用8元买回了本属于自己的数据后，我想起之前听说过的<a href="https://www.byvoid.com/zht/blog/beancount-bookkeeping-1">Beancount</a>。于是，我给那些数据找到了一些新用途。</p>
+
+<p>首先，我阅读了<a href="https://yuchi.me/post/beancount-intro/">这篇博文</a>，搭起了Beancount。接着，我又写了一些其它的<a href="https://github.com/heyeshuang/beancount-homemade-importers">脚本</a>。</p>
+
+<h2 id="自动建立收支账户">自动建立收支账户</h2>
+
+<p>之前的理财软件大多会提供一些初始分类，比如说mint所用的类别列表在<a href="https://www.mint.com/mint-categories">这里</a>。
+对于本人<sup class="footnote-ref" id="fnref:self"><a href="#fn:self">1</a></sup>之前的账本，有过记录的大概是这样几类：</p>
+
+<p><code>
+{'交通,',
+ '交通,打车',
+ '交通,机票',
+ '交通,火车',
+ '人情,',
+ '住房,',
+ '住房,家具',
+ '住房,家纺',
+ '住房,物业水电',
+ '住房,装修',
+ '其他,',
+ '医疗,',
+ '医疗,药品',
+ '娱乐,',
+ '娱乐,电影',
+ '投资亏损,',
+ '文教,',
+ '文教,书刊',
+ '文教,文具',
+ '旅行,',
+ '旅行,景点门票',
+ '旅行,酒店',
+ '汽车,',
+ '购物,',
+ '购物,数码',
+ '购物,日用',
+ '购物,玩具',
+ '购物,电器',
+ '购物,美妆',
+ '购物,运动用品',
+ '购物,鞋服',
+ '购物,饰品',
+ '通讯,',
+ '通讯,话费',
+ '零食烟酒,',
+ '零食烟酒,水果',
+ '零食烟酒,烟酒',
+ '零食烟酒,茶水',
+ '零食烟酒,零食',
+ '零食烟酒,饮料',
+ '餐饮,',
+ '餐饮,三餐',
+ '餐饮,食材'}
+</code></p>
+
+<p>对这些分类，利用人工<del>智能</del>，为每一项建立了对应的<code>account</code>，形成了一个<a href="https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/youqian/youqianDict.py">dict</a>。</p>
+
+<p>如果你已经下载了<a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers</a>，你可以用里面的<code>importers/
+youqian/accountInit.py</code>来自动建立这些<code>accounts</code>：</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python importers/youqian/accountInit.py &gt; New_Accounts.bean
+<span style="color:#09f;font-style:italic"># 或：如果之前已经建立了一些账户的话</span>
+python importers/youqian/accountInit.py Existing_Accounts.bean &gt; New_Accounts.bean</code></pre></div>
+<h2 id="导入网易有钱的收入-支出数据">导入网易有钱的收入、支出数据</h2>
+
+<p>Beancount的<a href="https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#">文档</a>里已经对导入脚本进行了比较详细的说明。从<a href="https://bitbucket.org/blais/beancount/src/tip/examples/ingest/office/importers/utrade/">这个例子</a>开始，基本上只要实现几个函数就行。</p>
+
+<p>在<a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers</a>中，我写了一个简单的网易有钱导入脚本。在使用之前，需要用excel把默认的<code>xlsx</code>格式转换为<code>收入.csv</code>和<code>支出.csv</code>。</p>
+
+<p>之后，使用</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &gt; 支出.bean
+bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &gt; 收入.bean</pre></div>
+<p>来导入。</p>
+
+<p>另外，我还写了中国银行、招商银行和微信钱包对账单的导入脚本，当然基本上是从<a href="https://yuchi.me/post/beancount-intro/">这里</a>抄袭的。</p>
+
+<hr />
+
+<p>又及：</p>
+
+<blockquote>
+<p>我跟你港，这次的内容超适合作Python教程的，还能顺便学英语！只要学会了这个，年薪百万不是梦！</p>
+
+<p>现在诚征 100 个<del>凯子</del>幸运读者给我打钱，我的支付宝是：……</p>
+
+<p>呃，对不起。</p>
+</blockquote>
+
+<p>以上不代表博主观点。</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:self">一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。
+ <a class="footnote-return" href="#fnref:self"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
 
   
-  <article>
-  <header>
-    <h2>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://blog.heysh.xyz/2019/09/22/klipper-autotype/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
       <a href="https://blog.heysh.xyz/2019/09/22/klipper-autotype/">自动输入剪贴板中的内容</a>
-    </h2>
-
-      
-      <h3>针对KDE（Klipper）</h3>
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-09-22 20:54</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/linux">linux</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/vps">VPS</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/kde">KDE</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/novnc">noVNC</a>
+    </nav>
     
   </div>
-  
-  
-
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
 
-  
-</article>
 
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2019/09/05/unicodemath/">Unicode与数学公式</a>
-    </h2>
-
-      
-      <h3>在一个文本框中能做到怎样的程度？</h3>
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-09-05 20:24</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/unicode">Unicode</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E5%92%8C%E6%88%91%E6%9C%80%E8%AE%A8%E5%8E%8C%E7%9A%84">和我最讨厌的</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E6%95%B0%E5%AD%A6">数学</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">Python中光学计算相关的库/Awesome Python for Optics</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-08-04 20:03</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/python">python</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6">光学</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E5%B7%A5%E4%BD%9C%E9%87%8F%E4%B8%8D%E9%A5%B1%E5%92%8C%E7%9A%84%E8%AF%81%E6%8D%AE">工作量不饱和的证据</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2019/06/02/a-script/">一本厕纸小说</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-06-02 19:18</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/">震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-03-02 23:19</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/linux">linux</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/windows">windows</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/ext4">ext4</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2019/01/27/summary-2018/">我的2018</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-01-27 00:22</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93">年终总结</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2018/11/17/which-notebook/">笔记软件踩雷</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2018-11-17 18:26</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E7%AC%94%E8%AE%B0">笔记</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/%E8%BD%AF%E4%BB%B6">软件</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2018/08/16/about-leverage/">关于BitMEX的杠杆</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2018-08-16 20:35</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/bitcoin">bitcoin</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/bitmex">bitmex</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-  <article>
-  <header>
-    <h2>
-      <a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">用Cloudflare的v4 API实现动态DNS（DDNS）</a>
-    </h2>
-
-      
-  </header>
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2018-07-05 21:41</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/dns">DNS</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/cloudflare">Cloudflare</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://blog.heysh.xyz/tags/domain">domain</a>
-    
-  </div>
-  
-  
-
-</div>
-
-
-  
-</article>
-
-  
-
-  
-
-
-<nav class="pagination" role="pagination">
-  
-  <i class="fa fa-chevron-left"></i>
-  
-  <span>&nbsp;1 / 10&nbsp;</span>
-  
-  <a href="/page/2/"><i class="fa fa-chevron-right"></i></a>
-  
-</nav>
-
-
+<link rel="stylesheet" href="https://blog.heysh.xyz/css/iDisqus.min.css" />
+<div id="comment"></div>
+<script src="https://blog.heysh.xyz/js/iDisqus.min.js"></script>
+
+<script>
+        var disq = new iDisqus('comment', {
+            forum: 'heysh',
+            api: 'https:\/\/disqus-php.yeshuanghe.now.sh\/api',
+            site: 'https:\/\/blog.heysh.xyz',
+            mode: 1,
+            timeout: 3000,
+            init: true
+    });
+</script>
 
 </div>
 
@@ -725,3 +461,4 @@
 
 </body>
 </html>
+
