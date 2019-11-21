@@ -367,6 +367,14 @@ bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &g
 </blockquote>
 
 <p>以上不代表博主观点。</p>
+
+<hr />
+
+<p>来自2019-11-20的更新：</p>
+
+<p>我又仔细梳理了一下自己的花销，发现只要导入微信账单、一张信用卡（招商）和一张借记卡（中行）就可以覆盖绝大多数消费情况；另外，我还发现了<a href="https://github.com/beancount/smart_importer">smart_importer</a>，只要简单地增加hook，就可以给导入脚本增加更好的去重、智能猜测分类等更帅气的功能。</p>
+
+<p>根据这些，在刚才我更新了自己使用的脚本，基本上可以覆盖自己的需求了<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">2</a></sup>。</p>
 <div class="footnotes">
 
 <hr />
@@ -374,6 +382,8 @@ bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &g
 <ol>
 <li id="fn:self">一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。
  <a class="footnote-return" href="#fnref:self"><sup>[return]</sup></a></li>
+<li id="fn:1">除了还要手动把中国银行的账单改成UTF-8
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
 </ol>
 </div>
 
