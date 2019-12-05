@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chroma语法高亮和Typography.js">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>最近对博客的改动 &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -271,26 +267,17 @@
 </div>
 
 
-  
-
-<h2 id="用chroma进行语法高亮">用chroma进行语法高亮</h2>
-
+  <h2 id="chroma">用chroma进行语法高亮</h2>
 <p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近</a>hugo内置了<a href="https://github.com/alecthomas/chroma">chroma</a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要<code>highlight.js</code>等脚本文件，理论上可以提高网页加载的速度。</p>
-
-<h3 id="使用方法">使用方法</h3>
-
+<h3 id="heading">使用方法</h3>
 <p>在<code>config.toml</code>中加入以下内容：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TOML" data-lang="TOML">pygmentsCodefences = <span style="color:#069;font-weight:bold">true</span> <span style="color:#09f;font-style:italic">#高亮markdown的代码块</span>
 pygmentsCodefencesGuessSyntax = <span style="color:#069;font-weight:bold">true</span> <span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块</span>
-pygmentsStyle = <span style="color:#c30">&#39;manni&#39;</span> <span style="color:#09f;font-style:italic">#高亮主题</span></code></pre></div>
-<p>可用的主题见<a href="http://help.farbox.com/pygments.html">这里</a>。更多的设置可以参见hugo<a href="https://gohugo.io/content-management/syntax-highlighting/">帮助</a>。</p>
-
-<h2 id="用typography-js修改样式">用typography.js修改样式</h2>
-
+pygmentsStyle = <span style="color:#c30">&#39;manni&#39;</span> <span style="color:#09f;font-style:italic">#高亮主题</span>
+</code></pre></div><p>可用的主题见<a href="http://help.farbox.com/pygments.html">这里</a>。更多的设置可以参见hugo<a href="https://gohugo.io/content-management/syntax-highlighting/">帮助</a>。</p>
+<h2 id="typographyjs">用typography.js修改样式</h2>
 <p><a href="http://kyleamathews.github.io/typography.js/">Typography.js</a>是生成网页字体排印格式的库。只要简单地利用已有的主题，就可以生成较为完善的CSS格式。当然，如果需要更精确的中文排版，请移步<a href="https://hanzi.pro/">汉字标准格式</a>。</p>
-
 <p>Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：<a href="https://github.com/heyeshuang/typography2css">typography2CSS</a>，用来直接生成CSS文件。</p>
-
 <p>之后，经过少量修改，即可用于现有的主题，效果如此博客所示。</p>
 
 

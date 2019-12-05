@@ -153,7 +153,7 @@
       <pubDate>Tue, 23 Jan 2018 17:31:33 +0800</pubDate>
       
       <guid>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</guid>
-      <description>Link In this package, you&amp;rsquo;ll find: History data for Bitcoin price, with highest, lowest and volume, per hour Close price for 200+ Altcoins, also per hour And the Altcoin Market Indices Before 2017-12-23. These data (and honor) belong to alt19.com. This website says: Any information on Alt19.com is provided free and &amp;ldquo;as is&amp;rdquo; and solely for informational purposes, not for trading purposes or advice, and may be delayed. No action</description>
+      <description>Link In this package, you&#39;ll find: History data for Bitcoin price, with highest, lowest and volume, per hour Close price for 200+ Altcoins, also per hour And the Altcoin Market Indices Before 2017-12-23. These data (and honor) belong to alt19.com. This website says: Any information on Alt19.com is provided free and &amp;ldquo;as is&amp;rdquo; and solely for informational purposes, not for trading purposes or advice, and may be delayed. No action</description>
     </item>
     
     <item>
@@ -351,13 +351,10 @@
       <pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate>
       
       <guid>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</guid>
-      <description>&lt;p&gt;Update 2018-5: Now vim-mode-plus introduced &lt;a href=&#34;https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300&#34;&gt;new method&lt;/a&gt; to disable IME in the setting page. It&amp;rsquo;s time for this post to retire.&lt;/p&gt;
-
-&lt;hr /&gt;
-
+      <description>&lt;p&gt;Update 2018-5: Now vim-mode-plus introduced &lt;a href=&#34;https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300&#34;&gt;new method&lt;/a&gt; to disable IME in the setting page. It&#39;s time for this post to retire.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;As a vim-user and Chinese-speaker, I prefer &lt;a href=&#34;https://atom.io/packages/vim-mode-plus&#34;&gt;vim-mode-plus&lt;/a&gt; for Atom editor, but always disrupted by the IME in normal mode, like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://blog.heysh.xyz/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://blog.heysh.xyz/IME-in-atom.png&#34; alt=&#34;IME-in-atom&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -546,7 +543,7 @@
       <pubDate>Thu, 09 Apr 2015 14:12:01 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2015/04/09/%E7%BD%97%E9%A9%AC%E5%9C%A8%E5%93%AA%E9%87%8C/</guid>
-      <description>这是关于2月2号果壳和国王小剧场的故事。 我记得念过这样的怪诗： 匈奴族的首长阿底拉 骑着马， 满身披着钢铁甲胄， 象坟墓般地阴郁和沉默， 在无人境中行</description>
+      <description>这是关于2月2号果壳和国王小剧场的故事。 我记得念过这样的怪诗：\ 匈奴族的首长阿底拉 骑着马， 满身披着钢铁甲胄， 象坟墓般地阴郁和沉默， 在无人境中</description>
     </item>
     
     <item>
@@ -573,7 +570,7 @@
       <pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid>
-      <description>用three.js试着做了点东西 Live demo : http://heyeshuang.github.io/three-stairs/ –你的下一句话是：“又做了没用的东西！” –是啊。 –咦？这算是猜对了吗？</description>
+      <description>用three.js试着做了点东西 Live demo : http://heyeshuang.github.io/three-stairs/ –你的下一句话是：“又做了没用的东西！”\ –是啊。\ –咦？这算是猜对了吗？</description>
     </item>
     
     <item>
@@ -654,7 +651,7 @@
       <pubDate>Sun, 26 May 2013 08:05:33 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</guid>
-      <description>本来这时候我是应该滚去写实验报告的但却写了博客 不过大概这种东西应该花不了多久吧 –我这样安慰着自己 总而言之，VimRepress是一个在VIM</description>
+      <description>本来这时候我是应该滚去写实验报告的但却写了博客 不过大概这种东西应该花不了多久吧\ –我这样安慰着自己 总而言之，VimRepress是一个在VI</description>
     </item>
     
     <item>
@@ -663,7 +660,7 @@
       <pubDate>Sat, 25 May 2013 15:41:17 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/05/25/%E7%94%B5%E8%B7%AF%E5%9B%BE%E6%B5%81%E7%A8%8B%E5%9B%BEdiagram-designer%E5%8F%8A%E5%85%B6%E4%BB%96/</guid>
-      <description>一个月后的总结：当我用linux的时候，我会用dia画电路和流程图。yed只能画流程图，不过看起来稍微漂亮一点。 在win下，dia的中文支持</description>
+      <description>一个月后的总结：当我用linux的时候，我会用dia画电路和流程图。yed只能画流程图，不过看起来稍微漂亮一点。\ 在win下，dia的中文支</description>
     </item>
     
     <item>
@@ -699,7 +696,7 @@
       <pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid>
-      <description>vim是一种信仰。 上面这句话应该是从某个披头散发1年没洗澡的*技术大牛*嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑</description>
+      <description>vim是一种信仰。 上面这句话应该是从某个披头散发1年没洗澡的技术大牛嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有</description>
     </item>
     
     <item>
@@ -744,7 +741,7 @@
       <pubDate>Mon, 01 Apr 2013 08:57:51 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/04/01/%E6%B0%B8%E7%94%9F%E5%85%B6%E4%BA%8C/</guid>
-      <description>我仍然渴望永生。 “相遇的人会再相逢”，我很喜欢这句话，但我又明白，很多时候这并不现实。在人类短暂的一生里，很多人只能擦肩而过，而所谓命中注定</description>
+      <description>我仍然渴望永生。\ “相遇的人会再相逢”，我很喜欢这句话，但我又明白，很多时候这并不现实。在人类短暂的一生里，很多人只能擦肩而过，而所谓命中注</description>
     </item>
     
     <item>
@@ -753,7 +750,7 @@
       <pubDate>Mon, 01 Apr 2013 04:24:00 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/04/01/%E6%96%AD-2/</guid>
-      <description>跑。跑。跑。 说是奔跑，但并不很快，喘着粗气，但头脑却极速转动。 后面传来凌乱的脚步声，是很多皮鞋踏在一尘不染的木地板上，在空旷的大厅中回响。 大</description>
+      <description>跑。跑。跑。\ 说是奔跑，但并不很快，喘着粗气，但头脑却极速转动。\ 后面传来凌乱的脚步声，是很多皮鞋踏在一尘不染的木地板上，在空旷的大厅中回响</description>
     </item>
     
     <item>
@@ -780,7 +777,7 @@
       <pubDate>Thu, 21 Mar 2013 05:18:05 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/03/21/catia%E6%98%AF%E4%B8%AA%E5%A5%BD%E8%BD%AF%E4%BB%B6-2/</guid>
-      <description>作为一篇凑字数的日志，标题就充满了歪歪扭扭的无力感…… 其实我想说的是，在机械设计的时候用好参数的话效果拔群——比如这次的机身，隔板有四种，可</description>
+      <description>作为一篇凑字数的日志，标题就充满了歪歪扭扭的无力感……\ 其实我想说的是，在机械设计的时候用好参数的话效果拔群——比如这次的机身，隔板有四种，</description>
     </item>
     
     <item>
@@ -798,7 +795,7 @@
       <pubDate>Mon, 31 Dec 2012 17:35:53 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2013/01/01/2012-2013/</guid>
-      <description>2012年，玩了石头门，馄饨头，还有菲特今晚留下来。石头门不错，馄饨头渣。菲特？没印象了。不过爵迹零拍的不错…… 2012年，退了一个比较正式</description>
+      <description>2012年，玩了石头门，馄饨头，还有菲特今晚留下来。石头门不错，馄饨头渣。菲特？没印象了。不过爵迹零拍的不错……\ 2012年，退了一个比较正</description>
     </item>
     
     <item>
@@ -816,7 +813,7 @@
       <pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid>
-      <description>TexMacs可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。 其优势： 像TEX一样的排版，结构和内容分</description>
+      <description>TexMacs可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\ 其优势： 像TEX一样的排版，结构和内容</description>
     </item>
     
     <item>
@@ -825,7 +822,7 @@
       <pubDate>Fri, 05 Oct 2012 15:15:48 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/10/05/%E9%82%A3%E4%B9%88%E5%A6%82%E5%90%8C%E6%A0%87%E9%A2%98%E4%B8%80%E6%A0%B7%E8%BF%99%E9%87%8C%E8%A6%81%E5%8F%98%E6%88%90%E6%A0%91%E6%B4%9E%E4%BA%86/</guid>
-      <description>明明不是tk域名了的说……搜索引擎都收录了的说……为什么没有人来…… 算了那就当私人空间好了，不过明明是私人空间却还对外开放，这是不是某种暴露</description>
+      <description>\ 明明不是tk域名了的说……搜索引擎都收录了的说……为什么没有人来……\ 算了那就当私人空间好了，不过明明是私人空间却还对外开放，这是不是某种</description>
     </item>
     
     <item>
@@ -834,7 +831,7 @@
       <pubDate>Thu, 04 Oct 2012 02:32:15 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/10/04/%E5%BD%93%E6%88%91%E7%94%BB%E8%BF%9E%E6%9D%86%E6%97%B6%E6%88%91%E6%83%B3%E5%88%B0%E4%BB%80%E4%B9%88-%E6%90%81%E6%B5%85%E7%9A%84%E8%AE%A1%E5%88%92%E5%87%A0%E4%BD%95%E7%94%BB/</guid>
-      <description>有没有专业画连杆的软件？没有，原因是这样的要求过于小众，而且有许多功能更加丰富的软件可以替代。 前几天一直想要实现一个专业画连杆的软件，当时考</description>
+      <description>有没有专业画连杆的软件？没有，原因是这样的要求过于小众，而且有许多功能更加丰富的软件可以替代。\ 前几天一直想要实现一个专业画连杆的软件，当时</description>
     </item>
     
     <item>
@@ -852,7 +849,7 @@
       <pubDate>Tue, 11 Sep 2012 04:56:26 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/09/11/phpwind%E8%AE%BA%E5%9D%9B%E5%88%B7%E5%88%86%E8%84%9A%E6%9C%AC%E5%8F%AF%E7%94%A8%E4%BA%8Eopenwrt/</guid>
-      <description>用Python2写成，为什么不用Lua？因为我不会 &amp;#39;&amp;#39;&amp;#39; Created on 2012-9-10 @author: hh &amp;#39;&amp;#39;&amp;#39; import cookielib import urllib2 import urllib import time username=&amp;#34;Chetter.Hummin&amp;#34; password=&amp;#34;password&amp;#34; def login(usr, pwd): &amp;#39;login function&amp;#39; cj = cookielib.CookieJar() opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj)) opener.addheaders = [(&amp;#39;User-agent&amp;#39;,&amp;#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1&amp;#39;)] url_login = &amp;#39;http://bbs.sarabalst.com/2b/login.php&amp;#39; body={&amp;#34;step&amp;#34;:&amp;#34;2&amp;#34;,&amp;#34;pwuser&amp;#34;:usr,&amp;#34;cktime&amp;#34;:&amp;#34;31536000&amp;#34;,&amp;#34;pwpwd&amp;#34;:pwd,&amp;#34;lgt&amp;#34;:&amp;#34;0&amp;#34;} print</description>
+      <description>用Python2写成，为什么不用Lua？因为我不会 &#39;&#39;&#39; Created on 2012-9-10 @author: hh &#39;&#39;&#39; import cookielib import urllib2 import urllib import time username=&amp;quot;Chetter.Hummin&amp;quot; password=&amp;quot;password&amp;quot; def login(usr, pwd): &#39;login function&#39; cj = cookielib.CookieJar() opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj)) opener.addheaders = [(&#39;User-agent&#39;,&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1&#39;)] url_login = &#39;http://bbs.sarabalst.com/2b/login.php&#39; body={&amp;quot;step&amp;quot;:&amp;quot;2&amp;quot;,&amp;quot;pwuser&amp;quot;:usr,&amp;quot;cktime&amp;quot;:&amp;quot;31536000&amp;quot;,&amp;quot;pwpwd&amp;quot;:pwd,&amp;quot;lgt&amp;quot;:&amp;quot;0&amp;quot;} print</description>
     </item>
     
     <item>
@@ -861,7 +858,7 @@
       <pubDate>Fri, 03 Aug 2012 21:20:34 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/08/04/%E6%96%AD/</guid>
-      <description>到了夜晚人就变得奇怪了…… 好笑的是，高中三年匆匆过去，我对母校的记忆，竟然是几扇窗户。 这是当我第一次踏入一中的图书馆时，印在我脑海中的景象。</description>
+      <description>到了夜晚人就变得奇怪了…… 好笑的是，高中三年匆匆过去，我对母校的记忆，竟然是几扇窗户。\ 这是当我第一次踏入一中的图书馆时，印在我脑海中的景象</description>
     </item>
     
     <item>
@@ -870,7 +867,7 @@
       <pubDate>Sat, 14 Jul 2012 08:41:26 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E8%BE%93%E5%87%BAvcal/</guid>
-      <description>脚本下载：http://userscripts.org/scripts/show/136856 google code：http://code.googl</description>
+      <description>脚本下载：http://userscripts.org/scripts/show/136856\ google code：http://code.goog</description>
     </item>
     
     <item>
@@ -897,7 +894,7 @@
       <pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate>
       
       <guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid>
-      <description>国内的免费主机始终是不靠谱的啊…… ——以上为结论 由于这样那样的原因，上一个博客化为了*时代的眼泪*，确切的说是*全灭*。于是，这里作为博客N</description>
+      <description>国内的免费主机始终是不靠谱的啊…… ——以上为结论 由于这样那样的原因，上一个博客化为了时代的眼泪，确切的说是全灭。于是，这里作为博客No.3，</description>
     </item>
     
     <item>

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>用于OPENWRT的流量监控脚本：wrtbwmon &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -258,27 +254,22 @@
 
 
   <p>UPDATE at 15年平安夜：<a href="https://wiki.openwrt.org/doc/howto/wrtbwmon">https://wiki.openwrt.org/doc/howto/wrtbwmon</a></p>
-
-<hr />
-
+<hr>
 <p>在某次坑爹的网费改革之后校园网的免费流量变成了20G，于是流量监控这一需求变得迫切起来。Google之后，发现了这个脚本：<a href="http://code.google.com/p/wrtbwmon/">wrtbwmon</a>。不过这个是为dd-wrt设计的，而且也很久没有更新过了，要进行一些小修改才能用。</p>
-
 <blockquote>
-<p>比如第24行，<code>nvram</code>在我这里挂掉了，于是我简单粗暴的把它改成了<code>eth1</code><code>br-lan</code>；还有那个<code>publish</code>函数，似乎是读取<code>/etc/dnsmasq</code>工作的，在OpenWRT上的对应文件似乎是<code>/etc/dhcp.leases</code>什么的，相应的167行也稍稍修改了一下……</p>
+<p>比如第24行，<code>nvram</code>在我这里挂掉了，于是我简单粗暴的把它改成了<code>eth1``br-lan</code>；还有那个<code>publish</code>函数，似乎是读取<code>/etc/dnsmasq</code>工作的，在OpenWRT上的对应文件似乎是<code>/etc/dhcp.leases</code>什么的，相应的167行也稍稍修改了一下……</p>
 </blockquote>
-
 <p>TL;DR：请在<a href="https://gist.github.com/heyeshuang/9305089">这里</a>下载修改过的版本，在本人的2成新db-120上测试通过。</p>
-
 <p>把上面那东西扔到<code>/bin</code>里之后，在crontab里添上这么一段：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">* * * * * /bin/wrtbwmon setup br0
+<pre><code>* * * * * /bin/wrtbwmon setup br0
 */30 0-3 * * * /bin/wrtbwmon update /tmp/usage.db peak
 */30,59 4-8 * * * /bin/wrtbwmon update /tmp/usage.db offpeak
 */30 9-23 * * * /bin/wrtbwmon update /tmp/usage.db peak
 */30 * * * * /bin/wrtbwmon publish /tmp/usage.db /tmp/usage.htm /tmp/dhcp.leases
 30 * * * * cp /tmp/usage.db /root/usage.db
-* * * * * [ ! -f /tmp/usage.db ] &amp;&amp; cp /root/usage.db /tmp/usage.db</pre></div>
+* * * * * [ ! -f /tmp/usage.db ] &amp;&amp; cp /root/usage.db /tmp/usage.db
+</code></pre>
 <p><a href="http://code.google.com/p/wrtbwmon/wiki/Deploying">自带的教程</a>写的crontab似乎跟OpenWRT不兼容……<em>这里的一定是雨林木风精简版OpenWRT！</em></p>
-
 <p>又及：为了凑字数，关于如何在nat后面使用isatap的方法参见<a href="http://wiki.tuna.tsinghua.edu.cn/IsatapBehindNat">这里</a></p>
 
 

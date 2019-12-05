@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！ &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -272,41 +268,36 @@
 
 
   <p>呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。</p>
-
 <p>事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用<a href="https://www.ext2fsd.com/">Ext2fsd</a>来满足，可是一年过去，它已经无法识别新的Ext4版本了。</p>
-
 <p>于是，我……我做了一个linux虚拟机来帮我读这个分区。</p>
-
-<p>具体来说，VirtualBox支持将单独的分区视为虚拟磁盘<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup><sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>。你需要在 <strong>具有管理员权限</strong> 的命令提示符中运行：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">VBoxManage internalcommands createrawvmdk -filename &#34;C:\Users\&lt;user_name&gt;\VirtualBox VMs\&lt;VM_folder_name&gt;\&lt;file_name&gt;.vmdk&#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative</pre></div>
-<p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0</pre></div>
-<p>之后，</p>
-
+<p>具体来说，VirtualBox支持将单独的分区视为虚拟磁盘<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。你需要在 <strong>具有管理员权限</strong> 的命令提示符中运行：</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">VBoxManage internalcommands createrawvmdk -filename &#34;C:\Users\&lt;user_name&gt;\VirtualBox VMs\&lt;VM_folder_name&gt;\&lt;file_name&gt;.vmdk&#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
+</code></pre></div><p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
+</code></pre></div><p>之后，</p>
 <ul>
 <li>同样是用 <strong>管理员权限</strong> 运行VirtualBox</li>
 <li>把网卡模式改为桥接</li>
 <li>挂载刚才生成的VMDK文件</li>
 <li><strong>在另一个虚拟磁盘上</strong> 安装Linux（这里我用的是Alpine Linux Extended）</li>
-<li>设置Samba<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup></li>
+<li>设置Samba<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
 </ul>
-
 <p>就可以在宿主机上用网络硬盘访问Ext4分区了。</p>
-
 <p>而且能够收获一次反思：我为什么要浪费宝贵的时间干这个？</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1"><a href="https://www.virtualbox.org/manual/ch09.html#rawdisk">https://www.virtualbox.org/manual/ch09.html#rawdisk</a>
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2"><a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html">https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html</a>
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:3"><a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server">https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server</a>
- <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.virtualbox.org/manual/ch09.html#rawdisk">https://www.virtualbox.org/manual/ch09.html#rawdisk</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html">https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server">https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
 
   

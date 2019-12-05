@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>学习笔记：神经网络的优化策略 &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -269,70 +265,54 @@
 </div>
 
 
-  
-
-<blockquote>
+  <blockquote>
 <p>本文基本上是 <em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</em> 的知识点大纲。</p>
-
+</blockquote>
+<blockquote>
 <p>具体的公式和理论，可以看<a href="http://binweber.top/tags/ML/">Bin Weber的博客</a>。</p>
 </blockquote>
-
-<h2 id="训练-开发-测试集-train-dev-test">训练/开发/测试集（Train/dev/test）</h2>
-
+<h2 id="traindevtest">训练/开发/测试集（Train/dev/test）</h2>
 <ul>
 <li>数据量10000之内：70/30（免去dev）或60/20/20</li>
 <li>更多数据：保证dev/test足够（~10000）即可</li>
 </ul>
-
-<h2 id="过拟合">过拟合</h2>
-
+<h2 id="heading">过拟合</h2>
 <ul>
 <li>引入更多训练样本</li>
-<li>正则化（Normalization<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>）
-
+<li>正则化（Normalization<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>）
 <ul>
 <li>目的：减小||W|| ←此时熵最大，可能性最高</li>
 <li>L2正则化：在cost function上附加一个W，使W最小</li>
 <li>dropout：随机关闭一些节点</li>
-</ul></li>
 </ul>
-
-<h2 id="欠拟合">欠拟合</h2>
-
+</li>
+</ul>
+<h2 id="heading-1">欠拟合</h2>
 <ul>
 <li>增加神经网络的隐含层数</li>
 <li>隐含层中的节点数</li>
 <li>训练更长时间</li>
 </ul>
-
-<h2 id="初始化输入数据和参数">初始化输入数据和参数</h2>
-
+<h2 id="heading-2">初始化输入数据和参数</h2>
 <ul>
-<li>输入数据标准化（Normalization<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>）：使每个维度在(-1,1)之间</li>
+<li>输入数据标准化（Normalization<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>）：使每个维度在(-1,1)之间</li>
 <li>权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
-
 <ul>
 <li>即Xavier初始化的变种，He初始化</li>
-</ul></li>
 </ul>
-
-<h2 id="提高梯度下降速度-mini-batch">提高梯度下降速度：mini-batch</h2>
-
+</li>
+</ul>
+<h2 id="mini-batch">提高梯度下降速度：mini-batch</h2>
 <p>由于内存/计算单元不够（always），每次计算部分数据</p>
-
-<h3 id="提高mini-batch的稳定性-减小摆动">提高mini-batch的稳定性，减小摆动</h3>
-
+<h3 id="mini-batch-1">提高mini-batch的稳定性，减小摆动</h3>
 <ul>
 <li>将每个batch的优化结果进行指数加权平均（Momentum）</li>
 <li>RMSPROP</li>
 <li>Adam：综合以上两种方法</li>
 <li>学习率衰减</li>
 </ul>
-
-<h2 id="超参数的选择">超参数的选择</h2>
-
-<h3 id="需要的超参数">需要的超参数</h3>
-
+<h2 id="heading-3">超参数的选择</h2>
+<h3 id="heading-4">需要的超参数</h3>
 <ul>
 <li>α，学习率/learning rate</li>
 <li>β1~0.9，β2~0.999，ε~1e-8（Adam中的参数）</li>
@@ -341,52 +321,39 @@
 <li>学习率衰减</li>
 <li>mini-batch 尺寸（2的整数次方，大概是512之内？）</li>
 </ul>
-
-<h3 id="选择方案">选择方案</h3>
-
+<h3 id="heading-5">选择方案</h3>
 <ul>
 <li>随机</li>
-
-<li><p>对于α和β，以对数形式随机</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r<span style="color:#555">=-</span><span style="color:#f60">4</span><span style="color:#555">*</span>np<span style="color:#555">.</span>random<span style="color:#555">.</span>rand()
-a<span style="color:#555">=</span><span style="color:#f60">10</span><span style="color:#555">**</span>r</code></pre></div></li>
+<li>对于α和β，以对数形式随机</li>
 </ul>
-
-<h2 id="batch-norm">Batch-Norm</h2>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r<span style="color:#555">=</span><span style="color:#555">-</span><span style="color:#f60">4</span><span style="color:#555">*</span>np<span style="color:#555">.</span>random<span style="color:#555">.</span>rand()
+a<span style="color:#555">=</span><span style="color:#f60">10</span><span style="color:#555">*</span><span style="color:#555">*</span>r
+</code></pre></div><h2 id="batch-norm">Batch-Norm</h2>
 <ul>
 <li>对每一层的线性计算结果Z进行标准化</li>
 <li>每层标准化的参数γ和β通过学习得到</li>
 <li>提高收敛速度（与对初始值X的操作类似）</li>
 </ul>
-
 <blockquote>
 <p>采用批标准化之后，尽管每一层的z还是在不断变化，但是它们的均值和方差将基本保持不变，这就使得后面的数据更加稳定，减少前面层与后面层的耦合 （via Bin Weber）</p>
 </blockquote>
-
 <h2 id="softmax">Softmax</h2>
-
 <p>当分类器需要分出更多类时使用</p>
-
-<h2 id="检验方程的梯度计算是否存在问题-梯度检验">检验方程的梯度计算是否存在问题：梯度检验</h2>
-
+<h2 id="heading-6">检验方程的梯度计算是否存在问题：梯度检验</h2>
 <p>用计算斜率的方式近似梯度</p>
-
-<h2 id="深度学习是否会陷入局部最优问题">深度学习是否会陷入局部最优问题？</h2>
-
+<h2 id="heading-7">深度学习是否会陷入局部最优问题？</h2>
 <ul>
 <li>由于参数很多，对所有参数都为峰值基本上不可能</li>
 <li>相比而言，鞍点更加普遍</li>
 </ul>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">意义似乎略有不同
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>意义似乎略有不同 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
 
   

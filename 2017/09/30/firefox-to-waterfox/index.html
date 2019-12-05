@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>Yesterday Once More: Firefox to Waterfox &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -269,36 +265,24 @@
 </div>
 
 
-  
-
-<p><a href="https://www.mozilla.org/en-US/firefox/quantum/">Firefox Quantum</a>（就是Firefox 57） 发布了 beta 版，主动放弃了<code>XUL</code>和老版本扩展。我不知道这会不会又是一个“燃烧的平台”，只想体验一下Quantum传说中的新技术——顺便看看和Chrome有什么区别。</p>
-
+  <p><a href="https://www.mozilla.org/en-US/firefox/quantum/">Firefox Quantum</a>（就是Firefox 57） 发布了 beta 版，主动放弃了<code>XUL</code>和老版本扩展。我不知道这会不会又是一个“燃烧的平台”，只想体验一下Quantum传说中的新技术——顺便看看和Chrome有什么区别。</p>
 <p>当然，在升级57之前，需要给 Firefox 的状态存个盘。Waterfox是一个很好的选择：</p>
-
 <ul>
 <li>不久前刚刚引入了自己的配置文件，可以和Firefox同时开启；</li>
 <li>对比Pale Moon（另一个Firefox的Fork），分叉时间更晚，对“现代”扩展支持得更好。</li>
 </ul>
-
-<h2 id="迁移">迁移</h2>
-
+<h2 id="heading">迁移</h2>
 <p>迁移的过程还是很简单的：只要还没升级到57，就可以用<code>FEBE</code>扩展进行备份和恢复。注意在恢复到Waterfox的时候（选择“恢复配置”），需要新建一个Profile。</p>
-
-<h2 id="中文">中文</h2>
-
+<h2 id="heading-1">中文</h2>
 <p>为了显示中文界面，需要安装<a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/">Chinese Simplified (zh-CN) Language Pack</a>，并访问<code>about:config</code>，将<code>intl.locale.matchOS</code>改为<code>true</code>。这样，<del>Firefox</del> Waterfox就可以按照系统的语言来显示了。</p>
-
 <h2 id="pentadactyl">Pentadactyl</h2>
-
 <p>Waterfox默认开启了多进程模式，会导致<code>Pentadactyl</code>不能正常工作：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Error: Permission denied to access property &#34;length&#34;</pre></div>
-<p>仍然是在<code>about:config</code>页面，查找<code>browser.tabs.remote.autostart</code>，把所有找到的项都改成<code>false</code>。</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">browser.tabs.remote.autostart=false
-browser.tabs.remote.autostart.2=false</pre></div>
-<p>OK，保存完成，是时候升级<a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum</a>了。</p>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &#34;length&#34;
+</code></pre></div><p>仍然是在<code>about:config</code>页面，查找<code>browser.tabs.remote.autostart</code>，把所有找到的项都改成<code>false</code>。</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
+browser.tabs.remote.autostart.2=false
+</code></pre></div><p>OK，保存完成，是时候升级<a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum</a>了。</p>
 <p>啊对了，本文同时发在<a href="http://heyeshuang.tk">我的博客</a>和<a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit</a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。</p>
-
 <p>——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。</p>
 
 

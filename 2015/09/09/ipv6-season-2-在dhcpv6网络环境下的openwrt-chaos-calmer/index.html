@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -272,36 +268,30 @@
 
 
   <p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。</p>
-
 <p>大概上思路和<a href="http://talk.withme.me/?p=51">这里</a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为<code>6ndp</code>,<code>ndppd</code>和<code>radvd</code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，<code>/etc/config/dhcp</code>的关键几行大概应该是这样：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># /etc/config/dhcp:
-config dhcp &#39;lan&#39;
-        option interface &#39;lan&#39;
-        option start &#39;100&#39;
-        option limit &#39;150&#39;
-        option leasetime &#39;12h&#39;
-#       option dhcpv6 &#39;server&#39;
-        option ra &#39;relay&#39;
-        option ndp &#39;relay&#39;
-#config dhcp &#39;wan&#39;
-        #option interface &#39;wan&#39;
-        #option ignore &#39;1&#39;
-config dhcp &#39;wan6&#39;
-        option ra &#39;relay&#39;
-        option ndp &#39;relay&#39;
-        option master &#39;1&#39;</pre></div>
+<pre><code># /etc/config/dhcp:
+config dhcp 'lan'
+        option interface 'lan'
+        option start '100'
+        option limit '150'
+        option leasetime '12h'
+#       option dhcpv6 'server'
+        option ra 'relay'
+        option ndp 'relay'
+#config dhcp 'wan'
+        #option interface 'wan'
+        #option ignore '1'
+config dhcp 'wan6'
+        option ra 'relay'
+        option ndp 'relay'
+        option master '1'
+</code></pre>
 <p>另外，还需要把<code>luci</code>的<code>interface</code>页面下的<code>IPv6 ULA-Prefix</code>删掉。</p>
-
 <p>现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启<code>/etc/init.d/odhcpd</code>；不管了，我先在这里存个盘。</p>
-
 <p>有人说relay-&gt;hybrid也能成功的样子……我还没有测试过。</p>
-
 <p>参考：</p>
-
 <p><a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1">http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1</a></p>
-
 <p><a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/">http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/</a>（链接不知道为什么已经失效了）</p>
-
 <p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见<a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里</a></p>
 
 

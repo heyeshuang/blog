@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="利用Mmark和KaTeX">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>为hugo加入数学公式支持 &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -278,7 +274,7 @@
 <p>官方文档中其实有<a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容</a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像<a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里</a>一样使用KaTeX+Mmark，写起来会方便许多。</p>
 
 <p>Hugo自带Mmark的支持，只要在新建文章的时候使用<code>.mmark</code>后缀就行：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new post/some-name.mmark</pre></div>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark</code></pre></div>
 <p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看<a href="https://github.com/miekg/mmark/wiki/Syntax">这里</a>。</p>
 
 <p>用这种渲染器，用<code>$$</code>包裹的文字会自动转成用<code>\[</code>或者<code>\(</code>包裹，比如，<code>inline $$\sqrt{b^2-4ac}$$</code>会转成<code>\(\sqrt{b^2-4ac}\)</code></p>

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>更琐碎的编辑器细节 / Some more trival details about Steemit &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -269,45 +265,29 @@
 </div>
 
 
-  
-
-<p>Steemit的前端代码在<a href="https://github.com/steemit/condenser/">https://github.com/steemit/condenser/</a>，读一读它的源代码，可以了解一些关于编辑器的技术细节。</p>
-
-<h2 id="排版问题">排版问题</h2>
-
+  <p>Steemit的前端代码在<a href="https://github.com/steemit/condenser/">https://github.com/steemit/condenser/</a>，读一读它的源代码，可以了解一些关于编辑器的技术细节。</p>
+<h2 id="heading">排版问题</h2>
 <h3 id="markdown">Markdown</h3>
-
 <p>Steemit里所有的markdown指南都指向<a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a>，但其实并没有实现其中所有的功能。大体上，使用其中标准的 <em>Basic syntax</em> （或者叫做<code>CommonMark</code>）是比较安全的，但github favor的部分就说不定了。</p>
-
 <p><a href="https://github.com/steemit/condenser/blob/8a4e470fea6a34a9e19f8598c5261fd414d96fa8/src/app/components/cards/MarkdownViewer.jsx">编辑器</a>使用的markdown渲染库是<a href="https://github.com/jonschlinkert/remarkable">remarkable</a>。除了基本语法以外，只支持<a href="https://github.com/jonschlinkert/remarkable/#syntax-extensions">脚注、删除线和表格</a>等一些基本的语法，而且现在脚注的实现还有些问题。没有 <strong>代码高亮</strong> ，更没有 <strong>数学公式渲染</strong> ，可能这东西并不是面对我们这样的用户。</p>
-
 <p><a href="https://steemit.com/wpcommunity/@sean0010/markdown-test">这里</a>是关于高级markdown特性的测试。从<a href="https://steemd.com/wpcommunity/@sean0010/markdown-test">这里</a>可以看到其源码。</p>
-
 <p>顺便一提，我用的<code>hugo</code>静态博客生成器使用<code>blackfriday</code>，配置项很多，我十分满意。</p>
-
-<h3 id="那么用html实现高级功能呢">那么用HTML实现高级功能呢？</h3>
-
+<h3 id="html">那么用HTML实现高级功能呢？</h3>
 <p>很遗憾，这也不大可能。经过<a href="https://github.com/steemit/condenser/blob/4d9c1d8f76366097d9a7159b1760f51d45201eb0/src/app/utils/SanitizeConfig.js">sanitize</a>过滤，编辑器只支持以下几个标签：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">div, iframe, del,
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">div, iframe, del,
 a, p, b, i, q, br, ul, li, ol, img,
 h1, h2, h3, h4, h5, h6, hr,
 blockquote, pre, code, em, strong, center,
 table, thead, tbody, tr, th, td,
-strike, sup, sub</pre></div>
-<p>并没有什么超过Markdown语法的新功能。</p>
-
+strike, sup, sub
+</code></pre></div><p>并没有什么超过Markdown语法的新功能。</p>
 <p>当然，编辑器好心地提供了几个class来控制文字和图像的位置：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&#39;pull-right&#39;, &#39;pull-left&#39;, &#39;text-justify&#39;, &#39;text-rtl&#39;, &#39;text-center&#39;, &#39;text-right&#39;, &#39;videoWrapper&#39;</pre></div>
-<p>用法大概是 <code>&lt; div class=&quot;pull-right&quot;&gt; &lt; img src=&quot;imglink&quot; /&gt;&lt; /div &gt;</code>，或者看<a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里</a>的介绍。</p>
-
-<h2 id="文章的url生成原理">文章的URL生成原理</h2>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&#39;pull-right&#39;, &#39;pull-left&#39;, &#39;text-justify&#39;, &#39;text-rtl&#39;, &#39;text-center&#39;, &#39;text-right&#39;, &#39;videoWrapper&#39;
+</code></pre></div><p>用法大概是 <code>&lt; div class=&quot;pull-right&quot;&gt; &lt; img src=&quot;imglink&quot; /&gt;&lt; /div &gt;</code>，或者看<a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里</a>的介绍。</p>
+<h2 id="url">文章的URL生成原理</h2>
 <p>如果我在发布之前就知道文章的URL的话，就可以在文中引用自己了。这大概是一种自举 ;-)</p>
-
 <p>如果你的文章标题是纯中文的话就很简单了：地址是随机的。所以最好在标题里加上些英文（虽然看起来有点蠢）。</p>
-
 <p>URL通过<a href="https://github.com/pid/speakingurl">speakingurl</a>生成。比如，本文标题经过处理（过程见<a href="https://jsfiddle.net/heyeshuang/6p7n7dks/1/">此处</a>），得到<code>some-more-trival-details-about-steemit</code>，如果我之前没有发过同名文章的话，本文的URL就是<a href="https://steemit.com/cn/@heyeshuang/some-more-trival-details-about-steemit">https://steemit.com/cn/@heyeshuang/some-more-trival-details-about-steemit</a>，大概。</p>
-
 <p><a href="https://github.com/steemit/condenser/blob/164144aa2c57c12b136eb9c3d7fe46d930dfda04/src/app/redux/TransactionSaga.js#L412-L442">这里</a>是源代码中具体的实现函数，适合像我这样刻薄的人。</p>
 
 

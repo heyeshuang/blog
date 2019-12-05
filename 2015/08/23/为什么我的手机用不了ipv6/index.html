@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>为什么我的手机用不了IPV6？ &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -270,17 +266,13 @@
 
 
   <p>背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之前也是可以用的，直到某次更新ROM前后，可能是5.1出没但CM组没人更新LG G2的那段时间。</p>
-
 <p>症状：<code>ip addr</code>告诉我学校确确实实发来了（2402开头的真正的）IPV6地址，但是<code>ping6 google.com</code>显示<code>Network unreachable</code>，继续查找发现<code>ip -6 route</code>没有默认网关，就像<a href="https://code.google.com/p/android/issues/detail?id=39052">这条ISSUE</a>所说的一样。</p>
-
 <p>解决方案：把内核参数改了就行。在su以后<code>sysctl -w net.ipv6.conf.wlan0.accept_ra_defrtr=1</code>可以坚持到下次启动。</p>
-
 <p>更详细的说明见<a href="http://www.cnfy.me/2013/04/miuiwifiipv6.html">这里</a>。简单概括一下，你需要在<code>/etc/sysctl.conf</code>里加上</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">net.ipv6.conf.wlan0.accept_ra_defrtr=1</pre></div>
-<p>这一行，然后每次启动*尽量晚的*以su身份运行<code>sysctl -p</code>就行，因为<code>/init_qcom.sh</code>运行的就挺晚的，所以直接写在<code>/etc/init.d/</code>里是不行的。</p>
-
+<pre><code>net.ipv6.conf.wlan0.accept_ra_defrtr=1
+</code></pre>
+<p>这一行，然后每次启动<em>尽量晚的</em>以su身份运行<code>sysctl -p</code>就行，因为<code>/init_qcom.sh</code>运行的就挺晚的，所以直接写在<code>/etc/init.d/</code>里是不行的。</p>
 <p>另外，这次应该是高通不知道在想什么user space，小米只是背锅。</p>
-
 <p>另外，虽然可能看不出来，但是这个博客的后台已经换了一个。</p>
 
 

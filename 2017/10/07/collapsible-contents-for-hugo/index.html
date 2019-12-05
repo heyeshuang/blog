@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>在Hugo中折叠部分内容 &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -274,18 +270,10 @@
 
 
   <p>之前疯狂粘贴自己的<a href="https://blog.heysh.xyz/2017/10/01/firefox-to-quantum/">扩展</a> <del>凑字数</del> 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 <code>shortcode</code> 功能自己写了一个。</p>
-
 <p><code>Shortcode</code> 的介绍在<a href="https://gohugo.io/templates/shortcode-templates/">这里</a>，主要难度在于go的html模板引擎。</p>
-
 <p>折叠部分用了 HTML5 的新特性：<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">&lt;details&gt;</a>，不支持 edge，这个浏览器应该没有人用吧……</p>
-
-<p>下面是shortcode的代码，放在<code>/themes/&lt;THEME&gt;/layouts/shortcodes/spoiler.html</code>下：
-<details>
-<summary>
-  <h4>
-    shortcode，点击展开
-  </h4>
-</summary></p>
+<p>下面是shortcode的代码，放在<code>/themes/&lt;THEME&gt;/layouts/shortcodes/spoiler.html</code>下：</p>
+<!-- raw HTML omitted -->
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">details</span>&gt;
 &lt;<span style="color:#309;font-weight:bold">summary</span>&gt;
   &lt;<span style="color:#309;font-weight:bold">h4</span>&gt;
@@ -293,17 +281,15 @@
   &lt;/<span style="color:#309;font-weight:bold">h4</span>&gt;
 &lt;/<span style="color:#309;font-weight:bold">summary</span>&gt;
 {{.Inner}}
-&lt;/<span style="color:#309;font-weight:bold">details</span>&gt;</code></pre></div>
-<p></details></p>
-
+&lt;/<span style="color:#309;font-weight:bold">details</span>&gt;
+</code></pre></div><!-- raw HTML omitted -->
 <p>用法是这样的：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{% spoiler &#34;You killed my father!&#34; %}}
 I am your father.
 NOOOOOOO!
-{{% /spoiler %}}</code></pre></div>
-<p>当然，我还稍微改了一下CSS，之后会在模板里面更新。</p>
-
-<p>spoiler在steemit社区的讨论：<a href="https://github.com/steemit/condenser/issues/8">https://github.com/steemit/condenser/issues/8</a></p>
+{{% /spoiler %}}
+</code></pre></div><p>当然，我还稍微改了一下CSS，之后会在模板里面更新。</p>
+<p>spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8</p>
 
 
   

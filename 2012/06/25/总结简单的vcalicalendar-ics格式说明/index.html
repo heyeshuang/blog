@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>总结：简单的vCal/iCalendar/.ics格式说明 &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -271,19 +267,14 @@
 </div>
 
 
-  
-
-<p>E文好的话建议去看直接去看IETF的<a href="http://tools.ietf.org/html/rfc5545">RFC5545</a>定义;<br />
+  <p>E文好的话建议去看直接去看IETF的<a href="http://tools.ietf.org/html/rfc5545">RFC5545</a>定义;<br>
 中文版：</p>
-
 <blockquote>
 <p><a href="http://www.ccsa.org.cn/publish/download_bp.php?stdtype=yd1&amp;sno=92" title="总而言之就是标准">政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下略）</a></p>
-
 <p><a href="http://wenku.baidu.com/view/c52d284c2e3f5727a5e9621e.html">某人翻译的标准文档（百度文库）</a></p>
 </blockquote>
-
 <p>ical格式大概是这样的：</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">BEGIN:VCALENDAR
+<pre><code>BEGIN:VCALENDAR
 
 PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
 
@@ -343,25 +334,21 @@ SUMMARY:实验2
 
 END:VEVENT
 
-END:VCALENDAR</pre></div>
+END:VCALENDAR
+</code></pre>
 <p>基本上只要修改中文部分的内容就好了</p>
-
 <h4 id="tips">tips：</h4>
-
 <ul>
 <li>PRODID按照格式随意改就好</li>
 <li>UID是一件事情的绝对标识，对格式没有要求，只要不重复即可</li>
 <li>重复事件可用RRLUE字段，具体见所附文档。但是好像不支持“1,2,5-9,13,16周”这样猎奇的重复，所以对本人并没有什么用处</li>
 </ul>
-
 <blockquote>
 <p>还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。</p>
 </blockquote>
-
 <ul>
 <li>我<del>们</del>尚不知道那天所看到的<del>花的名字</del>DTSTAMP的用处</li>
 </ul>
-
 <p>最后补一些相关代码段（javascript）：</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">$vCalArea.append(<span style="color:#c30">&#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&#39;</span>);
 <span style="color:#09f;font-style:italic">/***************生成文件头****************/</span>
@@ -369,8 +356,7 @@ $vCalArea.append(<span style="color:#c30">&#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Sh
 <span style="color:#09f;font-style:italic">/****************VEVENT部分***************/</span>
 $vCalArea.append(<span style="color:#c30">&#39;END:VCALENDAR&#39;</span>);
 <span style="color:#09f;font-style:italic">/****************文件尾****************/</span>
-</code></pre></div>
-<p>全部脚本见<a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/</a></p>
+</code></pre></div><p>全部脚本见<a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/</a></p>
 
 
   

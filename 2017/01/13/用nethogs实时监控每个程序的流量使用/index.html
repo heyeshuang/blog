@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.60.0-DEV" />
+  <meta name="generator" content="Hugo 0.61.0-DEV" />
 
   <title>用nethogs实时监控每个程序的流量使用 &middot; 贺叶霜的树：III</title>
 
@@ -144,10 +144,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+%e8%b4%ba%e5%8f%b6%e9%9c%9cHeYSH" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
-    </li>
-    
 
     
 
@@ -258,36 +254,37 @@
 
 
   <p>适用于（没有cron和init的）debian 8.0</p>
-
 <ul>
 <li>安装nethogs</li>
-
-<li><p>创建<code>/root/monitor.sh</code></p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#033">TIMEOUT</span><span style="color:#555">=</span><span style="color:#f60">3600</span>
+<li>创建<code>/root/monitor.sh</code></li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#033">TIMEOUT</span><span style="color:#555">=</span>3600
 <span style="color:#033">TIMESTAMP</span><span style="color:#555">=</span><span style="color:#c30">`</span>date +%b_%d_%Y_%H_%M_%S<span style="color:#c30">`</span>
 <span style="color:#033">OUTPUT</span><span style="color:#555">=</span>/var/log/nethogs/<span style="color:#033">$TIMESTAMP</span>.log
-bash -ic <span style="color:#c30">&#34;(/usr/local/sbin/nethogs -t -d 30&amp;&gt;</span><span style="color:#033">$OUTPUT</span><span style="color:#c30">;kill 0;) | (sleep </span><span style="color:#033">$TIMEOUT</span><span style="color:#c30">;kill 0; )&#34;</span> <span style="color:#f60">3</span>&gt;&amp;<span style="color:#f60">1</span> <span style="color:#f60">2</span>&gt;/dev/null</code></pre></div></li>
-
-<li><p><code>/etc/systemd/system/nethogs.timer</code></p>
+bash -ic <span style="color:#c30">&#34;</span><span style="color:#c30">(/usr/local/sbin/nethogs -t -d 30&amp;&gt;</span><span style="color:#033">$OUTPUT</span><span style="color:#c30">;kill 0;) | (sleep </span><span style="color:#033">$TIMEOUT</span><span style="color:#c30">;kill 0; )</span><span style="color:#c30">&#34;</span> 3&gt;&amp;<span style="color:#f60">1</span> 2&gt;/dev/null
+</code></pre></div><ul>
+<li><code>/etc/systemd/system/nethogs.timer</code></li>
+</ul>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#555">[</span>Unit<span style="color:#555">]</span>
 <span style="color:#033">Description</span><span style="color:#555">=</span>Nethogs Daemon
 <span style="color:#555">[</span>Timer<span style="color:#555">]</span>
 <span style="color:#033">OnBootSec</span><span style="color:#555">=</span>1min
 <span style="color:#033">OnUnitActiveSec</span><span style="color:#555">=</span>1h
 <span style="color:#555">[</span>Install<span style="color:#555">]</span>
-<span style="color:#033">WantedBy</span><span style="color:#555">=</span>timers.target</code></pre></div></li>
-
-<li><p><code>/etc/systemd/system/nethogs.service</code></p>
+<span style="color:#033">WantedBy</span><span style="color:#555">=</span>timers.target
+</code></pre></div><ul>
+<li><code>/etc/systemd/system/nethogs.service</code></li>
+</ul>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#555">[</span>Unit<span style="color:#555">]</span>
 <span style="color:#033">Description</span><span style="color:#555">=</span>Nethogs run
 <span style="color:#555">[</span>Service<span style="color:#555">]</span>
 <span style="color:#033">Type</span><span style="color:#555">=</span>oneshot
-<span style="color:#033">ExecStart</span><span style="color:#555">=</span>/root/monitor.sh</code></pre></div></li>
-
-<li><p>查看使用情况用<a href="https://github.com/boopathi/nethogs-parser">Nethogs parser</a></p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./hogs -type<span style="color:#555">=</span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log</code></pre></div></li>
+<span style="color:#033">ExecStart</span><span style="color:#555">=</span>/root/monitor.sh
+</code></pre></div><ul>
+<li>查看使用情况用<a href="https://github.com/boopathi/nethogs-parser">Nethogs parser</a></li>
 </ul>
-
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./hogs -type<span style="color:#555">=</span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
+</code></pre></div>
 
   
 <div class="prev-next-post pure-g">
