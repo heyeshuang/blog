@@ -98,7 +98,7 @@ baseName = "feed"
 
   # SNS microblogging
   twitter = "heyeshuang"
-  googleplus = "贺叶霜HeYSH"
+  # googleplus = "贺叶霜HeYSH"
 
   # Techie
   github = "heyeshuang"
