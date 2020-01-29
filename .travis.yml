@@ -9,6 +9,7 @@ install:
   - tarball="$(find . -name "*Linux-64bit.tar.gz")"
   - tar -xzf $tarball
   - chmod +x hugo
+  - popd
 
 script:
   - /tmp/hugo
