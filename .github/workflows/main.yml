@@ -1,7 +1,28 @@
-- name: Hugo setup
-  uses: peaceiris/actions-hugo@v2.4.4
-  with:
-    # The Hugo version to download (if necessary) and use. Example: 0.58.2
-    hugo-version: latest # optional, default is latest
-    # Download (if necessary) and use Hugo extended version. Example: true
-    extended: true # optional, default is false
+name: github pages
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Build
+      run: hugo --minify
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY}}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
