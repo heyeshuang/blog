@@ -23,7 +23,7 @@ install:
   - echo "Hugo binary version: $version"
 
 script:
-  - hugo
+  - /tmp/hugo
 
 deploy:
   provider: pages
