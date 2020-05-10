@@ -904,15 +904,15 @@ alt="大家喜闻乐见的冰山图.jpg"/> &lt;figcaption>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">urllib.request&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#0cf;font-weight:bold">ur&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">json&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-dir_name&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">Himalayan_plants&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#可能要改这里……&lt;/span>
+dir_name&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Himalayan_plants&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#可能要改这里……&lt;/span>
 os&lt;span style="color:#555">.&lt;/span>mkdir(dir_name)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">OUTPUT.json&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>,&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">r&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> source: &lt;span style="color:#09f;font-style:italic">#……还有这里&lt;/span>
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(&lt;span style="color:#c30">&amp;#34;OUTPUT.json&amp;#34;&lt;/span>,&lt;span style="color:#c30">&amp;#34;r&amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> source: &lt;span style="color:#09f;font-style:italic">#……还有这里&lt;/span>
 source_dict&lt;span style="color:#555">=&lt;/span>json&lt;span style="color:#555">.&lt;/span>load(source)
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> _i,_s &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(source_dict):
-file_name&lt;span style="color:#555">=&lt;/span>dir_name&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">/&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#366">str&lt;/span>(_i)&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">.jpg&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+file_name&lt;span style="color:#555">=&lt;/span>dir_name&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;/&amp;#34;&lt;/span>&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#366">str&lt;/span>(_i)&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;.jpg&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>False:
 &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
-ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">imageLinks&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>][&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">imageLink&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>][&lt;span style="color:#f60">0&lt;/span>],file_name)
+ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c30">&amp;#34;imageLinks&amp;#34;&lt;/span>][&lt;span style="color:#c30">&amp;#34;imageLink&amp;#34;&lt;/span>][&lt;span style="color:#f60">0&lt;/span>],file_name)
 &lt;span style="color:#069;font-weight:bold">except&lt;/span> &lt;span style="color:#c00;font-weight:bold">Exception&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> e:
 &lt;span style="color:#069;font-weight:bold">print&lt;/span>(_i)
 &lt;span style="color:#069;font-weight:bold">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
@@ -998,16 +998,16 @@ ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c
 &lt;p>一只猴子（我们叫它Shashi Biya）在打字机上乱敲，它敲二十六个字母和空格概率都相等。那么，咱们能不能看出他的用词习惯？答案是肯定的。&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
 &lt;span style="color:#069;font-weight:bold">from&lt;/span> &lt;span style="color:#0cf;font-weight:bold">collections&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> Counter
-s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30"> &lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
-s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">abcd &lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
-monkey&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(random&lt;span style="color:#555">.&lt;/span>choices(s, k&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10000000&lt;/span>))
-monkey&lt;span style="color:#555">=&lt;/span>[m &lt;span style="color:#069;font-weight:bold">for&lt;/span> m &lt;span style="color:#000;font-weight:bold">in&lt;/span> monkey&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30"> &lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">if&lt;/span> m]
+s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>
+s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;abcd &amp;#34;&lt;/span>
+monkey&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(random&lt;span style="color:#555">.&lt;/span>choices(s, k&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10000000&lt;/span>))
+monkey&lt;span style="color:#555">=&lt;/span>[m &lt;span style="color:#069;font-weight:bold">for&lt;/span> m &lt;span style="color:#000;font-weight:bold">in&lt;/span> monkey&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">if&lt;/span> m]
 c&lt;span style="color:#555">=&lt;/span>Counter(monkey)
 common&lt;span style="color:#555">=&lt;/span>c&lt;span style="color:#555">.&lt;/span>most_common()[:&lt;span style="color:#f60">10000&lt;/span>]
 fre&lt;span style="color:#555">=&lt;/span>[value &lt;span style="color:#069;font-weight:bold">for&lt;/span> (key,value) &lt;span style="color:#000;font-weight:bold">in&lt;/span> common]
 plt&lt;span style="color:#555">.&lt;/span>plot(fre)
-plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">log&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">log&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;/code>&lt;/pre>&lt;/div>&lt;!-- raw HTML omitted -->
 &lt;p>我们的这位大文豪颇有古风，喜欢用单字（“a”）胜过长单词（“ffsda”），而且用词比例正符合幂律分布：在双log坐标系下，图像大致是一条直线。这很符合直觉：为了得到任何长度大于1的单词，猴子第二次敲的按钮必须不是空格。&lt;/p>
@@ -1020,10 +1020,10 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
 p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
 k&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(l,&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
-&lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
+&lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
 plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
-plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">log&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">log&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;!-- raw HTML omitted -->
 &lt;p>与幂律分布相比，指数分布更加“平缓”，而且在双对数坐标系下也并不是一条直线。&lt;/p>
@@ -1046,8 +1046,8 @@ a2&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/sp
 toc&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
 &lt;span style="color:#069;font-weight:bold">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
 plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
-plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">log&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">log&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="/zipf/output_13_0.png" alt="png">&lt;/p>
 &lt;p>好的，我们得到了 &lt;em>基于曲别针的互联网系统&lt;/em> ——至少可以算是个物联网。在这个网络里，（大概）80%的曲别针在20%的链子中，余下的曲别针散落在另外的地方。我们叫那些链子“曲别针巨头”。随着连接次数越来越多，链子越来越长，分散的曲别针越来越少，这就是“链子中心化”，我们现在互联网的状态。&lt;/p>
@@ -1128,8 +1128,8 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;li>随机&lt;/li>
 &lt;li>对于α和β，以对数形式随机&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">r&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
-a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>&lt;span style="color:#555">*&lt;/span>&lt;span style="color:#555">*&lt;/span>r
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">r&lt;span style="color:#555">=-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
+a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>&lt;span style="color:#555">**&lt;/span>r
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="batch-norm">Batch-Norm&lt;/h2>
 &lt;ul>
 &lt;li>对每一层的线性计算结果Z进行标准化&lt;/li>
@@ -1373,7 +1373,7 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;h4 id="code">Code!&lt;/h4>
 &lt;p>Place your code between ``` like &lt;a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">this&lt;/a>, then you'll get a codeblock:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="color:#366">require&lt;/span> &lt;span style="color:#c30">&amp;#39;redcarpet&amp;#39;&lt;/span>
-markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Redcarpet&lt;/span>&lt;span style="color:#555">.&lt;/span>new(&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">Hello World!&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
+markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Redcarpet&lt;/span>&lt;span style="color:#555">.&lt;/span>new(&lt;span style="color:#c30">&amp;#34;Hello World!&amp;#34;&lt;/span>)
 &lt;span style="color:#366">puts&lt;/span> markdown&lt;span style="color:#555">.&lt;/span>to_html&lt;/code>&lt;/pre>&lt;/div>
 &lt;h4 id="math">Math!&lt;/h4>
 &lt;p>You can write TeX between &lt;code>$$&lt;/code> tags.&lt;/p>
@@ -1522,58 +1522,58 @@ NOOOOOOO!
 &lt;p>下面是我安装扩展的完整列表，很长，&lt;del>没有什么用&lt;/del> 可能会有点用&lt;/p>
 &lt;h2 id="不兼容的扩展">不兼容的扩展&lt;/h2>
 &lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox">Art Project 0.1.5 -&amp;gt; &lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/free-art-tab/?src=search">Free Art Tab&lt;/a>
+&lt;li>&lt;input disabled="" type="checkbox"> Art Project 0.1.5 -&amp;gt; &lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/free-art-tab/?src=search">Free Art Tab&lt;/a>
 &lt;ul>
 &lt;li>唔……有一些微妙的差别，我不认为这个算是被替换了&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">AutoPagerize 0.9.17.1 -&amp;gt; PageZipper
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> AutoPagerize 0.9.17.1 -&amp;gt; PageZipper
 &lt;ul>
 &lt;li>除了需要手动开启之外，效果意外的还可以&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">Chrome Store Foxified 2.4
+&lt;li>&lt;input disabled="" type="checkbox"> Chrome Store Foxified 2.4
 &lt;ul>
 &lt;li>很急&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">DownThemAll! 3.0.8&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">DownThemAll! AntiContainer 1.5
+&lt;li>&lt;input disabled="" type="checkbox"> DownThemAll! 3.0.8&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> DownThemAll! AntiContainer 1.5
 &lt;ul>
 &lt;li>想都不要想，Aria2你好&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">ExHentai Easy 2 0.2.9
+&lt;li>&lt;input disabled="" type="checkbox"> ExHentai Easy 2 0.2.9
 &lt;ul>
 &lt;li>呜呜呜（sad panda表情）&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">Extension List Dumper 2 1.0.2
+&lt;li>&lt;input disabled="" type="checkbox"> Extension List Dumper 2 1.0.2
 &lt;ul>
 &lt;li>这个列表就是用这个扩展生成的，生成之后就可以删了&lt;/li>
 &lt;li>删了以后就再也没有啦~&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">FireGestures 1.11.1 -&amp;gt; &lt;del>Foxy Gestures&lt;/del> Gesturefy
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> FireGestures 1.11.1 -&amp;gt; &lt;del>Foxy Gestures&lt;/del> Gesturefy
 &lt;ul>
 &lt;li>&lt;del>我就随便挑了个安装多的，当然有些方言不一样了，没有什么办法&lt;/del>&lt;/li>
 &lt;li>这个更漂亮一些&lt;/li>
 &lt;li>而且这个扩展自带存储PDF功能，又少装一个扩展&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">FoxyProxy Standard 4.6.5 -&amp;gt; &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/switchyomega/">Proxy SwitchyOmega&lt;/a>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> FoxyProxy Standard 4.6.5 -&amp;gt; &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/switchyomega/">Proxy SwitchyOmega&lt;/a>
 &lt;ul>
 &lt;li>说实话，自从AutoProxy不更新以后，我看这个扩展不爽好久了&lt;/li>
 &lt;li>对我来说Proxy SwitchyOmega还更好用一些&lt;/li>
 &lt;li>然而PSO在隐私窗口还有些问题&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">gouwudang-price-comparison-tool 3.2.5 -&amp;gt; &lt;a href="https://gwdang.com/app/extension?page=question&amp;amp;guide=bookmark">bookmarklet&lt;/a>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> gouwudang-price-comparison-tool 3.2.5 -&amp;gt; &lt;a href="https://gwdang.com/app/extension?page=question&amp;amp;guide=bookmark">bookmarklet&lt;/a>
 &lt;ul>
 &lt;li>这是一个比价扩展，用Bookmarklet可以稍微凑合一下&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Greasemonkey 3.16 -&amp;gt; Violentmonkey
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Greasemonkey 3.16 -&amp;gt; Violentmonkey
 &lt;ul>
 &lt;li>Tempermonkey “Proprietary, poor privacy, has a &amp;lsquo;End-User License Agreement&amp;rsquo; at installation”，他们都这么说了……&lt;/li>
 &lt;li>而且我装的那些脚本好像也没有什么能用的了……&lt;/li>
@@ -1581,76 +1581,76 @@ NOOOOOOO!
 &lt;li>等等，https://sleazyfork.org/zh-CN 是什么鬼（捂脸）&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">Hide Caption Titlebar Plus 3.2.9
+&lt;li>&lt;input disabled="" type="checkbox"> Hide Caption Titlebar Plus 3.2.9
 &lt;ul>
 &lt;li>无理无理&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">Hide Unwanted Results of Google Search 1.6
+&lt;li>&lt;input disabled="" type="checkbox"> Hide Unwanted Results of Google Search 1.6
 &lt;ul>
 &lt;li>就算是被替代了吧&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">https switch 0.0.3
+&lt;li>&lt;input disabled="" type="checkbox"> https switch 0.0.3
 &lt;ul>
 &lt;li>很久没用过了&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">NoSquint Plus 54.0 -&amp;gt; &lt;a href="https://addons.mozilla.org/addon/zoom-page-we/">Zoom Page WE&lt;/a>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> NoSquint Plus 54.0 -&amp;gt; &lt;a href="https://addons.mozilla.org/addon/zoom-page-we/">Zoom Page WE&lt;/a>
 &lt;ul>
 &lt;li>要缩放整个页面（而不仅仅是文字），按一下&lt;code>alt&lt;/code>键能呼出菜单，然后去掉&lt;code>查看-缩放-仅缩放文字&lt;/code>前面的勾。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Offline QR generator 1.1.3.1-signed -&amp;gt; &lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/qr-code-image-generator/?src=api">QR Code Image Generator&lt;/a>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Offline QR generator 1.1.3.1-signed -&amp;gt; &lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/qr-code-image-generator/?src=api">QR Code Image Generator&lt;/a>
 &lt;ul>
 &lt;li>当然，Offline是没有了&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">PentadactylSigned 7307
+&lt;li>&lt;input disabled="" type="checkbox"> PentadactylSigned 7307
 &lt;ul>
 &lt;li>…………………………Saka Key的感觉完全不一样&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Pocket 1.0.5 -&amp;gt; 自带，而且我不知道我之前还装了这个&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">printpdf 0.76.1-signed.1-signed
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Pocket 1.0.5 -&amp;gt; 自带，而且我不知道我之前还装了这个&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> printpdf 0.76.1-signed.1-signed
 &lt;ul>
 &lt;li>居然用一个鼠标手势解决了&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">QuickDrag 2.1.3.23.1-signed.1-signed -&amp;gt; Fire Drag
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> QuickDrag 2.1.3.23.1-signed.1-signed -&amp;gt; Fire Drag
 &lt;ul>
 &lt;li>当然还是挑了个安装多的&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">ReDisposition 0.3.0
+&lt;li>&lt;input disabled="" type="checkbox"> ReDisposition 0.3.0
 &lt;ul>
 &lt;li>这是一个可以解决下载乱码的扩展，原作者muzuiget的博客已经无法访问了，只留下了&lt;a href="https://disqus.com/home/discussion/qixinglu/firefox_redisposition/">disquz的残渣&lt;/a>和一大堆吸血的转载&lt;/li>
 &lt;li>这不禁使我担心起本博客的未来&lt;/li>
 &lt;li>似乎用&lt;a href="https://github.com/FirefoxBar/HeaderEditor/releases">HeaderEditor&lt;/a>可以实现，不过我还没有试过&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">RefControl 0.8.17.1-signed.1-signed -&amp;gt; [referer control] (&lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/referercontrol/">https://addons.mozilla.org/zh-CN/firefox/addon/referercontrol/&lt;/a>)
+&lt;li>&lt;input disabled="" type="checkbox"> RefControl 0.8.17.1-signed.1-signed -&amp;gt; [referer control] (&lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/referercontrol/">https://addons.mozilla.org/zh-CN/firefox/addon/referercontrol/&lt;/a>)
 &lt;ul>
 &lt;li>看不到希望小学图片……我一点都不遗憾&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">RSS Handler for Feedly 1.0
+&lt;li>&lt;input disabled="" type="checkbox"> RSS Handler for Feedly 1.0
 &lt;ul>
 &lt;li>我当时为什么要装这个？&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">ScreenShot Link 2.2.1.1-signed.1-signed
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> ScreenShot Link 2.2.1.1-signed.1-signed
 &lt;ul>
 &lt;li>这功能居然自带了&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox">Tab Mix Plus 0.5.0.4&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">WizNote Web Clipper 1.0.37.1-signed.1-signed -&amp;gt; bookmarklet
+&lt;li>&lt;input disabled="" type="checkbox"> Tab Mix Plus 0.5.0.4&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> WizNote Web Clipper 1.0.37.1-signed.1-signed -&amp;gt; bookmarklet
 &lt;ul>
 &lt;li>反正之前也不怎么好用&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">隐私标签页 0.2.2 -&amp;gt; &lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/incognito-this-tab/?src=find-replacement">
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 隐私标签页 0.2.2 -&amp;gt; &lt;a href="https://addons.mozilla.org/zh-CN/firefox/addon/incognito-this-tab/?src=find-replacement">
 Incognito This Tab&lt;/a>
 &lt;ul>
 &lt;li>可是还是不能在同一个窗口打开……哇的一声哭了出来&lt;/li>
@@ -1659,18 +1659,18 @@ Incognito This Tab&lt;/a>
 &lt;/ul>
 &lt;h2 id="原生web-extension">原生Web Extension&lt;/h2>
 &lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Duplicate Tabs Closer 3.0.0&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Enhanced Steam 9.5&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Pushbullet 335&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">Redirector 3.1.0
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Duplicate Tabs Closer 3.0.0&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Enhanced Steam 9.5&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Pushbullet 335&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Redirector 3.1.0
 &lt;ul>
 &lt;li>是S1大姨妈的时候用的，现在应该没什么用&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">uBlock Origin 1.14.10&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">二维码扫描器 1.2.3&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">印象笔记·剪藏 6.12.4&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox">终结内容农场 2.0.2&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> uBlock Origin 1.14.10&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 二维码扫描器 1.2.3&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 印象笔记·剪藏 6.12.4&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 终结内容农场 2.0.2&lt;/li>
 &lt;/ul></description></item>
 <item><title>Yesterday Once More: Firefox to Waterfox</title><link>https://blog.heysh.xyz/2017/09/30/firefox-to-waterfox/</link>
 <pubdate>Sat, 30 Sep 2017 23:44:33 +0800</pubdate>
@@ -1752,7 +1752,7 @@ python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span s
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
 &lt;span style="color:#09f;font-style:italic">#linux:&lt;/span>
 /usr/bin/fcitx-remote &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">(&lt;/span>&lt;span style="color:#555">(&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &amp;lt;&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#555">)&lt;/span>&lt;span style="color:#555">)&lt;/span>;&lt;span style="color:#069;font-weight:bold">then&lt;/span> /usr/bin/fcitx-remote -c; &lt;span style="color:#069;font-weight:bold">else&lt;/span> /usr/bin/fcitx-remote -o ;&lt;span style="color:#069;font-weight:bold">fi&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">((&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &amp;lt;&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#555">))&lt;/span>;&lt;span style="color:#069;font-weight:bold">then&lt;/span> /usr/bin/fcitx-remote -c; &lt;span style="color:#069;font-weight:bold">else&lt;/span> /usr/bin/fcitx-remote -o ;&lt;span style="color:#069;font-weight:bold">fi&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
 /usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
 /usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
 &lt;span style="color:#09f;font-style:italic">#macOS: just use the default config&lt;/span>
@@ -1834,15 +1834,15 @@ Nothing here.
 &lt;/ul>
 &lt;p>对于正文，可以用&lt;code>pandoc&lt;/code>和&lt;code>pypandoc&lt;/code>转换：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">./content&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">r&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">utf-8&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
 data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
-ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">---&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
-ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">md&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>, format&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">html&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>)
-do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">w&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">utf-8&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
+ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
+ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, format&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
+do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
 &lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
 &lt;p>……&lt;/p>
@@ -1854,20 +1854,20 @@ do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&lt;/span
 &lt;p>同样的，我也写了一个辣鸡脚本：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">./content&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">r&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">utf-8&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
 data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>readlines()
 &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
-urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">url:&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
-url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">url:&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
-aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30"> -&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
+urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
+url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
+aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34; -&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
 data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, aliasLine)
-data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
+data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
 &lt;span style="color:#069;font-weight:bold">except&lt;/span>:
 &lt;span style="color:#069;font-weight:bold">pass&lt;/span>
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">w&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#c30">utf-8&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
 &lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(d)
 &lt;/code>&lt;/pre>&lt;/div></description></item>
@@ -1942,10 +1942,10 @@ git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;li>安装nethogs&lt;/li>
 &lt;li>创建&lt;code>/root/monitor.sh&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>3600
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">3600&lt;/span>
 &lt;span style="color:#033">TIMESTAMP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>date +%b_%d_%Y_%H_%M_%S&lt;span style="color:#c30">`&lt;/span>
 &lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>/var/log/nethogs/&lt;span style="color:#033">$TIMESTAMP&lt;/span>.log
-bash -ic &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#c30">(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">;kill 0;) | (sleep &lt;/span>&lt;span style="color:#033">$TIMEOUT&lt;/span>&lt;span style="color:#c30">;kill 0; )&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> 3&amp;gt;&amp;amp;&lt;span style="color:#f60">1&lt;/span> 2&amp;gt;/dev/null
+bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">;kill 0;) | (sleep &lt;/span>&lt;span style="color:#033">$TIMEOUT&lt;/span>&lt;span style="color:#c30">;kill 0; )&amp;#34;&lt;/span> 3&amp;gt;&amp;amp;&lt;span style="color:#f60">1&lt;/span> 2&amp;gt;/dev/null
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>/etc/systemd/system/nethogs.timer&lt;/code>&lt;/li>
 &lt;/ul>
