@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ if isset .Site.Params "description" }}
+<div class="font-serif text-medium-red-violet-400 pt-3">
+	{{ .Site.Params.Description | markdownify }}
+</div>
+<hr  class="pt-2"/>
+{{end}}
+
+<div>
+	<section>
+		{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+		{{ range (.Paginate $pages 6).Pages }}<div>
+			{{ partial "summary.html" . }}
+		</div>
+		{{ end }}
+	</section>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "list-footer.html" . }}
+{{ end }}
