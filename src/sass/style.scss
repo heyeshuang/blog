@@ -1,0 +1,249 @@
+@charset "UTF-8";
+// @import "normalize";
+/*! purgecss start ignore */
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+.heading {
+    @apply font-serif font-bold leading-tight text-eucalyptus-700;
+}
+
+h1 {
+    @apply heading text-3xl;
+
+    @screen lg {
+        @apply text-4xl;
+    }
+}
+
+h2 {
+    @apply heading text-2xl;
+
+    @screen lg {
+        @apply text-3xl;
+    }
+}
+
+h3 {
+    @apply heading text-xl;
+}
+
+h4 {
+    @apply heading text-lg;
+}
+
+h5 {
+    @apply heading text-lg;
+}
+
+h6 {
+    @apply heading text-lg;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid theme("colors.eucalyptus.300");
+    margin-bottom: 0.8em;
+    height: 5px;
+}
+
+hr.double-line {
+    border: none;
+    border-bottom: 1px solid theme('colors.java.500');
+    border-top: 1px solid theme('colors.java.300');
+    margin-bottom: 0.8em;
+    height: 1px;
+}
+
+a:not(.icon) {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0, .5, 0, 1) 0.3s;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        background-size: 100% 2px;
+    }
+}
+
+a {
+    color: theme('colors.eucalyptus.500');
+
+    &:hover,
+    &:focus {
+        color: theme('colors.java.500');
+    }
+}
+
+
+.c-rich-text {
+    @apply font-sans font-normal text-base leading-relaxed;
+
+    ::selection {
+        color: theme('colors.java.100');
+        // background-color: theme('colors.eucalyptus.600');
+        background-color: theme('colors.java.700');
+    }
+
+    a {
+        color: theme('colors.eucalyptus.500');
+
+        &:hover,
+        &:focus {
+            color: theme('colors.java.500');
+        }
+    }
+
+    >*+* {
+        margin-top: 1.5rem;
+    }
+
+    li     {
+        margin-bottom: 0.25rem;
+        p {
+        display: inline;
+    }
+}
+
+    ul {
+        list-style-type: square;
+        list-style-position: inside;
+    }
+
+    ol {
+        list-style-type: lower-greek;
+        list-style-position: inside;
+    }
+
+    li>ol,
+    li>ul {
+        margin-left: theme("spacing.4")
+    }
+
+    .footnotes ol {
+        list-style-type: decimal;
+        // list-style-position: outside
+    }
+
+    mark {
+        background-color: theme("colors.java.300");
+        border-bottom-color: theme("colors.java.600");
+        border-bottom-width: 2px;
+        padding: 2px;
+        margin: 0 5px
+    }
+
+    table {
+        @apply overflow-x-auto scrolling-auto;
+        table-layout: auto
+    }
+
+    th,
+    td {
+        border-bottom-color: theme("colors.java.600");
+        border-bottom-width: 1px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+
+    th {
+        border-top-width: 1px;
+        background-color: theme("colors.java.100");
+        border-top-color: theme("colors.java.600")
+    }
+
+    b,
+    strong {
+        font-weight: theme('fontWeight.bold');
+        color: theme('colors.eucalyptus.600')
+    }
+
+    i,
+    em {
+        font-style: italic
+    }
+
+    sub,
+    sup {
+        font-size: theme('fontSize.xs');
+        vertical-align: baseline
+    }
+
+    acronym,
+    abbr {
+        border-bottom: 1px dotted;
+        font-variant: normal;
+        text-decoration: none;
+    }
+
+    abbr {
+        cursor: help;
+    }
+
+    pre,
+    code,
+    pre tt {
+        @apply font-mono;
+    }
+
+    code,
+    pre tt,
+    kbd {
+        @apply px-1 border border-java-400;
+        background: repeating-linear-gradient(45deg, theme('colors.java.300'), theme('colors.java.300') 1px, theme('colors.java.100') 0, theme('colors.java.100') 5px);
+    }
+
+    pre code,
+    kbd kbd {
+        @apply px-0 border-none;
+        background: none;
+    }
+
+    pre {
+        @apply scrolling-auto overflow-x-auto border border-solid rounded-br-lg border-java-500 bg-java-100;
+        padding: 1em 1.5em;
+        display: block;
+    }
+
+    .highlight {
+        @apply scrolling-auto overflow-x-auto
+    }
+
+    blockquote {
+        @apply relative font-light ml-8 pr-6 pl-3 ;
+        @apply border-l-2 border-java-500;
+        // @apply bg-java-100;
+        // margin: 1em 3em 1em 2em;
+    }
+}
+
+.page-item {
+    @apply flex-grow;
+
+}
+.page-item.disabled a{
+    @apply text-gray-400;
+}
+.page-item.active a{
+    @apply text-java-400 ;
+}
+
+@media all and  (min-width:1024px){
+.waterfall {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+  .pin {
+    break-inside: avoid;
+    padding: 5px;
+  }}
+/*! purgecss end ignore */
+
+@import "tailwindcss/utilities";

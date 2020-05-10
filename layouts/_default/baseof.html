@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	{{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+	<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	{{ hugo.Generator }}
+	{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+	{{ else }}
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	{{ end }}
+
+	{{ $stylesheet := .Site.Data.webpack_assets.app }}
+	{{ with $stylesheet.css }}
+	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
+	{{ end }}
+
+	{{ range .Site.Params.custom_css }}
+	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}">
+	{{ end }}
+
+	{{ block "favicon" . }}
+	{{ partial "site-favicon.html" . }}
+	{{ end }}
+
+	{{ with .OutputFormats.Get "RSS" }}
+    	<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+		<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+	{{end}}
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
+	{{ template "_internal/google_analytics_async.html" . }}
+	{{ end }}
+</head>
+
+<body class="bg-gray-100 text-gray-700">
+	<div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
+		<header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">
+			<div class="z-50 bg-gray-100 lg:min-w-0.7 max-w-xl md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0 pt-2">
+				{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+			</div>
+		</header>
+		<main role="main" class="w-full md:w-3/5 xl:w-1/2 max-w-3xl order-2 md:order-2 min-h-70vh pt-2 pb-4">
+			{{ block "main" . }}{{ end }}
+		</main>
+		<aside role="contentinfo" class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl">
+			<div class="md:float-right md:text-right leading-loose tracking-tight md:mb-2">
+			{{ block "aside" . }}{{ partial "site-aside.html" . }}{{ end }}
+			</div>
+		</aside>
+		<footer class="w-full md:w-3/5 xl:w-1/2 order-3 max-w-3xl md:order-4 pt-2">
+		{{ block "footer" . }}
+		{{ end }}
+		</footer>
+		{{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
+	</div>
+</body>
+
+</html>
