@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1 class="pb-4">
+	{{ .Title }}
+</h1>
+<div>
+	<section>
+		{{ range (.Paginator 10).Pages }}
+		<div>
+			{{ partial "summary.html" . }}
+		</div>
+		{{ end }}
+	</section>
+</div>
+{{ end }}
+{{define "footer"}}
+{{ partial "list-footer.html" . }}
+{{end}}
