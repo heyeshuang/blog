@@ -1,1 +1,0 @@
-Beautiful icons used here are made by [Remix-Design](https://github.com/Remix-Design/remixicon). Thanks.
