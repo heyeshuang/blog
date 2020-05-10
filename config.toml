@@ -1,8 +1,8 @@
 baseURL = "https://blog.heysh.xyz/"
 languageCode = "zh-cn"
-title = "贺叶霜的树：III"
-theme = "blackburn"
-copyright = "&copy;<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\">CC BY-SA</a>"
+title = "林中阴影"
+theme = "tokiwa"
+copyright = "&copy;贺叶霜，<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\">CC BY-SA</a>"
 hasCJKLanguage = true
 author = "HeYSH"
 # Shown in the side menu
@@ -12,8 +12,13 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = 'manni'
 # pygmentsUseClasses=true
+
+googleAnalytics = "UA-40522664-1"
+disqusShortname = "heysh"
 # pygmentsOptions = "linenos=table,noclasses=true"
 
+[markup.goldmark.renderer]
+unsafe= true
 [permalinks]
 post = "/:year/:month/:day/:filename/"
 
@@ -27,78 +32,59 @@ baseName = "feed"
   topic = "categories"
 
 [params]
-  # Shown in the home page
-  subtitle = "第三根树苗"
-  brand = "Rei III"
-  googleAnalytics = "UA-40522664-1"
-  disqus = "heysh"
-  # disqus_proxy = "disqus-proxy.yeshuanghe.now.sh"
-  disqus_php_api = "https://disqus-php.yeshuanghe.now.sh/api"
-  disqus_php_baseURL = "https://blog.heysh.xyz"
-  valine_id = "t7xAhuTsStq91vofdFBaMyoG-gzGzoHsz"
-  valine_key = "NdrP2qik4G319EwHthKo9lSC"
-  # CSS name for highlight.js
-  # highlightjs = "atom-one-light"
-  dateFormat = "2006-01-02 15:04"
-  # Include any custom CSS and/or JS files
-  # (relative to /static folder)
-  custom_css = ["css/typo.css","css/custom.css"]
-  # custom_js = ["js/my.js"]
+  math = true
+  env = "production"
+  description = """
+  那里的颜色正是常磐色。
+  """
 
 [menu]
 # Shown in the side menu.
   [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1
+    name = "归档"
     identifier = "post"
     url = "/post/"
+    weight = 1
   [[menu.main]]
-    name = "Tags"
-    pre = "<i class='fa fa-tags fa-fw'></i>"
+    name = "标签"
     url = "/tags/"
     weight = 2
 
   [[menu.main]]
-    name = "Categories"
-    pre = "<i class='fa fa-folder fa-fw'></i>"
+    name = "分类"
     url = "/categories/"  
     weight = 2
 
   [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 3
+    name = "关于"
     identifier = "about"
     url = "/about/"
+    weight = 3
 
   [[menu.main]]
-    name = "Theatre"
-    pre = "<i class='fa fa-video-camera fa-fw'></i>"
-    weight = 3
+    name = "内心戏"
     identifier = "sentences"
     url = "/sentences/"
+    weight = 4
 
   [[menu.main]]
-    name = "Begging"
-    pre = "<i class='fa fa-money fa-fw'></i>"
-    weight = 3
+    name = "云乞讨"
     identifier = "begging"
+    weight = 4
     url = "/wallet/"
   [[menu.main]]
-    name = "Bud"
-    pre = "<i class='fa fa-pagelines fa-fw'></i>"
-    weight = 3
+    name = "芽"
     identifier = "home"
     url = "https://heysh.xyz/"
+    weight = 5
 
 [social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
   # SNS microblogging
-  twitter = "heyeshuang"
+  twitter = "https://twitter.com/heyeshuang"
   # googleplus = "贺叶霜HeYSH"
 
   # Techie
-  github = "heyeshuang"
+  github = "https://github.com/heyeshuang"
