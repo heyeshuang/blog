@@ -37,6 +37,7 @@ baseName = "feed"
   description = """
   那里的颜色正是常磐色。
   """
+  favicon = "img/favicon.png"
 
 [menu]
 # Shown in the side menu.

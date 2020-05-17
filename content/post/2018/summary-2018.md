@@ -46,7 +46,7 @@ draft: false
 
 之前拿到了一点点筹码，那么，不去来一局可就太没意思了。嗯，这里也获得了一些经验，另外还品尝了自己在受到损失时的感觉——如此的苦涩令人上瘾。
 
-~~<span style="font-size: 140%;">必</span><span style="font-size: 120%;">可</span><span style="font-size: 100%;">活</span><span style="font-size: 80%;">用</span><span style="font-size: 60%;">于下一次………………</span>
+~~<span style="font-size: 140%;">必</span><span style="font-size: 120%;">可</span><span style="font-size: 100%;">活</span><span style="font-size: 80%;">用</span><span style="font-size: 60%;">于下一次………………</span>~~
 
 够了够了，玩梗~~下~~一次就行。[^lie]
 
