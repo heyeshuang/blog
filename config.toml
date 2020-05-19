@@ -38,6 +38,8 @@ baseName = "feed"
   那里的颜色正是常磐色。
   """
   favicon = "img/favicon.png"
+  useChineseFonts = true
+  bannerFont = "fonts/杨任东竹石体-Light"
 
 [menu]
 # Shown in the side menu.
