@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kcpraw on 林中阴影</title><link>https://blog.heysh.xyz/tags/kcpraw/</link><description>Recent content in kcpraw on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 18 Nov 2017 16:36:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/kcpraw/feed.xml" rel="self" type="application/rss+xml"/><item><title>利用kcpraw流量加速</title><link>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</link><pubDate>Sat, 18 Nov 2017 16:36:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</guid><description>2015年和2016年，我写过两篇关于 科学上网 的博客，之后，又在VPS上安装了v2ray，这个应用直接支持mKCP，在丢包严重的网络环境下效</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kcpraw on 林中阴影</title><link>https://blog.heysh.xyz/tags/kcpraw/</link><description>Recent content in kcpraw on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 18 Nov 2017 16:36:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/kcpraw/feed.xml" rel="self" type="application/rss+xml"/><item><title>利用kcpraw流量加速</title><link>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</link><pubDate>Sat, 18 Nov 2017 16:36:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/">2015年&lt;/a>和&lt;a href="https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/">2016年&lt;/a>，我写过两篇关于 &lt;em>科学上网&lt;/em> 的博客，之后，又在VPS上安装了&lt;a href="https://v2ray.com/">v2ray&lt;/a>，这个应用直接支持mKCP，在丢包严重的网络环境下效果不错。&lt;/p>
+&lt;p>然后是最近，为了贯彻**大精神，实现什么什么自信的目标，KCP依赖的udp包被自信的家伙们无情地屏蔽了。在标准的shadowsocks和使用websocket的v2ray下，网速在50k左右，我感觉自己的网瘾又要发作了——&lt;/p>
+&lt;p>以上是背景。&lt;/p>
+&lt;p>虽然UDP被屏蔽了，但是TCP暂时还幸免于难，所以，可以把UDP包伪装成TCP的样子来绕过检查。有两个程序可以实现这种功能：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/wangyu-/udp2raw-tunnel">udp2raw&lt;/a>，可以将所有UDP包整容成TCP的样子，不过这个程序在Windows下有些问题，而且最近Firefox的一堆破事让我不太想用Linux了；&lt;/li>
+&lt;li>&lt;a href="https://github.com/ccsexyz/kcpraw">kcpraw&lt;/a>，是原始kcptun的fork，和kcptun的用法类似，在Windows下只需要安装&lt;a href="https://www.winpcap.org/install/default.htm">winpcap&lt;/a>就可以用。&lt;/li>
+&lt;/ul>
+&lt;p>在这里使用kcpraw包装原来shadowsocks的流量（纯粹是因为virtualbox没配好用不了udp2raw），假设读者有基本的linux知识并已经部署了shadowsocks。&lt;/p>
+&lt;h2 id="服务器端">服务器端&lt;/h2>
+&lt;h3 id="下载kcpraw">下载kcpraw&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">mkdir ~/kcpraw
+cd ~/kcpraw
+wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
+tar zxvf kcpraw-linux-amd64-20171021.tar.gz
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>
+&lt;h2 id="客户端">客户端&lt;/h2>
+&lt;h3 id="安装winpcap如果客户端是windows的话">安装winpcap（如果客户端是Windows的话）&lt;/h3>
+&lt;p>对于最新版本的Windows10，原版的&lt;code>winpcap&lt;/code>和&lt;code>win10pcap&lt;/code>似乎都不能用，可以使用兼容的&lt;a href="https://github.com/nmap/npcap">npcap&lt;/a>。&lt;/p>
+&lt;h3 id="运行kcpraw">运行kcpraw&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">kcpraw_client_windows_amd64 -r &amp;#34;&amp;lt;服务器IP&amp;gt;:8388&amp;#34; -l &amp;#34;:1082&amp;#34; -mode fast2
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中&lt;code>1082&lt;/code>是设定的本地kcpraw端口。&lt;/p>
+&lt;h3 id="修改shadowsocks客户端配置">修改shadowsocks客户端配置&lt;/h3>
+&lt;p>在你使用的客户端中把服务器地址设为&lt;code>localhost:1082&lt;/code>，其余不变，即可使shadowsocks享受KCP加速。&lt;/p>
+&lt;p>天气越来越冷，似乎离互联网白名单也越来越近了。到那时，我可能会换一个爱好，比如做一个伟大的白日梦什么的。&lt;/p></description></item></channel></rss>

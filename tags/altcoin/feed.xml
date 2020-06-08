@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>altcoin on 林中阴影</title><link>https://blog.heysh.xyz/tags/altcoin/</link><description>Recent content in altcoin on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 23 Jan 2018 17:31:33 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/altcoin/feed.xml" rel="self" type="application/rss+xml"/><item><title>History Data for Bitcoin and Altcoins</title><link>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</link><pubDate>Tue, 23 Jan 2018 17:31:33 +0800</pubDate><guid>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</guid><description>Link In this package, you&amp;rsquo;ll find: History data for Bitcoin price, with highest, lowest and volume, per hour Close price for 200+ Altcoins, also per hour And the Altcoin Market Indices Before 2017-12-23. These data (and honor) belong to alt19.com. This website says: Any information on Alt19.com is provided free and &amp;ldquo;as is&amp;rdquo; and solely for informational purposes, not for trading purposes or advice, and may be delayed. No action</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>altcoin on 林中阴影</title><link>https://blog.heysh.xyz/tags/altcoin/</link><description>Recent content in altcoin on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 23 Jan 2018 17:31:33 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/altcoin/feed.xml" rel="self" type="application/rss+xml"/><item><title>History Data for Bitcoin and Altcoins</title><link>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</link><pubDate>Tue, 23 Jan 2018 17:31:33 +0800</pubDate><guid>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</guid><description>&lt;p>&lt;a href="https://drive.google.com/file/d/1lp3JkwKLCR_RxI61-jdPcH26UXCnHPuC/view?usp=sharing">Link&lt;/a>&lt;/p>
+&lt;p>In this package, you&amp;rsquo;ll find:&lt;/p>
+&lt;ul>
+&lt;li>History data for Bitcoin price, with highest, lowest and volume, &lt;strong>per hour&lt;/strong>&lt;/li>
+&lt;li>Close price for 200+ Altcoins, also &lt;strong>per hour&lt;/strong>&lt;/li>
+&lt;li>And the &lt;a href="http://alt19.com/marketindexes.html">Altcoin Market Indices&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Before 2017-12-23.&lt;/p>
+&lt;p>These data (and honor) belong to &lt;a href="http://alt19.com">alt19.com&lt;/a>. This website says:&lt;/p>
+&lt;blockquote>
+&lt;p>Any information on Alt19.com is provided free and &amp;ldquo;as is&amp;rdquo; and solely for informational purposes, not for trading purposes or advice, and may be delayed.&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>No action should be taken or omitted to be taken in reliance upon information on this site. Use it AT YOUR OWN RISK&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Digital currencies may be illegal in your jurisdiction. These are high-risk investments with liquidity risks and other financial risks! Some altcoins are inactive or may become inactive in future. Please do your own research.&lt;/p>
+&lt;/blockquote>
+&lt;p>I think he/she is right, and, thank for these data.&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://drive.google.com/file/d/1lp3JkwKLCR_RxI61-jdPcH26UXCnHPuC/view?usp=sharing">Link&lt;/a>&lt;/p>
+&lt;p>长话短说，这是比特币/山寨币 &lt;em>每小时&lt;/em> 的历史数据。比如说，要是进行什么数据分析的话，至少会比泰坦尼克号有意思一些吧……&lt;/p>
+&lt;p>呃，事情是这样的。在我搜索山寨币的历史数据的时候，常常能看到alt19.com这个网站，但是在8012年，这个网站已经和两千年前的布局不太一样了……&lt;/p>
+&lt;p>……当然，这个网站仍然供应小时级别的数据——如果你肯花上一点时间做一点侦察工作的话。对于那些好奇心不是那么严重的用户来说，请直接使用本文最上面的链接；对于另外的人，请不要给那个网站的服务器带来太大压力，当然我也没什么资格说这些。&lt;/p>
+&lt;p>另外，就像上面所说的，一切风险请由使用者自己承担。&lt;/p>
+&lt;hr>
+&lt;p>Edit in 18-03-26: 后来我觉得还是&lt;a href="http://api.bitcoincharts.com/v1/csv/">http://api.bitcoincharts.com/v1/csv/&lt;/a>靠谱一些，当然，不包括山寨币。&lt;/p></description></item></channel></rss>

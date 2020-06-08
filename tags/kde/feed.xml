@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KDE on 林中阴影</title><link>https://blog.heysh.xyz/tags/kde/</link><description>Recent content in KDE on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 22 Sep 2019 20:54:15 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/kde/feed.xml" rel="self" type="application/rss+xml"/><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KDE on 林中阴影</title><link>https://blog.heysh.xyz/tags/kde/</link><description>Recent content in KDE on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 22 Sep 2019 20:54:15 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/kde/feed.xml" rel="self" type="application/rss+xml"/><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>&lt;blockquote>
+&lt;p>值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然地连不上了。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>正好上次薅的羊毛也快要过期了，又到了交保护费的时间。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>其实之前我有两页关于VPS（价格）的笔记，不过计划赶不上变化，今天看到了一个叫Veesp的公司，很便宜，而且速度居然也还不错。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>惟一的缺点是，&lt;del>我买不到红墨水&lt;/del>那里的终端noVNC不支持粘贴。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>以上是（无关紧要的）背景。&lt;/p>
+&lt;/blockquote>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+附：Veesp的测速情况
+&lt;/h4>
+&lt;/summary>
+&lt;p>&lt;img src="https://blog.heysh.xyz/img/veesp-speedtest.png" alt="北京联通表示情绪稳定">&lt;/p>
+&lt;/details>
+&lt;p>针对noVNC的问题，根据&lt;a href="https://forum.proxmox.com/threads/novnc-copy-paste-not-works.19773/#post-101013">这个帖子&lt;/a>，可以用&lt;code>xdotool&lt;/code>来解决。&lt;/p>
+&lt;p>现在我用的KDE自带剪贴板管理程序&lt;code>Klipper&lt;/code>，能够配置自定义动作处理剪贴板中的内容。这里的动作是&lt;code>xdotool type '%s'&lt;/code>，如图：&lt;/p>
+&lt;p>&lt;img src="https://blog.heysh.xyz/img/klipper.png" alt="setting">&lt;/p>
+&lt;p>另外，在我这里&lt;code>在当前剪贴板上手动执行动作&lt;/code>的快捷键&lt;kbd>Ctrl&lt;/kbd>+&lt;kbd>Alt&lt;/kbd>+&lt;kbd>R&lt;/kbd>似乎有冲突，我改成了&lt;kbd>Ctrl+Shift+Alt+R&lt;/kbd>。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>之后在noVNC界面上按刚才的快捷键就行。&lt;/p>
+&lt;hr>
+&lt;p>来自19-10-4的更新：俄罗斯IP被某个熊猫网站（e-h）屏蔽了……我就随口一说。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>其实我还有点期待&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>标签能出个什么特殊格式呢…… &lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item></channel></rss>

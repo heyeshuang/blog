@@ -1,1 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>meta on 林中阴影</title><link>https://blog.heysh.xyz/categories/meta/</link><description>Recent content in meta on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/meta/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>项目地址：https://github.com/heyeshuang/hugo-theme-tokiwa 大概是3月末，我在例行的检查自己博客</description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>用chroma进行语法高亮 最近hugo内置了chroma，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hug</description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。 官方文档中其实有这一部分内容，但是那里是用MathJax的，而且在标准m</description></item><item><title>五年</title><link>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</link><pubDate>Sun, 15 Jan 2017 08:14:45 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</guid><description>距离实现永生：5/∞ 新的一年也要好好活下去哦~</description></item><item><title>我失去了heysh.tk域名</title><link>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</link><pubDate>Tue, 24 May 2016 14:35:24 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</guid><description>Dear 叶霜 贺, The Freenom Review Team has visited your website today. Unfortunately we have to say that today we cancelled your domain HEYSH.TK. The reason for the cancellation is that the website address you used for your free domain name was not accessible or did not follow the guidelines set in our terms and conditions. At this stage, anyone, including yourself, is able to (re)register the cancelled</description></item><item><title>blog再次复活</title><link>https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</link><pubDate>Fri, 01 Feb 2013 04:45:08 +0000</pubDate><guid>https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</guid><description>rhcloud.com被墙了，没办法用wordpress的android版更新实在令人愤怒，幸好我还有个免费域名，虽然不上档次，不过恰好合适</description></item><item><title>Hello Again~</title><link>https://blog.heysh.xyz/2012/06/22/hello-again/</link><pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid><description>国内的免费主机始终是不靠谱的啊…… ——以上为结论 由于这样那样的原因，上一个博客化为了时代的眼泪，确切的说是全灭。于是，这里作为博客No.3，</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>meta on 林中阴影</title><link>https://blog.heysh.xyz/categories/meta/</link><description>Recent content in meta on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/meta/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
+&lt;p>大概是3月末，我在例行的&lt;code>检查自己博客有没有自己偷偷更新&lt;/code>的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del>打牌&lt;/del>&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/">狩猎&lt;/a>之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p>
+&lt;p>中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+（万一我在很久之后换掉了主题，下面还有一些截图。）
+&lt;/h4>
+&lt;/summary>
+&lt;figure>
+&lt;img src="screenshot1.png"/> &lt;figcaption>
+&lt;h4>主页的样子&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="screenshot2.png"/> &lt;figcaption>
+&lt;h4>内文的样子&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="screenshot3.png"/> &lt;figcaption>
+&lt;h4>在手机上的样子&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/details>
+&lt;p>新主题继承了之前的配色，也以配色而命名。记得&lt;a href="https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/">当时&lt;/a>我选了主题&lt;code>blackburn&lt;/code>，又觉得默认的蓝色有些“默认”，于是自己挑了一种，恰好是现在所说的常磐色。嗯，看起来绿油油的。&lt;/p>
+&lt;p>其他的方面，用了现在流行的、尽情浪费显示器空间的布局，还用了尽情浪费网路流量的网页字体。用2M流量换一个帅气的标题，feels good man&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>另外，现在正在试图向&lt;a href="https://github.com/gohugoio/hugoThemes/issues/850">gohugoio/hugoThemes&lt;/a>投稿，当前（2020-5-19）的进度是在与老外激情对线。都2020年了，我居然因为开源许可证气得睡不着觉，感觉自己的青春又回来了。&lt;/p>
+&lt;p>我没什么好交代的了。下次见。&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>
+&lt;/blockquote>
+&lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
+&lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>说笑的，待会我就会把字体裁好。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮">用chroma进行语法高亮&lt;/h2>
+&lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
+&lt;h3 id="使用方法">使用方法&lt;/h3>
+&lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
+pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
+pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>
+&lt;h2 id="用typographyjs修改样式">用typography.js修改样式&lt;/h2>
+&lt;p>&lt;a href="http://kyleamathews.github.io/typography.js/">Typography.js&lt;/a>是生成网页字体排印格式的库。只要简单地利用已有的主题，就可以生成较为完善的CSS格式。当然，如果需要更精确的中文排版，请移步&lt;a href="https://hanzi.pro/">汉字标准格式&lt;/a>。&lt;/p>
+&lt;p>Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：&lt;a href="https://github.com/heyeshuang/typography2css">typography2CSS&lt;/a>，用来直接生成CSS文件。&lt;/p>
+&lt;p>之后，经过少量修改，即可用于现有的主题，效果如此博客所示。&lt;/p></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>
+&lt;p>官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容&lt;/a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里&lt;/a>一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p>
+&lt;p>Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code>.mmark&lt;/code>后缀就行：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax">这里&lt;/a>。&lt;/p>
+&lt;p>用这种渲染器，用&lt;code>$$&lt;/code>包裹的文字会自动转成用&lt;code>\[&lt;/code>或者&lt;code>\(&lt;/code>包裹，比如，&lt;code>inline $$\sqrt{b^2-4ac}$$&lt;/code>会转成&lt;code>\(\sqrt{b^2-4ac}\)&lt;/code>&lt;/p>
+&lt;p>之后，只要修改主题，把&lt;span class="math">\(\KaTeX\)&lt;/span>引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42">这里&lt;/a>。&lt;/p>
+&lt;p>效果如下：&lt;/p>
+&lt;p>行内公式：&lt;span class="math">\(\sqrt{b^2-4ac}\)&lt;/span>&lt;/p>
+&lt;p>单行公式：&lt;/p>
+&lt;p>&lt;span class="math">\[\hat{y}= \sigma(\omega^T X+b)=\frac{1}{1+e^{-(\omega^T X+b)}}\]&lt;/span>&lt;/p>
+&lt;p>另外，还有一种更加复杂的&lt;code>&amp;lt;shortcode&amp;gt;&lt;/code>&lt;a href="http://www.latkin.org/2016/08/07/better-tex-math-typesetting-in-hugo/">方法&lt;/a>，如果你是完美主义者的话。&lt;/p></description></item><item><title>五年</title><link>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</link><pubDate>Sun, 15 Jan 2017 08:14:45 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</guid><description>&lt;p>&lt;img src="http://i1.piimg.com/1949/c9d69d714fb8671c.png" alt="">&lt;/p>
+&lt;p>距离实现永生：5/∞&lt;/p>
+&lt;p>新的一年也要好好活下去哦~&lt;/p></description></item><item><title>我失去了heysh.tk域名</title><link>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</link><pubDate>Tue, 24 May 2016 14:35:24 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</guid><description>&lt;blockquote>
+&lt;p>Dear 叶霜 贺,&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>The Freenom Review Team has visited your website today. Unfortunately
+we have to say that today we cancelled your domain &lt;a href="http://HEYSH.TK">HEYSH.TK&lt;/a>.&lt;/p>
+&lt;p>The reason for the cancellation is that the website address you
+used for your free domain name was not accessible or did not
+follow the guidelines set in our terms and conditions.&lt;/p>
+&lt;p>At this stage, anyone, including yourself, is able to (re)register
+the cancelled domain &lt;a href="http://HEYSH.TK">HEYSH.TK&lt;/a>. However, upon
+registration,
+an actual working website is needed to complete the registration
+process.&lt;/p>
+&lt;p>We thank you for using Freenom.&lt;/p>
+&lt;p>Freenom Review Team&lt;/p>
+&lt;/blockquote>
+&lt;p>Whatever.&lt;/p>
+&lt;p>之前的heysh.tk页面回到了&lt;a href="http://heyeshuang.github.io">heyeshuang.github.io&lt;/a>，以上。&lt;/p></description></item><item><title>blog再次复活</title><link>https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</link><pubDate>Fri, 01 Feb 2013 04:45:08 +0000</pubDate><guid>https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</guid><description>&lt;p>rhcloud.com被墙了，没办法用wordpress的android版更新实在令人愤怒，幸好我还有个免费域名，虽然不上档次，不过恰好合适。&lt;/p></description></item><item><title>Hello Again~</title><link>https://blog.heysh.xyz/2012/06/22/hello-again/</link><pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid><description>&lt;blockquote>
+&lt;p>国内的免费主机始终是不靠谱的啊……&lt;/p>
+&lt;p>——以上为结论&lt;/p>
+&lt;/blockquote>
+&lt;p>由于这样那样的原因，上一个博客化为了&lt;em>时代的眼泪&lt;/em>，确切的说是&lt;em>全灭&lt;/em>。于是，这里作为博客No.3，希望大家（？）——，……&lt;/p>
+&lt;p>算了还是看看这里能坚持到什么时候比较好。&lt;/p>
+&lt;p>又及：博客搭建在redhat
+openshift服务上，应该是比某些30天一续期的主机好得多。&lt;/p>
+&lt;p>updated
+2012-6-25：openshift虽然不会发生清空数据库的惨剧，不过这速度也……\&lt;/p>
+&lt;blockquote>
+&lt;p>administrator@ubuntu:~$ ping wp-heysh.rhcloud.com&lt;br>
+PING ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176) 56(84)
+bytes of data.&lt;br>
+64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
+icmp_req=1 ttl=44 time=429 ms&lt;br>
+64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
+icmp_req=2 ttl=44 time=421 ms&lt;br>
+64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
+icmp_req=3 ttl=44 time=427 ms&lt;br>
+64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
+icmp_req=4 ttl=44 time=426 ms&lt;/p>
+&lt;/blockquote>
+&lt;p>四百多秒的延迟……果然国内连amazon的主机就是悲剧……\&lt;/p>
+&lt;p>希望GFW不要盯上亚马逊啊啊啊啊&lt;/p></description></item></channel></rss>

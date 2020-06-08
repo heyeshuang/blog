@@ -1,1 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E8%BD%AF%E4%BB%B6/</link><description>Recent content in 软件 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 17 Nov 2018 18:26:30 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E8%BD%AF%E4%BB%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>笔记软件踩雷</title><link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link><pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid><description>大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。 如果对自</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E8%BD%AF%E4%BB%B6/</link><description>Recent content in 软件 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 17 Nov 2018 18:26:30 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E8%BD%AF%E4%BB%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>笔记软件踩雷</title><link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link><pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid><description>&lt;p>大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。&lt;/p>
+&lt;p>如果对自己的要求有清楚的认识，当查找 &lt;em>poor man&amp;rsquo;s somewares&lt;/em> 时，&lt;a href="https://alternativeto.net/software/evernote/">AlternativeTo&lt;/a>和&lt;a href="https://www.slant.co/topics/2463/~best-evernote-alternatives">Slant&lt;/a>这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：&lt;/p>
+&lt;ul>
+&lt;li>（扩展的）Markdown格式，支持代码块和公式&lt;/li>
+&lt;li>支持多种格式的附件，而不是只支持图片
+&lt;ul>
+&lt;li>附件的链接可以插入笔记中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>导入导出方便，不要像臭名昭著的有道笔记一样&lt;/li>
+&lt;li>网页剪辑&lt;/li>
+&lt;li>跨平台&lt;/li>
+&lt;li>支持同步&lt;/li>
+&lt;/ul>
+&lt;p>这样的话，类似google keep、evernote的软件和收费软件（……）就首先被排除了；在markdown出现之前的老牌笔记软件也自动忽略。然后我试用了当红的boostnote和……什么来着，但这两个软件对附件的支持都不太好。最后，有两个软件满足我的大部分要求：&lt;/p>
+&lt;h2 id="vnotehttpstamlokgithubiovnote">&lt;a href="https://tamlok.github.io/vnote/">VNote&lt;/a>&lt;/h2>
+&lt;p>美丽的Qt程序，纯Markdown保存，直接粘贴HTML到笔记，甚至还有Vim按键绑定，一切都很好，除了没有同步和Android客户端；当然，纯文本文件可以很容易地用git同步，所以问题变成了另外两个：没有合适的git Android，以及没有Android上的Markdown阅读器&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;h2 id="joplinhttpsjoplincozicnet">&lt;a href="https://joplin.cozic.net">Joplin&lt;/a>&lt;/h2>
+&lt;p>用javascript写应用虽然被很多人鄙视，但确实真正解决了跨平台运行的问题。这个程序似乎连Android客户端都在同一个代码仓库里，如果不在意肉眼可见的卡顿的话，react native能够让人少写好多代码，反观qt-Android……&lt;/p>
+&lt;p>咳咳，扯远了。总之Joplin有Android客户端，而且自带onedrive同步功能。Nothing to complain&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>另外还有两个小问题。&lt;/p>
+&lt;h2 id="关于文章剪辑">关于文章剪辑&lt;/h2>
+&lt;p>试图将HTML转回markdown，就像是试图将pdf转回TEX、减少宇宙的熵、或者是把石头推上山一样徒劳，不过，仍然有&lt;a href="https://github.com/domchristie/turndown">勇士&lt;/a>在尝试这个任务，效果嘛……差强人意，从两个方面理解都可以。&lt;/p>
+&lt;h2 id="关于为知笔记导出">关于为知笔记导出&lt;/h2>
+&lt;blockquote>
+&lt;p>感觉基本上没什么戏……&lt;/p>
+&lt;/blockquote>
+&lt;p>为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段
+&lt;code>&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;（下略&lt;/code>
+才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……&lt;/p>
+&lt;p>理论上，这些都可以用一个脚本来解决，不过我看着自己一百多篇各种格式的笔记，决定还是把它们扔在硬盘里吧。“反正以后光纤也跟我没关系了……”……大概。&lt;/p>
+&lt;hr>
+&lt;p>来自2019-09-18的更新：&lt;/p>
+&lt;p>最近在V2EX上看到了一个叫&lt;a href="https://github.com/notable/notable">notable&lt;/a>的软件，思路上和VNote类似，也是使用文件夹代替数据库，笔记用纯文本格式保存在磁盘中，而且对于图片和附件的位置处理得也很聪明。&lt;/p>
+&lt;p>另外，在这个项目的主页上还列出了很多常见的笔记软件，而且画了个漂亮的表格（在&lt;a href="https://raw.githubusercontent.com/notable/notable/master/resources/comparison/table.png">这里&lt;/a>），来比较他们的区别，对某些功能有执念的朋友可以去看看。&lt;/p>
+&lt;p>当然我还是继续用joplin。&lt;em>feels good man.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;p>来自2019-9-18更晚些时候的更新：&lt;/p>
+&lt;p>我又翻了一下那个项目的README，发现那个项目不再开源了。好吧，当我今天没有更新。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>在VNote的某个Issue里提到过&lt;a href="https://github.com/gsantner/markor">Markor&lt;/a>，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>除了导出文件时的一个&lt;a href="https://github.com/laurent22/joplin/issues/853">issue&lt;/a>。It looks like Chinese to me. &lt;em>18-11-20更新：&lt;/em> 开发者回复我了！开心～ &lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item></channel></rss>

@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>html on 林中阴影</title><link>https://blog.heysh.xyz/tags/html/</link><description>Recent content in html on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 21 Dec 2013 07:24:39 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/html/feed.xml" rel="self" type="application/rss+xml"/><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>在这里安装 源码 总而言之，是一个（某种程度上）减缓拖延症症状的脚本。 在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下</description></item><item><title>THU课程表导出，油猴脚本，输出vcal</title><link>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E8%BE%93%E5%87%BAvcal/</link><pubDate>Sat, 14 Jul 2012 08:41:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E8%BE%93%E5%87%BAvcal/</guid><description>脚本下载：http://userscripts.org/scripts/show/136856\ google code：http://code.goog</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>html on 林中阴影</title><link>https://blog.heysh.xyz/tags/html/</link><description>Recent content in html on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 21 Dec 2013 07:24:39 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/html/feed.xml" rel="self" type="application/rss+xml"/><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>&lt;p>&lt;a href="https://greasyfork.org/scripts/4245-sfw">在这里安装&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://github.com/heyeshuang/sfw">源码&lt;/a>&lt;/p>
+&lt;p>总而言之，是一个（某种程度上）减缓拖延症症状的脚本。&lt;/p>
+&lt;p>在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下适用。&lt;/p>
+&lt;p>截图大概是这样的：
+&lt;img src="https://blog.heysh.xyz/sfw1.png" alt="1">
+&lt;img src="https://blog.heysh.xyz/sfw2.png" alt="2">&lt;/p>
+&lt;p>效果？在某些时候会有点用吧……&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>注意一下github的最后更改时间和这篇日志的写作时间就知道上面一句是假话&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>出现了！拖延小五郎的名推理！&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>鸣谢：&lt;a href="http://stylechen.com/easydialog-v2-0.html">easydialog&lt;/a>&lt;/p>
+&lt;p>对了，差不多又到了年终总结的时间了呢……&lt;/p></description></item><item><title>THU课程表导出，油猴脚本，输出vcal</title><link>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E8%BE%93%E5%87%BAvcal/</link><pubDate>Sat, 14 Jul 2012 08:41:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E8%BE%93%E5%87%BAvcal/</guid><description>&lt;p>脚本下载：&lt;a href="http://userscripts.org/scripts/show/136856">http://userscripts.org/scripts/show/136856&lt;/a>\&lt;/p>
+&lt;p>google code：&lt;a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>为什么自己总是做这些完全不会有人来用的东西啊为什么！&lt;/p>
+&lt;/blockquote>
+&lt;p>使用的网站：http://zhjwxk.cic.tsinghua.edu.cn/xsxk_index.jsp&lt;/p>
+&lt;p>&lt;em>-&amp;gt;这个网站没几个人能上吧！就算是能连上也没有密码啊！&lt;/em>&lt;/p>
+&lt;p>我写这个的意义到底是什么…………&lt;/p></description></item></channel></rss>

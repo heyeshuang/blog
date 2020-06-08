@@ -1,1 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web on 林中阴影</title><link>https://blog.heysh.xyz/tags/web/</link><description>Recent content in web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 03 May 2016 17:01:02 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个简单的在线LRC编辑器</title><link>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link><pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid><description>地址：http://heyeshuang.github.io/hieda-lrc-editor/ GITHUB：https://github.</description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description></item><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>在这里安装 源码 总而言之，是一个（某种程度上）减缓拖延症症状的脚本。 在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下</description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>github live demo(slow)</description></item><item><title>Limited Gear Works</title><link>https://blog.heysh.xyz/2013/04/19/limited-gear-works/</link><pubDate>Fri, 19 Apr 2013 13:50:50 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/19/limited-gear-works/</guid><description>总之是一个画齿轮的canvas， 没用 而且速度慢，不过最终至少像那么回事了。 地址</description></item><item><title>我的云上逃亡，或，google reader的替代品</title><link>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link><pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid><description>之前也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！</description></item><item><title>flask似乎不错</title><link>https://blog.heysh.xyz/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</link><pubDate>Tue, 11 Sep 2012 15:30:08 +0000</pubDate><guid>https://blog.heysh.xyz/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</guid><description>首先接触的web框架是karrigell，也最后作出了点东西，感觉简单实用但是好像有点非主流。然后看到Django好像很流行，然后就在ope</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web on 林中阴影</title><link>https://blog.heysh.xyz/tags/web/</link><description>Recent content in web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 03 May 2016 17:01:02 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个简单的在线LRC编辑器</title><link>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link><pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid><description>&lt;p>地址：&lt;a href="http://heyeshuang.github.io/hieda-lrc-editor/">http://heyeshuang.github.io/hieda-lrc-editor/&lt;/a>&lt;/p>
+&lt;p>GITHUB：&lt;a href="https://github.com/heyeshuang/hieda-lrc-editor">https://github.com/heyeshuang/hieda-lrc-editor&lt;/a>&lt;/p>
+&lt;p>和依云&lt;a href="http://lilydjwg.is-programmer.com/2016/4/30/aisareruhana.200019.html">这里&lt;/a>差不多，我听到了一首悲伤的歌（&lt;a href="http://music.163.com/#/song?id=766522">精霊流し&lt;/a>），也去找了&lt;a href="http://bulo.hujiang.com/diary/111537/">歌词&lt;/a>。在想要把歌词做成LRC文件的时候，我突然想起来，今年，2015年，千千静听已经不再存在了，而且我也不再有勇气到各种软件站下载来路不明的程序。&lt;/p>
+&lt;p>那么，就去做一个LRC编辑器吧！&lt;/p>
+&lt;p>——以上，是半年之前的事情了。&lt;/p>
+&lt;p>也许是拖延症的&lt;a href="https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/">治疗&lt;/a>有效果了，半年以后这东西居然真的跑了起来。这半年里我都跑了好几次……&lt;/p>
+&lt;p>另外，写前端/GUI真恶心……&lt;/p>
+&lt;p>另外的另外，名字来自稗田阿求，&lt;del>也许我应该换一个更萌一点的网页图标……&lt;/del>&lt;/p>
+&lt;p>update: 萌萌的图标已经换了～&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>
+&lt;p>大概上思路和&lt;a href="http://talk.withme.me/?p=51">这里&lt;/a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code>6ndp&lt;/code>,&lt;code>ndppd&lt;/code>和&lt;code>radvd&lt;/code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code>/etc/config/dhcp&lt;/code>的关键几行大概应该是这样：&lt;/p>
+&lt;pre>&lt;code># /etc/config/dhcp:
+config dhcp 'lan'
+option interface 'lan'
+option start '100'
+option limit '150'
+option leasetime '12h'
+# option dhcpv6 'server'
+option ra 'relay'
+option ndp 'relay'
+#config dhcp 'wan'
+#option interface 'wan'
+#option ignore '1'
+config dhcp 'wan6'
+option ra 'relay'
+option ndp 'relay'
+option master '1'
+&lt;/code>&lt;/pre>
+&lt;p>另外，还需要把&lt;code>luci&lt;/code>的&lt;code>interface&lt;/code>页面下的&lt;code>IPv6 ULA-Prefix&lt;/code>删掉。&lt;/p>
+&lt;p>现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启&lt;code>/etc/init.d/odhcpd&lt;/code>；不管了，我先在这里存个盘。&lt;/p>
+&lt;p>有人说relay-&amp;gt;hybrid也能成功的样子……我还没有测试过。&lt;/p>
+&lt;p>参考：&lt;/p>
+&lt;p>&lt;a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1">http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/">http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/&lt;/a>（链接不知道为什么已经失效了）&lt;/p>
+&lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>&lt;p>&lt;a href="https://greasyfork.org/scripts/4245-sfw">在这里安装&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://github.com/heyeshuang/sfw">源码&lt;/a>&lt;/p>
+&lt;p>总而言之，是一个（某种程度上）减缓拖延症症状的脚本。&lt;/p>
+&lt;p>在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下适用。&lt;/p>
+&lt;p>截图大概是这样的：
+&lt;img src="https://blog.heysh.xyz/sfw1.png" alt="1">
+&lt;img src="https://blog.heysh.xyz/sfw2.png" alt="2">&lt;/p>
+&lt;p>效果？在某些时候会有点用吧……&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>注意一下github的最后更改时间和这篇日志的写作时间就知道上面一句是假话&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>出现了！拖延小五郎的名推理！&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>鸣谢：&lt;a href="http://stylechen.com/easydialog-v2-0.html">easydialog&lt;/a>&lt;/p>
+&lt;p>对了，差不多又到了年终总结的时间了呢……&lt;/p></description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>&lt;p>&lt;a href="https://github.com/heyeshuang/my_tree_2d">github&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://heyeshuang.github.io/my_tree_2d">live demo(slow)&lt;/a>&lt;/p></description></item><item><title>Limited Gear Works</title><link>https://blog.heysh.xyz/2013/04/19/limited-gear-works/</link><pubDate>Fri, 19 Apr 2013 13:50:50 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/19/limited-gear-works/</guid><description>&lt;p>总之是一个画齿轮的canvas， &lt;em>没用&lt;/em> 而且&lt;strong>速度慢&lt;/strong>，不过最终至少像那么回事了。&lt;/p>
+&lt;p>&lt;a href="http://heyeshuang.github.io/LGW/">地址&lt;/a>&lt;/p></description></item><item><title>我的云上逃亡，或，google reader的替代品</title><link>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link><pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/">之前&lt;/a>也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！&lt;/p>
+&lt;p>不过这次折腾PaaS是因为Google Reader &lt;em>也&lt;/em> 被干掉了，寻找到以下替代方案：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/samuelclay/NewsBlur">NewsBlur&lt;/a> based on django&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">Tiny Tiny RSS&lt;/a> based on PHP&amp;amp;MySQL&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>似乎PHP比较常见的样子，于是准备先试试TT-rss。&lt;/p>
+&lt;p>现在的进度是，appfog|CloundFoundry|openshift|dotcloud|heroku的账号集齐了，再加个GAE和主机屋（不要用！很麻烦！），就可以召唤神龙了？&lt;/p>
+&lt;p>&lt;del>过会放测试结果，如果没有下文的话，就是我被什么龙给吃掉了～&lt;/del>&lt;/p>
+&lt;p>update：直接google找到了&lt;a href="http://projectdelphai.github.com/2013/03/15/replacing-google-reader-with-tt-rss-on-heroku/">这个&lt;/a>，还贴心的放出了&lt;a href="https://github.com/projectdelphai/ttrss-on-heroku/blob/master/ttrss_heroku_setup.sh">脚本&lt;/a>。heroku，就决定是你了！&lt;br>
+&lt;a href="http://www.quora.com/Is-there-anything-like-Heroku-I-can-use-for-a-PHP-site">这里&lt;/a>还有一大把PHP云，大概够了？\&lt;/p>
+&lt;p>update 2013-3-31:TT-RSS的数据库用量已经达到90%了……另外，又找到两个可能的选择：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="http://fofredux.sourceforge.net/">FoFRedux&lt;/a>似乎已经好久没更新了，还提到了&lt;a href="http://baike.baidu.com/view/236935.htm">Nokia770&lt;/a>，2005年？&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://getlilina.org/">Lilina&lt;/a>，官网似乎很帅气，而且也不用数据库……~~下次试一下这个？~~一般paas都不支持直接写入……&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>update 2013-04-04 还有：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="http://owncloud.org/">owncloud&lt;/a>，全能型选手，各路大神推荐&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://selfoss.aditu.de/">selfoss&lt;/a>，要求写入权限，不知道怎么样&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>4-6再次更新：最后（？），在openshift上用脚本搭了ttrss（并绑定了域名），对owncloud采取持续观望的态度。&lt;/p>
+&lt;p>5-29 另外：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Athou/commafeed">CommaFeed&lt;/a>，并贴心的提供了“Deployment on OpenShift”的教程&lt;/li>
+&lt;/ul>
+&lt;p>又及：测试VimRepress的编辑能力&lt;/p></description></item><item><title>flask似乎不错</title><link>https://blog.heysh.xyz/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</link><pubDate>Tue, 11 Sep 2012 15:30:08 +0000</pubDate><guid>https://blog.heysh.xyz/2012/09/11/flask%E4%BC%BC%E4%B9%8E%E4%B8%8D%E9%94%99/</guid><description>&lt;p>首先接触的web框架是karrigell，也最后作出了点东西，感觉简单实用但是好像有点非主流。然后看到Django好像很流行，然后就在openshift上弄了一个，最终结果是只用到了statics目录。中间因为搭wordpress，曾经有一段学php的热情。后来……冷掉了。&lt;/p>
+&lt;p>然后下一个目标是flask。&lt;/p>
+&lt;p>不过没有内容，什么都白搭。&lt;/p></description></item></channel></rss>

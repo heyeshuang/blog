@@ -1,1 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML on 林中阴影</title><link>https://blog.heysh.xyz/tags/ml/</link><description>Recent content in ML on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 09 Dec 2017 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ml/feed.xml" rel="self" type="application/rss+xml"/><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>本文基本上是 Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization 的知识点大纲。 具体的公式和理论，可以看Bin Weber的博客。 训练/开发/测试集（Train/dev/test</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML on 林中阴影</title><link>https://blog.heysh.xyz/tags/ml/</link><description>Recent content in ML on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 09 Dec 2017 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ml/feed.xml" rel="self" type="application/rss+xml"/><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;blockquote>
+&lt;p>本文基本上是 &lt;em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/em> 的知识点大纲。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>具体的公式和理论，可以看&lt;a href="http://binweber.top/tags/ML/">Bin Weber的博客&lt;/a>。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="训练开发测试集traindevtest">训练/开发/测试集（Train/dev/test）&lt;/h2>
+&lt;ul>
+&lt;li>数据量10000之内：70/30（免去dev）或60/20/20&lt;/li>
+&lt;li>更多数据：保证dev/test足够（~10000）即可&lt;/li>
+&lt;/ul>
+&lt;h2 id="过拟合">过拟合&lt;/h2>
+&lt;ul>
+&lt;li>引入更多训练样本&lt;/li>
+&lt;li>正则化（Normalization&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）
+&lt;ul>
+&lt;li>目的：减小||W|| ←此时熵最大，可能性最高&lt;/li>
+&lt;li>L2正则化：在cost function上附加一个W，使W最小&lt;/li>
+&lt;li>dropout：随机关闭一些节点&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="欠拟合">欠拟合&lt;/h2>
+&lt;ul>
+&lt;li>增加神经网络的隐含层数&lt;/li>
+&lt;li>隐含层中的节点数&lt;/li>
+&lt;li>训练更长时间&lt;/li>
+&lt;/ul>
+&lt;h2 id="初始化输入数据和参数">初始化输入数据和参数&lt;/h2>
+&lt;ul>
+&lt;li>输入数据标准化（Normalization&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）：使每个维度在(-1,1)之间&lt;/li>
+&lt;li>权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
+&lt;ul>
+&lt;li>即Xavier初始化的变种，He初始化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="提高梯度下降速度mini-batch">提高梯度下降速度：mini-batch&lt;/h2>
+&lt;p>由于内存/计算单元不够（always），每次计算部分数据&lt;/p>
+&lt;h3 id="提高mini-batch的稳定性减小摆动">提高mini-batch的稳定性，减小摆动&lt;/h3>
+&lt;ul>
+&lt;li>将每个batch的优化结果进行指数加权平均（Momentum）&lt;/li>
+&lt;li>RMSPROP&lt;/li>
+&lt;li>Adam：综合以上两种方法&lt;/li>
+&lt;li>学习率衰减&lt;/li>
+&lt;/ul>
+&lt;h2 id="超参数的选择">超参数的选择&lt;/h2>
+&lt;h3 id="需要的超参数">需要的超参数&lt;/h3>
+&lt;ul>
+&lt;li>α，学习率/learning rate&lt;/li>
+&lt;li>β1~0.9，β2~0.999，ε~1e-8（Adam中的参数）&lt;/li>
+&lt;li>层数&lt;/li>
+&lt;li>每层单元&lt;/li>
+&lt;li>学习率衰减&lt;/li>
+&lt;li>mini-batch 尺寸（2的整数次方，大概是512之内？）&lt;/li>
+&lt;/ul>
+&lt;h3 id="选择方案">选择方案&lt;/h3>
+&lt;ul>
+&lt;li>随机&lt;/li>
+&lt;li>对于α和β，以对数形式随机&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">r&lt;span style="color:#555">=-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
+a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>&lt;span style="color:#555">**&lt;/span>r
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="batch-norm">Batch-Norm&lt;/h2>
+&lt;ul>
+&lt;li>对每一层的线性计算结果Z进行标准化&lt;/li>
+&lt;li>每层标准化的参数γ和β通过学习得到&lt;/li>
+&lt;li>提高收敛速度（与对初始值X的操作类似）&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>采用批标准化之后，尽管每一层的z还是在不断变化，但是它们的均值和方差将基本保持不变，这就使得后面的数据更加稳定，减少前面层与后面层的耦合 （via Bin Weber）&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="softmax">Softmax&lt;/h2>
+&lt;p>当分类器需要分出更多类时使用&lt;/p>
+&lt;h2 id="检验方程的梯度计算是否存在问题梯度检验">检验方程的梯度计算是否存在问题：梯度检验&lt;/h2>
+&lt;p>用计算斜率的方式近似梯度&lt;/p>
+&lt;h2 id="深度学习是否会陷入局部最优问题">深度学习是否会陷入局部最优问题？&lt;/h2>
+&lt;ul>
+&lt;li>由于参数很多，对所有参数都为峰值基本上不可能&lt;/li>
+&lt;li>相比而言，鞍点更加普遍&lt;/li>
+&lt;/ul>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>意义似乎略有不同 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item></channel></rss>

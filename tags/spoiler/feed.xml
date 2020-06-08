@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>spoiler on 林中阴影</title><link>https://blog.heysh.xyz/tags/spoiler/</link><description>Recent content in spoiler on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 07 Oct 2017 22:25:35 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/spoiler/feed.xml" rel="self" type="application/rss+xml"/><item><title>在Hugo中折叠部分内容</title><link>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</link><pubDate>Sat, 07 Oct 2017 22:25:35 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</guid><description>之前疯狂粘贴自己的扩展 凑字数 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 shortcode 功</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>spoiler on 林中阴影</title><link>https://blog.heysh.xyz/tags/spoiler/</link><description>Recent content in spoiler on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 07 Oct 2017 22:25:35 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/spoiler/feed.xml" rel="self" type="application/rss+xml"/><item><title>在Hugo中折叠部分内容</title><link>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</link><pubDate>Sat, 07 Oct 2017 22:25:35 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</guid><description>&lt;p>之前疯狂粘贴自己的&lt;a href="https://blog.heysh.xyz/2017/10/01/firefox-to-quantum/">扩展&lt;/a> &lt;del>凑字数&lt;/del> 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 &lt;code>shortcode&lt;/code> 功能自己写了一个。&lt;/p>
+&lt;p>&lt;code>Shortcode&lt;/code> 的介绍在&lt;a href="https://gohugo.io/templates/shortcode-templates/">这里&lt;/a>，主要难度在于go的html模板引擎。&lt;/p>
+&lt;p>折叠部分用了 HTML5 的新特性：&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">&amp;lt;details&amp;gt;&lt;/a>，不支持 edge，这个浏览器应该没有人用吧……&lt;/p>
+&lt;p>下面是shortcode的代码，放在&lt;code>/themes/&amp;lt;THEME&amp;gt;/layouts/shortcodes/spoiler.html&lt;/code>下：&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+shortcode，点击展开
+&lt;/h4>
+&lt;/summary>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
+{{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
+&amp;lt;/&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
+{{.Inner}}
+&amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;p>用法是这样的：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
+I am your father.
+NOOOOOOO!
+{{% /spoiler %}}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p>
+&lt;p>spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8&lt;/p></description></item></channel></rss>

@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vim on 林中阴影</title><link>https://blog.heysh.xyz/tags/vim/</link><description>Recent content in vim on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 05 Sep 2017 21:03:41 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/vim/feed.xml" rel="self" type="application/rss+xml"/><item><title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title><link>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</link><pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</guid><description>&lt;p>Update 2018-5: Now vim-mode-plus introduced &lt;a href="https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300">new method&lt;/a> to disable IME in the setting page. It&amp;rsquo;s time for this post to retire.&lt;/p>
 &lt;hr>
 &lt;p>As a vim-user and Chinese-speaker, I prefer &lt;a href="https://atom.io/packages/vim-mode-plus">vim-mode-plus&lt;/a> for Atom editor, but always disrupted by the IME in normal mode, like this:&lt;/p>
-&lt;p>&lt;img src="https://blog.heysh.xyz/IME-in-atom.png" alt="IME-in-atom">&lt;/p></description></item><item><title>vim again</title><link>https://blog.heysh.xyz/2013/05/17/vim-again/</link><pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid><description>vim是一种信仰。 上面这句话应该是从某个披头散发1年没洗澡的技术大牛嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有</description></item></channel></rss>
+&lt;p>&lt;img src="https://blog.heysh.xyz/IME-in-atom.png" alt="IME-in-atom">&lt;/p>
+&lt;p>If we could &lt;a href="https://github.com/t9md/atom-vim-mode-plus/issues/446">disable IMEs in normal mode&lt;/a> then everything will be fine again. However, due to &lt;a href="https://github.com/atom/atom/issues/1092">the lack of the APIs&lt;/a>, it is hardly possible to solve the problem in the editor.&lt;/p>
+&lt;p>Thus, we could solve it &lt;em>out of the box&lt;/em>. There is a package named &lt;a href="https://atom.io/packages/vim-mode-plus-auto-ime">atom-vim-mode-plus-auto-ime&lt;/a>, which could run a custom command when the mode changes. The goal now is to find some commands to control the IME:&lt;/p>
+&lt;ul>
+&lt;li>macOS users can use &lt;a href="https://github.com/vovkasm/input-source-switcher">input-source-switcher&lt;/a> to toogle the IME.&lt;/li>
+&lt;li>For Linux, the IME &lt;code>fcitx&lt;/code> has a command &lt;code>fcitx-remote&lt;/code> to control itself.&lt;/li>
+&lt;li>And for Windows, I wrote a &lt;a href="https://github.com/heyeshuang/ime_helper">python script&lt;/a> to switch the IME of the &lt;em>foreground window&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;p>Then we could configure this package.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
+python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --current &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
+python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --dec &lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
+python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
+python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
+&lt;span style="color:#09f;font-style:italic">#linux:&lt;/span>
+/usr/bin/fcitx-remote &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">((&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &amp;lt;&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#555">))&lt;/span>;&lt;span style="color:#069;font-weight:bold">then&lt;/span> /usr/bin/fcitx-remote -c; &lt;span style="color:#069;font-weight:bold">else&lt;/span> /usr/bin/fcitx-remote -o ;&lt;span style="color:#069;font-weight:bold">fi&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
+/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
+/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
+&lt;span style="color:#09f;font-style:italic">#macOS: just use the default config&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/atom-vim-configure.png" alt="configure">&lt;/p></description></item><item><title>vim again</title><link>https://blog.heysh.xyz/2013/05/17/vim-again/</link><pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid><description>&lt;blockquote>
+&lt;p>vim是一种信仰。&lt;/p>
+&lt;/blockquote>
+&lt;p>上面这句话应该是从某个披头散发1年没洗澡的&lt;em>技术大牛&lt;/em>嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有feel。在下面再带个双语字幕就更好了，英文就写”you are all 渣渣”就行…… 咳咳，跑题了。&lt;/p>
+&lt;hr>
+&lt;p>好吧那么我为什么又开始折腾vim了呢？因为eclipse太水了……&lt;/p>
+&lt;p>其实我本来是有一个&lt;a href="https://github.com/amix/vimrc">vimrc&lt;/a>来着，号称是“超级无敌”之类，不过在折腾了两个插件以后，我觉得还是对自己好一点吧……&lt;/p>
+&lt;p>于是我找到了&lt;a href="https://github.com/humiaozuzu/dot-vimrc">这个&lt;/a>，基本开箱即用，不过因为面对高贵的mac，linux用户需要一点点&lt;a href="https://github.com/heyeshuang/dot-vimrc">修改&lt;/a>。&lt;/p>
+&lt;p>//谁能告诉我linux下command键用哪个替代？&lt;/p>
+&lt;p>安装之后要装ctags，各种补全库，然后 &lt;code>:BundleInstall&lt;/code>&lt;/p>
+&lt;p>用vim的时候还有一些小问题：&lt;/p>
+&lt;h2 id="剪贴板">剪贴板&lt;/h2>
+&lt;p>一番折腾之后，我决定把&lt;code>&amp;quot;+p&lt;/code>和&lt;code>&amp;quot;+y&lt;/code>记住…… 另外，中键似乎能直接粘贴选中文字，好像有点用…的样子？&lt;/p>
+&lt;h2 id="字体">字体&lt;/h2>
+&lt;p>可以看看&lt;a href="http://www.iplaysoft.com/top10-programming-fonts.html">这个&lt;/a>，&lt;a href="http://www.vimer.cn/2009/11/vim%EF%BC%88gvim%EF%BC%89%E7%BC%96%E7%A8%8B%E5%AD%97%E4%BD%93%E6%8E%A8%E8%8D%90.html">这个&lt;/a>，然后为了兼容性我选了最土的那个……&lt;/p>
+&lt;p>&lt;del>苹果的字体好漂亮……好想要……&lt;/del>&lt;/p>
+&lt;h2 id="输入法">输入法&lt;/h2>
+&lt;p>安完fcitx.vim之后，要用&lt;code>ctrl+alt+p&lt;/code>把&lt;strong>预编辑文字&lt;/strong>关掉&lt;/p>
+&lt;hr>
+&lt;p>折腾完这个以后，我发现这几天都没时间写东西了～vim，有缘再见～～～&lt;/p></description></item></channel></rss>

@@ -1,1 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ipv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in ipv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 09 Sep 2015 13:58:27 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description></item><item><title>为什么我的手机用不了IPV6？</title><link>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</link><pubDate>Sun, 23 Aug 2015 14:25:21 +0000</pubDate><guid>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</guid><description>背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之</description></item><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>那个……我还活着呢。 前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ipv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in ipv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 09 Sep 2015 13:58:27 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>
+&lt;p>大概上思路和&lt;a href="http://talk.withme.me/?p=51">这里&lt;/a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code>6ndp&lt;/code>,&lt;code>ndppd&lt;/code>和&lt;code>radvd&lt;/code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code>/etc/config/dhcp&lt;/code>的关键几行大概应该是这样：&lt;/p>
+&lt;pre>&lt;code># /etc/config/dhcp:
+config dhcp 'lan'
+option interface 'lan'
+option start '100'
+option limit '150'
+option leasetime '12h'
+# option dhcpv6 'server'
+option ra 'relay'
+option ndp 'relay'
+#config dhcp 'wan'
+#option interface 'wan'
+#option ignore '1'
+config dhcp 'wan6'
+option ra 'relay'
+option ndp 'relay'
+option master '1'
+&lt;/code>&lt;/pre>
+&lt;p>另外，还需要把&lt;code>luci&lt;/code>的&lt;code>interface&lt;/code>页面下的&lt;code>IPv6 ULA-Prefix&lt;/code>删掉。&lt;/p>
+&lt;p>现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启&lt;code>/etc/init.d/odhcpd&lt;/code>；不管了，我先在这里存个盘。&lt;/p>
+&lt;p>有人说relay-&amp;gt;hybrid也能成功的样子……我还没有测试过。&lt;/p>
+&lt;p>参考：&lt;/p>
+&lt;p>&lt;a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1">http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/">http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/&lt;/a>（链接不知道为什么已经失效了）&lt;/p>
+&lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>为什么我的手机用不了IPV6？</title><link>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</link><pubDate>Sun, 23 Aug 2015 14:25:21 +0000</pubDate><guid>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</guid><description>&lt;p>背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之前也是可以用的，直到某次更新ROM前后，可能是5.1出没但CM组没人更新LG G2的那段时间。&lt;/p>
+&lt;p>症状：&lt;code>ip addr&lt;/code>告诉我学校确确实实发来了（2402开头的真正的）IPV6地址，但是&lt;code>ping6 google.com&lt;/code>显示&lt;code>Network unreachable&lt;/code>，继续查找发现&lt;code>ip -6 route&lt;/code>没有默认网关，就像&lt;a href="https://code.google.com/p/android/issues/detail?id=39052">这条ISSUE&lt;/a>所说的一样。&lt;/p>
+&lt;p>解决方案：把内核参数改了就行。在su以后&lt;code>sysctl -w net.ipv6.conf.wlan0.accept_ra_defrtr=1&lt;/code>可以坚持到下次启动。&lt;/p>
+&lt;p>更详细的说明见&lt;a href="http://www.cnfy.me/2013/04/miuiwifiipv6.html">这里&lt;/a>。简单概括一下，你需要在&lt;code>/etc/sysctl.conf&lt;/code>里加上&lt;/p>
+&lt;pre>&lt;code>net.ipv6.conf.wlan0.accept_ra_defrtr=1
+&lt;/code>&lt;/pre>
+&lt;p>这一行，然后每次启动&lt;em>尽量晚的&lt;/em>以su身份运行&lt;code>sysctl -p&lt;/code>就行，因为&lt;code>/init_qcom.sh&lt;/code>运行的就挺晚的，所以直接写在&lt;code>/etc/init.d/&lt;/code>里是不行的。&lt;/p>
+&lt;p>另外，这次应该是高通不知道在想什么user space，小米只是背锅。&lt;/p>
+&lt;p>另外，虽然可能看不出来，但是这个博客的后台已经换了一个。&lt;/p></description></item><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>&lt;p>那个……我还活着呢。&lt;/p>
+&lt;p>前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树。&lt;/p>
+&lt;p>……算了过几天写一页年终总结来写这些充满腐烂气息的东西吧。今天是正经的技术环节，当然是剪切链接形式的技术。&lt;/p>
+&lt;p>那么首先是VPS，用的是便宜的&lt;a href="https://bandwagonhost.com/aff.php?aff=1656">Bandwagon&lt;/a>（搬瓦工），因为穷，只买了64M内存的版本；因为没有信用卡（穷），用不了paypal，于是去淘宝找了一家代购，入手价格29￥/年。&lt;/p>
+&lt;p>然后是shadowsocks，按照&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">这里&lt;/a>的办法安装。根据&lt;a href="http://blog.robotshell.org/2014/about-shadowsocks/">这里&lt;/a>的说法，就用python版的服务端就好。&lt;/p>
+&lt;p>为了看起来像是技术文档的样子，下面是&lt;code>/etc/shadowsocks.json&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>{
+&amp;quot;server&amp;quot;:[&amp;quot;[::0]&amp;quot;,&amp;quot;0.0.0.0&amp;quot;],
+&amp;quot;server_port&amp;quot;:443,
+&amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+&amp;quot;local_port&amp;quot;:1080,
+&amp;quot;password&amp;quot;:&amp;quot;******&amp;quot;,
+&amp;quot;timeout&amp;quot;:300,
+&amp;quot;method&amp;quot;:&amp;quot;aes-256-cfb&amp;quot;,
+&amp;quot;fast_open&amp;quot;: false
+}
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
+&lt;/blockquote>
+&lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
+&lt;blockquote>
+&lt;p>update150409:
+增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
+&lt;/blockquote>
+&lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
+&lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
+&lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>
+&lt;p>在服务器运行这个：&lt;/p>
+&lt;pre>&lt;code>wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh
+&lt;/code>&lt;/pre>
+&lt;p>然后设中转：&lt;/p>
+&lt;pre>&lt;code>iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 1 -s 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 2 -d 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 3 -j LOG --log-prefix &amp;quot;FORWARD-LOG &amp;quot;
+iptables -I FORWARD 4 -j DROP
+&lt;/code>&lt;/pre>
+&lt;p>把在&lt;code>/root/&lt;/code>生成的&lt;code>.ovpn&lt;/code>文件复制到本机，这时我发现chrome并没有自带SCP……&lt;/p>
+&lt;p>在得到的&lt;code>.ovpn&lt;/code>文件里加两行：&lt;/p>
+&lt;pre>&lt;code>socks-proxy 127.0.0.1 1080
+route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
+&lt;/code>&lt;/pre>
+&lt;p>然后去下&lt;a href="https://openvpn.net/index.php/open-source/downloads.html">客户端&lt;/a>，不要手贱点xp版本，否则今天下午就没空写作业了~&lt;/p>
+&lt;p>如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的&lt;code>.ovpn&lt;/code>文件（&lt;code>etcopenvpnserver.ovpn&lt;/code>）修改为tcp模式。&lt;/p>
+&lt;p>8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。&lt;/p></description></item></channel></rss>

@@ -1,1 +1,387 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on 林中阴影</title><link>https://blog.heysh.xyz/categories/linux/</link><description>Recent content in linux on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 29 Oct 2017 13:40:50 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/linux/feed.xml" rel="self" type="application/rss+xml"/><item><title>2017年的fontconfig设置</title><link>https://blog.heysh.xyz/2017/10/29/2017-10-29-fontconfig-for-7012/</link><pubDate>Sun, 29 Oct 2017 13:40:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/29/2017-10-29-fontconfig-for-7012/</guid><description>都7012年了linux还要自己设置字体…… 不过思源（Noto）系列字体真的是开源界的福音，字重多，字符全，自带hinting，长得还漂亮，</description></item><item><title>用nethogs实时监控每个程序的流量使用</title><link>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</link><pubDate>Fri, 13 Jan 2017 12:25:31 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</guid><description>适用于（没有cron和init的）debian 8.0 安装nethogs 创建/root/monitor.sh TIMEOUT=3600 TIMESTAMP=`date +%b_%d_%Y_%H_%M_%S` OUTPUT=/var/log/nethogs/$TIMESTAMP.log bash -ic &amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;$OUTPUT;kill 0;) | (sleep $TIMEOUT;kill 0; )&amp;#34; 3&amp;gt;&amp;amp;1 2&amp;gt;/dev/null /etc/systemd/system/nethogs.timer</description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~ 距我上次配置</description></item><item><title>为什么我的手机用不了IPV6？</title><link>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</link><pubDate>Sun, 23 Aug 2015 14:25:21 +0000</pubDate><guid>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</guid><description>背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之</description></item><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>那个……我还活着呢。 前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树</description></item><item><title>一次奇怪的firefox故障，还有，一个普通市民是怎么修电脑的</title><link>https://blog.heysh.xyz/2013/09/08/%E4%B8%80%E6%AC%A1%E5%A5%87%E6%80%AA%E7%9A%84firefox%E6%95%85%E9%9A%9C%E8%BF%98%E6%9C%89%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E5%B8%82%E6%B0%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BF%AE/</link><pubDate>Sun, 08 Sep 2013 15:22:01 +0000</pubDate><guid>https://blog.heysh.xyz/2013/09/08/%E4%B8%80%E6%AC%A1%E5%A5%87%E6%80%AA%E7%9A%84firefox%E6%95%85%E9%9A%9C%E8%BF%98%E6%9C%89%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E5%B8%82%E6%B0%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BF%AE/</guid><description>有一天，我的firefox突然挂掉了。症状是chinese language pack无效，而且pentadactyl和ABP等一部分addons全都挂掉了—</description></item><item><title>fcitx的各种小功能</title><link>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</link><pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</guid><description>首先是吐槽时间：藏得这么深谁找得着啊！！好多帅气的小功能连按钮都没有！！连快捷键都要四个按键一块按！！！ 颜文字 钥匙是分号 对，就是那个不知道怎</description></item><item><title>vim again</title><link>https://blog.heysh.xyz/2013/05/17/vim-again/</link><pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid><description>vim是一种信仰。 上面这句话应该是从某个披头散发1年没洗澡的技术大牛嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有</description></item><item><title>邪恶的Archlinux</title><link>https://blog.heysh.xyz/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</link><pubDate>Fri, 17 May 2013 07:47:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</guid><description>前几天archlinux更新后无法启动，提示”/bin/systemd not exist”，于是乖乖等官网说明，顺理成章的没等到。于是开始goog</description></item><item><title>如果你像我一样主力使用xfce但又觉得GNOME3也许会变得好一点于是安装之后才发现果然还是无法接受</title><link>https://blog.heysh.xyz/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</link><pubDate>Fri, 29 Mar 2013 07:21:48 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</guid><description>这时全部删除GNOME却发现xfce变得特别丑陋的原因是GNOME-settings-daemon与xfdsetting冲突于是后者被自动关</description></item><item><title>Texlive 在archlinux上的安装，以及中文字体的设置</title><link>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link><pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid><description>texmacs已经不能满足我了！ 其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！ 然后发现大魔王令人绝望的实力 然后用S/L大法加</description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>TexMacs可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\ 其优势： 像TEX一样的排版，结构和内容</description></item><item><title>当我画连杆时我想到什么——几何画板，geogebra及其它</title><link>https://blog.heysh.xyz/2012/10/04/%E5%BD%93%E6%88%91%E7%94%BB%E8%BF%9E%E6%9D%86%E6%97%B6%E6%88%91%E6%83%B3%E5%88%B0%E4%BB%80%E4%B9%88-%E6%90%81%E6%B5%85%E7%9A%84%E8%AE%A1%E5%88%92%E5%87%A0%E4%BD%95%E7%94%BB/</link><pubDate>Thu, 04 Oct 2012 02:32:15 +0000</pubDate><guid>https://blog.heysh.xyz/2012/10/04/%E5%BD%93%E6%88%91%E7%94%BB%E8%BF%9E%E6%9D%86%E6%97%B6%E6%88%91%E6%83%B3%E5%88%B0%E4%BB%80%E4%B9%88-%E6%90%81%E6%B5%85%E7%9A%84%E8%AE%A1%E5%88%92%E5%87%A0%E4%BD%95%E7%94%BB/</guid><description>有没有专业画连杆的软件？没有，原因是这样的要求过于小众，而且有许多功能更加丰富的软件可以替代。\ 前几天一直想要实现一个专业画连杆的软件，当时</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on 林中阴影</title><link>https://blog.heysh.xyz/categories/linux/</link><description>Recent content in linux on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 29 Oct 2017 13:40:50 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/linux/feed.xml" rel="self" type="application/rss+xml"/><item><title>2017年的fontconfig设置</title><link>https://blog.heysh.xyz/2017/10/29/2017-10-29-fontconfig-for-7012/</link><pubDate>Sun, 29 Oct 2017 13:40:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/29/2017-10-29-fontconfig-for-7012/</guid><description>&lt;p>都7012年了linux还要自己设置字体……&lt;/p>
+&lt;p>不过思源（Noto）系列字体真的是开源界的福音，字重多，字符全，自带hinting，长得还漂亮，换上以后整个系统都显得高级起来了～&lt;/p>
+&lt;p>为了获得“高级感”，首先你需要安装&lt;code>noto-fonts&lt;/code>和&lt;code>noto-fonts-cjk&lt;/code>。因为是7012年，中文字体里自带的英文字符也不算太丑，所以不需要像&lt;a href="https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_Font_Configurations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Windows.C2.AE.E6.98.BE.E7.A4.BA.E6.95.88.E6.9E.9C.E7.9A.84.E5.AD.97.E4.BD.93.E5.8F.82.E8.80.83.E9.85.8D.E7.BD.AE">ArchWiki&lt;/a>和&lt;a href="https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/">这篇博文&lt;/a>一样，分别定义中文和英文。全用Noto就好！（而且，分别定义的方法在chrome上有些小问题……）&lt;/p>
+&lt;p>&lt;code>~/.config/fontconfig/fonts.conf&lt;/code>的内容附在&lt;a href="https://gist.github.com/heyeshuang/03d69c1823b8cf769819d36b34f34f71">这里&lt;/a>，保存之后用&lt;code>fc-cache --force --verbose&lt;/code>更新字体缓存就行了。&lt;/p>
+&lt;h2 id="接下来是截图时间">接下来是截图时间：&lt;/h2>
+&lt;figure>
+&lt;img src="https://blog.heysh.xyz/font/5.png" width="50%"/> &lt;figcaption>
+&lt;h4>这才是真正的宋体&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="https://blog.heysh.xyz/font/3.png" width="50%"/> &lt;figcaption>
+&lt;h4>在正文也毫无压力&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="https://blog.heysh.xyz/font/4.png" width="50%"/> &lt;figcaption>
+&lt;h4>还有这个light字重&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>题外话，中文可用的字体实在是太少了。因为&lt;code>SimSun&lt;/code>太渣，windows下的中文连个可用的&lt;code>serif&lt;/code>字体都没有，每天只能对着呆板的雅黑干瞪眼……&lt;/p></description></item><item><title>用nethogs实时监控每个程序的流量使用</title><link>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</link><pubDate>Fri, 13 Jan 2017 12:25:31 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</guid><description>&lt;p>适用于（没有cron和init的）debian 8.0&lt;/p>
+&lt;ul>
+&lt;li>安装nethogs&lt;/li>
+&lt;li>创建&lt;code>/root/monitor.sh&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">3600&lt;/span>
+&lt;span style="color:#033">TIMESTAMP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>date +%b_%d_%Y_%H_%M_%S&lt;span style="color:#c30">`&lt;/span>
+&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>/var/log/nethogs/&lt;span style="color:#033">$TIMESTAMP&lt;/span>.log
+bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">;kill 0;) | (sleep &lt;/span>&lt;span style="color:#033">$TIMEOUT&lt;/span>&lt;span style="color:#c30">;kill 0; )&amp;#34;&lt;/span> 3&amp;gt;&amp;amp;&lt;span style="color:#f60">1&lt;/span> 2&amp;gt;/dev/null
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>/etc/systemd/system/nethogs.timer&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs Daemon
+&lt;span style="color:#555">[&lt;/span>Timer&lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#033">OnBootSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1min
+&lt;span style="color:#033">OnUnitActiveSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1h
+&lt;span style="color:#555">[&lt;/span>Install&lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#033">WantedBy&lt;/span>&lt;span style="color:#555">=&lt;/span>timers.target
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>/etc/systemd/system/nethogs.service&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs run
+&lt;span style="color:#555">[&lt;/span>Service&lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#033">Type&lt;/span>&lt;span style="color:#555">=&lt;/span>oneshot
+&lt;span style="color:#033">ExecStart&lt;/span>&lt;span style="color:#555">=&lt;/span>/root/monitor.sh
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>查看使用情况用&lt;a href="https://github.com/boopathi/nethogs-parser">Nethogs parser&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">./hogs -type&lt;span style="color:#555">=&lt;/span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~&lt;/p>
+&lt;p>距我上次配置shadowsocks服务端（2015.1）已经有一年半了，这次安装可以把上次没有加入的特性通通带上：&lt;/p>
+&lt;ul>
+&lt;li>一次性认证，好像是当时和SSR打的时候加入的特性&lt;/li>
+&lt;li>chacha20，上次没加好像是因为懒&lt;/li>
+&lt;li>KCPtun，既然现在android客户端带上了这个功能，那就也装上吧&lt;/li>
+&lt;/ul>
+&lt;p>大概会稍微快一些吧……&lt;/p>
+&lt;p>对了，顺便配个iptables，象征性地防守下。&lt;/p>
+&lt;hr>
+&lt;p>update 161122:&lt;/p>
+&lt;p>象征性的防守被漫不经心的进攻给破掉了，于是增加了一些稍微认真一点的防守：&lt;/p>
+&lt;ul>
+&lt;li>禁用root登录和密码登录，顺便配置了sudo；&lt;/li>
+&lt;li>用ufw代替直接配置iptables；&lt;/li>
+&lt;li>fail2ban（后来发现debian 8带的0.8版本并不支持debian 8的journalctl……interesting）&lt;/li>
+&lt;/ul>
+&lt;p>最主要的，换了一个ip地址&lt;/p></description></item><item><title>为什么我的手机用不了IPV6？</title><link>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</link><pubDate>Sun, 23 Aug 2015 14:25:21 +0000</pubDate><guid>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/</guid><description>&lt;p>背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之前也是可以用的，直到某次更新ROM前后，可能是5.1出没但CM组没人更新LG G2的那段时间。&lt;/p>
+&lt;p>症状：&lt;code>ip addr&lt;/code>告诉我学校确确实实发来了（2402开头的真正的）IPV6地址，但是&lt;code>ping6 google.com&lt;/code>显示&lt;code>Network unreachable&lt;/code>，继续查找发现&lt;code>ip -6 route&lt;/code>没有默认网关，就像&lt;a href="https://code.google.com/p/android/issues/detail?id=39052">这条ISSUE&lt;/a>所说的一样。&lt;/p>
+&lt;p>解决方案：把内核参数改了就行。在su以后&lt;code>sysctl -w net.ipv6.conf.wlan0.accept_ra_defrtr=1&lt;/code>可以坚持到下次启动。&lt;/p>
+&lt;p>更详细的说明见&lt;a href="http://www.cnfy.me/2013/04/miuiwifiipv6.html">这里&lt;/a>。简单概括一下，你需要在&lt;code>/etc/sysctl.conf&lt;/code>里加上&lt;/p>
+&lt;pre>&lt;code>net.ipv6.conf.wlan0.accept_ra_defrtr=1
+&lt;/code>&lt;/pre>
+&lt;p>这一行，然后每次启动&lt;em>尽量晚的&lt;/em>以su身份运行&lt;code>sysctl -p&lt;/code>就行，因为&lt;code>/init_qcom.sh&lt;/code>运行的就挺晚的，所以直接写在&lt;code>/etc/init.d/&lt;/code>里是不行的。&lt;/p>
+&lt;p>另外，这次应该是高通不知道在想什么user space，小米只是背锅。&lt;/p>
+&lt;p>另外，虽然可能看不出来，但是这个博客的后台已经换了一个。&lt;/p></description></item><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>&lt;p>那个……我还活着呢。&lt;/p>
+&lt;p>前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树。&lt;/p>
+&lt;p>……算了过几天写一页年终总结来写这些充满腐烂气息的东西吧。今天是正经的技术环节，当然是剪切链接形式的技术。&lt;/p>
+&lt;p>那么首先是VPS，用的是便宜的&lt;a href="https://bandwagonhost.com/aff.php?aff=1656">Bandwagon&lt;/a>（搬瓦工），因为穷，只买了64M内存的版本；因为没有信用卡（穷），用不了paypal，于是去淘宝找了一家代购，入手价格29￥/年。&lt;/p>
+&lt;p>然后是shadowsocks，按照&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">这里&lt;/a>的办法安装。根据&lt;a href="http://blog.robotshell.org/2014/about-shadowsocks/">这里&lt;/a>的说法，就用python版的服务端就好。&lt;/p>
+&lt;p>为了看起来像是技术文档的样子，下面是&lt;code>/etc/shadowsocks.json&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>{
+&amp;quot;server&amp;quot;:[&amp;quot;[::0]&amp;quot;,&amp;quot;0.0.0.0&amp;quot;],
+&amp;quot;server_port&amp;quot;:443,
+&amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+&amp;quot;local_port&amp;quot;:1080,
+&amp;quot;password&amp;quot;:&amp;quot;******&amp;quot;,
+&amp;quot;timeout&amp;quot;:300,
+&amp;quot;method&amp;quot;:&amp;quot;aes-256-cfb&amp;quot;,
+&amp;quot;fast_open&amp;quot;: false
+}
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
+&lt;/blockquote>
+&lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
+&lt;blockquote>
+&lt;p>update150409:
+增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
+&lt;/blockquote>
+&lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
+&lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
+&lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>
+&lt;p>在服务器运行这个：&lt;/p>
+&lt;pre>&lt;code>wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh
+&lt;/code>&lt;/pre>
+&lt;p>然后设中转：&lt;/p>
+&lt;pre>&lt;code>iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 1 -s 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 2 -d 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 3 -j LOG --log-prefix &amp;quot;FORWARD-LOG &amp;quot;
+iptables -I FORWARD 4 -j DROP
+&lt;/code>&lt;/pre>
+&lt;p>把在&lt;code>/root/&lt;/code>生成的&lt;code>.ovpn&lt;/code>文件复制到本机，这时我发现chrome并没有自带SCP……&lt;/p>
+&lt;p>在得到的&lt;code>.ovpn&lt;/code>文件里加两行：&lt;/p>
+&lt;pre>&lt;code>socks-proxy 127.0.0.1 1080
+route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
+&lt;/code>&lt;/pre>
+&lt;p>然后去下&lt;a href="https://openvpn.net/index.php/open-source/downloads.html">客户端&lt;/a>，不要手贱点xp版本，否则今天下午就没空写作业了~&lt;/p>
+&lt;p>如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的&lt;code>.ovpn&lt;/code>文件（&lt;code>etcopenvpnserver.ovpn&lt;/code>）修改为tcp模式。&lt;/p>
+&lt;p>8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。&lt;/p></description></item><item><title>一次奇怪的firefox故障，还有，一个普通市民是怎么修电脑的</title><link>https://blog.heysh.xyz/2013/09/08/%E4%B8%80%E6%AC%A1%E5%A5%87%E6%80%AA%E7%9A%84firefox%E6%95%85%E9%9A%9C%E8%BF%98%E6%9C%89%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E5%B8%82%E6%B0%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BF%AE/</link><pubDate>Sun, 08 Sep 2013 15:22:01 +0000</pubDate><guid>https://blog.heysh.xyz/2013/09/08/%E4%B8%80%E6%AC%A1%E5%A5%87%E6%80%AA%E7%9A%84firefox%E6%95%85%E9%9A%9C%E8%BF%98%E6%9C%89%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E5%B8%82%E6%B0%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BF%AE/</guid><description>&lt;p>有一天，我的firefox突然挂掉了。症状是chinese language pack无效，而且pentadactyl和ABP等一部分addons全都挂掉了——但是disable-enable之后又可以用，而且另外一些Addons居然好好的……&lt;/p>
+&lt;p>（中略）&lt;/p>
+&lt;h2 id="解决">解决：&lt;/h2>
+&lt;p>用df检查磁盘空间，然后把&lt;code>/&lt;/code>目录最大的文件夹干掉。顺便推荐一个软件：&lt;code>xdiskusage&lt;/code>&lt;/p>
+&lt;hr>
+&lt;h2 id="没用的部分">没用的部分：&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>重新安装firefox（因为吃过好几次&lt;code>yaourt&lt;/code>的亏）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>无效。上Google，查资料，关键词”firefox 23 addon enable|disable”之类&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>尝试各种方法。无效&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>备份&lt;code>~/.mozilla/firefox/&amp;lt;乱码&amp;gt;.default&lt;/code>和&lt;code>profile.ini&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>（愤怒地）reset profile&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>问题没有解决&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>怀疑为权限问题，观察权限无异常。曾想递归把整个profile目录改为777~~（beast mode）~~，然后（用优秀的涵养）忍住了&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>干掉整个&lt;code>~/.mozilla/firefox/&lt;/code>目录&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>出现欢迎界面（英文）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>高兴地关闭Firefox，然后发现无法再次打开&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>尝试在terminal中打开，没有输出可用信息。顺便推荐&lt;code>tilda&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>观察&lt;code>\home&lt;/code>目录，剩余空间2.0G&lt;br>
+&amp;lt;–最接近真相的位置，谁叫文件管理器（推荐&lt;code>spaceFM&lt;/code>）看磁盘空间这么容易呢&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>到备份的&lt;code>&amp;lt;乱码&amp;gt;.default&lt;/code>文件夹乱翻，找到一堆log，其中&lt;code>extensions.log&lt;/code>有一段是这样的：&lt;/p>
+&lt;p>2013-09-07 14:04:58 ERROR addons.xpi-utils: SQL error 13: database
+or disk is full at resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js:204&lt;br>
+2013-09-07 14:04:58 ERROR addons.xpi: Error processing file changes:
+[Exception… “Component returned failure code: 0x80004005
+(NS_ERROR_FAILURE) [mozIStorageStatement.execute]” nsresult:
+“0x80004005 (NS_ERROR_FAILURE)” location: “JS frame ::
+resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js ::
+XPIDB_rollbackTransaction :: line 457” data: no] at
+resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js:457&lt;br>
+2013-09-07 14:04:58 ERROR addons.xpi: Error during startup file
+checks, rolling back any database changes: [Exception… “Component
+returned failure code: 0x80004005 (NS_ERROR_FAILURE)
+[mozIStorageStatement.execute]” nsresult: “0x80004005
+(NS_ERROR_FAILURE)” location: “JS frame ::
+resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js ::
+XPIDB_commitTransaction :: line 442” data: no] at
+resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js:442&lt;br>
+2013-09-07 14:04:58 ERROR addons.manager: Exception calling provider
+startup: [Exception… “Component returned failure code: 0x80004005
+(NS_ERROR_FAILURE) [mozIStorageStatement.execute]” nsresult:
+“0x80004005 (NS_ERROR_FAILURE)” location: “JS frame ::
+resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js ::
+XPIDB_rollbackTransaction :: line 457” data: no] at
+resource://gre/modules/XPIProvider.jsm -&amp;gt;
+resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>新关键词GET，查询结果乱七八糟。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>怀疑sqlite有上限：&lt;strong>database &lt;del>or disk&lt;/del> is full&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对于（不会SQL）的一般小市民，再次查询，未果&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>注意到脑内自动添加的删除线，删除删除线&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>跳至解决部分&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="总结">总结：&lt;/h2>
+&lt;ul>
+&lt;li>用英文描述问题&lt;/li>
+&lt;li>上Google&lt;/li>
+&lt;li>查 log&lt;/li>
+&lt;li>Google that log&lt;/li>
+&lt;li>意识到以上步骤其实很有可能没用&lt;/li>
+&lt;li>静静等待灵感的降临&lt;/li>
+&lt;li>&lt;em>(bonus)&lt;/em> 不要安装 Matlab，特别是在&lt;code>\&lt;/code>文件夹只有30G的情况下&lt;/li>
+&lt;/ul></description></item><item><title>fcitx的各种小功能</title><link>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</link><pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</guid><description>&lt;p>首先是吐槽时间：藏得这么深谁找得着啊！！好多帅气的小功能连按钮都没有！！连快捷键都要四个按键一块按！！！&lt;/p>
+&lt;h1 id="颜文字">颜文字&lt;/h1>
+&lt;blockquote>
+&lt;p>钥匙是分号&lt;/p>
+&lt;/blockquote>
+&lt;p>对，就是那个不知道怎么回事的“快速输入”。比如说，输入&lt;code>;smile&lt;/code>就是(・∀・)，什么你说你看不懂英文？到&lt;a href="https://fcitx-im.org/wiki/QuickPhrase_Emoji">这里&lt;/a>，复制到一个文件里，然后导入就行了～&lt;/p>
+&lt;p>&lt;img src="%5C11.png" alt="为什么不直接集成呢？谁知道呢……">&lt;/p>
+&lt;h1 id="输入unicode">输入unicode&lt;/h1>
+&lt;blockquote>
+&lt;p>Ctrl+Alt+Shift+U&lt;/p>
+&lt;/blockquote>
+&lt;p>快跑啊，野生的四按键快捷键出现啦o(≧口≦)o&lt;/p>
+&lt;p>有了这个，&lt;del>某痞子的:│▌就可以打出来了&lt;/del>，输入&lt;code>male&lt;/code>就可以找到可♂口的汉⚣子哦～&lt;/p>
+&lt;p>至于上面那个任务，好像还是用&lt;code>charmap&lt;/code>或者&lt;code>gucharmap&lt;/code>比较妥当……&lt;/p>
+&lt;h1 id="更多可口的">更♂多♂可♂口♂的♂♂♂♂&lt;/h1>
+&lt;p>这时就要用到fcitx的&lt;a href="https://github.com/felixonmars/fcitx-tsundere">蹭得累插件&lt;/a>了～还有菊҉花҉体҉放送哦～～&lt;/p></description></item><item><title>vim again</title><link>https://blog.heysh.xyz/2013/05/17/vim-again/</link><pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid><description>&lt;blockquote>
+&lt;p>vim是一种信仰。&lt;/p>
+&lt;/blockquote>
+&lt;p>上面这句话应该是从某个披头散发1年没洗澡的&lt;em>技术大牛&lt;/em>嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有feel。在下面再带个双语字幕就更好了，英文就写”you are all 渣渣”就行…… 咳咳，跑题了。&lt;/p>
+&lt;hr>
+&lt;p>好吧那么我为什么又开始折腾vim了呢？因为eclipse太水了……&lt;/p>
+&lt;p>其实我本来是有一个&lt;a href="https://github.com/amix/vimrc">vimrc&lt;/a>来着，号称是“超级无敌”之类，不过在折腾了两个插件以后，我觉得还是对自己好一点吧……&lt;/p>
+&lt;p>于是我找到了&lt;a href="https://github.com/humiaozuzu/dot-vimrc">这个&lt;/a>，基本开箱即用，不过因为面对高贵的mac，linux用户需要一点点&lt;a href="https://github.com/heyeshuang/dot-vimrc">修改&lt;/a>。&lt;/p>
+&lt;p>//谁能告诉我linux下command键用哪个替代？&lt;/p>
+&lt;p>安装之后要装ctags，各种补全库，然后 &lt;code>:BundleInstall&lt;/code>&lt;/p>
+&lt;p>用vim的时候还有一些小问题：&lt;/p>
+&lt;h2 id="剪贴板">剪贴板&lt;/h2>
+&lt;p>一番折腾之后，我决定把&lt;code>&amp;quot;+p&lt;/code>和&lt;code>&amp;quot;+y&lt;/code>记住…… 另外，中键似乎能直接粘贴选中文字，好像有点用…的样子？&lt;/p>
+&lt;h2 id="字体">字体&lt;/h2>
+&lt;p>可以看看&lt;a href="http://www.iplaysoft.com/top10-programming-fonts.html">这个&lt;/a>，&lt;a href="http://www.vimer.cn/2009/11/vim%EF%BC%88gvim%EF%BC%89%E7%BC%96%E7%A8%8B%E5%AD%97%E4%BD%93%E6%8E%A8%E8%8D%90.html">这个&lt;/a>，然后为了兼容性我选了最土的那个……&lt;/p>
+&lt;p>&lt;del>苹果的字体好漂亮……好想要……&lt;/del>&lt;/p>
+&lt;h2 id="输入法">输入法&lt;/h2>
+&lt;p>安完fcitx.vim之后，要用&lt;code>ctrl+alt+p&lt;/code>把&lt;strong>预编辑文字&lt;/strong>关掉&lt;/p>
+&lt;hr>
+&lt;p>折腾完这个以后，我发现这几天都没时间写东西了～vim，有缘再见～～～&lt;/p></description></item><item><title>邪恶的Archlinux</title><link>https://blog.heysh.xyz/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</link><pubDate>Fri, 17 May 2013 07:47:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</guid><description>&lt;p>前几天archlinux更新后无法启动，提示”/bin/systemd not exist”，于是乖乖等官网说明，顺理成章的没等到。于是开始google，在g+发现一条线索：那群变态好像把&lt;code>/bin/systemd&lt;/code>移到&lt;code>/usr/lib/systemd/systemd&lt;/code>里了……\&lt;/p>
+&lt;p>于是解决方案是：在grub按e，把&lt;code>/bin/systemd&lt;/code>换成&lt;code>/usr/lib/systemd/systemd&lt;/code>就行了；进来之后，还要改&lt;code>/etc/default/grub&lt;/code>，以及&lt;code>grub-mkconfig&lt;/code>……\&lt;/p>
+&lt;p>所以说你们折腾这个到底是为什么呀？觉得系统太稳定还是想玩弄可怜的系统管理员？？\&lt;/p>
+&lt;p>用一张图表达我的感想：&lt;/p>
+&lt;p>&lt;img src="https://blog.heysh.xyz/evil.png" alt="evil">&lt;/p></description></item><item><title>如果你像我一样主力使用xfce但又觉得GNOME3也许会变得好一点于是安装之后才发现果然还是无法接受</title><link>https://blog.heysh.xyz/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</link><pubDate>Fri, 29 Mar 2013 07:21:48 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</guid><description>&lt;p>这时全部删除GNOME却发现xfce变得特别丑陋的原因是GNOME-settings-daemon与xfdsetting冲突于是后者被自动关闭了。只要重新启动xfdsetting，然后去把g-s-d的自启关掉就好。\&lt;/p>
+&lt;p>题外话，lightdm设置好的话十分nice，有空放一份配置文件上来。&lt;/p></description></item><item><title>Texlive 在archlinux上的安装，以及中文字体的设置</title><link>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link><pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid><description>&lt;blockquote>
+&lt;p>texmacs已经不能满足我了！&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>然后发现大魔王令人绝望的实力&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>结果我还是不会用tex&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>所以我下了lyx&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>#挂科预感up（大）#&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>我说这个又没人爱听&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>反正也不会有人来&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>fin&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>骗你的&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>其实我一开始以为直接pacman就好了&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>但是后来我发现自己太甜了&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>于是我就下了texlive的镜像&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>后来发现直接安可能也可以？？&lt;/p>
+&lt;/blockquote>
+&lt;p>按照&lt;a href="http://www.road2stat.com/cn/tex/archtex.html">这里&lt;/a>的安装方式\&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">su –
+wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
+mkdir /mnt/tex
+mount -o loop texlive2012.iso /mnt/tex/
+&lt;span style="color:#366">cd&lt;/span> /mnt/tex/
+./install-tl
+vim /etc/profile &lt;span style="color:#09f;font-style:italic">#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……&lt;/span>
+tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+tlmgr update –self
+tlmgr update –all
+umount /mnt/tex
+rm -rf /mnt/tex
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后发现没有字体……&lt;/p>
+&lt;p>然后在&lt;a href="http://tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf">这里&lt;/a>发现要：&lt;/p>
+&lt;blockquote>
+&lt;p>将 texlive-fontconfig.conf 文件复制到
+/etc/fonts/conf.d/09-texlive.conf，
+运行 fc-cache -fsv 以root的名义&lt;/p>
+&lt;/blockquote>
+&lt;p>接下来xetex就会提示你缺少字体了，是不是很高兴？&lt;/p>
+&lt;p>——才怪咧！&lt;/p>
+&lt;p>然后，你要用yaourt安装ttf-ms-fonts-zh_cn这个包——&lt;/p>
+&lt;p>然后fc-list|grep sim和fc-list|grep SIM各一次——&lt;/p>
+&lt;p>然后&lt;code>sudo vim /usr/local/texlive/2012/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def&lt;/code>&lt;/p>
+&lt;p>把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p>
+&lt;p>编译用例：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-tex" data-lang="tex">&lt;span style="color:#069;font-weight:bold">\documentclass&lt;/span>&lt;span style="color:#366">{&lt;/span>ctexart&lt;span style="color:#366">}&lt;/span>
+&lt;span style="color:#069;font-weight:bold">\begin&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
+为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
+&lt;span style="color:#069;font-weight:bold">\end&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>用的编译命令是xelatex……&lt;/p>
+&lt;p>然后……要是提示缺少&lt;code>Adobe Song Std&lt;/code>什么的，应该&lt;code>yaourt acroread-font-chinese-simplified&lt;/code>就行了吧……&lt;/p>
+&lt;p>啊啊，从这个过程里，我好像看到了我短暂的人生……越是精于算计，就越可能出现意想不到的状况……&lt;/p>
+&lt;blockquote>
+&lt;p>老子不做人了！TeTe！&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>最后祝你身体健康，再见&lt;/p>
+&lt;/blockquote></description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>&lt;p>&lt;a href="http://www.texmacs.org/" title="TexMacs">TexMacs&lt;/a>可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\&lt;/p>
+&lt;p>其优势：&lt;/p>
+&lt;ul>
+&lt;li>像TEX一样的排版，结构和内容分离&lt;/li>
+&lt;li>比TEX更加简单（很多）的操作&lt;/li>
+&lt;li>插入代码不会变形&lt;/li>
+&lt;li>公式漂亮&lt;/li>
+&lt;li>内置gnuplot，matlab，maxima接口，可以方便的画图，推公式，算算术，直接输入到文档中&lt;/li>
+&lt;/ul>
+&lt;p>然而，作为一个（不挣钱的）开源软件，要用上也要下一番功夫。&lt;/p>
+&lt;p>对于windows，推荐（向谁？）使用itexmacs，对中文支持据说好了很多？&lt;/p>
+&lt;p>对于archlinux，community源和AUR上的包都太旧了，似乎无法正常输入中文的样子。不过这个bug已经解决，推荐直接编译安装SVN代码（仓库：svn://svn.savannah.gnu.org/texmacs/trunk/src）\&lt;/p>
+&lt;p>本人写了一个pkgbuild传到了AUR上，不过因为是第一次（羞），可能会出现“rm -rf /”的餐具……\&lt;/p>
+&lt;p>&lt;del>对于ubuntu，推荐换成archlinux&lt;/del>&lt;/p>
+&lt;p>程序自带的手册很详细，不过因为中文化好像出了一些小问题，那么可以直接去&lt;a href="http://www.texmacs.org/tmweb/manual/web-manual.en.html">http://www.texmacs.org/tmweb/manual/web-manual.en.html&lt;/a>\&lt;/p>
+&lt;p>关于字体，见http://www.texmacs.org/tmweb/download/fonts.en.html ，大概就是要下一个字体放到～/.TeXmacs/fonts/truetype里面然后运行&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">texmacs --delete-font-cache &amp;amp;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>亲测Simsun，wqy可用～&lt;/p>
+&lt;p>关于插入图片，似乎在win下只能插入png的样子，然后更改宽高还要写成”800px”，谁知道还要加单位啊……&lt;/p>
+&lt;p>至今尚未解决的问题：linux下一导出pdf就crash，好像只对中文有效，自带help无压力，什么时候我去报个bug……&lt;/p></description></item><item><title>当我画连杆时我想到什么——几何画板，geogebra及其它</title><link>https://blog.heysh.xyz/2012/10/04/%E5%BD%93%E6%88%91%E7%94%BB%E8%BF%9E%E6%9D%86%E6%97%B6%E6%88%91%E6%83%B3%E5%88%B0%E4%BB%80%E4%B9%88-%E6%90%81%E6%B5%85%E7%9A%84%E8%AE%A1%E5%88%92%E5%87%A0%E4%BD%95%E7%94%BB/</link><pubDate>Thu, 04 Oct 2012 02:32:15 +0000</pubDate><guid>https://blog.heysh.xyz/2012/10/04/%E5%BD%93%E6%88%91%E7%94%BB%E8%BF%9E%E6%9D%86%E6%97%B6%E6%88%91%E6%83%B3%E5%88%B0%E4%BB%80%E4%B9%88-%E6%90%81%E6%B5%85%E7%9A%84%E8%AE%A1%E5%88%92%E5%87%A0%E4%BD%95%E7%94%BB/</guid><description>&lt;p>有没有专业画连杆的软件？没有，原因是这样的要求过于小众，而且有许多功能更加丰富的软件可以替代。\&lt;/p>
+&lt;p>前几天一直想要实现一个专业画连杆的软件，当时考虑用html5
+canvas实现（太复杂的我都不会），还专门找了物理引擎——&lt;a href="http://box2d-js.sourceforge.net/index2.html" title="box2d-js版">box2DJS&lt;/a>（注意首页上的第二个例子）。然后发现自己又开始做无用功了，几何画板（和开源实现GeoGebra）完全能够实现我的要求。\&lt;/p>
+&lt;p>使用的时候只要注意主从关系就好。效果大概是这样的：&lt;/p>
+&lt;p>&lt;img src="https://blog.heysh.xyz/%E8%BF%9E%E6%9D%86.gif" alt="连杆">&lt;/p></description></item></channel></rss>

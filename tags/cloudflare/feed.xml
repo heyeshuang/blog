@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloudflare on 林中阴影</title><link>https://blog.heysh.xyz/tags/cloudflare/</link><description>Recent content in Cloudflare on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 05 Jul 2018 21:41:42 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/cloudflare/feed.xml" rel="self" type="application/rss+xml"/><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloudflare on 林中阴影</title><link>https://blog.heysh.xyz/tags/cloudflare/</link><description>Recent content in Cloudflare on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 05 Jul 2018 21:41:42 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/cloudflare/feed.xml" rel="self" type="application/rss+xml"/><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>
+&lt;p>之前我用的是&lt;a href="https://lifely.today/2015/05/%E7%82%BA-cloudflare-%E8%A8%AD%E5%AE%9A%E5%8B%95%E6%85%8B-dns-ddns/">这里&lt;/a>的方法，不过最近cloudflare更新了&lt;a href="https://api.cloudflare.com/">第四代API&lt;/a>，那个方法已经失效。于是水博文的机会来了。&lt;/p>
+&lt;p>原料：&lt;/p>
+&lt;ol>
+&lt;li>一个域名，并用Cloudflare管理&lt;/li>
+&lt;li>一台经常开着的，有计划任务或者cron，可以运行curl的电脑&lt;/li>
+&lt;li>（可选）如果API地址被屏蔽的话，可能需要可用的代理&lt;/li>
+&lt;/ol>
+&lt;p>步骤：&lt;/p>
+&lt;ul>
+&lt;li>去&lt;a href="https://dash.cloudflare.com/">https://dash.cloudflare.com/&lt;/a>找到你域名的&lt;code>zone ID&lt;/code>并新建一个&lt;code>API_KEY&lt;/code>。&lt;/li>
+&lt;li>新建一条子域名的A记录，IP写什么都行。&lt;/li>
+&lt;li>查询这条记录的&lt;code>RECORD_ID&lt;/code>，在终端运行：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>-x&lt;/code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p>
+&lt;ul>
+&lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
+&lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#c30">`&lt;/span>
+&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#c30">`&lt;/span>
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span>
+&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip.txt
+&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
+*/120 * * * * /path/of/your/script.sh
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
+&lt;hr>
+&lt;p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。&lt;/p></description></item></channel></rss>

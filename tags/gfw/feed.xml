@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GFW on 林中阴影</title><link>https://blog.heysh.xyz/tags/gfw/</link><description>Recent content in GFW on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 07 Jan 2015 15:05:56 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/gfw/feed.xml" rel="self" type="application/rss+xml"/><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>那个……我还活着呢。 前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GFW on 林中阴影</title><link>https://blog.heysh.xyz/tags/gfw/</link><description>Recent content in GFW on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 07 Jan 2015 15:05:56 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/gfw/feed.xml" rel="self" type="application/rss+xml"/><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocksipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>&lt;p>那个……我还活着呢。&lt;/p>
+&lt;p>前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树。&lt;/p>
+&lt;p>……算了过几天写一页年终总结来写这些充满腐烂气息的东西吧。今天是正经的技术环节，当然是剪切链接形式的技术。&lt;/p>
+&lt;p>那么首先是VPS，用的是便宜的&lt;a href="https://bandwagonhost.com/aff.php?aff=1656">Bandwagon&lt;/a>（搬瓦工），因为穷，只买了64M内存的版本；因为没有信用卡（穷），用不了paypal，于是去淘宝找了一家代购，入手价格29￥/年。&lt;/p>
+&lt;p>然后是shadowsocks，按照&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">这里&lt;/a>的办法安装。根据&lt;a href="http://blog.robotshell.org/2014/about-shadowsocks/">这里&lt;/a>的说法，就用python版的服务端就好。&lt;/p>
+&lt;p>为了看起来像是技术文档的样子，下面是&lt;code>/etc/shadowsocks.json&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>{
+&amp;quot;server&amp;quot;:[&amp;quot;[::0]&amp;quot;,&amp;quot;0.0.0.0&amp;quot;],
+&amp;quot;server_port&amp;quot;:443,
+&amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+&amp;quot;local_port&amp;quot;:1080,
+&amp;quot;password&amp;quot;:&amp;quot;******&amp;quot;,
+&amp;quot;timeout&amp;quot;:300,
+&amp;quot;method&amp;quot;:&amp;quot;aes-256-cfb&amp;quot;,
+&amp;quot;fast_open&amp;quot;: false
+}
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
+&lt;/blockquote>
+&lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
+&lt;blockquote>
+&lt;p>update150409:
+增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
+&lt;/blockquote>
+&lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
+&lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
+&lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>
+&lt;p>在服务器运行这个：&lt;/p>
+&lt;pre>&lt;code>wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh
+&lt;/code>&lt;/pre>
+&lt;p>然后设中转：&lt;/p>
+&lt;pre>&lt;code>iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 1 -s 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 2 -d 10.8.0.0/24 -j ACCEPT
+iptables -I FORWARD 3 -j LOG --log-prefix &amp;quot;FORWARD-LOG &amp;quot;
+iptables -I FORWARD 4 -j DROP
+&lt;/code>&lt;/pre>
+&lt;p>把在&lt;code>/root/&lt;/code>生成的&lt;code>.ovpn&lt;/code>文件复制到本机，这时我发现chrome并没有自带SCP……&lt;/p>
+&lt;p>在得到的&lt;code>.ovpn&lt;/code>文件里加两行：&lt;/p>
+&lt;pre>&lt;code>socks-proxy 127.0.0.1 1080
+route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
+&lt;/code>&lt;/pre>
+&lt;p>然后去下&lt;a href="https://openvpn.net/index.php/open-source/downloads.html">客户端&lt;/a>，不要手贱点xp版本，否则今天下午就没空写作业了~&lt;/p>
+&lt;p>如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的&lt;code>.ovpn&lt;/code>文件（&lt;code>etcopenvpnserver.ovpn&lt;/code>）修改为tcp模式。&lt;/p>
+&lt;p>8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。&lt;/p></description></item></channel></rss>

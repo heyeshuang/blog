@@ -1,1 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>paas on 林中阴影</title><link>https://blog.heysh.xyz/tags/paas/</link><description>Recent content in paas on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 29 Mar 2013 08:47:24 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/paas/feed.xml" rel="self" type="application/rss+xml"/><item><title>我的云上逃亡，或，google reader的替代品</title><link>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link><pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid><description>之前也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>paas on 林中阴影</title><link>https://blog.heysh.xyz/tags/paas/</link><description>Recent content in paas on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 29 Mar 2013 08:47:24 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/paas/feed.xml" rel="self" type="application/rss+xml"/><item><title>我的云上逃亡，或，google reader的替代品</title><link>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link><pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/">之前&lt;/a>也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！&lt;/p>
+&lt;p>不过这次折腾PaaS是因为Google Reader &lt;em>也&lt;/em> 被干掉了，寻找到以下替代方案：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/samuelclay/NewsBlur">NewsBlur&lt;/a> based on django&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">Tiny Tiny RSS&lt;/a> based on PHP&amp;amp;MySQL&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>似乎PHP比较常见的样子，于是准备先试试TT-rss。&lt;/p>
+&lt;p>现在的进度是，appfog|CloundFoundry|openshift|dotcloud|heroku的账号集齐了，再加个GAE和主机屋（不要用！很麻烦！），就可以召唤神龙了？&lt;/p>
+&lt;p>&lt;del>过会放测试结果，如果没有下文的话，就是我被什么龙给吃掉了～&lt;/del>&lt;/p>
+&lt;p>update：直接google找到了&lt;a href="http://projectdelphai.github.com/2013/03/15/replacing-google-reader-with-tt-rss-on-heroku/">这个&lt;/a>，还贴心的放出了&lt;a href="https://github.com/projectdelphai/ttrss-on-heroku/blob/master/ttrss_heroku_setup.sh">脚本&lt;/a>。heroku，就决定是你了！&lt;br>
+&lt;a href="http://www.quora.com/Is-there-anything-like-Heroku-I-can-use-for-a-PHP-site">这里&lt;/a>还有一大把PHP云，大概够了？\&lt;/p>
+&lt;p>update 2013-3-31:TT-RSS的数据库用量已经达到90%了……另外，又找到两个可能的选择：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="http://fofredux.sourceforge.net/">FoFRedux&lt;/a>似乎已经好久没更新了，还提到了&lt;a href="http://baike.baidu.com/view/236935.htm">Nokia770&lt;/a>，2005年？&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://getlilina.org/">Lilina&lt;/a>，官网似乎很帅气，而且也不用数据库……~~下次试一下这个？~~一般paas都不支持直接写入……&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>update 2013-04-04 还有：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="http://owncloud.org/">owncloud&lt;/a>，全能型选手，各路大神推荐&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://selfoss.aditu.de/">selfoss&lt;/a>，要求写入权限，不知道怎么样&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>4-6再次更新：最后（？），在openshift上用脚本搭了ttrss（并绑定了域名），对owncloud采取持续观望的态度。&lt;/p>
+&lt;p>5-29 另外：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Athou/commafeed">CommaFeed&lt;/a>，并贴心的提供了“Deployment on OpenShift”的教程&lt;/li>
+&lt;/ul>
+&lt;p>又及：测试VimRepress的编辑能力&lt;/p></description></item></channel></rss>

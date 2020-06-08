@@ -1,1 +1,105 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>math on 林中阴影</title><link>https://blog.heysh.xyz/tags/math/</link><description>Recent content in math on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 16 Dec 2017 20:48:36 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/math/feed.xml" rel="self" type="application/rss+xml"/><item><title>幂律分布与Zipf's Law</title><link>https://blog.heysh.xyz/2017/12/16/zipf-law/</link><pubDate>Sat, 16 Dec 2017 20:48:36 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/16/zipf-law/</guid><description>前几天读了《复杂》。对复杂学的研究，在人工智能重获热度的今天，似乎获得了新的意义——当然，我们还是不知道炼金术的大锅里面发生了什么。 幂律分布</description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。 官方文档中其实有这一部分内容，但是那里是用MathJax的，而且在标准m</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>math on 林中阴影</title><link>https://blog.heysh.xyz/tags/math/</link><description>Recent content in math on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 16 Dec 2017 20:48:36 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/math/feed.xml" rel="self" type="application/rss+xml"/><item><title>幂律分布与Zipf's Law</title><link>https://blog.heysh.xyz/2017/12/16/zipf-law/</link><pubDate>Sat, 16 Dec 2017 20:48:36 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/16/zipf-law/</guid><description>&lt;p>前几天读了&lt;a href="https://book.douban.com/subject/6749832/">《复杂》&lt;/a>。对复杂学的研究，在人工智能重获热度的今天，似乎获得了新的意义——当然，我们还是不知道炼金术的大锅里面发生了什么。&lt;/p>
+&lt;p>幂律分布/Zipf定律/&lt;a href="https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%B3%95%E5%88%99">帕累托法则&lt;/a>/80-20定律/whatever，本质上是同一种东西。这种分布模式和正态分布类似，广泛存在于大自然和人造物的各个角落。一般来说，对于具有：&lt;/p>
+&lt;ul>
+&lt;li>优先连接性（Preferential attachment）/马太效应
+&lt;ul>
+&lt;li>“凡有的，还要加给他，叫他有余；没有的，连他所有的也要夺过来。”&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>成长性
+&lt;ul>
+&lt;li>网络的尺度不受客观条件的限制，可以无限增长&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>的网络，其节点连接数较为满足幂律分布。&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=fCn8zs912OE">Youtube上&lt;/a>有个视频对幂律分布讲得很清楚，对其中提到的两个实验，我利用python进行了模拟。模拟中使用的&lt;code>jupyter notebook&lt;/code>文件放在了&lt;a href="https://gist.github.com/heyeshuang/fece5abbd6d1cf826dbaf9c3e76361b7">github gist&lt;/a>上。&lt;/p>
+&lt;h2 id="猴子和打字机">猴子和打字机&lt;/h2>
+&lt;p>一只猴子（我们叫它Shashi Biya）在打字机上乱敲，它敲二十六个字母和空格概率都相等。那么，咱们能不能看出他的用词习惯？答案是肯定的。&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
+&lt;span style="color:#069;font-weight:bold">from&lt;/span> &lt;span style="color:#0cf;font-weight:bold">collections&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> Counter
+s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>
+s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;abcd &amp;#34;&lt;/span>
+monkey&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(random&lt;span style="color:#555">.&lt;/span>choices(s, k&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10000000&lt;/span>))
+monkey&lt;span style="color:#555">=&lt;/span>[m &lt;span style="color:#069;font-weight:bold">for&lt;/span> m &lt;span style="color:#000;font-weight:bold">in&lt;/span> monkey&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">if&lt;/span> m]
+c&lt;span style="color:#555">=&lt;/span>Counter(monkey)
+common&lt;span style="color:#555">=&lt;/span>c&lt;span style="color:#555">.&lt;/span>most_common()[:&lt;span style="color:#f60">10000&lt;/span>]
+fre&lt;span style="color:#555">=&lt;/span>[value &lt;span style="color:#069;font-weight:bold">for&lt;/span> (key,value) &lt;span style="color:#000;font-weight:bold">in&lt;/span> common]
+plt&lt;span style="color:#555">.&lt;/span>plot(fre)
+plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>show()
+&lt;/code>&lt;/pre>&lt;/div>&lt;figure>
+&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/> &lt;figcaption>
+&lt;h4>阶梯形状可能是由于概率相等&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>我们的这位大文豪颇有古风，喜欢用单字（“a”）胜过长单词（“ffsda”），而且用词比例正符合幂律分布：在双log坐标系下，图像大致是一条直线。这很符合直觉：为了得到任何长度大于1的单词，猴子第二次敲的按钮必须不是空格。&lt;/p>
+&lt;p>不要嘲笑我们的前辈，人类的语言也具有相同的性质，虽然概率最高的字是the什么的。并不是Zipf’s law限制了猴子打出十四行诗，这或许是个好消息。&lt;/p>
+&lt;h2 id="连接曲别针第一种方法">连接曲别针，第一种方法&lt;/h2>
+&lt;p>在墙上钉100个钉子，然后随意把曲别针连在上面。哪个钉子上曲别针越多，下一个曲别针挂在上面的概率就越高。&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
+&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>ones(l)
+&lt;span style="color:#069;font-weight:bold">for&lt;/span> i &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">range&lt;/span>(&lt;span style="color:#f60">100000&lt;/span>):
+s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
+p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
+k&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(l,&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
+&lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
+plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
+plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;figure>
+&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/> &lt;figcaption>
+&lt;h4>可惜这只是个指数分布&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>与幂律分布相比，指数分布更加“平缓”，而且在双对数坐标系下也并不是一条直线。&lt;/p>
+&lt;h2 id="连接曲别针the-right-way">连接曲别针，the right way&lt;/h2>
+&lt;p>现在，我有一把曲别针。我随便拿出两个曲别针，并把它们两个所在的串连接起来。&lt;/p>
+&lt;p>假设我对每一个曲别针没有特别的爱好，那么，某个串选中的概率，与串中的曲别针个数正相关。这就是所谓的优先连接性。&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
+l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">20000&lt;/span>
+&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>[&lt;span style="color:#f60">1&lt;/span>]&lt;span style="color:#555">*&lt;/span>l
+&lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>)&lt;span style="color:#555">&amp;gt;&lt;/span>&lt;span style="color:#f60">14000&lt;/span>:
+s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
+p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
+k1&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(&lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>),&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
+a1&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k1[&lt;span style="color:#f60">0&lt;/span>])
+s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
+p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
+k2&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(&lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>),&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
+a2&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k2[&lt;span style="color:#f60">0&lt;/span>])
+&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>append(a1&lt;span style="color:#555">+&lt;/span>a2)
+toc&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
+&lt;span style="color:#069;font-weight:bold">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
+plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
+plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+plt&lt;span style="color:#555">.&lt;/span>show()
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/zipf/output_13_0.png" alt="png">&lt;/p>
+&lt;p>好的，我们得到了 &lt;em>基于曲别针的互联网系统&lt;/em> ——至少可以算是个物联网。在这个网络里，（大概）80%的曲别针在20%的链子中，余下的曲别针散落在另外的地方。我们叫那些链子“曲别针巨头”。随着连接次数越来越多，链子越来越长，分散的曲别针越来越少，这就是“链子中心化”，我们现在互联网的状态。&lt;/p>
+&lt;p>当继续这个过程的时候，最终（很快）就只剩下唯一一条长链，这就是我们互联网的末日&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>刘慈欣在还没有现在这么出名的时候，写过一篇叫做《赡养人类》的作品，提到了有关“终产者”的概念。当时，有人评论大刘“不懂政治，也不懂经济”，我十分希望这个人是对的。&lt;/p>
+&lt;hr>
+&lt;p>2018年4年3日的编辑：&lt;/p>
+&lt;p>&lt;a href="https://mp.weixin.qq.com/s/ccNUtbywz9JgDI9pj6FJlw">这里&lt;/a>有另一个Zipf&amp;rsquo;s Law的例子，可以看出，其仍然满足马太效应的性质。&lt;del>另外，别人的故事编的还是好啊。&lt;/del>&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>这似乎和&lt;a href="https://act.eff.org/action/protect-the-open-internet-order">Net neutrality&lt;/a>并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>
+&lt;p>官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容&lt;/a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里&lt;/a>一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p>
+&lt;p>Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code>.mmark&lt;/code>后缀就行：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax">这里&lt;/a>。&lt;/p>
+&lt;p>用这种渲染器，用&lt;code>$$&lt;/code>包裹的文字会自动转成用&lt;code>\[&lt;/code>或者&lt;code>\(&lt;/code>包裹，比如，&lt;code>inline $$\sqrt{b^2-4ac}$$&lt;/code>会转成&lt;code>\(\sqrt{b^2-4ac}\)&lt;/code>&lt;/p>
+&lt;p>之后，只要修改主题，把&lt;span class="math">\(\KaTeX\)&lt;/span>引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42">这里&lt;/a>。&lt;/p>
+&lt;p>效果如下：&lt;/p>
+&lt;p>行内公式：&lt;span class="math">\(\sqrt{b^2-4ac}\)&lt;/span>&lt;/p>
+&lt;p>单行公式：&lt;/p>
+&lt;p>&lt;span class="math">\[\hat{y}= \sigma(\omega^T X+b)=\frac{1}{1+e^{-(\omega^T X+b)}}\]&lt;/span>&lt;/p>
+&lt;p>另外，还有一种更加复杂的&lt;code>&amp;lt;shortcode&amp;gt;&lt;/code>&lt;a href="http://www.latkin.org/2016/08/07/better-tex-math-typesetting-in-hugo/">方法&lt;/a>，如果你是完美主义者的话。&lt;/p></description></item></channel></rss>

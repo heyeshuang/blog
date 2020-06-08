@@ -1,1 +1,263 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web on 林中阴影</title><link>https://blog.heysh.xyz/categories/web/</link><description>Recent content in web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>项目地址：https://github.com/heyeshuang/hugo-theme-tokiwa 大概是3月末，我在例行的检查自己博客</description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商</description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>之前在 http://heyeshuang.tk 这个域名下的时候，wordpress提供的RSS feed地址格式类似 http://heyeshuang.tk/feed/ ，但是hugo提供的RSS地址是index.xml样子的，而且</description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距上次我更换博客后台过了快两年时间，wordpress（或</description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>书接上文 （虽然我是先写的这一篇），当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很</description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~ 距我上次配置</description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer</description></item><item><title>红色楼梯</title><link>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link><pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate><guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid><description>用three.js试着做了点东西 Live demo : http://heyeshuang.github.io/three-stairs/ –你的下一句话是：“又做了没用的东西！”\ –是啊。\ –咦？这算是猜对了吗？</description></item><item><title>个人主页上线</title><link>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link><pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid><description>http://heyeshuang.github.io 请使用现代浏览器并开启硬件加速</description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>github live demo(slow)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web on 林中阴影</title><link>https://blog.heysh.xyz/categories/web/</link><description>Recent content in web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
+&lt;p>大概是3月末，我在例行的&lt;code>检查自己博客有没有自己偷偷更新&lt;/code>的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del>打牌&lt;/del>&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/">狩猎&lt;/a>之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p>
+&lt;p>中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+（万一我在很久之后换掉了主题，下面还有一些截图。）
+&lt;/h4>
+&lt;/summary>
+&lt;figure>
+&lt;img src="screenshot1.png"/> &lt;figcaption>
+&lt;h4>主页的样子&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="screenshot2.png"/> &lt;figcaption>
+&lt;h4>内文的样子&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="screenshot3.png"/> &lt;figcaption>
+&lt;h4>在手机上的样子&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/details>
+&lt;p>新主题继承了之前的配色，也以配色而命名。记得&lt;a href="https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/">当时&lt;/a>我选了主题&lt;code>blackburn&lt;/code>，又觉得默认的蓝色有些“默认”，于是自己挑了一种，恰好是现在所说的常磐色。嗯，看起来绿油油的。&lt;/p>
+&lt;p>其他的方面，用了现在流行的、尽情浪费显示器空间的布局，还用了尽情浪费网路流量的网页字体。用2M流量换一个帅气的标题，feels good man&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>另外，现在正在试图向&lt;a href="https://github.com/gohugoio/hugoThemes/issues/850">gohugoio/hugoThemes&lt;/a>投稿，当前（2020-5-19）的进度是在与老外激情对线。都2020年了，我居然因为开源许可证气得睡不着觉，感觉自己的青春又回来了。&lt;/p>
+&lt;p>我没什么好交代的了。下次见。&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>
+&lt;/blockquote>
+&lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
+&lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>说笑的，待会我就会把字体裁好。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>
+&lt;p>之前我用的是&lt;a href="https://lifely.today/2015/05/%E7%82%BA-cloudflare-%E8%A8%AD%E5%AE%9A%E5%8B%95%E6%85%8B-dns-ddns/">这里&lt;/a>的方法，不过最近cloudflare更新了&lt;a href="https://api.cloudflare.com/">第四代API&lt;/a>，那个方法已经失效。于是水博文的机会来了。&lt;/p>
+&lt;p>原料：&lt;/p>
+&lt;ol>
+&lt;li>一个域名，并用Cloudflare管理&lt;/li>
+&lt;li>一台经常开着的，有计划任务或者cron，可以运行curl的电脑&lt;/li>
+&lt;li>（可选）如果API地址被屏蔽的话，可能需要可用的代理&lt;/li>
+&lt;/ol>
+&lt;p>步骤：&lt;/p>
+&lt;ul>
+&lt;li>去&lt;a href="https://dash.cloudflare.com/">https://dash.cloudflare.com/&lt;/a>找到你域名的&lt;code>zone ID&lt;/code>并新建一个&lt;code>API_KEY&lt;/code>。&lt;/li>
+&lt;li>新建一条子域名的A记录，IP写什么都行。&lt;/li>
+&lt;li>查询这条记录的&lt;code>RECORD_ID&lt;/code>，在终端运行：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>-x&lt;/code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p>
+&lt;ul>
+&lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
+&lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#c30">`&lt;/span>
+&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#c30">`&lt;/span>
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span>
+&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip.txt
+&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
+*/120 * * * * /path/of/your/script.sh
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
+&lt;hr>
+&lt;p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。&lt;/p></description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p>之前在 &lt;a href="http://heyeshuang.tk">http://heyeshuang.tk&lt;/a> 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/">http://heyeshuang.tk/feed/&lt;/a> ，但是hugo提供的RSS地址是&lt;code>index.xml&lt;/code>样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p>
+&lt;p>所以只能改模版了，思路是把&lt;code>/feed&lt;/code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p>
+&lt;p>&lt;code>\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
+{{ range .Site.RegularPages }}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
+{{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
+&amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+{{ end }}
+&amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
+&lt;p>然后别忘了新建一个&lt;code>\content\feed\chicken.md&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
+title: &amp;#39;chicken&amp;#39;
+author: HeYSH
+date: 2012-06-22T06:32:32+00:00
+aliases:
+- /%3ffeed%3drss2
+---
+Nothing here.
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
+&lt;p>wordpress的文章是通过&lt;a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">wordpress-to-hugo-exporter&lt;/a>导出的，但是导出的文件有一些小问题：&lt;/p>
+&lt;ul>
+&lt;li>标题里都是&lt;code>&amp;lt;span&amp;gt;&lt;/code>&lt;/li>
+&lt;li>正文还是&lt;code>HTML&lt;/code>格式&lt;/li>
+&lt;li>&lt;code>img&lt;/code>和&lt;code>code&lt;/code>需要修改&lt;/li>
+&lt;/ul>
+&lt;p>对于正文，可以用&lt;code>pandoc&lt;/code>和&lt;code>pypandoc&lt;/code>转换：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
+&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
+&lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
+ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
+ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, format&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
+do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
+&lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(do)
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
+&lt;p>……&lt;/p>
+&lt;p>……………&lt;/p>
+&lt;p>漫长的修改过后，用&lt;code>hugo server -w&lt;/code>预览。&lt;/p>
+&lt;p>这时候还有一个小问题：&lt;code>hugo&lt;/code>生成URL不一定遵循文件头&lt;code>url&lt;/code>定义，比如，对
+&lt;code>/2016/06/13/qart-coder：更友好的qr码/&lt;/code>，&lt;code>hugo&lt;/code>会解析为&lt;code>/2016/06/13/qart-coder更友好的qr码/&lt;/code>。看出区别了吗？&lt;/p>
+&lt;p>为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code>aliases&lt;/code>行，可以将原来的地址转发到新地址。&lt;/p>
+&lt;p>同样的，我也写了一个辣鸡脚本：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
+&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
+&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
+&lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>readlines()
+&lt;span style="color:#069;font-weight:bold">try&lt;/span>:
+urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
+url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
+aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34; -&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
+data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, aliasLine)
+data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
+&lt;span style="color:#069;font-weight:bold">except&lt;/span>:
+&lt;span style="color:#069;font-weight:bold">pass&lt;/span>
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
+&lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
+&lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(d)
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
+&lt;p>这里假设你已经&lt;code>init&lt;/code>过了你的&lt;code>hugo&lt;/code>目录：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
+git checkout --orphan gh-pages
+# Unstage all files
+git rm --cached $(git ls-files)
+# Grab one file from the master branch so we can make a commit
+git checkout master README.md
+# Add and commit that file
+git add .
+git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
+# Push to remote gh-pages branch
+git push origin gh-pages
+# Return to master branch
+git checkout master
+# Remove the public folder to make room for the gh-pages subtree
+rm -rf public
+# Add the gh-pages branch of the repository. It will look like a folder named public
+git subtree add --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages --squash
+# Pull down the file we just committed. This helps avoid merge conflicts
+# 这里我先push了一次，否则会出现fatal: refusing to merge unrelated histories
+# 好像是git的bug
+git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+git subtree pull --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+hugo
+# Add everything
+git add -A
+# Commit and push to master
+git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
+# Push the public subtree to the gh-pages branch
+git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
+git add -A
+git commit -m &amp;#34;some messages&amp;#34;
+git push origin master
+git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~&lt;/p>
+&lt;p>距我上次配置shadowsocks服务端（2015.1）已经有一年半了，这次安装可以把上次没有加入的特性通通带上：&lt;/p>
+&lt;ul>
+&lt;li>一次性认证，好像是当时和SSR打的时候加入的特性&lt;/li>
+&lt;li>chacha20，上次没加好像是因为懒&lt;/li>
+&lt;li>KCPtun，既然现在android客户端带上了这个功能，那就也装上吧&lt;/li>
+&lt;/ul>
+&lt;p>大概会稍微快一些吧……&lt;/p>
+&lt;p>对了，顺便配个iptables，象征性地防守下。&lt;/p>
+&lt;hr>
+&lt;p>update 161122:&lt;/p>
+&lt;p>象征性的防守被漫不经心的进攻给破掉了，于是增加了一些稍微认真一点的防守：&lt;/p>
+&lt;ul>
+&lt;li>禁用root登录和密码登录，顺便配置了sudo；&lt;/li>
+&lt;li>用ufw代替直接配置iptables；&lt;/li>
+&lt;li>fail2ban（后来发现debian 8带的0.8版本并不支持debian 8的journalctl……interesting）&lt;/li>
+&lt;/ul>
+&lt;p>最主要的，换了一个ip地址&lt;/p></description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>
+&lt;p>大概上思路和&lt;a href="http://talk.withme.me/?p=51">这里&lt;/a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code>6ndp&lt;/code>,&lt;code>ndppd&lt;/code>和&lt;code>radvd&lt;/code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code>/etc/config/dhcp&lt;/code>的关键几行大概应该是这样：&lt;/p>
+&lt;pre>&lt;code># /etc/config/dhcp:
+config dhcp 'lan'
+option interface 'lan'
+option start '100'
+option limit '150'
+option leasetime '12h'
+# option dhcpv6 'server'
+option ra 'relay'
+option ndp 'relay'
+#config dhcp 'wan'
+#option interface 'wan'
+#option ignore '1'
+config dhcp 'wan6'
+option ra 'relay'
+option ndp 'relay'
+option master '1'
+&lt;/code>&lt;/pre>
+&lt;p>另外，还需要把&lt;code>luci&lt;/code>的&lt;code>interface&lt;/code>页面下的&lt;code>IPv6 ULA-Prefix&lt;/code>删掉。&lt;/p>
+&lt;p>现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启&lt;code>/etc/init.d/odhcpd&lt;/code>；不管了，我先在这里存个盘。&lt;/p>
+&lt;p>有人说relay-&amp;gt;hybrid也能成功的样子……我还没有测试过。&lt;/p>
+&lt;p>参考：&lt;/p>
+&lt;p>&lt;a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1">http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/">http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/&lt;/a>（链接不知道为什么已经失效了）&lt;/p>
+&lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>红色楼梯</title><link>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link><pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate><guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid><description>&lt;p>用three.js试着做了点东西&lt;/p>
+&lt;p>Live demo : &lt;a href="http://heyeshuang.github.io/three-stairs/">http://heyeshuang.github.io/three-stairs/&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>–你的下一句话是：“又做了没用的东西！”\&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>–是啊。\&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>–咦？这算是猜对了吗？&lt;/p>
+&lt;/blockquote></description></item><item><title>个人主页上线</title><link>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link><pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid><description>&lt;p>&lt;a href="http://heyeshuang.github.io">http://heyeshuang.github.io&lt;/a>&lt;/p>
+&lt;p>请使用现代浏览器并开启硬件加速&lt;/p></description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>&lt;p>&lt;a href="https://github.com/heyeshuang/my_tree_2d">github&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://heyeshuang.github.io/my_tree_2d">live demo(slow)&lt;/a>&lt;/p></description></item></channel></rss>

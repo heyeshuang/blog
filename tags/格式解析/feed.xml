@@ -1,1 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>格式解析 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%A7%A3%E6%9E%90/</link><description>Recent content in 格式解析 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Mon, 25 Jun 2012 08:12:57 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%A7%A3%E6%9E%90/feed.xml" rel="self" type="application/rss+xml"/><item><title>总结：简单的vCal/iCalendar/.ics格式说明</title><link>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</link><pubDate>Mon, 25 Jun 2012 08:12:57 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</guid><description>E文好的话建议去看直接去看IETF的RFC5545定义; 中文版： 政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>格式解析 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%A7%A3%E6%9E%90/</link><description>Recent content in 格式解析 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Mon, 25 Jun 2012 08:12:57 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%A7%A3%E6%9E%90/feed.xml" rel="self" type="application/rss+xml"/><item><title>总结：简单的vCal/iCalendar/.ics格式说明</title><link>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</link><pubDate>Mon, 25 Jun 2012 08:12:57 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</guid><description>&lt;p>E文好的话建议去看直接去看IETF的&lt;a href="http://tools.ietf.org/html/rfc5545">RFC5545&lt;/a>定义;&lt;br>
+中文版：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="http://www.ccsa.org.cn/publish/download_bp.php?stdtype=yd1&amp;amp;sno=92" title="总而言之就是标准">政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下略）&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://wenku.baidu.com/view/c52d284c2e3f5727a5e9621e.html">某人翻译的标准文档（百度文库）&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>ical格式大概是这样的：&lt;/p>
+&lt;pre>&lt;code>BEGIN:VCALENDAR
+PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:课程表
+X-WR-TIMEZONE:Asia/Shanghai
+X-WR-CALDESC:
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+X-LIC-LOCATION:Asia/Shanghai
+BEGIN:STANDARD
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Shanghai:20120901T092000
+DTEND;TZID=Asia/Shanghai:20120901T105000
+DTSTAMP:20120622T160054Z
+UID:%u4F20%u70ED%u5B66%20%u5BF9%u6D41%u5B9E%u9A8C35@第 1 次
+CREATED:20120622T154824Z
+DESCRIPTION:教师：王五n
+LAST-MODIFIED:20120622T160041Z
+LOCATION:大礼堂
+STATUS:CONFIRMED
+SUMMARY:实验2
+END:VEVENT
+END:VCALENDAR
+&lt;/code>&lt;/pre>
+&lt;p>基本上只要修改中文部分的内容就好了&lt;/p>
+&lt;h4 id="tips">tips：&lt;/h4>
+&lt;ul>
+&lt;li>PRODID按照格式随意改就好&lt;/li>
+&lt;li>UID是一件事情的绝对标识，对格式没有要求，只要不重复即可&lt;/li>
+&lt;li>重复事件可用RRLUE字段，具体见所附文档。但是好像不支持“1,2,5-9,13,16周”这样猎奇的重复，所以对本人并没有什么用处&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>我&lt;del>们&lt;/del>尚不知道那天所看到的&lt;del>花的名字&lt;/del>DTSTAMP的用处&lt;/li>
+&lt;/ul>
+&lt;p>最后补一些相关代码段（javascript）：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">$vCalArea.append(&lt;span style="color:#c30">&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span>);
+&lt;span style="color:#09f;font-style:italic">/***************生成文件头****************/&lt;/span>
+$vCalArea.append(&lt;span style="color:#c30">&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strBT &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strET &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> uid &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseInfo &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.place &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseName &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span>)
+&lt;span style="color:#09f;font-style:italic">/****************VEVENT部分***************/&lt;/span>
+$vCalArea.append(&lt;span style="color:#c30">&amp;#39;END:VCALENDAR&amp;#39;&lt;/span>);
+&lt;span style="color:#09f;font-style:italic">/****************文件尾****************/&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>全部脚本见&lt;a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/&lt;/a>&lt;/p></description></item></channel></rss>
