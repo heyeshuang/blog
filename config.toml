@@ -16,11 +16,13 @@ pygmentsStyle = 'manni'
 googleAnalytics = "UA-40522664-1"
 disqusShortname = "heysh"
 # pygmentsOptions = "linenos=table,noclasses=true"
-
-[markup.goldmark.renderer]
-unsafe= true
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    typographer = false
+  [markup.goldmark.renderer]
+    unsafe= true
 [permalinks]
-post = "/:year/:month/:day/:filename/"
+  post = "/:year/:month/:day/:filename/"
 
 [outputFormats]
 [outputFormats.RSS]

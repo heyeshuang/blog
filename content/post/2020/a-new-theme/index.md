@@ -16,11 +16,11 @@ draft: false
 
 项目地址：<https://github.com/heyeshuang/hugo-theme-tokiwa>
 
-大概是3月末，我在例行的`检查自己博客有没有自己偷偷更新`的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度~~打牌~~[狩猎](https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/)之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。
+大概是3月末，我在例行的`检查博客有没有自己偷偷更新`的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度~~打牌~~[狩猎](https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/)之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。
 
 中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。
 
-{{% spoiler "（万一我在很久之后换掉了主题，下面还有一些截图。）" %}}
+{{% spoiler "（万一我在很久之后换掉了主题，这里还有一些截图。）" %}}
 
 {{< figure src="screenshot1.png" title="主页的样子" >}}
 {{< figure src="screenshot2.png" title="内文的样子" >}}
@@ -49,5 +49,12 @@ npx fontmin 字体名称.ttf -t "要用到的字形" > 字体名称-剪裁后.tt
 
 因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。
 
+--- 
+
+> 来自2020-6-12的更新：
+
+https://themes.gohugo.io/hugo-theme-tokiwa/
+
+That's a long trip.
 
 [^1]:说笑的，待会我就会把字体裁好。
