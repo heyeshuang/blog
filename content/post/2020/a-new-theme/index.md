@@ -55,7 +55,7 @@ npx fontmin 字体名称.ttf -t "要用到的字形" > 字体名称-剪裁后.tt
 
 > 来自2020-6-12的更新：
 
-终于通过了Hugo Themes的投稿。https://themes.gohugo.io/hugo-theme-tokiwa/
+终于通过了Hugo Themes的投稿：<https://themes.gohugo.io/hugo-theme-tokiwa/>
 
 That's a long trip.
 
