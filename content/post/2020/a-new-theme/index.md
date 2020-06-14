@@ -14,6 +14,8 @@ date: 2020-05-17T20:05:46+08:00
 draft: false
 ---
 
+![mockup](mockup2.png)
+
 项目地址：<https://github.com/heyeshuang/hugo-theme-tokiwa>
 
 大概是3月末，我在例行的`检查博客有没有自己偷偷更新`的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度~~打牌~~[狩猎](https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/)之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。
@@ -53,8 +55,14 @@ npx fontmin 字体名称.ttf -t "要用到的字形" > 字体名称-剪裁后.tt
 
 > 来自2020-6-12的更新：
 
-https://themes.gohugo.io/hugo-theme-tokiwa/
+终于通过了Hugo Themes的投稿。https://themes.gohugo.io/hugo-theme-tokiwa/
 
 That's a long trip.
+
+---
+
+> 来自2020-6-14的更新：
+
+从[专业人士](https://blog.shuiba.co/lots-stuff-of-new-theme)那里学到了头图的做法。
 
 [^1]:说笑的，待会我就会把字体裁好。
