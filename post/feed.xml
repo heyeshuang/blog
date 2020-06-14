@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
+&lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
 &lt;p>大概是3月末，我在例行的&lt;code>检查博客有没有自己偷偷更新&lt;/code>的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del>打牌&lt;/del>&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/">狩猎&lt;/a>之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p>
 &lt;p>中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p>
 &lt;details>
@@ -39,8 +40,13 @@
 &lt;blockquote>
 &lt;p>来自2020-6-12的更新：&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://themes.gohugo.io/hugo-theme-tokiwa/">https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/a>&lt;/p>
+&lt;p>终于通过了Hugo Themes的投稿。https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/p>
 &lt;p>That's a long trip.&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>来自2020-6-14的更新：&lt;/p>
+&lt;/blockquote>
+&lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
