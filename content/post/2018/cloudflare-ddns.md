@@ -40,19 +40,24 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records" \
 
 ```bash
 #!/bin/sh
-NEW_IP=`curl http://members.3322.org/dyndns/getip`
-CURRENT_IP=`cat /var/tmp/current_ip.txt`
+NEW_IP=$(curl http://members.3322.org/dyndns/getip)
+CURRENT_IP=$(cat /var/tmp/current_ip.txt)
 if [ "$NEW_IP" = "$CURRENT_IP" ]
 then
      echo "No Change in IP Adddress"
 else
-     curl -X PUT "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records/<RECORD_ID>" \
-     -x http://localhost:8087 \
+     OUTPUT=$(curl -X PUT "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records/<RECORD_ID>" \
+     -x http://<代理地址，不要的话删去这一行>:8087 \
      -H "X-Auth-Email: <邮箱地址>" \
      -H "X-Auth-Key: <API_KEY>" \
      -H "Content-Type: application/json" \
-     --data '{"type":"A","name":"<子域名地址>","content":"'$NEW_IP'","ttl":1}'
-     echo $NEW_IP > /var/tmp/current_ip.txt
+     --data '{"type":"A","name":"<子域名地址>","content":"'$NEW_IP'","ttl":1}')
+     if echo "$OUTPUT" | grep -q "$NEW_IP"; then
+          echo "Update IP Success!"
+          echo $NEW_IP > /var/tmp/current_ip.txt
+     else
+          echo "Update Error!"
+     fi
 fi
 ```
 
@@ -66,3 +71,4 @@ fi
 
 ---
 来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。
+来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入`current_ip.txt`了。
