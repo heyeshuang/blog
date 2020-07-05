@@ -40,6 +40,7 @@ baseName = "feed"
   那里的颜色正是常磐色。
   """
   favicon = "img/favicon.png"
+  fuse = true 
   useChineseFonts = true
   bannerFont = "fonts/杨任东竹石体-Light"
 
@@ -93,3 +94,6 @@ baseName = "feed"
 
   # Techie
   github = "https://github.com/heyeshuang"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
