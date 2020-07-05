@@ -37,23 +37,24 @@ bannerFont = "fonts/exampleFont" # custom your own font for the title.
 [menu]
 # Shown in the side menu.
   [[menu.main]]
-    name = "cat"
-    pre = "<i class='fa fa-list fa-fw'></i>"
+    name = "Posts"
     weight = 1
     identifier = "post"
     url = "/post/"
   [[menu.main]]
     name = "Tags"
-    pre = "<i class='fa fa-tags fa-fw'></i>"
     url = "/tags/"
     weight = 2
 
 [social]
-twitter="http://twitter.com/hh"
-instagram="http://twitter.com/hh"
-gitlab="http://twitter.com/hh"
-youtube="http://twitter.com/hh"
-github="http://github.com/hh"
+instagram="http://example.com/"
+bilibili="http://example.com/"
+weibo="http://example.com/"
+zhihu="http://example.com/"
+twitter="http://twitter.com/"
+gitlab="http://gitlab.com/"
+youtube="http://youtube.com/"
+github="http://github.com/"
 ```
 
 A complete `config.toml` example is in the `exampleSite` folder.
@@ -94,6 +95,7 @@ npm run build
 * Fonts. `杨任东竹石体` was used for the banner in the beginning. This font is okay for commercial usage. However, I wonder if it is compatible with ~~GPL~~ MIT, so I replaced it with an `exampleFont` in the `exampleSite`. See `config.toml`.
 * And the open, warm-hearted [Noto Serif CN](https://www.google.com/get/noto/help/cjk/). Always a good choice for Chinese words. Under [OFL 1.1](https://github.com/googlefonts/noto-cjk/blob/master/LICENSE). 
 * Beautiful icons made by [Remix-Design](https://github.com/Remix-Design/remixicon). Under [Apache 2.0](https://raw.githubusercontent.com/Remix-Design/RemixIcon/master/License).
+* [fuse.js](https://fusejs.io/) for fuzzy search, and a [blog post](https://ttys3.net/post/hugo/hugo-fast-search/) (in Chinese) about how to use it. 
 
 Thanks.
 
