@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电路 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%94%B5%E8%B7%AF/</link><description>Recent content in 电路 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 18 Oct 2020 12:56:57 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%94%B5%E8%B7%AF/feed.xml" rel="self" type="application/rss+xml"/><item><title>和（基本上）什么也不能连的电脑传递信息</title><link>https://blog.heysh.xyz/2020/10/18/information-exchange-in-extreme-situations/</link><pubDate>Sun, 18 Oct 2020 12:56:57 +0000</pubDate><guid>https://blog.heysh.xyz/2020/10/18/information-exchange-in-extreme-situations/</guid><description>&lt;blockquote>
+&lt;p>有时候你会&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>遇到一些电脑，孤零零的漂浮在互联网络之外，所有USB口都上了锁，要送进去一些文件，必须要找海关盖上十几个章才能够放行。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>当然，显示器、鼠标和键盘还是可以用的，可以让上个世纪的打字小妹一点一点地敲击按键……或者在敲的同时走神，想一想有没有什么别的办法。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>下面就是某一天下午，被锁链铐在工位上的我的白日梦。&lt;/p>
+&lt;/blockquote>
+&lt;p>好吧，现在的情况还不算太糟，至少还有输入设备（键盘，或者像是键盘的什么玩意儿），实在不行的话，我们也可以做出一个 &lt;strong>超级打字机器人3000&lt;/strong> 之类的。&lt;/p>
+&lt;p>&lt;img src="5f4.gif" alt="3000">&lt;/p>
+&lt;p>&lt;em>想着这些，我把键盘上的导线扯了下来，我看见线的另一头连着的接口是——&lt;/em>&lt;/p>
+&lt;h3 id="a-扁扁的长方形里面只有四片铜片和一片塑料">a. 扁扁的长方形，里面只有四片铜片和一片塑料：&lt;/h3>
+&lt;p>这么说他们也并没有把USB口完全封死嘛。&lt;/p>
+&lt;p>&lt;em>我想起还没有被奴役的时候，在网上自由自在地冲浪的时候，曾经看到过一种叫做badUSB的东西。&lt;/em>&lt;/p>
+&lt;p>我记得&lt;a href="https://github.com/SpacehuhnTech/WiFiDuck">那玩意&lt;/a>就可以模拟USB键盘，没准正是我想要的。&lt;/p>
+&lt;p>&lt;em>我仔细阅读了README，但变得有些失望。&lt;/em>&lt;/p>
+&lt;p>不，这个不行。每个键盘都有独一无二的UID和HID识别码，如果不能模拟这些号码，我会被守卫发现的。没准神秘的TB黑客能帮得上忙。&lt;/p>
+&lt;p>&lt;em>躲开守卫的视线，我开始翻阅黑客目录，接着，我发现了一块代号为&lt;a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.10462e8dAwSoVQ&amp;amp;id=607040512173&amp;amp;_u=i26o2jl627c">CH3929&lt;/a>的芯片。&lt;/em>&lt;/p>
+&lt;p>这个应该可以，可能是设计给物理外挂用的，用上这个，我就可以用串口控制芯片，再用芯片模拟键盘，嗯，十分直接。&lt;/p>
+&lt;p>什么？直接用串口通信？不不不这太危险了。&lt;em>上工的铃声把我惊醒，我揉揉眼睛，发现手里的键盘接口变了形状——&lt;/em>&lt;/p>
+&lt;h3 id="b-圆形里面有6根金属圆柱和一块塑料块">b. 圆形，里面有6根金属圆柱和一块塑料块：&lt;/h3>
+&lt;p>&lt;img src="ps2.png" alt="ps/2">&lt;/p>
+&lt;p>居然PS/2这种接口还没有绝迹，真不愧是尊重传统的企业啊。我听说这种接口的协议就更简单了，完全没有识别环节，对电脑来说，所有键盘都是一样的，而且也有外面的好心人做了&lt;a href="https://github.com/emard/esp32ps2">两种&lt;/a>&lt;a href="https://github.com/Harvie/ps2dev">程序&lt;/a>，只要烧进ESP32，就能够模拟PS/2键盘。&lt;/p>
+&lt;p>而且信息输出也不是不可能的，除了老土的屏幕照相之外，还能用&lt;a href="https://divan.dev/posts/fountaincodes/">视频二维码&lt;/a>，看起来既迅速又高大上——&lt;/p>
+&lt;p>“小X，来新活了！”&lt;/p>
+&lt;p>“这就来！”&lt;/p>
+&lt;p>等我敲完这一批字之后，一定要去试一试。&lt;em>我这样想。&lt;/em>&lt;/p>
+&lt;blockquote>
+&lt;p>免责声明：上面的只是白日梦而已，完全没有测试过。请遵守本地法律法规和公司规章制度，不管你干了什么都跟我没有任何关系。&lt;/p>
+&lt;p>另外，这次的博文让我想起一个笑话，就是我请电脑高手重装系统，但是他只有一张光盘和一根针……哈哈哈，完全笑不出来。&lt;/p>
+&lt;/blockquote>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>怎么说呢，希望你不会——这种事情还是挺少见的，大概。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item></channel></rss>
