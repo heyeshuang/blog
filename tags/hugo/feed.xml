@@ -138,7 +138,7 @@ aliases:
 - /%3ffeed%3drss2
 ---
 Nothing here.
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
 &lt;p>wordpress的文章是通过&lt;a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">wordpress-to-hugo-exporter&lt;/a>导出的，但是导出的文件有一些小问题：&lt;/p>
 &lt;ul>
 &lt;li>标题里都是&lt;code>&amp;lt;span&amp;gt;&lt;/code>&lt;/li>

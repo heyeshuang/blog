@@ -3,7 +3,7 @@
 &lt;p>和依云&lt;a href="http://lilydjwg.is-programmer.com/2016/4/30/aisareruhana.200019.html">这里&lt;/a>差不多，我听到了一首悲伤的歌（&lt;a href="http://music.163.com/#/song?id=766522">精霊流し&lt;/a>），也去找了&lt;a href="http://bulo.hujiang.com/diary/111537/">歌词&lt;/a>。在想要把歌词做成LRC文件的时候，我突然想起来，今年，2015年，千千静听已经不再存在了，而且我也不再有勇气到各种软件站下载来路不明的程序。&lt;/p>
 &lt;p>那么，就去做一个LRC编辑器吧！&lt;/p>
 &lt;p>——以上，是半年之前的事情了。&lt;/p>
-&lt;p>也许是拖延症的&lt;a href="https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/">治疗&lt;/a>有效果了，半年以后这东西居然真的跑了起来。这半年里我都跑了好几次……&lt;/p>
+&lt;p>也许是拖延症的&lt;a href="https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/">治疗&lt;/a>有效果了，半年以后这东西居然真的跑了起来。这半年里我都跑了好几次……&lt;/p>
 &lt;p>另外，写前端/GUI真恶心……&lt;/p>
 &lt;p>另外的另外，名字来自稗田阿求，&lt;del>也许我应该换一个更萌一点的网页图标……&lt;/del>&lt;/p>
 &lt;p>update: 萌萌的图标已经换了～&lt;/p>
@@ -32,7 +32,7 @@ option master '1'
 &lt;p>参考：&lt;/p>
 &lt;p>&lt;a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1">http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1&lt;/a>&lt;/p>
 &lt;p>&lt;a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/">http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/&lt;/a>（链接不知道为什么已经失效了）&lt;/p>
-&lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>&lt;p>&lt;a href="https://greasyfork.org/scripts/4245-sfw">在这里安装&lt;/a>&lt;/p>
+&lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>&lt;p>&lt;a href="https://greasyfork.org/scripts/4245-sfw">在这里安装&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://github.com/heyeshuang/sfw">源码&lt;/a>&lt;/p>
 &lt;p>总而言之，是一个（某种程度上）减缓拖延症症状的脚本。&lt;/p>
 &lt;p>在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下适用。&lt;/p>

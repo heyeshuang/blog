@@ -142,7 +142,7 @@ aliases:
 - /%3ffeed%3drss2
 ---
 Nothing here.
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
 &lt;p>wordpress的文章是通过&lt;a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">wordpress-to-hugo-exporter&lt;/a>导出的，但是导出的文件有一些小问题：&lt;/p>
 &lt;ul>
 &lt;li>标题里都是&lt;code>&amp;lt;span&amp;gt;&lt;/code>&lt;/li>
@@ -224,7 +224,7 @@ git add -A
 git commit -m &amp;#34;some messages&amp;#34;
 git push origin master
 git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81kcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~&lt;/p>
 &lt;p>距我上次配置shadowsocks服务端（2015.1）已经有一年半了，这次安装可以把上次没有加入的特性通通带上：&lt;/p>
 &lt;ul>
 &lt;li>一次性认证，好像是当时和SSR打的时候加入的特性&lt;/li>
