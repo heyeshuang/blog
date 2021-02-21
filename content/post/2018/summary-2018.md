@@ -40,7 +40,7 @@ draft: false
 
 ……在这里我很想把一切归咎于自己，“沟通能力差”、“冷血”，或者其他什么，好像病因诊断出来之后，只要吃下合适的胶囊，一切问题就可以自己消失。可是生活并不是在铁轨上奔腾的列车，所以把失败推给“时运不济”也并不是不行。
 
-——其实有在好好反省了……~~<span style="font-size: 140%;">必</span><span style="font-size: 120%;">可</span><span style="font-size: 100%;">活</span><span style="font-size: 80%;">用</span><span style="font-size: 60%;">于下一次………………</span>~~下次再有活力一些吧。
+——其实有在好好反省了…… ~~<span style="font-size: 140%;">必</span><span style="font-size: 120%;">可</span><span style="font-size: 100%;">活</span><span style="font-size: 80%;">用</span><span style="font-size: 60%;">于下一次………………</span>~~ 下次再有活力一些吧。
 
 #### 比特币？
 
