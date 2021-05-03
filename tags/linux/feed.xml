@@ -29,10 +29,10 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2" role="doc-endnote">
-&lt;p>其实我还有点期待&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>标签能出个什么特殊格式呢…… &lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>其实我还有点期待&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>标签能出个什么特殊格式呢……&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title><link>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</link><pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate><guid>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</guid><description>&lt;p>呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。&lt;/p>
@@ -56,13 +56,13 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>&lt;a href="https://www.virtualbox.org/manual/ch09.html#rawdisk">https://www.virtualbox.org/manual/ch09.html#rawdisk&lt;/a> &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.virtualbox.org/manual/ch09.html#rawdisk">https://www.virtualbox.org/manual/ch09.html#rawdisk&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2" role="doc-endnote">
-&lt;p>&lt;a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html">https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&lt;/a> &lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html">https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:3" role="doc-endnote">
-&lt;p>&lt;a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server">https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&lt;/a> &lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server">https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>2017年的fontconfig设置</title><link>https://blog.heysh.xyz/2017/10/29/2017-10-29-fontconfig-for-7012/</link><pubDate>Sun, 29 Oct 2017 13:40:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/29/2017-10-29-fontconfig-for-7012/</guid><description>&lt;p>都7012年了linux还要自己设置字体……&lt;/p>
@@ -70,18 +70,15 @@
 &lt;p>为了获得“高级感”，首先你需要安装&lt;code>noto-fonts&lt;/code>和&lt;code>noto-fonts-cjk&lt;/code>。因为是7012年，中文字体里自带的英文字符也不算太丑，所以不需要像&lt;a href="https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_Font_Configurations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Windows.C2.AE.E6.98.BE.E7.A4.BA.E6.95.88.E6.9E.9C.E7.9A.84.E5.AD.97.E4.BD.93.E5.8F.82.E8.80.83.E9.85.8D.E7.BD.AE">ArchWiki&lt;/a>和&lt;a href="https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/">这篇博文&lt;/a>一样，分别定义中文和英文。全用Noto就好！（而且，分别定义的方法在chrome上有些小问题……）&lt;/p>
 &lt;p>&lt;code>~/.config/fontconfig/fonts.conf&lt;/code>的内容附在&lt;a href="https://gist.github.com/heyeshuang/03d69c1823b8cf769819d36b34f34f71">这里&lt;/a>，保存之后用&lt;code>fc-cache --force --verbose&lt;/code>更新字体缓存就行了。&lt;/p>
 &lt;h2 id="接下来是截图时间">接下来是截图时间：&lt;/h2>
-&lt;figure>
-&lt;img src="https://blog.heysh.xyz/font/5.png" width="50%"/> &lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/font/5.png" width="50%"/>&lt;figcaption>
 &lt;h4>这才是真正的宋体&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="https://blog.heysh.xyz/font/3.png" width="50%"/> &lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/font/3.png" width="50%"/>&lt;figcaption>
 &lt;h4>在正文也毫无压力&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="https://blog.heysh.xyz/font/4.png" width="50%"/> &lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/font/4.png" width="50%"/>&lt;figcaption>
 &lt;h4>还有这个light字重&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>

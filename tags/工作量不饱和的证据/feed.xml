@@ -34,7 +34,7 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>怎么说呢，希望你不会——这种事情还是挺少见的，大概。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>怎么说呢，希望你不会——这种事情还是挺少见的，大概。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
@@ -44,8 +44,7 @@
 &lt;p>TL; DR：光学计算是一个很宽泛的话题，针对我的要求，之后我大概会试试&lt;a href="https://github.com/opticspy/lightpipes">LightPipes&lt;/a>.&lt;/p>
 &lt;p>以下是我找到的一些库的对比。&lt;/p>
 &lt;h2 id="spacetelescopepoppyhttpsgithubcomspacetelescopepoppy">&lt;a href="https://github.com/spacetelescope/poppy">spacetelescope/poppy&lt;/a>&lt;/h2>
-&lt;figure>
-&lt;img src="poppy.png"/>
+&lt;figure>&lt;img src="poppy.png"/>
 &lt;/figure>
 &lt;p>这个库本身是为詹姆斯·韦伯空间望远镜的模拟而设计的，从其&lt;a href="https://nbviewer.jupyter.org/github/spacetelescope/poppy/blob/master/notebooks/POPPY_tutorial.ipynb">tutorial&lt;/a>也可以看出，这个库的主要目的大概是，在衍射明显的条件下模拟成像过程、计算点扩散函数并分析成像质量，特别是针对天文望远镜领域。&lt;/p>
 &lt;p>因为我并不真正 &lt;em>理解&lt;/em> 光学成像，我并没有办法判断该库的潜在用途，不过在激光器设计方面该库可能并不适用。&lt;/p>
@@ -88,7 +87,7 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>比如&lt;a href="http://www.gwoptics.org/finesse/reference/">语法说明&lt;/a>里提到了squeezed vacuum input source。不要问我&lt;a href="https://en.wikipedia.org/wiki/Squeezed_coherent_state">那是什么&lt;/a>。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>比如&lt;a href="http://www.gwoptics.org/finesse/reference/">语法说明&lt;/a>里提到了squeezed vacuum input source。不要问我&lt;a href="https://en.wikipedia.org/wiki/Squeezed_coherent_state">那是什么&lt;/a>。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item></channel></rss>

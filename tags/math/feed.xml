@@ -29,8 +29,7 @@ plt&lt;span style="color:#555">.&lt;/span>plot(fre)
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show()
-&lt;/code>&lt;/pre>&lt;/div>&lt;figure>
-&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/> &lt;figcaption>
+&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/>&lt;figcaption>
 &lt;h4>阶梯形状可能是由于概率相等&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -49,8 +48,7 @@ plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorte
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;figure>
-&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/> &lt;figcaption>
+&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/>&lt;figcaption>
 &lt;h4>可惜这只是个指数分布&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -88,7 +86,7 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>这似乎和&lt;a href="https://act.eff.org/action/protect-the-open-internet-order">Net neutrality&lt;/a>并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>这似乎和&lt;a href="https://act.eff.org/action/protect-the-open-internet-order">Net neutrality&lt;/a>并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>

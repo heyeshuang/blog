@@ -8,18 +8,15 @@
 （万一我在很久之后换掉了主题，这里还有一些截图。）
 &lt;/h4>
 &lt;/summary>
-&lt;figure>
-&lt;img src="screenshot1.png"/> &lt;figcaption>
+&lt;figure>&lt;img src="screenshot1.png"/>&lt;figcaption>
 &lt;h4>主页的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="screenshot2.png"/> &lt;figcaption>
+&lt;figure>&lt;img src="screenshot2.png"/>&lt;figcaption>
 &lt;h4>内文的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="screenshot3.png"/> &lt;figcaption>
+&lt;figure>&lt;img src="screenshot3.png"/>&lt;figcaption>
 &lt;h4>在手机上的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -51,7 +48,7 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>说笑的，待会我就会把字体裁好。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>说笑的，待会我就会把字体裁好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>

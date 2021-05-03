@@ -5,8 +5,7 @@
 &lt;p>TL; DR：光学计算是一个很宽泛的话题，针对我的要求，之后我大概会试试&lt;a href="https://github.com/opticspy/lightpipes">LightPipes&lt;/a>.&lt;/p>
 &lt;p>以下是我找到的一些库的对比。&lt;/p>
 &lt;h2 id="spacetelescopepoppyhttpsgithubcomspacetelescopepoppy">&lt;a href="https://github.com/spacetelescope/poppy">spacetelescope/poppy&lt;/a>&lt;/h2>
-&lt;figure>
-&lt;img src="poppy.png"/>
+&lt;figure>&lt;img src="poppy.png"/>
 &lt;/figure>
 &lt;p>这个库本身是为詹姆斯·韦伯空间望远镜的模拟而设计的，从其&lt;a href="https://nbviewer.jupyter.org/github/spacetelescope/poppy/blob/master/notebooks/POPPY_tutorial.ipynb">tutorial&lt;/a>也可以看出，这个库的主要目的大概是，在衍射明显的条件下模拟成像过程、计算点扩散函数并分析成像质量，特别是针对天文望远镜领域。&lt;/p>
 &lt;p>因为我并不真正 &lt;em>理解&lt;/em> 光学成像，我并没有办法判断该库的潜在用途，不过在激光器设计方面该库可能并不适用。&lt;/p>
@@ -49,7 +48,7 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>比如&lt;a href="http://www.gwoptics.org/finesse/reference/">语法说明&lt;/a>里提到了squeezed vacuum input source。不要问我&lt;a href="https://en.wikipedia.org/wiki/Squeezed_coherent_state">那是什么&lt;/a>。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>比如&lt;a href="http://www.gwoptics.org/finesse/reference/">语法说明&lt;/a>里提到了squeezed vacuum input source。不要问我&lt;a href="https://en.wikipedia.org/wiki/Squeezed_coherent_state">那是什么&lt;/a>。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>另一些预测未来的尝试，以及问题</title><link>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</link><pubDate>Wed, 02 May 2018 20:30:20 +0800</pubDate><guid>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/">之前&lt;/a>写到，我们不能从水晶球中看到未来的清晰倒影。而本次的结论更加悲观：那些模糊的幻象基本上没有任何效果，并且很可能是有害的。&lt;/p>
@@ -100,9 +99,8 @@
 &lt;p>C. &lt;span class="math">\(y=\text{random}()\)&lt;/span>&lt;/p>
 &lt;p>&lt;del>D. &lt;span class="math">\(y\)&lt;/span>是当天大乐透的尾号&lt;/del>&lt;/p>
 &lt;p>当然，作为实验民工的话，&lt;code>正交试验法&lt;/code>、&lt;code>典型相关分析&lt;/code>和&lt;code>主成分分析&lt;/code>是找到复杂特性的好手段。可是，现实生活中，并不存在重复实验的条件，而且，我们甚至不能将所有参数一一列举出来。最糟糕的情况下，重要的原因仍然藏在水底。&lt;/p>
-&lt;figure>
-&lt;img src="https://blog.heysh.xyz/img/iceberg.png"
-alt="大家喜闻乐见的冰山图.jpg"/> &lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/img/iceberg.png"
+alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>大家喜闻乐见的冰山图.jpg&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -211,8 +209,7 @@ plt&lt;span style="color:#555">.&lt;/span>plot(fre)
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show()
-&lt;/code>&lt;/pre>&lt;/div>&lt;figure>
-&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/> &lt;figcaption>
+&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/>&lt;figcaption>
 &lt;h4>阶梯形状可能是由于概率相等&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -231,8 +228,7 @@ plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorte
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;figure>
-&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/> &lt;figcaption>
+&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/>&lt;figcaption>
 &lt;h4>可惜这只是个指数分布&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -270,7 +266,7 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>这似乎和&lt;a href="https://act.eff.org/action/protect-the-open-internet-order">Net neutrality&lt;/a>并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>这似乎和&lt;a href="https://act.eff.org/action/protect-the-open-internet-order">Net neutrality&lt;/a>并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item></channel></rss>

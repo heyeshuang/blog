@@ -8,18 +8,15 @@
 （万一我在很久之后换掉了主题，这里还有一些截图。）
 &lt;/h4>
 &lt;/summary>
-&lt;figure>
-&lt;img src="screenshot1.png"/> &lt;figcaption>
+&lt;figure>&lt;img src="screenshot1.png"/>&lt;figcaption>
 &lt;h4>主页的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="screenshot2.png"/> &lt;figcaption>
+&lt;figure>&lt;img src="screenshot2.png"/>&lt;figcaption>
 &lt;h4>内文的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="screenshot3.png"/> &lt;figcaption>
+&lt;figure>&lt;img src="screenshot3.png"/>&lt;figcaption>
 &lt;h4>在手机上的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -51,7 +48,7 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>说笑的，待会我就会把字体裁好。 &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>说笑的，待会我就会把字体裁好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮">用chroma进行语法高亮&lt;/h2>
