@@ -1030,12 +1030,12 @@ os&lt;span style="color:#555">.&lt;/span>mkdir(dir_name)
 source_dict&lt;span style="color:#555">=&lt;/span>json&lt;span style="color:#555">.&lt;/span>load(source)
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> _i,_s &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(source_dict):
 file_name&lt;span style="color:#555">=&lt;/span>dir_name&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;/&amp;#34;&lt;/span>&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#366">str&lt;/span>(_i)&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;.jpg&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>False:
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>&lt;span style="color:#069;font-weight:bold">False&lt;/span>:
 &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
 ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c30">&amp;#34;imageLinks&amp;#34;&lt;/span>][&lt;span style="color:#c30">&amp;#34;imageLink&amp;#34;&lt;/span>][&lt;span style="color:#f60">0&lt;/span>],file_name)
 &lt;span style="color:#069;font-weight:bold">except&lt;/span> &lt;span style="color:#c00;font-weight:bold">Exception&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> e:
-&lt;span style="color:#069;font-weight:bold">print&lt;/span>(_i)
-&lt;span style="color:#069;font-weight:bold">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
+&lt;span style="color:#366">print&lt;/span>(_i)
+&lt;span style="color:#366">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>这次是纽约公共图书馆……</title><link>https://blog.heysh.xyz/2018/02/21/nypl/</link><pubDate>Wed, 21 Feb 2018 22:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/21/nypl/</guid><description>&lt;blockquote>
 &lt;p>是的，我&lt;a href="https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/">又&lt;/a>去图书馆了，当然这次和戒网瘾没有什么关系。&lt;/p>
 &lt;/blockquote>
@@ -1129,7 +1129,7 @@ s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span
 p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
 k&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(l,&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
 &lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
-plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
+plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
@@ -1155,8 +1155,8 @@ k2&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/spa
 a2&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k2[&lt;span style="color:#f60">0&lt;/span>])
 &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>append(a1&lt;span style="color:#555">+&lt;/span>a2)
 toc&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
-&lt;span style="color:#069;font-weight:bold">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
-plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
+&lt;span style="color:#366">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
+plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show()
@@ -1860,10 +1860,10 @@ root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#3
 &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
 data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
 ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
-ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, format&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
+ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, &lt;span style="color:#366">format&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
 do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
-&lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(do)
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
+file&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
 &lt;p>……&lt;/p>
 &lt;p>……………&lt;/p>
@@ -1887,9 +1887,9 @@ data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color
 data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
 &lt;span style="color:#069;font-weight:bold">except&lt;/span>:
 &lt;span style="color:#069;font-weight:bold">pass&lt;/span>
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
-&lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(d)
+file&lt;span style="color:#555">.&lt;/span>write(d)
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
 &lt;p>这里假设你已经&lt;code>init&lt;/code>过了你的&lt;code>hugo&lt;/code>目录：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages

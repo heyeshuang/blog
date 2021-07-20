@@ -63,12 +63,12 @@ os&lt;span style="color:#555">.&lt;/span>mkdir(dir_name)
 source_dict&lt;span style="color:#555">=&lt;/span>json&lt;span style="color:#555">.&lt;/span>load(source)
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> _i,_s &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(source_dict):
 file_name&lt;span style="color:#555">=&lt;/span>dir_name&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;/&amp;#34;&lt;/span>&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#366">str&lt;/span>(_i)&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;.jpg&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>False:
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>&lt;span style="color:#069;font-weight:bold">False&lt;/span>:
 &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
 ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c30">&amp;#34;imageLinks&amp;#34;&lt;/span>][&lt;span style="color:#c30">&amp;#34;imageLink&amp;#34;&lt;/span>][&lt;span style="color:#f60">0&lt;/span>],file_name)
 &lt;span style="color:#069;font-weight:bold">except&lt;/span> &lt;span style="color:#c00;font-weight:bold">Exception&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> e:
-&lt;span style="color:#069;font-weight:bold">print&lt;/span>(_i)
-&lt;span style="color:#069;font-weight:bold">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
+&lt;span style="color:#366">print&lt;/span>(_i)
+&lt;span style="color:#366">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>这次是纽约公共图书馆……</title><link>https://blog.heysh.xyz/2018/02/21/nypl/</link><pubDate>Wed, 21 Feb 2018 22:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/21/nypl/</guid><description>&lt;blockquote>
 &lt;p>是的，我&lt;a href="https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/">又&lt;/a>去图书馆了，当然这次和戒网瘾没有什么关系。&lt;/p>
 &lt;/blockquote>

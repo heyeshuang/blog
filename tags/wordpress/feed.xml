@@ -13,10 +13,10 @@ root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#3
 &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
 data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
 ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
-ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, format&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
+ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, &lt;span style="color:#366">format&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
 do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
-&lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(do)
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
+file&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
 &lt;p>……&lt;/p>
 &lt;p>……………&lt;/p>
@@ -40,7 +40,7 @@ data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color
 data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
 &lt;span style="color:#069;font-weight:bold">except&lt;/span>:
 &lt;span style="color:#069;font-weight:bold">pass&lt;/span>
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#366">file&lt;/span>:
+&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
-&lt;span style="color:#366">file&lt;/span>&lt;span style="color:#555">.&lt;/span>write(d)
+file&lt;span style="color:#555">.&lt;/span>write(d)
 &lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

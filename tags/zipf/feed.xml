@@ -44,7 +44,7 @@ s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span
 p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
 k&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(l,&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
 &lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
-plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
+plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
@@ -70,8 +70,8 @@ k2&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/spa
 a2&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k2[&lt;span style="color:#f60">0&lt;/span>])
 &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>append(a1&lt;span style="color:#555">+&lt;/span>a2)
 toc&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
-&lt;span style="color:#069;font-weight:bold">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
-plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>True))
+&lt;span style="color:#366">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
+plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
 plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 plt&lt;span style="color:#555">.&lt;/span>show()
