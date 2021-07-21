@@ -16,7 +16,7 @@
 &lt;p>&lt;a href="https://www.youtube.com/watch?v=fCn8zs912OE">Youtube上&lt;/a>有个视频对幂律分布讲得很清楚，对其中提到的两个实验，我利用python进行了模拟。模拟中使用的&lt;code>jupyter notebook&lt;/code>文件放在了&lt;a href="https://gist.github.com/heyeshuang/fece5abbd6d1cf826dbaf9c3e76361b7">github gist&lt;/a>上。&lt;/p>
 &lt;h2 id="猴子和打字机">猴子和打字机&lt;/h2>
 &lt;p>一只猴子（我们叫它Shashi Biya）在打字机上乱敲，它敲二十六个字母和空格概率都相等。那么，咱们能不能看出他的用词习惯？答案是肯定的。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
 &lt;span style="color:#069;font-weight:bold">from&lt;/span> &lt;span style="color:#0cf;font-weight:bold">collections&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> Counter
 s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>
 s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;abcd &amp;#34;&lt;/span>
@@ -37,7 +37,7 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;p>不要嘲笑我们的前辈，人类的语言也具有相同的性质，虽然概率最高的字是the什么的。并不是Zipf’s law限制了猴子打出十四行诗，这或许是个好消息。&lt;/p>
 &lt;h2 id="连接曲别针第一种方法">连接曲别针，第一种方法&lt;/h2>
 &lt;p>在墙上钉100个钉子，然后随意把曲别针连在上面。哪个钉子上曲别针越多，下一个曲别针挂在上面的概率就越高。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
 &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>ones(l)
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> i &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">range&lt;/span>(&lt;span style="color:#f60">100000&lt;/span>):
 s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
@@ -56,7 +56,7 @@ plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font
 &lt;h2 id="连接曲别针the-right-way">连接曲别针，the right way&lt;/h2>
 &lt;p>现在，我有一把曲别针。我随便拿出两个曲别针，并把它们两个所在的串连接起来。&lt;/p>
 &lt;p>假设我对每一个曲别针没有特别的爱好，那么，某个串选中的概率，与串中的曲别针个数正相关。这就是所谓的优先连接性。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
 l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">20000&lt;/span>
 &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>[&lt;span style="color:#f60">1&lt;/span>]&lt;span style="color:#555">*&lt;/span>l
 &lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>)&lt;span style="color:#555">&amp;gt;&lt;/span>&lt;span style="color:#f60">14000&lt;/span>:
@@ -92,7 +92,7 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;/section></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>
 &lt;p>官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容&lt;/a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里&lt;/a>一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p>
 &lt;p>Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code>.mmark&lt;/code>后缀就行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax">这里&lt;/a>。&lt;/p>
 &lt;p>用这种渲染器，用&lt;code>$$&lt;/code>包裹的文字会自动转成用&lt;code>\[&lt;/code>或者&lt;code>\(&lt;/code>包裹，比如，&lt;code>inline $$\sqrt{b^2-4ac}$$&lt;/code>会转成&lt;code>\(\sqrt{b^2-4ac}\)&lt;/code>&lt;/p>
 &lt;p>之后，只要修改主题，把&lt;span class="math">\(\KaTeX\)&lt;/span>引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42">这里&lt;/a>。&lt;/p>

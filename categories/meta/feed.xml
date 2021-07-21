@@ -31,7 +31,7 @@
 &lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
@@ -55,7 +55,7 @@
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
 pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
 pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>
@@ -65,7 +65,7 @@ pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &l
 &lt;p>之后，经过少量修改，即可用于现有的主题，效果如此博客所示。&lt;/p></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>
 &lt;p>官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容&lt;/a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里&lt;/a>一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p>
 &lt;p>Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code>.mmark&lt;/code>后缀就行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax">这里&lt;/a>。&lt;/p>
 &lt;p>用这种渲染器，用&lt;code>$$&lt;/code>包裹的文字会自动转成用&lt;code>\[&lt;/code>或者&lt;code>\(&lt;/code>包裹，比如，&lt;code>inline $$\sqrt{b^2-4ac}$$&lt;/code>会转成&lt;code>\(\sqrt{b^2-4ac}\)&lt;/code>&lt;/p>
 &lt;p>之后，只要修改主题，把&lt;span class="math">\(\KaTeX\)&lt;/span>引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42">这里&lt;/a>。&lt;/p>

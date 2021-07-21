@@ -12,7 +12,7 @@
 &lt;li>新建一条子域名的A记录，IP写什么都行。&lt;/li>
 &lt;li>查询这条记录的&lt;code>RECORD_ID&lt;/code>，在终端运行：&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
 &lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
 &lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
 &lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
@@ -21,7 +21,7 @@
 &lt;ul>
 &lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
 &lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
 &lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
 &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
@@ -44,7 +44,7 @@
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
 */120 * * * * /path/of/your/script.sh
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
 &lt;hr>

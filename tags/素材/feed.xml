@@ -22,14 +22,14 @@
 &lt;/blockquote>
 &lt;p>当然是可以的！贴心的图书管理员已经提供了API接口：&lt;a href="http://api.repo.nypl.org/">http://api.repo.nypl.org/&lt;/a>，申请账号之后，就可以做各种各样的事了~&lt;/p>
 &lt;p>当然，如果只是想下片的话，用&lt;a href="https://github.com/NYPL-publicdomain/api-client">digital-collections&lt;/a>可能会更简单一些：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>API_TOKEN&lt;/code>在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50">比如这个&lt;/a>）下面，可以看到&lt;code>UUID&lt;/code>；运行这条命令之后，图片的信息列表会保存在&lt;code>OUTPUT.json&lt;/code>里。&lt;/p>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png"/>&lt;figcaption>
 &lt;h4>对，就是那个Universal Unique Identifier&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>之后，获得的json文件大概像是这样：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
 &lt;span style="color:#309;font-weight:bold">&amp;#34;uuid&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
 &lt;span style="color:#309;font-weight:bold">&amp;#34;imageLinks&amp;#34;&lt;/span>: {
 &lt;span style="color:#309;font-weight:bold">&amp;#34;imageLink&amp;#34;&lt;/span>: [
@@ -52,7 +52,7 @@
 &lt;span style="color:#309;font-weight:bold">&amp;#34;rightsStatementURI&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span>
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，只要下载&lt;code>imageLink&lt;/code>就好了。我用了一个简单的python脚本来做这件事。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸&lt;/span>
 &lt;span style="color:#09f;font-style:italic"># 啊对了，而且是python3.6&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">urllib.request&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#0cf;font-weight:bold">ur&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">json&lt;/span>

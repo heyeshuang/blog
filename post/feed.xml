@@ -103,7 +103,7 @@
 &lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
@@ -167,14 +167,14 @@
 &lt;p>&lt;code>{'交通,', '交通,打车', '交通,机票', '交通,火车', '人情,', '住房,', '住房,家具', '住房,家纺', '住房,物业水电', '住房,装修', '其他,', '医疗,', '医疗,药品', '娱乐,', '娱乐,电影', '投资亏损,', '文教,', '文教,书刊', '文教,文具', '旅行,', '旅行,景点门票', '旅行,酒店', '汽车,', '购物,', '购物,数码', '购物,日用', '购物,玩具', '购物,电器', '购物,美妆', '购物,运动用品', '购物,鞋服', '购物,饰品', '通讯,', '通讯,话费', '零食烟酒,', '零食烟酒,水果', '零食烟酒,烟酒', '零食烟酒,茶水', '零食烟酒,零食', '零食烟酒,饮料', '餐饮,', '餐饮,三餐', '餐饮,食材'}&lt;/code>&lt;/p>
 &lt;p>对这些分类，利用人工&lt;del>智能&lt;/del>，为每一项建立了对应的&lt;code>account&lt;/code>，形成了一个&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/youqian/youqianDict.py">dict&lt;/a>。&lt;/p>
 &lt;p>如果你已经下载了&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers&lt;/a>，你可以用里面的&lt;code>importers/ youqian/accountInit.py&lt;/code>来自动建立这些&lt;code>accounts&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
 &lt;span style="color:#09f;font-style:italic"># 或：如果之前已经建立了一些账户的话&lt;/span>
 python importers/youqian/accountInit.py Existing_Accounts.bean &amp;gt; New_Accounts.bean
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="导入网易有钱的收入支出数据">导入网易有钱的收入、支出数据&lt;/h3>
 &lt;p>Beancount的&lt;a href="https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#">文档&lt;/a>里已经对导入脚本进行了比较详细的说明。从&lt;a href="https://bitbucket.org/blais/beancount/src/tip/examples/ingest/office/importers/utrade/">这个例子&lt;/a>开始，基本上只要实现几个函数就行。&lt;/p>
 &lt;p>在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers&lt;/a>中，我写了一个简单的网易有钱导入脚本。在使用之前，需要用excel把默认的&lt;code>xlsx&lt;/code>格式转换为&lt;code>收入.csv&lt;/code>和&lt;code>支出.csv&lt;/code>。&lt;/p>
 &lt;p>之后，使用&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
 bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &amp;gt; 收入.bean
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>来导入。&lt;/p>
 &lt;h2 id="自动记账">自动记账&lt;/h2>
@@ -189,7 +189,7 @@ bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &a
 (这张图是用mermaid画的，这里是源代码)
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">graph LR;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">graph LR;
 linkStyle default interpolate basis
 subgraph one [开销]
 A([支付宝]);
@@ -216,10 +216,10 @@ class B,E,F auto
 &lt;p>另外，我还发现了&lt;a href="https://github.com/beancount/smart_importer">smart_importer&lt;/a>，只要简单地增加hook，就可以给导入脚本增加更好的去重、智能猜测分类等更帅气的功能。&lt;/p>
 &lt;h3 id="在每个账单日运行一次">在每个账单日运行一次&lt;/h3>
 &lt;p>在账单目录下，我建立了一个&lt;code>TODO&lt;/code>文件：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">自动导入微信、中国银行和招商（账单日）
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">自动导入微信、中国银行和招商（账单日）
 手动导入工行和农行
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>因为微信的账单信息比较多，我一般先从它开始。每月信用卡的账单日，下载微信钱包对账单，然后运行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">bean-extract importers/wechat.import documents.tmp/微信支付账单.csv -f main.bean &amp;gt; temp.bean
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">bean-extract importers/wechat.import documents.tmp/微信支付账单.csv -f main.bean &amp;gt; temp.bean
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>-f&lt;/code>用来为&lt;code>smart_importer&lt;/code>提供学习素材。&lt;/p>
 &lt;p>接下来打开&lt;code>temp.bean&lt;/code>，检查人工&lt;del>智障&lt;/del>智能补充的分类条目有没有什么问题。（大概率问题很多，每个月大部分的时间会花费在这里。）&lt;/p>
 &lt;p>之后，将&lt;code>temp.bean&lt;/code>重命名为一个有意义的名字，并在&lt;code>main.bean&lt;/code>中&lt;code>import&lt;/code>。接下來对银行账户的导入过程中，&lt;code>smart_importer&lt;/code>会自动去除重复账单。&lt;/p>
@@ -369,9 +369,9 @@ class B,E,F auto
 &lt;p>事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href="https://www.ext2fsd.com/">Ext2fsd&lt;/a>来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p>
 &lt;p>于是，我……我做了一个linux虚拟机来帮我读这个分区。&lt;/p>
 &lt;p>具体来说，VirtualBox支持将单独的分区视为虚拟磁盘&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。你需要在 &lt;strong>具有管理员权限&lt;/strong> 的命令提示符中运行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，&lt;/p>
 &lt;ul>
 &lt;li>同样是用 &lt;strong>管理员权限&lt;/strong> 运行VirtualBox&lt;/li>
@@ -479,10 +479,10 @@ class B,E,F auto
 &lt;/section></description></item><item><title>关于BitMEX的杠杆</title><link>https://blog.heysh.xyz/2018/08/16/about-leverage/</link><pubDate>Thu, 16 Aug 2018 20:35:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/08/16/about-leverage/</guid><description>&lt;p>在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在账户上然后去睡觉，神经衰弱的一系列症状大约会加重。&lt;/p>
 &lt;p>所以&lt;a href="https://www.bitmex.com/register/O3rmQq">BitMEX&lt;/a>（这里是个返利链接）用XBT计算盈亏就显得很有趣了：当比特币上涨的时候，大家都很开心；可是万一下跌的话，实际盈亏还要乘上汇率的缩水，一不小心就会得到双倍的悲伤。这种时候，理解账户数字的 &lt;em>实际价值&lt;/em>&lt;sup class="footnote-ref" id="fnref:pizza">&lt;a class="footnote" href="#fn:pizza">1&lt;/a>&lt;/sup>，可能对控制风险有更为重要的意义。&lt;/p>
 &lt;p>根据&lt;a href="https://www.bitmex.com/app/pnlGuide">官方指南&lt;/a>，盈利的XBT数目可以这样计算：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">win_BTC_long&lt;span style="color:#555">=&lt;/span>(&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_after)&lt;span style="color:#555">*&lt;/span>count &lt;span style="color:#09f;font-style:italic">#做多&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">win_BTC_long&lt;span style="color:#555">=&lt;/span>(&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_after)&lt;span style="color:#555">*&lt;/span>count &lt;span style="color:#09f;font-style:italic">#做多&lt;/span>
 win_BTC_short&lt;span style="color:#555">=&lt;/span>(&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_after)&lt;span style="color:#555">*&lt;/span>count &lt;span style="color:#09f;font-style:italic">#做空&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>那么，经过这部分操作之后，账户的最终价值是：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">win_BTC_long&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="color:#555">+&lt;/span>cash&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">*&lt;/span>price_after &lt;span style="color:#09f;font-style:italic">#做多，或&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">win_BTC_long&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="color:#555">+&lt;/span>cash&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">*&lt;/span>price_after &lt;span style="color:#09f;font-style:italic">#做多，或&lt;/span>
 win_BTC_short&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="color:#555">+&lt;/span>cash&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">*&lt;/span>price_after &lt;span style="color:#09f;font-style:italic">#做空&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>其中，&lt;code>cash&lt;/code>是操作前账户的实际价值，&lt;span class="math">\(cash*leverage=count\)&lt;/span>。&lt;/p>
 &lt;p>例如，当价格从1000$升至1250$，或从1250$降至1000$时，选用不同杠杆的盈亏如下：&lt;/p>
@@ -801,7 +801,7 @@ win_BTC_short&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="c
 &lt;li>新建一条子域名的A记录，IP写什么都行。&lt;/li>
 &lt;li>查询这条记录的&lt;code>RECORD_ID&lt;/code>，在终端运行：&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
 &lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
 &lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
 &lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
@@ -810,7 +810,7 @@ win_BTC_short&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="c
 &lt;ul>
 &lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
 &lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
 &lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
 &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
@@ -833,7 +833,7 @@ win_BTC_short&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="c
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
 */120 * * * * /path/of/your/script.sh
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
 &lt;hr>
@@ -989,14 +989,14 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;/blockquote>
 &lt;p>当然是可以的！贴心的图书管理员已经提供了API接口：&lt;a href="http://api.repo.nypl.org/">http://api.repo.nypl.org/&lt;/a>，申请账号之后，就可以做各种各样的事了~&lt;/p>
 &lt;p>当然，如果只是想下片的话，用&lt;a href="https://github.com/NYPL-publicdomain/api-client">digital-collections&lt;/a>可能会更简单一些：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>API_TOKEN&lt;/code>在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50">比如这个&lt;/a>）下面，可以看到&lt;code>UUID&lt;/code>；运行这条命令之后，图片的信息列表会保存在&lt;code>OUTPUT.json&lt;/code>里。&lt;/p>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png"/>&lt;figcaption>
 &lt;h4>对，就是那个Universal Unique Identifier&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>之后，获得的json文件大概像是这样：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
 &lt;span style="color:#309;font-weight:bold">&amp;#34;uuid&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
 &lt;span style="color:#309;font-weight:bold">&amp;#34;imageLinks&amp;#34;&lt;/span>: {
 &lt;span style="color:#309;font-weight:bold">&amp;#34;imageLink&amp;#34;&lt;/span>: [
@@ -1019,7 +1019,7 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;span style="color:#309;font-weight:bold">&amp;#34;rightsStatementURI&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span>
 }
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，只要下载&lt;code>imageLink&lt;/code>就好了。我用了一个简单的python脚本来做这件事。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸&lt;/span>
 &lt;span style="color:#09f;font-style:italic"># 啊对了，而且是python3.6&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">urllib.request&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#0cf;font-weight:bold">ur&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">json&lt;/span>
@@ -1101,7 +1101,7 @@ ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c
 &lt;p>&lt;a href="https://www.youtube.com/watch?v=fCn8zs912OE">Youtube上&lt;/a>有个视频对幂律分布讲得很清楚，对其中提到的两个实验，我利用python进行了模拟。模拟中使用的&lt;code>jupyter notebook&lt;/code>文件放在了&lt;a href="https://gist.github.com/heyeshuang/fece5abbd6d1cf826dbaf9c3e76361b7">github gist&lt;/a>上。&lt;/p>
 &lt;h2 id="猴子和打字机">猴子和打字机&lt;/h2>
 &lt;p>一只猴子（我们叫它Shashi Biya）在打字机上乱敲，它敲二十六个字母和空格概率都相等。那么，咱们能不能看出他的用词习惯？答案是肯定的。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
 &lt;span style="color:#069;font-weight:bold">from&lt;/span> &lt;span style="color:#0cf;font-weight:bold">collections&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> Counter
 s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>
 s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;abcd &amp;#34;&lt;/span>
@@ -1122,7 +1122,7 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;p>不要嘲笑我们的前辈，人类的语言也具有相同的性质，虽然概率最高的字是the什么的。并不是Zipf’s law限制了猴子打出十四行诗，这或许是个好消息。&lt;/p>
 &lt;h2 id="连接曲别针第一种方法">连接曲别针，第一种方法&lt;/h2>
 &lt;p>在墙上钉100个钉子，然后随意把曲别针连在上面。哪个钉子上曲别针越多，下一个曲别针挂在上面的概率就越高。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
 &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>ones(l)
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> i &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">range&lt;/span>(&lt;span style="color:#f60">100000&lt;/span>):
 s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
@@ -1141,7 +1141,7 @@ plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font
 &lt;h2 id="连接曲别针the-right-way">连接曲别针，the right way&lt;/h2>
 &lt;p>现在，我有一把曲别针。我随便拿出两个曲别针，并把它们两个所在的串连接起来。&lt;/p>
 &lt;p>假设我对每一个曲别针没有特别的爱好，那么，某个串选中的概率，与串中的曲别针个数正相关。这就是所谓的优先连接性。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
 l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">20000&lt;/span>
 &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>[&lt;span style="color:#f60">1&lt;/span>]&lt;span style="color:#555">*&lt;/span>l
 &lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>)&lt;span style="color:#555">&amp;gt;&lt;/span>&lt;span style="color:#f60">14000&lt;/span>:
@@ -1235,7 +1235,7 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;li>随机&lt;/li>
 &lt;li>对于α和β，以对数形式随机&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">r&lt;span style="color:#555">=-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">r&lt;span style="color:#555">=-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
 a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>&lt;span style="color:#555">**&lt;/span>r
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="batch-norm">Batch-Norm&lt;/h2>
 &lt;ul>
@@ -1266,7 +1266,7 @@ a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
 pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
 pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>
@@ -1280,27 +1280,27 @@ pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &l
 &lt;p>这是我的邀请链接：&lt;a href="https://billing.virmach.com/aff.php?aff=3032">https://billing.virmach.com/aff.php?aff=3032&lt;/a>，优惠码是&lt;code>2017BFSAVE20&lt;/code>。&lt;/p>
 &lt;h2 id="新建用户">新建用户&lt;/h2>
 &lt;p>感谢&lt;a href="https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/">https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">adduser hh
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">adduser hh
 gpasswd -a hh sudo
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="添加ssh-key验证并禁用root用户ssh远程登录">添加SSH-KEY验证并禁用root用户SSH远程登录&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">su - hh
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">su - hh
 mkdir .ssh
 chmod 700 .ssh
 vi .ssh/authorized_keys
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>在这里粘贴你的公钥。什么？noVNC无法粘贴？我写了篇&lt;a href="https://blog.heysh.xyz/2019/09/22/klipper-autotype/">博文&lt;/a>来解决这个。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">#vi /etc/ssh/sshd_config
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">#vi /etc/ssh/sshd_config
 PermitRootLogin no
 PasswordAuthentication no
 Port 22222
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sudo systemctl restart ssh
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sudo systemctl restart ssh
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装配置防火墙-ufw">安装配置防火墙 (ufw)&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo apt-get update&amp;amp;&amp;amp;sudo apt-get upgrade
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo apt-get update&amp;amp;&amp;amp;sudo apt-get upgrade
 sudo apt-get install ufw
 sudo ufw allow 22222 #允许SSH
 sudo ufw enable
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装vim">安装vim&lt;/h2>
 &lt;h2 id="安装shadowsocks-libev">安装shadowsocks-libev&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo sh -c &amp;#39;printf &amp;#34;deb http://httpredir.debian.org/debian jessie-backports main&amp;#34; &amp;gt; /etc/apt/sources.list.d/jessie-backports.list&amp;#39;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo sh -c &amp;#39;printf &amp;#34;deb http://httpredir.debian.org/debian jessie-backports main&amp;#34; &amp;gt; /etc/apt/sources.list.d/jessie-backports.list&amp;#39;
 sudo apt update
 sudo apt -t jessie-backports install shadowsocks-libev
 sudo vim /etc/shadowsocks-libev/config.json
@@ -1308,7 +1308,7 @@ sudo ufw allow &amp;lt;PORT&amp;gt;
 sudo systemctl start shadowsocks-libev
 sudo systemctl enable shadowsocks-libev
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装4x内核">安装4.x内核&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo apt-get install -t jessie-backports linux-image-amd64
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo apt-get install -t jessie-backports linux-image-amd64
 sudo update-grub
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="启用bbr">启用BBR&lt;/h2>
 &lt;p>&lt;a href="https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr">https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr&lt;/a>&lt;/p></description></item><item><title>利用kcpraw流量加速</title><link>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</link><pubDate>Sat, 18 Nov 2017 16:36:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2015/01/07/shadowsocks%EF%BC%8Cipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/">2015年&lt;/a>和&lt;a href="https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/">2016年&lt;/a>，我写过两篇关于 &lt;em>科学上网&lt;/em> 的博客，之后，又在VPS上安装了&lt;a href="https://v2ray.com/">v2ray&lt;/a>，这个应用直接支持mKCP，在丢包严重的网络环境下效果不错。&lt;/p>
@@ -1322,18 +1322,18 @@ sudo update-grub
 &lt;p>在这里使用kcpraw包装原来shadowsocks的流量（纯粹是因为virtualbox没配好用不了udp2raw），假设读者有基本的linux知识并已经部署了shadowsocks。&lt;/p>
 &lt;h2 id="服务器端">服务器端&lt;/h2>
 &lt;h3 id="下载kcpraw">下载kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">mkdir ~/kcpraw
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">mkdir ~/kcpraw
 cd ~/kcpraw
 wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
 tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>
 &lt;h2 id="客户端">客户端&lt;/h2>
 &lt;h3 id="安装winpcap如果客户端是windows的话">安装winpcap（如果客户端是Windows的话）&lt;/h3>
 &lt;p>对于最新版本的Windows10，原版的&lt;code>winpcap&lt;/code>和&lt;code>win10pcap&lt;/code>似乎都不能用，可以使用兼容的&lt;a href="https://github.com/nmap/npcap">npcap&lt;/a>。&lt;/p>
 &lt;h3 id="运行kcpraw">运行kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">kcpraw_client_windows_amd64 -r &amp;#34;&amp;lt;服务器IP&amp;gt;:8388&amp;#34; -l &amp;#34;:1082&amp;#34; -mode fast2
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">kcpraw_client_windows_amd64 -r &amp;#34;&amp;lt;服务器IP&amp;gt;:8388&amp;#34; -l &amp;#34;:1082&amp;#34; -mode fast2
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>其中&lt;code>1082&lt;/code>是设定的本地kcpraw端口。&lt;/p>
 &lt;h3 id="修改shadowsocks客户端配置">修改shadowsocks客户端配置&lt;/h3>
 &lt;p>在你使用的客户端中把服务器地址设为&lt;code>localhost:1082&lt;/code>，其余不变，即可使shadowsocks享受KCP加速。&lt;/p>
@@ -1397,7 +1397,7 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;p>如果我的内心能够更强大一点的话，我当然可以说：“F**k yourself，老子乐意”。但是显然现在的我还不行。所以，我做了这个&lt;code>Aeolipile&lt;/code>，来 &lt;em>暂时&lt;/em> 平复一下内心的情绪。&lt;/p>
 &lt;p>言归正传。Aeolipile是一个Steem文章的渲染工具，（明面上的）用途是为了增强Steemit的Markdown功能，比如说代码、公式什么的。比如这篇文章，可能也需要访问&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile">这个页面&lt;/a>才能看到脚注。具体支持的功能，可以看&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem">这篇文章&lt;/a>。大体上说，你可以在这里使用几乎所有Markdown的扩展语法。（而且之后我可能会把页面做得更好看些……也许）&lt;/p>
 &lt;p>已有的文章都可以用Aeolipile渲染，只要访问这个页面就行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>和Steemit本身链接的构成差不多。&lt;/p>
 &lt;p>如果你也想使用这个工具的话，我建议：&lt;/p>
 &lt;ul>
@@ -1436,14 +1436,14 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;p>So I made this webpage to render Steem discussion with more markdown syntax enabled. Then we can use Steem for some...boring contents.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
 &lt;p>You can easily append author name and post link after &lt;a href="https://heyeshuang.github.io/aeolipile/#/">https://heyeshuang.github.io/aeolipile/#/&lt;/a>, like this:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>Similar with the Steemit URL. And you can simply add this link before your post, just like me. :wink:&lt;/p>
 &lt;h3 id="features">Features&lt;/h3>
 &lt;p>With &lt;a href="https://github.com/markdown-it/markdown-it">markdown-it&lt;/a>, you can get almost every feature for &lt;a href="https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown">GitHub Flavored Markdown
 &lt;/a>.&lt;/p>
 &lt;h4 id="code">Code!&lt;/h4>
 &lt;p>Place your code between ``` like &lt;a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">this&lt;/a>, then you'll get a codeblock:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="color:#366">require&lt;/span> &lt;span style="color:#c30">&amp;#39;redcarpet&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="color:#366">require&lt;/span> &lt;span style="color:#c30">&amp;#39;redcarpet&amp;#39;&lt;/span>
 markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Redcarpet&lt;/span>&lt;span style="color:#555">.&lt;/span>new(&lt;span style="color:#c30">&amp;#34;Hello World!&amp;#34;&lt;/span>)
 &lt;span style="color:#366">puts&lt;/span> markdown&lt;span style="color:#555">.&lt;/span>to_html&lt;/code>&lt;/pre>&lt;/div>
 &lt;h4 id="math">Math!&lt;/h4>
@@ -1474,7 +1474,7 @@ markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Red
 &lt;p>题外话，中文可用的字体实在是太少了。因为&lt;code>SimSun&lt;/code>太渣，windows下的中文连个可用的&lt;code>serif&lt;/code>字体都没有，每天只能对着呆板的雅黑干瞪眼……&lt;/p></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>
 &lt;p>官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容&lt;/a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里&lt;/a>一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p>
 &lt;p>Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code>.mmark&lt;/code>后缀就行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax">这里&lt;/a>。&lt;/p>
 &lt;p>用这种渲染器，用&lt;code>$$&lt;/code>包裹的文字会自动转成用&lt;code>\[&lt;/code>或者&lt;code>\(&lt;/code>包裹，比如，&lt;code>inline $$\sqrt{b^2-4ac}$$&lt;/code>会转成&lt;code>\(\sqrt{b^2-4ac}\)&lt;/code>&lt;/p>
 &lt;p>之后，只要修改主题，把&lt;span class="math">\(\KaTeX\)&lt;/span>引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42">这里&lt;/a>。&lt;/p>
@@ -1491,7 +1491,7 @@ markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Red
 &lt;p>顺便一提，我用的&lt;code>hugo&lt;/code>静态博客生成器使用&lt;code>blackfriday&lt;/code>，配置项很多，我十分满意。&lt;/p>
 &lt;h3 id="那么用html实现高级功能呢">那么用HTML实现高级功能呢？&lt;/h3>
 &lt;p>很遗憾，这也不大可能。经过&lt;a href="https://github.com/steemit/condenser/blob/4d9c1d8f76366097d9a7159b1760f51d45201eb0/src/app/utils/SanitizeConfig.js">sanitize&lt;/a>过滤，编辑器只支持以下几个标签：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">div, iframe, del,
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">div, iframe, del,
 a, p, b, i, q, br, ul, li, ol, img,
 h1, h2, h3, h4, h5, h6, hr,
 blockquote, pre, code, em, strong, center,
@@ -1499,7 +1499,7 @@ table, thead, tbody, tr, th, td,
 strike, sup, sub
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>并没有什么超过Markdown语法的新功能。&lt;/p>
 &lt;p>当然，编辑器好心地提供了几个class来控制文字和图像的位置：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>用法大概是 &lt;code>&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code>，或者看&lt;a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里&lt;/a>的介绍。&lt;/p>
 &lt;h2 id="文章的url生成原理">文章的URL生成原理&lt;/h2>
 &lt;p>如果我在发布之前就知道文章的URL的话，就可以在文中引用自己了。这大概是一种自举 ;-)&lt;/p>
@@ -1539,7 +1539,7 @@ strike, sup, sub
 shortcode，点击展开
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
 {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
@@ -1549,7 +1549,7 @@ shortcode，点击展开
 &amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
 &lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>用法是这样的：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
 I am your father.
 NOOOOOOO!
 {{% /spoiler %}}
@@ -1723,9 +1723,9 @@ Incognito This Tab&lt;/a>
 &lt;p>为了显示中文界面，需要安装&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/">Chinese Simplified (zh-CN) Language Pack&lt;/a>，并访问&lt;code>about:config&lt;/code>，将&lt;code>intl.locale.matchOS&lt;/code>改为&lt;code>true&lt;/code>。这样，&lt;del>Firefox&lt;/del> Waterfox就可以按照系统的语言来显示了。&lt;/p>
 &lt;h2 id="pentadactyl">Pentadactyl&lt;/h2>
 &lt;p>Waterfox默认开启了多进程模式，会导致&lt;code>Pentadactyl&lt;/code>不能正常工作：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &amp;#34;length&amp;#34;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &amp;#34;length&amp;#34;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>仍然是在&lt;code>about:config&lt;/code>页面，查找&lt;code>browser.tabs.remote.autostart&lt;/code>，把所有找到的项都改成&lt;code>false&lt;/code>。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
 browser.tabs.remote.autostart.2=false
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>OK，保存完成，是时候升级&lt;a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum&lt;/a>了。&lt;/p>
 &lt;p>啊对了，本文同时发在&lt;a href="http://heyeshuang.tk">我的博客&lt;/a>和&lt;a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit&lt;/a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p>
@@ -1747,7 +1747,7 @@ browser.tabs.remote.autostart.2=false
 &lt;p>当然，这也是建立在我所获取的微量信息上的偏见，而且我会把这一段隐藏，因为如果我们意见不统一，你就不会再喜欢我了。&lt;/font>&lt;/p></description></item><item><title>关于那个IME helper</title><link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link><pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid><description>&lt;p>&lt;del>昨天&lt;/del>前天我用鸟语写了一篇贼 &lt;em>正经&lt;/em> 的&lt;a href="https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/">说明&lt;/a>，今天，我准备稍微介绍一下那里面的&lt;code>IME helper&lt;/code>。&lt;/p>
 &lt;p>正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p>
 &lt;p>嗯，这种需求，我听过一个叫AHK的语言……&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
 ;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
 setChineseLayout(){
 ;发送中文输入法切换快捷键，请根据实际情况设置。
@@ -1772,7 +1772,7 @@ send {Ctrl Up}
 &lt;li>And for Windows, I wrote a &lt;a href="https://github.com/heyeshuang/ime_helper">python script&lt;/a> to switch the IME of the &lt;em>foreground window&lt;/em>.&lt;/li>
 &lt;/ul>
 &lt;p>Then we could configure this package.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --current &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --dec &lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
@@ -1811,7 +1811,7 @@ python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span s
 &lt;p>好的，大概就是这样，之后也许还会更新 &lt;em>用户体验&lt;/em> ，如果我还没有把线接上，而且还没有被网瘾或者其他的什么吞噬的话。&lt;/p></description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p>之前在 &lt;a href="http://heyeshuang.tk">http://heyeshuang.tk&lt;/a> 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/">http://heyeshuang.tk/feed/&lt;/a> ，但是hugo提供的RSS地址是&lt;code>index.xml&lt;/code>样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p>
 &lt;p>所以只能改模版了，思路是把&lt;code>/feed&lt;/code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p>
 &lt;p>&lt;code>\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
@@ -1837,7 +1837,7 @@ python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span s
 &amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
 &lt;p>然后别忘了新建一个&lt;code>\content\feed\chicken.md&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
 title: &amp;#39;chicken&amp;#39;
 author: HeYSH
 date: 2012-06-22T06:32:32+00:00
@@ -1853,7 +1853,7 @@ Nothing here.
 &lt;li>&lt;code>img&lt;/code>和&lt;code>code&lt;/code>需要修改&lt;/li>
 &lt;/ul>
 &lt;p>对于正文，可以用&lt;code>pandoc&lt;/code>和&lt;code>pypandoc&lt;/code>转换：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
 root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
@@ -1872,7 +1872,7 @@ file&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;code>/2016/06/13/qart-coder：更友好的qr码/&lt;/code>，&lt;code>hugo&lt;/code>会解析为&lt;code>/2016/06/13/qart-coder更友好的qr码/&lt;/code>。看出区别了吗？&lt;/p>
 &lt;p>为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code>aliases&lt;/code>行，可以将原来的地址转发到新地址。&lt;/p>
 &lt;p>同样的，我也写了一个辣鸡脚本：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
 root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
@@ -1892,7 +1892,7 @@ data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color
 file&lt;span style="color:#555">.&lt;/span>write(d)
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
 &lt;p>这里假设你已经&lt;code>init&lt;/code>过了你的&lt;code>hugo&lt;/code>目录：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
 git checkout --orphan gh-pages
 # Unstage all files
 git rm --cached $(git ls-files)
@@ -1922,7 +1922,7 @@ git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin
 # Push the public subtree to the gh-pages branch
 git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
 git add -A
 git commit -m &amp;#34;some messages&amp;#34;
 git push origin master
@@ -1933,7 +1933,7 @@ git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;p>数据来源是客户端里面&lt;code>\dota2\steamapps\common\dota 2 beta\game\dota\scripts\npc\npc\_abilities.txt&lt;/code>，在下可不是页游玩家！&lt;/p>
 &lt;p>这个文件看起来特别像是JSON，但是是用空格分割的，而且还有\\注释。本来把这东西转换成JSON才是工作的大头，可是我懒了：找到了另一个玩家的&lt;a href="http://uglyvpn.com/2015/03/01/dota-2-items-txt-to-xmljson-tool/">Dota 2 items.txt/npc_abilities.txt to xml/json tool v1.1&lt;/a>，然后就是简单的排序了~&lt;/p>
 &lt;p>另外，除了法球，还有许多技能也是0秒CD的哦，比如幽鬼的降临什么的~&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
 &lt;span style="color:#309;font-weight:bold">&amp;#34;Name&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34; reality&amp;#34;&lt;/span>,
 &lt;span style="color:#309;font-weight:bold">&amp;#34;HeroName&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;spectre&amp;#34;&lt;/span>,
 &lt;span style="color:#309;font-weight:bold">&amp;#34;ID&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;5338&amp;#34;&lt;/span>,
@@ -1946,14 +1946,14 @@ git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;li>安装nethogs&lt;/li>
 &lt;li>创建&lt;code>/root/monitor.sh&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">3600&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">3600&lt;/span>
 &lt;span style="color:#033">TIMESTAMP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>date +%b_%d_%Y_%H_%M_%S&lt;span style="color:#c30">`&lt;/span>
 &lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>/var/log/nethogs/&lt;span style="color:#033">$TIMESTAMP&lt;/span>.log
 bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">;kill 0;) | (sleep &lt;/span>&lt;span style="color:#033">$TIMEOUT&lt;/span>&lt;span style="color:#c30">;kill 0; )&amp;#34;&lt;/span> 3&amp;gt;&amp;amp;&lt;span style="color:#f60">1&lt;/span> 2&amp;gt;/dev/null
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>/etc/systemd/system/nethogs.timer&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
 &lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs Daemon
 &lt;span style="color:#555">[&lt;/span>Timer&lt;span style="color:#555">]&lt;/span>
 &lt;span style="color:#033">OnBootSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1min
@@ -1963,7 +1963,7 @@ bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>/etc/systemd/system/nethogs.service&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
 &lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs run
 &lt;span style="color:#555">[&lt;/span>Service&lt;span style="color:#555">]&lt;/span>
 &lt;span style="color:#033">Type&lt;/span>&lt;span style="color:#555">=&lt;/span>oneshot
@@ -1971,7 +1971,7 @@ bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&
 &lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>查看使用情况用&lt;a href="https://github.com/boopathi/nethogs-parser">Nethogs parser&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">./hogs -type&lt;span style="color:#555">=&lt;/span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">./hogs -type&lt;span style="color:#555">=&lt;/span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p>把EMF里的所有文字转换成路径就能解决了&lt;/p>
 &lt;p>应该是辣鸡windows的文字渲染问题&lt;/p>
 &lt;p>&lt;img src="http://p1.bqimg.com/1949/3cdbc7407efbe04a.png" alt="使用前">
@@ -2473,7 +2473,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>这时就要用到fcitx的&lt;a href="https://github.com/felixonmars/fcitx-tsundere">蹭得累插件&lt;/a>了～还有菊҉花҉体҉放送哦～～&lt;/p></description></item><item><title>个人主页上线</title><link>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link><pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid><description>&lt;p>&lt;a href="http://heyeshuang.github.io">http://heyeshuang.github.io&lt;/a>&lt;/p>
 &lt;p>请使用现代浏览器并开启硬件加速&lt;/p></description></item><item><title>断</title><link>https://blog.heysh.xyz/2013/07/27/%E6%96%AD-3/</link><pubDate>Sat, 27 Jul 2013 15:12:05 +0000</pubDate><guid>https://blog.heysh.xyz/2013/07/27/%E6%96%AD-3/</guid><description>&lt;p>对面楼下有一小丛竹子，十余年来，似乎并没有什么变化。不过，从五楼的窗户看过去，这样的视角还是第一次。记忆中，楼道的窗台并不是这样低矮，然而阴暗和潮湿还是一样。\&lt;/p>
 &lt;p>耳边只有震耳欲聋的蝉鸣。不久，雨变得稍稍猛烈了一些，最后毫不留情地倾泄起来。&lt;/p></description></item><item><title>firefox主页被绑架</title><link>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link><pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid><description>&lt;p>如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样&lt;strong>恼羞成怒&lt;/strong>，抱着“就是不让你挣钱”的扭曲心态，直接修改&lt;code>C:\Windows\System32\drivers\etc\hosts&lt;/code>加上一行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">127.0.0.1 ww w.dyy55.c om
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">127.0.0.1 ww w.dyy55.c om
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>（去掉空格）&lt;/p>
 &lt;p>这样虽然有效，但是过于简单粗暴（But I’m lovin’ it）&lt;/p>
 &lt;p>更加优雅的答案是去修改&lt;code>C:\Users\me\Application Data\Mozilla\Firefox\Profiles\********.default\user.js&lt;/code>，或者直接把这个干掉。&lt;/p>
@@ -2529,7 +2529,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>用一张图表达我的感想：&lt;/p>
 &lt;p>&lt;img src="https://blog.heysh.xyz/evil.png" alt="evil">&lt;/p></description></item><item><title>十一年前，以及今天</title><link>https://blog.heysh.xyz/2013/05/10/%E5%8D%81%E4%B8%80%E5%B9%B4%E5%89%8D%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%BB%8A%E5%A4%A9/</link><pubDate>Fri, 10 May 2013 15:25:26 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/10/%E5%8D%81%E4%B8%80%E5%B9%B4%E5%89%8D%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%BB%8A%E5%A4%A9/</guid><description>&lt;p>今天在互联网上hang about的时候，发现了&lt;a href="http://www.maylin.net/Fireworks.html">这个&lt;/a>：&lt;/p>
 &lt;p>在h1位置就大张旗鼓的用p标签写着Posted July 2002，也完全是2002年的风格：table式排版，内嵌font，还有 &lt;em>大家都喜欢的&lt;/em> comic sans；再一看head，是长成这样的：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;text/html; charset=windows-1252&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Content-Type&amp;#34;&lt;/span>&amp;gt;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;text/html; charset=windows-1252&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Content-Type&amp;#34;&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Microsoft FrontPage 6.0&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;GENERATOR&amp;#34;&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;FrontPage.Editor.Document&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;ProgId&amp;#34;&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;no&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;imagetoolbar&amp;#34;&lt;/span>&amp;gt;
@@ -2675,7 +2675,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>后来发现直接安可能也可以？？&lt;/p>
 &lt;/blockquote>
 &lt;p>按照&lt;a href="http://www.road2stat.com/cn/tex/archtex.html">这里&lt;/a>的安装方式\&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">su –
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">su –
 wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
 mkdir /mnt/tex
 mount -o loop texlive2012.iso /mnt/tex/
@@ -2701,7 +2701,7 @@ rm -rf /mnt/tex
 &lt;p>然后&lt;code>sudo vim /usr/local/texlive/2012/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def&lt;/code>&lt;/p>
 &lt;p>把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p>
 &lt;p>编译用例：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-tex" data-lang="tex">&lt;span style="color:#069;font-weight:bold">\documentclass&lt;/span>&lt;span style="color:#366">{&lt;/span>ctexart&lt;span style="color:#366">}&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-tex" data-lang="tex">&lt;span style="color:#069;font-weight:bold">\documentclass&lt;/span>&lt;span style="color:#366">{&lt;/span>ctexart&lt;span style="color:#366">}&lt;/span>
 &lt;span style="color:#069;font-weight:bold">\begin&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
 为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
 &lt;span style="color:#069;font-weight:bold">\end&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
@@ -2735,7 +2735,7 @@ rm -rf /mnt/tex
 &lt;p>&lt;del>对于ubuntu，推荐换成archlinux&lt;/del>&lt;/p>
 &lt;p>程序自带的手册很详细，不过因为中文化好像出了一些小问题，那么可以直接去&lt;a href="http://www.texmacs.org/tmweb/manual/web-manual.en.html">http://www.texmacs.org/tmweb/manual/web-manual.en.html&lt;/a>\&lt;/p>
 &lt;p>关于字体，见http://www.texmacs.org/tmweb/download/fonts.en.html ，大概就是要下一个字体放到～/.TeXmacs/fonts/truetype里面然后运行&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">texmacs --delete-font-cache &amp;amp;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">texmacs --delete-font-cache &amp;amp;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>亲测Simsun，wqy可用～&lt;/p>
 &lt;p>关于插入图片，似乎在win下只能插入png的样子，然后更改宽高还要写成”800px”，谁知道还要加单位啊……&lt;/p>
 &lt;p>至今尚未解决的问题：linux下一导出pdf就crash，好像只对中文有效，自带help无压力，什么时候我去报个bug……&lt;/p></description></item><item><title>那么如同标题一样，这里要变成树洞了</title><link>https://blog.heysh.xyz/2012/10/05/%E9%82%A3%E4%B9%88%E5%A6%82%E5%90%8C%E6%A0%87%E9%A2%98%E4%B8%80%E6%A0%B7%EF%BC%8C%E8%BF%99%E9%87%8C%E8%A6%81%E5%8F%98%E6%88%90%E6%A0%91%E6%B4%9E%E4%BA%86/</link><pubDate>Fri, 05 Oct 2012 15:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/10/05/%E9%82%A3%E4%B9%88%E5%A6%82%E5%90%8C%E6%A0%87%E9%A2%98%E4%B8%80%E6%A0%B7%EF%BC%8C%E8%BF%99%E9%87%8C%E8%A6%81%E5%8F%98%E6%88%90%E6%A0%91%E6%B4%9E%E4%BA%86/</guid><description>&lt;p>\&lt;/p>
@@ -2871,7 +2871,7 @@ END:VCALENDAR
 &lt;li>我&lt;del>们&lt;/del>尚不知道那天所看到的&lt;del>花的名字&lt;/del>DTSTAMP的用处&lt;/li>
 &lt;/ul>
 &lt;p>最后补一些相关代码段（javascript）：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">$vCalArea.append(&lt;span style="color:#c30">&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span>);
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">$vCalArea.append(&lt;span style="color:#c30">&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span>);
 &lt;span style="color:#09f;font-style:italic">/***************生成文件头****************/&lt;/span>
 $vCalArea.append(&lt;span style="color:#c30">&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strBT &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strET &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> uid &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseInfo &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.place &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseName &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span>)
 &lt;span style="color:#09f;font-style:italic">/****************VEVENT部分***************/&lt;/span>

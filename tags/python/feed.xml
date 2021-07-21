@@ -54,7 +54,7 @@
 &lt;/section></description></item><item><title>关于那个IME helper</title><link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link><pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid><description>&lt;p>&lt;del>昨天&lt;/del>前天我用鸟语写了一篇贼 &lt;em>正经&lt;/em> 的&lt;a href="https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/">说明&lt;/a>，今天，我准备稍微介绍一下那里面的&lt;code>IME helper&lt;/code>。&lt;/p>
 &lt;p>正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p>
 &lt;p>嗯，这种需求，我听过一个叫AHK的语言……&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
 ;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
 setChineseLayout(){
 ;发送中文输入法切换快捷键，请根据实际情况设置。
@@ -79,7 +79,7 @@ send {Ctrl Up}
 &lt;li>And for Windows, I wrote a &lt;a href="https://github.com/heyeshuang/ime_helper">python script&lt;/a> to switch the IME of the &lt;em>foreground window&lt;/em>.&lt;/li>
 &lt;/ul>
 &lt;p>Then we could configure this package.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --current &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --dec &lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>

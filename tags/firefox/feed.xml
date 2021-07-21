@@ -167,9 +167,9 @@ Incognito This Tab&lt;/a>
 &lt;p>为了显示中文界面，需要安装&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/">Chinese Simplified (zh-CN) Language Pack&lt;/a>，并访问&lt;code>about:config&lt;/code>，将&lt;code>intl.locale.matchOS&lt;/code>改为&lt;code>true&lt;/code>。这样，&lt;del>Firefox&lt;/del> Waterfox就可以按照系统的语言来显示了。&lt;/p>
 &lt;h2 id="pentadactyl">Pentadactyl&lt;/h2>
 &lt;p>Waterfox默认开启了多进程模式，会导致&lt;code>Pentadactyl&lt;/code>不能正常工作：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &amp;#34;length&amp;#34;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &amp;#34;length&amp;#34;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>仍然是在&lt;code>about:config&lt;/code>页面，查找&lt;code>browser.tabs.remote.autostart&lt;/code>，把所有找到的项都改成&lt;code>false&lt;/code>。&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
 browser.tabs.remote.autostart.2=false
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>OK，保存完成，是时候升级&lt;a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum&lt;/a>了。&lt;/p>
 &lt;p>啊对了，本文同时发在&lt;a href="http://heyeshuang.tk">我的博客&lt;/a>和&lt;a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit&lt;/a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p>
@@ -180,7 +180,7 @@ browser.tabs.remote.autostart.2=false
 &lt;p>众所周知，pentadacytl的&lt;a href="http://5digits.org/nightlies">nightly build&lt;/a>已经坏掉好久了，现在的build在&lt;a href="https://github.com/ffledgling/dactyl-build/releases">GitHub&lt;/a>上，通过Travis CI编译，不明真相的我看得一愣一愣的。&lt;/p>
 &lt;p>另外，Firefox 43要求强制签名，幸好步骤还是挺简单的，先在install.rdf里把&lt;code>em:id=&amp;quot;pentadactyl@mod&amp;quot;&lt;/code>随便改一下，然后去&lt;a href="https://addons.mozilla.org/zh-CN/developers/addon/submit/2">这里&lt;/a>上传就行了。别忘了把“不要在此网站上展示我的附加组件”勾上。&lt;/p>
 &lt;p>另外，firefox也发布了签名工具&lt;a href="https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#jpm_sign">jpm&lt;/a>，好像也可以放到Travis CI里面……&lt;/p></description></item><item><title>firefox主页被绑架</title><link>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link><pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid><description>&lt;p>如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样&lt;strong>恼羞成怒&lt;/strong>，抱着“就是不让你挣钱”的扭曲心态，直接修改&lt;code>C:\Windows\System32\drivers\etc\hosts&lt;/code>加上一行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">127.0.0.1 ww w.dyy55.c om
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">127.0.0.1 ww w.dyy55.c om
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>（去掉空格）&lt;/p>
 &lt;p>这样虽然有效，但是过于简单粗暴（But I’m lovin’ it）&lt;/p>
 &lt;p>更加优雅的答案是去修改&lt;code>C:\Users\me\Application Data\Mozilla\Firefox\Profiles\********.default\user.js&lt;/code>，或者直接把这个干掉。&lt;/p>

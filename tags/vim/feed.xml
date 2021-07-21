@@ -10,7 +10,7 @@
 &lt;li>And for Windows, I wrote a &lt;a href="https://github.com/heyeshuang/ime_helper">python script&lt;/a> to switch the IME of the &lt;em>foreground window&lt;/em>.&lt;/li>
 &lt;/ul>
 &lt;p>Then we could configure this package.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --current &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --dec &lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
 python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>

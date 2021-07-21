@@ -31,7 +31,7 @@
 &lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
@@ -55,7 +55,7 @@
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
 pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
 pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>
@@ -65,7 +65,7 @@ pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &l
 &lt;p>之后，经过少量修改，即可用于现有的主题，效果如此博客所示。&lt;/p></description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p>数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p>
 &lt;p>官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo">这一部分内容&lt;/a>，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">这里&lt;/a>一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p>
 &lt;p>Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code>.mmark&lt;/code>后缀就行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo new post/some-name.mmark&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax">这里&lt;/a>。&lt;/p>
 &lt;p>用这种渲染器，用&lt;code>$$&lt;/code>包裹的文字会自动转成用&lt;code>\[&lt;/code>或者&lt;code>\(&lt;/code>包裹，比如，&lt;code>inline $$\sqrt{b^2-4ac}$$&lt;/code>会转成&lt;code>\(\sqrt{b^2-4ac}\)&lt;/code>&lt;/p>
 &lt;p>之后，只要修改主题，把&lt;span class="math">\(\KaTeX\)&lt;/span>引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42">这里&lt;/a>。&lt;/p>
@@ -83,7 +83,7 @@ pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &l
 shortcode，点击展开
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
 {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
@@ -93,7 +93,7 @@ shortcode，点击展开
 &amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
 &lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>用法是这样的：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
 I am your father.
 NOOOOOOO!
 {{% /spoiler %}}
@@ -101,7 +101,7 @@ NOOOOOOO!
 &lt;p>spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8&lt;/p></description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p>之前在 &lt;a href="http://heyeshuang.tk">http://heyeshuang.tk&lt;/a> 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/">http://heyeshuang.tk/feed/&lt;/a> ，但是hugo提供的RSS地址是&lt;code>index.xml&lt;/code>样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p>
 &lt;p>所以只能改模版了，思路是把&lt;code>/feed&lt;/code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p>
 &lt;p>&lt;code>\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
 &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
@@ -127,7 +127,7 @@ NOOOOOOO!
 &amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
 &lt;p>然后别忘了新建一个&lt;code>\content\feed\chicken.md&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
 title: &amp;#39;chicken&amp;#39;
 author: HeYSH
 date: 2012-06-22T06:32:32+00:00
@@ -143,7 +143,7 @@ Nothing here.
 &lt;li>&lt;code>img&lt;/code>和&lt;code>code&lt;/code>需要修改&lt;/li>
 &lt;/ul>
 &lt;p>对于正文，可以用&lt;code>pandoc&lt;/code>和&lt;code>pypandoc&lt;/code>转换：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
 root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
@@ -162,7 +162,7 @@ file&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;code>/2016/06/13/qart-coder：更友好的qr码/&lt;/code>，&lt;code>hugo&lt;/code>会解析为&lt;code>/2016/06/13/qart-coder更友好的qr码/&lt;/code>。看出区别了吗？&lt;/p>
 &lt;p>为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code>aliases&lt;/code>行，可以将原来的地址转发到新地址。&lt;/p>
 &lt;p>同样的，我也写了一个辣鸡脚本：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
 &lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
 root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
@@ -182,7 +182,7 @@ data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color
 file&lt;span style="color:#555">.&lt;/span>write(d)
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
 &lt;p>这里假设你已经&lt;code>init&lt;/code>过了你的&lt;code>hugo&lt;/code>目录：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
 git checkout --orphan gh-pages
 # Unstage all files
 git rm --cached $(git ls-files)
@@ -212,7 +212,7 @@ git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin
 # Push the public subtree to the gh-pages branch
 git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
 git add -A
 git commit -m &amp;#34;some messages&amp;#34;
 git push origin master

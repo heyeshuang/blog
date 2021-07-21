@@ -2,7 +2,7 @@
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
 pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
 pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>

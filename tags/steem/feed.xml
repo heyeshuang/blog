@@ -58,7 +58,7 @@
 &lt;p>如果我的内心能够更强大一点的话，我当然可以说：“F**k yourself，老子乐意”。但是显然现在的我还不行。所以，我做了这个&lt;code>Aeolipile&lt;/code>，来 &lt;em>暂时&lt;/em> 平复一下内心的情绪。&lt;/p>
 &lt;p>言归正传。Aeolipile是一个Steem文章的渲染工具，（明面上的）用途是为了增强Steemit的Markdown功能，比如说代码、公式什么的。比如这篇文章，可能也需要访问&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile">这个页面&lt;/a>才能看到脚注。具体支持的功能，可以看&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem">这篇文章&lt;/a>。大体上说，你可以在这里使用几乎所有Markdown的扩展语法。（而且之后我可能会把页面做得更好看些……也许）&lt;/p>
 &lt;p>已有的文章都可以用Aeolipile渲染，只要访问这个页面就行：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>和Steemit本身链接的构成差不多。&lt;/p>
 &lt;p>如果你也想使用这个工具的话，我建议：&lt;/p>
 &lt;ul>
@@ -93,14 +93,14 @@
 &lt;p>So I made this webpage to render Steem discussion with more markdown syntax enabled. Then we can use Steem for some...boring contents.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
 &lt;p>You can easily append author name and post link after &lt;a href="https://heyeshuang.github.io/aeolipile/#/">https://heyeshuang.github.io/aeolipile/#/&lt;/a>, like this:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>Similar with the Steemit URL. And you can simply add this link before your post, just like me. :wink:&lt;/p>
 &lt;h3 id="features">Features&lt;/h3>
 &lt;p>With &lt;a href="https://github.com/markdown-it/markdown-it">markdown-it&lt;/a>, you can get almost every feature for &lt;a href="https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown">GitHub Flavored Markdown
 &lt;/a>.&lt;/p>
 &lt;h4 id="code">Code!&lt;/h4>
 &lt;p>Place your code between ``` like &lt;a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">this&lt;/a>, then you'll get a codeblock:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="color:#366">require&lt;/span> &lt;span style="color:#c30">&amp;#39;redcarpet&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="color:#366">require&lt;/span> &lt;span style="color:#c30">&amp;#39;redcarpet&amp;#39;&lt;/span>
 markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Redcarpet&lt;/span>&lt;span style="color:#555">.&lt;/span>new(&lt;span style="color:#c30">&amp;#34;Hello World!&amp;#34;&lt;/span>)
 &lt;span style="color:#366">puts&lt;/span> markdown&lt;span style="color:#555">.&lt;/span>to_html&lt;/code>&lt;/pre>&lt;/div>
 &lt;h4 id="math">Math!&lt;/h4>
@@ -120,7 +120,7 @@ markdown &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#360">Red
 &lt;p>顺便一提，我用的&lt;code>hugo&lt;/code>静态博客生成器使用&lt;code>blackfriday&lt;/code>，配置项很多，我十分满意。&lt;/p>
 &lt;h3 id="那么用html实现高级功能呢">那么用HTML实现高级功能呢？&lt;/h3>
 &lt;p>很遗憾，这也不大可能。经过&lt;a href="https://github.com/steemit/condenser/blob/4d9c1d8f76366097d9a7159b1760f51d45201eb0/src/app/utils/SanitizeConfig.js">sanitize&lt;/a>过滤，编辑器只支持以下几个标签：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">div, iframe, del,
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">div, iframe, del,
 a, p, b, i, q, br, ul, li, ol, img,
 h1, h2, h3, h4, h5, h6, hr,
 blockquote, pre, code, em, strong, center,
@@ -128,7 +128,7 @@ table, thead, tbody, tr, th, td,
 strike, sup, sub
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>并没有什么超过Markdown语法的新功能。&lt;/p>
 &lt;p>当然，编辑器好心地提供了几个class来控制文字和图像的位置：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>用法大概是 &lt;code>&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code>，或者看&lt;a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里&lt;/a>的介绍。&lt;/p>
 &lt;h2 id="文章的url生成原理">文章的URL生成原理&lt;/h2>
 &lt;p>如果我在发布之前就知道文章的URL的话，就可以在文中引用自己了。这大概是一种自举 ;-)&lt;/p>
