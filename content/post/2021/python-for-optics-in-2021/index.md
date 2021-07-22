@@ -14,7 +14,7 @@ draft: true
 toc: true
 ---
 
-本文是[2019年博文]({{%relref python-for-optics%}})的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种全栈工程师的气质，可是好像很容易造成*Stack Overflow*。
+本文是[2019年博文]({{%relref python-for-optics%}})的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种<ruby>全栈<rp>(</rp><rt>full-stack</rt><rp>)</rp></ruby>工程师的气质，可是好像很容易造成*Stack Overflow*。
 
 这次，我尝试对这些代码进行简单的分类。因为我不属于*光学前端工程师*[^no]，也不属于*光学后端工程师*[^no]，而更像是*光学系统运维*[^no]，分类得大概并不算准确。
 
@@ -23,14 +23,28 @@ toc: true
 
 ## 有关物理光学的演示
 
-## dive in：为望远镜/日冕仪准备的Python
+## 真正的光学设计：为望远镜/日冕仪准备的Python
 
-你想学习怎样设计日冕仪吗？
+你想学习怎样设计日冕仪吗？ 
 
-### [Prysm](https://github.com/brandondube/prysm)
+{{% figure src="poppy.png" title="詹姆斯·韦伯空间望远镜的光学设计，来自spacetelescope/poppy"%}}
 
-这些库的对比可以看[这里](https://arxiv.org/abs/1807.07042)。[^OOC]如果你真的想设计日冕仪的话也可以读一读上一篇文献。
+就像所有的专业软件一样，如果你理解了整个物理过程，中间的示意图就并不是那么重要了。这样的库包括：
+
+1. [brandondube/prysm](https://github.com/brandondube/prysm) ([examples](https://prysm.readthedocs.io/en/stable/examples/index.html))
+2. [spacetelescope/poppy](https://github.com/spacetelescope/poppy)
+3. [ajeldorado/falco-python](https://github.com/ajeldorado/falco-python)[^FALCO]
+4. [ehpor/hcipy](https://github.com/ehpor/hcipy) ([examples](https://docs.hcipy.org/dev/tutorials/index.html))
+
+等。
+
+它们大概都能够计算光学系统的点扩散函数（PSF）、调制传递函数（MTF）、点列图之类的，而优化算法似乎欠奉。如果你对上面的一系列名词不大了解的话，建议和我一起补习《光学系统设计》。
+
 ![我逐渐理解一切](know-everything.jpg)
+
+这些库的对比可以看[这里](https://arxiv.org/abs/1807.07042)。[^OOC]如果你真的想设计日冕仪的话也可以读一读上一篇文献，那里对设计方法也有一些介绍。
+
+就我而言，我比较喜欢`HCIPy`，至少这里面还包含一些传递过程的内容，不至于直接跳到结论。
 
 ## 电磁场
 
