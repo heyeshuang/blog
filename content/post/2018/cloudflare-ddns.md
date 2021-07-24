@@ -37,6 +37,7 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records" \
 其中 `-x`是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。
 
 - 保存下面的脚本，修改`<ZONE_ID>`，`<RECORD_ID>`，`邮箱地址`，`API_KEY`，`子域名`什么的。如果不需要代理的话删除`-x`那一行。
+{{% spoiler "IPv4的情况"%}}
 
 ```bash
 #!/bin/sh
@@ -60,6 +61,30 @@ else
      fi
 fi
 ```
+{{%/spoiler%}}
+
+{{% spoiler "IPv6的情况，放在两个不同的脚本里面可以共存"%}}
+```bash
+NEW_IP=$(ip -6 addr | grep inet6 | awk -F '[ \t]+|/' '{print $3}' | grep -v ^::1 | grep -v ^fe80 | head -n 1)
+CURRENT_IP=$(cat /var/tmp/current_ip_6.txt)
+if [ "$NEW_IP" = "$CURRENT_IP" ]
+then
+     echo "No Change in IP Adddress!"
+else
+     OUTPUT=$(curl -X PUT "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records/<RECORD_ID>" \
+     -x socks5h://<代理地址，不要的话删去这一行>:1085 \
+     -H "Authorization:<如果你申请了API token的话是这样>" \
+     -H "Content-Type: application/json" \
+     --data '{"type":"AAAA","name":"<子域名>.<域名>.xyz","content":"'$NEW_IP'","ttl":1}')
+     if echo "$OUTPUT" | grep -q "$NEW_IP"; then
+          echo "Update IP Success!"
+          echo $NEW_IP > /var/tmp/current_ip_6.txt
+     else
+          echo "Update Error!"
+     fi
+fi
+```
+{{%/spoiler%}}
 
 - 接下来让它每两个小时运行一次就好了。
 ```bash
@@ -71,4 +96,5 @@ fi
 
 ---
 来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。
+
 来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入`current_ip.txt`了。
