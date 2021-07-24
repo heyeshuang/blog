@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 21 Feb 2021 13:57:08 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>2020</title><link>https://blog.heysh.xyz/2021/02/21/2020/</link><pubDate>Sun, 21 Feb 2021 13:57:08 +0000</pubDate><guid>https://blog.heysh.xyz/2021/02/21/2020/</guid><description>&lt;p>&lt;del>生活并不是在铁轨上奔腾的火车。相反地，有点像是在铁轨上躺着的人。火车没准下一秒就会碾过去，没准明年。&lt;/del>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 20 Jul 2021 17:03:31 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
+&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="准备">准备&lt;/h2>
+&lt;ol>
+&lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>
+&lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
+&lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
+&lt;/ol>
+&lt;figure>&lt;img src="ipv6-test.png"/>&lt;figcaption>
+&lt;h4>比如这样&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="打开端口">打开端口&lt;/h2>
+&lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
+&lt;figure>&lt;img src="ipv6-firewall.png"/>&lt;figcaption>
+&lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>如果对安全要求更高的话，可以参考&lt;a href="https://blog.ptsang.net/match-ipv6-dynamic-addresses-in-iptables?utm_source=pocket_mylist">这里&lt;/a>匹配IPv6地址的末几位，就像&lt;code>::abcd:1234:5678:90ef/::ffff:ffff:ffff:ffff&lt;/code>这样。&lt;/p>
+&lt;p>在这个时候，你应该已经可以通过手机移动网络用SSH连接回自己主机的IPv6地址了。就和公网一模一样。&lt;/p>
+&lt;h2 id="绑定域名">绑定域名&lt;/h2>
+&lt;p>任何一个支持IPv6的AAAA地址绑定的DDNS服务都可以。我家里恰好有一个长期开机的矿渣&lt;code>贝壳云&lt;/code>，是某次水逆之后想要买树莓派四，忍住了却又没有完全忍住的结果；之前写的&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">cloudflare脚本&lt;/a>刚好能用。&lt;/p>
+&lt;h2 id="跳板机自称">跳板机（自称）&lt;/h2>
+&lt;p>如果想对内网完全控制，而不是仅仅几个端口的话，可能需要所谓跳板机的配合。仔细想想，这是一个跨越&lt;code>防火墙.little&lt;/code>的活动，对付&lt;code>防火墙 the Great&lt;/code>的软件也完全适用。所以我在内网设备（aka矿渣）上部署了某个V开头的软件，通过Android客户端连回家里完全没有问题&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3" role="doc-endnote">
+&lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>2020</title><link>https://blog.heysh.xyz/2021/02/21/2020/</link><pubDate>Sun, 21 Feb 2021 13:57:08 +0000</pubDate><guid>https://blog.heysh.xyz/2021/02/21/2020/</guid><description>&lt;p>&lt;del>生活并不是在铁轨上奔腾的火车。相反地，有点像是在铁轨上躺着的人。火车没准下一秒就会碾过去，没准明年。&lt;/del>&lt;/p>
 &lt;p>没有没有，我并没有在2020年被火车碾，也没有被撞啊被剐蹭啊被碰瓷啊什么的。2020年，交通安全。HeYSH的总结就到这里。&lt;/p>
 &lt;hr>
 &lt;p>不，2020年并不仅仅是这样。在这一年里，这个身份——上网冲浪的这一部分人格——出现的频率变得很少了，这大概是一件好事情。前几天看到有人说，在互联网上消失的朋友是在过着更好的人生；平心而论，对于我，这句话并没有什么问题。最近这个新年是我过得最幸福的一个，我不必再去&lt;a href="https://blog.heysh.xyz/2019/01/27/summary-2018/">反省自己的性格&lt;/a>了；2020年本身也并不是一个难过的年份，虽然今年有不少悲剧，可（谢天谢地）并没发生在我身边。我对2020年的唯一的印象，只是在疯狂加班而已。&lt;/p>
@@ -810,6 +849,12 @@ win_BTC_short&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="c
 &lt;ul>
 &lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
 &lt;/ul>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+IPv4的情况
+&lt;/h4>
+&lt;/summary>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
 &lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
 &lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
@@ -830,15 +875,41 @@ win_BTC_short&lt;span style="color:#555">*&lt;/span>price_after&lt;span style="c
 &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
 &lt;span style="color:#069;font-weight:bold">fi&lt;/span>
 &lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+IPv6的情况，放在两个不同的脚本里面可以共存
+&lt;/h4>
+&lt;/summary>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>ip -6 addr | grep inet6 | awk -F &lt;span style="color:#c30">&amp;#39;[ \t]+|/&amp;#39;&lt;/span> &lt;span style="color:#c30">&amp;#39;{print $3}&amp;#39;&lt;/span> | grep -v ^::1 | grep -v ^fe80 | head -n 1&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip_6.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress!&amp;#34;&lt;/span>
+&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x socks5h://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:1085 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Authorization:&amp;lt;如果你申请了API token的话是这样&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;AAAA&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名&amp;gt;.&amp;lt;域名&amp;gt;.xyz&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip_6.txt
+&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
+&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;ul>
 &lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
 */120 * * * * /path/of/your/script.sh
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
 &lt;hr>
-&lt;p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。
-来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入&lt;code>current_ip.txt&lt;/code>了。&lt;/p></description></item><item><title>另一些预测未来的尝试，以及问题</title><link>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</link><pubDate>Wed, 02 May 2018 20:30:20 +0800</pubDate><guid>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/">之前&lt;/a>写到，我们不能从水晶球中看到未来的清晰倒影。而本次的结论更加悲观：那些模糊的幻象基本上没有任何效果，并且很可能是有害的。&lt;/p>
+&lt;p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。&lt;/p>
+&lt;p>来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入&lt;code>current_ip.txt&lt;/code>了。&lt;/p></description></item><item><title>另一些预测未来的尝试，以及问题</title><link>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</link><pubDate>Wed, 02 May 2018 20:30:20 +0800</pubDate><guid>https://blog.heysh.xyz/2018/05/02/dont-trust-the-oracle/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/">之前&lt;/a>写到，我们不能从水晶球中看到未来的清晰倒影。而本次的结论更加悲观：那些模糊的幻象基本上没有任何效果，并且很可能是有害的。&lt;/p>
 &lt;p>另，本文部分是&lt;a href="https://book.douban.com/subject/25782902/">《反脆弱》&lt;/a>的读书笔记。虽然作者有的观点&lt;del>过于极端&lt;/del>让人不爽，但是其理论仍能给人启发……特别是对于梦想预测未来的人来说。&lt;/p>
 &lt;h2 id="现实参数太多而数据量太少">现实：参数太多而数据量太少&lt;/h2>
 &lt;p>作为一个实验室民工，当我在说“波长与温度成正比”的时候，大概只需要测量8次就够了。可是，当参数太多（而且不能控制变量）的时候，情况变得复杂起来。很多时候，能够得到的数据大概是这样：&lt;/p>

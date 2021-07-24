@@ -64,6 +64,12 @@
 <ul>
 <li>保存下面的脚本，修改<code>&lt;ZONE_ID></code>，<code>&lt;RECORD_ID></code>，<code>邮箱地址</code>，<code>API_KEY</code>，<code>子域名</code>什么的。如果不需要代理的话删除<code>-x</code>那一行。</li>
 </ul>
+<details>
+<summary>
+<h4 class=inline>
+IPv4的情况
+</h4>
+</summary>
 <div class=highlight><pre tabindex=0 style=background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#099>#!/bin/sh
 </span><span style=color:#099></span><span style=color:#033>NEW_IP</span><span style=color:#555>=</span><span style=color:#069;font-weight:700>$(</span>curl http://members.3322.org/dyndns/getip<span style=color:#069;font-weight:700>)</span>
 <span style=color:#033>CURRENT_IP</span><span style=color:#555>=</span><span style=color:#069;font-weight:700>$(</span>cat /var/tmp/current_ip.txt<span style=color:#069;font-weight:700>)</span>
@@ -84,15 +90,41 @@
           <span style=color:#366>echo</span> <span style=color:#c30>&#34;Update Error!&#34;</span>
      <span style=color:#069;font-weight:700>fi</span>
 <span style=color:#069;font-weight:700>fi</span>
-</code></pre></div><ul>
+</code></pre></div></details>
+<details>
+<summary>
+<h4 class=inline>
+IPv6的情况，放在两个不同的脚本里面可以共存
+</h4>
+</summary>
+<div class=highlight><pre tabindex=0 style=background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#033>NEW_IP</span><span style=color:#555>=</span><span style=color:#069;font-weight:700>$(</span>ip -6 addr | grep inet6 | awk -F <span style=color:#c30>&#39;[ \t]+|/&#39;</span> <span style=color:#c30>&#39;{print $3}&#39;</span> | grep -v ^::1 | grep -v ^fe80 | head -n 1<span style=color:#069;font-weight:700>)</span>
+<span style=color:#033>CURRENT_IP</span><span style=color:#555>=</span><span style=color:#069;font-weight:700>$(</span>cat /var/tmp/current_ip_6.txt<span style=color:#069;font-weight:700>)</span>
+<span style=color:#069;font-weight:700>if</span> <span style=color:#555>[</span> <span style=color:#c30>&#34;</span><span style=color:#033>$NEW_IP</span><span style=color:#c30>&#34;</span> <span style=color:#555>=</span> <span style=color:#c30>&#34;</span><span style=color:#033>$CURRENT_IP</span><span style=color:#c30>&#34;</span> <span style=color:#555>]</span>
+<span style=color:#069;font-weight:700>then</span>
+     <span style=color:#366>echo</span> <span style=color:#c30>&#34;No Change in IP Adddress!&#34;</span>
+<span style=color:#069;font-weight:700>else</span>
+     <span style=color:#033>OUTPUT</span><span style=color:#555>=</span><span style=color:#069;font-weight:700>$(</span>curl -X PUT <span style=color:#c30>&#34;https://api.cloudflare.com/client/v4/zones/&lt;ZONE_ID&gt;/dns_records/&lt;RECORD_ID&gt;&#34;</span> <span style=color:#c30;font-weight:700>\
+</span><span style=color:#c30;font-weight:700></span>     -x socks5h://&lt;代理地址，不要的话删去这一行&gt;:1085 <span style=color:#c30;font-weight:700>\
+</span><span style=color:#c30;font-weight:700></span>     -H <span style=color:#c30>&#34;Authorization:&lt;如果你申请了API token的话是这样&gt;&#34;</span> <span style=color:#c30;font-weight:700>\
+</span><span style=color:#c30;font-weight:700></span>     -H <span style=color:#c30>&#34;Content-Type: application/json&#34;</span> <span style=color:#c30;font-weight:700>\
+</span><span style=color:#c30;font-weight:700></span>     --data <span style=color:#c30>&#39;{&#34;type&#34;:&#34;AAAA&#34;,&#34;name&#34;:&#34;&lt;子域名&gt;.&lt;域名&gt;.xyz&#34;,&#34;content&#34;:&#34;&#39;</span><span style=color:#033>$NEW_IP</span><span style=color:#c30>&#39;&#34;,&#34;ttl&#34;:1}&#39;</span><span style=color:#069;font-weight:700>)</span>
+     <span style=color:#069;font-weight:700>if</span> <span style=color:#366>echo</span> <span style=color:#c30>&#34;</span><span style=color:#033>$OUTPUT</span><span style=color:#c30>&#34;</span> | grep -q <span style=color:#c30>&#34;</span><span style=color:#033>$NEW_IP</span><span style=color:#c30>&#34;</span>; <span style=color:#069;font-weight:700>then</span>
+          <span style=color:#366>echo</span> <span style=color:#c30>&#34;Update IP Success!&#34;</span>
+          <span style=color:#366>echo</span> <span style=color:#033>$NEW_IP</span> &gt; /var/tmp/current_ip_6.txt
+     <span style=color:#069;font-weight:700>else</span>
+          <span style=color:#366>echo</span> <span style=color:#c30>&#34;Update Error!&#34;</span>
+     <span style=color:#069;font-weight:700>fi</span>
+<span style=color:#069;font-weight:700>fi</span>
+</code></pre></div></details>
+<ul>
 <li>接下来让它每两个小时运行一次就好了。</li>
 </ul>
 <div class=highlight><pre tabindex=0 style=background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#09f;font-style:italic># crontab -e</span>
 */120 * * * * /path/of/your/script.sh
 </code></pre></div><p><del>写字好累（躺</del></p>
 <hr>
-<p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。
-来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入<code>current_ip.txt</code>了。</p>
+<p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。</p>
+<p>来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入<code>current_ip.txt</code>了。</p>
 </div>
 </section>
 </article>
@@ -156,7 +188,7 @@ placeholder-java-500 min-w-0 max-w-xxxs" placeholder=search>
 <div class="text-sm text-gray-500 leading-tight a-gray">
 &copy;贺叶霜，<a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh>CC BY-SA</a>
 <br>
-Built with Hugo and theme <a href=https://github.com/heyeshuang/hugo-theme-tokiwa>Tokiwa</a>. 878 words in this page.
+Built with Hugo and theme <a href=https://github.com/heyeshuang/hugo-theme-tokiwa>Tokiwa</a>. 1229 words in this page.
 </div>
 </div>
 </div>
