@@ -19,10 +19,11 @@
 &lt;p>我学不会光学设计肯定是因为软件历史包袱太重，嗯。&lt;/p>
 &lt;h3 id="raypier">Raypier&lt;/h3>
 &lt;p>非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）&lt;/p>
+&lt;p>&lt;a href="https://raypier-optics.readthedocs.io/en/latest/">文档&lt;/a>在这里。&lt;/p>
 &lt;h3 id="pyrate">pyrate&lt;/h3>
 &lt;figure>&lt;img src="pyrate_in_freecad.png"/>
 &lt;/figure>
-&lt;p>正在写这篇博文的时候，我发现了这一套代码，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。&lt;/p>
+&lt;p>正在写这篇博文的时候，我发现了这一套&lt;a href="https://salsa.debian.org/mess42/pyrate/">代码&lt;/a>，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。毕竟我还没找到文档在哪里……&lt;/p>
 &lt;h3 id="pyoptools">pyoptools&lt;/h3>
 &lt;p>大概还在紧张地开发之中，等&lt;a href="https://pyoptools.readthedocs.io/en/latest/raytrace.html">文档&lt;/a>写好之后我会再回来看看的。&lt;/p>
 &lt;h3 id="另ricktu288ray-opticshttpsgithubcomricktu288ray-optics">另：&lt;a href="https://github.com/ricktu288/ray-optics">ricktu288/ray-optics&lt;/a>&lt;/h3>
