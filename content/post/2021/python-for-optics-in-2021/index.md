@@ -10,11 +10,11 @@ categories :
 title: "Python与光学计算，2021"
 description: "Not-So-Awesome Python for Optics in 2021"
 date: 2021-07-21T18:14:49+08:00
-draft: true
+draft: false
 toc: true
 ---
 
-本文是[2019年同名博文]({{%relref python-for-optics%}})的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种<ruby>全栈<rp>(</rp><rt>full-stack</rt><rp>)</rp></ruby>工程师的气质，可是好像很容易造成*Stack Overflow*。
+本文是[2019年同名博文]({{<relref "python-for-optics">}})的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种<ruby>全栈<rp>(</rp><rt>full-stack</rt><rp>)</rp></ruby>工程师的气质，可是好像很容易造成*Stack Overflow*。
 
 这次，我尝试对这些代码进行简单的分类。因为我不属于*光学前端工程师*[^no]，也不属于*光学后端工程师*[^no]，而更像是*光学系统运维*[^no]，分类得大概并不算准确。
 

@@ -13,7 +13,7 @@ draft: false
 ---
 > 来自2021-07-24的更新：
 
-本文的2021年版本在[这里]({{%relref "python-for-optics-in-2021"%}})。
+本文的2021年版本在[这里]({{<relref "python-for-optics-in-2021">}})。
 
 以下是2019年的原文。
 
