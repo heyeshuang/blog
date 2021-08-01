@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>光学 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/</link><description>Recent content in 光学 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 04 Aug 2019 20:03:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/feed.xml" rel="self" type="application/rss+xml"/><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>光学 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/</link><description>Recent content in 光学 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 21 Jul 2021 18:14:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/feed.xml" rel="self" type="application/rss+xml"/><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
+&lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
+&lt;h2 id="物理光学演示lightpipes">物理光学演示：LightPipes&lt;/h2>
+&lt;figure>&lt;img src="lightpipes.png" width="50%"/>
+&lt;/figure>
+&lt;p>正像我之前说的那样，我使用&lt;a href="https://github.com/opticspy/lightpipes">opticspy/lightpipes&lt;/a>完成了一部分激光物理过程的模拟，这个库大体上能够满足我当时的要求。但是要注意的是，个人感觉这个库是为了物理实验、教学演示而设计的，揭示原理的部分多于实际计算的部分，而且计算是序列化的。或许把它理解成类似&lt;a href="https://phet.colorado.edu/zh_CN/simulations/filter?subjects=physics&amp;amp;type=html">虚拟物理实验室&lt;/a>更好？&lt;/p>
+&lt;p>不过如果能力足够的话，大概能在上面实现一些比较复杂的功能。&lt;del>而且话又说回来，真正有一些严肃需求的人，早就去求助一些商业软件了。&lt;/del>&lt;/p>
+&lt;h2 id="光线追迹ray-tracing">光线追迹（Ray Tracing）&lt;/h2>
+&lt;p>在上次的博文里，在光线追迹方面，我曾经介绍过&lt;a href="https://github.com/Sterncat/opticspy">Sterncat/opticspy&lt;/a>，&lt;a href="https://github.com/quartiq/rayopt">RayOpt&lt;/a>和&lt;a href="https://github.com/cihologramas/pyoptools">cihologramas/pyoptools&lt;/a>，其中，前两组大概已经停止更新了，反而&lt;a href="https://github.com/cihologramas/pyoptools">pyoptools&lt;/a>看起来处于活跃开发的阶段。另外，这次我还看到了三个新鲜面孔：&lt;a href="https://github.com/mjhoptics/ray-optics">mjhoptics/ray-optics&lt;/a>、&lt;a href="https://salsa.debian.org/mess42/pyrate/">mess42/pyrate&lt;/a>和&lt;a href="https://github.com/bryancole/raypier_optics">bryancole/raypier_optics&lt;/a>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;h3 id="ray-optics">ray-optics&lt;/h3>
+&lt;figure>&lt;img src="rayoptics.png"/>&lt;figcaption>
+&lt;h4>ray-optics的Qt界面&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;em>序列化&lt;/em>的光线追迹，或成像光学，完成度很高，甚至自带一个类似Zemax的界面。在其&lt;a href="https://ray-optics.readthedocs.io/en/latest/Introduction.html">手册&lt;/a>上提到：&lt;/p>
+&lt;blockquote>
+&lt;p>Rethink how image forming optical calculations are done absent historical constraints on computer speed and memory.&lt;/p>
+&lt;/blockquote>
+&lt;p>我学不会光学设计肯定是因为软件历史包袱太重，嗯。&lt;/p>
+&lt;h3 id="raypier">Raypier&lt;/h3>
+&lt;p>非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）&lt;/p>
+&lt;h3 id="pyrate">pyrate&lt;/h3>
+&lt;figure>&lt;img src="pyrate_in_freecad.png"/>
+&lt;/figure>
+&lt;p>正在写这篇博文的时候，我发现了这一套代码，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。&lt;/p>
+&lt;h3 id="pyoptools">pyoptools&lt;/h3>
+&lt;p>大概还在紧张地开发之中，等&lt;a href="https://pyoptools.readthedocs.io/en/latest/raytrace.html">文档&lt;/a>写好之后我会再回来看看的。&lt;/p>
+&lt;h3 id="另ricktu288ray-opticshttpsgithubcomricktu288ray-optics">另：&lt;a href="https://github.com/ricktu288/ray-optics">ricktu288/ray-optics&lt;/a>&lt;/h3>
+&lt;p>当然不是用Python编写的，但是谁不喜欢&lt;a href="https://ricktu288.github.io/ray-optics/">开箱即用&lt;/a>的玩具呢？&lt;/p>
+&lt;h2 id="光学设计为望远镜日冕仪准备的python">光学设计：为望远镜/日冕仪准备的Python&lt;/h2>
+&lt;p>你想学习怎样设计日冕仪吗？&lt;/p>
+&lt;figure>&lt;img src="poppy.png"/>&lt;figcaption>
+&lt;h4>詹姆斯·韦伯空间望远镜的光学设计，来自poppy&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>就像所有的专业软件一样，如果你理解了整个物理过程，中间的示意图就并不是那么重要了。这样的库包括：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/brandondube/prysm">brandondube/prysm&lt;/a> (&lt;a href="https://prysm.readthedocs.io/en/stable/examples/index.html">examples&lt;/a>)&lt;/li>
+&lt;li>&lt;a href="https://github.com/spacetelescope/poppy">spacetelescope/poppy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ajeldorado/falco-python">ajeldorado/falco-python&lt;/a>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ehpor/hcipy">ehpor/hcipy&lt;/a> (&lt;a href="https://docs.hcipy.org/dev/tutorials/index.html">examples&lt;/a>)&lt;/li>
+&lt;/ol>
+&lt;p>等。&lt;/p>
+&lt;p>它们大概都能够计算光学系统的点扩散函数（PSF）、调制传递函数（MTF）、点列图之类的，而优化算法似乎欠奉&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。如果你对上面的一系列名词不大了解的话，建议和我一起补习&lt;a href="http://www.optzmx.com/forum.php?mod=viewthread&amp;amp;tid=1131&amp;amp;highlight=%B9%E2%D1%A7%CF%B5%CD%B3">《光学系统设计》&lt;/a>。&lt;/p>
+&lt;figure>&lt;img src="know-everything.jpg"
+alt="我逐渐理解一切" width="30%"/>
+&lt;/figure>
+&lt;p>这些库的对比可以看&lt;a href="https://arxiv.org/abs/1807.07042">这里&lt;/a>。&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>如果你真的想设计日冕仪的话也可以读一读这篇文献，那里对设计方法也有一些介绍。&lt;/p>
+&lt;p>就我而言，我比较喜欢&lt;code>HCIPy&lt;/code>，至少这里面还包含一些传递过程的内容，不至于直接跳到结论，和上个部分的库们更加接近一些。&lt;/p>
+&lt;h2 id="电磁场级别的仿真">电磁场级别的仿真&lt;/h2>
+&lt;p>无论是用EME法求解模式的&lt;a href="https://github.com/demisjohn/CAMFR">CAMFR&lt;/a>，还是用FDTD法计算电磁场的&lt;a href="https://github.com/NanoComp/meep">meep&lt;/a>，都远远超出了我的能力，请有识之士自行判断。&lt;/p>
+&lt;h2 id="激光谐振腔的简单计算">激光谐振腔的简单计算&lt;/h2>
+&lt;p>&lt;a href="www.rezonator.orion-project.org">rezonator&lt;/a>、&lt;a href="https://github.com/simcav/simcav">simcav/simcav&lt;/a>等，或许过于简单了，可能LightPipes能做的事情还要更多一些。&lt;/p>
+&lt;h2 id="大气光谱学">大气光谱学&lt;/h2>
+&lt;p>请移步&lt;a href="https://github.com/erwanp/awesome-spectra#atmospheric-spectra">这里&lt;/a>和&lt;a href="https://www.researchgate.net/publication/333046820_Py4CAtS-PYthon_for_Computational_ATmospheric_Spectroscopy">这里&lt;/a>。&lt;/p>
+&lt;h2 id="非线性光学">非线性光学&lt;/h2>
+&lt;p>&lt;img src="pynlo.png" alt="pyNLO">&lt;/p>
+&lt;p>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/p>
+&lt;p>总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>据我了解并不存在前两种职业。而运维在哪里都存在。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>感觉这些既会光学又会Python的人，在起名字方面都没有什么创意。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3" role="doc-endnote">
+&lt;p>A J Eldorado Riggs, Garreth Ruane, Erkin Sidick, Carl Coker, Brian D. Kern, Stuart B. Shaklan, &amp;quot;Fast linearized coronagraph optimizer (FALCO) I: a software toolbox for rapid coronagraphic design and wavefront correction,&amp;quot; Proc. SPIE 10698, Space Telescopes and Instrumentation 2018: Optical, Infrared, and Millimeter Wave, 106982V (9 August 2018); &lt;a href="https://doi.org/10.1117/12.2313812">https://doi.org/10.1117/12.2313812&lt;/a>，&lt;a href="https://core.ac.uk/download/pdf/211386255.pdf">PDF文件&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4" role="doc-endnote">
+&lt;p>如果尝试优化的话，可以看看&lt;a href="https://www.sciencedirect.com/science/article/abs/pii/S0030402618315821">doi:10.1016/j.ijleo.2018.10.073&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5" role="doc-endnote">
+&lt;p>Ruane, G., “Review of high-contrast imaging systems for current and future ground- and space-based telescopes I: coronagraph design methods and optical performance metrics”, in &lt;i>Space Telescopes and Instrumentation 2018: Optical, Infrared, and Millimeter Wave&lt;/i>, 2018, vol. 10698. doi:10.1117/12.2312948.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
+&lt;p>来自2021-07-24的更新：&lt;/p>
+&lt;/blockquote>
+&lt;p>本文的2021年版本在&lt;a href="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/">这里&lt;/a>。&lt;/p>
+&lt;p>以下是2019年的原文。&lt;/p>
+&lt;hr>
+&lt;blockquote>
 &lt;p>这大概是本博客第一次涉及博主在现实世界中的本职工作，大概算是一个好的开始。&lt;/p>
 &lt;/blockquote>
 &lt;p>在光学设计及模拟的领域，商业软件，比如Zemax/Code V、LASCAD、GLAD等，提供了较为完整的解决方案，对于较为前沿的领域，国内研究的事实标准是，通过MATLAB自行编写可靠性和可维护性都存在较大问题的脚本。但是，对于一些&lt;del>研究经费不足同时工作量不饱和的&lt;/del>课题组，了解这个古老的学科与当今流行语言的交集，可能也具有一定的意义。&lt;/p>
