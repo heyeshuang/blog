@@ -42,11 +42,13 @@ toc: true
 
 非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）
 
+[文档](https://raypier-optics.readthedocs.io/en/latest/)在这里。
+
 ### pyrate
 
 {{%figure src="pyrate_in_freecad.png"%}}
 
-正在写这篇博文的时候，我发现了这一套代码，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。
+正在写这篇博文的时候，我发现了这一套[代码](https://salsa.debian.org/mess42/pyrate/)，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。毕竟我还没找到文档在哪里……
 
 ### pyoptools
 
