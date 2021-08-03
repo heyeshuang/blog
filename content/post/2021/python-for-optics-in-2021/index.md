@@ -58,6 +58,12 @@ toc: true
 
 当然不是用Python编写的，但是谁不喜欢[开箱即用](https://ricktu288.github.io/ray-optics/)的玩具呢？
 
+### 另：[Beam4](https://www.stellarsoftware.com/)及其他
+
+也许代码就像蘑菇一样，找到一个又有另外两个出来。Beam4是用Java编写的，但看起来成熟度比这里的很多库高得多，比如将要提到的两个。
+
+我把[tracepy](https://github.com/GNiendorf/tracepy)和[optcom](https://github.com/optcom-org/optcom)列在这里，只是为了之后不要重新发现它们了。
+
 ## 光学设计：为望远镜/日冕仪准备的Python
 
 你想学习怎样设计日冕仪吗？ 
@@ -93,11 +99,12 @@ toc: true
 
 请移步[这里](https://github.com/erwanp/awesome-spectra#atmospheric-spectra)和[这里](https://www.researchgate.net/publication/333046820_Py4CAtS-PYthon_for_Computational_ATmospheric_Spectroscopy)。
 
-## 非线性光学
+## 其他
 
 ![pyNLO](pynlo.png)
-
-[PyNLO](https://github.com/pyNLO/PyNLO)，大概是`SNLO`的某种代替品。
+- [PyNLO](https://github.com/pyNLO/PyNLO)：与非线性光学有关，大概是`SNLO`的某种代替品。
+- [Finesse and PyKat](http://www.gwoptics.org/finesse/)：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。
+- [OASYS](https://www.aps.anl.gov/Science/Scientific-Software/OASYS)：如果X射线也是光的话，那么[WOFRY](https://github.com/oasys-kit/wofry)也是光学计算。
 
 总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.
 
