@@ -28,6 +28,9 @@
 &lt;p>大概还在紧张地开发之中，等&lt;a href="https://pyoptools.readthedocs.io/en/latest/raytrace.html">文档&lt;/a>写好之后我会再回来看看的。&lt;/p>
 &lt;h3 id="另ricktu288ray-opticshttpsgithubcomricktu288ray-optics">另：&lt;a href="https://github.com/ricktu288/ray-optics">ricktu288/ray-optics&lt;/a>&lt;/h3>
 &lt;p>当然不是用Python编写的，但是谁不喜欢&lt;a href="https://ricktu288.github.io/ray-optics/">开箱即用&lt;/a>的玩具呢？&lt;/p>
+&lt;h3 id="另beam4httpswwwstellarsoftwarecom及其他">另：&lt;a href="https://www.stellarsoftware.com/">Beam4&lt;/a>及其他&lt;/h3>
+&lt;p>也许代码就像蘑菇一样，找到一个又有另外两个出来。Beam4是用Java编写的，但看起来成熟度比这里的很多库高得多，比如将要提到的两个。&lt;/p>
+&lt;p>我把&lt;a href="https://github.com/GNiendorf/tracepy">tracepy&lt;/a>和&lt;a href="https://github.com/optcom-org/optcom">optcom&lt;/a>列在这里，只是为了之后不要重新发现它们了。&lt;/p>
 &lt;h2 id="光学设计为望远镜日冕仪准备的python">光学设计：为望远镜/日冕仪准备的Python&lt;/h2>
 &lt;p>你想学习怎样设计日冕仪吗？&lt;/p>
 &lt;figure>&lt;img src="poppy.png"/>&lt;figcaption>
@@ -54,9 +57,13 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>&lt;a href="www.rezonator.orion-project.org">rezonator&lt;/a>、&lt;a href="https://github.com/simcav/simcav">simcav/simcav&lt;/a>等，或许过于简单了，可能LightPipes能做的事情还要更多一些。&lt;/p>
 &lt;h2 id="大气光谱学">大气光谱学&lt;/h2>
 &lt;p>请移步&lt;a href="https://github.com/erwanp/awesome-spectra#atmospheric-spectra">这里&lt;/a>和&lt;a href="https://www.researchgate.net/publication/333046820_Py4CAtS-PYthon_for_Computational_ATmospheric_Spectroscopy">这里&lt;/a>。&lt;/p>
-&lt;h2 id="非线性光学">非线性光学&lt;/h2>
+&lt;h2 id="其他">其他&lt;/h2>
 &lt;p>&lt;img src="pynlo.png" alt="pyNLO">&lt;/p>
-&lt;p>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>：与非线性光学有关，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/li>
+&lt;li>&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。&lt;/li>
+&lt;li>&lt;a href="https://www.aps.anl.gov/Science/Scientific-Software/OASYS">OASYS&lt;/a>：如果X射线也是光的话，那么&lt;a href="https://github.com/oasys-kit/wofry">WOFRY&lt;/a>也是光学计算。&lt;/li>
+&lt;/ul>
 &lt;p>总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>
