@@ -4,7 +4,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <title>林中阴影 | 你可能并不需要内网穿透</title>
 <meta name=viewport content="width=device-width,minimum-scale=1">
-<meta name=generator content="Hugo 0.86.1">
+<meta name=generator content="Hugo 0.87.0">
 <meta name=ROBOTS content="INDEX, FOLLOW">
 <link href=/dist/app.css rel=stylesheet>
 <link rel="shortcut icon" href=img/favicon.png type=image/png>
@@ -68,6 +68,8 @@
 <h2 id=跳板机自称>跳板机（自称）</h2>
 <p>如果想对内网完全控制，而不是仅仅几个端口的话，可能需要所谓跳板机的配合。仔细想想，这是一个跨越<code>防火墙.little</code>的活动，对付<code>防火墙 the Great</code>的软件也完全适用。所以我在内网设备（aka矿渣）上部署了某个V开头的软件，通过Android客户端连回家里完全没有问题<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>。</p>
 <p>如果外面的Windows想要进来的话，我现在用的是已经跑路的<code>SocksCap64</code><sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>。把<code>MSTSC.exe</code>加到列表里，就可以愉快地远程桌面了。</p>
+<hr>
+<p>来自210805的更新：后来我按照<a href=https://chanix.github.io/TincCookbook/introduction/>这篇教程</a>在矿渣上部署了tinc，并且增加了<a href=https://tinc-vpn.org/examples/proxy-arp/>ARP代理</a>用来访问内网。我又不能直接把家里的老光猫换掉……</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -146,7 +148,7 @@ placeholder-java-500 min-w-0 max-w-xxxs" placeholder=search>
 <div class="text-sm text-gray-500 leading-tight a-gray">
 &copy;贺叶霜，<a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh>CC BY-SA</a>
 <br>
-Built with Hugo and theme <a href=https://github.com/heyeshuang/hugo-theme-tokiwa>Tokiwa</a>. 951 words in this page.
+Built with Hugo and theme <a href=https://github.com/heyeshuang/hugo-theme-tokiwa>Tokiwa</a>. 1018 words in this page.
 </div>
 </div>
 </div>
