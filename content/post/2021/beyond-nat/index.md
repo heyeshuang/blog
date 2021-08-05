@@ -44,6 +44,9 @@ draft: false
 
 如果外面的Windows想要进来的话，我现在用的是已经跑路的`SocksCap64`[^3]。把`MSTSC.exe`加到列表里，就可以愉快地远程桌面了。
 
+---
+
+来自210805的更新：后来我按照[这篇教程](https://chanix.github.io/TincCookbook/introduction/)在矿渣上部署了tinc，并且增加了[ARP代理](https://tinc-vpn.org/examples/proxy-arp/)用来访问内网。我又不能直接把家里的老光猫换掉……
 
 [^1]:用于在电信级NAT环境中服务提供商与其用户通信，[维基百科](https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80)上说的。
 [^2]:记住客户端不要`绕过局域网地址`，我们用的就是局域网。
