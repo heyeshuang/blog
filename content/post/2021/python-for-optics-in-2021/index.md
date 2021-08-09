@@ -95,8 +95,8 @@ toc: true
 
 {{% figure src="inkscape_ray_tracing.png" title="光线追迹——用inkscape更简单的画图方式"%}}
 
-- [Raysect](https://github.com/raysect/source)
-- [inkscape-raytracing](https://github.com/damienBloch/inkscape-raytracing)
+- 三维：[Raysect](https://github.com/raysect/source)，或者也可以用Blender+[OptiCore](https://github.com/CodeFHD/OptiCore)+[LuxCore](https://github.com/LuxCoreRender/LuxCore)（[youtube](https://www.youtube.com/watch?v=3hln88ukiZI)）
+- 二维：[inkscape-raytracing](https://github.com/damienBloch/inkscape-raytracing)
 
 ## 电磁场级别的仿真
 
