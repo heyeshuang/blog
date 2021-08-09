@@ -62,7 +62,7 @@ toc: true
 
 也许代码就像蘑菇一样，找到一个又有另外两个出来。Beam4是用Java编写的，但看起来成熟度比这里的很多库高得多，比如将要提到的两个。
 
-我把[tracepy](https://github.com/GNiendorf/tracepy)和[optcom](https://github.com/optcom-org/optcom)列在这里，只是为了之后不要重新发现它们了。
+我把[tracepy](https://github.com/GNiendorf/tracepy)、[odak](https://github.com/kunguz/odak)和[optcom](https://github.com/optcom-org/optcom)列在这里，只是为了之后不要重新发现它们了。求求你们好好写写文档吧……
 
 ## 光学设计：为望远镜/日冕仪准备的Python
 
@@ -87,6 +87,17 @@ toc: true
 
 就我而言，我比较喜欢`HCIPy`，至少这里面还包含一些传递过程的内容，不至于直接跳到结论，和上个部分的库们更加接近一些。
 
+## 另一类光线追迹
+
+这种的主要目的是为了让自己的文章显得更好看，所以我就直接放两张图：
+
+{{% figure src="raysect.png" title="Raysect生成的，就好像杂志封面一样"%}}
+
+{{% figure src="inkscape_ray_tracing.png" title="光线追迹——用inkscape更简单的画图方式"%}}
+
+- [Raysect](https://github.com/raysect/source)
+- [inkscape-raytracing](https://github.com/damienBloch/inkscape-raytracing)
+
 ## 电磁场级别的仿真
 
 无论是用EME法求解模式的[CAMFR](https://github.com/demisjohn/CAMFR)，还是用FDTD法计算电磁场的[meep](https://github.com/NanoComp/meep)，都远远超出了我的能力，请有识之士自行判断。
@@ -105,6 +116,8 @@ toc: true
 - [PyNLO](https://github.com/pyNLO/PyNLO)：与非线性光学有关，大概是`SNLO`的某种代替品。
 - [Finesse and PyKat](http://www.gwoptics.org/finesse/)：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。
 - [OASYS](https://www.aps.anl.gov/Science/Scientific-Software/OASYS)：如果X射线也是光的话，那么[WOFRY](https://github.com/oasys-kit/wofry)也是光学计算。
+- [laserbeamsize](https://github.com/scottprahl/laserbeamsize)：一个完善的激光光斑直径和$M^2$计算库。
+
 
 总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.
 
