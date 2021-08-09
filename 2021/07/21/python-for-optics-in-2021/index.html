@@ -54,6 +54,7 @@
 </ul>
 </li>
 <li><a href=#光学设计为望远镜日冕仪准备的python>光学设计：为望远镜/日冕仪准备的Python</a></li>
+<li><a href=#另一类光线追迹>另一类光线追迹</a></li>
 <li><a href=#电磁场级别的仿真>电磁场级别的仿真</a></li>
 <li><a href=#激光谐振腔的简单计算>激光谐振腔的简单计算</a></li>
 <li><a href=#大气光谱学>大气光谱学</a></li>
@@ -100,7 +101,7 @@
 <p>当然不是用Python编写的，但是谁不喜欢<a href=https://ricktu288.github.io/ray-optics/>开箱即用</a>的玩具呢？</p>
 <h3 id=另beam4httpswwwstellarsoftwarecom及其他>另：<a href=https://www.stellarsoftware.com/>Beam4</a>及其他</h3>
 <p>也许代码就像蘑菇一样，找到一个又有另外两个出来。Beam4是用Java编写的，但看起来成熟度比这里的很多库高得多，比如将要提到的两个。</p>
-<p>我把<a href=https://github.com/GNiendorf/tracepy>tracepy</a>和<a href=https://github.com/optcom-org/optcom>optcom</a>列在这里，只是为了之后不要重新发现它们了。</p>
+<p>我把<a href=https://github.com/GNiendorf/tracepy>tracepy</a>、<a href=https://github.com/kunguz/odak>odak</a>和<a href=https://github.com/optcom-org/optcom>optcom</a>列在这里，只是为了之后不要重新发现它们了。求求你们好好写写文档吧……</p>
 <h2 id=光学设计为望远镜日冕仪准备的python>光学设计：为望远镜/日冕仪准备的Python</h2>
 <p>你想学习怎样设计日冕仪吗？</p>
 <figure><img src=poppy.png><figcaption>
@@ -120,6 +121,20 @@
 </figure>
 <p>这些库的对比可以看<a href=https://arxiv.org/abs/1807.07042>这里</a>。<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>如果你真的想设计日冕仪的话也可以读一读这篇文献，那里对设计方法也有一些介绍。</p>
 <p>就我而言，我比较喜欢<code>HCIPy</code>，至少这里面还包含一些传递过程的内容，不至于直接跳到结论，和上个部分的库们更加接近一些。</p>
+<h2 id=另一类光线追迹>另一类光线追迹</h2>
+<p>这种的主要目的是为了让自己的文章显得更好看，所以我就直接放两张图：</p>
+<figure><img src=raysect.png><figcaption>
+<h4>Raysect生成的，就好像杂志封面一样</h4>
+</figcaption>
+</figure>
+<figure><img src=inkscape_ray_tracing.png><figcaption>
+<h4>光线追迹——用inkscape更简单的画图方式</h4>
+</figcaption>
+</figure>
+<ul>
+<li><a href=https://github.com/raysect/source>Raysect</a></li>
+<li><a href=https://github.com/damienBloch/inkscape-raytracing>inkscape-raytracing</a></li>
+</ul>
 <h2 id=电磁场级别的仿真>电磁场级别的仿真</h2>
 <p>无论是用EME法求解模式的<a href=https://github.com/demisjohn/CAMFR>CAMFR</a>，还是用FDTD法计算电磁场的<a href=https://github.com/NanoComp/meep>meep</a>，都远远超出了我的能力，请有识之士自行判断。</p>
 <h2 id=激光谐振腔的简单计算>激光谐振腔的简单计算</h2>
@@ -132,6 +147,7 @@
 <li><a href=https://github.com/pyNLO/PyNLO>PyNLO</a>：与非线性光学有关，大概是<code>SNLO</code>的某种代替品。</li>
 <li><a href=http://www.gwoptics.org/finesse/>Finesse and PyKat</a>：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。</li>
 <li><a href=https://www.aps.anl.gov/Science/Scientific-Software/OASYS>OASYS</a>：如果X射线也是光的话，那么<a href=https://github.com/oasys-kit/wofry>WOFRY</a>也是光学计算。</li>
+<li><a href=https://github.com/scottprahl/laserbeamsize>laserbeamsize</a>：一个完善的激光光斑直径和$M^2$计算库。</li>
 </ul>
 <p>总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.</p>
 <section class=footnotes role=doc-endnotes>
@@ -218,7 +234,7 @@ placeholder-java-500 min-w-0 max-w-xxxs" placeholder=search>
 <div class="text-sm text-gray-500 leading-tight a-gray">
 &copy;贺叶霜，<a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh>CC BY-SA</a>
 <br>
-Built with Hugo and theme <a href=https://github.com/heyeshuang/hugo-theme-tokiwa>Tokiwa</a>. 1984 words in this page.
+Built with Hugo and theme <a href=https://github.com/heyeshuang/hugo-theme-tokiwa>Tokiwa</a>. 2122 words in this page.
 </div>
 </div>
 </div>
