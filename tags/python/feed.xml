@@ -62,8 +62,8 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;/figcaption>
 &lt;/figure>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/raysect/source">Raysect&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/damienBloch/inkscape-raytracing">inkscape-raytracing&lt;/a>&lt;/li>
+&lt;li>三维：&lt;a href="https://github.com/raysect/source">Raysect&lt;/a>，或者也可以用Blender+&lt;a href="https://github.com/CodeFHD/OptiCore">OptiCore&lt;/a>+&lt;a href="https://github.com/LuxCoreRender/LuxCore">LuxCore&lt;/a>（&lt;a href="https://www.youtube.com/watch?v=3hln88ukiZI">youtube&lt;/a>）&lt;/li>
+&lt;li>二维：&lt;a href="https://github.com/damienBloch/inkscape-raytracing">inkscape-raytracing&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="电磁场级别的仿真">电磁场级别的仿真&lt;/h2>
 &lt;p>无论是用EME法求解模式的&lt;a href="https://github.com/demisjohn/CAMFR">CAMFR&lt;/a>，还是用FDTD法计算电磁场的&lt;a href="https://github.com/NanoComp/meep">meep&lt;/a>，都远远超出了我的能力，请有识之士自行判断。&lt;/p>
