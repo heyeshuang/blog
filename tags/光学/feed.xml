@@ -75,6 +75,7 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>&lt;img src="pynlo.png" alt="pyNLO">&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>：与非线性光学有关，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/li>
+&lt;li>&lt;a href="https://github.com/AOtools/soapy">AOtools/soapy&lt;/a>：用于自适应光学过程的模拟，另有一组&lt;a href="https://github.com/AOtools/aotools">用于分析&lt;/a>的库。&lt;/li>
 &lt;li>&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。&lt;/li>
 &lt;li>&lt;a href="https://www.aps.anl.gov/Science/Scientific-Software/OASYS">OASYS&lt;/a>：如果X射线也是光的话，那么&lt;a href="https://github.com/oasys-kit/wofry">WOFRY&lt;/a>也是光学计算。&lt;/li>
 &lt;li>&lt;a href="https://github.com/scottprahl/laserbeamsize">laserbeamsize&lt;/a>：一个完善的激光光斑直径和$M^2$计算库。&lt;/li>

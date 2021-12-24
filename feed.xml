@@ -1,4 +1,252 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 21 Jul 2021 18:14:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 24 Dec 2021 19:29:52 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>我在GitHub的⭐</title><link>https://blog.heysh.xyz/2021/12/24/github-stars/</link><pubDate>Fri, 24 Dec 2021 19:29:52 +0800</pubDate><guid>https://blog.heysh.xyz/2021/12/24/github-stars/</guid><description>&lt;p>我想要去整理GitHub的star列表已经很久了。之前在&lt;del>同性交友&lt;/del>上网冲浪时，经常会看到各式各样的库。怀着一种“这个之后可能会用到”的心情，把它们一一加入列表，然后抛诸脑后。下次重新发现的时候，&lt;code>starred&lt;/code>状态仿佛是在嘲笑我一样。最近，正好有一个大项目的deadline横亘眼前，是做这种&lt;strong>看似&lt;/strong>有意义的事情的最好时间。&lt;/p>
+&lt;p>在看完283/473个项目后&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，我意识到自己所说的整理，不过是把链接列表应用&lt;em>猴子排序法&lt;/em>而已，复杂度似乎并没有减少，花哨的图表、漂亮的分析更是一概欠奉。可能我应该回去干活儿了。&lt;/p>
+&lt;p>突然想起来，之前我好像说自己“很难有无聊的时候”，年轻真好啊。&lt;/p>
+&lt;p>高能预警：下面是一个超级长的列表，而且基本没有什么规律。粗体部分的是我之前用过的、感觉还不错的repo。&lt;/p>
+&lt;hr>
+&lt;h2 id="网络">网络&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>V**ay, S**s*ks, wallpr***y&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://github.com/nmap/npcap">nmap/npcap&lt;/a>: Nmap Project's Windows packet capture and transmission library&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/gsliepen/tinc">gsliepen/tinc&lt;/a>&lt;/strong>: a VPN daemon&lt;/li>
+&lt;li>&lt;a href="https://github.com/coolsnowwolf/lede">coolsnowwolf/lede&lt;/a>: Lean's OpenWrt source&lt;/li>
+&lt;li>&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>: 搭建透明代理环境的简易脚本&lt;/li>
+&lt;/ul>
+&lt;h3 id="dns">DNS&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/zfl9/chinadns-ng">zfl9/chinadns-ng&lt;/a> - chinadns next generation, refactoring with epoll and ipset&lt;/li>
+&lt;li>&lt;a href="https://github.com/felixonmars/dnsmasq-china-list">felixonmars/dnsmasq-china-list&lt;/a> - Chinese-specific configuration to improve your favorite DNS server. Best partner for chnroutes.&lt;/li>
+&lt;/ul>
+&lt;h2 id="软件">软件&lt;/h2>
+&lt;h3 id="实用软件">实用软件&lt;/h3>
+&lt;blockquote>
+&lt;p>这个分类就好像华军软件园一样……&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/borgbackup/borg">borgbackup/borg&lt;/a>: Deduplicating archiver with compression and authenticated encryption.&lt;/p>
+&lt;blockquote>
+&lt;p>我用RSync就够了&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/syncthing/syncthing">syncthing/syncthing&lt;/a>&lt;/strong>: Open Source Continuous File Synchronization&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/hluk/CopyQ">hluk/CopyQ&lt;/a>: Clipboard manager with advanced features&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/huginn/huginn">huginn/huginn&lt;/a>: Create agents that monitor and act on your behalf. Your agents are standing by!&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/keepassxreboot/keepassxc">keepassxreboot/keepassxc.&lt;/a>&lt;/strong>: KeePassXC is a cross-platform community-driven port of the Windows application “Keepass Password Safe”&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/chriszarate/supergenpass">chriszarate/supergenpass&lt;/a>: A free bookmarklet password generator.&lt;/p>
+&lt;blockquote>
+&lt;p>如果不想使用弱密码，除了使用密码管理器之外的其他选择&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/LionelJouin/PiP-Tool">LionelJouin/PiP-Tool&lt;/a>: PiP tool is a software to use the Picture in Picture mode on Windows. This feature allows you to watch content (video for example) in thumbnail format on the screen while continuing to use any other software on Windows.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/cheat-engine/cheat-engine">cheat-engine/cheat-engine&lt;/a>: Cheat Engine. A development environment focused on modding&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch/activitywatch&lt;/a>: The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="下载">下载&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/nicotine-plus/nicotine-plus">nicotine-plus/nicotine-plus&lt;/a>: Graphical client for the Soulseek peer-to-peer network&lt;/li>
+&lt;li>&lt;a href="https://github.com/idlesign/torrentool">idlesign/torrentool&lt;/a>: The tool to work with torrent files.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ngosang/trackerslist">ngosang/trackerslist&lt;/a>: Updated list of public BitTorrent trackers&lt;/li>
+&lt;li>&lt;a href="https://github.com/ytdl-org/youtube-dl">ytdl-org/youtube-dl&lt;/a>: Command-line program to download videos from YouTube.com and other video sites&lt;/li>
+&lt;li>&lt;a href="https://github.com/mayswind/AriaNg">mayswind/AriaNg&lt;/a>: AriaNg, a modern web frontend making aria2 easier to use.&lt;/li>
+&lt;/ul>
+&lt;h3 id="阅读与学习">阅读与学习&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/tachiyomiorg/tachiyomi">tachiyomiorg/tachiyomi&lt;/a>&lt;/strong>: Free and open source manga reader for Android.&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/goldendict/goldendict">goldendict/goldendict&lt;/a>&lt;/strong>: A feature-rich dictionary lookup program, supporting multiple dictionary formats (StarDict/Babylon/Lingvo/Dictd) and online dictionaries, featuring perfect article rendering with the complete markup, illustrations and other content retained, and allowing you to type in words without any accents or correct case.&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/markummitchell/engauge-digitizer">markummitchell/engauge-digitizer&lt;/a>:&lt;/strong> Extracts data points from images of graphs&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/koreader/koreader">koreader/koreader&lt;/a>:&lt;/strong> An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/kovidgoyal/calibre">kovidgoyal/calibre&lt;/a>:&lt;/strong> The calibre ebook manager&lt;/li>
+&lt;li>&lt;a href="https://github.com/buggins/coolreader">buggins/coolreader&lt;/a>: Official site of CoolReader project. Sourceforge repository is obsolete.&lt;/li>
+&lt;/ul>
+&lt;h3 id="系统">系统&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/Maximus5/ConEmu">Maximus5/ConEmu&lt;/a>&lt;/strong>: Customizable Windows terminal with tabs, splits, quake-style, hotkeys and more&lt;/li>
+&lt;li>&lt;a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh/ohmyzsh&lt;/a>: 🙃 A delightful community-driven (with 1900+ contributors) framework for managing your zsh configuration.&lt;/li>
+&lt;li>&lt;a href="https://github.com/farseerfc/pacvis">farseerfc/pacvis&lt;/a>: Visualize pacman local database using Vis.js, inspired by pacgraph.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Askannz/optimus-manager">Askannz/optimus-manager&lt;/a>: A Linux program to handle GPU switching on Optimus laptops.&lt;/li>
+&lt;/ul>
+&lt;h3 id="rss-reader">RSS reader&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Athou/commafeed">Athou/commafeed&lt;/a> - Google Reader inspired self-hosted RSS reader.&lt;/li>
+&lt;li>&lt;a href="https://github.com/samuelclay/NewsBlur">samuelclay/NewsBlur&lt;/a>: NewsBlur is a personal news reader that brings people together to talk about the world. A new sound of an old instrument.&lt;/li>
+&lt;/ul>
+&lt;h2 id="编辑器笔记">编辑器、笔记&lt;/h2>
+&lt;h3 id="standalone">standalone&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/laurent22/joplin">laurent22/joplin&lt;/a>&lt;/strong>: Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS
+&lt;blockquote>
+&lt;p>我现在在用的笔记软件&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="浏览器端">浏览器端&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/benweet/stackedit">benweet/stackedit&lt;/a> - In-browser Markdown editor&lt;/li>
+&lt;li>&lt;a href="https://github.com/Vanessa219/vditor">Vanessa219/vditor&lt;/a> - ♏ 一款浏览器端的 Markdown 编辑器，支持所见即所得（富文本）、即时渲染（类似 Typora）和分屏预览模式。An In-browser Markdown editor, support WYSIWYG (Rich Text), Instant Rendering (Typora-like) and Split View modes.&lt;/li>
+&lt;/ul>
+&lt;h2 id="博客">博客&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gohugoio/hugo">gohugoio/hugo&lt;/a>: The world’s fastest framework for building websites.&lt;/li>
+&lt;li>&lt;a href="https://github.com/matrixk/bitcron-theme-plain">matrixk/bitcron-theme-plain&lt;/a>: Bitcron主题「素」&lt;/li>
+&lt;li>&lt;a href="https://github.com/yihui/hugo-xmin">yihui/hugo-xmin&lt;/a>: eXtremely Minimal Hugo theme: about 150 lines of code in total, including HTML and CSS (with no dependencies)&lt;/li>
+&lt;li>&lt;a href="https://github.com/neoFelhz/hexo-theme-spectre">neoFelhz/hexo-theme-spectre&lt;/a>: A modern, simple &amp;amp; elegant theme for Hexo&lt;/li>
+&lt;li>&lt;a href="https://github.com/shuibaco/bitcron-themes">shuibaco/bitcron-themes&lt;/a>: Bitcron主题集&lt;/li>
+&lt;li>&lt;a href="https://github.com/xianmin/hugo-theme-jane">xianmin/hugo-theme-jane&lt;/a>: A readable &amp;amp; concise theme for Hugo&lt;/li>
+&lt;li>&lt;a href="https://github.com/tipsy/profile-summary-for-github">tipsy/profile-summary-for-github&lt;/a>: Tool for visualizing GitHub profiles&lt;/li>
+&lt;li>&lt;a href="https://github.com/tuna/blogroll">tuna/blogroll&lt;/a>: 世界一流兼容并包TUNA协会收集的周围同学们的Blog&lt;/li>
+&lt;/ul>
+&lt;h2 id="资料">资料&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/zh-google-styleguide/zh-google-styleguide">zh-google-styleguide/zh-google-styleguide&lt;/a> - Google 开源项目风格指南 (中文版)&lt;/li>
+&lt;li>&lt;a href="https://github.com/AlloyTeam/Mars">AlloyTeam/Mars&lt;/a> - 腾讯移动 Web 前端知识库&lt;/li>
+&lt;li>&lt;a href="https://github.com/codepath/android_guides">codepath/android_guides&lt;/a>: Extensive Open-Source Guides for Android Developers&lt;/li>
+&lt;li>&lt;a href="https://github.com/facert/python-data-structure-cn">facert/python-data-structure-cn&lt;/a>: problem-solving-with-algorithms-and-data-structure-using-python 中文版&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/xiaolai/time-as-a-friend">xiaolai/time-as-a-friend&lt;/a>&lt;/strong>: 《把时间当作朋友》&lt;/li>
+&lt;li>&lt;a href="https://github.com/selfteaching/the-craft-of-selfteaching">selfteaching/the-craft-of-selfteaching&lt;/a>: 《自学是门手艺》One has no future if one couldn't teach themself.&lt;/li>
+&lt;/ul>
+&lt;h2 id="嵌入式">嵌入式&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/micropython/micropython">micropython/micropython&lt;/a> - MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems&lt;/li>
+&lt;/ul>
+&lt;h2 id="新创意diy">新创意、DIY&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/divan/txqr">divan/txqr&lt;/a>: Transfer data via animated QR codes&lt;/li>
+&lt;li>&lt;a href="https://github.com/pywinauto/pywinauto">pywinauto/pywinauto&lt;/a>: Windows GUI Automation with Python (based on text properties)&lt;/li>
+&lt;li>&lt;a href="https://github.com/kholia/OSX-KVM">kholia/OSX-KVM&lt;/a>: Run macOS on QEMU/KVM. With OpenCore + Big Sur + Monterey support now! Only commercial (paid) support is available now to avoid spammy issues. No Mac system is required.&lt;/li>
+&lt;li>&lt;a href="https://github.com/OSCARAdapter/OSCAR">OSCARAdapter/OSCAR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Emeryth/iPad3_lcd">Emeryth/iPad3_lcd&lt;/a>: A PCB for attaching an iPad retina LCD to a DisplayPort source
+&lt;blockquote>
+&lt;p>我有一块iPad3用的屏幕，我尝试着把它利用起来，最后买了一块驱动板&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="javascript-用来做网页的">&lt;del>Javascript&lt;/del> 用来做网页的&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/codemirror/CodeMirror">codemirror/CodeMirror&lt;/a> - In-browser code editor&lt;/li>
+&lt;li>&lt;a href="https://github.com/hakimel/reveal.js">hakimel/reveal.js&lt;/a> - The HTML Presentation Framework&lt;/li>
+&lt;li>&lt;a href="https://github.com/ecomfe/fontmin">ecomfe/fontmin&lt;/a> - Minify font seamlessly&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/lokesh/color-thief">lokesh/color-thief&lt;/a>&lt;/strong>: Grab the color palette from an image using just Javascript. Works in the browser and in Node.&lt;/li>
+&lt;li>&lt;a href="https://github.com/KyleAMathews/typography.js">KyleAMathews/typography.js&lt;/a>: A powerful toolkit for building websites with beautiful design&lt;/li>
+&lt;li>&lt;a href="https://github.com/sofish/typo.css">sofish/typo.css&lt;/a>: 中文网页重设与排版：一致化浏览器排版效果，构建最适合中文阅读的网页排版&lt;/li>
+&lt;li>&lt;a href="https://github.com/zenozeng/fonts.css">zenozeng/fonts.css&lt;/a>: 跨平台 CSS 中文字体解决方案&lt;/li>
+&lt;li>&lt;a href="https://github.com/beizhedenglong/weird-fonts">beizhedenglong/weird-fonts&lt;/a>: 𝑨 𝑱𝒂𝒗𝒂𝑺𝒄𝒓𝒊𝒑𝒕 𝒑𝒂𝒄𝒌𝒂𝒈𝒆 𝒕𝒉𝒂𝒕 𝒕𝒖𝒓𝒏 𝒂𝒍𝒑𝒉𝒂𝒏𝒖𝒎𝒆𝒓𝒊𝒄 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒔 𝒊𝒏𝒕𝒐 𝒘𝒆𝒊𝒓𝒅 𝒇𝒐𝒏𝒕 𝒔𝒕𝒚𝒍𝒆.&lt;/li>
+&lt;li>&lt;a href="https://github.com/mozilla/readability">mozilla/readability&lt;/a>: A standalone version of the readability lib&lt;/li>
+&lt;/ul>
+&lt;h3 id="material-design-for-webpage">Material Design for webpage&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/mui-org/material-ui">mui-org/material-ui&lt;/a>: MUI (formerly Material-UI) is the React UI library you always wanted. Follow your own design system, or start with Material Design.&lt;/li>
+&lt;li>&lt;a href="https://github.com/mdbootstrap/mdb-ui-kit">mdbootstrap/mdb-ui-kit&lt;/a>: Bootstrap 5 &amp;amp; Material Design 2.0 UI KIT&lt;/li>
+&lt;li>&lt;a href="https://github.com/google/material-design-lite">google/material-design-lite&lt;/a>: Material Design Components in HTML/CSS/JS
+&lt;blockquote>
+&lt;p>最先被干掉的一个？当然是Google自己的了&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/Dogfalo/materialize">Dogfalo/materialize&lt;/a>: Materialize, a CSS Framework based on Material Design&lt;/li>
+&lt;/ul>
+&lt;h2 id="图片素材美术">图片、素材、美术&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/NelsonMinar/vector-river-map">NelsonMinar/vector-river-map&lt;/a> - Tutorial project demonstrating making a web map with vector tiles&lt;/li>
+&lt;li>&lt;a href="https://github.com/NYPL-publicdomain/api-client">NYPL-publicdomain/api-client&lt;/a>: API client and Node.js module to access the NYPL Digital Collections API&lt;/li>
+&lt;li>&lt;a href="https://github.com/piskelapp/piskel">piskelapp/piskel&lt;/a> - A simple web-based tool for Spriting and Pixel art.&lt;/li>
+&lt;li>&lt;a href="https://github.com/aseprite/aseprite">aseprite/aseprite&lt;/a>: Animated sprite editor &amp;amp; pixel art tool (Windows, macOS, Linux)&lt;/li>
+&lt;/ul>
+&lt;h2 id="字体">字体&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/braver/programmingfonts">braver/programmingfonts&lt;/a>&lt;/strong>: Test drive programming fonts online&lt;/li>
+&lt;li>&lt;a href="https://github.com/be5invis/Iosevka">be5invis/Iosevka&lt;/a>: Versatile typeface for code, from code.&lt;/li>
+&lt;li>&lt;a href="https://github.com/snowie2000/mactype">snowie2000/mactype&lt;/a>: Better font rendering for Windows.&lt;/li>
+&lt;/ul>
+&lt;h2 id="时髦的深度学习以及大数据">时髦的深度学习、以及大数据&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/nagadomi/waifu2x">nagadomi/waifu2x&lt;/a>: Image Super-Resolution for Anime-Style Art&lt;/li>
+&lt;li>&lt;a href="https://github.com/lltcggie/waifu2x-caffe">lltcggie/waifu2x-caffe&lt;/a>: waifu2xのCaffe版&lt;/li>
+&lt;li>&lt;a href="https://github.com/luanfujun/deep-photo-styletransfer">luanfujun/deep-photo-styletransfer: Code and data for paper &amp;quot;Deep Photo Style Transfer&amp;quot;: https://arxiv.org/abs/1703.07511&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/NVlabs/stylegan">NVlabs/stylegan&lt;/a>: StyleGAN - Official TensorFlow Implementation&lt;/li>
+&lt;li>&lt;a href="https://github.com/ConnorJL/GPT2">ConnorJL/GPT2: An implementation of training for GPT2, supports TPUs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/brightmart/nlp_chinese_corpus">brightmart/nlp_chinese_corpus&lt;/a>: 大规模中文自然语言处理语料 Large Scale Chinese Corpus for NLP&lt;/li>
+&lt;li>&lt;a href="https://github.com/chinese-poetry/chinese-poetry">chinese-poetry/chinese-poetry&lt;/a>: The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词。&lt;/li>
+&lt;li>&lt;a href="https://github.com/huggingface/transformers">huggingface/transformers&lt;/a>: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.&lt;/li>
+&lt;/ul>
+&lt;h3 id="ocr">OCR&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/lukas-blecher/LaTeX-OCR">LaTeX-OCR&lt;/a>&lt;/strong>
+&lt;blockquote>
+&lt;p>这个很好用的，我一直想把这玩意打包成一个可执行文件……&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.3/README_ch.md">PaddleOCR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/DayBreak-u/chineseocr_lite/tree/master">chineseocr_lite&lt;/a>
+&lt;blockquote>
+&lt;p>上面两个的中文识别率是比较高的，不像Tesseract
+对了，这两个都有Android客户端Demo，基本上开箱即用&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/tesseract-ocr/tesseract">tesseract-ocr/tesseract&lt;/a>: Tesseract Open Source OCR Engine (main repository)&lt;/li>
+&lt;li>&lt;a href="https://github.com/naptha/tesseract.js">naptha/tesseract.js&lt;/a>: Pure Javascript OCR for more than 100 Languages 📖🎉🖥&lt;/li>
+&lt;li>&lt;a href="https://github.com/breezedeus/cnocr">breezedeus/cnocr&lt;/a>: 基于 PyTorch/MXNet 的中文/英文 OCR Python 包&lt;/li>
+&lt;/ul>
+&lt;h2 id="量化与虚拟货币">量化与虚拟货币&lt;/h2>
+&lt;blockquote>
+&lt;p>谁都有年轻的时候……&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ccxt/ccxt">ccxt/ccxt&lt;/a>: A JavaScript / Python / PHP cryptocurrency trading API with support for more than 100 bitcoin/altcoin exchanges&lt;/li>
+&lt;li>&lt;a href="https://github.com/barnumbirr/coinmarketcap">barnumbirr/coinmarketcap: A python wrapper around the https://coinmarketcap.com API.&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/talolard/MarketVectors">talolard/MarketVectors&lt;/a>: Implementations for my blog post &lt;a href="https://medium.com/@TalPerry/deep-learning-the-stock-market-df853d139e02#.flflpo3xf">here&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/binance-exchange/python-binance">binance-exchange/python-binance: Binance API python implementation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/mementum/backtrader">mementum/backtrader&lt;/a>: Python Backtesting library for trading strategies&lt;/li>
+&lt;li>&lt;a href="https://github.com/myquant/strategy">myquant/strategy&lt;/a>: 掘金策略集锦&lt;/li>
+&lt;li>&lt;a href="https://github.com/BenjiKCF/Neural-Net-with-Financial-Time-Series-Data">BenjiKCF/Neural-Net-with-Financial-Time-Series-Data&lt;/a>: This solution presents an accessible, non-trivial example of machine learning (Deep learning) with financial time series using TensorFlow&lt;/li>
+&lt;li>&lt;a href="https://github.com/alexavierc/LSTM-Stock-Prices">alexavierc/LSTM-Stock-Prices&lt;/a>: This project goal is to demonstrate how to use LSTM networks and apply in some real data.&lt;/li>
+&lt;/ul>
+&lt;h2 id="awesome-list-of-awesome">Awesome list of Awesome&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/awesome-selfhosted/awesome-selfhosted">awesome-selfhosted/awesome-selfhosted&lt;/a>: A list of Free Software network services and web applications which can be hosted on your own servers&lt;/li>
+&lt;li>&lt;a href="https://github.com/thuquant/awesome-quant">thuquant/awesome-quant&lt;/a>: 中国的Quant相关资源索引&lt;/li>
+&lt;li>&lt;a href="https://github.com/awesomedata/awesome-public-datasets">awesomedata/awesome-public-datasets&lt;/a>: A topic-centric list of HQ open datasets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="nostalgia">Nostalgia&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/atom/atom">atom/atom&lt;/a>&lt;/strong> - :atom: The hackable text editor&lt;/li>
+&lt;li>&lt;a href="https://github.com/spf13/spf13-vim">spf13/spf13-vim&lt;/a> - The ultimate vim distribution&lt;/li>
+&lt;li>&lt;a href="https://github.com/smore-inc/clippy.js">smore-inc/clippy.js&lt;/a> - Add Clippy or his friends to any website for instant nostalgia.&lt;/li>
+&lt;li>&lt;a href="https://github.com/microsoft/winfile">microsoft/winfile&lt;/a> - Original Windows File Manager (winfile) with enhancements&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/5digits/dactyl">5digits/dactyl&lt;/a>&lt;/strong>: Pentadactyl and other related Gecko extensions
+&lt;blockquote>
+&lt;p>后来再也没有能够达到同样高度的扩展了&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/felixrieseberg/windows95">felixrieseberg/windows95&lt;/a>: 💩🚀 Windows 95 in Electron. Runs on macOS, Linux, and Windows.
+&lt;blockquote>
+&lt;p>这个是&lt;strong>真家伙&lt;/strong>，不是随便画几个网页的那种&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>意犹未尽？最新的180个⭐将在近期列出！敬请期待第二部！&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>给自己的note：我这次看到&lt;a href="https://github.com/nondanee/UnblockNeteaseMusic">这个&lt;/a>位置了&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
 &lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
 &lt;h2 id="物理光学演示lightpipes">物理光学演示：LightPipes&lt;/h2>
 &lt;figure>&lt;img src="lightpipes.png" width="50%"/>
@@ -75,6 +323,7 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>&lt;img src="pynlo.png" alt="pyNLO">&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>：与非线性光学有关，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/li>
+&lt;li>&lt;a href="https://github.com/AOtools/soapy">AOtools/soapy&lt;/a>：用于自适应光学过程的模拟，另有一组&lt;a href="https://github.com/AOtools/aotools">用于分析&lt;/a>的库。&lt;/li>
 &lt;li>&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。&lt;/li>
 &lt;li>&lt;a href="https://www.aps.anl.gov/Science/Scientific-Software/OASYS">OASYS&lt;/a>：如果X射线也是光的话，那么&lt;a href="https://github.com/oasys-kit/wofry">WOFRY&lt;/a>也是光学计算。&lt;/li>
 &lt;li>&lt;a href="https://github.com/scottprahl/laserbeamsize">laserbeamsize&lt;/a>：一个完善的激光光斑直径和$M^2$计算库。&lt;/li>
@@ -266,15 +515,15 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>2019过去了，我……</title><link>https://blog.heysh.xyz/2020/01/27/bye-2019/</link><pubDate>Mon, 27 Jan 2020 19:40:10 +0800</pubDate><guid>https://blog.heysh.xyz/2020/01/27/bye-2019/</guid><description>&lt;blockquote>
-&lt;p>第三旋臂边缘&lt;br>
-一颗蓝色行星上&lt;br>
-碳基生物正在庆祝&lt;br>
-他们所在的行星&lt;br>
-又在该恒星系里&lt;br>
+&lt;p>第三旋臂边缘 &lt;br>
+一颗蓝色行星上 &lt;br>
+碳基生物正在庆祝 &lt;br>
+他们所在的行星 &lt;br>
+又在该恒星系里 &lt;br>
 完成了一次公转&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
-&lt;p>而这次公转开始得格外颠簸——至少星星上的一部分碳基生物觉得格外颠簸。&lt;br>
+&lt;p>而这次公转开始得格外颠簸——至少星星上的一部分碳基生物觉得格外颠簸。 &lt;br>
 下面是碳基生物中微不足道的一员，对自己的上一次公转过程进行的总结。&lt;/p>
 &lt;/blockquote>
 &lt;p>我觉得2020年亏欠我很多，没有飞出太阳系，没有受控核聚变，甚至连会飞的汽车也没有，只有战争、瘟疫和死亡。2020年可能觉得我不会在乎这些，毕竟我也确实到了应该关心琐碎现实的年纪。所以，我只会在这里提及一些琐碎的事情。&lt;/p>
