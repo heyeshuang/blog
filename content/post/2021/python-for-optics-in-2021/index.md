@@ -114,6 +114,7 @@ toc: true
 
 ![pyNLO](pynlo.png)
 - [PyNLO](https://github.com/pyNLO/PyNLO)：与非线性光学有关，大概是`SNLO`的某种代替品。
+- [Jomiri/pyfiberamp](https://github.com/Jomiri/pyfiberamp)：有关光纤激光器的计算。
 - [AOtools/soapy](https://github.com/AOtools/soapy)：用于自适应光学过程的模拟，另有一组[用于分析](https://github.com/AOtools/aotools)的库。
 - [Finesse and PyKat](http://www.gwoptics.org/finesse/)：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。
 - [OASYS](https://www.aps.anl.gov/Science/Scientific-Software/OASYS)：如果X射线也是光的话，那么[WOFRY](https://github.com/oasys-kit/wofry)也是光学计算。
