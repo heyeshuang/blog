@@ -2,10 +2,10 @@
 &lt;p>事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href="https://www.ext2fsd.com/">Ext2fsd&lt;/a>来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p>
 &lt;p>于是，我……我做了一个linux虚拟机来帮我读这个分区。&lt;/p>
 &lt;p>具体来说，VirtualBox支持将单独的分区视为虚拟磁盘&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。你需要在 &lt;strong>具有管理员权限&lt;/strong> 的命令提示符中运行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，&lt;/p>
 &lt;ul>
 &lt;li>同样是用 &lt;strong>管理员权限&lt;/strong> 运行VirtualBox&lt;/li>
 &lt;li>把网卡模式改为桥接&lt;/li>

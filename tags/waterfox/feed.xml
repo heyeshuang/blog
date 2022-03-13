@@ -10,10 +10,10 @@
 &lt;p>为了显示中文界面，需要安装&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/">Chinese Simplified (zh-CN) Language Pack&lt;/a>，并访问&lt;code>about:config&lt;/code>，将&lt;code>intl.locale.matchOS&lt;/code>改为&lt;code>true&lt;/code>。这样，&lt;del>Firefox&lt;/del> Waterfox就可以按照系统的语言来显示了。&lt;/p>
 &lt;h2 id="pentadactyl">Pentadactyl&lt;/h2>
 &lt;p>Waterfox默认开启了多进程模式，会导致&lt;code>Pentadactyl&lt;/code>不能正常工作：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &amp;#34;length&amp;#34;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>仍然是在&lt;code>about:config&lt;/code>页面，查找&lt;code>browser.tabs.remote.autostart&lt;/code>，把所有找到的项都改成&lt;code>false&lt;/code>。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
-browser.tabs.remote.autostart.2=false
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>OK，保存完成，是时候升级&lt;a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum&lt;/a>了。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Error: Permission denied to access property &amp;#34;length&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>仍然是在&lt;code>about:config&lt;/code>页面，查找&lt;code>browser.tabs.remote.autostart&lt;/code>，把所有找到的项都改成&lt;code>false&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>browser.tabs.remote.autostart=false
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>browser.tabs.remote.autostart.2=false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>OK，保存完成，是时候升级&lt;a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum&lt;/a>了。&lt;/p>
 &lt;p>啊对了，本文同时发在&lt;a href="http://heyeshuang.tk">我的博客&lt;/a>和&lt;a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit&lt;/a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p>
 &lt;p>——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。&lt;/p></description></item></channel></rss>

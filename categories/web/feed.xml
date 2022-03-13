@@ -72,8 +72,8 @@
 &lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
 &lt;p>来自2020-6-12的更新：&lt;/p>
@@ -106,12 +106,12 @@
 &lt;li>新建一条子域名的A记录，IP写什么都行。&lt;/li>
 &lt;li>查询这条记录的&lt;code>RECORD_ID&lt;/code>，在终端运行：&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>-x&lt;/code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>-x&lt;/code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p>
 &lt;ul>
 &lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
 &lt;/ul>
@@ -121,98 +121,98 @@
 IPv4的情况
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
-&lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:8087 &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip.txt
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">#!/bin/sh
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:8087 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;details>
 &lt;summary>
 &lt;h4 class="inline">
 IPv6的情况，放在两个不同的脚本里面可以共存
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>ip -6 addr | grep inet6 | awk -F &lt;span style="color:#c30">&amp;#39;[ \t]+|/&amp;#39;&lt;/span> &lt;span style="color:#c30">&amp;#39;{print $3}&amp;#39;&lt;/span> | grep -v ^::1 | grep -v ^fe80 | head -n 1&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip_6.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress!&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x socks5h://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:1085 &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Authorization:&amp;lt;如果你申请了API token的话是这样&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;AAAA&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名&amp;gt;.&amp;lt;域名&amp;gt;.xyz&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip_6.txt
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>ip -6 addr | grep inet6 | awk -F &lt;span style="color:#c30">&amp;#39;[ \t]+|/&amp;#39;&lt;/span> &lt;span style="color:#c30">&amp;#39;{print $3}&amp;#39;&lt;/span> | grep -v ^::1 | grep -v ^fe80 | head -n 1&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip_6.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x socks5h://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:1085 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Authorization:&amp;lt;如果你申请了API token的话是这样&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;AAAA&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名&amp;gt;.&amp;lt;域名&amp;gt;.xyz&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip_6.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;ul>
 &lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
-*/120 * * * * /path/of/your/script.sh
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>*/120 * * * * /path/of/your/script.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
 &lt;hr>
 &lt;p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。&lt;/p>
 &lt;p>来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入&lt;code>current_ip.txt&lt;/code>了。&lt;/p></description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p>之前在 &lt;a href="http://heyeshuang.tk">http://heyeshuang.tk&lt;/a> 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/">http://heyeshuang.tk/feed/&lt;/a> ，但是hugo提供的RSS地址是&lt;code>index.xml&lt;/code>样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p>
 &lt;p>所以只能改模版了，思路是把&lt;code>/feed&lt;/code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p>
 &lt;p>&lt;code>\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
-{{ range .Site.RegularPages }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
-{{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
-{{ end }}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ range .Site.RegularPages }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
 &lt;p>然后别忘了新建一个&lt;code>\content\feed\chicken.md&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
-title: &amp;#39;chicken&amp;#39;
-author: HeYSH
-date: 2012-06-22T06:32:32+00:00
-aliases:
-- /%3ffeed%3drss2
----
-Nothing here.
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>title: &amp;#39;chicken&amp;#39;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>author: HeYSH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>date: 2012-06-22T06:32:32+00:00
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>aliases:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - /%3ffeed%3drss2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Nothing here.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
 &lt;p>wordpress的文章是通过&lt;a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">wordpress-to-hugo-exporter&lt;/a>导出的，但是导出的文件有一些小问题：&lt;/p>
 &lt;ul>
 &lt;li>标题里都是&lt;code>&amp;lt;span&amp;gt;&lt;/code>&lt;/li>
@@ -220,18 +220,19 @@ Nothing here.
 &lt;li>&lt;code>img&lt;/code>和&lt;code>code&lt;/code>需要修改&lt;/li>
 &lt;/ul>
 &lt;p>对于正文，可以用&lt;code>pandoc&lt;/code>和&lt;code>pypandoc&lt;/code>转换：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
-data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
-ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
-ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, &lt;span style="color:#366">format&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
-do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
-file&lt;span style="color:#555">.&lt;/span>write(do)
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, &lt;span style="color:#366">format&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> file&lt;span style="color:#555">.&lt;/span>write(do)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
 &lt;p>……&lt;/p>
 &lt;p>……………&lt;/p>
 &lt;p>漫长的修改过后，用&lt;code>hugo server -w&lt;/code>预览。&lt;/p>
@@ -239,62 +240,74 @@ file&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;code>/2016/06/13/qart-coder：更友好的qr码/&lt;/code>，&lt;code>hugo&lt;/code>会解析为&lt;code>/2016/06/13/qart-coder更友好的qr码/&lt;/code>。看出区别了吗？&lt;/p>
 &lt;p>为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code>aliases&lt;/code>行，可以将原来的地址转发到新地址。&lt;/p>
 &lt;p>同样的，我也写了一个辣鸡脚本：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
-&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
-data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>readlines()
-&lt;span style="color:#069;font-weight:bold">try&lt;/span>:
-urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
-url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
-aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34; -&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
-data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, aliasLine)
-data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
-&lt;span style="color:#069;font-weight:bold">except&lt;/span>:
-&lt;span style="color:#069;font-weight:bold">pass&lt;/span>
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
-file&lt;span style="color:#555">.&lt;/span>write(d)
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>readlines()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34; -&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, aliasLine)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">except&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> file&lt;span style="color:#555">.&lt;/span>write(d)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
 &lt;p>这里假设你已经&lt;code>init&lt;/code>过了你的&lt;code>hugo&lt;/code>目录：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
-git checkout --orphan gh-pages
-# Unstage all files
-git rm --cached $(git ls-files)
-# Grab one file from the master branch so we can make a commit
-git checkout master README.md
-# Add and commit that file
-git add .
-git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
-# Push to remote gh-pages branch
-git push origin gh-pages
-# Return to master branch
-git checkout master
-# Remove the public folder to make room for the gh-pages subtree
-rm -rf public
-# Add the gh-pages branch of the repository. It will look like a folder named public
-git subtree add --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages --squash
-# Pull down the file we just committed. This helps avoid merge conflicts
-# 这里我先push了一次，否则会出现fatal: refusing to merge unrelated histories
-# 好像是git的bug
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-git subtree pull --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-hugo
-# Add everything
-git add -A
-# Commit and push to master
-git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
-# Push the public subtree to the gh-pages branch
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
-git add -A
-git commit -m &amp;#34;some messages&amp;#34;
-git push origin master
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span># Create a new orphand branch (no commit history) named gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout --orphan gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Unstage all files
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git rm --cached $(git ls-files)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Grab one file from the master branch so we can make a commit
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout master README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Add and commit that file
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Push to remote gh-pages branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Return to master branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Remove the public folder to make room for the gh-pages subtree
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Add the gh-pages branch of the repository. It will look like a folder named public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree add --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages --squash
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Pull down the file we just committed. This helps avoid merge conflicts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># 这里我先push了一次，否则会出现fatal: refusing to merge unrelated histories
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># 好像是git的bug
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree pull --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Add everything
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add -A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Commit and push to master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Push the public subtree to the gh-pages branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>hugo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add -A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &amp;#34;some messages&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>shadowsocks 2016: 一次性认证，KCP及其他</title><link>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Tue, 25 Oct 2016 13:03:46 +0000</pubDate><guid>https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>今天下午我的Bandwagon服务器被人爆掉了，让人发了一大堆垃圾邮件，于是有了一个重装的理由。终于可以用服务器原生IPv6了~&lt;/p>
 &lt;p>距我上次配置shadowsocks服务端（2015.1）已经有一年半了，这次安装可以把上次没有加入的特性通通带上：&lt;/p>
 &lt;ul>
 &lt;li>一次性认证，好像是当时和SSR打的时候加入的特性&lt;/li>

@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 21 Jan 2022 19:43:45 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>获取招商信用卡账单的另一种方法</title><link>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</link><pubDate>Fri, 21 Jan 2022 19:43:45 +0800</pubDate><guid>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</guid><description>&lt;figure>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 04 Mar 2022 16:43:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p>在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p>
+&lt;p>刚好赶上网课热潮，最近安卓系统的新平板还挺多的，比如小米平板5啊、小新pad啊、华为平板啊什么的，可是都有一些这样那样的问题&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>那就去看看Windows系统的平板吧。（自从我的寨板坏掉以后已经过去好多年了，&lt;del>最近的技术一定进步了很多吧。&lt;/del>）&lt;/p>
+&lt;p>然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none">寨板&lt;/a>，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html">屏闪&lt;/a>的问题。&lt;/p>
+&lt;p>再然后，找来找去，发现淘宝上居然有自称“官翻”的戴尔平板卖，2018年的I5-8250U大概也许会和2022年的I3-1115G3&lt;a href="https://cpu.userbenchmark.com/Compare/Intel-Core-i5-8350U-vs-Intel-Core-i3-1115G4/m388461vsm1333512">差不多&lt;/a>？&lt;/p>
+&lt;p>时间回到今天，我收到这台&lt;a href="https://www.dell.com/en-my/shop/cty/pdp/spd/latitude-12-5290-2-in-1-laptop">Latitude 5290&lt;/a>刚满一个月，而且还没有爆炸，我感到十分欣慰：&lt;/p>
+&lt;figure>&lt;img src="BIOS.png"
+alt="第一次开机"/>&lt;figcaption>
+&lt;p>第一次开机&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>屏幕上有几道小划痕，没有贴膜留下的气泡明显；&lt;/li>
+&lt;li>电池健康度95%（自称），SSD通电9天（自称），板载内存是8G的LPDDR3，&lt;code>又不是不能用.jpg&lt;/code>&lt;/li>
+&lt;li>重达899g，阅读？没有锻炼身体重要！&lt;/li>
+&lt;li>据说比surface好拆，我还没试，主要是还没有蹲到便宜的SSD；
+&lt;img src="%E6%8B%86%E6%9C%BA.png" alt="拆机">&lt;/li>
+&lt;li>第八代Intel是官方支持Windows11的&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors">最老版本&lt;/a>，目前还没有遇到什么问题，Android模拟器也能用；&lt;/li>
+&lt;li>&lt;code>scoop&lt;/code>处理文件关联太头疼了，而且&lt;code>winget&lt;/code>已经可以识别系统代理了，还是用&lt;code>winget&lt;/code>吧，另外，&lt;code>Windows Terminal&lt;/code>也不错。&lt;/li>
+&lt;/ul>
+&lt;p>啊，扯远了。大概现在就想到这些，再想起别的什么，或者平板真的爆炸了的话，我会再来更新的。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>小米平板5没有USB3.0；联想小新系列国外版型号挺混乱的，估计不会有lineageOS支持了；华为……沸腾了，有点过热。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>获取招商信用卡账单的另一种方法</title><link>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</link><pubDate>Fri, 21 Jan 2022 19:43:45 +0800</pubDate><guid>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</guid><description>&lt;figure>
 &lt;audio controls preload="metadata">
 &lt;source src="th08_06.mp3" type="audio/mpeg">
 &lt;/audio>
@@ -28,45 +56,45 @@
 大概长得像这样
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
-&lt;span style="color:#309;font-weight:bold">&amp;#34;respCode&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1000&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;respMsg&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;操作成功&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;data&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;rmbBillInfo&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;9999.90&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999.90&amp;#34;&lt;/span>
-},
-&lt;span style="color:#309;font-weight:bold">&amp;#34;dollarBillInfo&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>
-},
-&lt;span style="color:#309;font-weight:bold">&amp;#34;detail&amp;#34;&lt;/span>: [
-{
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billId&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;DetailBill&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220113180009&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billMonth&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;202201&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;org&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;transactionAmount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>, &lt;span style="color:#09f;font-style:italic">//实际的RMB入账
-&lt;/span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#309;font-weight:bold">&amp;#34;description&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;财付通&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;postingDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;location&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;CN&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;totalStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;currentStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;remainingStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;transactionType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;消费&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;cardNo&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;6666&amp;#34;&lt;/span>
-},]
-}
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;respCode&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1000&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;respMsg&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;操作成功&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;data&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;rmbBillInfo&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;9999.90&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999.90&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;dollarBillInfo&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;detail&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billId&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;DetailBill&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220113180009&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billMonth&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;202201&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;org&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;transactionAmount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>, &lt;span style="color:#09f;font-style:italic">//实际的RMB入账
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#309;font-weight:bold">&amp;#34;description&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;财付通&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;postingDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;location&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;CN&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;totalStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;currentStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;remainingStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;transactionType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;消费&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;cardNo&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;6666&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>接下来，可以使用你喜欢的方法对账单进行处理了。对于beancount，我写的importer放在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">这里&lt;/a>。&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -572,8 +600,8 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
 &lt;p>来自2020-6-12的更新：&lt;/p>
@@ -636,16 +664,16 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>&lt;code>{'交通,', '交通,打车', '交通,机票', '交通,火车', '人情,', '住房,', '住房,家具', '住房,家纺', '住房,物业水电', '住房,装修', '其他,', '医疗,', '医疗,药品', '娱乐,', '娱乐,电影', '投资亏损,', '文教,', '文教,书刊', '文教,文具', '旅行,', '旅行,景点门票', '旅行,酒店', '汽车,', '购物,', '购物,数码', '购物,日用', '购物,玩具', '购物,电器', '购物,美妆', '购物,运动用品', '购物,鞋服', '购物,饰品', '通讯,', '通讯,话费', '零食烟酒,', '零食烟酒,水果', '零食烟酒,烟酒', '零食烟酒,茶水', '零食烟酒,零食', '零食烟酒,饮料', '餐饮,', '餐饮,三餐', '餐饮,食材'}&lt;/code>&lt;/p>
 &lt;p>对这些分类，利用人工&lt;del>智能&lt;/del>，为每一项建立了对应的&lt;code>account&lt;/code>，形成了一个&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/youqian/youqianDict.py">dict&lt;/a>。&lt;/p>
 &lt;p>如果你已经下载了&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers&lt;/a>，你可以用里面的&lt;code>importers/ youqian/accountInit.py&lt;/code>来自动建立这些&lt;code>accounts&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
-&lt;span style="color:#09f;font-style:italic"># 或：如果之前已经建立了一些账户的话&lt;/span>
-python importers/youqian/accountInit.py Existing_Accounts.bean &amp;gt; New_Accounts.bean
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="导入网易有钱的收入支出数据">导入网易有钱的收入、支出数据&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 或：如果之前已经建立了一些账户的话&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python importers/youqian/accountInit.py Existing_Accounts.bean &amp;gt; New_Accounts.bean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="导入网易有钱的收入支出数据">导入网易有钱的收入、支出数据&lt;/h3>
 &lt;p>Beancount的&lt;a href="https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#">文档&lt;/a>里已经对导入脚本进行了比较详细的说明。从&lt;a href="https://bitbucket.org/blais/beancount/src/tip/examples/ingest/office/importers/utrade/">这个例子&lt;/a>开始，基本上只要实现几个函数就行。&lt;/p>
 &lt;p>在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers&lt;/a>中，我写了一个简单的网易有钱导入脚本。在使用之前，需要用excel把默认的&lt;code>xlsx&lt;/code>格式转换为&lt;code>收入.csv&lt;/code>和&lt;code>支出.csv&lt;/code>。&lt;/p>
 &lt;p>之后，使用&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
-bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &amp;gt; 收入.bean
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>来导入。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &amp;gt; 收入.bean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>来导入。&lt;/p>
 &lt;h2 id="自动记账">自动记账&lt;/h2>
 &lt;p>写下这个标题是在2020年6月。在使用beancount半年之后，账本一共增加了270条内容，所需的时间每月不超过1小时。&lt;/p>
 &lt;p>&lt;img src="%E6%9D%A1%E7%9B%AE.png" alt="">&lt;/p>
@@ -658,38 +686,39 @@ bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &a
 (这张图是用mermaid画的，这里是源代码)
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">graph LR;
-linkStyle default interpolate basis
-subgraph one [开销]
-A([支付宝]);
-B([微信]);
-G([&amp;#34;京东、刷卡&amp;#34;]);
-H([理财]);
-end
-subgraph two [收入]
-C[工商银行];
-end
-D[农业银行];
-E([中国银行]);
-F([招商银行]);
-E --&amp;gt; H
-E &amp;amp; F --&amp;gt; A &amp;amp; B
-C --&amp;gt; E &amp;amp; D &amp;amp; F
-F --&amp;gt; G
-classDef auto fill:#9ACFBF
-class B,E,F auto
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>graph LR;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> linkStyle default interpolate basis
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subgraph one [开销]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> A([支付宝]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> B([微信]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> G([&amp;#34;京东、刷卡&amp;#34;]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> H([理财]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> end
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subgraph two [收入]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> C[工商银行];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> end
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> D[农业银行];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> E([中国银行]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> F([招商银行]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> E --&amp;gt; H
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> E &amp;amp; F --&amp;gt; A &amp;amp; B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> C --&amp;gt; E &amp;amp; D &amp;amp; F
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> F --&amp;gt; G
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> classDef auto fill:#9ACFBF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> class B,E,F auto
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>其中，有一些银行卡（比如图中的农业银行）每月的转账记录不超过2条，这时候只要手工敲上几行就可以了。对于另外的、日常生活的花费，手动记录带来了大量时间的浪费。这时候，找到流动的枢纽，并对它们的账单进行批量处理，就可以从重复劳动中解放出来。对于我来说，要进行批量处理的节点是&lt;code>中国银行&lt;/code>，&lt;code>招商银行&lt;/code>和&lt;code>微信&lt;/code>。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
 &lt;h3 id="写一些脚本">写一些脚本&lt;/h3>
 &lt;p>所以，我写了中国银行、招商银行和微信钱包对账单的导入脚本。Beancount拥有比较强大的导入功能，对于简单的、CSV格式的账单文件，只要在自带的&lt;code>beancount.ingest.importers.csv.importer&lt;/code>上&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/boc.import">稍作修改&lt;/a>就可以了；对于其它较为复杂的账单，可以自行扩展&lt;code>ImporterProtocol&lt;/code>的子类，在&lt;a href="https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#heading=h.z153vh2ll6ix">官方文档&lt;/a>中有较为详细的说明。&lt;/p>
 &lt;p>另外，我还发现了&lt;a href="https://github.com/beancount/smart_importer">smart_importer&lt;/a>，只要简单地增加hook，就可以给导入脚本增加更好的去重、智能猜测分类等更帅气的功能。&lt;/p>
 &lt;h3 id="在每个账单日运行一次">在每个账单日运行一次&lt;/h3>
 &lt;p>在账单目录下，我建立了一个&lt;code>TODO&lt;/code>文件：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">自动导入微信、中国银行和招商（账单日）
-手动导入工行和农行
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为微信的账单信息比较多，我一般先从它开始。每月信用卡的账单日，下载微信钱包对账单，然后运行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">bean-extract importers/wechat.import documents.tmp/微信支付账单.csv -f main.bean &amp;gt; temp.bean
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>-f&lt;/code>用来为&lt;code>smart_importer&lt;/code>提供学习素材。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>自动导入微信、中国银行和招商（账单日）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>手动导入工行和农行
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为微信的账单信息比较多，我一般先从它开始。每月信用卡的账单日，下载微信钱包对账单，然后运行：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bean-extract importers/wechat.import documents.tmp/微信支付账单.csv -f main.bean &amp;gt; temp.bean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>-f&lt;/code>用来为&lt;code>smart_importer&lt;/code>提供学习素材。&lt;/p>
 &lt;p>接下来打开&lt;code>temp.bean&lt;/code>，检查人工&lt;del>智障&lt;/del>智能补充的分类条目有没有什么问题。（大概率问题很多，每个月大部分的时间会花费在这里。）&lt;/p>
 &lt;p>之后，将&lt;code>temp.bean&lt;/code>重命名为一个有意义的名字，并在&lt;code>main.bean&lt;/code>中&lt;code>import&lt;/code>。接下來对银行账户的导入过程中，&lt;code>smart_importer&lt;/code>会自动去除重复账单。&lt;/p>
 &lt;p>在上面的工作都完成以后，本月的账单也只剩下几条漏网之鱼了。把它们（手动）补充，并用&lt;code>balance&lt;/code>命令检查。&lt;/p>
@@ -830,10 +859,10 @@ class B,E,F auto
 &lt;p>事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href="https://www.ext2fsd.com/">Ext2fsd&lt;/a>来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p>
 &lt;p>于是，我……我做了一个linux虚拟机来帮我读这个分区。&lt;/p>
 &lt;p>具体来说，VirtualBox支持将单独的分区视为虚拟磁盘&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。你需要在 &lt;strong>具有管理员权限&lt;/strong> 的命令提示符中运行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，&lt;/p>
 &lt;ul>
 &lt;li>同样是用 &lt;strong>管理员权限&lt;/strong> 运行VirtualBox&lt;/li>
 &lt;li>把网卡模式改为桥接&lt;/li>
@@ -951,12 +980,12 @@ class B,E,F auto
 &lt;li>新建一条子域名的A记录，IP写什么都行。&lt;/li>
 &lt;li>查询这条记录的&lt;code>RECORD_ID&lt;/code>，在终端运行：&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>-x&lt;/code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>curl -X GET &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://localhost:8087
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中 &lt;code>-x&lt;/code>是本地代理地址，可选。大概能从返回的一坨json中找到id那一项。&lt;/p>
 &lt;ul>
 &lt;li>保存下面的脚本，修改&lt;code>&amp;lt;ZONE_ID&amp;gt;&lt;/code>，&lt;code>&amp;lt;RECORD_ID&amp;gt;&lt;/code>，&lt;code>邮箱地址&lt;/code>，&lt;code>API_KEY&lt;/code>，&lt;code>子域名&lt;/code>什么的。如果不需要代理的话删除&lt;code>-x&lt;/code>那一行。&lt;/li>
 &lt;/ul>
@@ -966,58 +995,58 @@ class B,E,F auto
 IPv4的情况
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#099">#!/bin/sh
-&lt;/span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:8087 &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip.txt
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">#!/bin/sh
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">&lt;/span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl http://members.3322.org/dyndns/getip&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x http://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:8087 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Email: &amp;lt;邮箱地址&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;X-Auth-Key: &amp;lt;API_KEY&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;A&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名地址&amp;gt;&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;details>
 &lt;summary>
 &lt;h4 class="inline">
 IPv6的情况，放在两个不同的脚本里面可以共存
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>ip -6 addr | grep inet6 | awk -F &lt;span style="color:#c30">&amp;#39;[ \t]+|/&amp;#39;&lt;/span> &lt;span style="color:#c30">&amp;#39;{print $3}&amp;#39;&lt;/span> | grep -v ^::1 | grep -v ^fe80 | head -n 1&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip_6.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress!&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x socks5h://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:1085 &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Authorization:&amp;lt;如果你申请了API token的话是这样&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;AAAA&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名&amp;gt;.&amp;lt;域名&amp;gt;.xyz&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip_6.txt
-&lt;span style="color:#069;font-weight:bold">else&lt;/span>
-&lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>ip -6 addr | grep inet6 | awk -F &lt;span style="color:#c30">&amp;#39;[ \t]+|/&amp;#39;&lt;/span> &lt;span style="color:#c30">&amp;#39;{print $3}&amp;#39;&lt;/span> | grep -v ^::1 | grep -v ^fe80 | head -n 1&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">CURRENT_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>cat /var/tmp/current_ip_6.txt&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$CURRENT_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;No Change in IP Adddress!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">$(&lt;/span>curl -X PUT &lt;span style="color:#c30">&amp;#34;https://api.cloudflare.com/client/v4/zones/&amp;lt;ZONE_ID&amp;gt;/dns_records/&amp;lt;RECORD_ID&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -x socks5h://&amp;lt;代理地址，不要的话删去这一行&amp;gt;:1085 &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Authorization:&amp;lt;如果你申请了API token的话是这样&amp;gt;&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#34;Content-Type: application/json&amp;#34;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> --data &lt;span style="color:#c30">&amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;AAAA&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;&amp;lt;子域名&amp;gt;.&amp;lt;域名&amp;gt;.xyz&amp;#34;,&amp;#34;content&amp;#34;:&amp;#34;&amp;#39;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#34;,&amp;#34;ttl&amp;#34;:1}&amp;#39;&lt;/span>&lt;span style="color:#069;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> | grep -q &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update IP Success!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#033">$NEW_IP&lt;/span> &amp;gt; /var/tmp/current_ip_6.txt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;Update Error!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;ul>
 &lt;li>接下来让它每两个小时运行一次就好了。&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
-*/120 * * * * /path/of/your/script.sh
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># crontab -e&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>*/120 * * * * /path/of/your/script.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;del>写字好累（躺&lt;/del>&lt;/p>
 &lt;hr>
 &lt;p>来自19-10-25的更新：DNSpod的公网IP查询服务响应有些奇怪，所以换成了3322。&lt;/p>
 &lt;p>来自20-06-23：增加了判断，现在不会在一次网络问题后直接写入&lt;code>current_ip.txt&lt;/code>了。&lt;/p></description></item><item><title>这次是纽约公共图书馆……而且居然还有第三部分？</title><link>https://blog.heysh.xyz/2018/02/24/nypl3/</link><pubDate>Sat, 24 Feb 2018 00:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/24/nypl3/</guid><description>&lt;blockquote>
@@ -1044,54 +1073,56 @@ IPv6的情况，放在两个不同的脚本里面可以共存
 &lt;/blockquote>
 &lt;p>当然是可以的！贴心的图书管理员已经提供了API接口：&lt;a href="http://api.repo.nypl.org/">http://api.repo.nypl.org/&lt;/a>，申请账号之后，就可以做各种各样的事了~&lt;/p>
 &lt;p>当然，如果只是想下片的话，用&lt;a href="https://github.com/NYPL-publicdomain/api-client">digital-collections&lt;/a>可能会更简单一些：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>API_TOKEN&lt;/code>在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50">比如这个&lt;/a>）下面，可以看到&lt;code>UUID&lt;/code>；运行这条命令之后，图片的信息列表会保存在&lt;code>OUTPUT.json&lt;/code>里。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>API_TOKEN&lt;/code>在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50">比如这个&lt;/a>）下面，可以看到&lt;code>UUID&lt;/code>；运行这条命令之后，图片的信息列表会保存在&lt;code>OUTPUT.json&lt;/code>里。&lt;/p>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png"/>&lt;figcaption>
 &lt;h4>对，就是那个Universal Unique Identifier&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>之后，获得的json文件大概像是这样：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
-&lt;span style="color:#309;font-weight:bold">&amp;#34;uuid&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;imageLinks&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;imageLink&amp;#34;&lt;/span>: [
-&lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=w&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
-&lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=r&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
-&lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=t&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
-&lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=b&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
-&lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=f&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>
-]
-},
-&lt;span style="color:#309;font-weight:bold">&amp;#34;apiUri&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;typeOfResource&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;still image&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;imageID&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1125721&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;sortString&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0000000001|0000000002|0000000001&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;itemLink&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;highResLink&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;title&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;Dandelion.&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;dateDigitized&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;2016-08-04T04:53:12Z&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;rightsStatement&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&amp;#34;From The New York Public Library,\&amp;#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;rightsStatementURI&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span>
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，只要下载&lt;code>imageLink&lt;/code>就好了。我用了一个简单的python脚本来做这件事。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸&lt;/span>
-&lt;span style="color:#09f;font-style:italic"># 啊对了，而且是python3.6&lt;/span>
-&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">urllib.request&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#0cf;font-weight:bold">ur&lt;/span>
-&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">json&lt;/span>
-&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-dir_name&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Himalayan_plants&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#可能要改这里……&lt;/span>
-os&lt;span style="color:#555">.&lt;/span>mkdir(dir_name)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(&lt;span style="color:#c30">&amp;#34;OUTPUT.json&amp;#34;&lt;/span>,&lt;span style="color:#c30">&amp;#34;r&amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> source: &lt;span style="color:#09f;font-style:italic">#……还有这里&lt;/span>
-source_dict&lt;span style="color:#555">=&lt;/span>json&lt;span style="color:#555">.&lt;/span>load(source)
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> _i,_s &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(source_dict):
-file_name&lt;span style="color:#555">=&lt;/span>dir_name&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;/&amp;#34;&lt;/span>&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#366">str&lt;/span>(_i)&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;.jpg&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>&lt;span style="color:#069;font-weight:bold">False&lt;/span>:
-&lt;span style="color:#069;font-weight:bold">try&lt;/span>:
-ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c30">&amp;#34;imageLinks&amp;#34;&lt;/span>][&lt;span style="color:#c30">&amp;#34;imageLink&amp;#34;&lt;/span>][&lt;span style="color:#f60">0&lt;/span>],file_name)
-&lt;span style="color:#069;font-weight:bold">except&lt;/span> &lt;span style="color:#c00;font-weight:bold">Exception&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> e:
-&lt;span style="color:#366">print&lt;/span>(_i)
-&lt;span style="color:#366">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>这次是纽约公共图书馆……</title><link>https://blog.heysh.xyz/2018/02/21/nypl/</link><pubDate>Wed, 21 Feb 2018 22:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/21/nypl/</guid><description>&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;uuid&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;imageLinks&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;imageLink&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=w&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=r&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=t&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=b&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c30">&amp;#34;http://images.nypl.org/index.php?id=1125721&amp;amp;t=f&amp;amp;download=1&amp;amp;suffix=510d47dd-c1f5-a3d9-e040-e00a18064a99.001&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;apiUri&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://api.repo.nypl.org/api/v1/items/mods/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;typeOfResource&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;still image&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;imageID&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1125721&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;sortString&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0000000001|0000000002|0000000001&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;itemLink&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://digitalcollections.nypl.org/items/510d47dd-c1f5-a3d9-e040-e00a18064a99&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;highResLink&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://link.nypl.org/7nC9VyT_TJWvGX9_H0mYBQ8&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;title&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;Dandelion.&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;dateDigitized&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;2016-08-04T04:53:12Z&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;rightsStatement&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \&amp;#34;From The New York Public Library,\&amp;#34; and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;rightsStatementURI&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;http://rightsstatements.org/vocab/NoC-US/1.0/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后，只要下载&lt;code>imageLink&lt;/code>就好了。我用了一个简单的python脚本来做这件事。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 注意：这玩意没有经过测试，可能会爆炸&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 啊对了，而且是python3.6&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">urllib.request&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> &lt;span style="color:#0cf;font-weight:bold">ur&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">json&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dir_name&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Himalayan_plants&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#可能要改这里……&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#555">.&lt;/span>mkdir(dir_name)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(&lt;span style="color:#c30">&amp;#34;OUTPUT.json&amp;#34;&lt;/span>,&lt;span style="color:#c30">&amp;#34;r&amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> source: &lt;span style="color:#09f;font-style:italic">#……还有这里&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> source_dict&lt;span style="color:#555">=&lt;/span>json&lt;span style="color:#555">.&lt;/span>load(source)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">for&lt;/span> _i,_s &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(source_dict):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> file_name&lt;span style="color:#555">=&lt;/span>dir_name&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;/&amp;#34;&lt;/span>&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#366">str&lt;/span>(_i)&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34;.jpg&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>exists(file_name)&lt;span style="color:#555">==&lt;/span>&lt;span style="color:#069;font-weight:bold">False&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c30">&amp;#34;imageLinks&amp;#34;&lt;/span>][&lt;span style="color:#c30">&amp;#34;imageLink&amp;#34;&lt;/span>][&lt;span style="color:#f60">0&lt;/span>],file_name)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">except&lt;/span> &lt;span style="color:#c00;font-weight:bold">Exception&lt;/span> &lt;span style="color:#069;font-weight:bold">as&lt;/span> e:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">print&lt;/span>(_i)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>这次是纽约公共图书馆……</title><link>https://blog.heysh.xyz/2018/02/21/nypl/</link><pubDate>Wed, 21 Feb 2018 22:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/21/nypl/</guid><description>&lt;blockquote>
 &lt;p>是的，我&lt;a href="https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/">又&lt;/a>去图书馆了，当然这次和戒网瘾没有什么关系。&lt;/p>
 &lt;/blockquote>
 &lt;p>纽约公共图书馆建立于1895年，馆藏里有大量古老的资料，古老到超出了版权法的管理范围，进入了&lt;a href="https://en.wikipedia.org/wiki/Public_domain">公有领域&lt;/a>。于是，勤奋的图书管理员们把它们&lt;a href="https://www.nypl.org/blog/2016/01/05/share-public-domain-collections">数字化&lt;/a>，送给了互联网。&lt;/p>
@@ -1156,20 +1187,20 @@ ur&lt;span style="color:#555">.&lt;/span>urlretrieve(_s[&lt;span style="color:#c
 &lt;p>&lt;a href="https://www.youtube.com/watch?v=fCn8zs912OE">Youtube上&lt;/a>有个视频对幂律分布讲得很清楚，对其中提到的两个实验，我利用python进行了模拟。模拟中使用的&lt;code>jupyter notebook&lt;/code>文件放在了&lt;a href="https://gist.github.com/heyeshuang/fece5abbd6d1cf826dbaf9c3e76361b7">github gist&lt;/a>上。&lt;/p>
 &lt;h2 id="猴子和打字机">猴子和打字机&lt;/h2>
 &lt;p>一只猴子（我们叫它Shashi Biya）在打字机上乱敲，它敲二十六个字母和空格概率都相等。那么，咱们能不能看出他的用词习惯？答案是肯定的。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
-&lt;span style="color:#069;font-weight:bold">from&lt;/span> &lt;span style="color:#0cf;font-weight:bold">collections&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> Counter
-s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>
-s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;abcd &amp;#34;&lt;/span>
-monkey&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(random&lt;span style="color:#555">.&lt;/span>choices(s, k&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10000000&lt;/span>))
-monkey&lt;span style="color:#555">=&lt;/span>[m &lt;span style="color:#069;font-weight:bold">for&lt;/span> m &lt;span style="color:#000;font-weight:bold">in&lt;/span> monkey&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">if&lt;/span> m]
-c&lt;span style="color:#555">=&lt;/span>Counter(monkey)
-common&lt;span style="color:#555">=&lt;/span>c&lt;span style="color:#555">.&lt;/span>most_common()[:&lt;span style="color:#f60">10000&lt;/span>]
-fre&lt;span style="color:#555">=&lt;/span>[value &lt;span style="color:#069;font-weight:bold">for&lt;/span> (key,value) &lt;span style="color:#000;font-weight:bold">in&lt;/span> common]
-plt&lt;span style="color:#555">.&lt;/span>plot(fre)
-plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>show()
-&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/>&lt;figcaption>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">string&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">random&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">from&lt;/span> &lt;span style="color:#0cf;font-weight:bold">collections&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> Counter
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>s&lt;span style="color:#555">=&lt;/span>string&lt;span style="color:#555">.&lt;/span>ascii_lowercase&lt;span style="color:#555">+&lt;/span>&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;abcd &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>monkey&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(random&lt;span style="color:#555">.&lt;/span>choices(s, k&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10000000&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>monkey&lt;span style="color:#555">=&lt;/span>[m &lt;span style="color:#069;font-weight:bold">for&lt;/span> m &lt;span style="color:#000;font-weight:bold">in&lt;/span> monkey&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34; &amp;#34;&lt;/span>) &lt;span style="color:#069;font-weight:bold">if&lt;/span> m]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>c&lt;span style="color:#555">=&lt;/span>Counter(monkey)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>common&lt;span style="color:#555">=&lt;/span>c&lt;span style="color:#555">.&lt;/span>most_common()[:&lt;span style="color:#f60">10000&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>fre&lt;span style="color:#555">=&lt;/span>[value &lt;span style="color:#069;font-weight:bold">for&lt;/span> (key,value) &lt;span style="color:#000;font-weight:bold">in&lt;/span> common]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>plot(fre)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/>&lt;figcaption>
 &lt;h4>阶梯形状可能是由于概率相等&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1177,18 +1208,18 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;p>不要嘲笑我们的前辈，人类的语言也具有相同的性质，虽然概率最高的字是the什么的。并不是Zipf’s law限制了猴子打出十四行诗，这或许是个好消息。&lt;/p>
 &lt;h2 id="连接曲别针第一种方法">连接曲别针，第一种方法&lt;/h2>
 &lt;p>在墙上钉100个钉子，然后随意把曲别针连在上面。哪个钉子上曲别针越多，下一个曲别针挂在上面的概率就越高。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
-&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>ones(l)
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> i &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">range&lt;/span>(&lt;span style="color:#f60">100000&lt;/span>):
-s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
-p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
-k&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(l,&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
-&lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
-plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
-plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/>&lt;figcaption>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">100&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>ones(l)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">for&lt;/span> i &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">range&lt;/span>(&lt;span style="color:#f60">100000&lt;/span>):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> k&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(l,&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">list&lt;/span>[k]&lt;span style="color:#555">+=&lt;/span>&lt;span style="color:#f60">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/>&lt;figcaption>
 &lt;h4>可惜这只是个指数分布&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1196,26 +1227,26 @@ plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font
 &lt;h2 id="连接曲别针the-right-way">连接曲别针，the right way&lt;/h2>
 &lt;p>现在，我有一把曲别针。我随便拿出两个曲别针，并把它们两个所在的串连接起来。&lt;/p>
 &lt;p>假设我对每一个曲别针没有特别的爱好，那么，某个串选中的概率，与串中的曲别针个数正相关。这就是所谓的优先连接性。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
-l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">20000&lt;/span>
-&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>[&lt;span style="color:#f60">1&lt;/span>]&lt;span style="color:#555">*&lt;/span>l
-&lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>)&lt;span style="color:#555">&amp;gt;&lt;/span>&lt;span style="color:#f60">14000&lt;/span>:
-s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
-p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
-k1&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(&lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>),&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
-a1&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k1[&lt;span style="color:#f60">0&lt;/span>])
-s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
-p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
-k2&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(&lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>),&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
-a2&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k2[&lt;span style="color:#f60">0&lt;/span>])
-&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>append(a1&lt;span style="color:#555">+&lt;/span>a2)
-toc&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
-&lt;span style="color:#366">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
-plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
-plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
-plt&lt;span style="color:#555">.&lt;/span>show()
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/zipf/output_13_0.png" alt="png">&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>tic&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>l&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">20000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">=&lt;/span>[&lt;span style="color:#f60">1&lt;/span>]&lt;span style="color:#555">*&lt;/span>l
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>)&lt;span style="color:#555">&amp;gt;&lt;/span>&lt;span style="color:#f60">14000&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> k1&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(&lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>),&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> a1&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k1[&lt;span style="color:#f60">0&lt;/span>])
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> s&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">sum&lt;/span>(&lt;span style="color:#366">list&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> p&lt;span style="color:#555">=&lt;/span>[j&lt;span style="color:#555">/&lt;/span>s &lt;span style="color:#069;font-weight:bold">for&lt;/span> j &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">list&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> k2&lt;span style="color:#555">=&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>choice(&lt;span style="color:#366">len&lt;/span>(&lt;span style="color:#366">list&lt;/span>),&lt;span style="color:#f60">1&lt;/span>, p&lt;span style="color:#555">=&lt;/span>p)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> a2&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>pop(k2[&lt;span style="color:#f60">0&lt;/span>])
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">list&lt;/span>&lt;span style="color:#555">.&lt;/span>append(a1&lt;span style="color:#555">+&lt;/span>a2)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>toc&lt;span style="color:#555">=&lt;/span>timeit&lt;span style="color:#555">.&lt;/span>default_timer()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">print&lt;/span>(toc&lt;span style="color:#555">-&lt;/span>tic)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>plot(&lt;span style="color:#366">sorted&lt;/span>(&lt;span style="color:#366">list&lt;/span>,reverse&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#069;font-weight:bold">True&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/zipf/output_13_0.png" alt="png">&lt;/p>
 &lt;p>好的，我们得到了 &lt;em>基于曲别针的互联网系统&lt;/em> ——至少可以算是个物联网。在这个网络里，（大概）80%的曲别针在20%的链子中，余下的曲别针散落在另外的地方。我们叫那些链子“曲别针巨头”。随着连接次数越来越多，链子越来越长，分散的曲别针越来越少，这就是“链子中心化”，我们现在互联网的状态。&lt;/p>
 &lt;p>当继续这个过程的时候，最终（很快）就只剩下唯一一条长链，这就是我们互联网的末日&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>刘慈欣在还没有现在这么出名的时候，写过一篇叫做《赡养人类》的作品，提到了有关“终产者”的概念。当时，有人评论大刘“不懂政治，也不懂经济”，我十分希望这个人是对的。&lt;/p>
@@ -1290,9 +1321,9 @@ plt&lt;span style="color:#555">.&lt;/span>show()
 &lt;li>随机&lt;/li>
 &lt;li>对于α和β，以对数形式随机&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">r&lt;span style="color:#555">=-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
-a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>&lt;span style="color:#555">**&lt;/span>r
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="batch-norm">Batch-Norm&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>r&lt;span style="color:#555">=-&lt;/span>&lt;span style="color:#f60">4&lt;/span>&lt;span style="color:#555">*&lt;/span>np&lt;span style="color:#555">.&lt;/span>random&lt;span style="color:#555">.&lt;/span>rand()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>&lt;span style="color:#555">**&lt;/span>r
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="batch-norm">Batch-Norm&lt;/h2>
 &lt;ul>
 &lt;li>对每一层的线性计算结果Z进行标准化&lt;/li>
 &lt;li>每层标准化的参数γ和β通过学习得到&lt;/li>
@@ -1321,10 +1352,10 @@ a&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">10&lt;/span>
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-TOML" data-lang="TOML">pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
-pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
-pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-TOML" data-lang="TOML">&lt;span style="display:flex;">&lt;span>pygmentsCodefences = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown的代码块&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold">true&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮markdown中没有标注语言的代码块&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &lt;span style="color:#09f;font-style:italic">#高亮主题&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>可用的主题见&lt;a href="http://help.farbox.com/pygments.html">这里&lt;/a>。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/">帮助&lt;/a>。&lt;/p>
 &lt;h2 id="用typographyjs修改样式">用typography.js修改样式&lt;/h2>
 &lt;p>&lt;a href="http://kyleamathews.github.io/typography.js/">Typography.js&lt;/a>是生成网页字体排印格式的库。只要简单地利用已有的主题，就可以生成较为完善的CSS格式。当然，如果需要更精确的中文排版，请移步&lt;a href="https://hanzi.pro/">汉字标准格式&lt;/a>。&lt;/p>
 &lt;p>Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：&lt;a href="https://github.com/heyeshuang/typography2css">typography2CSS&lt;/a>，用来直接生成CSS文件。&lt;/p>
@@ -1335,37 +1366,37 @@ pygmentsStyle = &lt;span style="color:#c30">&amp;#39;manni&amp;#39;&lt;/span> &l
 &lt;p>这是我的邀请链接：&lt;a href="https://billing.virmach.com/aff.php?aff=3032">https://billing.virmach.com/aff.php?aff=3032&lt;/a>，优惠码是&lt;code>2017BFSAVE20&lt;/code>。&lt;/p>
 &lt;h2 id="新建用户">新建用户&lt;/h2>
 &lt;p>感谢&lt;a href="https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/">https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">adduser hh
-gpasswd -a hh sudo
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="添加ssh-key验证并禁用root用户ssh远程登录">添加SSH-KEY验证并禁用root用户SSH远程登录&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">su - hh
-mkdir .ssh
-chmod 700 .ssh
-vi .ssh/authorized_keys
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>在这里粘贴你的公钥。什么？noVNC无法粘贴？我写了篇&lt;a href="https://blog.heysh.xyz/2019/09/22/klipper-autotype/">博文&lt;/a>来解决这个。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">#vi /etc/ssh/sshd_config
-PermitRootLogin no
-PasswordAuthentication no
-Port 22222
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sudo systemctl restart ssh
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装配置防火墙-ufw">安装配置防火墙 (ufw)&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo apt-get update&amp;amp;&amp;amp;sudo apt-get upgrade
-sudo apt-get install ufw
-sudo ufw allow 22222 #允许SSH
-sudo ufw enable
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装vim">安装vim&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>adduser hh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gpasswd -a hh sudo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="添加ssh-key验证并禁用root用户ssh远程登录">添加SSH-KEY验证并禁用root用户SSH远程登录&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>su - hh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir .ssh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>chmod 700 .ssh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vi .ssh/authorized_keys
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在这里粘贴你的公钥。什么？noVNC无法粘贴？我写了篇&lt;a href="https://blog.heysh.xyz/2019/09/22/klipper-autotype/">博文&lt;/a>来解决这个。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>#vi /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>PermitRootLogin no
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>PasswordAuthentication no
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Port 22222
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo systemctl restart ssh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装配置防火墙-ufw">安装配置防火墙 (ufw)&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>sudo apt-get update&amp;amp;&amp;amp;sudo apt-get upgrade
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get install ufw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo ufw allow 22222 #允许SSH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo ufw enable
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装vim">安装vim&lt;/h2>
 &lt;h2 id="安装shadowsocks-libev">安装shadowsocks-libev&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo sh -c &amp;#39;printf &amp;#34;deb http://httpredir.debian.org/debian jessie-backports main&amp;#34; &amp;gt; /etc/apt/sources.list.d/jessie-backports.list&amp;#39;
-sudo apt update
-sudo apt -t jessie-backports install shadowsocks-libev
-sudo vim /etc/shadowsocks-libev/config.json
-sudo ufw allow &amp;lt;PORT&amp;gt;
-sudo systemctl start shadowsocks-libev
-sudo systemctl enable shadowsocks-libev
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装4x内核">安装4.x内核&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">sudo apt-get install -t jessie-backports linux-image-amd64
-sudo update-grub
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="启用bbr">启用BBR&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>sudo sh -c &amp;#39;printf &amp;#34;deb http://httpredir.debian.org/debian jessie-backports main&amp;#34; &amp;gt; /etc/apt/sources.list.d/jessie-backports.list&amp;#39;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt update
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt -t jessie-backports install shadowsocks-libev
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo vim /etc/shadowsocks-libev/config.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo ufw allow &amp;lt;PORT&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo systemctl start shadowsocks-libev
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo systemctl enable shadowsocks-libev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装4x内核">安装4.x内核&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>sudo apt-get install -t jessie-backports linux-image-amd64
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo update-grub
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="启用bbr">启用BBR&lt;/h2>
 &lt;p>&lt;a href="https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr">https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95#%E5%BC%80%E5%90%AFbbr&lt;/a>&lt;/p></description></item><item><title>利用kcpraw流量加速</title><link>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</link><pubDate>Sat, 18 Nov 2017 16:36:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/18/2017-11-18-kcpraw-speed-up/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2015/01/07/shadowsocks%EF%BC%8Cipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/">2015年&lt;/a>和&lt;a href="https://blog.heysh.xyz/2016/10/25/shadowsocks-2016-%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AE%A4%E8%AF%81%EF%BC%8Ckcp%E5%8F%8A%E5%85%B6%E4%BB%96/">2016年&lt;/a>，我写过两篇关于 &lt;em>科学上网&lt;/em> 的博客，之后，又在VPS上安装了&lt;a href="https://v2ray.com/">v2ray&lt;/a>，这个应用直接支持mKCP，在丢包严重的网络环境下效果不错。&lt;/p>
 &lt;p>然后是最近，为了贯彻**大精神，实现什么什么自信的目标，KCP依赖的udp包被自信的家伙们无情地屏蔽了。在标准的shadowsocks和使用websocket的v2ray下，网速在50k左右，我感觉自己的网瘾又要发作了——&lt;/p>
 &lt;p>以上是背景。&lt;/p>
@@ -1377,19 +1408,19 @@ sudo update-grub
 &lt;p>在这里使用kcpraw包装原来shadowsocks的流量（纯粹是因为virtualbox没配好用不了udp2raw），假设读者有基本的linux知识并已经部署了shadowsocks。&lt;/p>
 &lt;h2 id="服务器端">服务器端&lt;/h2>
 &lt;h3 id="下载kcpraw">下载kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">mkdir ~/kcpraw
-cd ~/kcpraw
-wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
-tar zxvf kcpraw-linux-amd64-20171021.tar.gz
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>mkdir ~/kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd ~/kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw-linux-amd64-20171021.tar.gz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>
 &lt;h2 id="客户端">客户端&lt;/h2>
 &lt;h3 id="安装winpcap如果客户端是windows的话">安装winpcap（如果客户端是Windows的话）&lt;/h3>
 &lt;p>对于最新版本的Windows10，原版的&lt;code>winpcap&lt;/code>和&lt;code>win10pcap&lt;/code>似乎都不能用，可以使用兼容的&lt;a href="https://github.com/nmap/npcap">npcap&lt;/a>。&lt;/p>
 &lt;h3 id="运行kcpraw">运行kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">kcpraw_client_windows_amd64 -r &amp;#34;&amp;lt;服务器IP&amp;gt;:8388&amp;#34; -l &amp;#34;:1082&amp;#34; -mode fast2
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中&lt;code>1082&lt;/code>是设定的本地kcpraw端口。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>kcpraw_client_windows_amd64 -r &amp;#34;&amp;lt;服务器IP&amp;gt;:8388&amp;#34; -l &amp;#34;:1082&amp;#34; -mode fast2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中&lt;code>1082&lt;/code>是设定的本地kcpraw端口。&lt;/p>
 &lt;h3 id="修改shadowsocks客户端配置">修改shadowsocks客户端配置&lt;/h3>
 &lt;p>在你使用的客户端中把服务器地址设为&lt;code>localhost:1082&lt;/code>，其余不变，即可使shadowsocks享受KCP加速。&lt;/p>
 &lt;p>天气越来越冷，似乎离互联网白名单也越来越近了。到那时，我可能会换一个爱好，比如做一个伟大的白日梦什么的。&lt;/p></description></item><item><title>离</title><link>https://blog.heysh.xyz/2017/11/04/fragment/</link><pubDate>Sat, 04 Nov 2017 11:48:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/fragment/</guid><description>&lt;p>我坐在家里自己的房间，母亲在外面忙碌。&lt;/p>
@@ -1422,16 +1453,16 @@ tar zxvf kcpraw-linux-amd64-20171021.tar.gz
 &lt;p>顺便一提，我用的&lt;code>hugo&lt;/code>静态博客生成器使用&lt;code>blackfriday&lt;/code>，配置项很多，我十分满意。&lt;/p>
 &lt;h3 id="那么用html实现高级功能呢">那么用HTML实现高级功能呢？&lt;/h3>
 &lt;p>很遗憾，这也不大可能。经过&lt;a href="https://github.com/steemit/condenser/blob/4d9c1d8f76366097d9a7159b1760f51d45201eb0/src/app/utils/SanitizeConfig.js">sanitize&lt;/a>过滤，编辑器只支持以下几个标签：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">div, iframe, del,
-a, p, b, i, q, br, ul, li, ol, img,
-h1, h2, h3, h4, h5, h6, hr,
-blockquote, pre, code, em, strong, center,
-table, thead, tbody, tr, th, td,
-strike, sup, sub
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>并没有什么超过Markdown语法的新功能。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>div, iframe, del,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a, p, b, i, q, br, ul, li, ol, img,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>h1, h2, h3, h4, h5, h6, hr,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>blockquote, pre, code, em, strong, center,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>table, thead, tbody, tr, th, td,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>strike, sup, sub
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>并没有什么超过Markdown语法的新功能。&lt;/p>
 &lt;p>当然，编辑器好心地提供了几个class来控制文字和图像的位置：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>用法大概是 &lt;code>&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code>，或者看&lt;a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里&lt;/a>的介绍。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>用法大概是 &lt;code>&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code>，或者看&lt;a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里&lt;/a>的介绍。&lt;/p>
 &lt;h2 id="文章的url生成原理">文章的URL生成原理&lt;/h2>
 &lt;p>如果我在发布之前就知道文章的URL的话，就可以在文中引用自己了。这大概是一种自举 ;-)&lt;/p>
 &lt;p>如果你的文章标题是纯中文的话就很简单了：地址是随机的。所以最好在标题里加上些英文（虽然看起来有点蠢）。&lt;/p>
@@ -1470,21 +1501,21 @@ strike, sup, sub
 shortcode，点击展开
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
-{{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
-{{.Inner}}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{{.Inner}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>用法是这样的：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
-I am your father.
-NOOOOOOO!
-{{% /spoiler %}}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>I am your father.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NOOOOOOO!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{{% /spoiler %}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p>
 &lt;p>spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8&lt;/p></description></item><item><title>Brave New World: Firefox to Quantum</title><link>https://blog.heysh.xyz/2017/10/01/firefox-to-quantum/</link><pubDate>Sun, 01 Oct 2017 10:29:28 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/01/firefox-to-quantum/</guid><description>&lt;p>在把现在的配置导入Waterfox之后，就可以升级Firefox Quantum了。强烈建议用离线模式启动，并取消登陆Firefox账号，防止污染自己的同步内容。&lt;/p>
 &lt;p>在&lt;code>不支持的扩展&lt;/code>页面，自带“查找替代品”功能，但是基本没有用，不如&lt;a href="https://docs.google.com/spreadsheets/d/1TFcEXMcKrwoIAECIVyBU0GPoSmRqZ7A0VBvqeKYVSww/edit#gid=0">这个列表&lt;/a>和&lt;a href="http://bbs.kafan.cn/thread-2100445-1-1.html">卡饭的帖子&lt;/a>。&lt;/p>
 &lt;p>另外，基于WE的扩展页面都有一种廉价感，不像XUL画的窗口那样专业——当然这只是我的偏见。&lt;/p>
@@ -1654,11 +1685,11 @@ Incognito This Tab&lt;/a>
 &lt;p>为了显示中文界面，需要安装&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/versions/">Chinese Simplified (zh-CN) Language Pack&lt;/a>，并访问&lt;code>about:config&lt;/code>，将&lt;code>intl.locale.matchOS&lt;/code>改为&lt;code>true&lt;/code>。这样，&lt;del>Firefox&lt;/del> Waterfox就可以按照系统的语言来显示了。&lt;/p>
 &lt;h2 id="pentadactyl">Pentadactyl&lt;/h2>
 &lt;p>Waterfox默认开启了多进程模式，会导致&lt;code>Pentadactyl&lt;/code>不能正常工作：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">Error: Permission denied to access property &amp;#34;length&amp;#34;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>仍然是在&lt;code>about:config&lt;/code>页面，查找&lt;code>browser.tabs.remote.autostart&lt;/code>，把所有找到的项都改成&lt;code>false&lt;/code>。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">browser.tabs.remote.autostart=false
-browser.tabs.remote.autostart.2=false
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>OK，保存完成，是时候升级&lt;a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum&lt;/a>了。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Error: Permission denied to access property &amp;#34;length&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>仍然是在&lt;code>about:config&lt;/code>页面，查找&lt;code>browser.tabs.remote.autostart&lt;/code>，把所有找到的项都改成&lt;code>false&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>browser.tabs.remote.autostart=false
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>browser.tabs.remote.autostart.2=false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>OK，保存完成，是时候升级&lt;a href="https://www.mozilla.org/zh-CN/firefox/channel/desktop/#beta">Firefox Quantum&lt;/a>了。&lt;/p>
 &lt;p>啊对了，本文同时发在&lt;a href="http://heyeshuang.tk">我的博客&lt;/a>和&lt;a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit&lt;/a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p>
 &lt;p>——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。&lt;/p></description></item><item><title>首都图书馆半日游</title><link>https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/</link><pubDate>Sat, 09 Sep 2017 12:44:02 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2017/08/12/2017-08-12-recent/">之前&lt;/a>说过我因为网瘾被送去荒山改造，不得不说，这还是颇有些效果的。比如，上上周日我久违地踏出了屋门，而且也并没有被阳光化为灰烬。也许再过上几个月，我可能能够真正地过上人类的生活——&lt;/p>
 &lt;p>这当然是在开玩笑，除了我踏出屋门这件事以外。那天我去了首都图书馆。拿到了教官/总长/特首的出门许可之后，中午，我穿过垃圾场，跳过泥潭，走过柳林，再从围墙的缺口钻过去，然后，又回到了文明世界。&lt;/p>
@@ -1678,17 +1709,17 @@ browser.tabs.remote.autostart.2=false
 &lt;p>当然，这也是建立在我所获取的微量信息上的偏见，而且我会把这一段隐藏，因为如果我们意见不统一，你就不会再喜欢我了。&lt;/font>&lt;/p></description></item><item><title>关于那个IME helper</title><link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link><pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid><description>&lt;p>&lt;del>昨天&lt;/del>前天我用鸟语写了一篇贼 &lt;em>正经&lt;/em> 的&lt;a href="https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/">说明&lt;/a>，今天，我准备稍微介绍一下那里面的&lt;code>IME helper&lt;/code>。&lt;/p>
 &lt;p>正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p>
 &lt;p>嗯，这种需求，我听过一个叫AHK的语言……&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
-;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
-setChineseLayout(){
-;发送中文输入法切换快捷键，请根据实际情况设置。
-send {Ctrl Down}{Shift}
-send {Ctrl Down},
-send {Ctrl Down}{Shift}
-send {Ctrl Down},
-send {Ctrl Up}
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>setChineseLayout(){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ;发送中文输入法切换快捷键，请根据实际情况设置。
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> send {Ctrl Down}{Shift}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> send {Ctrl Down},
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> send {Ctrl Down}{Shift}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> send {Ctrl Down},
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> send {Ctrl Up}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p>
 &lt;p>然后就愉快地决定用 Python+ctypes 干这种脏活了，然后发现：windows API真是太难写了！一个更改输入法有4种写法！而且都不能用！&lt;/p>
 &lt;p>最后居然还是抄的&lt;a href="http://www.ahk8.com/thread-3751.html?highlight=%E8%BE%93%E5%85%A5%E6%B3%95">AHK社区的东西&lt;/a>……亏我还像白痴一样疯狂翻MSDN……&lt;/p>
 &lt;p>另外，pyinstaller生成的单文件exe&lt;del>跑得不够快&lt;/del>用起来有延迟，大概是因为解压吧……&lt;/p></description></item><item><title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title><link>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</link><pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</guid><description>&lt;p>Update 2018-5: Now vim-mode-plus introduced &lt;a href="https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300">new method&lt;/a> to disable IME in the setting page. It's time for this post to retire.&lt;/p>
@@ -1703,18 +1734,18 @@ send {Ctrl Up}
 &lt;li>And for Windows, I wrote a &lt;a href="https://github.com/heyeshuang/ime_helper">python script&lt;/a> to switch the IME of the &lt;em>foreground window&lt;/em>.&lt;/li>
 &lt;/ul>
 &lt;p>Then we could configure this package.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
-python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --current &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
-python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --dec &lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
-python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
-python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
-&lt;span style="color:#09f;font-style:italic">#linux:&lt;/span>
-/usr/bin/fcitx-remote &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
-&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">((&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &amp;lt;&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#555">))&lt;/span>;&lt;span style="color:#069;font-weight:bold">then&lt;/span> /usr/bin/fcitx-remote -c; &lt;span style="color:#069;font-weight:bold">else&lt;/span> /usr/bin/fcitx-remote -o ;&lt;span style="color:#069;font-weight:bold">fi&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
-/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
-/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
-&lt;span style="color:#09f;font-style:italic">#macOS: just use the default config&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/atom-vim-configure.png" alt="configure">&lt;/p></description></item><item><title>短消息：联通IPV6</title><link>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</link><pubDate>Sun, 03 Sep 2017 23:11:32 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid><description>&lt;p>似乎是使用teredo。Good Job！&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#windows:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --current &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --dec &lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>to&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#linux:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/bin/fcitx-remote &lt;span style="color:#09f;font-style:italic">#Get Current Input Source&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">((&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">source&lt;/span>&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &amp;lt;&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;1&amp;#34;&lt;/span> &lt;span style="color:#555">))&lt;/span>;&lt;span style="color:#069;font-weight:bold">then&lt;/span> /usr/bin/fcitx-remote -c; &lt;span style="color:#069;font-weight:bold">else&lt;/span> /usr/bin/fcitx-remote -o ;&lt;span style="color:#069;font-weight:bold">fi&lt;/span> &lt;span style="color:#09f;font-style:italic">#insert&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#normal&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#macOS: just use the default config&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/atom-vim-configure.png" alt="configure">&lt;/p></description></item><item><title>短消息：联通IPV6</title><link>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</link><pubDate>Sun, 03 Sep 2017 23:11:32 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid><description>&lt;p>似乎是使用teredo。Good Job！&lt;/p>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/ipv6-test.png"/>&lt;figcaption>
 &lt;h4>IPV6测试&lt;/h4>
 &lt;/figcaption>
@@ -1742,41 +1773,41 @@ python E:&lt;span style="color:#c30;font-weight:bold">\\&lt;/span>path&lt;span s
 &lt;p>好的，大概就是这样，之后也许还会更新 &lt;em>用户体验&lt;/em> ，如果我还没有把线接上，而且还没有被网瘾或者其他的什么吞噬的话。&lt;/p></description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p>之前在 &lt;a href="http://heyeshuang.tk">http://heyeshuang.tk&lt;/a> 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/">http://heyeshuang.tk/feed/&lt;/a> ，但是hugo提供的RSS地址是&lt;code>index.xml&lt;/code>样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p>
 &lt;p>所以只能改模版了，思路是把&lt;code>/feed&lt;/code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p>
 &lt;p>&lt;code>\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
-{{ range .Site.RegularPages }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
-{{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
-{{ end }}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ range .Site.RegularPages }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
 &lt;p>然后别忘了新建一个&lt;code>\content\feed\chicken.md&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
-title: &amp;#39;chicken&amp;#39;
-author: HeYSH
-date: 2012-06-22T06:32:32+00:00
-aliases:
-- /%3ffeed%3drss2
----
-Nothing here.
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>title: &amp;#39;chicken&amp;#39;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>author: HeYSH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>date: 2012-06-22T06:32:32+00:00
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>aliases:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - /%3ffeed%3drss2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Nothing here.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p>我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/">上次&lt;/a>我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p>
 &lt;p>wordpress的文章是通过&lt;a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">wordpress-to-hugo-exporter&lt;/a>导出的，但是导出的文件有一些小问题：&lt;/p>
 &lt;ul>
 &lt;li>标题里都是&lt;code>&amp;lt;span&amp;gt;&lt;/code>&lt;/li>
@@ -1784,18 +1815,19 @@ Nothing here.
 &lt;li>&lt;code>img&lt;/code>和&lt;code>code&lt;/code>需要修改&lt;/li>
 &lt;/ul>
 &lt;p>对于正文，可以用&lt;code>pandoc&lt;/code>和&lt;code>pypandoc&lt;/code>转换：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
-data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
-ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
-ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, &lt;span style="color:#366">format&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
-do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
-file&lt;span style="color:#555">.&lt;/span>write(do)
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>&lt;span style="color:#555">,&lt;/span>&lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>read()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ds &lt;span style="color:#555">=&lt;/span> data&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#39;---&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ds[&lt;span style="color:#f60">2&lt;/span>] &lt;span style="color:#555">=&lt;/span> pypandoc&lt;span style="color:#555">.&lt;/span>convert_text(ds[&lt;span style="color:#f60">2&lt;/span>], &lt;span style="color:#c30">&amp;#39;md&amp;#39;&lt;/span>, &lt;span style="color:#366">format&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;html&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> do &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#39;---&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#39;&lt;/span>&lt;span style="color:#555">.&lt;/span>join(ds)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> file&lt;span style="color:#555">.&lt;/span>write(do)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其他的……手改保平安……&lt;/p>
 &lt;p>……&lt;/p>
 &lt;p>……………&lt;/p>
 &lt;p>漫长的修改过后，用&lt;code>hugo server -w&lt;/code>预览。&lt;/p>
@@ -1803,107 +1835,119 @@ file&lt;span style="color:#555">.&lt;/span>write(do)
 &lt;code>/2016/06/13/qart-coder：更友好的qr码/&lt;/code>，&lt;code>hugo&lt;/code>会解析为&lt;code>/2016/06/13/qart-coder更友好的qr码/&lt;/code>。看出区别了吗？&lt;/p>
 &lt;p>为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code>aliases&lt;/code>行，可以将原来的地址转发到新地址。&lt;/p>
 &lt;p>同样的，我也写了一个辣鸡脚本：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
-&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
-root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
-data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>readlines()
-&lt;span style="color:#069;font-weight:bold">try&lt;/span>:
-urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
-url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
-aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34; -&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
-data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, aliasLine)
-data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
-&lt;span style="color:#069;font-weight:bold">except&lt;/span>:
-&lt;span style="color:#069;font-weight:bold">pass&lt;/span>
-&lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
-&lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
-file&lt;span style="color:#555">.&lt;/span>write(d)
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">pypandoc&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">import&lt;/span> &lt;span style="color:#0cf;font-weight:bold">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;./content&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">for&lt;/span> rt, dirs, files &lt;span style="color:#000;font-weight:bold">in&lt;/span> os&lt;span style="color:#555">.&lt;/span>walk(root):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">for&lt;/span> filename &lt;span style="color:#000;font-weight:bold">in&lt;/span> files:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(os&lt;span style="color:#555">.&lt;/span>path&lt;span style="color:#555">.&lt;/span>join(rt, filename), &lt;span style="color:#c30">&amp;#39;r&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> fin:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data &lt;span style="color:#555">=&lt;/span> fin&lt;span style="color:#555">.&lt;/span>readlines()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">try&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> urlIndex &lt;span style="color:#555">=&lt;/span> [n &lt;span style="color:#069;font-weight:bold">for&lt;/span> n, l &lt;span style="color:#000;font-weight:bold">in&lt;/span> &lt;span style="color:#366">enumerate&lt;/span>(data) &lt;span style="color:#069;font-weight:bold">if&lt;/span> l&lt;span style="color:#555">.&lt;/span>find(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>) &lt;span style="color:#555">!=&lt;/span> &lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>][&lt;span style="color:#f60">0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> url &lt;span style="color:#555">=&lt;/span> data[urlIndex]&lt;span style="color:#555">.&lt;/span>split(&lt;span style="color:#c30">&amp;#34;url:&amp;#34;&lt;/span>)[&lt;span style="color:#f60">1&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> aliasLine &lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34; -&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> url
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, aliasLine)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data&lt;span style="color:#555">.&lt;/span>insert(urlIndex &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#f60">1&lt;/span>, &lt;span style="color:#c30">&amp;#34;aliases:&lt;/span>&lt;span style="color:#c30;font-weight:bold">\n&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">except&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">with&lt;/span> &lt;span style="color:#366">open&lt;/span>(filename, &lt;span style="color:#c30">&amp;#39;w&amp;#39;&lt;/span>, encoding&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#39;utf-8&amp;#39;&lt;/span>) &lt;span style="color:#069;font-weight:bold">as&lt;/span> file:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">for&lt;/span> d &lt;span style="color:#000;font-weight:bold">in&lt;/span> data:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> file&lt;span style="color:#555">.&lt;/span>write(d)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p>书接上文 &lt;del>（虽然我是先写的这一篇）&lt;/del>，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code>/public&lt;/code>目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code>master&lt;/code>分支保存源文件，&lt;code>gh-page&lt;/code>分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">这里&lt;/a>说的那样。&lt;/p>
 &lt;p>这里假设你已经&lt;code>init&lt;/code>过了你的&lt;code>hugo&lt;/code>目录：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback"># Create a new orphand branch (no commit history) named gh-pages
-git checkout --orphan gh-pages
-# Unstage all files
-git rm --cached $(git ls-files)
-# Grab one file from the master branch so we can make a commit
-git checkout master README.md
-# Add and commit that file
-git add .
-git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
-# Push to remote gh-pages branch
-git push origin gh-pages
-# Return to master branch
-git checkout master
-# Remove the public folder to make room for the gh-pages subtree
-rm -rf public
-# Add the gh-pages branch of the repository. It will look like a folder named public
-git subtree add --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages --squash
-# Pull down the file we just committed. This helps avoid merge conflicts
-# 这里我先push了一次，否则会出现fatal: refusing to merge unrelated histories
-# 好像是git的bug
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-git subtree pull --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-hugo
-# Add everything
-git add -A
-# Commit and push to master
-git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
-# Push the public subtree to the gh-pages branch
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">hugo
-git add -A
-git commit -m &amp;#34;some messages&amp;#34;
-git push origin master
-git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>Dota 2里，什么技能的冷却时间最短？</title><link>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</link><pubDate>Sat, 25 Mar 2017 13:13:15 +0000</pubDate><guid>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</guid><description>&lt;p>答案是各种法球~开玩笑的~&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span># Create a new orphand branch (no commit history) named gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout --orphan gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Unstage all files
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git rm --cached $(git ls-files)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Grab one file from the master branch so we can make a commit
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout master README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Add and commit that file
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Push to remote gh-pages branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Return to master branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Remove the public folder to make room for the gh-pages subtree
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Add the gh-pages branch of the repository. It will look like a folder named public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree add --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages --squash
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Pull down the file we just committed. This helps avoid merge conflicts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># 这里我先push了一次，否则会出现fatal: refusing to merge unrelated histories
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># 好像是git的bug
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree pull --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Add everything
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add -A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Commit and push to master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># Push the public subtree to the gh-pages branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后每次更新需要&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>hugo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add -A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &amp;#34;some messages&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>像我这样的强迫症可以把主题也做一个&lt;code>subtree&lt;/code>出来。&lt;/p></description></item><item><title>Dota 2里，什么技能的冷却时间最短？</title><link>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</link><pubDate>Sat, 25 Mar 2017 13:13:15 +0000</pubDate><guid>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</guid><description>&lt;p>答案是各种法球~开玩笑的~&lt;/p>
 &lt;p>最近沉迷Dota2的一个RPG： &lt;a href="https://steamcommunity.com/sharedfiles/filedetails/?id=717356279">Legends of Dota:Redux&lt;/a>（当然是人机），在挑技能的时候常常需要一些短cd的技能，但是&lt;a href="http://dota2.gamepedia.com/Abilities">wiki&lt;/a>里居然没有技能冷却时间的排序！&lt;/p>
 &lt;p>所以我就自己排了一个：&lt;a href="https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6">https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6&lt;/a>&lt;/p>
 &lt;p>数据来源是客户端里面&lt;code>\dota2\steamapps\common\dota 2 beta\game\dota\scripts\npc\npc\_abilities.txt&lt;/code>，在下可不是页游玩家！&lt;/p>
 &lt;p>这个文件看起来特别像是JSON，但是是用空格分割的，而且还有\\注释。本来把这东西转换成JSON才是工作的大头，可是我懒了：找到了另一个玩家的&lt;a href="http://uglyvpn.com/2015/03/01/dota-2-items-txt-to-xmljson-tool/">Dota 2 items.txt/npc_abilities.txt to xml/json tool v1.1&lt;/a>，然后就是简单的排序了~&lt;/p>
 &lt;p>另外，除了法球，还有许多技能也是0秒CD的哦，比如幽鬼的降临什么的~&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
-&lt;span style="color:#309;font-weight:bold">&amp;#34;Name&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34; reality&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;HeroName&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;spectre&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;ID&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;5338&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;Cooldown&amp;#34;&lt;/span>: &lt;span style="color:#f60">0.0&lt;/span>
-}&lt;span style="color:#a00;background-color:#faa">,&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>五年</title><link>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</link><pubDate>Sun, 15 Jan 2017 08:14:45 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</guid><description>&lt;p>&lt;img src="http://i1.piimg.com/1949/c9d69d714fb8671c.png" alt="">&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;Name&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34; reality&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;HeroName&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;spectre&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;ID&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;5338&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;Cooldown&amp;#34;&lt;/span>: &lt;span style="color:#f60">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}&lt;span style="color:#a00;background-color:#faa">,&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>五年</title><link>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</link><pubDate>Sun, 15 Jan 2017 08:14:45 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</guid><description>&lt;p>&lt;img src="http://i1.piimg.com/1949/c9d69d714fb8671c.png" alt="">&lt;/p>
 &lt;p>距离实现永生：5/∞&lt;/p>
 &lt;p>新的一年也要好好活下去哦~&lt;/p></description></item><item><title>用nethogs实时监控每个程序的流量使用</title><link>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</link><pubDate>Fri, 13 Jan 2017 12:25:31 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/%E7%94%A8nethogs%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F%E4%BD%BF%E7%94%A8/</guid><description>&lt;p>适用于（没有cron和init的）debian 8.0&lt;/p>
 &lt;ul>
 &lt;li>安装nethogs&lt;/li>
 &lt;li>创建&lt;code>/root/monitor.sh&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">3600&lt;/span>
-&lt;span style="color:#033">TIMESTAMP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>date +%b_%d_%Y_%H_%M_%S&lt;span style="color:#c30">`&lt;/span>
-&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>/var/log/nethogs/&lt;span style="color:#033">$TIMESTAMP&lt;/span>.log
-bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">;kill 0;) | (sleep &lt;/span>&lt;span style="color:#033">$TIMEOUT&lt;/span>&lt;span style="color:#c30">;kill 0; )&amp;#34;&lt;/span> 3&amp;gt;&amp;amp;&lt;span style="color:#f60">1&lt;/span> 2&amp;gt;/dev/null
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">TIMEOUT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#f60">3600&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">TIMESTAMP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">`&lt;/span>date +%b_%d_%Y_%H_%M_%S&lt;span style="color:#c30">`&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">OUTPUT&lt;/span>&lt;span style="color:#555">=&lt;/span>/var/log/nethogs/&lt;span style="color:#033">$TIMESTAMP&lt;/span>.log
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash -ic &lt;span style="color:#c30">&amp;#34;(/usr/local/sbin/nethogs -t -d 30&amp;amp;&amp;gt;&lt;/span>&lt;span style="color:#033">$OUTPUT&lt;/span>&lt;span style="color:#c30">;kill 0;) | (sleep &lt;/span>&lt;span style="color:#033">$TIMEOUT&lt;/span>&lt;span style="color:#c30">;kill 0; )&amp;#34;&lt;/span> 3&amp;gt;&amp;amp;&lt;span style="color:#f60">1&lt;/span> 2&amp;gt;/dev/null
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>/etc/systemd/system/nethogs.timer&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs Daemon
-&lt;span style="color:#555">[&lt;/span>Timer&lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#033">OnBootSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1min
-&lt;span style="color:#033">OnUnitActiveSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1h
-&lt;span style="color:#555">[&lt;/span>Install&lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#033">WantedBy&lt;/span>&lt;span style="color:#555">=&lt;/span>timers.target
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs Daemon
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span>Timer&lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">OnBootSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1min
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">OnUnitActiveSec&lt;/span>&lt;span style="color:#555">=&lt;/span>1h
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span>Install&lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">WantedBy&lt;/span>&lt;span style="color:#555">=&lt;/span>timers.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>/etc/systemd/system/nethogs.service&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs run
-&lt;span style="color:#555">[&lt;/span>Service&lt;span style="color:#555">]&lt;/span>
-&lt;span style="color:#033">Type&lt;/span>&lt;span style="color:#555">=&lt;/span>oneshot
-&lt;span style="color:#033">ExecStart&lt;/span>&lt;span style="color:#555">=&lt;/span>/root/monitor.sh
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span>Unit&lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">Description&lt;/span>&lt;span style="color:#555">=&lt;/span>Nethogs run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span>Service&lt;span style="color:#555">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">Type&lt;/span>&lt;span style="color:#555">=&lt;/span>oneshot
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">ExecStart&lt;/span>&lt;span style="color:#555">=&lt;/span>/root/monitor.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>查看使用情况用&lt;a href="https://github.com/boopathi/nethogs-parser">Nethogs parser&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">./hogs -type&lt;span style="color:#555">=&lt;/span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p>把EMF里的所有文字转换成路径就能解决了&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>./hogs -type&lt;span style="color:#555">=&lt;/span>pretty /var/log/nethogs/Jan_03_2017_09_20_36.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p>把EMF里的所有文字转换成路径就能解决了&lt;/p>
 &lt;p>应该是辣鸡windows的文字渲染问题&lt;/p>
 &lt;p>&lt;img src="http://p1.bqimg.com/1949/3cdbc7407efbe04a.png" alt="使用前">
 &lt;img src="http://p1.bqimg.com/1949/3fc7d26cd830bc93.png" alt="使用后">&lt;/p>
@@ -2404,8 +2448,8 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>这时就要用到fcitx的&lt;a href="https://github.com/felixonmars/fcitx-tsundere">蹭得累插件&lt;/a>了～还有菊҉花҉体҉放送哦～～&lt;/p></description></item><item><title>个人主页上线</title><link>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link><pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid><description>&lt;p>&lt;a href="http://heyeshuang.github.io">http://heyeshuang.github.io&lt;/a>&lt;/p>
 &lt;p>请使用现代浏览器并开启硬件加速&lt;/p></description></item><item><title>断</title><link>https://blog.heysh.xyz/2013/07/27/%E6%96%AD-3/</link><pubDate>Sat, 27 Jul 2013 15:12:05 +0000</pubDate><guid>https://blog.heysh.xyz/2013/07/27/%E6%96%AD-3/</guid><description>&lt;p>对面楼下有一小丛竹子，十余年来，似乎并没有什么变化。不过，从五楼的窗户看过去，这样的视角还是第一次。记忆中，楼道的窗台并不是这样低矮，然而阴暗和潮湿还是一样。\&lt;/p>
 &lt;p>耳边只有震耳欲聋的蝉鸣。不久，雨变得稍稍猛烈了一些，最后毫不留情地倾泄起来。&lt;/p></description></item><item><title>firefox主页被绑架</title><link>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link><pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid><description>&lt;p>如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样&lt;strong>恼羞成怒&lt;/strong>，抱着“就是不让你挣钱”的扭曲心态，直接修改&lt;code>C:\Windows\System32\drivers\etc\hosts&lt;/code>加上一行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">127.0.0.1 ww w.dyy55.c om
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>（去掉空格）&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>127.0.0.1 ww w.dyy55.c om
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>（去掉空格）&lt;/p>
 &lt;p>这样虽然有效，但是过于简单粗暴（But I’m lovin’ it）&lt;/p>
 &lt;p>更加优雅的答案是去修改&lt;code>C:\Users\me\Application Data\Mozilla\Firefox\Profiles\********.default\user.js&lt;/code>，或者直接把这个干掉。&lt;/p>
 &lt;p>这件事情告诉我们一个道理，firefox已经不再是一个比较小众的浏览器了；然而linux上仍然没有盗号木马。我不禁陷入了沉思。&lt;/p></description></item><item><title>测试VimRepress</title><link>https://blog.heysh.xyz/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</link><pubDate>Sun, 26 May 2013 08:05:33 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</guid><description>&lt;p>&lt;em>本来这时候我是应该滚去写实验报告的但却写了博客&lt;/em>&lt;/p>
@@ -2460,13 +2504,13 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>用一张图表达我的感想：&lt;/p>
 &lt;p>&lt;img src="https://blog.heysh.xyz/evil.png" alt="evil">&lt;/p></description></item><item><title>十一年前，以及今天</title><link>https://blog.heysh.xyz/2013/05/10/%E5%8D%81%E4%B8%80%E5%B9%B4%E5%89%8D%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%BB%8A%E5%A4%A9/</link><pubDate>Fri, 10 May 2013 15:25:26 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/10/%E5%8D%81%E4%B8%80%E5%B9%B4%E5%89%8D%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%BB%8A%E5%A4%A9/</guid><description>&lt;p>今天在互联网上hang about的时候，发现了&lt;a href="http://www.maylin.net/Fireworks.html">这个&lt;/a>：&lt;/p>
 &lt;p>在h1位置就大张旗鼓的用p标签写着Posted July 2002，也完全是2002年的风格：table式排版，内嵌font，还有 &lt;em>大家都喜欢的&lt;/em> comic sans；再一看head，是长成这样的：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;text/html; charset=windows-1252&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Content-Type&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Microsoft FrontPage 6.0&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;GENERATOR&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;FrontPage.Editor.Document&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;ProgId&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;no&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;imagetoolbar&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;Fireworks&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;none, default&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Microsoft Border&amp;#34;&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>看到了吗？死掉的FrontPage……&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;text/html; charset=windows-1252&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Content-Type&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Microsoft FrontPage 6.0&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;GENERATOR&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;FrontPage.Editor.Document&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;ProgId&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;no&amp;#34;&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;imagetoolbar&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;Fireworks&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;none, default&amp;#34;&lt;/span> &lt;span style="color:#309">name&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;Microsoft Border&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>看到了吗？死掉的FrontPage……&lt;/p>
 &lt;p>然而，打开java以后，这网页是这样的：\&lt;/p>
 &lt;p>&lt;img src="https://blog.heysh.xyz/fireworks.png" alt="fireworks">&lt;/p>
 &lt;p>现在到了找不同环节：请找出它与&lt;a href="http://jackrugile.com/lab/fireworks-v1/">这个&lt;/a>的区别。&lt;/p>
@@ -2606,19 +2650,19 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>后来发现直接安可能也可以？？&lt;/p>
 &lt;/blockquote>
 &lt;p>按照&lt;a href="http://www.road2stat.com/cn/tex/archtex.html">这里&lt;/a>的安装方式\&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">su –
-wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
-mkdir /mnt/tex
-mount -o loop texlive2012.iso /mnt/tex/
-&lt;span style="color:#366">cd&lt;/span> /mnt/tex/
-./install-tl
-vim /etc/profile &lt;span style="color:#09f;font-style:italic">#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……&lt;/span>
-tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
-tlmgr update –self
-tlmgr update –all
-umount /mnt/tex
-rm -rf /mnt/tex
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后发现没有字体……&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>su –
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir /mnt/tex
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mount -o loop texlive2012.iso /mnt/tex/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">cd&lt;/span> /mnt/tex/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./install-tl
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vim /etc/profile &lt;span style="color:#09f;font-style:italic">#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tlmgr update –self
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tlmgr update –all
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>umount /mnt/tex
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf /mnt/tex
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后发现没有字体……&lt;/p>
 &lt;p>然后在&lt;a href="http://tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf">这里&lt;/a>发现要：&lt;/p>
 &lt;blockquote>
 &lt;p>将 texlive-fontconfig.conf 文件复制到
@@ -2632,11 +2676,11 @@ rm -rf /mnt/tex
 &lt;p>然后&lt;code>sudo vim /usr/local/texlive/2012/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def&lt;/code>&lt;/p>
 &lt;p>把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p>
 &lt;p>编译用例：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-tex" data-lang="tex">&lt;span style="color:#069;font-weight:bold">\documentclass&lt;/span>&lt;span style="color:#366">{&lt;/span>ctexart&lt;span style="color:#366">}&lt;/span>
-&lt;span style="color:#069;font-weight:bold">\begin&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
-为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
-&lt;span style="color:#069;font-weight:bold">\end&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>用的编译命令是xelatex……&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tex" data-lang="tex">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">\documentclass&lt;/span>&lt;span style="color:#366">{&lt;/span>ctexart&lt;span style="color:#366">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">\begin&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#069;font-weight:bold">\end&lt;/span>&lt;span style="color:#366">{&lt;/span>document&lt;span style="color:#366">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>用的编译命令是xelatex……&lt;/p>
 &lt;p>然后……要是提示缺少&lt;code>Adobe Song Std&lt;/code>什么的，应该&lt;code>yaourt acroread-font-chinese-simplified&lt;/code>就行了吧……&lt;/p>
 &lt;p>啊啊，从这个过程里，我好像看到了我短暂的人生……越是精于算计，就越可能出现意想不到的状况……&lt;/p>
 &lt;blockquote>
@@ -2666,8 +2710,8 @@ rm -rf /mnt/tex
 &lt;p>&lt;del>对于ubuntu，推荐换成archlinux&lt;/del>&lt;/p>
 &lt;p>程序自带的手册很详细，不过因为中文化好像出了一些小问题，那么可以直接去&lt;a href="http://www.texmacs.org/tmweb/manual/web-manual.en.html">http://www.texmacs.org/tmweb/manual/web-manual.en.html&lt;/a>\&lt;/p>
 &lt;p>关于字体，见http://www.texmacs.org/tmweb/download/fonts.en.html ，大概就是要下一个字体放到～/.TeXmacs/fonts/truetype里面然后运行&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">texmacs --delete-font-cache &amp;amp;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>亲测Simsun，wqy可用～&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>texmacs --delete-font-cache &amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>亲测Simsun，wqy可用～&lt;/p>
 &lt;p>关于插入图片，似乎在win下只能插入png的样子，然后更改宽高还要写成”800px”，谁知道还要加单位啊……&lt;/p>
 &lt;p>至今尚未解决的问题：linux下一导出pdf就crash，好像只对中文有效，自带help无压力，什么时候我去报个bug……&lt;/p></description></item><item><title>那么如同标题一样，这里要变成树洞了</title><link>https://blog.heysh.xyz/2012/10/05/%E9%82%A3%E4%B9%88%E5%A6%82%E5%90%8C%E6%A0%87%E9%A2%98%E4%B8%80%E6%A0%B7%EF%BC%8C%E8%BF%99%E9%87%8C%E8%A6%81%E5%8F%98%E6%88%90%E6%A0%91%E6%B4%9E%E4%BA%86/</link><pubDate>Fri, 05 Oct 2012 15:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/10/05/%E9%82%A3%E4%B9%88%E5%A6%82%E5%90%8C%E6%A0%87%E9%A2%98%E4%B8%80%E6%A0%B7%EF%BC%8C%E8%BF%99%E9%87%8C%E8%A6%81%E5%8F%98%E6%88%90%E6%A0%91%E6%B4%9E%E4%BA%86/</guid><description>&lt;p>\&lt;/p>
 &lt;p>明明不是tk域名了的说……搜索引擎都收录了的说……为什么没有人来……\&lt;/p>
@@ -2802,13 +2846,13 @@ END:VCALENDAR
 &lt;li>我&lt;del>们&lt;/del>尚不知道那天所看到的&lt;del>花的名字&lt;/del>DTSTAMP的用处&lt;/li>
 &lt;/ul>
 &lt;p>最后补一些相关代码段（javascript）：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">$vCalArea.append(&lt;span style="color:#c30">&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span>);
-&lt;span style="color:#09f;font-style:italic">/***************生成文件头****************/&lt;/span>
-$vCalArea.append(&lt;span style="color:#c30">&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strBT &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strET &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> uid &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseInfo &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.place &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseName &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span>)
-&lt;span style="color:#09f;font-style:italic">/****************VEVENT部分***************/&lt;/span>
-$vCalArea.append(&lt;span style="color:#c30">&amp;#39;END:VCALENDAR&amp;#39;&lt;/span>);
-&lt;span style="color:#09f;font-style:italic">/****************文件尾****************/&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>全部脚本见&lt;a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/&lt;/a>&lt;/p></description></item><item><title>Hello Again~</title><link>https://blog.heysh.xyz/2012/06/22/hello-again/</link><pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid><description>&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>$vCalArea.append(&lt;span style="color:#c30">&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">/***************生成文件头****************/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$vCalArea.append(&lt;span style="color:#c30">&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strBT &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> strET &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> uid &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseInfo &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.place &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span> &lt;span style="color:#555">+&lt;/span> Data.courseName &lt;span style="color:#555">+&lt;/span> &lt;span style="color:#c30">&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">/****************VEVENT部分***************/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$vCalArea.append(&lt;span style="color:#c30">&amp;#39;END:VCALENDAR&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">/****************文件尾****************/&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>全部脚本见&lt;a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/&lt;/a>&lt;/p></description></item><item><title>Hello Again~</title><link>https://blog.heysh.xyz/2012/06/22/hello-again/</link><pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid><description>&lt;blockquote>
 &lt;p>国内的免费主机始终是不靠谱的啊……&lt;/p>
 &lt;p>——以上为结论&lt;/p>
 &lt;/blockquote>

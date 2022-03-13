@@ -7,16 +7,16 @@
 &lt;p>顺便一提，我用的&lt;code>hugo&lt;/code>静态博客生成器使用&lt;code>blackfriday&lt;/code>，配置项很多，我十分满意。&lt;/p>
 &lt;h3 id="那么用html实现高级功能呢">那么用HTML实现高级功能呢？&lt;/h3>
 &lt;p>很遗憾，这也不大可能。经过&lt;a href="https://github.com/steemit/condenser/blob/4d9c1d8f76366097d9a7159b1760f51d45201eb0/src/app/utils/SanitizeConfig.js">sanitize&lt;/a>过滤，编辑器只支持以下几个标签：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">div, iframe, del,
-a, p, b, i, q, br, ul, li, ol, img,
-h1, h2, h3, h4, h5, h6, hr,
-blockquote, pre, code, em, strong, center,
-table, thead, tbody, tr, th, td,
-strike, sup, sub
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>并没有什么超过Markdown语法的新功能。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>div, iframe, del,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a, p, b, i, q, br, ul, li, ol, img,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>h1, h2, h3, h4, h5, h6, hr,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>blockquote, pre, code, em, strong, center,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>table, thead, tbody, tr, th, td,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>strike, sup, sub
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>并没有什么超过Markdown语法的新功能。&lt;/p>
 &lt;p>当然，编辑器好心地提供了几个class来控制文字和图像的位置：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>用法大概是 &lt;code>&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code>，或者看&lt;a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里&lt;/a>的介绍。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>&amp;#39;pull-right&amp;#39;, &amp;#39;pull-left&amp;#39;, &amp;#39;text-justify&amp;#39;, &amp;#39;text-rtl&amp;#39;, &amp;#39;text-center&amp;#39;, &amp;#39;text-right&amp;#39;, &amp;#39;videoWrapper&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>用法大概是 &lt;code>&amp;lt; div class=&amp;quot;pull-right&amp;quot;&amp;gt; &amp;lt; img src=&amp;quot;imglink&amp;quot; /&amp;gt;&amp;lt; /div &amp;gt;&lt;/code>，或者看&lt;a href="https://steemit.com/steemit/@primus/how-to-use-new-hidden-steemit-features-for-custom-formatting-within-post-content-floating-right-left-and-justifying">这里&lt;/a>的介绍。&lt;/p>
 &lt;h2 id="文章的url生成原理">文章的URL生成原理&lt;/h2>
 &lt;p>如果我在发布之前就知道文章的URL的话，就可以在文中引用自己了。这大概是一种自举 ;-)&lt;/p>
 &lt;p>如果你的文章标题是纯中文的话就很简单了：地址是随机的。所以最好在标题里加上些英文（虽然看起来有点蠢）。&lt;/p>

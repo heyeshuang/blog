@@ -9,16 +9,16 @@
 &lt;p>&lt;code>{'交通,', '交通,打车', '交通,机票', '交通,火车', '人情,', '住房,', '住房,家具', '住房,家纺', '住房,物业水电', '住房,装修', '其他,', '医疗,', '医疗,药品', '娱乐,', '娱乐,电影', '投资亏损,', '文教,', '文教,书刊', '文教,文具', '旅行,', '旅行,景点门票', '旅行,酒店', '汽车,', '购物,', '购物,数码', '购物,日用', '购物,玩具', '购物,电器', '购物,美妆', '购物,运动用品', '购物,鞋服', '购物,饰品', '通讯,', '通讯,话费', '零食烟酒,', '零食烟酒,水果', '零食烟酒,烟酒', '零食烟酒,茶水', '零食烟酒,零食', '零食烟酒,饮料', '餐饮,', '餐饮,三餐', '餐饮,食材'}&lt;/code>&lt;/p>
 &lt;p>对这些分类，利用人工&lt;del>智能&lt;/del>，为每一项建立了对应的&lt;code>account&lt;/code>，形成了一个&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/youqian/youqianDict.py">dict&lt;/a>。&lt;/p>
 &lt;p>如果你已经下载了&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers&lt;/a>，你可以用里面的&lt;code>importers/ youqian/accountInit.py&lt;/code>来自动建立这些&lt;code>accounts&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
-&lt;span style="color:#09f;font-style:italic"># 或：如果之前已经建立了一些账户的话&lt;/span>
-python importers/youqian/accountInit.py Existing_Accounts.bean &amp;gt; New_Accounts.bean
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="导入网易有钱的收入支出数据">导入网易有钱的收入、支出数据&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python importers/youqian/accountInit.py &amp;gt; New_Accounts.bean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 或：如果之前已经建立了一些账户的话&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python importers/youqian/accountInit.py Existing_Accounts.bean &amp;gt; New_Accounts.bean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="导入网易有钱的收入支出数据">导入网易有钱的收入、支出数据&lt;/h3>
 &lt;p>Beancount的&lt;a href="https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#">文档&lt;/a>里已经对导入脚本进行了比较详细的说明。从&lt;a href="https://bitbucket.org/blais/beancount/src/tip/examples/ingest/office/importers/utrade/">这个例子&lt;/a>开始，基本上只要实现几个函数就行。&lt;/p>
 &lt;p>在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">beancount-homemade-importers&lt;/a>中，我写了一个简单的网易有钱导入脚本。在使用之前，需要用excel把默认的&lt;code>xlsx&lt;/code>格式转换为&lt;code>收入.csv&lt;/code>和&lt;code>支出.csv&lt;/code>。&lt;/p>
 &lt;p>之后，使用&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
-bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &amp;gt; 收入.bean
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>来导入。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>bean-extract importers/youqian/youqian_expense.import documents.tmp/支出.csv &amp;gt; 支出.bean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &amp;gt; 收入.bean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>来导入。&lt;/p>
 &lt;h2 id="自动记账">自动记账&lt;/h2>
 &lt;p>写下这个标题是在2020年6月。在使用beancount半年之后，账本一共增加了270条内容，所需的时间每月不超过1小时。&lt;/p>
 &lt;p>&lt;img src="%E6%9D%A1%E7%9B%AE.png" alt="">&lt;/p>
@@ -31,38 +31,39 @@ bean-extract importers/youqian/youqian_income.import documents.tmp/收入.csv &a
 (这张图是用mermaid画的，这里是源代码)
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">graph LR;
-linkStyle default interpolate basis
-subgraph one [开销]
-A([支付宝]);
-B([微信]);
-G([&amp;#34;京东、刷卡&amp;#34;]);
-H([理财]);
-end
-subgraph two [收入]
-C[工商银行];
-end
-D[农业银行];
-E([中国银行]);
-F([招商银行]);
-E --&amp;gt; H
-E &amp;amp; F --&amp;gt; A &amp;amp; B
-C --&amp;gt; E &amp;amp; D &amp;amp; F
-F --&amp;gt; G
-classDef auto fill:#9ACFBF
-class B,E,F auto
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>graph LR;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> linkStyle default interpolate basis
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subgraph one [开销]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> A([支付宝]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> B([微信]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> G([&amp;#34;京东、刷卡&amp;#34;]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> H([理财]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> end
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subgraph two [收入]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> C[工商银行];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> end
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> D[农业银行];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> E([中国银行]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> F([招商银行]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> E --&amp;gt; H
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> E &amp;amp; F --&amp;gt; A &amp;amp; B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> C --&amp;gt; E &amp;amp; D &amp;amp; F
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> F --&amp;gt; G
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> classDef auto fill:#9ACFBF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> class B,E,F auto
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>其中，有一些银行卡（比如图中的农业银行）每月的转账记录不超过2条，这时候只要手工敲上几行就可以了。对于另外的、日常生活的花费，手动记录带来了大量时间的浪费。这时候，找到流动的枢纽，并对它们的账单进行批量处理，就可以从重复劳动中解放出来。对于我来说，要进行批量处理的节点是&lt;code>中国银行&lt;/code>，&lt;code>招商银行&lt;/code>和&lt;code>微信&lt;/code>。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
 &lt;h3 id="写一些脚本">写一些脚本&lt;/h3>
 &lt;p>所以，我写了中国银行、招商银行和微信钱包对账单的导入脚本。Beancount拥有比较强大的导入功能，对于简单的、CSV格式的账单文件，只要在自带的&lt;code>beancount.ingest.importers.csv.importer&lt;/code>上&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers/blob/master/importers/boc.import">稍作修改&lt;/a>就可以了；对于其它较为复杂的账单，可以自行扩展&lt;code>ImporterProtocol&lt;/code>的子类，在&lt;a href="https://docs.google.com/document/d/11EwQdujzEo2cxqaF5PgxCEZXWfKKQCYSMfdJowp_1S8/edit#heading=h.z153vh2ll6ix">官方文档&lt;/a>中有较为详细的说明。&lt;/p>
 &lt;p>另外，我还发现了&lt;a href="https://github.com/beancount/smart_importer">smart_importer&lt;/a>，只要简单地增加hook，就可以给导入脚本增加更好的去重、智能猜测分类等更帅气的功能。&lt;/p>
 &lt;h3 id="在每个账单日运行一次">在每个账单日运行一次&lt;/h3>
 &lt;p>在账单目录下，我建立了一个&lt;code>TODO&lt;/code>文件：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">自动导入微信、中国银行和招商（账单日）
-手动导入工行和农行
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为微信的账单信息比较多，我一般先从它开始。每月信用卡的账单日，下载微信钱包对账单，然后运行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">bean-extract importers/wechat.import documents.tmp/微信支付账单.csv -f main.bean &amp;gt; temp.bean
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>-f&lt;/code>用来为&lt;code>smart_importer&lt;/code>提供学习素材。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>自动导入微信、中国银行和招商（账单日）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>手动导入工行和农行
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为微信的账单信息比较多，我一般先从它开始。每月信用卡的账单日，下载微信钱包对账单，然后运行：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bean-extract importers/wechat.import documents.tmp/微信支付账单.csv -f main.bean &amp;gt; temp.bean
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>-f&lt;/code>用来为&lt;code>smart_importer&lt;/code>提供学习素材。&lt;/p>
 &lt;p>接下来打开&lt;code>temp.bean&lt;/code>，检查人工&lt;del>智障&lt;/del>智能补充的分类条目有没有什么问题。（大概率问题很多，每个月大部分的时间会花费在这里。）&lt;/p>
 &lt;p>之后，将&lt;code>temp.bean&lt;/code>重命名为一个有意义的名字，并在&lt;code>main.bean&lt;/code>中&lt;code>import&lt;/code>。接下來对银行账户的导入过程中，&lt;code>smart_importer&lt;/code>会自动去除重复账单。&lt;/p>
 &lt;p>在上面的工作都完成以后，本月的账单也只剩下几条漏网之鱼了。把它们（手动）补充，并用&lt;code>balance&lt;/code>命令检查。&lt;/p>

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>feed on 林中阴影</title><link>https://blog.heysh.xyz/tags/feed/</link><description>Recent content in feed on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Mon, 12 Jun 2017 22:25:07 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/feed/feed.xml" rel="self" type="application/rss+xml"/><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p>之前在 &lt;a href="http://heyeshuang.tk">http://heyeshuang.tk&lt;/a> 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/">http://heyeshuang.tk/feed/&lt;/a> ，但是hugo提供的RSS地址是&lt;code>index.xml&lt;/code>样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p>
 &lt;p>所以只能改模版了，思路是把&lt;code>/feed&lt;/code>目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p>
 &lt;p>&lt;code>\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
-{{ range .Site.RegularPages }}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
-{{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
-&amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
-{{ end }}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">rss&lt;/span> &lt;span style="color:#309">version&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;2.0&amp;#34;&lt;/span> &lt;span style="color:#309">xmlns:atom&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold">generator&lt;/span>&amp;gt;{{ with .Site.LanguageCode }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">language&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">managingEditor&lt;/span>&amp;gt;{{end}}{{ with .Site.Author.email }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">webMaster&lt;/span>&amp;gt;{{end}}{{ with .Site.Copyright }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">copyright&lt;/span>&amp;gt;{{end}}{{ if not .Date.IsZero }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">lastBuildDate&lt;/span>&amp;gt;{{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">atom:link&lt;/span> &lt;span style="color:#309">href&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;{{.Permalink}}&amp;#34;&lt;/span> &lt;span style="color:#309">rel&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;self&amp;#34;&lt;/span> &lt;span style="color:#309">type&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;application/rss+xml&amp;#34;&lt;/span> /&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ range .Site.RegularPages }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">link&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">pubDate&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold">author&lt;/span>&amp;gt;{{end}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">guid&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold">description&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">item&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">channel&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">rss&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>基本上就是hugo自带的RSS模板，除了把&lt;code>{{ range .Data.Pages }}&lt;/code>改成了&lt;code>{{ range .Site.RegularPages }}&lt;/code>，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn&lt;/a>，稍微改了一些小bug，还换了个颜色。&lt;del>哪天我要把名字改成greenfreeze。&lt;/del>&lt;/p>
 &lt;p>然后别忘了新建一个&lt;code>\content\feed\chicken.md&lt;/code>：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-fallback" data-lang="fallback">---
-title: &amp;#39;chicken&amp;#39;
-author: HeYSH
-date: 2012-06-22T06:32:32+00:00
-aliases:
-- /%3ffeed%3drss2
----
-Nothing here.
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item></channel></rss>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>title: &amp;#39;chicken&amp;#39;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>author: HeYSH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>date: 2012-06-22T06:32:32+00:00
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>aliases:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - /%3ffeed%3drss2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Nothing here.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，类似&lt;code>/?feed=rss2&lt;/code>这样的地址就用不了了，我试过的。&lt;/p></description></item></channel></rss>

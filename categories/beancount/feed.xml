@@ -28,45 +28,45 @@
 大概长得像这样
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
-&lt;span style="color:#309;font-weight:bold">&amp;#34;respCode&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1000&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;respMsg&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;操作成功&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;data&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;rmbBillInfo&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;9999.90&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999.90&amp;#34;&lt;/span>
-},
-&lt;span style="color:#309;font-weight:bold">&amp;#34;dollarBillInfo&amp;#34;&lt;/span>: {
-&lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>
-},
-&lt;span style="color:#309;font-weight:bold">&amp;#34;detail&amp;#34;&lt;/span>: [
-{
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billId&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;DetailBill&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220113180009&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;billMonth&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;202201&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;org&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;transactionAmount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>, &lt;span style="color:#09f;font-style:italic">//实际的RMB入账
-&lt;/span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#309;font-weight:bold">&amp;#34;description&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;财付通&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;postingDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;location&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;CN&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;totalStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;currentStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;remainingStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;transactionType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;消费&amp;#34;&lt;/span>,
-&lt;span style="color:#309;font-weight:bold">&amp;#34;cardNo&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;6666&amp;#34;&lt;/span>
-},]
-}
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;respCode&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1000&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;respMsg&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;操作成功&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;data&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;rmbBillInfo&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;9999.90&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999.90&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;dollarBillInfo&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;detail&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billId&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;DetailBill&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220113180009&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billMonth&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;202201&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;org&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;transactionAmount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>, &lt;span style="color:#09f;font-style:italic">//实际的RMB入账
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#309;font-weight:bold">&amp;#34;description&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;财付通&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;postingDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;location&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;CN&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;totalStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;currentStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;remainingStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;transactionType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;消费&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;cardNo&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;6666&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>接下来，可以使用你喜欢的方法对账单进行处理了。对于beancount，我写的importer放在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">这里&lt;/a>。&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>

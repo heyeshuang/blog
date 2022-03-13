@@ -8,19 +8,19 @@
 shortcode，点击展开
 &lt;/h4>
 &lt;/summary>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
-{{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
-{{.Inner}}
-&amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#309;font-weight:bold">h4&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">summary&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{{.Inner}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#309;font-weight:bold">details&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>用法是这样的：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
-I am your father.
-NOOOOOOO!
-{{% /spoiler %}}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>I am your father.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NOOOOOOO!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{{% /spoiler %}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p>
 &lt;p>spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8&lt;/p></description></item></channel></rss>
