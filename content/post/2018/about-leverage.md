@@ -27,7 +27,7 @@ win_BTC_short=(-1/price_before+1/price_after)*count #做空
 win_BTC_long*price_after+cash/price_before*price_after #做多，或
 win_BTC_short*price_after+cash/price_before*price_after #做空
 ```
-其中，`cash`是操作前账户的实际价值，$$cash*leverage=count$$。
+其中，`cash`是操作前账户的实际价值，$cash*leverage=count$。
 
 例如，当价格从1000$升至1250$，或从1250$降至1000$时，选用不同杠杆的盈亏如下：
 

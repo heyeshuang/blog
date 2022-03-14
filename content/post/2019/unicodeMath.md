@@ -20,7 +20,7 @@ categories :
 
 这玩意粘贴到微信和小蓝鸟上效果居然还不错。（假装这里有个图）
 
-（呃，上面输入的是 $$\sqrt{X_m^2+Y_\beta^2}\geq0$$。）
+（呃，上面输入的是 $\sqrt{X_m^2+Y_\beta^2}\geq0$。）
 
 
 这里用到了[Unicode数学符号](https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode)、[上下标](https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts)和[组合附加符号](https://zh.wikipedia.org/wiki/%E7%B5%84%E5%90%88%E9%99%84%E5%8A%A0%E7%AC%A6%E8%99%9F)[^1]。
