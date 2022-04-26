@@ -13,7 +13,7 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;li>屏幕上有几道小划痕，没有贴膜留下的气泡明显；&lt;/li>
 &lt;li>电池健康度95%（自称），SSD通电9天（自称），板载内存是8G的LPDDR3，&lt;code>又不是不能用.jpg&lt;/code>&lt;/li>
 &lt;li>重达899g，阅读？没有锻炼身体重要！&lt;/li>
-&lt;li>据说比surface好拆，我还没试，主要是还没有蹲到便宜的SSD；
+&lt;li>&lt;del>据说&lt;/del>比surface好拆，&lt;del>我还没试，主要是还没有蹲到便宜的SSD&lt;/del> M.2 2280的铠侠RD20效果良好；
 &lt;img src="%E6%8B%86%E6%9C%BA.png" alt="拆机">&lt;/li>
 &lt;li>第八代Intel是官方支持Windows11的&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors">最老版本&lt;/a>，目前还没有遇到什么问题，Android模拟器也能用；&lt;/li>
 &lt;li>&lt;code>scoop&lt;/code>处理文件关联太头疼了，而且&lt;code>winget&lt;/code>已经可以识别系统代理了，还是用&lt;code>winget&lt;/code>吧，另外，&lt;code>Windows Terminal&lt;/code>也不错。&lt;/li>
@@ -743,7 +743,7 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2" role="doc-endnote">
-&lt;p>细心的读者可能会注意到，我并没有将支付宝也列入进来，即使和微信的地位相似。这是由于支付宝的账单并不能显示付款账户。通过余额宝和通过信用卡支付，在对账单上没有明确的区分，这会给之后的条目合并造成困难。在开始用beancount之后，因为手动记录太麻烦，我很少用支付宝付款。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>细心的读者可能会注意到，我并没有将支付宝也列入进来，即使和微信的地位相似。这是由于支付宝的账单并不能显示付款账户。通过余额宝和通过信用卡支付，在对账单上没有明确的区分，这会给之后的条目合并造成困难。在开始用beancount之后，因为手动记录太麻烦，我很少用支付宝付款。(update 220426：最近听说支付宝手机版能够看到付款账户，之后可以试试)&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>&lt;blockquote>

@@ -13,7 +13,7 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;li>屏幕上有几道小划痕，没有贴膜留下的气泡明显；&lt;/li>
 &lt;li>电池健康度95%（自称），SSD通电9天（自称），板载内存是8G的LPDDR3，&lt;code>又不是不能用.jpg&lt;/code>&lt;/li>
 &lt;li>重达899g，阅读？没有锻炼身体重要！&lt;/li>
-&lt;li>据说比surface好拆，我还没试，主要是还没有蹲到便宜的SSD；
+&lt;li>&lt;del>据说&lt;/del>比surface好拆，&lt;del>我还没试，主要是还没有蹲到便宜的SSD&lt;/del> M.2 2280的铠侠RD20效果良好；
 &lt;img src="%E6%8B%86%E6%9C%BA.png" alt="拆机">&lt;/li>
 &lt;li>第八代Intel是官方支持Windows11的&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors">最老版本&lt;/a>，目前还没有遇到什么问题，Android模拟器也能用；&lt;/li>
 &lt;li>&lt;code>scoop&lt;/code>处理文件关联太头疼了，而且&lt;code>winget&lt;/code>已经可以识别系统代理了，还是用&lt;code>winget&lt;/code>吧，另外，&lt;code>Windows Terminal&lt;/code>也不错。&lt;/li>
@@ -24,6 +24,83 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
 &lt;p>小米平板5没有USB3.0；联想小新系列国外版型号挺混乱的，估计不会有lineageOS支持了；华为……沸腾了，有点过热。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>获取招商信用卡账单的另一种方法</title><link>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</link><pubDate>Fri, 21 Jan 2022 19:43:45 +0800</pubDate><guid>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</guid><description>&lt;figure>
+&lt;audio controls preload="metadata">
+&lt;source src="th08_06.mp3" type="audio/mpeg">
+&lt;/audio>
+&lt;figcaption>&lt;h4>BGM: 懐かしき東方の血　～ Old World&lt;/h4>&lt;/figcaption>
+&lt;/figure>
+&lt;blockquote>
+&lt;p>按：&lt;/p>
+&lt;p>最近招商银行不再给我发送EML格式的电子邮件账单了，取而代之的是邮件中的PDF附件，&lt;em>仅供人类阅读&lt;/em>，基本上没有办法进行自动处理。于是我故伎重施，试图在IE驱动的网上银行中找到账单，可是找到的却只是用Electron包裹的丑陋电子银行客户端，理所应当地不提供下载服务。&lt;/p>
+&lt;p>紧紧关闭的大门前，仅有一点点光芒透出来：招行的手机版网站仍然可用。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>招商银行信用卡官方网站在&lt;a href="https://xyk.cmbchina.com/credit-express/bill">https://xyk.cmbchina.com/credit-express/bill&lt;/a>。为了假装自己是在用手机访问，请使用Chrome浏览器&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，开启开发者工具，显示设备工具栏（Ctrl+Shift+M），并模拟iPhone或者其他手机。
+&lt;img src="%E7%99%BB%E5%BD%95.png" alt="登录的状态">&lt;/li>
+&lt;li>如果能够顺利登录的话，大概能够看见自己的欠款金额了。这个网站采用React+Mobx开发，与后端通过&lt;code>fetch&lt;/code>通信，可能也有某种加密。只是下载网站上的数据的话，也许不能算犯&lt;code>破坏计算机信息系统罪&lt;/code>。
+&lt;img src="%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.png" alt="用户界面">&lt;/li>
+&lt;li>点击“历史账单”；&lt;/li>
+&lt;li>点击开发者工具中的“应用”tab；&lt;/li>
+&lt;li>点击&lt;code>帧&lt;/code>-&lt;code>XHR和fetch&lt;/code>-&lt;code>getService.json&lt;/code>；&lt;/li>
+&lt;li>右击右侧的&lt;code>respCode&lt;/code>，选择复制值；
+&lt;img src="%E4%BF%9D%E5%AD%98.png" alt="保存">&lt;/li>
+&lt;li>粘贴到一个&lt;code>cmb.json&lt;/code>内。&lt;/li>
+&lt;/ul>
+&lt;p>好的，我们已经获得了本月账单的JSON文件了。&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+大概长得像这样
+&lt;/h4>
+&lt;/summary>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;respCode&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;1000&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;respMsg&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;操作成功&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;data&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;rmbBillInfo&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;9999.90&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999.90&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;dollarBillInfo&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleStart&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20211215&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billCycleEnd&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;repaymentDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220202&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;minPayment&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0.00&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;detail&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billId&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;0&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;DetailBill&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220113180009&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;billMonth&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;202201&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;org&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;999&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;transactionAmount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;amount&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;88.88&amp;#34;&lt;/span>, &lt;span style="color:#09f;font-style:italic">//实际的RMB入账
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#309;font-weight:bold">&amp;#34;description&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;财付通&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;postingDate&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;20220114&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;location&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;CN&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;totalStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;currentStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;remainingStages&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;transactionType&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;消费&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#309;font-weight:bold">&amp;#34;cardNo&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;6666&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
+&lt;p>接下来，可以使用你喜欢的方法对账单进行处理了。对于beancount，我写的importer放在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">这里&lt;/a>。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>Firefox似乎对所谓的“安全”键盘存在一些兼容性问题。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>我在GitHub的⭐</title><link>https://blog.heysh.xyz/2021/12/24/github-stars/</link><pubDate>Fri, 24 Dec 2021 19:29:52 +0800</pubDate><guid>https://blog.heysh.xyz/2021/12/24/github-stars/</guid><description>&lt;p>我想要去整理GitHub的star列表已经很久了。之前在&lt;del>同性交友&lt;/del>上网冲浪时，经常会看到各式各样的库。怀着一种“这个之后可能会用到”的心情，把它们一一加入列表，然后抛诸脑后。下次重新发现的时候，&lt;code>starred&lt;/code>状态仿佛是在嘲笑我一样。最近，正好有一个大项目的deadline横亘眼前，是做这种&lt;strong>看似&lt;/strong>有意义的事情的最好时间。&lt;/p>
@@ -444,7 +521,7 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2" role="doc-endnote">
-&lt;p>细心的读者可能会注意到，我并没有将支付宝也列入进来，即使和微信的地位相似。这是由于支付宝的账单并不能显示付款账户。通过余额宝和通过信用卡支付，在对账单上没有明确的区分，这会给之后的条目合并造成困难。在开始用beancount之后，因为手动记录太麻烦，我很少用支付宝付款。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>细心的读者可能会注意到，我并没有将支付宝也列入进来，即使和微信的地位相似。这是由于支付宝的账单并不能显示付款账户。通过余额宝和通过信用卡支付，在对账单上没有明确的区分，这会给之后的条目合并造成困难。在开始用beancount之后，因为手动记录太麻烦，我很少用支付宝付款。(update 220426：最近听说支付宝手机版能够看到付款账户，之后可以试试)&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>&lt;blockquote>
