@@ -1,10 +1,10 @@
 ---
 author : "HeYSH"
 type : "post"
-tags :
+categories :
     - 折腾
     - 生活
-categories :
+tags :
     - Beancount
     - 记账
 title: "获取招商信用卡账单的另一种方法"

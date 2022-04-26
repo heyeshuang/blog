@@ -29,7 +29,7 @@ draft: false
 - 屏幕上有几道小划痕，没有贴膜留下的气泡明显；
 - 电池健康度95%（自称），SSD通电9天（自称），板载内存是8G的LPDDR3，`又不是不能用.jpg`
 - 重达899g，阅读？没有锻炼身体重要！
-- 据说比surface好拆，我还没试，主要是还没有蹲到便宜的SSD；
+- ~~据说~~比surface好拆，~~我还没试，主要是还没有蹲到便宜的SSD~~ M.2 2280的铠侠RD20效果良好；
 ![拆机](拆机.png)
 - 第八代Intel是官方支持Windows11的[最老版本](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors)，目前还没有遇到什么问题，Android模拟器也能用；
 - `scoop`处理文件关联太头疼了，而且`winget`已经可以识别系统代理了，还是用`winget`吧，另外，`Windows Terminal`也不错。
