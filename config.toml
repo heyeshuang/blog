@@ -13,7 +13,7 @@ pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = 'manni'
 # pygmentsUseClasses=true
 
-googleAnalytics = "UA-40522664-1"
+googleAnalytics = "G-CWBXLVG90W"
 disqusShortname = "heysh"
 # pygmentsOptions = "linenos=table,noclasses=true"
 [markup.goldmark]
