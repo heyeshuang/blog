@@ -92,20 +92,20 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;hr>
 &lt;p>来自19-6-9：&lt;/p>
 &lt;p>前几天突然想起一个例子。我们宇宙的最终命运——是重新回到一个闪耀的奇点，还是变成冰冷稀薄的碎片，和&lt;a href="https://zh.wikipedia.org/zh/%E5%AE%87%E5%AE%99%E5%AD%B8%E5%B8%B8%E6%95%B8">一个常数&lt;/a>相关。现在的观测结果显示，这个常数很接近两种可能的分界线，但我们并不能确定自己是对的：&lt;a href="https://www.solidot.org/story?sid=60885">对暗物质质量的计算已经很困难&lt;/a>，更不要提什么暗能量了。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>一部分可能由于&lt;a href="https://zh.wikipedia.org/zh-tw/%E8%87%AA%E8%AF%81%E9%A2%84%E8%A8%80">自证预言&lt;/a>，另一部分可能就是流行的KOL什么的了。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>不仅仅是条件反射，而且有非常类似人类的&lt;a href="http://www.psychspace.com/psy/school/001/%27SUPERSTITION%27%20IN%20THE%20PIGEON.htm">“迷信行为”&lt;/a>（'SUPERSTITION' IN THE PIGEON, B. F. Skinner）。我最近才在素材库里发现这个有趣的现象。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>我试图让我不要再刷那些占星师的微博了，但是我瞪了自己一眼，然后说：“不”。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>随机性从哪里来？</title><link>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</link><pubDate>Mon, 26 Mar 2018 21:03:21 +0800</pubDate><guid>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>随机性从哪里来？</title><link>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</link><pubDate>Mon, 26 Mar 2018 21:03:21 +0800</pubDate><guid>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</guid><description>&lt;blockquote>
 &lt;p>当然，没准可以预测“真空中的球形未来”。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="量子力学">量子力学……&lt;/h2>
@@ -120,17 +120,17 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;h3 id="甚至">甚至……&lt;/h3>
 &lt;p>即使我们真的掏空宇宙做出一台超级计算机，当它真正开始计算的时候，首先需要计算自己的状态，那么，首先需要计算&lt;code>计算自己状态时自己的状态&lt;/code>……&lt;/p>
 &lt;p>正如&lt;code>证明所有数学定律&lt;/code>，&lt;code>找到不属于自身的集合的集合&lt;/code>，&lt;code>或者判断是不是会停机&lt;/code>一样，当我们观察系统的时候，需要把自己从系统中排除。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>刘慈欣，《镜子》。原谅我总喜欢拿科幻小说作例子，这纯粹是因为它们“可能性”的种类比较多。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>以上那一行叙述似乎暗示着隐变量理论，作为爱因斯坦&lt;a href="https://mp.weixin.qq.com/s?__biz=MjM5NDA1Njg2MA==&amp;amp;mid=2651981696&amp;amp;idx=1&amp;amp;sn=f4da01857707385ad4c44c8dc9e7c942&amp;amp;scene=2&amp;amp;srcid=0428O8l58rK5JeqU4x9KHYbs&amp;amp;from=timeline&amp;amp;isappinstalled=0#%23">从上帝手中夺过骰子&lt;/a>的方案。然而，加上删除线的原因是，&lt;a href="https://zhuanlan.zhihu.com/p/20202069">对贝尔不等式的实验&lt;/a>宣告了这种理论的终结。个人而言，我还是比较喜欢这种随机性比较高的世界。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>见&lt;a href="https://doi.org/10.1103/PhysRevLett.88.237901">https://doi.org/10.1103/PhysRevLett.88.237901&lt;/a>。老实说，这个量与普朗克长度有关，我们还是躲不开量子力学 ;-)&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

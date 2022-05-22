@@ -26,20 +26,20 @@
 &lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
 &lt;hr>
 &lt;p>来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/">这篇教程&lt;/a>在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/">ARP代理&lt;/a>用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
+&lt;/div></description></item><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
 &lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
 &lt;p>大概是3月末，我在例行的&lt;code>检查博客有没有自己偷偷更新&lt;/code>的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del>打牌&lt;/del>&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/">狩猎&lt;/a>之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p>
 &lt;p>中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p>
@@ -85,14 +85,14 @@
 &lt;p>来自2020-6-14的更新：&lt;/p>
 &lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>说笑的，待会我就会把字体裁好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>
+&lt;/div></description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>
 &lt;p>之前我用的是&lt;a href="https://lifely.today/2015/05/%E7%82%BA-cloudflare-%E8%A8%AD%E5%AE%9A%E5%8B%95%E6%85%8B-dns-ddns/">这里&lt;/a>的方法，不过最近cloudflare更新了&lt;a href="https://api.cloudflare.com/">第四代API&lt;/a>，那个方法已经失效。于是水博文的机会来了。&lt;/p>
 &lt;p>原料：&lt;/p>
 &lt;ol>

@@ -81,14 +81,14 @@
 &lt;p>呃，对不起。&lt;/p>
 &lt;/blockquote>
 &lt;p>以上不代表博主观点。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>细心的读者可能会注意到，我并没有将支付宝也列入进来，即使和微信的地位相似。这是由于支付宝的账单并不能显示付款账户。通过余额宝和通过信用卡支付，在对账单上没有明确的区分，这会给之后的条目合并造成困难。在开始用beancount之后，因为手动记录太麻烦，我很少用支付宝付款。(update 220426：最近听说支付宝手机版能够看到付款账户，之后可以试试)&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

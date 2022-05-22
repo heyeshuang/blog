@@ -19,14 +19,14 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;li>&lt;code>scoop&lt;/code>处理文件关联太头疼了，而且&lt;code>winget&lt;/code>已经可以识别系统代理了，还是用&lt;code>winget&lt;/code>吧，另外，&lt;code>Windows Terminal&lt;/code>也不错。&lt;/li>
 &lt;/ul>
 &lt;p>啊，扯远了。大概现在就想到这些，再想起别的什么，或者平板真的爆炸了的话，我会再来更新的。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>小米平板5没有USB3.0；联想小新系列国外版型号挺混乱的，估计不会有lineageOS支持了；华为……沸腾了，有点过热。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title><link>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</link><pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate><guid>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</guid><description>&lt;p>呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。&lt;/p>
+&lt;/div></description></item><item><title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title><link>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</link><pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate><guid>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</guid><description>&lt;p>呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。&lt;/p>
 &lt;p>事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href="https://www.ext2fsd.com/">Ext2fsd&lt;/a>来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p>
 &lt;p>于是，我……我做了一个linux虚拟机来帮我读这个分区。&lt;/p>
 &lt;p>具体来说，VirtualBox支持将单独的分区视为虚拟磁盘&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。你需要在 &lt;strong>具有管理员权限&lt;/strong> 的命令提示符中运行：&lt;/p>
@@ -43,20 +43,20 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;/ul>
 &lt;p>就可以在宿主机上用网络硬盘访问Ext4分区了。&lt;/p>
 &lt;p>而且能够收获一次反思：我为什么要浪费宝贵的时间干这个？&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>&lt;a href="https://www.virtualbox.org/manual/ch09.html#rawdisk">https://www.virtualbox.org/manual/ch09.html#rawdisk&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>&lt;a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html">https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>&lt;a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server">https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p>把EMF里的所有文字转换成路径就能解决了&lt;/p>
+&lt;/div></description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p>把EMF里的所有文字转换成路径就能解决了&lt;/p>
 &lt;p>应该是辣鸡windows的文字渲染问题&lt;/p>
 &lt;p>&lt;img src="http://p1.bqimg.com/1949/3cdbc7407efbe04a.png" alt="使用前">
 &lt;img src="http://p1.bqimg.com/1949/3fc7d26cd830bc93.png" alt="使用后">&lt;/p>

@@ -25,17 +25,17 @@
 &lt;p>之后在noVNC界面上按刚才的快捷键就行。&lt;/p>
 &lt;hr>
 &lt;p>来自19-10-4的更新：俄罗斯IP被某个熊猫网站（e-h）屏蔽了……我就随口一说。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>其实我还有点期待&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>标签能出个什么特殊格式呢……&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>VPS初始化checklist</title><link>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</link><pubDate>Sat, 25 Nov 2017 12:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</guid><description>&lt;p>仅供存档。另外，virmach黑五大减价了，KVM主机5.6$一年美滋滋。&lt;/p>
+&lt;/div></description></item><item><title>VPS初始化checklist</title><link>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</link><pubDate>Sat, 25 Nov 2017 12:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/25/2017-11-25-virmach-init/</guid><description>&lt;p>仅供存档。另外，virmach黑五大减价了，KVM主机5.6$一年美滋滋。&lt;/p>
 &lt;p>这是我的邀请链接：&lt;a href="https://billing.virmach.com/aff.php?aff=3032">https://billing.virmach.com/aff.php?aff=3032&lt;/a>，优惠码是&lt;code>2017BFSAVE20&lt;/code>。&lt;/p>
 &lt;h2 id="新建用户">新建用户&lt;/h2>
 &lt;p>感谢&lt;a href="https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/">https://blog.roadofgrowth.com/2015/04/28/e6-96-b0-e8-b4-advps-e5-88-9d-e5-a7-8b-e5-8c-96-e5-ae-89-e5-85-a8-e9-85-8d-e7-bd-ae/&lt;/a>&lt;/p>

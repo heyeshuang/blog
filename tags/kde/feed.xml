@@ -25,14 +25,14 @@
 &lt;p>之后在noVNC界面上按刚才的快捷键就行。&lt;/p>
 &lt;hr>
 &lt;p>来自19-10-4的更新：俄罗斯IP被某个熊猫网站（e-h）屏蔽了……我就随口一说。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>其实我还有点期待&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>标签能出个什么特殊格式呢……&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

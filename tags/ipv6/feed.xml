@@ -26,20 +26,20 @@
 &lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
 &lt;hr>
 &lt;p>来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/">这篇教程&lt;/a>在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/">ARP代理&lt;/a>用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>
+&lt;/div></description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>
 &lt;p>大概上思路和&lt;a href="http://talk.withme.me/?p=51">这里&lt;/a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code>6ndp&lt;/code>,&lt;code>ndppd&lt;/code>和&lt;code>radvd&lt;/code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code>/etc/config/dhcp&lt;/code>的关键几行大概应该是这样：&lt;/p>
 &lt;pre>&lt;code># /etc/config/dhcp:
 config dhcp 'lan'

@@ -44,14 +44,14 @@
 &lt;p>来自2020-6-14的更新：&lt;/p>
 &lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>说笑的，待会我就会把字体裁好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮">用chroma进行语法高亮&lt;/h2>
+&lt;/div></description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮">用chroma进行语法高亮&lt;/h2>
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>

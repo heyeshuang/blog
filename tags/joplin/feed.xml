@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Joplin on 林中阴影</title><link>https://blog.heysh.xyz/tags/joplin/</link><description>Recent content in Joplin on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 22 May 2022 22:45:39 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/joplin/feed.xml" rel="self" type="application/rss+xml"/><item><title>几物互联</title><link>https://blog.heysh.xyz/2022/05/22/connect-every-something/</link><pubDate>Sun, 22 May 2022 22:45:39 +0800</pubDate><guid>https://blog.heysh.xyz/2022/05/22/connect-every-something/</guid><description>&lt;blockquote>
+&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>
+&lt;/blockquote>
+&lt;p>无论是在家里的组装机还是漂泊的笔记本，在工作的时候都能够获得相似的上下文，有的时候甚至可以在家CTRL+C，在公司CTRL+V。除了&lt;em>鸿蒙&lt;/em>系统之外，通过一组软件也是可以实现的。&lt;/p>
+&lt;p>本人现在所使用的方案如下。设置难度由易到难排序。&lt;/p>
+&lt;h2 id="同步存储syncthing">同步存储：Syncthing&lt;/h2>
+&lt;blockquote>
+&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>
+&lt;/blockquote>
+&lt;p>比起云存储，个人更倾向于Syncthing这样的本地同步方案：至少文件是属于自己的（而且还不用收钱）。安装也很简单：Windows下安装&lt;a href="https://github.com/canton7/SyncTrayzor">SyncTrayzor&lt;/a>，Android下安装&lt;a href="https://github.com/Catfriend1/syncthing-android">Syncthing-Fork&lt;/a>，其他系统移步&lt;a href="https://syncthing.net/downloads/">这里&lt;/a>就可以。安装完以后，在两边选择工作目录，就可以完成双向同步了。得益于STUN服务器，无论是在内网还是外网，文件都可以完成传输。&lt;/p>
+&lt;p>当然，Syncthing也有一定的问题。首先是，因为是进行了同步，同一份文件会在每一个设备上都占用一份空间。在手机这样捉襟见肘的环境下，建议采用“仅发送”模式，只用来备份照片之类的。&lt;/p>
+&lt;p>另外，Syncthing在运行的时候必须要两侧的设备保持开机，电费账单+1。在有一方离线的时候，需要注意文件的版本，不要在两边都修改同一个文件。毕竟不是git，合并功能没有那么强。&lt;/p>
+&lt;h2 id="笔记软件与文献管理">笔记软件与文献管理&lt;/h2>
+&lt;blockquote>
+&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>
+&lt;/blockquote>
+&lt;p>本人使用&lt;a href="https://joplinapp.org/">Joplin&lt;/a>和&lt;a href="https://www.zotero.org/">Zotero&lt;/a>来做笔记和进行文献管理，这两款软件都可以使用Syncthing作为同步后端&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而且都具有笔记功能。我的习惯是，在Joplin上写一些需要较长篇幅的笔记，文献阅读笔记放在Zotero中。&lt;/p>
+&lt;p>当然，作为一篇讲“互联”的博文，这两款软件当然也是可以相互连接的。我主要用到下面这些：&lt;/p>
+&lt;h3 id="joplin内部">Joplin内部&lt;/h3>
+&lt;p>当然Joplin不是为了双链笔记而设计的，但是通过插件&lt;a href="https://github.com/ylc395/joplin-plugin-note-link-system">plugin-note-link-system&lt;/a>也可以获得一部分双链笔记的功能，比如说，方便地在一篇笔记里引用另外一篇笔记的某个小标题；或者是在另一篇笔记里看到backlinks。&lt;/p>
+&lt;h3 id="笔记引用zotero参考文献">笔记引用Zotero参考文献&lt;/h3>
+&lt;p>通过&lt;a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero&lt;/a>的&lt;code>Quick Copy&lt;/code>功能，按下&lt;code>Ctrl+Shift+C&lt;/code>，就可以把当前文献复制成类似&lt;code>[xxx](zotero://select/library/items/xxxxxx)&lt;/code>的链接。这种方式对别的笔记软件也适用，只要它能够打开&lt;code>URL Scheme&lt;/code>。&lt;/p>
+&lt;h3 id="引用计算机上的其他内容">引用计算机上的其他内容&lt;/h3>
+&lt;p>肯定没有人想把所有文件都塞进笔记本的数据库里，总是要引用一些外部文件的，这时候还是需要用万能的链接。这里的链接格式类似&lt;code>[xxx](file://C:\工作\xxx.docx)&lt;/code>，在Windows系统下既有斜杠也有反斜杠，但是很神奇地能够正确找到。&lt;/p>
+&lt;p>实际上还有一个问题，通过Syncthing同步后，文件在每台电脑上的链接地址是不一样的。所以，我在每台电脑的C盘做了一个文件夹链接&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。在Powershell下：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">New-Item&lt;/span> -ItemType Junction -Path &lt;span style="color:#c30">&amp;#34;C:\工作&amp;#34;&lt;/span> -Target &lt;span style="color:#c30">&amp;#34;C:\实际的\工作\目录&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者也可以用&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html">Link Shell Extension&lt;/a>来做这件事。之后，在每台电脑上都可以访问&lt;code>C:\工作\xxx.docx&lt;/code>了。&lt;/p>
+&lt;h2 id="随处ctrlv以及传文件">随处Ctrl+V，以及传文件&lt;/h2>
+&lt;blockquote>
+&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>
+&lt;/blockquote>
+&lt;p>隆重推荐&lt;a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/">KDE connect&lt;/a>，虽然是KDE出品，但是Windows和Android也能用。给手机和电脑装上这个，在同一个局域网下面就可以共享剪贴板了，而且还能够互相传文件。&lt;/p>
+&lt;p>不过，有的时候KDE connect找不到局域网设备，这时候我会用Total Commander (Android)的Wifi传输插件，或者是&lt;code>python -m http.server&lt;/code>。&lt;/p>
+&lt;h2 id="远程访问tailscaletinc或wireguard">远程访问：Tailscale、Tinc或Wireguard&lt;/h2>
+&lt;blockquote>
+&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>
+&lt;/blockquote>
+&lt;p>像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前&lt;/a>所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p>
+&lt;p>连接Tinc之后，就可以通过&lt;code>Wake On LAN&lt;/code>唤醒自己的其他电脑，然后用&lt;code>samba&lt;/code>、远程桌面之类的软件了。就好象回到家里&lt;del>居家办公&lt;/del>一样！&lt;/p>
+&lt;p>当然，在这种需求下，最简单的应该是&lt;code>Tailscale&lt;/code>，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+剧透：最后这些我都没用
+&lt;/h4>
+&lt;/summary>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/slackhq/nebula">https://github.com/slackhq/nebula&lt;/a>
+&lt;ul>
+&lt;li>无法通过公共节点转发&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/tonarino/innernet">https://github.com/tonarino/innernet&lt;/a>
+&lt;ul>
+&lt;li>只实现了STUN，没有实现TURN&lt;/li>
+&lt;li>也无法通过公共节点转发&lt;/li>
+&lt;li>无Android支持&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/juanfont/headscale">https://github.com/juanfont/headscale&lt;/a>
+&lt;ul>
+&lt;li>无Android支持&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/gravitl/netmaker/">https://github.com/gravitl/netmaker/&lt;/a>
+&lt;ul>
+&lt;li>构建需要docker和干净的服务器&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/wiretrustee/wiretrustee">https://github.com/wiretrustee/wiretrustee&lt;/a>
+&lt;ul>
+&lt;li>无Android支持，Wireguard客户端无法使用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/dswd/vpncloud">vpncloud&lt;/a>
+&lt;ul>
+&lt;li>只支持Linux&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;p>好了，这次我想说的就是这些。办公室冰冷的行军床正在等着我。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Joplin使用&lt;code>File System&lt;/code>作为同步目标，Zotero使用&lt;a href="http://zotfile.com/">Zotfile&lt;/a>插件。就我自己而言，Joplin用了OneDrive，在手机上同步比起SyncThing更方便一些；Zotero那边，我自建了WebDAV服务，这纯粹是因为那时候我还没找到插件。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>其实是&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html#junctions">Junction&lt;/a>，对于应用来说完全透明，两边的文件是完全一样的。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>

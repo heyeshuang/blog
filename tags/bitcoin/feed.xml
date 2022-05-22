@@ -303,14 +303,14 @@
 &lt;/table>
 &lt;p>这样，通过恰当地选择做多和做空杠杆，可以使做空和做多的回撤接近。比如说，同样是在1000到1250之间运动，做空2.5倍的最大亏损与做多0.9倍类似。如果在两个方向都使用2.5倍杠杆，可能会造成不必要的损失。&lt;/p>
 &lt;p>——当然，以上分析对比特币狂信者来说并没有什么意义。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>无意冒犯，这里的实际价值指的是能够换多少个比萨饼。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>History Data for Bitcoin and Altcoins</title><link>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</link><pubDate>Tue, 23 Jan 2018 17:31:33 +0800</pubDate><guid>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</guid><description>&lt;p>&lt;a href="https://drive.google.com/file/d/1lp3JkwKLCR_RxI61-jdPcH26UXCnHPuC/view?usp=sharing">Link&lt;/a>&lt;/p>
+&lt;/div></description></item><item><title>History Data for Bitcoin and Altcoins</title><link>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</link><pubDate>Tue, 23 Jan 2018 17:31:33 +0800</pubDate><guid>https://blog.heysh.xyz/2018/01/23/history-data-for-altcoins/</guid><description>&lt;p>&lt;a href="https://drive.google.com/file/d/1lp3JkwKLCR_RxI61-jdPcH26UXCnHPuC/view?usp=sharing">Link&lt;/a>&lt;/p>
 &lt;p>In this package, you'll find:&lt;/p>
 &lt;ul>
 &lt;li>History data for Bitcoin price, with highest, lowest and volume, &lt;strong>per hour&lt;/strong>&lt;/li>

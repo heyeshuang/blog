@@ -19,11 +19,11 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;li>&lt;code>scoop&lt;/code>处理文件关联太头疼了，而且&lt;code>winget&lt;/code>已经可以识别系统代理了，还是用&lt;code>winget&lt;/code>吧，另外，&lt;code>Windows Terminal&lt;/code>也不错。&lt;/li>
 &lt;/ul>
 &lt;p>啊，扯远了。大概现在就想到这些，再想起别的什么，或者平板真的爆炸了的话，我会再来更新的。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>小米平板5没有USB3.0；联想小新系列国外版型号挺混乱的，估计不会有lineageOS支持了；华为……沸腾了，有点过热。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

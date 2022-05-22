@@ -26,17 +26,17 @@
 &lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
 &lt;hr>
 &lt;p>来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/">这篇教程&lt;/a>在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/">ARP代理&lt;/a>用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

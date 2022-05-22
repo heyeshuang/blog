@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 04 Mar 2022 16:43:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p>在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 22 May 2022 22:45:39 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>几物互联</title><link>https://blog.heysh.xyz/2022/05/22/connect-every-something/</link><pubDate>Sun, 22 May 2022 22:45:39 +0800</pubDate><guid>https://blog.heysh.xyz/2022/05/22/connect-every-something/</guid><description>&lt;blockquote>
+&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>
+&lt;/blockquote>
+&lt;p>无论是在家里的组装机还是漂泊的笔记本，在工作的时候都能够获得相似的上下文，有的时候甚至可以在家CTRL+C，在公司CTRL+V。除了&lt;em>鸿蒙&lt;/em>系统之外，通过一组软件也是可以实现的。&lt;/p>
+&lt;p>本人现在所使用的方案如下。设置难度由易到难排序。&lt;/p>
+&lt;h2 id="同步存储syncthing">同步存储：Syncthing&lt;/h2>
+&lt;blockquote>
+&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>
+&lt;/blockquote>
+&lt;p>比起云存储，个人更倾向于Syncthing这样的本地同步方案：至少文件是属于自己的（而且还不用收钱）。安装也很简单：Windows下安装&lt;a href="https://github.com/canton7/SyncTrayzor">SyncTrayzor&lt;/a>，Android下安装&lt;a href="https://github.com/Catfriend1/syncthing-android">Syncthing-Fork&lt;/a>，其他系统移步&lt;a href="https://syncthing.net/downloads/">这里&lt;/a>就可以。安装完以后，在两边选择工作目录，就可以完成双向同步了。得益于STUN服务器，无论是在内网还是外网，文件都可以完成传输。&lt;/p>
+&lt;p>当然，Syncthing也有一定的问题。首先是，因为是进行了同步，同一份文件会在每一个设备上都占用一份空间。在手机这样捉襟见肘的环境下，建议采用“仅发送”模式，只用来备份照片之类的。&lt;/p>
+&lt;p>另外，Syncthing在运行的时候必须要两侧的设备保持开机，电费账单+1。在有一方离线的时候，需要注意文件的版本，不要在两边都修改同一个文件。毕竟不是git，合并功能没有那么强。&lt;/p>
+&lt;h2 id="笔记软件与文献管理">笔记软件与文献管理&lt;/h2>
+&lt;blockquote>
+&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>
+&lt;/blockquote>
+&lt;p>本人使用&lt;a href="https://joplinapp.org/">Joplin&lt;/a>和&lt;a href="https://www.zotero.org/">Zotero&lt;/a>来做笔记和进行文献管理，这两款软件都可以使用Syncthing作为同步后端&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而且都具有笔记功能。我的习惯是，在Joplin上写一些需要较长篇幅的笔记，文献阅读笔记放在Zotero中。&lt;/p>
+&lt;p>当然，作为一篇讲“互联”的博文，这两款软件当然也是可以相互连接的。我主要用到下面这些：&lt;/p>
+&lt;h3 id="joplin内部">Joplin内部&lt;/h3>
+&lt;p>当然Joplin不是为了双链笔记而设计的，但是通过插件&lt;a href="https://github.com/ylc395/joplin-plugin-note-link-system">plugin-note-link-system&lt;/a>也可以获得一部分双链笔记的功能，比如说，方便地在一篇笔记里引用另外一篇笔记的某个小标题；或者是在另一篇笔记里看到backlinks。&lt;/p>
+&lt;h3 id="笔记引用zotero参考文献">笔记引用Zotero参考文献&lt;/h3>
+&lt;p>通过&lt;a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero&lt;/a>的&lt;code>Quick Copy&lt;/code>功能，按下&lt;code>Ctrl+Shift+C&lt;/code>，就可以把当前文献复制成类似&lt;code>[xxx](zotero://select/library/items/xxxxxx)&lt;/code>的链接。这种方式对别的笔记软件也适用，只要它能够打开&lt;code>URL Scheme&lt;/code>。&lt;/p>
+&lt;h3 id="引用计算机上的其他内容">引用计算机上的其他内容&lt;/h3>
+&lt;p>肯定没有人想把所有文件都塞进笔记本的数据库里，总是要引用一些外部文件的，这时候还是需要用万能的链接。这里的链接格式类似&lt;code>[xxx](file://C:\工作\xxx.docx)&lt;/code>，在Windows系统下既有斜杠也有反斜杠，但是很神奇地能够正确找到。&lt;/p>
+&lt;p>实际上还有一个问题，通过Syncthing同步后，文件在每台电脑上的链接地址是不一样的。所以，我在每台电脑的C盘做了一个文件夹链接&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。在Powershell下：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">New-Item&lt;/span> -ItemType Junction -Path &lt;span style="color:#c30">&amp;#34;C:\工作&amp;#34;&lt;/span> -Target &lt;span style="color:#c30">&amp;#34;C:\实际的\工作\目录&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者也可以用&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html">Link Shell Extension&lt;/a>来做这件事。之后，在每台电脑上都可以访问&lt;code>C:\工作\xxx.docx&lt;/code>了。&lt;/p>
+&lt;h2 id="随处ctrlv以及传文件">随处Ctrl+V，以及传文件&lt;/h2>
+&lt;blockquote>
+&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>
+&lt;/blockquote>
+&lt;p>隆重推荐&lt;a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/">KDE connect&lt;/a>，虽然是KDE出品，但是Windows和Android也能用。给手机和电脑装上这个，在同一个局域网下面就可以共享剪贴板了，而且还能够互相传文件。&lt;/p>
+&lt;p>不过，有的时候KDE connect找不到局域网设备，这时候我会用Total Commander (Android)的Wifi传输插件，或者是&lt;code>python -m http.server&lt;/code>。&lt;/p>
+&lt;h2 id="远程访问tailscaletinc或wireguard">远程访问：Tailscale、Tinc或Wireguard&lt;/h2>
+&lt;blockquote>
+&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>
+&lt;/blockquote>
+&lt;p>像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前&lt;/a>所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p>
+&lt;p>连接Tinc之后，就可以通过&lt;code>Wake On LAN&lt;/code>唤醒自己的其他电脑，然后用&lt;code>samba&lt;/code>、远程桌面之类的软件了。就好象回到家里&lt;del>居家办公&lt;/del>一样！&lt;/p>
+&lt;p>当然，在这种需求下，最简单的应该是&lt;code>Tailscale&lt;/code>，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p>
+&lt;details>
+&lt;summary>
+&lt;h4 class="inline">
+剧透：最后这些我都没用
+&lt;/h4>
+&lt;/summary>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/slackhq/nebula">https://github.com/slackhq/nebula&lt;/a>
+&lt;ul>
+&lt;li>无法通过公共节点转发&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/tonarino/innernet">https://github.com/tonarino/innernet&lt;/a>
+&lt;ul>
+&lt;li>只实现了STUN，没有实现TURN&lt;/li>
+&lt;li>也无法通过公共节点转发&lt;/li>
+&lt;li>无Android支持&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/juanfont/headscale">https://github.com/juanfont/headscale&lt;/a>
+&lt;ul>
+&lt;li>无Android支持&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/gravitl/netmaker/">https://github.com/gravitl/netmaker/&lt;/a>
+&lt;ul>
+&lt;li>构建需要docker和干净的服务器&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/wiretrustee/wiretrustee">https://github.com/wiretrustee/wiretrustee&lt;/a>
+&lt;ul>
+&lt;li>无Android支持，Wireguard客户端无法使用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/dswd/vpncloud">vpncloud&lt;/a>
+&lt;ul>
+&lt;li>只支持Linux&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;p>好了，这次我想说的就是这些。办公室冰冷的行军床正在等着我。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Joplin使用&lt;code>File System&lt;/code>作为同步目标，Zotero使用&lt;a href="http://zotfile.com/">Zotfile&lt;/a>插件。就我自己而言，Joplin用了OneDrive，在手机上同步比起SyncThing更方便一些；Zotero那边，我自建了WebDAV服务，这纯粹是因为那时候我还没找到插件。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>其实是&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html#junctions">Junction&lt;/a>，对于应用来说完全透明，两边的文件是完全一样的。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p>在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p>
 &lt;p>刚好赶上网课热潮，最近安卓系统的新平板还挺多的，比如小米平板5啊、小新pad啊、华为平板啊什么的，可是都有一些这样那样的问题&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>那就去看看Windows系统的平板吧。（自从我的寨板坏掉以后已经过去好多年了，&lt;del>最近的技术一定进步了很多吧。&lt;/del>）&lt;/p>
 &lt;p>然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none">寨板&lt;/a>，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html">屏闪&lt;/a>的问题。&lt;/p>
@@ -19,14 +114,14 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;li>&lt;code>scoop&lt;/code>处理文件关联太头疼了，而且&lt;code>winget&lt;/code>已经可以识别系统代理了，还是用&lt;code>winget&lt;/code>吧，另外，&lt;code>Windows Terminal&lt;/code>也不错。&lt;/li>
 &lt;/ul>
 &lt;p>啊，扯远了。大概现在就想到这些，再想起别的什么，或者平板真的爆炸了的话，我会再来更新的。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>小米平板5没有USB3.0；联想小新系列国外版型号挺混乱的，估计不会有lineageOS支持了；华为……沸腾了，有点过热。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>获取招商信用卡账单的另一种方法</title><link>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</link><pubDate>Fri, 21 Jan 2022 19:43:45 +0800</pubDate><guid>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</guid><description>&lt;figure>
+&lt;/div></description></item><item><title>获取招商信用卡账单的另一种方法</title><link>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</link><pubDate>Fri, 21 Jan 2022 19:43:45 +0800</pubDate><guid>https://blog.heysh.xyz/2022/01/21/new-method-to-get-cmb-bill/</guid><description>&lt;figure>
 &lt;audio controls preload="metadata">
 &lt;source src="th08_06.mp3" type="audio/mpeg">
 &lt;/audio>
@@ -96,14 +191,14 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/details>
 &lt;p>接下来，可以使用你喜欢的方法对账单进行处理了。对于beancount，我写的importer放在&lt;a href="https://github.com/heyeshuang/beancount-homemade-importers">这里&lt;/a>。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>Firefox似乎对所谓的“安全”键盘存在一些兼容性问题。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>我在GitHub的⭐</title><link>https://blog.heysh.xyz/2021/12/24/github-stars/</link><pubDate>Fri, 24 Dec 2021 19:29:52 +0800</pubDate><guid>https://blog.heysh.xyz/2021/12/24/github-stars/</guid><description>&lt;p>我想要去整理GitHub的star列表已经很久了。之前在&lt;del>同性交友&lt;/del>上网冲浪时，经常会看到各式各样的库。怀着一种“这个之后可能会用到”的心情，把它们一一加入列表，然后抛诸脑后。下次重新发现的时候，&lt;code>starred&lt;/code>状态仿佛是在嘲笑我一样。最近，正好有一个大项目的deadline横亘眼前，是做这种&lt;strong>看似&lt;/strong>有意义的事情的最好时间。&lt;/p>
+&lt;/div></description></item><item><title>我在GitHub的⭐</title><link>https://blog.heysh.xyz/2021/12/24/github-stars/</link><pubDate>Fri, 24 Dec 2021 19:29:52 +0800</pubDate><guid>https://blog.heysh.xyz/2021/12/24/github-stars/</guid><description>&lt;p>我想要去整理GitHub的star列表已经很久了。之前在&lt;del>同性交友&lt;/del>上网冲浪时，经常会看到各式各样的库。怀着一种“这个之后可能会用到”的心情，把它们一一加入列表，然后抛诸脑后。下次重新发现的时候，&lt;code>starred&lt;/code>状态仿佛是在嘲笑我一样。最近，正好有一个大项目的deadline横亘眼前，是做这种&lt;strong>看似&lt;/strong>有意义的事情的最好时间。&lt;/p>
 &lt;p>在看完283/473个项目后&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，我意识到自己所说的整理，不过是把链接列表应用&lt;em>猴子排序法&lt;/em>而已，复杂度似乎并没有减少，花哨的图表、漂亮的分析更是一概欠奉。可能我应该回去干活儿了。&lt;/p>
 &lt;p>突然想起来，之前我好像说自己“很难有无聊的时候”，年轻真好啊。&lt;/p>
 &lt;p>高能预警：下面是一个超级长的列表，而且基本没有什么规律。粗体部分的是我之前用过的、感觉还不错的repo。&lt;/p>
@@ -344,15 +439,15 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;/ul>
 &lt;hr>
 &lt;p>意犹未尽？最新的180个⭐将在近期列出！敬请期待第二部！&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>给自己的note：我这次看到&lt;a href="https://github.com/nondanee/UnblockNeteaseMusic">这个&lt;/a>位置了&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
-&lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
+&lt;/div></description></item><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
+&lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref2:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
 &lt;h2 id="物理光学演示lightpipes">物理光学演示：LightPipes&lt;/h2>
 &lt;figure>&lt;img src="lightpipes.png" width="50%"/>
 &lt;/figure>
@@ -428,33 +523,33 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>&lt;img src="pynlo.png" alt="pyNLO">&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>：与非线性光学有关，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/li>
-&lt;li>&lt;a href="https://github.com/Jomiri/pyfiberamp">Jomiri/pyfiberamp&lt;/a>：有关光纤激光器的计算。&lt;/li>
+&lt;li>&lt;a href="https://github.com/Jomiri/pyfiberamp">Jomiri/pyfiberamp&lt;/a>：有关掺Er光纤激光器的计算。没有什么用处。&lt;/li>
 &lt;li>&lt;a href="https://github.com/AOtools/soapy">AOtools/soapy&lt;/a>：用于自适应光学过程的模拟，另有一组&lt;a href="https://github.com/AOtools/aotools">用于分析&lt;/a>的库。&lt;/li>
 &lt;li>&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。&lt;/li>
 &lt;li>&lt;a href="https://www.aps.anl.gov/Science/Scientific-Software/OASYS">OASYS&lt;/a>：如果X射线也是光的话，那么&lt;a href="https://github.com/oasys-kit/wofry">WOFRY&lt;/a>也是光学计算。&lt;/li>
 &lt;li>&lt;a href="https://github.com/scottprahl/laserbeamsize">laserbeamsize&lt;/a>：一个完善的激光光斑直径和$M^2$计算库。&lt;/li>
 &lt;/ul>
 &lt;p>总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
-&lt;p>据我了解并不存在前两种职业。而运维在哪里都存在。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;li id="fn:1">
+&lt;p>据我了解并不存在前两种职业。而运维在哪里都存在。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>感觉这些既会光学又会Python的人，在起名字方面都没有什么创意。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>A J Eldorado Riggs, Garreth Ruane, Erkin Sidick, Carl Coker, Brian D. Kern, Stuart B. Shaklan, &amp;quot;Fast linearized coronagraph optimizer (FALCO) I: a software toolbox for rapid coronagraphic design and wavefront correction,&amp;quot; Proc. SPIE 10698, Space Telescopes and Instrumentation 2018: Optical, Infrared, and Millimeter Wave, 106982V (9 August 2018); &lt;a href="https://doi.org/10.1117/12.2313812">https://doi.org/10.1117/12.2313812&lt;/a>，&lt;a href="https://core.ac.uk/download/pdf/211386255.pdf">PDF文件&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:4" role="doc-endnote">
+&lt;li id="fn:4">
 &lt;p>如果尝试优化的话，可以看看&lt;a href="https://www.sciencedirect.com/science/article/abs/pii/S0030402618315821">doi:10.1016/j.ijleo.2018.10.073&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:5" role="doc-endnote">
+&lt;li id="fn:5">
 &lt;p>Ruane, G., “Review of high-contrast imaging systems for current and future ground- and space-based telescopes I: coronagraph design methods and optical performance metrics”, in &lt;i>Space Telescopes and Instrumentation 2018: Optical, Infrared, and Millimeter Wave&lt;/i>, 2018, vol. 10698. doi:10.1117/12.2312948.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
 &lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="准备">准备&lt;/h2>
@@ -482,20 +577,20 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
 &lt;hr>
 &lt;p>来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/">这篇教程&lt;/a>在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/">ARP代理&lt;/a>用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>2020</title><link>https://blog.heysh.xyz/2021/02/21/2020/</link><pubDate>Sun, 21 Feb 2021 13:57:08 +0000</pubDate><guid>https://blog.heysh.xyz/2021/02/21/2020/</guid><description>&lt;p>&lt;del>生活并不是在铁轨上奔腾的火车。相反地，有点像是在铁轨上躺着的人。火车没准下一秒就会碾过去，没准明年。&lt;/del>&lt;/p>
+&lt;/div></description></item><item><title>2020</title><link>https://blog.heysh.xyz/2021/02/21/2020/</link><pubDate>Sun, 21 Feb 2021 13:57:08 +0000</pubDate><guid>https://blog.heysh.xyz/2021/02/21/2020/</guid><description>&lt;p>&lt;del>生活并不是在铁轨上奔腾的火车。相反地，有点像是在铁轨上躺着的人。火车没准下一秒就会碾过去，没准明年。&lt;/del>&lt;/p>
 &lt;p>没有没有，我并没有在2020年被火车碾，也没有被撞啊被剐蹭啊被碰瓷啊什么的。2020年，交通安全。HeYSH的总结就到这里。&lt;/p>
 &lt;hr>
 &lt;p>不，2020年并不仅仅是这样。在这一年里，这个身份——上网冲浪的这一部分人格——出现的频率变得很少了，这大概是一件好事情。前几天看到有人说，在互联网上消失的朋友是在过着更好的人生；平心而论，对于我，这句话并没有什么问题。最近这个新年是我过得最幸福的一个，我不必再去&lt;a href="https://blog.heysh.xyz/2019/01/27/summary-2018/">反省自己的性格&lt;/a>了；2020年本身也并不是一个难过的年份，虽然今年有不少悲剧，可（谢天谢地）并没发生在我身边。我对2020年的唯一的印象，只是在疯狂加班而已。&lt;/p>
@@ -533,14 +628,14 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>免责声明：上面的只是白日梦而已，完全没有测试过。请遵守本地法律法规和公司规章制度，不管你干了什么都跟我没有任何关系。&lt;/p>
 &lt;p>另外，这次的博文让我想起一个笑话，就是我请电脑高手重装系统，但是他只有一张光盘和一根针……哈哈哈，完全笑不出来。&lt;/p>
 &lt;/blockquote>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>怎么说呢，希望你不会——这种事情还是挺少见的，大概。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>我将贻笑于大方之家</title><link>https://blog.heysh.xyz/2020/06/10/to-be-a-laughing-stock/</link><pubDate>Wed, 10 Jun 2020 13:32:25 +0000</pubDate><guid>https://blog.heysh.xyz/2020/06/10/to-be-a-laughing-stock/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>我将贻笑于大方之家</title><link>https://blog.heysh.xyz/2020/06/10/to-be-a-laughing-stock/</link><pubDate>Wed, 10 Jun 2020 13:32:25 +0000</pubDate><guid>https://blog.heysh.xyz/2020/06/10/to-be-a-laughing-stock/</guid><description>&lt;blockquote>
 &lt;p>不对，其实应该是“吾长见笑于大方之家”。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -557,17 +652,17 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>一旦我成为人类，我只会跟你讲一些不太重要或者根本不重要的事，我会尽量避免谈论信仰和政治，因为如果我们意见不统一，你就不会再喜欢我了。&lt;/p>
 &lt;/blockquote>
 &lt;p>顺带一提，这种现象在传播学中可能叫做“沉默的螺旋”。我在准备一些严肃（……）的素材时，发现很多想法已经在传播学中出现过了。比如这个词，是我在《大众传播理论：范式与流派》的目录上发现的。对于一个新闻系的本科生来说，这个理论就是所谓&lt;em>简单的&lt;/em>常识；而我刚刚看到这本大部头的第二章，素材们还要继续在笔记本里吃灰。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>还有一个副作用是，更喜欢使用一些诘屈聱牙的成语。比如刚才的伤春悲秋，我查了好久，发现了“咏月嘲花”这个词，但并没有把它放进去——而且敲字的思路也被打断了。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>同样带来的还有“滥用抽象动词”之类的。当然，这是 &lt;em>微不足道的&lt;/em> 文风方面的&lt;a href="https://zh.wikipedia.org/wiki/%E6%AD%90%E5%8C%96%E4%B8%AD%E6%96%87">问题&lt;/a>。而且，是的，我又走神了。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
+&lt;/div></description></item><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
 &lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
 &lt;p>大概是3月末，我在例行的&lt;code>检查博客有没有自己偷偷更新&lt;/code>的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del>打牌&lt;/del>&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/">狩猎&lt;/a>之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p>
 &lt;p>中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p>
@@ -613,14 +708,14 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>来自2020-6-14的更新：&lt;/p>
 &lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>说笑的，待会我就会把字体裁好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>2019过去了，我……</title><link>https://blog.heysh.xyz/2020/01/27/bye-2019/</link><pubDate>Mon, 27 Jan 2020 19:40:10 +0800</pubDate><guid>https://blog.heysh.xyz/2020/01/27/bye-2019/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>2019过去了，我……</title><link>https://blog.heysh.xyz/2020/01/27/bye-2019/</link><pubDate>Mon, 27 Jan 2020 19:40:10 +0800</pubDate><guid>https://blog.heysh.xyz/2020/01/27/bye-2019/</guid><description>&lt;blockquote>
 &lt;p>第三旋臂边缘 &lt;br>
 一颗蓝色行星上 &lt;br>
 碳基生物正在庆祝 &lt;br>
@@ -643,17 +738,17 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;blockquote>
 &lt;p>在这个碳基生物敲键盘的时候，行星的公转并没有甚至一秒的延迟。它并不在意身上长出了什么，只是被引力牢牢牵住的同时努力向前运动，和它身上的生命一起。&lt;/p>
 &lt;/blockquote>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>也许我是一株&lt;a href="https://amuseum.cdstm.cn/AMuseum/mangrove/hszwsyx1.html">红树植物&lt;/a> ？&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>人类总是会盯着坏消息看，这给我带来了一些偏见。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Beancount试用,半年后</title><link>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</link><pubDate>Thu, 07 Nov 2019 21:58:22 +0800</pubDate><guid>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</guid><description>&lt;p>自从2017年开始，我一直使用 &lt;em>网易有钱&lt;/em> 记账。不得不说，如果像某落水狗讲的那样，“中国人不在乎隐私”的话，这确实是一个非常好用的APP，下载账单、导入数据一气呵成，连余额宝的利息都能够算得分毫不差——&lt;/p>
+&lt;/div></description></item><item><title>Beancount试用,半年后</title><link>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</link><pubDate>Thu, 07 Nov 2019 21:58:22 +0800</pubDate><guid>https://blog.heysh.xyz/2019/11/07/netease-youqian-with-beancount/</guid><description>&lt;p>自从2017年开始，我一直使用 &lt;em>网易有钱&lt;/em> 记账。不得不说，如果像某落水狗讲的那样，“中国人不在乎隐私”的话，这确实是一个非常好用的APP，下载账单、导入数据一气呵成，连余额宝的利息都能够算得分毫不差——&lt;/p>
 &lt;p>直到最近，大概是骂挨得太多，或是界面里终于塞不下更多广告，这个APP①用“维护中”挡住了所有同步按钮，并且②停止了维护。&lt;/p>
 &lt;p>用8元买回了本属于自己的数据后，我想起之前听说过的&lt;a href="https://www.byvoid.com/zht/blog/beancount-bookkeeping-1">Beancount&lt;/a>。于是，我给那些数据找到了一些新用途。&lt;/p>
 &lt;h2 id="冷启动">冷启动&lt;/h2>
@@ -736,17 +831,17 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>呃，对不起。&lt;/p>
 &lt;/blockquote>
 &lt;p>以上不代表博主观点。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>一个普通的、抠抠索索的中青年男性，未婚，不修边幅，被阳光照到会燃烧。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>细心的读者可能会注意到，我并没有将支付宝也列入进来，即使和微信的地位相似。这是由于支付宝的账单并不能显示付款账户。通过余额宝和通过信用卡支付，在对账单上没有明确的区分，这会给之后的条目合并造成困难。在开始用beancount之后，因为手动记录太麻烦，我很少用支付宝付款。(update 220426：最近听说支付宝手机版能够看到付款账户，之后可以试试)&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>&lt;blockquote>
 &lt;p>值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然地连不上了。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>正好上次薅的羊毛也快要过期了，又到了交保护费的时间。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -773,33 +868,33 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>之后在noVNC界面上按刚才的快捷键就行。&lt;/p>
 &lt;hr>
 &lt;p>来自19-10-4的更新：俄罗斯IP被某个熊猫网站（e-h）屏蔽了……我就随口一说。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>其实我还有点期待&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>标签能出个什么特殊格式呢……&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Unicode与数学公式</title><link>https://blog.heysh.xyz/2019/09/05/unicodemath/</link><pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/05/unicodemath/</guid><description>&lt;p>如果你混迹某小蓝鸟APP，或者像我一样常常用辣鸡微信干活，那么在你需要一点数学的时候，可能会觉得有些尴尬。如果直接写一些裸的LaTeX显得有些不近人情，可是像百度知道大神一样直接把公式“展平”，又显得有一点点……低龄。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;/div></description></item><item><title>Unicode与数学公式</title><link>https://blog.heysh.xyz/2019/09/05/unicodemath/</link><pubDate>Thu, 05 Sep 2019 20:24:27 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/05/unicodemath/</guid><description>&lt;p>如果你混迹某小蓝鸟APP，或者像我一样常常用辣鸡微信干活，那么在你需要一点数学的时候，可能会觉得有些尴尬。如果直接写一些裸的LaTeX显得有些不近人情，可是像百度知道大神一样直接把公式“展平”，又显得有一点点……低龄。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;p>借助现代Unicode的力量，可以输入一些比较简单的数学，大概能到这种程度：√X̅ₘ̅²̅+̅Y̅ᵦ̅²̅≥0&lt;/p>
 &lt;p>这玩意粘贴到微信和小蓝鸟上效果居然还不错。（假装这里有个图）&lt;/p>
 &lt;p>（呃，上面输入的是 $\sqrt{X_m^2+Y_\beta^2}\geq0$。）&lt;/p>
 &lt;p>这里用到了&lt;a href="https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode">Unicode数学符号&lt;/a>、&lt;a href="https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts">上下标&lt;/a>和&lt;a href="https://zh.wikipedia.org/wiki/%E7%B5%84%E5%90%88%E9%99%84%E5%8A%A0%E7%AC%A6%E8%99%9F">组合附加符号&lt;/a>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>另外，在&lt;a href="https://en.wikipedia.org/wiki/CJK_Compatibility">中日韩兼容字符集&lt;/a>里还有类似&lt;code>㎛&lt;/code>这样的符号，个人觉得……有点玩过头了。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>其实在这种情况下，&lt;a href="https://en.wikipedia.org/wiki/AsciiMath">AsciiMath&lt;/a>可能是一个好选择，毕竟这玩意比LaTeX长得好认多了。还有一种格式叫做&lt;a href="https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.1.pdf">UnicodeMath&lt;/a>，长得其实也不赖。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>用来输入上划线，具体是U+0305，可是效果好像不大好。另外，&lt;a href="https://fsymbols.com/generators/overline/">这个网站&lt;/a>可以直接添加上划线。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
 &lt;p>来自2021-07-24的更新：&lt;/p>
 &lt;/blockquote>
 &lt;p>本文的2021年版本在&lt;a href="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/">这里&lt;/a>。&lt;/p>
@@ -851,14 +946,14 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;img src="rayopt2.png" alt="rayopt">&lt;/p>
 &lt;p>和&lt;a href="#sterncatopticspyhttpsgithubcomsterncatopticspy">opticspy&lt;/a>一样，RayOpt也是一组用于代替Zemax的程序，&lt;strong>看起来&lt;/strong>更不像一个玩具。当然，如果要对这样的库作出一个中肯的评价，我觉得至少还要学习十年左右。所以我只是把它列在这里，并且祝&lt;em>路过的旅行者&lt;/em>好运。&lt;/p>
 &lt;p>另外，我下次更新这篇文章的时候，差不多要给它们分分类了。毕竟光学计算是一个很宽泛的话题。&lt;del>我先立一个flag在这里。&lt;/del>&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>比如&lt;a href="http://www.gwoptics.org/finesse/reference/">语法说明&lt;/a>里提到了squeezed vacuum input source。不要问我&lt;a href="https://en.wikipedia.org/wiki/Squeezed_coherent_state">那是什么&lt;/a>。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>一本厕纸小说</title><link>https://blog.heysh.xyz/2019/06/02/a-script/</link><pubDate>Sun, 02 Jun 2019 19:18:27 +0800</pubDate><guid>https://blog.heysh.xyz/2019/06/02/a-script/</guid><description>&lt;p>甲：我有个创意。&lt;/p>
+&lt;/div></description></item><item><title>一本厕纸小说</title><link>https://blog.heysh.xyz/2019/06/02/a-script/</link><pubDate>Sun, 02 Jun 2019 19:18:27 +0800</pubDate><guid>https://blog.heysh.xyz/2019/06/02/a-script/</guid><description>&lt;p>甲：我有个创意。&lt;/p>
 &lt;p>甲：一个日本宅男让车给撞了，穿越到了异世界——&lt;/p>
 &lt;p>甲：别着急，我知道你想说什么，但是这种小说好卖啊！而且还好抄，随随便便就能写好几本，&lt;/p>
 &lt;p>甲：而且我的世界观挺特别的，是中世纪魔法世界，但是主角用的不一样，他嚷几个字就能伤人，而且还是说日语，&lt;/p>
@@ -888,20 +983,20 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;/ul>
 &lt;p>就可以在宿主机上用网络硬盘访问Ext4分区了。&lt;/p>
 &lt;p>而且能够收获一次反思：我为什么要浪费宝贵的时间干这个？&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>&lt;a href="https://www.virtualbox.org/manual/ch09.html#rawdisk">https://www.virtualbox.org/manual/ch09.html#rawdisk&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>&lt;a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html">https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>&lt;a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server">https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>我的2018</title><link>https://blog.heysh.xyz/2019/01/27/summary-2018/</link><pubDate>Sun, 27 Jan 2019 00:22:48 +0800</pubDate><guid>https://blog.heysh.xyz/2019/01/27/summary-2018/</guid><description>&lt;p>又到了每年跟风写总结的时候，这一年里唯一确定的成就是，在“年龄”一栏里加了1。&lt;/p>
+&lt;/div></description></item><item><title>我的2018</title><link>https://blog.heysh.xyz/2019/01/27/summary-2018/</link><pubDate>Sun, 27 Jan 2019 00:22:48 +0800</pubDate><guid>https://blog.heysh.xyz/2019/01/27/summary-2018/</guid><description>&lt;p>又到了每年跟风写总结的时候，这一年里唯一确定的成就是，在“年龄”一栏里加了1。&lt;/p>
 &lt;h3 id="关于工作">关于工作&lt;/h3>
 &lt;p>到今天为止，我已经在现在的岗位上待了五百多天了。之前可能也提到过，我去的是某家&lt;del>不能说的&lt;/del>国企，工作内容“专业对口”（啧），并且和互联网行业毫无关系。我时常想象自己正在沼泽中慢慢下沉，虽然没过脚踝的泥浆并不冰冷。&lt;/p>
 &lt;p>“谁又不是呢？”而且我会这样安慰自己。&lt;/p>
@@ -926,14 +1021,14 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>可是仍然希望2019年会更好。&lt;/p>
 &lt;p>……至少先把CS109看完。&lt;/p>
 &lt;p>……要是能知道哪个泥坑适合打滚就更好了。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>这个梗出自《刃牙道》65话。虽然很血腥！但是很有趣！这就是刃牙！&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>笔记软件踩雷</title><link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link><pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid><description>&lt;p>大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。&lt;/p>
+&lt;/div></description></item><item><title>笔记软件踩雷</title><link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link><pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid><description>&lt;p>大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。&lt;/p>
 &lt;p>如果对自己的要求有清楚的认识，当查找 &lt;em>poor man's somewares&lt;/em> 时，&lt;a href="https://alternativeto.net/software/evernote/">AlternativeTo&lt;/a>和&lt;a href="https://www.slant.co/topics/2463/~best-evernote-alternatives">Slant&lt;/a>这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：&lt;/p>
 &lt;ul>
 &lt;li>（扩展的）Markdown格式，支持代码块和公式&lt;/li>
@@ -972,17 +1067,17 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;hr>
 &lt;p>来自2019-9-18更晚些时候的更新：&lt;/p>
 &lt;p>我又翻了一下那个项目的README，发现那个项目不再开源了。好吧，当我今天没有更新。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>在VNote的某个Issue里提到过&lt;a href="https://github.com/gsantner/markor">Markor&lt;/a>，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>除了导出文件时的一个&lt;a href="https://github.com/laurent22/joplin/issues/853">issue&lt;/a>。It looks like Chinese to me. &lt;em>18-11-20更新：&lt;/em> 开发者回复我了！开心～&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>关于BitMEX的杠杆</title><link>https://blog.heysh.xyz/2018/08/16/about-leverage/</link><pubDate>Thu, 16 Aug 2018 20:35:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/08/16/about-leverage/</guid><description>&lt;p>在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在账户上然后去睡觉，神经衰弱的一系列症状大约会加重。&lt;/p>
+&lt;/div></description></item><item><title>关于BitMEX的杠杆</title><link>https://blog.heysh.xyz/2018/08/16/about-leverage/</link><pubDate>Thu, 16 Aug 2018 20:35:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/08/16/about-leverage/</guid><description>&lt;p>在比特币降到6000$以下的时候，加密货币最忠实的信徒是怎样的心情？作为一个骑墙派，我不敢妄加揣测。不过，有一点是可以肯定的：把加密货币留在账户上然后去睡觉，神经衰弱的一系列症状大约会加重。&lt;/p>
 &lt;p>所以&lt;a href="https://www.bitmex.com/register/O3rmQq">BitMEX&lt;/a>（这里是个返利链接）用XBT计算盈亏就显得很有趣了：当比特币上涨的时候，大家都很开心；可是万一下跌的话，实际盈亏还要乘上汇率的缩水，一不小心就会得到双倍的悲伤。这种时候，理解账户数字的 &lt;em>实际价值&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，可能对控制风险有更为重要的意义。&lt;/p>
 &lt;p>根据&lt;a href="https://www.bitmex.com/app/pnlGuide">官方指南&lt;/a>，盈利的XBT数目可以这样计算：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>win_BTC_long&lt;span style="color:#555">=&lt;/span>(&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_before&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">1&lt;/span>&lt;span style="color:#555">/&lt;/span>price_after)&lt;span style="color:#555">*&lt;/span>count &lt;span style="color:#09f;font-style:italic">#做多&lt;/span>
@@ -1287,14 +1382,14 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;/table>
 &lt;p>这样，通过恰当地选择做多和做空杠杆，可以使做空和做多的回撤接近。比如说，同样是在1000到1250之间运动，做空2.5倍的最大亏损与做多0.9倍类似。如果在两个方向都使用2.5倍杠杆，可能会造成不必要的损失。&lt;/p>
 &lt;p>——当然，以上分析对比特币狂信者来说并没有什么意义。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>无意冒犯，这里的实际价值指的是能够换多少个比萨饼。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>
+&lt;/div></description></item><item><title>用Cloudflare的v4 API实现动态DNS（DDNS）</title><link>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</link><pubDate>Thu, 05 Jul 2018 21:41:42 +0800</pubDate><guid>https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/</guid><description>&lt;p>如果你有一个经常变化的公网IP，你可能会需要用DDNS将这个IP绑定在同一个域名上，这样就可以不必每次输入一串IP地址了。我用的DNS服务商Cloudflare并没有提供名为DDNS的服务，但是其API可以实现类似的效果。&lt;/p>
 &lt;p>之前我用的是&lt;a href="https://lifely.today/2015/05/%E7%82%BA-cloudflare-%E8%A8%AD%E5%AE%9A%E5%8B%95%E6%85%8B-dns-ddns/">这里&lt;/a>的方法，不过最近cloudflare更新了&lt;a href="https://api.cloudflare.com/">第四代API&lt;/a>，那个方法已经失效。于是水博文的机会来了。&lt;/p>
 &lt;p>原料：&lt;/p>
 &lt;ol>
@@ -1471,20 +1566,20 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;hr>
 &lt;p>来自19-6-9：&lt;/p>
 &lt;p>前几天突然想起一个例子。我们宇宙的最终命运——是重新回到一个闪耀的奇点，还是变成冰冷稀薄的碎片，和&lt;a href="https://zh.wikipedia.org/zh/%E5%AE%87%E5%AE%99%E5%AD%B8%E5%B8%B8%E6%95%B8">一个常数&lt;/a>相关。现在的观测结果显示，这个常数很接近两种可能的分界线，但我们并不能确定自己是对的：&lt;a href="https://www.solidot.org/story?sid=60885">对暗物质质量的计算已经很困难&lt;/a>，更不要提什么暗能量了。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>一部分可能由于&lt;a href="https://zh.wikipedia.org/zh-tw/%E8%87%AA%E8%AF%81%E9%A2%84%E8%A8%80">自证预言&lt;/a>，另一部分可能就是流行的KOL什么的了。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>不仅仅是条件反射，而且有非常类似人类的&lt;a href="http://www.psychspace.com/psy/school/001/%27SUPERSTITION%27%20IN%20THE%20PIGEON.htm">“迷信行为”&lt;/a>（'SUPERSTITION' IN THE PIGEON, B. F. Skinner）。我最近才在素材库里发现这个有趣的现象。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>我试图让我不要再刷那些占星师的微博了，但是我瞪了自己一眼，然后说：“不”。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>随机性从哪里来？</title><link>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</link><pubDate>Mon, 26 Mar 2018 21:03:21 +0800</pubDate><guid>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>随机性从哪里来？</title><link>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</link><pubDate>Mon, 26 Mar 2018 21:03:21 +0800</pubDate><guid>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</guid><description>&lt;blockquote>
 &lt;p>当然，没准可以预测“真空中的球形未来”。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="量子力学">量子力学……&lt;/h2>
@@ -1499,20 +1594,20 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;h3 id="甚至">甚至……&lt;/h3>
 &lt;p>即使我们真的掏空宇宙做出一台超级计算机，当它真正开始计算的时候，首先需要计算自己的状态，那么，首先需要计算&lt;code>计算自己状态时自己的状态&lt;/code>……&lt;/p>
 &lt;p>正如&lt;code>证明所有数学定律&lt;/code>，&lt;code>找到不属于自身的集合的集合&lt;/code>，&lt;code>或者判断是不是会停机&lt;/code>一样，当我们观察系统的时候，需要把自己从系统中排除。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>刘慈欣，《镜子》。原谅我总喜欢拿科幻小说作例子，这纯粹是因为它们“可能性”的种类比较多。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>以上那一行叙述似乎暗示着隐变量理论，作为爱因斯坦&lt;a href="https://mp.weixin.qq.com/s?__biz=MjM5NDA1Njg2MA==&amp;amp;mid=2651981696&amp;amp;idx=1&amp;amp;sn=f4da01857707385ad4c44c8dc9e7c942&amp;amp;scene=2&amp;amp;srcid=0428O8l58rK5JeqU4x9KHYbs&amp;amp;from=timeline&amp;amp;isappinstalled=0#%23">从上帝手中夺过骰子&lt;/a>的方案。然而，加上删除线的原因是，&lt;a href="https://zhuanlan.zhihu.com/p/20202069">对贝尔不等式的实验&lt;/a>宣告了这种理论的终结。个人而言，我还是比较喜欢这种随机性比较高的世界。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>见&lt;a href="https://doi.org/10.1103/PhysRevLett.88.237901">https://doi.org/10.1103/PhysRevLett.88.237901&lt;/a>。老实说，这个量与普朗克长度有关，我们还是躲不开量子力学 ;-)&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>这次是纽约公共图书馆……而且居然还有第三部分？</title><link>https://blog.heysh.xyz/2018/02/24/nypl3/</link><pubDate>Sat, 24 Feb 2018 00:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/24/nypl3/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>这次是纽约公共图书馆……而且居然还有第三部分？</title><link>https://blog.heysh.xyz/2018/02/24/nypl3/</link><pubDate>Sat, 24 Feb 2018 00:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/24/nypl3/</guid><description>&lt;blockquote>
 &lt;p>在图书馆的第三天，到了废纸回收环节&lt;/p>
 &lt;/blockquote>
 &lt;p>之前下到了一叠厚厚的&lt;a href="https://digitalcollections.nypl.org/collections/trait-des-arbres-et-arbustes-que-lon-cultive-en-france-en-pleine-terre#/?tab=about">图集&lt;/a>，可是要真正用起来，还需要一点点简单的处理，比如说，沿着边线把图案剪下来：
@@ -1716,14 +1811,14 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;hr>
 &lt;p>2018年4年3日的编辑：&lt;/p>
 &lt;p>&lt;a href="https://mp.weixin.qq.com/s/ccNUtbywz9JgDI9pj6FJlw">这里&lt;/a>有另一个Zipf's Law的例子，可以看出，其仍然满足马太效应的性质。&lt;del>另外，别人的故事编的还是好啊。&lt;/del>&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>这似乎和&lt;a href="https://act.eff.org/action/protect-the-open-internet-order">Net neutrality&lt;/a>并不是一回事。并没有什么邪恶组织，邪恶的只有系统而已。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;blockquote>
 &lt;p>本文基本上是 &lt;em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/em> 的知识点大纲。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -1753,7 +1848,7 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;/ul>
 &lt;h2 id="初始化输入数据和参数">初始化输入数据和参数&lt;/h2>
 &lt;ul>
-&lt;li>输入数据标准化（Normalization&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）：使每个维度在(-1,1)之间&lt;/li>
+&lt;li>输入数据标准化（Normalization&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）：使每个维度在(-1,1)之间&lt;/li>
 &lt;li>权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
 &lt;ul>
 &lt;li>即Xavier初始化的变种，He初始化&lt;/li>
@@ -1804,14 +1899,14 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;li>由于参数很多，对所有参数都为峰值基本上不可能&lt;/li>
 &lt;li>相比而言，鞍点更加普遍&lt;/li>
 &lt;/ul>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
-&lt;p>意义似乎略有不同&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;li id="fn:1">
+&lt;p>意义似乎略有不同&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮">用chroma进行语法高亮&lt;/h2>
+&lt;/div></description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮">用chroma进行语法高亮&lt;/h2>
 &lt;p>&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30">最近&lt;/a>hugo内置了&lt;a href="https://github.com/alecthomas/chroma">chroma&lt;/a>，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code>highlight.js&lt;/code>等脚本文件，理论上可以提高网页加载的速度。&lt;/p>
 &lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>在&lt;code>config.toml&lt;/code>中加入以下内容：&lt;/p>
@@ -1909,14 +2004,14 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>And that's all! Enjoy!&lt;/p>
 &lt;h3 id="or-if-you-are-a-guru-developer">Or if you are a guru developer...&lt;/h3>
 &lt;p>Feel free (as in freedom) to star, fork and contribute to &lt;a href="https://github.com/heyeshuang/aeolipile/">https://github.com/heyeshuang/aeolipile/&lt;/a>! Basic config is at &lt;code>/src/config.js&lt;/code>, and the CSS file &lt;code>/src/typo/typo-fangsong.css&lt;/code> is for the typography. Transform aeolipile to your favourite! And don't forget to pull your code to me!&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>Not responsible for damage, theft, etc. It bites!&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Aeolipile update: new theme, link generator and more!</title><link>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</link><pubDate>Mon, 06 Nov 2017 19:17:38 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</guid><description>&lt;p>A few days ago I introduced &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem">Aeolipile&lt;/a>, a steem post reader designed for coders, providing some advanced features. And now, it becomes more powerful!&lt;/p>
+&lt;/div></description></item><item><title>Aeolipile update: new theme, link generator and more!</title><link>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</link><pubDate>Mon, 06 Nov 2017 19:17:38 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</guid><description>&lt;p>A few days ago I introduced &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem">Aeolipile&lt;/a>, a steem post reader designed for coders, providing some advanced features. And now, it becomes more powerful!&lt;/p>
 &lt;p>As usual, you could see this post &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-update-new-theme-link-generator-and-more">here&lt;/a>.&lt;/p>
 &lt;h2 id="link-generator">Link Generator&lt;/h2>
 &lt;p>You may wonder how did I get the post link before submit the post. The answer is: &lt;a href="https://heyeshuang.github.io/aeolipile/#/linkgen">&lt;em>link generator&lt;/em>&lt;/a>. Just input your username and post title, and you'll have the Aeolipile Link(tm)!&lt;/p>
@@ -1969,17 +2064,17 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>I could be bounded in a nutshell and count myself a king of infinite space.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
 &lt;/blockquote>
 &lt;p>当然，没准一个Aeolipile也行。&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>&lt;a href="https://www.zhihu.com/question/19575136/answer/14470032">https://www.zhihu.com/question/19575136/answer/14470032&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>Hamlet: Act 2, Scene 2, Page 11&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>离</title><link>https://blog.heysh.xyz/2017/11/04/fragment/</link><pubDate>Sat, 04 Nov 2017 11:48:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/fragment/</guid><description>&lt;p>我坐在家里自己的房间，母亲在外面忙碌。&lt;/p>
+&lt;/div></description></item><item><title>离</title><link>https://blog.heysh.xyz/2017/11/04/fragment/</link><pubDate>Sat, 04 Nov 2017 11:48:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/fragment/</guid><description>&lt;p>我坐在家里自己的房间，母亲在外面忙碌。&lt;/p>
 &lt;p>我突然发现我爷爷坐在我旁边；他被一排椅子挡住，我只能看到他的白发和皱纹。&lt;/p>
 &lt;p>“您是回来看我了吗？”我想起身看他的脸，好像看到他对我笑了一下。&lt;/p>
 &lt;p>现在想起来，当时我可能意识到了什么，但是没有发现这是一个梦。&lt;/p>

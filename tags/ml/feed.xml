@@ -28,7 +28,7 @@
 &lt;/ul>
 &lt;h2 id="初始化输入数据和参数">初始化输入数据和参数&lt;/h2>
 &lt;ul>
-&lt;li>输入数据标准化（Normalization&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）：使每个维度在(-1,1)之间&lt;/li>
+&lt;li>输入数据标准化（Normalization&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）：使每个维度在(-1,1)之间&lt;/li>
 &lt;li>权重（W，b）初始化：应保证经多级网络后总值基本不变（类比1.0001^n和0.9999^n）
 &lt;ul>
 &lt;li>即Xavier初始化的变种，He初始化&lt;/li>
@@ -79,11 +79,11 @@
 &lt;li>由于参数很多，对所有参数都为峰值基本上不可能&lt;/li>
 &lt;li>相比而言，鞍点更加普遍&lt;/li>
 &lt;/ul>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
-&lt;p>意义似乎略有不同&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;li id="fn:1">
+&lt;p>意义似乎略有不同&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

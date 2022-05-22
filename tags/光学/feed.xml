@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>光学 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/</link><description>Recent content in 光学 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 21 Jul 2021 18:14:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E5%85%89%E5%AD%A6/feed.xml" rel="self" type="application/rss+xml"/><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
-&lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
+&lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref2:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
 &lt;h2 id="物理光学演示lightpipes">物理光学演示：LightPipes&lt;/h2>
 &lt;figure>&lt;img src="lightpipes.png" width="50%"/>
 &lt;/figure>
@@ -75,33 +75,33 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>&lt;img src="pynlo.png" alt="pyNLO">&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/pyNLO/PyNLO">PyNLO&lt;/a>：与非线性光学有关，大概是&lt;code>SNLO&lt;/code>的某种代替品。&lt;/li>
-&lt;li>&lt;a href="https://github.com/Jomiri/pyfiberamp">Jomiri/pyfiberamp&lt;/a>：有关光纤激光器的计算。&lt;/li>
+&lt;li>&lt;a href="https://github.com/Jomiri/pyfiberamp">Jomiri/pyfiberamp&lt;/a>：有关掺Er光纤激光器的计算。没有什么用处。&lt;/li>
 &lt;li>&lt;a href="https://github.com/AOtools/soapy">AOtools/soapy&lt;/a>：用于自适应光学过程的模拟，另有一组&lt;a href="https://github.com/AOtools/aotools">用于分析&lt;/a>的库。&lt;/li>
 &lt;li>&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>：为了LIGO设计的语言，用于引力波探测器的光路设计。这次我依旧没有看懂。&lt;/li>
 &lt;li>&lt;a href="https://www.aps.anl.gov/Science/Scientific-Software/OASYS">OASYS&lt;/a>：如果X射线也是光的话，那么&lt;a href="https://github.com/oasys-kit/wofry">WOFRY&lt;/a>也是光学计算。&lt;/li>
 &lt;li>&lt;a href="https://github.com/scottprahl/laserbeamsize">laserbeamsize&lt;/a>：一个完善的激光光斑直径和$M^2$计算库。&lt;/li>
 &lt;/ul>
 &lt;p>总之祝大家好运吧。如果有条件的话，还是尽量使用商业软件。Seriously.&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
-&lt;p>据我了解并不存在前两种职业。而运维在哪里都存在。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;li id="fn:1">
+&lt;p>据我了解并不存在前两种职业。而运维在哪里都存在。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:2" role="doc-endnote">
+&lt;li id="fn:2">
 &lt;p>感觉这些既会光学又会Python的人，在起名字方面都没有什么创意。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:3" role="doc-endnote">
+&lt;li id="fn:3">
 &lt;p>A J Eldorado Riggs, Garreth Ruane, Erkin Sidick, Carl Coker, Brian D. Kern, Stuart B. Shaklan, &amp;quot;Fast linearized coronagraph optimizer (FALCO) I: a software toolbox for rapid coronagraphic design and wavefront correction,&amp;quot; Proc. SPIE 10698, Space Telescopes and Instrumentation 2018: Optical, Infrared, and Millimeter Wave, 106982V (9 August 2018); &lt;a href="https://doi.org/10.1117/12.2313812">https://doi.org/10.1117/12.2313812&lt;/a>，&lt;a href="https://core.ac.uk/download/pdf/211386255.pdf">PDF文件&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:4" role="doc-endnote">
+&lt;li id="fn:4">
 &lt;p>如果尝试优化的话，可以看看&lt;a href="https://www.sciencedirect.com/science/article/abs/pii/S0030402618315821">doi:10.1016/j.ijleo.2018.10.073&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
-&lt;li id="fn:5" role="doc-endnote">
+&lt;li id="fn:5">
 &lt;p>Ruane, G., “Review of high-contrast imaging systems for current and future ground- and space-based telescopes I: coronagraph design methods and optical performance metrics”, in &lt;i>Space Telescopes and Instrumentation 2018: Optical, Infrared, and Millimeter Wave&lt;/i>, 2018, vol. 10698. doi:10.1117/12.2312948.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
 &lt;p>来自2021-07-24的更新：&lt;/p>
 &lt;/blockquote>
 &lt;p>本文的2021年版本在&lt;a href="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/">这里&lt;/a>。&lt;/p>
@@ -153,11 +153,11 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;img src="rayopt2.png" alt="rayopt">&lt;/p>
 &lt;p>和&lt;a href="#sterncatopticspyhttpsgithubcomsterncatopticspy">opticspy&lt;/a>一样，RayOpt也是一组用于代替Zemax的程序，&lt;strong>看起来&lt;/strong>更不像一个玩具。当然，如果要对这样的库作出一个中肯的评价，我觉得至少还要学习十年左右。所以我只是把它列在这里，并且祝&lt;em>路过的旅行者&lt;/em>好运。&lt;/p>
 &lt;p>另外，我下次更新这篇文章的时候，差不多要给它们分分类了。毕竟光学计算是一个很宽泛的话题。&lt;del>我先立一个flag在这里。&lt;/del>&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
+&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
+&lt;li id="fn:1">
 &lt;p>比如&lt;a href="http://www.gwoptics.org/finesse/reference/">语法说明&lt;/a>里提到了squeezed vacuum input source。不要问我&lt;a href="https://en.wikipedia.org/wiki/Squeezed_coherent_state">那是什么&lt;/a>。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
