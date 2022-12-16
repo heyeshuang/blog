@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>全景图像 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E5%85%A8%E6%99%AF%E5%9B%BE%E5%83%8F/</link><description>Recent content in 全景图像 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 15 Dec 2022 22:47:11 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E5%85%A8%E6%99%AF%E5%9B%BE%E5%83%8F/feed.xml" rel="self" type="application/rss+xml"/><item><title>下载装小蜜监理拍摄的图片</title><link>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</link><pubDate>Thu, 15 Dec 2022 22:47:11 +0800</pubDate><guid>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</guid><description>&lt;blockquote>
+&lt;p>最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p>
+&lt;/blockquote>
+&lt;p>装小蜜是北京地区比较流行的监理服务，价格比起正规监理（有监理证的那种）要便宜许多，在装修过程中应该也是有作用的。每次上门服务时，监理会在每个房间拍一张全景照片，如果工长不提供水电位置图的话，之后这些照片应该能派上用场。&lt;/p>
+&lt;p>像所有Web2.0之后的公司一样，这家公司主要在APP和微信小程序上提供服务，而且并不具备数据导出功能。这种情况的一般解决方案是抓包，只要配置好xposed、HTTPCanary，解决TLS证书固定之类的问题就行了，我一开始就是这么做的，之后发现了别的方法：只要屏蔽一个特定域名（zxm-oss3.oss-cn-beijing.aliyuncs.com），微信小程序上就会显示图片的实际位置。&lt;/p>
+&lt;p>&lt;img src="url.png" alt="图像实际存放地址">&lt;/p>
+&lt;p>具体上，按照这里&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>的思路，我也使用Clash For Windows，把所有来自阿里云的请求屏蔽掉。然后在微信电脑版上打开小程序，就可以得到上图。之后，直接用鼠标把链接拖动到TXT里面，就可以用你最喜欢的工具下载了。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#309;font-weight:bold">proxies&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>- &lt;span style="color:#309;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>Fiddler&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">type&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>http&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">server&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#f60">127.0.0.1&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">port&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#f60">8888&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#309;font-weight:bold">proxy-groups&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>- &lt;span style="color:#309;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>Proxy&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">proxies&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>- Fiddler&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">type&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>select&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#309;font-weight:bold">rules&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>- DOMAIN-KEYWORD,aliyuncs.com,REJECT&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>- PROCESS-NAME,Fiddler.exe,DIRECT&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>- MATCH,DIRECT&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>另外，小程序是用&lt;a href="https://pannellum.org/documentation/overview/">Pannellum&lt;/a>进行渲染的。下载到的照片可以用&lt;a href="https://renderstuff.com/tools/360-panorama-web-viewer/">这个网站&lt;/a>查看。好像和直接用小程序没有什么区别……&lt;/p>
+&lt;h2 id="附微信小程序缓存位置">附：微信小程序缓存位置&lt;/h2>
+&lt;blockquote>
+&lt;p>C:\Users\me\AppData\Roaming\Tencent\WeChat\radium\web&lt;/p>
+&lt;/blockquote>
+&lt;p>我是用&lt;a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">Process Monitor&lt;/a>监测文件变化发现这个路径的。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/564786074">Windows 微信小程序无法抓包解决办法 - 知乎&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>
