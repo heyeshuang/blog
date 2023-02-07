@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 15 Dec 2022 22:47:11 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>下载装小蜜监理拍摄的图片</title><link>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</link><pubDate>Thu, 15 Dec 2022 22:47:11 +0800</pubDate><guid>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 07 Feb 2023 17:29:00 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
+&lt;p>在这种场景，如果：&lt;/p>
+&lt;ol>
+&lt;li>有一台常开的NAS、矿渣或whatever，&lt;/li>
+&lt;li>在Cloudflare上有一个自己的域名，&lt;/li>
+&lt;li>家里的宽带有IPv6，而且防火墙可以自己控制（aka 光猫桥接），&lt;/li>
+&lt;li>不想或者不能打开80、443端口，没办法直接使用Cloudflare代理；&lt;/li>
+&lt;/ol>
+&lt;p>那么可以通过本文的方案，获得高位端口的CF代理。这样，在没有IPv6的地方也能够访问家里的服务了。&lt;/p>
+&lt;p>如果上面的条件不满足的话，可以尝试&lt;code>FRP&lt;/code>和&lt;code>Cloudflare Tunnel&lt;/code>之类的东西。&lt;/p>
+&lt;h2 id="打开端口ddns">打开端口、DDNS&lt;/h2>
+&lt;p>首先我们需要保证NAS上的IPv6端口能从公网访问，并把域名指向家里的IPv6地址。打开端口的部分可以看看&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前的博文&lt;/a>；DDNS我在使用&lt;a href="https://github.com/jeessy2/ddns-go">ddns-go&lt;/a>（这里可能需要科学上网）。注意，此时先不要开启Cloudflare代理。&lt;/p>
+&lt;p>完成这部分之后，我们的域名（比如说home.example.net）指向了家里的IP，并且防火墙打开了端口（比如38000）。可以在NAS上开个&lt;code>python -m http.server 38000&lt;/code>，并用移动网络测试一下。&lt;/p>
+&lt;p>对了，Cloudflare的token不要扔，待会还有用。&lt;/p>
+&lt;h2 id="caddy">Caddy&lt;/h2>
+&lt;p>安装Caddy。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Caddyfile" data-lang="Caddyfile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">## cat /etc/caddy/Caddyfile
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span>(cloudflare) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">tls&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">dns&lt;/span> &lt;span style="color:#c30">cloudflare&lt;/span> &lt;span style="color:#c30">abcdefgh&lt;/span>&lt;span style="color:#09f;font-style:italic"> #刚才说的Cloudflare的token
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#030;font-weight:bold">home.example.net:38000&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">reverse_proxy&lt;/span> http://localhost:&lt;span style="color:#f60">1234&lt;/span>&lt;span style="color:#09f;font-style:italic"> #这里是内网服务的地址
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> cloudflare&lt;span style="color:#09f;font-style:italic"> #申请证书的部分
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code>https://home.example.net:38000&lt;/code>访问服务了。&lt;/p>
+&lt;h2 id="cloudflare">Cloudflare&lt;/h2>
+&lt;figure>&lt;img src="SSL_TLS.png"/>&lt;figcaption>
+&lt;h4>把SSL/TLS加密模式改为完全；&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="Origin_Rules.png"/>&lt;figcaption>
+&lt;h4>添加Origin Rules，把请求转至高位端口；&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336">在DDNS服务上也开启Cloudflare代理&lt;/a>。&lt;/p>
+&lt;p>好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p></description></item><item><title>下载装小蜜监理拍摄的图片</title><link>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</link><pubDate>Thu, 15 Dec 2022 22:47:11 +0800</pubDate><guid>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</guid><description>&lt;blockquote>
 &lt;p>最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p>
 &lt;/blockquote>
 &lt;p>装小蜜是北京地区比较流行的监理服务，价格比起正规监理（有监理证的那种）要便宜许多，在装修过程中应该也是有作用的。每次上门服务时，监理会在每个房间拍一张全景照片，如果工长不提供水电位置图的话，之后这些照片应该能派上用场。&lt;/p>
