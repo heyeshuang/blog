@@ -7,7 +7,6 @@ tags :
     - 全景图像
 categories :
     - 装修
-    - 折腾
 title: "下载装小蜜监理拍摄的图片"
 date: 2022-12-15T22:47:11+08:00
 draft: False 
