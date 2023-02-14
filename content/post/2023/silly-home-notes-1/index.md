@@ -75,7 +75,7 @@ Aqara在闲鱼买会显得不那么冤大头，杜亚牌电机也比杜亚代工
 
 在基本框架（aka灯和窗帘）搭好之后，就可以放飞自我搞一些新花样。
 
-#### 智能面板
+### 智能面板
 
 [Sonoff NSPanel](https://detail.1688.com/offer/662976153559.html?spm=a26352.13672862.offerlist.49.3a512910uzdgfQ)应该是最便宜的智能面板了，而且可以刷第三方固件[lovelace-ui](https://github.com/joBr99/nspanel-lovelace-ui)或[NSPanel_HA_Blueprint](https://github.com/Blackymas/NSPanel_HA_Blueprint)，可玩性非常高。
 
@@ -83,11 +83,13 @@ Aqara在闲鱼买会显得不那么冤大头，杜亚牌电机也比杜亚代工
 
 如果需要更大的屏幕，甚至可以在仓库里找一些淘汰的设备，比如说还能亮的山寨平板、二手安卓手机、闲鱼低价带屏开发板之类。通过[WallPanel](https://wallpanel.xyz/)和[HA的kiosk-mode插件](https://github.com/NemesisRE/kiosk-mode)，可以让这些设备直接成为HA的前端显示[^web]。
 
+{{< figure src="panel.jpg" caption="一个二手安卓触摸屏" >}}
+
 作为一个直男，还有一件事情要嘱咐：不要搞得太丑了，正常人不会喜欢满墙飞线的，至少拿个相框遮一下。这部分我也不会，所以我从网上找了一张图。
 
 ![reddit：surface_pro_3_wall_tablet_install，这张图也挺丑的](frame.webp)
 
-#### ESPHome
+### ESPHome
 
 传感器是从遥控家居走向智能的关键一步，在需要更多种类的传感器时，[ESPHome](https://esphome.io/)能够派上用场。只需要一块ESP32，加上AHT20就是温湿度计，~~加上SGP30是TVOC检测仪~~[^2]，加上PZEM-004T就是智能电流表，加上LD2410就是人体感应雷达，而且都可以与HA控制的所有设备联动。唯一的问题是，ESP32系列一般是通过Wifi联网，可能会对路由器造成一点点压力，如果是一万块钱的高级路由器K3就无所谓了。
 
