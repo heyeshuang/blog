@@ -105,13 +105,18 @@ alt="HA和米家设置自动化"/>&lt;figcaption>
 &lt;p>窗帘的部分就更简单了，只要定时开关就行。通过HA的手机APP，可以将&lt;a href="https://companion.home-assistant.io/docs/core/sensors/#next-alarm-sensor">下一个闹钟时间&lt;/a>导入自动化，实现闹铃响起时打开窗帘。&lt;/p>
 &lt;h2 id="附加题部分">附加题部分&lt;/h2>
 &lt;p>在基本框架（aka灯和窗帘）搭好之后，就可以放飞自我搞一些新花样。&lt;/p>
-&lt;h4 id="智能面板">智能面板&lt;/h4>
+&lt;h3 id="智能面板">智能面板&lt;/h3>
 &lt;p>&lt;a href="https://detail.1688.com/offer/662976153559.html?spm=a26352.13672862.offerlist.49.3a512910uzdgfQ">Sonoff NSPanel&lt;/a>应该是最便宜的智能面板了，而且可以刷第三方固件&lt;a href="https://github.com/joBr99/nspanel-lovelace-ui">lovelace-ui&lt;/a>或&lt;a href="https://github.com/Blackymas/NSPanel_HA_Blueprint">NSPanel_HA_Blueprint&lt;/a>，可玩性非常高。&lt;/p>
 &lt;p>&lt;img src="nspanel-rl.png" alt="NSPanel Lovelace UI">&lt;/p>
 &lt;p>如果需要更大的屏幕，甚至可以在仓库里找一些淘汰的设备，比如说还能亮的山寨平板、二手安卓手机、闲鱼低价带屏开发板之类。通过&lt;a href="https://wallpanel.xyz/">WallPanel&lt;/a>和&lt;a href="https://github.com/NemesisRE/kiosk-mode">HA的kiosk-mode插件&lt;/a>，可以让这些设备直接成为HA的前端显示&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;figure>&lt;img src="panel.jpg"
+alt="一个二手安卓触摸屏"/>&lt;figcaption>
+&lt;p>一个二手安卓触摸屏&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
 &lt;p>作为一个直男，还有一件事情要嘱咐：不要搞得太丑了，正常人不会喜欢满墙飞线的，至少拿个相框遮一下。这部分我也不会，所以我从网上找了一张图。&lt;/p>
 &lt;p>&lt;img src="frame.webp" alt="reddit：surface_pro_3_wall_tablet_install，这张图也挺丑的">&lt;/p>
-&lt;h4 id="esphome">ESPHome&lt;/h4>
+&lt;h3 id="esphome">ESPHome&lt;/h3>
 &lt;p>传感器是从遥控家居走向智能的关键一步，在需要更多种类的传感器时，&lt;a href="https://esphome.io/">ESPHome&lt;/a>能够派上用场。只需要一块ESP32，加上AHT20就是温湿度计，&lt;del>加上SGP30是TVOC检测仪&lt;/del>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>，加上PZEM-004T就是智能电流表，加上LD2410就是人体感应雷达，而且都可以与HA控制的所有设备联动。唯一的问题是，ESP32系列一般是通过Wifi联网，可能会对路由器造成一点点压力，如果是一万块钱的高级路由器K3就无所谓了。&lt;/p>
 &lt;p>另外，如果完全不想和小米打交道，易微联、涂鸦或小燕科技的设备也可以试试。没准过几&lt;del>天&lt;/del>年Matter设备也会上市？&lt;/p>
 &lt;hr>
