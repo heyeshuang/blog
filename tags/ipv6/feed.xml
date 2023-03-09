@@ -13,7 +13,7 @@
 &lt;p>完成这部分之后，我们的域名（比如说home.example.net）指向了家里的IP，并且防火墙打开了端口（比如38000）。可以在NAS上开个&lt;code>python -m http.server 38000&lt;/code>，并用移动网络测试一下。&lt;/p>
 &lt;p>对了，Cloudflare的token不要扔，待会还有用。&lt;/p>
 &lt;h2 id="caddy">Caddy&lt;/h2>
-&lt;p>安装Caddy。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：&lt;/p>
+&lt;p>安装&lt;a href="https://caddyserver.com/download?package=github.com%2Fcaddy-dns%2Fcloudflare">包含Cloudflare DNS插件的Caddy&lt;/a>。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Caddyfile" data-lang="Caddyfile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">## cat /etc/caddy/Caddyfile
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span>(cloudflare) {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">tls&lt;/span> {
