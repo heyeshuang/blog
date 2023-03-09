@@ -34,7 +34,7 @@ draft: false
 
 ## Caddy
 
-安装Caddy。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：
+安装[包含Cloudflare DNS插件的Caddy](https://caddyserver.com/download?package=github.com%2Fcaddy-dns%2Fcloudflare)。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：
 
 ```Caddyfile
 ## cat /etc/caddy/Caddyfile
