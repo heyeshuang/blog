@@ -3,7 +3,6 @@ author : "HeYSH"
 type : "post"
 tags :
     - IPv4
-    - IPv6
     - NAT
     - 内网穿透
     - Wireguard
