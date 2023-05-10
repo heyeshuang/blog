@@ -86,13 +86,14 @@ New-Item -ItemType Junction -Path "C:\工作" -Target "C:\实际的\工作\目�
 
 {{% spoiler "剧透：最后这些我都没用" %}}
 - https://github.com/slackhq/nebula
-	- 无法通过公共节点转发
+	- ~~无法通过公共节点转发~~现在可以了
+	- 两个Android客户端在移动网络、甚至是同一个无线网络都无法连接，离谱
 - https://github.com/tonarino/innernet
 	- 只实现了STUN，没有实现TURN
 	- 也无法通过公共节点转发
 	- 无Android支持
 - https://github.com/juanfont/headscale
-	- 无Android支持
+	- ~~无Android支持~~
 - https://github.com/gravitl/netmaker/
 	- 构建需要docker和干净的服务器
 - https://github.com/wiretrustee/wiretrustee
