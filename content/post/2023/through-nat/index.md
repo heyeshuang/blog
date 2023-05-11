@@ -12,7 +12,7 @@ categories :
     - web
 title: "内网访问第三季：在运营商的CGNAT网络下"
 description: "用回Wireguard吧，再加上NATMap"
-date: 2023-04-15T21:05:13+08:00
+date: 2023-05-10T21:05:13+08:00
 draft: false
 ---
 
@@ -42,7 +42,7 @@ draft: false
 1. 没有公网IPv4，但在路由器处测试NAT类型为NAT1。
     > 这里可以用[Natter](https://github.com/MikeWang000000/Natter/tree/v0.9)自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。
 1. 一个自己的域名，最好是在Cloudflare上托管的。
-    > 需要DDNS功能实时更新域名。
+    > 需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。
 
 具体配置部分已经有人写的很详细了。首先按照[WireGuard Point to Site Configuration](https://www.procustodibus.com/blog/2020/11/wireguard-point-to-site-config/)设置点到站点的连接，然后按照[natmap Wiki](https://github.com/heiher/natmap/wiki/wireguard)设置NATMap即可。注意，在路由器上操作的时候，一定要记得在防火墙中**打开对应端口**。
 
