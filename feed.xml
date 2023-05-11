@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 15 Apr 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/04/15/through-nat/</link><pubDate>Sat, 15 Apr 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/04/15/through-nat/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
 &lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -39,7 +39,7 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;/li>
 &lt;li>一个自己的域名，最好是在Cloudflare上托管的。
 &lt;blockquote>
-&lt;p>需要DDNS功能实时更新域名。&lt;/p>
+&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>
 &lt;/blockquote>
 &lt;/li>
 &lt;/ol>
