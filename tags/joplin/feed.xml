@@ -50,7 +50,8 @@
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/slackhq/nebula">https://github.com/slackhq/nebula&lt;/a>
 &lt;ul>
-&lt;li>无法通过公共节点转发&lt;/li>
+&lt;li>&lt;del>无法通过公共节点转发&lt;/del>现在可以了&lt;/li>
+&lt;li>两个Android客户端在移动网络、甚至是同一个无线网络都无法连接，离谱&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/tonarino/innernet">https://github.com/tonarino/innernet&lt;/a>
@@ -62,7 +63,7 @@
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/juanfont/headscale">https://github.com/juanfont/headscale&lt;/a>
 &lt;ul>
-&lt;li>无Android支持&lt;/li>
+&lt;li>&lt;del>无Android支持&lt;/del>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/gravitl/netmaker/">https://github.com/gravitl/netmaker/&lt;/a>
