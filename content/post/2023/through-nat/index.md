@@ -29,7 +29,6 @@ draft: false
 {{< figure src="ping1.png" caption="从广东联通到北京联通。" attr="" attrlink="" >}}
 {{< figure src="ping2.png" caption="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。" attr="" attrlink="" >}}
 
-
 ## 怎么做
 
 在开始之前，首先检查是否满足以下要求：
@@ -75,5 +74,15 @@ draft: false
 ## Bonus
 
 Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的`High ID`。见[wits-fe/bittorrent-NAT-hole-punching](https://github.com/wits-fe/bittorrent-NAT-hole-punching)。在PT站做种的时候应该会很有用。
+
+## 附：性能测试
+
+> 随便找了一个公共WiFi，用手机（一加7T）上Termux中的`iperf3`测速。
+
+由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。
+
+{{< figure src="iperf-1.svg" caption="WireGuard for Android" attr="" attrlink="" >}}
+{{< figure src="iperf-2.svg" caption="NB4A提供的Wireguard Outbound" attr="" attrlink="" >}}
+{{< figure src="iperf-3.svg" caption="Nebula，对端部署在路由器上" attr="" attrlink="" >}}
 
 很难想象，对于访问内网这样一个简单的需求，我居然花费了如此多的精力。不过，这次应该算是当前比较满意的方案，应该能坚持到下次水逆开始。
