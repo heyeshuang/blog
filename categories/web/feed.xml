@@ -68,6 +68,27 @@ alt="我这里最近一次分配的端口坚持了18天，所以应该不必时�
 &lt;p>如果需要更为稳定的访问，可以参考&lt;a href="https://gist.github.com/z0mb1e-kgd/54aede86adf2e30e390dba13886d18e1">reresolve-dns.ps1&lt;/a>，这个脚本可以在上一次握手时间过久时刷新DNS，但是因为要添加计划任务，有一点过于复杂了。&lt;/p>
 &lt;h2 id="bonus">Bonus&lt;/h2>
 &lt;p>Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的&lt;code>High ID&lt;/code>。见&lt;a href="https://github.com/wits-fe/bittorrent-NAT-hole-punching">wits-fe/bittorrent-NAT-hole-punching&lt;/a>。在PT站做种的时候应该会很有用。&lt;/p>
+&lt;h2 id="附性能测试">附：性能测试&lt;/h2>
+&lt;blockquote>
+&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>
+&lt;/blockquote>
+&lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
+&lt;p>&lt;figure>&lt;img src="iperf-1.svg"
+alt="WireGuard for Android"/>&lt;figcaption>
+&lt;p>WireGuard for Android&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="iperf-2.svg"
+alt="NB4A提供的Wireguard Outbound"/>&lt;figcaption>
+&lt;p>NB4A提供的Wireguard Outbound&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="iperf-3.svg"
+alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
+&lt;p>Nebula，对端部署在路由器上&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;p>很难想象，对于访问内网这样一个简单的需求，我居然花费了如此多的精力。不过，这次应该算是当前比较满意的方案，应该能坚持到下次水逆开始。&lt;/p></description></item><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
 &lt;p>在这种场景，如果：&lt;/p>
 &lt;ol>
