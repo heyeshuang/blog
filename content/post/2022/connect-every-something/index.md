@@ -5,7 +5,7 @@ tags :
     - Syncthing
     - Zotero
     - Joplin
-    - 内网穿透
+    - 内网
     - 笔记
 categories :
     - 折腾

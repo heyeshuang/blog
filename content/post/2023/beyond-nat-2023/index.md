@@ -3,7 +3,7 @@ author : "HeYSH"
 type : "post"
 tags :
     - IPv6
-    - 内网穿透
+    - 内网
     - cloudflare
 categories :
     - web

@@ -4,7 +4,7 @@ type : "post"
 tags :
     - IPv6
     - NAT
-    - 内网穿透
+    - 内网
 categories :
     - web
     - 折腾

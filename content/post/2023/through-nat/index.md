@@ -4,7 +4,7 @@ type : "post"
 tags :
     - IPv4
     - NAT
-    - 内网穿透
+    - 内网
     - Wireguard
     - NATMap
     - VPN

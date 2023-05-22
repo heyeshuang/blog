@@ -2,7 +2,7 @@
 author : "HeYSH"
 type : "post"
 tags :
-    - 无
+    - ipv6
 categories :
     - 短消息
 title: "短消息：联通IPV6"
