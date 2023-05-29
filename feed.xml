@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
 &lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
 &lt;/blockquote>
 &lt;figure>&lt;img src="pikvm.png"
-alt="有较强的自我管理能力.png"/>&lt;figcaption>
-&lt;p>有较强的自我管理能力.png&lt;/p>
+alt="有较强的自我管理意识.png"/>&lt;figcaption>
+&lt;p>有较强的自我管理意识.png&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>把远程控制取名叫作IP-KVM，这对于SEO来说过于不友好了。每当搜索Google的时候，总会看到有人试图在N1上跑虚拟化（aka KVM），可能是对2G内存有些什么不切实际的幻想。最后，在GitHub上找到了在N1上安装PiKVM的脚本：&lt;a href="https://github.com/toss-a/pikvm-armbian">toss-a/pikvm-armbian&lt;/a>。不过这里的&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD">说明&lt;/a>也稍微有些简略，我会努力稍微详细一点点，尽量。&lt;/p>
@@ -75,7 +75,7 @@ alt="有较强的自我管理能力.png"/>&lt;figcaption>
 &lt;p>N1靠近HDMI接口的USB口已经改为OTG从机模式，把双公头USB线插在这里，另一头插到被控计算机上。这时候，如果视频采集卡插不上的话，拿出提前准备好的延长线。下面的照片来自&lt;a href="https://pockies.github.io/2019/03/07/phicomm-n1/">这里&lt;/a>，照相技术牛逼疯了。&lt;/p>
 &lt;p>&lt;img src="n1.excalidraw.png" alt="牛逼疯了！">&lt;/p>
 &lt;p>重新插入电源，用随便的浏览器访问N1的IP地址，并忽略证书错误提示。初始用户名和密码都是&lt;code>admin&lt;/code>，别忘了修改登录密码，用&lt;code>sudo kvmd-htpasswd set admin&lt;/code>。&lt;/p>
-&lt;p>另外，感谢&lt;a href="https://github.com/pikvm/pikvm">pikvm&lt;/a>项目，有钱的话就去支持[他们的硬件]((&lt;a href="https://pikvm.org/">https://pikvm.org/&lt;/a>)吧！&lt;/p>
+&lt;p>另外，感谢&lt;a href="https://github.com/pikvm/pikvm">pikvm&lt;/a>项目，有钱的话就去支持&lt;a href="https://pikvm.org/">他们的硬件&lt;/a>吧！&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
