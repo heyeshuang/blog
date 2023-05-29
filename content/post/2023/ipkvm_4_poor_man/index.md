@@ -6,6 +6,7 @@ tags :
     - IP-KVM
     - 远程控制
     - 内网
+    - IPMI
     - N1
 categories :
     - 折腾
@@ -17,7 +18,7 @@ draft: false
 
 > 说起DIY的IP-KVM，当然是[PiKVM](https://github.com/pikvm/pikvm)以及一系列衍生项目，可是对于~~那些把钱投入庞氏骗局的~~穷人来说，RPI4已经远不能称为*inexpensive*。近几天，我从垃圾堆里翻出了**同样**昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。
 
-{{< figure src="pikvm.png" caption="有较强的自我管理能力.png">}}
+{{< figure src="pikvm.png" caption="有较强的自我管理意识.png">}}
 
 把远程控制取名叫作IP-KVM，这对于SEO来说过于不友好了。每当搜索Google的时候，总会看到有人试图在N1上跑虚拟化（aka KVM），可能是对2G内存有些什么不切实际的幻想。最后，在GitHub上找到了在N1上安装PiKVM的脚本：[toss-a/pikvm-armbian](https://github.com/toss-a/pikvm-armbian)。不过这里的[说明](https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD)也稍微有些简略，我会努力稍微详细一点点，尽量。
 
@@ -96,6 +97,6 @@ N1靠近HDMI接口的USB口已经改为OTG从机模式，把双公头USB线插�
 
 重新插入电源，用随便的浏览器访问N1的IP地址，并忽略证书错误提示。初始用户名和密码都是`admin`，别忘了修改登录密码，用`sudo kvmd-htpasswd set admin`。
 
-另外，感谢[pikvm](https://github.com/pikvm/pikvm)项目，有钱的话就去支持[他们的硬件]((https://pikvm.org/)吧！
+另外，感谢[pikvm](https://github.com/pikvm/pikvm)项目，有钱的话就去支持[他们的硬件](https://pikvm.org/)吧！
 
 [^1]:Ref：[README](https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#%E7%AC%AC%E4%BA%8C%E6%AD%A5)，这个写的其实挺清楚的，比我的好。
