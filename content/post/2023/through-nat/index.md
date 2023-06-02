@@ -65,7 +65,7 @@ draft: false
 
 在Windows 11, Powershell  5.1.22621.963测试通过，也可以配合Windows下的[sudo](https://bjansen.github.io/scoop-apps/main/sudo/)使用。
 
-另外，在Android下，也可以用termux运行[nm-echo.sh](https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh)来获得IP地址，手动修改Wireguard官方客户端中的IP。
+另外，在Android下，也可以用termux运行[nm-echo.sh](https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh)来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~
 
 {{< figure src="连接时间.png" caption="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。" >}}
 
