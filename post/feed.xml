@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
 &lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
 &lt;/blockquote>
 &lt;figure>&lt;img src="pikvm.png"
@@ -144,7 +144,7 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;li>停止Wireguard：&lt;code>C:\example\wg.ps1 -down&lt;/code>&lt;/li>
 &lt;/ol>
 &lt;p>在Windows 11, Powershell 5.1.22621.963测试通过，也可以配合Windows下的&lt;a href="https://bjansen.github.io/scoop-apps/main/sudo/">sudo&lt;/a>使用。&lt;/p>
-&lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。&lt;/p>
+&lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~&lt;/p>
 &lt;figure>&lt;img src="%e8%bf%9e%e6%8e%a5%e6%97%b6%e9%97%b4.png"
 alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。"/>&lt;figcaption>
 &lt;p>我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。&lt;/p>
@@ -516,7 +516,11 @@ alt="一个二手安卓触摸屏"/>&lt;figcaption>
 &lt;h3 id="joplin内部">Joplin内部&lt;/h3>
 &lt;p>当然Joplin不是为了双链笔记而设计的，但是通过插件&lt;a href="https://github.com/ylc395/joplin-plugin-note-link-system">plugin-note-link-system&lt;/a>也可以获得一部分双链笔记的功能，比如说，方便地在一篇笔记里引用另外一篇笔记的某个小标题；或者是在另一篇笔记里看到backlinks。&lt;/p>
 &lt;h3 id="笔记引用zotero参考文献">笔记引用Zotero参考文献&lt;/h3>
-&lt;p>通过&lt;a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero&lt;/a>的&lt;code>Quick Copy&lt;/code>功能，按下&lt;code>Ctrl+Shift+C&lt;/code>，就可以把当前文献复制成类似&lt;code>[xxx](zotero://select/library/items/xxxxxx)&lt;/code>的链接。这种方式对别的笔记软件也适用，只要它能够打开&lt;code>URL Scheme&lt;/code>。&lt;/p>
+&lt;p>通过&lt;a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero&lt;/a>的&lt;code>Quick Copy&lt;/code>功能，按下&lt;code>Ctrl+Shift+C&lt;/code>，就可以把当前文献复制成类似&lt;code>[xxx](zotero://select/library/items/AAAAAA)&lt;/code>的链接。这种方式对别的笔记软件也适用，只要它能够打开&lt;code>URL Scheme&lt;/code>。&lt;/p>
+&lt;p>如果把链接改写为&lt;code>zotero://open-pdf/library/items/AAAAAA?page=114&lt;/code>，可以直接打开文件的第114页。
+&lt;img src="p114.png" alt="p114">&lt;/p>
+&lt;p>另外，Calibre也有类似的链接功能。我一般用Calibre来管理那些杂书。&lt;/p>
+&lt;p>&lt;img src="calibre.png" alt="calibre">&lt;/p>
 &lt;h3 id="引用计算机上的其他内容">引用计算机上的其他内容&lt;/h3>
 &lt;p>肯定没有人想把所有文件都塞进笔记本的数据库里，总是要引用一些外部文件的，这时候还是需要用万能的链接。这里的链接格式类似&lt;code>[xxx](file://C:\工作\xxx.docx)&lt;/code>，在Windows系统下既有斜杠也有反斜杠，但是很神奇地能够正确找到。&lt;/p>
 &lt;p>实际上还有一个问题，通过Syncthing同步后，文件在每台电脑上的链接地址是不一样的。所以，我在每台电脑的C盘做了一个文件夹链接&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。在Powershell下：&lt;/p>
@@ -536,6 +540,9 @@ alt="一个二手安卓触摸屏"/>&lt;figcaption>
 &lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>
 &lt;/blockquote>
 &lt;p>像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前&lt;/a>所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p>
+&lt;blockquote>
+&lt;p>来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/">Wireguard&lt;/a>了~&lt;/p>
+&lt;/blockquote>
 &lt;p>连接Tinc之后，就可以通过&lt;code>Wake On LAN&lt;/code>唤醒自己的其他电脑，然后用&lt;code>samba&lt;/code>、远程桌面之类的软件了。就好象回到家里&lt;del>居家办公&lt;/del>一样！&lt;/p>
 &lt;p>当然，在这种需求下，最简单的应该是&lt;code>Tailscale&lt;/code>，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p>
 &lt;details>
@@ -568,9 +575,10 @@ alt="一个二手安卓触摸屏"/>&lt;figcaption>
 &lt;li>构建需要docker和干净的服务器&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="https://github.com/wiretrustee/wiretrustee">https://github.com/wiretrustee/wiretrustee&lt;/a>
+&lt;li>&lt;a href="https://github.com/netbirdio/netbird">https://github.com/netbirdio/netbird&lt;/a>
 &lt;ul>
-&lt;li>无Android支持，Wireguard客户端无法使用&lt;/li>
+&lt;li>&lt;del>无Android支持&lt;/del>&lt;/li>
+&lt;li>Wireguard客户端无法使用&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/dswd/vpncloud">vpncloud&lt;/a>

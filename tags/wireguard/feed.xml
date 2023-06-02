@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wireguard on 林中阴影</title><link>https://blog.heysh.xyz/tags/wireguard/</link><description>Recent content in Wireguard on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/wireguard/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wireguard on 林中阴影</title><link>https://blog.heysh.xyz/tags/wireguard/</link><description>Recent content in Wireguard on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/wireguard/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
 &lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -59,7 +59,7 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;li>停止Wireguard：&lt;code>C:\example\wg.ps1 -down&lt;/code>&lt;/li>
 &lt;/ol>
 &lt;p>在Windows 11, Powershell 5.1.22621.963测试通过，也可以配合Windows下的&lt;a href="https://bjansen.github.io/scoop-apps/main/sudo/">sudo&lt;/a>使用。&lt;/p>
-&lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。&lt;/p>
+&lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~&lt;/p>
 &lt;figure>&lt;img src="%e8%bf%9e%e6%8e%a5%e6%97%b6%e9%97%b4.png"
 alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。"/>&lt;figcaption>
 &lt;p>我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。&lt;/p>
