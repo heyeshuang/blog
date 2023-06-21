@@ -23,14 +23,13 @@ draft: false
 
 步骤：
 
-- 去<https://dash.cloudflare.com/>找到你域名的`zone ID`并新建一个`API_KEY`。
+- 去<https://dash.cloudflare.com/>找到你域名的`zone ID`并新建一个~~`API_KEY`~~用于单个域名的`API token`。`API_KEY`因为权限过高，不建议使用。
 - 新建一条子域名的A记录，IP写什么都行。
 - 查询这条记录的`RECORD_ID`，在终端运行：
 
 ```bash
 curl -X GET "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records" \
-     -H "X-Auth-Email: <邮箱地址>" \
-     -H "X-Auth-Key: <API_KEY>" \
+     -H "Authorization: Bearer <API token>" \
      -H "Content-Type: application/json" \
      -x http://localhost:8087
 ```
@@ -49,8 +48,7 @@ then
 else
      OUTPUT=$(curl -X PUT "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records/<RECORD_ID>" \
      -x http://<代理地址，不要的话删去这一行>:8087 \
-     -H "X-Auth-Email: <邮箱地址>" \
-     -H "X-Auth-Key: <API_KEY>" \
+     -H "Authorization: Bearer <API token>" \
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"<子域名地址>","content":"'$NEW_IP'","ttl":1}')
      if echo "$OUTPUT" | grep -q "$NEW_IP"; then
@@ -65,6 +63,7 @@ fi
 
 {{% spoiler "IPv6的情况，放在两个不同的脚本里面可以共存"%}}
 ```bash
+#!/bin/sh
 NEW_IP=$(ip -6 addr | grep inet6 | awk -F '[ \t]+|/' '{print $3}' | grep -v ^::1 | grep -v ^fe80 | head -n 1)
 CURRENT_IP=$(cat /var/tmp/current_ip_6.txt)
 if [ "$NEW_IP" = "$CURRENT_IP" ]
@@ -73,7 +72,7 @@ then
 else
      OUTPUT=$(curl -X PUT "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/dns_records/<RECORD_ID>" \
      -x socks5h://<代理地址，不要的话删去这一行>:1085 \
-     -H "Authorization:<如果你申请了API token的话是这样>" \
+     -H "Authorization: Bearer <API token>" \
      -H "Content-Type: application/json" \
      --data '{"type":"AAAA","name":"<子域名>.<域名>.xyz","content":"'$NEW_IP'","ttl":1}')
      if echo "$OUTPUT" | grep -q "$NEW_IP"; then
