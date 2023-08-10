@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 林中阴影</title><link>https://blog.heysh.xyz/post/</link><description>Recent content in Posts on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 10 Aug 2023 20:35:54 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/post/feed.xml" rel="self" type="application/rss+xml"/><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
+&lt;figure>&lt;img src="figure.png"/>&lt;figcaption>
+&lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>于是我用Excel算好了：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>功率/W&lt;/th>
+&lt;th>年功耗/kWh&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>插座&lt;/td>
+&lt;td>3.8&lt;/td>
+&lt;td>33.288&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>我家云&lt;/td>
+&lt;td>5.4&lt;/td>
+&lt;td>47.304&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>锐角云&lt;/td>
+&lt;td>4.7&lt;/td>
+&lt;td>41.172&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>蜗牛星际&lt;/td>
+&lt;td>40.8&lt;/td>
+&lt;td>357.408&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>首先是这个插排，本身待机就有3.8W，离谱。&lt;/li>
+&lt;li>&lt;code>锐角云&lt;/code>开启之后总电量为8.9W，本身耗电4.7W。锐角云的配置是N3450、8GB内存，上面插了一块256G的SATA SSD，运行PVE、Home Assistant和另外2个虚拟机，直插12V电源适配器把待机功耗控制在极低的水平。&lt;/li>
+&lt;li>9.6W的部分是&lt;code>我家云&lt;/code>的贡献。孱弱的RK3328核心，捉襟见肘的2G内存，即使再加上一块500G的2.5寸机械硬盘，耗电量也仅为5.4W，作为小型文件服务器可以直接忘掉电费问题。&lt;/li>
+&lt;li>而&lt;code>蜗牛星际&lt;/code>就可以算上电老虎了。1块老旧SSD，两块老旧2.5寸和一块8T海淘盘带来了&lt;strong>高达&lt;/strong>40.8W的耗电，如果24小时开机的话每年会带来&lt;strong>高达&lt;/strong>一百多块的账单。&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="%e4%bb%8a%e5%b9%b4.png" width="50%"/>&lt;figcaption>
+&lt;h4>顺便一提，我家今年的耗电量长这样。这才仅仅是8月而已……&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>OK，当我今天没有更新过。&lt;/p></description></item><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
 &lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
 &lt;/blockquote>
 &lt;figure>&lt;img src="pikvm.png"

@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>硬件 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%A1%AC%E4%BB%B6/</link><description>Recent content in 硬件 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 04 Mar 2022 16:43:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%A1%AC%E4%BB%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p>在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>硬件 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%A1%AC%E4%BB%B6/</link><description>Recent content in 硬件 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 10 Aug 2023 20:35:54 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%A1%AC%E4%BB%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
+&lt;figure>&lt;img src="figure.png"/>&lt;figcaption>
+&lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>于是我用Excel算好了：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>功率/W&lt;/th>
+&lt;th>年功耗/kWh&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>插座&lt;/td>
+&lt;td>3.8&lt;/td>
+&lt;td>33.288&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>我家云&lt;/td>
+&lt;td>5.4&lt;/td>
+&lt;td>47.304&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>锐角云&lt;/td>
+&lt;td>4.7&lt;/td>
+&lt;td>41.172&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>蜗牛星际&lt;/td>
+&lt;td>40.8&lt;/td>
+&lt;td>357.408&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>首先是这个插排，本身待机就有3.8W，离谱。&lt;/li>
+&lt;li>&lt;code>锐角云&lt;/code>开启之后总电量为8.9W，本身耗电4.7W。锐角云的配置是N3450、8GB内存，上面插了一块256G的SATA SSD，运行PVE、Home Assistant和另外2个虚拟机，直插12V电源适配器把待机功耗控制在极低的水平。&lt;/li>
+&lt;li>9.6W的部分是&lt;code>我家云&lt;/code>的贡献。孱弱的RK3328核心，捉襟见肘的2G内存，即使再加上一块500G的2.5寸机械硬盘，耗电量也仅为5.4W，作为小型文件服务器可以直接忘掉电费问题。&lt;/li>
+&lt;li>而&lt;code>蜗牛星际&lt;/code>就可以算上电老虎了。1块老旧SSD，两块老旧2.5寸和一块8T海淘盘带来了&lt;strong>高达&lt;/strong>40.8W的耗电，如果24小时开机的话每年会带来&lt;strong>高达&lt;/strong>一百多块的账单。&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="%e4%bb%8a%e5%b9%b4.png" width="50%"/>&lt;figcaption>
+&lt;h4>顺便一提，我家今年的耗电量长这样。这才仅仅是8月而已……&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>OK，当我今天没有更新过。&lt;/p></description></item><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p>在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p>
 &lt;p>刚好赶上网课热潮，最近安卓系统的新平板还挺多的，比如小米平板5啊、小新pad啊、华为平板啊什么的，可是都有一些这样那样的问题&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>那就去看看Windows系统的平板吧。（自从我的寨板坏掉以后已经过去好多年了，&lt;del>最近的技术一定进步了很多吧。&lt;/del>）&lt;/p>
 &lt;p>然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none">寨板&lt;/a>，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html">屏闪&lt;/a>的问题。&lt;/p>
