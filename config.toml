@@ -84,7 +84,7 @@ baseName = "feed"
     url = "https://heysh.xyz/"
     weight = 5
 
-[social]
+[params.social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
