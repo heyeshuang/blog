@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home Assistant on 林中阴影</title><link>https://blog.heysh.xyz/tags/home-assistant/</link><description>Recent content in Home Assistant on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 10 Aug 2023 20:35:54 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml"/><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
-&lt;figure>&lt;img src="figure.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/figure.png">&lt;figcaption>
 &lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -41,7 +41,7 @@
 &lt;li>9.6W的部分是&lt;code>我家云&lt;/code>的贡献。孱弱的RK3328核心，捉襟见肘的2G内存，即使再加上一块500G的2.5寸机械硬盘，耗电量也仅为5.4W，作为小型文件服务器可以直接忘掉电费问题。&lt;/li>
 &lt;li>而&lt;code>蜗牛星际&lt;/code>就可以算上电老虎了。1块老旧SSD，两块老旧2.5寸和一块8T海淘盘带来了&lt;strong>高达&lt;/strong>40.8W的耗电，如果24小时开机的话每年会带来&lt;strong>高达&lt;/strong>一百多块的账单。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="%e4%bb%8a%e5%b9%b4.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/%E4%BB%8A%E5%B9%B4.png" width="50%">&lt;figcaption>
 &lt;h4>顺便一提，我家今年的耗电量长这样。这才仅仅是8月而已……&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -89,8 +89,8 @@
 &lt;p>又名device tracker，与路由器有关，我用了&lt;a href="https://www.home-assistant.io/integrations/luci/">OpenWrt (luci)&lt;/a>集成。独居的话，&lt;a href="https://github.com/AlexxIT/XiaomiGateway3/wiki/Handle-BLE-Locks">BLE门锁&lt;/a>也能完成类似的工作。控制欲更强的朋友可以尝试&lt;a href="https://github.com/ESPresense/ESPresense">ESPresense&lt;/a>，应该是能到房间级别。&lt;/p>
 &lt;h2 id="零冷水">零冷水&lt;/h2>
 &lt;p>如果你像我家一样，燃气热水器/壁挂炉离浴室太远，需要一套零冷水系统，那么首先需要把回水管留好。然后……最好能搞点&lt;a href="https://www.xiaomiyoupin.com/detail?gid=152447">成品系统&lt;/a>，不要像我一样用&lt;a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.ef352e8dz7aUZB">屏蔽泵&lt;/a>和智能开关解决，毕竟这玩意还是有一定难度的。
-&lt;figure>&lt;img src="pump.jpg"
-alt="设计水路和买接头全要靠自己了。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/03/08/silly-home-notes-detailed/pump.jpg"
+alt="设计水路和买接头全要靠自己了。">&lt;figcaption>
 &lt;p>设计水路和买接头全要靠自己了。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -243,8 +243,8 @@ alt="设计水路和买接头全要靠自己了。"/>&lt;figcaption>
 &lt;/table>
 &lt;/details>
 &lt;p>Aqara在闲鱼买会显得不那么冤大头，杜亚牌电机也比杜亚代工的Aqara电机便宜很多。家电方面，美的和其副牌（小天鹅、华凌、colmo之类）一般自带网络功能，通过插件&lt;a href="https://github.com/georgezhao2010/midea_ac_lan">midea_ac_lan&lt;/a>和HA配合的很不错。&lt;/p>
-&lt;figure>&lt;img src="midea.png"
-alt="美的营销号矩阵"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/midea.png"
+alt="美的营销号矩阵">&lt;figcaption>
 &lt;p>美的营销号矩阵&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -252,8 +252,8 @@ alt="美的营销号矩阵"/>&lt;figcaption>
 &lt;h2 id="安装和设置">安装和设置&lt;/h2>
 &lt;p>安装HA的部分在此不再赘述。通过米家APP配置以上的所有设备，并使用&lt;a href="https://github.com/al-one/hass-xiaomi-miot">hass-xiaomi-miot&lt;/a>和&lt;a href="https://github.com/AlexxIT/XiaomiGateway3#supported-firmwares">XiaomiGateway3&lt;/a>导入HA。这里需要注意的是，&lt;code>hass-xiaomi-miot&lt;/code>集成只能对WiFi设备进行本地控制，对Zigbee和BLE设备&lt;a href="https://github.com/al-one/hass-xiaomi-miot/issues/100#issuecomment-855183156">需要通过米家服务器&lt;/a>。所以最好由&lt;code>gateway3&lt;/code>控制这些设备，在&lt;code>hass-xiaomi-miot&lt;/code>集成中禁用。&lt;/p>
 &lt;p>考虑到安装非智能灯的可能性，我采用了&lt;code>智能开关+智能灯&lt;/code>的组合，这种组合更为保守，&lt;code>凌动开关+支持凌动的智能灯&lt;/code>效果大概会更好。在把所有智能灯配置完成后，在米家APP上把链接智能灯的开关&lt;code>转为无线开关&lt;/code>，然后在HA中设置自动化，感觉比米家自动化的反应更灵敏一些。不过，为了防止在HA断掉时挨骂，我也在米家APP上添加了备份：在同时按下开关左右键的时候关闭智能灯。&lt;/p>
-&lt;figure>&lt;img src="double-auto.jpg"
-alt="HA和米家设置自动化"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/double-auto.jpg"
+alt="HA和米家设置自动化">&lt;figcaption>
 &lt;p>HA和米家设置自动化&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -265,8 +265,8 @@ alt="HA和米家设置自动化"/>&lt;figcaption>
 &lt;p>&lt;a href="https://detail.1688.com/offer/662976153559.html?spm=a26352.13672862.offerlist.49.3a512910uzdgfQ">Sonoff NSPanel&lt;/a>应该是最便宜的智能面板了，而且可以刷第三方固件&lt;a href="https://github.com/joBr99/nspanel-lovelace-ui">lovelace-ui&lt;/a>或&lt;a href="https://github.com/Blackymas/NSPanel_HA_Blueprint">NSPanel_HA_Blueprint&lt;/a>，可玩性非常高。&lt;/p>
 &lt;p>&lt;img src="nspanel-rl.png" alt="NSPanel Lovelace UI">&lt;/p>
 &lt;p>如果需要更大的屏幕，甚至可以在仓库里找一些淘汰的设备，比如说还能亮的山寨平板、二手安卓手机、闲鱼低价带屏开发板之类。通过&lt;a href="https://wallpanel.xyz/">WallPanel&lt;/a>和&lt;a href="https://github.com/NemesisRE/kiosk-mode">HA的kiosk-mode插件&lt;/a>，可以让这些设备直接成为HA的前端显示&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
-&lt;figure>&lt;img src="panel.jpg"
-alt="一个二手安卓触摸屏"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/panel.jpg"
+alt="一个二手安卓触摸屏">&lt;figcaption>
 &lt;p>一个二手安卓触摸屏&lt;/p>
 &lt;/figcaption>
 &lt;/figure>

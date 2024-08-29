@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>硬件 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%A1%AC%E4%BB%B6/</link><description>Recent content in 硬件 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 10 Aug 2023 20:35:54 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%A1%AC%E4%BB%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
-&lt;figure>&lt;img src="figure.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/figure.png">&lt;figcaption>
 &lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -41,7 +41,7 @@
 &lt;li>9.6W的部分是&lt;code>我家云&lt;/code>的贡献。孱弱的RK3328核心，捉襟见肘的2G内存，即使再加上一块500G的2.5寸机械硬盘，耗电量也仅为5.4W，作为小型文件服务器可以直接忘掉电费问题。&lt;/li>
 &lt;li>而&lt;code>蜗牛星际&lt;/code>就可以算上电老虎了。1块老旧SSD，两块老旧2.5寸和一块8T海淘盘带来了&lt;strong>高达&lt;/strong>40.8W的耗电，如果24小时开机的话每年会带来&lt;strong>高达&lt;/strong>一百多块的账单。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="%e4%bb%8a%e5%b9%b4.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/%E4%BB%8A%E5%B9%B4.png" width="50%">&lt;figcaption>
 &lt;h4>顺便一提，我家今年的耗电量长这样。这才仅仅是8月而已……&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -51,8 +51,8 @@
 &lt;p>然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none">寨板&lt;/a>，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html">屏闪&lt;/a>的问题。&lt;/p>
 &lt;p>再然后，找来找去，发现淘宝上居然有自称“官翻”的戴尔平板卖，2018年的I5-8250U大概也许会和2022年的I3-1115G3&lt;a href="https://cpu.userbenchmark.com/Compare/Intel-Core-i5-8350U-vs-Intel-Core-i3-1115G4/m388461vsm1333512">差不多&lt;/a>？&lt;/p>
 &lt;p>时间回到今天，我收到这台&lt;a href="https://www.dell.com/en-my/shop/cty/pdp/spd/latitude-12-5290-2-in-1-laptop">Latitude 5290&lt;/a>刚满一个月，而且还没有爆炸，我感到十分欣慰：&lt;/p>
-&lt;figure>&lt;img src="BIOS.png"
-alt="第一次开机"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2022/03/04/new-tablet/BIOS.png"
+alt="第一次开机">&lt;figcaption>
 &lt;p>第一次开机&lt;/p>
 &lt;/figcaption>
 &lt;/figure>

@@ -42,8 +42,8 @@
 &lt;p>又名device tracker，与路由器有关，我用了&lt;a href="https://www.home-assistant.io/integrations/luci/">OpenWrt (luci)&lt;/a>集成。独居的话，&lt;a href="https://github.com/AlexxIT/XiaomiGateway3/wiki/Handle-BLE-Locks">BLE门锁&lt;/a>也能完成类似的工作。控制欲更强的朋友可以尝试&lt;a href="https://github.com/ESPresense/ESPresense">ESPresense&lt;/a>，应该是能到房间级别。&lt;/p>
 &lt;h2 id="零冷水">零冷水&lt;/h2>
 &lt;p>如果你像我家一样，燃气热水器/壁挂炉离浴室太远，需要一套零冷水系统，那么首先需要把回水管留好。然后……最好能搞点&lt;a href="https://www.xiaomiyoupin.com/detail?gid=152447">成品系统&lt;/a>，不要像我一样用&lt;a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.ef352e8dz7aUZB">屏蔽泵&lt;/a>和智能开关解决，毕竟这玩意还是有一定难度的。
-&lt;figure>&lt;img src="pump.jpg"
-alt="设计水路和买接头全要靠自己了。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/03/08/silly-home-notes-detailed/pump.jpg"
+alt="设计水路和买接头全要靠自己了。">&lt;figcaption>
 &lt;p>设计水路和买接头全要靠自己了。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>

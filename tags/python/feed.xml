@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on 林中阴影</title><link>https://blog.heysh.xyz/tags/python/</link><description>Recent content in python on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 21 Jul 2021 18:14:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/python/feed.xml" rel="self" type="application/rss+xml"/><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 林中阴影</title><link>https://blog.heysh.xyz/tags/python/</link><description>Recent content in Python on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 21 Jul 2021 18:14:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/python/feed.xml" rel="self" type="application/rss+xml"/><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
 &lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref2:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
 &lt;h2 id="物理光学演示lightpipes">物理光学演示：LightPipes&lt;/h2>
-&lt;figure>&lt;img src="lightpipes.png" width="50%"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/lightpipes.png" width="50%">
 &lt;/figure>
 &lt;p>正像我之前说的那样，我使用&lt;a href="https://github.com/opticspy/lightpipes">opticspy/lightpipes&lt;/a>完成了一部分激光物理过程的模拟，这个库大体上能够满足我当时的要求。但是要注意的是，个人感觉这个库是为了物理实验、教学演示而设计的，揭示原理的部分多于实际计算的部分，而且计算是序列化的。或许把它理解成类似&lt;a href="https://phet.colorado.edu/zh_CN/simulations/filter?subjects=physics&amp;amp;type=html">虚拟物理实验室&lt;/a>更好？&lt;/p>
 &lt;p>不过如果能力足够的话，大概能在上面实现一些比较复杂的功能。&lt;del>而且话又说回来，真正有一些严肃需求的人，早就去求助一些商业软件了。&lt;/del>&lt;/p>
 &lt;h2 id="光线追迹ray-tracing">光线追迹（Ray Tracing）&lt;/h2>
 &lt;p>在上次的博文里，在光线追迹方面，我曾经介绍过&lt;a href="https://github.com/Sterncat/opticspy">Sterncat/opticspy&lt;/a>，&lt;a href="https://github.com/quartiq/rayopt">RayOpt&lt;/a>和&lt;a href="https://github.com/cihologramas/pyoptools">cihologramas/pyoptools&lt;/a>，其中，前两组大概已经停止更新了，反而&lt;a href="https://github.com/cihologramas/pyoptools">pyoptools&lt;/a>看起来处于活跃开发的阶段。另外，这次我还看到了三个新鲜面孔：&lt;a href="https://github.com/mjhoptics/ray-optics">mjhoptics/ray-optics&lt;/a>、&lt;a href="https://salsa.debian.org/mess42/pyrate/">mess42/pyrate&lt;/a>和&lt;a href="https://github.com/bryancole/raypier_optics">bryancole/raypier_optics&lt;/a>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h3 id="ray-optics">ray-optics&lt;/h3>
-&lt;figure>&lt;img src="rayoptics.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/rayoptics.png">&lt;figcaption>
 &lt;h4>ray-optics的Qt界面&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -21,7 +21,7 @@
 &lt;p>非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）&lt;/p>
 &lt;p>&lt;a href="https://raypier-optics.readthedocs.io/en/latest/">文档&lt;/a>在这里。&lt;/p>
 &lt;h3 id="pyrate">pyrate&lt;/h3>
-&lt;figure>&lt;img src="pyrate_in_freecad.png"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/pyrate_in_freecad.png">
 &lt;/figure>
 &lt;p>正在写这篇博文的时候，我发现了这一套&lt;a href="https://salsa.debian.org/mess42/pyrate/">代码&lt;/a>，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。毕竟我还没找到文档在哪里……&lt;/p>
 &lt;h3 id="pyoptools">pyoptools&lt;/h3>
@@ -33,7 +33,7 @@
 &lt;p>我把&lt;a href="https://github.com/GNiendorf/tracepy">tracepy&lt;/a>、&lt;a href="https://github.com/kunguz/odak">odak&lt;/a>和&lt;a href="https://github.com/optcom-org/optcom">optcom&lt;/a>列在这里，只是为了之后不要重新发现它们了。求求你们好好写写文档吧……&lt;/p>
 &lt;h2 id="光学设计为望远镜日冕仪准备的python">光学设计：为望远镜/日冕仪准备的Python&lt;/h2>
 &lt;p>你想学习怎样设计日冕仪吗？&lt;/p>
-&lt;figure>&lt;img src="poppy.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/poppy.png">&lt;figcaption>
 &lt;h4>詹姆斯·韦伯空间望远镜的光学设计，来自poppy&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -46,18 +46,18 @@
 &lt;/ol>
 &lt;p>等。&lt;/p>
 &lt;p>它们大概都能够计算光学系统的点扩散函数（PSF）、调制传递函数（MTF）、点列图之类的，而优化算法似乎欠奉&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。如果你对上面的一系列名词不大了解的话，建议和我一起补习&lt;a href="http://www.optzmx.com/forum.php?mod=viewthread&amp;amp;tid=1131&amp;amp;highlight=%B9%E2%D1%A7%CF%B5%CD%B3">《光学系统设计》&lt;/a>。&lt;/p>
-&lt;figure>&lt;img src="know-everything.jpg"
-alt="我逐渐理解一切" width="30%"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/know-everything.jpg"
+alt="我逐渐理解一切" width="30%">
 &lt;/figure>
 &lt;p>这些库的对比可以看&lt;a href="https://arxiv.org/abs/1807.07042">这里&lt;/a>。&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>如果你真的想设计日冕仪的话也可以读一读这篇文献，那里对设计方法也有一些介绍。&lt;/p>
 &lt;p>就我而言，我比较喜欢&lt;code>HCIPy&lt;/code>，至少这里面还包含一些传递过程的内容，不至于直接跳到结论，和上个部分的库们更加接近一些。&lt;/p>
 &lt;h2 id="另一类光线追迹">另一类光线追迹&lt;/h2>
 &lt;p>这种的主要目的是为了让自己的文章显得更好看，所以我就直接放两张图：&lt;/p>
-&lt;figure>&lt;img src="raysect.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/raysect.png">&lt;figcaption>
 &lt;h4>Raysect生成的，就好像杂志封面一样&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="inkscape_ray_tracing.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/inkscape_ray_tracing.png">&lt;figcaption>
 &lt;h4>光线追迹——用inkscape更简单的画图方式&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -114,7 +114,7 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>TL; DR：光学计算是一个很宽泛的话题，针对我的要求，之后我大概会试试&lt;a href="https://github.com/opticspy/lightpipes">LightPipes&lt;/a>.&lt;/p>
 &lt;p>以下是我找到的一些库的对比。&lt;/p>
 &lt;h2 id="spacetelescopepoppyhttpsgithubcomspacetelescopepoppy">&lt;a href="https://github.com/spacetelescope/poppy">spacetelescope/poppy&lt;/a>&lt;/h2>
-&lt;figure>&lt;img src="poppy.png"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2019/08/04/python-for-optics/poppy.png">
 &lt;/figure>
 &lt;p>这个库本身是为詹姆斯·韦伯空间望远镜的模拟而设计的，从其&lt;a href="https://nbviewer.jupyter.org/github/spacetelescope/poppy/blob/master/notebooks/POPPY_tutorial.ipynb">tutorial&lt;/a>也可以看出，这个库的主要目的大概是，在衍射明显的条件下模拟成像过程、计算点扩散函数并分析成像质量，特别是针对天文望远镜领域。&lt;/p>
 &lt;p>因为我并不真正 &lt;em>理解&lt;/em> 光学成像，我并没有办法判断该库的潜在用途，不过在激光器设计方面该库可能并不适用。&lt;/p>

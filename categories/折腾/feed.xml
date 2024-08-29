@@ -1,5 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾 on 林中阴影</title><link>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</link><description>Recent content in 折腾 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 10 Aug 2023 20:35:54 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/feed.xml" rel="self" type="application/rss+xml"/><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
-&lt;figure>&lt;img src="figure.png"/>&lt;figcaption>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾 on 林中阴影</title><link>https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/</link><description>Recent content in 折腾 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 28 Aug 2024 22:06:45 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/%E6%8A%98%E8%85%BE/feed.xml" rel="self" type="application/rss+xml"/><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
+&lt;blockquote>
+&lt;p>不要问为什么，工作造就人呀。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>然后，如果显示器没有type-c一线通，还需要搞一个扩展坞。
+&lt;img src="dock.png" alt="dock">&lt;/p>
+&lt;ul>
+&lt;li>这种（盛惠25元）有各种贴牌，在充电时USB口是用不了的。建议另找一套蓝牙鼠标。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>把系统升级到Lineage OS 21，或者其他Android 14版本。每次更新，日志都说升级了桌面模式，每次都是一样的难用。&lt;/p>
+&lt;ul>
+&lt;li>如果是高贵的三星用户，就请当我没说过这句话。&lt;/li>
+&lt;li>另外，别用Oxygen OS，桌面模式布局一团乱麻；也别用&lt;code>Pixel Experience&lt;/code>，直接把手机干成&lt;code>Qualcomm CrashDump MODE&lt;/code>，我还以为200块白修了。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>插显示器的时候，不要用&lt;a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free">SecondScreen&lt;/a> APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的状态栏对我来说没有必要。
+&lt;img src="develop.jpg" alt="开发者模式选项">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>之后，连上显示器以后的Android桌面长这样。
+&lt;img src="desktop.png" alt="桌面">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>关于RDP客户端，建议不要用&lt;a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx">微软出品的APP&lt;/a>。据我测试，只有&lt;a href="https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager">Remote Desktop Manager&lt;/a>和&lt;a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP">aRDP Free&lt;/a>支持鼠标中键。后面那个是&lt;a href="https://github.com/iiordanov/remote-desktop-clients/">开源&lt;/a>的。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>按理说Moonlight也可以，不过还是RDP协议对4G友好点。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/figure.png">&lt;figcaption>
 &lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -41,15 +80,15 @@
 &lt;li>9.6W的部分是&lt;code>我家云&lt;/code>的贡献。孱弱的RK3328核心，捉襟见肘的2G内存，即使再加上一块500G的2.5寸机械硬盘，耗电量也仅为5.4W，作为小型文件服务器可以直接忘掉电费问题。&lt;/li>
 &lt;li>而&lt;code>蜗牛星际&lt;/code>就可以算上电老虎了。1块老旧SSD，两块老旧2.5寸和一块8T海淘盘带来了&lt;strong>高达&lt;/strong>40.8W的耗电，如果24小时开机的话每年会带来&lt;strong>高达&lt;/strong>一百多块的账单。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="%e4%bb%8a%e5%b9%b4.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/%E4%BB%8A%E5%B9%B4.png" width="50%">&lt;figcaption>
 &lt;h4>顺便一提，我家今年的耗电量长这样。这才仅仅是8月而已……&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>OK，当我今天没有更新过。&lt;/p></description></item><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
 &lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
 &lt;/blockquote>
-&lt;figure>&lt;img src="pikvm.png"
-alt="有较强的自我管理意识.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
+alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>有较强的自我管理意识.png&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -240,8 +279,8 @@ alt="有较强的自我管理意识.png"/>&lt;figcaption>
 &lt;p>然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none">寨板&lt;/a>，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html">屏闪&lt;/a>的问题。&lt;/p>
 &lt;p>再然后，找来找去，发现淘宝上居然有自称“官翻”的戴尔平板卖，2018年的I5-8250U大概也许会和2022年的I3-1115G3&lt;a href="https://cpu.userbenchmark.com/Compare/Intel-Core-i5-8350U-vs-Intel-Core-i3-1115G4/m388461vsm1333512">差不多&lt;/a>？&lt;/p>
 &lt;p>时间回到今天，我收到这台&lt;a href="https://www.dell.com/en-my/shop/cty/pdp/spd/latitude-12-5290-2-in-1-laptop">Latitude 5290&lt;/a>刚满一个月，而且还没有爆炸，我感到十分欣慰：&lt;/p>
-&lt;figure>&lt;img src="BIOS.png"
-alt="第一次开机"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2022/03/04/new-tablet/BIOS.png"
+alt="第一次开机">&lt;figcaption>
 &lt;p>第一次开机&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -596,13 +635,13 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
 &lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
 &lt;/ol>
-&lt;figure>&lt;img src="ipv6-test.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png">&lt;figcaption>
 &lt;h4>比如这样&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="打开端口">打开端口&lt;/h2>
 &lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
-&lt;figure>&lt;img src="ipv6-firewall.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png">&lt;figcaption>
 &lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1208,11 +1247,11 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>在图书馆的第三天，到了废纸回收环节&lt;/p>
 &lt;/blockquote>
 &lt;p>之前下到了一叠厚厚的&lt;a href="https://digitalcollections.nypl.org/collections/trait-des-arbres-et-arbustes-que-lon-cultive-en-france-en-pleine-terre#/?tab=about">图集&lt;/a>，可是要真正用起来，还需要一点点简单的处理，比如说，沿着边线把图案剪下来：
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/before.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/before.jpg">&lt;figcaption>
 &lt;h4>加工前&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/after.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/after.png">&lt;figcaption>
 &lt;h4>加工后&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1230,7 +1269,7 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>当然，如果只是想下片的话，用&lt;a href="https://github.com/NYPL-publicdomain/api-client">digital-collections&lt;/a>可能会更简单一些：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>API_TOKEN&lt;/code>在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50">比如这个&lt;/a>）下面，可以看到&lt;code>UUID&lt;/code>；运行这条命令之后，图片的信息列表会保存在&lt;code>OUTPUT.json&lt;/code>里。&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png">&lt;figcaption>
 &lt;h4>对，就是那个Universal Unique Identifier&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1284,17 +1323,17 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>所以，在春节假期，坐在电脑前面，我也可以来一次纽约公共图书馆了——而且是一百年前的！&lt;/p>
 &lt;p>&lt;a href="https://digitalcollections.nypl.org/">这里&lt;/a>是数字图书馆的首页。如果是一位上世纪的通才，通晓法文、英文拉丁文和其他鸟语，他一定会感觉像是回到了家里一样；当然，即使像我这样的乡巴佬，看一看泛黄的插画，或许也能得到一些乐趣，比如说：&lt;/p>
 &lt;h3 id="看看喜马拉雅山上都长些什么httpsdigitalcollectionsnyplorgcollectionsnature-illustrated-flowers-plants-and-trees-1550-1900tabnavigationroots11c51cb7e0-c6ba-012f-206d-3c075448cc4b">&lt;a href="https://digitalcollections.nypl.org/collections/nature-illustrated-flowers-plants-and-trees-1550-1900#/?tab=navigation&amp;amp;roots=11:c51cb7e0-c6ba-012f-206d-3c075448cc4b">看看喜马拉雅山上都长些什么&lt;/a>&lt;/h3>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg">&lt;figcaption>
 &lt;h4>嗯，是杂草&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h3 id="学习下最新的流行风尚httpsdigitalcollectionsnyplorgcollectionsnewest-styles-for-mentababout">&lt;a href="https://digitalcollections.nypl.org/collections/newest-styles-for-men#/?tab=about">学习下最新的流行风尚&lt;/a>&lt;/h3>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg">&lt;figcaption>
 &lt;h4>唔哦，好男人&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h3 id="或者来辆新车httpsdigitalcollectionsnyplorgcollectionsalbum-of-illustrations-of-imperial-royal-state-carriages-together-with-othertababout">&lt;a href="https://digitalcollections.nypl.org/collections/album-of-illustrations-of-imperial-royal-state-carriages-together-with-other#/?tab=about">或者来辆新车？&lt;/a>&lt;/h3>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg">&lt;figcaption>
 &lt;h4>如果从这时候就开始摇号的话……&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1373,10 +1412,10 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>在这里使用kcpraw包装原来shadowsocks的流量（纯粹是因为virtualbox没配好用不了udp2raw），假设读者有基本的linux知识并已经部署了shadowsocks。&lt;/p>
 &lt;h2 id="服务器端">服务器端&lt;/h2>
 &lt;h3 id="下载kcpraw">下载kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>mkdir ~/kcpraw
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd ~/kcpraw
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw-linux-amd64-20171021.tar.gz
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span style="display:flex;">&lt;span>mkdir &lt;span style="color:#555">~/&lt;/span>kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd &lt;span style="color:#555">~/&lt;/span>kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https:&lt;span style="color:#555">//&lt;/span>github&lt;span style="color:#555">.&lt;/span>com&lt;span style="color:#555">/&lt;/span>ccsexyz&lt;span style="color:#555">/&lt;/span>kcpraw&lt;span style="color:#555">/&lt;/span>releases&lt;span style="color:#555">/&lt;/span>download&lt;span style="color:#555">/&lt;/span>v20171019&lt;span style="color:#555">/&lt;/span>kcpraw&lt;span style="color:#555">-&lt;/span>linux&lt;span style="color:#555">-&lt;/span>amd64&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">20171021.&lt;/span>tar&lt;span style="color:#555">.&lt;/span>gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw&lt;span style="color:#555">-&lt;/span>linux&lt;span style="color:#555">-&lt;/span>amd64&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">20171021.&lt;/span>tar&lt;span style="color:#555">.&lt;/span>gz
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>

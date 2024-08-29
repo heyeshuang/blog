@@ -29,7 +29,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show()
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/>&lt;figcaption>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png">&lt;figcaption>
 &lt;h4>阶梯形状可能是由于概率相等&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -48,7 +48,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/>&lt;figcaption>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png">&lt;figcaption>
 &lt;h4>可惜这只是个指数分布&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>

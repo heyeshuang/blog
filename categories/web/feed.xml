@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web on 林中阴影</title><link>https://blog.heysh.xyz/categories/web/</link><description>Recent content in web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on 林中阴影</title><link>https://blog.heysh.xyz/categories/web/</link><description>Recent content in Web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
 &lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -7,13 +7,13 @@
 &lt;h2 id="为什么">为什么&lt;/h2>
 &lt;p>正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">前文&lt;/a>所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p>
 &lt;p>然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>或&lt;a href="https://github.com/heiher/natmap">natmap&lt;/a>，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p>
-&lt;p>&lt;figure>&lt;img src="ping1.png"
-alt="从广东联通到北京联通。"/>&lt;figcaption>
+&lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping1.png"
+alt="从广东联通到北京联通。">&lt;figcaption>
 &lt;p>从广东联通到北京联通。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="ping2.png"
-alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping2.png"
+alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。">&lt;figcaption>
 &lt;p>从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -60,8 +60,8 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;/ol>
 &lt;p>在Windows 11, Powershell 5.1.22621.963测试通过，也可以配合Windows下的&lt;a href="https://bjansen.github.io/scoop-apps/main/sudo/">sudo&lt;/a>使用。&lt;/p>
 &lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~&lt;/p>
-&lt;figure>&lt;img src="%e8%bf%9e%e6%8e%a5%e6%97%b6%e9%97%b4.png"
-alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4.png"
+alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。">&lt;figcaption>
 &lt;p>我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -73,18 +73,18 @@ alt="我这里最近一次分配的端口坚持了18天，所以应该不必时�
 &lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>
 &lt;/blockquote>
 &lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
-&lt;p>&lt;figure>&lt;img src="iperf-1.svg"
-alt="WireGuard for Android"/>&lt;figcaption>
+&lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
+alt="WireGuard for Android">&lt;figcaption>
 &lt;p>WireGuard for Android&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="iperf-2.svg"
-alt="NB4A提供的Wireguard Outbound"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-2.svg"
+alt="NB4A提供的Wireguard Outbound">&lt;figcaption>
 &lt;p>NB4A提供的Wireguard Outbound&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="iperf-3.svg"
-alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-3.svg"
+alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;p>Nebula，对端部署在路由器上&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -116,11 +116,11 @@ alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> cloudflare&lt;span style="color:#09f;font-style:italic"> #申请证书的部分
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code>https://home.example.net:38000&lt;/code>访问服务了。&lt;/p>
 &lt;h2 id="cloudflare">Cloudflare&lt;/h2>
-&lt;figure>&lt;img src="SSL_TLS.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/SSL_TLS.png">&lt;figcaption>
 &lt;h4>把SSL/TLS加密模式改为完全；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="Origin_Rules.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/Origin_Rules.png">&lt;figcaption>
 &lt;h4>添加Origin Rules，把请求转至高位端口；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -134,13 +134,13 @@ alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
 &lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
 &lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
 &lt;/ol>
-&lt;figure>&lt;img src="ipv6-test.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png">&lt;figcaption>
 &lt;h4>比如这样&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="打开端口">打开端口&lt;/h2>
 &lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
-&lt;figure>&lt;img src="ipv6-firewall.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png">&lt;figcaption>
 &lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -176,15 +176,15 @@ alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
 （万一我在很久之后换掉了主题，这里还有一些截图。）
 &lt;/h4>
 &lt;/summary>
-&lt;figure>&lt;img src="screenshot1.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot1.png">&lt;figcaption>
 &lt;h4>主页的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="screenshot2.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot2.png">&lt;figcaption>
 &lt;h4>内文的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="screenshot3.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot3.png">&lt;figcaption>
 &lt;h4>在手机上的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>

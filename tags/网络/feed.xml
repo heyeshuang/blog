@@ -43,10 +43,10 @@
 &lt;p>在这里使用kcpraw包装原来shadowsocks的流量（纯粹是因为virtualbox没配好用不了udp2raw），假设读者有基本的linux知识并已经部署了shadowsocks。&lt;/p>
 &lt;h2 id="服务器端">服务器端&lt;/h2>
 &lt;h3 id="下载kcpraw">下载kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>mkdir ~/kcpraw
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd ~/kcpraw
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw-linux-amd64-20171021.tar.gz
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span style="display:flex;">&lt;span>mkdir &lt;span style="color:#555">~/&lt;/span>kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd &lt;span style="color:#555">~/&lt;/span>kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https:&lt;span style="color:#555">//&lt;/span>github&lt;span style="color:#555">.&lt;/span>com&lt;span style="color:#555">/&lt;/span>ccsexyz&lt;span style="color:#555">/&lt;/span>kcpraw&lt;span style="color:#555">/&lt;/span>releases&lt;span style="color:#555">/&lt;/span>download&lt;span style="color:#555">/&lt;/span>v20171019&lt;span style="color:#555">/&lt;/span>kcpraw&lt;span style="color:#555">-&lt;/span>linux&lt;span style="color:#555">-&lt;/span>amd64&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">20171021.&lt;/span>tar&lt;span style="color:#555">.&lt;/span>gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw&lt;span style="color:#555">-&lt;/span>linux&lt;span style="color:#555">-&lt;/span>amd64&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">20171021.&lt;/span>tar&lt;span style="color:#555">.&lt;/span>gz
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>

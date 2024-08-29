@@ -25,11 +25,11 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> cloudflare&lt;span style="color:#09f;font-style:italic"> #申请证书的部分
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code>https://home.example.net:38000&lt;/code>访问服务了。&lt;/p>
 &lt;h2 id="cloudflare">Cloudflare&lt;/h2>
-&lt;figure>&lt;img src="SSL_TLS.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/SSL_TLS.png">&lt;figcaption>
 &lt;h4>把SSL/TLS加密模式改为完全；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="Origin_Rules.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/Origin_Rules.png">&lt;figcaption>
 &lt;h4>添加Origin Rules，把请求转至高位端口；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>

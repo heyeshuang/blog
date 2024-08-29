@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on 林中阴影</title><link>https://blog.heysh.xyz/tags/hugo/</link><description>Recent content in hugo on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/hugo/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 林中阴影</title><link>https://blog.heysh.xyz/tags/hugo/</link><description>Recent content in Hugo on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/hugo/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p>&lt;img src="mockup2.png" alt="mockup">&lt;/p>
 &lt;p>项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa">https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a>&lt;/p>
 &lt;p>大概是3月末，我在例行的&lt;code>检查博客有没有自己偷偷更新&lt;/code>的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del>打牌&lt;/del>&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/">狩猎&lt;/a>之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p>
 &lt;p>中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p>
@@ -8,15 +8,15 @@
 （万一我在很久之后换掉了主题，这里还有一些截图。）
 &lt;/h4>
 &lt;/summary>
-&lt;figure>&lt;img src="screenshot1.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot1.png">&lt;figcaption>
 &lt;h4>主页的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="screenshot2.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot2.png">&lt;figcaption>
 &lt;h4>内文的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="screenshot3.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot3.png">&lt;figcaption>
 &lt;h4>在手机上的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>

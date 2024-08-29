@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RDP on 林中阴影</title><link>https://blog.heysh.xyz/tags/rdp/</link><description>Recent content in RDP on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 28 Aug 2024 22:06:45 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/rdp/feed.xml" rel="self" type="application/rss+xml"/><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
+&lt;blockquote>
+&lt;p>不要问为什么，工作造就人呀。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>然后，如果显示器没有type-c一线通，还需要搞一个扩展坞。
+&lt;img src="dock.png" alt="dock">&lt;/p>
+&lt;ul>
+&lt;li>这种（盛惠25元）有各种贴牌，在充电时USB口是用不了的。建议另找一套蓝牙鼠标。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>把系统升级到Lineage OS 21，或者其他Android 14版本。每次更新，日志都说升级了桌面模式，每次都是一样的难用。&lt;/p>
+&lt;ul>
+&lt;li>如果是高贵的三星用户，就请当我没说过这句话。&lt;/li>
+&lt;li>另外，别用Oxygen OS，桌面模式布局一团乱麻；也别用&lt;code>Pixel Experience&lt;/code>，直接把手机干成&lt;code>Qualcomm CrashDump MODE&lt;/code>，我还以为200块白修了。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>插显示器的时候，不要用&lt;a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free">SecondScreen&lt;/a> APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的状态栏对我来说没有必要。
+&lt;img src="develop.jpg" alt="开发者模式选项">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>之后，连上显示器以后的Android桌面长这样。
+&lt;img src="desktop.png" alt="桌面">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>关于RDP客户端，建议不要用&lt;a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx">微软出品的APP&lt;/a>。据我测试，只有&lt;a href="https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager">Remote Desktop Manager&lt;/a>和&lt;a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP">aRDP Free&lt;/a>支持鼠标中键。后面那个是&lt;a href="https://github.com/iiordanov/remote-desktop-clients/">开源&lt;/a>的。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>按理说Moonlight也可以，不过还是RDP协议对4G友好点。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

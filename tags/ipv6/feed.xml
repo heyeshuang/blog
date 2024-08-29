@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ipv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in ipv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 07 Feb 2023 17:29:00 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IPv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in IPv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 07 Feb 2023 17:29:00 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
 &lt;p>在这种场景，如果：&lt;/p>
 &lt;ol>
 &lt;li>有一台常开的NAS、矿渣或whatever，&lt;/li>
@@ -25,11 +25,11 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> cloudflare&lt;span style="color:#09f;font-style:italic"> #申请证书的部分
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code>https://home.example.net:38000&lt;/code>访问服务了。&lt;/p>
 &lt;h2 id="cloudflare">Cloudflare&lt;/h2>
-&lt;figure>&lt;img src="SSL_TLS.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/SSL_TLS.png">&lt;figcaption>
 &lt;h4>把SSL/TLS加密模式改为完全；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="Origin_Rules.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/Origin_Rules.png">&lt;figcaption>
 &lt;h4>添加Origin Rules，把请求转至高位端口；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -43,13 +43,13 @@
 &lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
 &lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
 &lt;/ol>
-&lt;figure>&lt;img src="ipv6-test.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png">&lt;figcaption>
 &lt;h4>比如这样&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="打开端口">打开端口&lt;/h2>
 &lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
-&lt;figure>&lt;img src="ipv6-firewall.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png">&lt;figcaption>
 &lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -76,11 +76,11 @@
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>短消息：联通IPV6</title><link>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</link><pubDate>Sun, 03 Sep 2017 23:11:32 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid><description>&lt;p>似乎是使用teredo。Good Job！&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/ipv6-test.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/ipv6-test.png">&lt;figcaption>
 &lt;h4>IPV6测试&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/torrent.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/torrent.png">&lt;figcaption>
 &lt;h4>PT测试&lt;/h4>
 &lt;/figcaption>
 &lt;/figure></description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>

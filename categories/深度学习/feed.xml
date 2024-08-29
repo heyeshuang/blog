@@ -48,7 +48,7 @@
 &lt;h3 id="需要的超参数">需要的超参数&lt;/h3>
 &lt;ul>
 &lt;li>α，学习率/learning rate&lt;/li>
-&lt;li>β1~0.9，β2~0.999，ε~1e-8（Adam中的参数）&lt;/li>
+&lt;li>β1&lt;del>0.9，β2&lt;/del>0.999，ε~1e-8（Adam中的参数）&lt;/li>
 &lt;li>层数&lt;/li>
 &lt;li>每层单元&lt;/li>
 &lt;li>学习率衰减&lt;/li>

@@ -1,5 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 10 Aug 2023 20:35:54 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
-&lt;figure>&lt;img src="figure.png"/>&lt;figcaption>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 28 Aug 2024 22:06:45 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
+&lt;blockquote>
+&lt;p>不要问为什么，工作造就人呀。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>然后，如果显示器没有type-c一线通，还需要搞一个扩展坞。
+&lt;img src="dock.png" alt="dock">&lt;/p>
+&lt;ul>
+&lt;li>这种（盛惠25元）有各种贴牌，在充电时USB口是用不了的。建议另找一套蓝牙鼠标。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>把系统升级到Lineage OS 21，或者其他Android 14版本。每次更新，日志都说升级了桌面模式，每次都是一样的难用。&lt;/p>
+&lt;ul>
+&lt;li>如果是高贵的三星用户，就请当我没说过这句话。&lt;/li>
+&lt;li>另外，别用Oxygen OS，桌面模式布局一团乱麻；也别用&lt;code>Pixel Experience&lt;/code>，直接把手机干成&lt;code>Qualcomm CrashDump MODE&lt;/code>，我还以为200块白修了。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>插显示器的时候，不要用&lt;a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free">SecondScreen&lt;/a> APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的状态栏对我来说没有必要。
+&lt;img src="develop.jpg" alt="开发者模式选项">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>之后，连上显示器以后的Android桌面长这样。
+&lt;img src="desktop.png" alt="桌面">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>关于RDP客户端，建议不要用&lt;a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx">微软出品的APP&lt;/a>。据我测试，只有&lt;a href="https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager">Remote Desktop Manager&lt;/a>和&lt;a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP">aRDP Free&lt;/a>支持鼠标中键。后面那个是&lt;a href="https://github.com/iiordanov/remote-desktop-clients/">开源&lt;/a>的。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>按理说Moonlight也可以，不过还是RDP协议对4G友好点。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/figure.png">&lt;figcaption>
 &lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -41,15 +80,15 @@
 &lt;li>9.6W的部分是&lt;code>我家云&lt;/code>的贡献。孱弱的RK3328核心，捉襟见肘的2G内存，即使再加上一块500G的2.5寸机械硬盘，耗电量也仅为5.4W，作为小型文件服务器可以直接忘掉电费问题。&lt;/li>
 &lt;li>而&lt;code>蜗牛星际&lt;/code>就可以算上电老虎了。1块老旧SSD，两块老旧2.5寸和一块8T海淘盘带来了&lt;strong>高达&lt;/strong>40.8W的耗电，如果24小时开机的话每年会带来&lt;strong>高达&lt;/strong>一百多块的账单。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="%e4%bb%8a%e5%b9%b4.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/%E4%BB%8A%E5%B9%B4.png" width="50%">&lt;figcaption>
 &lt;h4>顺便一提，我家今年的耗电量长这样。这才仅仅是8月而已……&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>OK，当我今天没有更新过。&lt;/p></description></item><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
 &lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
 &lt;/blockquote>
-&lt;figure>&lt;img src="pikvm.png"
-alt="有较强的自我管理意识.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
+alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>有较强的自我管理意识.png&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -139,13 +178,13 @@ alt="有较强的自我管理意识.png"/>&lt;figcaption>
 &lt;h2 id="为什么">为什么&lt;/h2>
 &lt;p>正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">前文&lt;/a>所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p>
 &lt;p>然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>或&lt;a href="https://github.com/heiher/natmap">natmap&lt;/a>，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p>
-&lt;p>&lt;figure>&lt;img src="ping1.png"
-alt="从广东联通到北京联通。"/>&lt;figcaption>
+&lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping1.png"
+alt="从广东联通到北京联通。">&lt;figcaption>
 &lt;p>从广东联通到北京联通。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="ping2.png"
-alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping2.png"
+alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。">&lt;figcaption>
 &lt;p>从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -192,8 +231,8 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;/ol>
 &lt;p>在Windows 11, Powershell 5.1.22621.963测试通过，也可以配合Windows下的&lt;a href="https://bjansen.github.io/scoop-apps/main/sudo/">sudo&lt;/a>使用。&lt;/p>
 &lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~&lt;/p>
-&lt;figure>&lt;img src="%e8%bf%9e%e6%8e%a5%e6%97%b6%e9%97%b4.png"
-alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4.png"
+alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。">&lt;figcaption>
 &lt;p>我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -205,18 +244,18 @@ alt="我这里最近一次分配的端口坚持了18天，所以应该不必时�
 &lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>
 &lt;/blockquote>
 &lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
-&lt;p>&lt;figure>&lt;img src="iperf-1.svg"
-alt="WireGuard for Android"/>&lt;figcaption>
+&lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
+alt="WireGuard for Android">&lt;figcaption>
 &lt;p>WireGuard for Android&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="iperf-2.svg"
-alt="NB4A提供的Wireguard Outbound"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-2.svg"
+alt="NB4A提供的Wireguard Outbound">&lt;figcaption>
 &lt;p>NB4A提供的Wireguard Outbound&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="iperf-3.svg"
-alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-3.svg"
+alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;p>Nebula，对端部署在路由器上&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -265,8 +304,8 @@ alt="Nebula，对端部署在路由器上"/>&lt;figcaption>
 &lt;p>又名device tracker，与路由器有关，我用了&lt;a href="https://www.home-assistant.io/integrations/luci/">OpenWrt (luci)&lt;/a>集成。独居的话，&lt;a href="https://github.com/AlexxIT/XiaomiGateway3/wiki/Handle-BLE-Locks">BLE门锁&lt;/a>也能完成类似的工作。控制欲更强的朋友可以尝试&lt;a href="https://github.com/ESPresense/ESPresense">ESPresense&lt;/a>，应该是能到房间级别。&lt;/p>
 &lt;h2 id="零冷水">零冷水&lt;/h2>
 &lt;p>如果你像我家一样，燃气热水器/壁挂炉离浴室太远，需要一套零冷水系统，那么首先需要把回水管留好。然后……最好能搞点&lt;a href="https://www.xiaomiyoupin.com/detail?gid=152447">成品系统&lt;/a>，不要像我一样用&lt;a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.ef352e8dz7aUZB">屏蔽泵&lt;/a>和智能开关解决，毕竟这玩意还是有一定难度的。
-&lt;figure>&lt;img src="pump.jpg"
-alt="设计水路和买接头全要靠自己了。"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/03/08/silly-home-notes-detailed/pump.jpg"
+alt="设计水路和买接头全要靠自己了。">&lt;figcaption>
 &lt;p>设计水路和买接头全要靠自己了。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -419,8 +458,8 @@ alt="设计水路和买接头全要靠自己了。"/>&lt;figcaption>
 &lt;/table>
 &lt;/details>
 &lt;p>Aqara在闲鱼买会显得不那么冤大头，杜亚牌电机也比杜亚代工的Aqara电机便宜很多。家电方面，美的和其副牌（小天鹅、华凌、colmo之类）一般自带网络功能，通过插件&lt;a href="https://github.com/georgezhao2010/midea_ac_lan">midea_ac_lan&lt;/a>和HA配合的很不错。&lt;/p>
-&lt;figure>&lt;img src="midea.png"
-alt="美的营销号矩阵"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/midea.png"
+alt="美的营销号矩阵">&lt;figcaption>
 &lt;p>美的营销号矩阵&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -428,8 +467,8 @@ alt="美的营销号矩阵"/>&lt;figcaption>
 &lt;h2 id="安装和设置">安装和设置&lt;/h2>
 &lt;p>安装HA的部分在此不再赘述。通过米家APP配置以上的所有设备，并使用&lt;a href="https://github.com/al-one/hass-xiaomi-miot">hass-xiaomi-miot&lt;/a>和&lt;a href="https://github.com/AlexxIT/XiaomiGateway3#supported-firmwares">XiaomiGateway3&lt;/a>导入HA。这里需要注意的是，&lt;code>hass-xiaomi-miot&lt;/code>集成只能对WiFi设备进行本地控制，对Zigbee和BLE设备&lt;a href="https://github.com/al-one/hass-xiaomi-miot/issues/100#issuecomment-855183156">需要通过米家服务器&lt;/a>。所以最好由&lt;code>gateway3&lt;/code>控制这些设备，在&lt;code>hass-xiaomi-miot&lt;/code>集成中禁用。&lt;/p>
 &lt;p>考虑到安装非智能灯的可能性，我采用了&lt;code>智能开关+智能灯&lt;/code>的组合，这种组合更为保守，&lt;code>凌动开关+支持凌动的智能灯&lt;/code>效果大概会更好。在把所有智能灯配置完成后，在米家APP上把链接智能灯的开关&lt;code>转为无线开关&lt;/code>，然后在HA中设置自动化，感觉比米家自动化的反应更灵敏一些。不过，为了防止在HA断掉时挨骂，我也在米家APP上添加了备份：在同时按下开关左右键的时候关闭智能灯。&lt;/p>
-&lt;figure>&lt;img src="double-auto.jpg"
-alt="HA和米家设置自动化"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/double-auto.jpg"
+alt="HA和米家设置自动化">&lt;figcaption>
 &lt;p>HA和米家设置自动化&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -441,8 +480,8 @@ alt="HA和米家设置自动化"/>&lt;figcaption>
 &lt;p>&lt;a href="https://detail.1688.com/offer/662976153559.html?spm=a26352.13672862.offerlist.49.3a512910uzdgfQ">Sonoff NSPanel&lt;/a>应该是最便宜的智能面板了，而且可以刷第三方固件&lt;a href="https://github.com/joBr99/nspanel-lovelace-ui">lovelace-ui&lt;/a>或&lt;a href="https://github.com/Blackymas/NSPanel_HA_Blueprint">NSPanel_HA_Blueprint&lt;/a>，可玩性非常高。&lt;/p>
 &lt;p>&lt;img src="nspanel-rl.png" alt="NSPanel Lovelace UI">&lt;/p>
 &lt;p>如果需要更大的屏幕，甚至可以在仓库里找一些淘汰的设备，比如说还能亮的山寨平板、二手安卓手机、闲鱼低价带屏开发板之类。通过&lt;a href="https://wallpanel.xyz/">WallPanel&lt;/a>和&lt;a href="https://github.com/NemesisRE/kiosk-mode">HA的kiosk-mode插件&lt;/a>，可以让这些设备直接成为HA的前端显示&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
-&lt;figure>&lt;img src="panel.jpg"
-alt="一个二手安卓触摸屏"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/panel.jpg"
+alt="一个二手安卓触摸屏">&lt;figcaption>
 &lt;p>一个二手安卓触摸屏&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -499,11 +538,11 @@ alt="一个二手安卓触摸屏"/>&lt;figcaption>
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> cloudflare&lt;span style="color:#09f;font-style:italic"> #申请证书的部分
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code>https://home.example.net:38000&lt;/code>访问服务了。&lt;/p>
 &lt;h2 id="cloudflare">Cloudflare&lt;/h2>
-&lt;figure>&lt;img src="SSL_TLS.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/SSL_TLS.png">&lt;figcaption>
 &lt;h4>把SSL/TLS加密模式改为完全；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="Origin_Rules.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/Origin_Rules.png">&lt;figcaption>
 &lt;h4>添加Origin Rules，把请求转至高位端口；&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -652,8 +691,8 @@ alt="一个二手安卓触摸屏"/>&lt;figcaption>
 &lt;p>然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none">寨板&lt;/a>，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html">屏闪&lt;/a>的问题。&lt;/p>
 &lt;p>再然后，找来找去，发现淘宝上居然有自称“官翻”的戴尔平板卖，2018年的I5-8250U大概也许会和2022年的I3-1115G3&lt;a href="https://cpu.userbenchmark.com/Compare/Intel-Core-i5-8350U-vs-Intel-Core-i3-1115G4/m388461vsm1333512">差不多&lt;/a>？&lt;/p>
 &lt;p>时间回到今天，我收到这台&lt;a href="https://www.dell.com/en-my/shop/cty/pdp/spd/latitude-12-5290-2-in-1-laptop">Latitude 5290&lt;/a>刚满一个月，而且还没有爆炸，我感到十分欣慰：&lt;/p>
-&lt;figure>&lt;img src="BIOS.png"
-alt="第一次开机"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2022/03/04/new-tablet/BIOS.png"
+alt="第一次开机">&lt;figcaption>
 &lt;p>第一次开机&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -1002,14 +1041,14 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;/div></description></item><item><title>Python与光学计算，2021</title><link>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</link><pubDate>Wed, 21 Jul 2021 18:14:49 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/</guid><description>&lt;p>本文是&lt;a href="https://blog.heysh.xyz/2019/08/04/python-for-optics/">2019年同名博文&lt;/a>的更新版本。就像在那里说的，光学计算是一个非常宽泛的话题，把所有的库放在一起，倒是具有一种&lt;ruby>全栈&lt;rp>(&lt;/rp>&lt;rt>full-stack&lt;/rt>&lt;rp>)&lt;/rp>&lt;/ruby>工程师的气质，可是好像很容易造成&lt;em>Stack Overflow&lt;/em>。&lt;/p>
 &lt;p>这次，我尝试对这些代码进行简单的分类。因为我不属于&lt;em>光学前端工程师&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，也不属于&lt;em>光学后端工程师&lt;/em>&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而更像是&lt;em>光学系统运维&lt;/em>&lt;sup id="fnref2:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，分类得大概并不算准确。&lt;/p>
 &lt;h2 id="物理光学演示lightpipes">物理光学演示：LightPipes&lt;/h2>
-&lt;figure>&lt;img src="lightpipes.png" width="50%"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/lightpipes.png" width="50%">
 &lt;/figure>
 &lt;p>正像我之前说的那样，我使用&lt;a href="https://github.com/opticspy/lightpipes">opticspy/lightpipes&lt;/a>完成了一部分激光物理过程的模拟，这个库大体上能够满足我当时的要求。但是要注意的是，个人感觉这个库是为了物理实验、教学演示而设计的，揭示原理的部分多于实际计算的部分，而且计算是序列化的。或许把它理解成类似&lt;a href="https://phet.colorado.edu/zh_CN/simulations/filter?subjects=physics&amp;amp;type=html">虚拟物理实验室&lt;/a>更好？&lt;/p>
 &lt;p>不过如果能力足够的话，大概能在上面实现一些比较复杂的功能。&lt;del>而且话又说回来，真正有一些严肃需求的人，早就去求助一些商业软件了。&lt;/del>&lt;/p>
 &lt;h2 id="光线追迹ray-tracing">光线追迹（Ray Tracing）&lt;/h2>
 &lt;p>在上次的博文里，在光线追迹方面，我曾经介绍过&lt;a href="https://github.com/Sterncat/opticspy">Sterncat/opticspy&lt;/a>，&lt;a href="https://github.com/quartiq/rayopt">RayOpt&lt;/a>和&lt;a href="https://github.com/cihologramas/pyoptools">cihologramas/pyoptools&lt;/a>，其中，前两组大概已经停止更新了，反而&lt;a href="https://github.com/cihologramas/pyoptools">pyoptools&lt;/a>看起来处于活跃开发的阶段。另外，这次我还看到了三个新鲜面孔：&lt;a href="https://github.com/mjhoptics/ray-optics">mjhoptics/ray-optics&lt;/a>、&lt;a href="https://salsa.debian.org/mess42/pyrate/">mess42/pyrate&lt;/a>和&lt;a href="https://github.com/bryancole/raypier_optics">bryancole/raypier_optics&lt;/a>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h3 id="ray-optics">ray-optics&lt;/h3>
-&lt;figure>&lt;img src="rayoptics.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/rayoptics.png">&lt;figcaption>
 &lt;h4>ray-optics的Qt界面&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1022,7 +1061,7 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）&lt;/p>
 &lt;p>&lt;a href="https://raypier-optics.readthedocs.io/en/latest/">文档&lt;/a>在这里。&lt;/p>
 &lt;h3 id="pyrate">pyrate&lt;/h3>
-&lt;figure>&lt;img src="pyrate_in_freecad.png"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/pyrate_in_freecad.png">
 &lt;/figure>
 &lt;p>正在写这篇博文的时候，我发现了这一套&lt;a href="https://salsa.debian.org/mess42/pyrate/">代码&lt;/a>，似乎可以与FreeCAD互动，但是更具体的功能和特性还没有仔细看。毕竟我还没找到文档在哪里……&lt;/p>
 &lt;h3 id="pyoptools">pyoptools&lt;/h3>
@@ -1034,7 +1073,7 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;p>我把&lt;a href="https://github.com/GNiendorf/tracepy">tracepy&lt;/a>、&lt;a href="https://github.com/kunguz/odak">odak&lt;/a>和&lt;a href="https://github.com/optcom-org/optcom">optcom&lt;/a>列在这里，只是为了之后不要重新发现它们了。求求你们好好写写文档吧……&lt;/p>
 &lt;h2 id="光学设计为望远镜日冕仪准备的python">光学设计：为望远镜/日冕仪准备的Python&lt;/h2>
 &lt;p>你想学习怎样设计日冕仪吗？&lt;/p>
-&lt;figure>&lt;img src="poppy.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/poppy.png">&lt;figcaption>
 &lt;h4>詹姆斯·韦伯空间望远镜的光学设计，来自poppy&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1047,18 +1086,18 @@ alt="第一次开机"/>&lt;figcaption>
 &lt;/ol>
 &lt;p>等。&lt;/p>
 &lt;p>它们大概都能够计算光学系统的点扩散函数（PSF）、调制传递函数（MTF）、点列图之类的，而优化算法似乎欠奉&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。如果你对上面的一系列名词不大了解的话，建议和我一起补习&lt;a href="http://www.optzmx.com/forum.php?mod=viewthread&amp;amp;tid=1131&amp;amp;highlight=%B9%E2%D1%A7%CF%B5%CD%B3">《光学系统设计》&lt;/a>。&lt;/p>
-&lt;figure>&lt;img src="know-everything.jpg"
-alt="我逐渐理解一切" width="30%"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/know-everything.jpg"
+alt="我逐渐理解一切" width="30%">
 &lt;/figure>
 &lt;p>这些库的对比可以看&lt;a href="https://arxiv.org/abs/1807.07042">这里&lt;/a>。&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>如果你真的想设计日冕仪的话也可以读一读这篇文献，那里对设计方法也有一些介绍。&lt;/p>
 &lt;p>就我而言，我比较喜欢&lt;code>HCIPy&lt;/code>，至少这里面还包含一些传递过程的内容，不至于直接跳到结论，和上个部分的库们更加接近一些。&lt;/p>
 &lt;h2 id="另一类光线追迹">另一类光线追迹&lt;/h2>
 &lt;p>这种的主要目的是为了让自己的文章显得更好看，所以我就直接放两张图：&lt;/p>
-&lt;figure>&lt;img src="raysect.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/raysect.png">&lt;figcaption>
 &lt;h4>Raysect生成的，就好像杂志封面一样&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="inkscape_ray_tracing.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/inkscape_ray_tracing.png">&lt;figcaption>
 &lt;h4>光线追迹——用inkscape更简单的画图方式&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1111,13 +1150,13 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
 &lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
 &lt;/ol>
-&lt;figure>&lt;img src="ipv6-test.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png">&lt;figcaption>
 &lt;h4>比如这样&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="打开端口">打开端口&lt;/h2>
 &lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
-&lt;figure>&lt;img src="ipv6-firewall.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png">&lt;figcaption>
 &lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1225,15 +1264,15 @@ alt="我逐渐理解一切" width="30%"/>
 （万一我在很久之后换掉了主题，这里还有一些截图。）
 &lt;/h4>
 &lt;/summary>
-&lt;figure>&lt;img src="screenshot1.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot1.png">&lt;figcaption>
 &lt;h4>主页的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="screenshot2.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot2.png">&lt;figcaption>
 &lt;h4>内文的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="screenshot3.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot3.png">&lt;figcaption>
 &lt;h4>在手机上的样子&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -1460,7 +1499,7 @@ alt="我逐渐理解一切" width="30%"/>
 &lt;p>TL; DR：光学计算是一个很宽泛的话题，针对我的要求，之后我大概会试试&lt;a href="https://github.com/opticspy/lightpipes">LightPipes&lt;/a>.&lt;/p>
 &lt;p>以下是我找到的一些库的对比。&lt;/p>
 &lt;h2 id="spacetelescopepoppyhttpsgithubcomspacetelescopepoppy">&lt;a href="https://github.com/spacetelescope/poppy">spacetelescope/poppy&lt;/a>&lt;/h2>
-&lt;figure>&lt;img src="poppy.png"/>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2019/08/04/python-for-optics/poppy.png">
 &lt;/figure>
 &lt;p>这个库本身是为詹姆斯·韦伯空间望远镜的模拟而设计的，从其&lt;a href="https://nbviewer.jupyter.org/github/spacetelescope/poppy/blob/master/notebooks/POPPY_tutorial.ipynb">tutorial&lt;/a>也可以看出，这个库的主要目的大概是，在衍射明显的条件下模拟成像过程、计算点扩散函数并分析成像质量，特别是针对天文望远镜领域。&lt;/p>
 &lt;p>因为我并不真正 &lt;em>理解&lt;/em> 光学成像，我并没有办法判断该库的潜在用途，不过在激光器设计方面该库可能并不适用。&lt;/p>
@@ -2073,7 +2112,7 @@ IPv6的情况，放在两个不同的脚本里面可以共存
 &lt;p>&lt;del>D. $y$是当天大乐透的尾号&lt;/del>&lt;/p>
 &lt;p>当然，作为实验民工的话，&lt;code>正交试验法&lt;/code>、&lt;code>典型相关分析&lt;/code>和&lt;code>主成分分析&lt;/code>是找到复杂特性的好手段。可是，现实生活中，并不存在重复实验的条件，而且，我们甚至不能将所有参数一一列举出来。最糟糕的情况下，重要的原因仍然藏在水底。&lt;/p>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/img/iceberg.png"
-alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
+alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;p>大家喜闻乐见的冰山图.jpg&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
@@ -2163,11 +2202,11 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>在图书馆的第三天，到了废纸回收环节&lt;/p>
 &lt;/blockquote>
 &lt;p>之前下到了一叠厚厚的&lt;a href="https://digitalcollections.nypl.org/collections/trait-des-arbres-et-arbustes-que-lon-cultive-en-france-en-pleine-terre#/?tab=about">图集&lt;/a>，可是要真正用起来，还需要一点点简单的处理，比如说，沿着边线把图案剪下来：
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/before.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/before.jpg">&lt;figcaption>
 &lt;h4>加工前&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/after.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/after.png">&lt;figcaption>
 &lt;h4>加工后&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -2185,7 +2224,7 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>当然，如果只是想下片的话，用&lt;a href="https://github.com/NYPL-publicdomain/api-client">digital-collections&lt;/a>可能会更简单一些：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>API_TOKEN&lt;/code>在申请账号以后会得到一个；在你想要下载的专辑（&lt;a href="https://digitalcollections.nypl.org/collections/a-curious-herbal-containing-five-hundred-cuts-of-the-most-useful-plants-which#/?tab=about&amp;amp;scroll=50">比如这个&lt;/a>）下面，可以看到&lt;code>UUID&lt;/code>；运行这条命令之后，图片的信息列表会保存在&lt;code>OUTPUT.json&lt;/code>里。&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/clip.png">&lt;figcaption>
 &lt;h4>对，就是那个Universal Unique Identifier&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -2239,17 +2278,17 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>所以，在春节假期，坐在电脑前面，我也可以来一次纽约公共图书馆了——而且是一百年前的！&lt;/p>
 &lt;p>&lt;a href="https://digitalcollections.nypl.org/">这里&lt;/a>是数字图书馆的首页。如果是一位上世纪的通才，通晓法文、英文拉丁文和其他鸟语，他一定会感觉像是回到了家里一样；当然，即使像我这样的乡巴佬，看一看泛黄的插画，或许也能得到一些乐趣，比如说：&lt;/p>
 &lt;h3 id="看看喜马拉雅山上都长些什么httpsdigitalcollectionsnyplorgcollectionsnature-illustrated-flowers-plants-and-trees-1550-1900tabnavigationroots11c51cb7e0-c6ba-012f-206d-3c075448cc4b">&lt;a href="https://digitalcollections.nypl.org/collections/nature-illustrated-flowers-plants-and-trees-1550-1900#/?tab=navigation&amp;amp;roots=11:c51cb7e0-c6ba-012f-206d-3c075448cc4b">看看喜马拉雅山上都长些什么&lt;/a>&lt;/h3>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dc-508a-a3d9-e040-e00a18064a99.001.w.jpg">&lt;figcaption>
 &lt;h4>嗯，是杂草&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h3 id="学习下最新的流行风尚httpsdigitalcollectionsnyplorgcollectionsnewest-styles-for-mentababout">&lt;a href="https://digitalcollections.nypl.org/collections/newest-styles-for-men#/?tab=about">学习下最新的流行风尚&lt;/a>&lt;/h3>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fea2-a3d9-e040-e00a18064a99.001.w.jpg">&lt;figcaption>
 &lt;h4>唔哦，好男人&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h3 id="或者来辆新车httpsdigitalcollectionsnyplorgcollectionsalbum-of-illustrations-of-imperial-royal-state-carriages-together-with-othertababout">&lt;a href="https://digitalcollections.nypl.org/collections/album-of-illustrations-of-imperial-royal-state-carriages-together-with-other#/?tab=about">或者来辆新车？&lt;/a>&lt;/h3>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/nypl.digitalcollections.510d47dd-fd6c-a3d9-e040-e00a18064a99.001.w.jpg">&lt;figcaption>
 &lt;h4>如果从这时候就开始摇号的话……&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -2310,7 +2349,7 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show()
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png"/>&lt;figcaption>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_5_0.png">&lt;figcaption>
 &lt;h4>阶梯形状可能是由于概率相等&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -2329,7 +2368,7 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>xscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>yscale(&lt;span style="color:#c30">&amp;#39;log&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>plt&lt;span style="color:#555">.&lt;/span>show() &lt;span style="color:#09f;font-style:italic">#指数分布&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png"/>&lt;figcaption>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;figure>&lt;img src="https://blog.heysh.xyz/zipf/output_9_0.png">&lt;figcaption>
 &lt;h4>可惜这只是个指数分布&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -2420,7 +2459,7 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;h3 id="需要的超参数">需要的超参数&lt;/h3>
 &lt;ul>
 &lt;li>α，学习率/learning rate&lt;/li>
-&lt;li>β1~0.9，β2~0.999，ε~1e-8（Adam中的参数）&lt;/li>
+&lt;li>β1&lt;del>0.9，β2&lt;/del>0.999，ε~1e-8（Adam中的参数）&lt;/li>
 &lt;li>层数&lt;/li>
 &lt;li>每层单元&lt;/li>
 &lt;li>学习率衰减&lt;/li>
@@ -2518,10 +2557,10 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>在这里使用kcpraw包装原来shadowsocks的流量（纯粹是因为virtualbox没配好用不了udp2raw），假设读者有基本的linux知识并已经部署了shadowsocks。&lt;/p>
 &lt;h2 id="服务器端">服务器端&lt;/h2>
 &lt;h3 id="下载kcpraw">下载kcpraw&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>mkdir ~/kcpraw
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd ~/kcpraw
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https://github.com/ccsexyz/kcpraw/releases/download/v20171019/kcpraw-linux-amd64-20171021.tar.gz
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw-linux-amd64-20171021.tar.gz
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span style="display:flex;">&lt;span>mkdir &lt;span style="color:#555">~/&lt;/span>kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd &lt;span style="color:#555">~/&lt;/span>kcpraw
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget https:&lt;span style="color:#555">//&lt;/span>github&lt;span style="color:#555">.&lt;/span>com&lt;span style="color:#555">/&lt;/span>ccsexyz&lt;span style="color:#555">/&lt;/span>kcpraw&lt;span style="color:#555">/&lt;/span>releases&lt;span style="color:#555">/&lt;/span>download&lt;span style="color:#555">/&lt;/span>v20171019&lt;span style="color:#555">/&lt;/span>kcpraw&lt;span style="color:#555">-&lt;/span>linux&lt;span style="color:#555">-&lt;/span>amd64&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">20171021.&lt;/span>tar&lt;span style="color:#555">.&lt;/span>gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tar zxvf kcpraw&lt;span style="color:#555">-&lt;/span>linux&lt;span style="color:#555">-&lt;/span>amd64&lt;span style="color:#555">-&lt;/span>&lt;span style="color:#f60">20171021.&lt;/span>tar&lt;span style="color:#555">.&lt;/span>gz
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="在后台开启kcpraw">在后台开启kcpraw&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span> sudo -b nohup ~/kcpraw/kcpraw_server_linux_amd64 -t &amp;#34;127.0.0.1:443&amp;#34; -l &amp;#34;:8388&amp;#34; -mode fast2 &amp;amp;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>443&lt;/code>是要包装的shadowsocks端口，同时，&lt;code>8388&lt;/code>是kcpraw使用的端口，请保证服务器防火墙允许&lt;code>8388&lt;/code>端口通过。&lt;/p>
@@ -2659,15 +2698,15 @@ alt="大家喜闻乐见的冰山图.jpg"/>&lt;figcaption>
 &lt;p>为了获得“高级感”，首先你需要安装&lt;code>noto-fonts&lt;/code>和&lt;code>noto-fonts-cjk&lt;/code>。因为是7012年，中文字体里自带的英文字符也不算太丑，所以不需要像&lt;a href="https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_Font_Configurations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Windows.C2.AE.E6.98.BE.E7.A4.BA.E6.95.88.E6.9E.9C.E7.9A.84.E5.AD.97.E4.BD.93.E5.8F.82.E8.80.83.E9.85.8D.E7.BD.AE">ArchWiki&lt;/a>和&lt;a href="https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/">这篇博文&lt;/a>一样，分别定义中文和英文。全用Noto就好！（而且，分别定义的方法在chrome上有些小问题……）&lt;/p>
 &lt;p>&lt;code>~/.config/fontconfig/fonts.conf&lt;/code>的内容附在&lt;a href="https://gist.github.com/heyeshuang/03d69c1823b8cf769819d36b34f34f71">这里&lt;/a>，保存之后用&lt;code>fc-cache --force --verbose&lt;/code>更新字体缓存就行了。&lt;/p>
 &lt;h2 id="接下来是截图时间">接下来是截图时间：&lt;/h2>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/font/5.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/font/5.png" width="50%">&lt;figcaption>
 &lt;h4>这才是真正的宋体&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/font/3.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/font/3.png" width="50%">&lt;figcaption>
 &lt;h4>在正文也毫无压力&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/font/4.png" width="50%"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/font/4.png" width="50%">&lt;figcaption>
 &lt;h4>还有这个light字重&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -2948,7 +2987,7 @@ Incognito This Tab&lt;/a>
 &lt;p>啊对了，本文同时发在&lt;a href="http://heyeshuang.tk">我的博客&lt;/a>和&lt;a href="https://steemit.com/cn/@heyeshuang/yesterday-once-more-firefox-to-waterfox">Steemit&lt;/a>上。基于时髦的区块链技术，应该会让我的博客活得时间稍微长一点。&lt;/p>
 &lt;p>——当然，一些更加私人的东西是只会在我的博客上发的。为了躲避猎人，有时候我需要把自己的脚印扫掉。&lt;/p></description></item><item><title>首都图书馆半日游</title><link>https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/</link><pubDate>Sat, 09 Sep 2017 12:44:02 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/</guid><description>&lt;p>&lt;a href="https://blog.heysh.xyz/2017/08/12/2017-08-12-recent/">之前&lt;/a>说过我因为网瘾被送去荒山改造，不得不说，这还是颇有些效果的。比如，上上周日我久违地踏出了屋门，而且也并没有被阳光化为灰烬。也许再过上几个月，我可能能够真正地过上人类的生活——&lt;/p>
 &lt;p>这当然是在开玩笑，除了我踏出屋门这件事以外。那天我去了首都图书馆。拿到了教官/总长/特首的出门许可之后，中午，我穿过垃圾场，跳过泥潭，走过柳林，再从围墙的缺口钻过去，然后，又回到了文明世界。&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/yard-of-chaos.jpg"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/yard-of-chaos.jpg">&lt;figcaption>
 &lt;h4>我的部分旅途，右上角为文明世界&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -3001,11 +3040,11 @@ Incognito This Tab&lt;/a>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic">#visual&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#macOS: just use the default config&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.heysh.xyz/atom-vim-configure.png" alt="configure">&lt;/p></description></item><item><title>短消息：联通IPV6</title><link>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</link><pubDate>Sun, 03 Sep 2017 23:11:32 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid><description>&lt;p>似乎是使用teredo。Good Job！&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/ipv6-test.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/ipv6-test.png">&lt;figcaption>
 &lt;h4>IPV6测试&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/torrent.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/torrent.png">&lt;figcaption>
 &lt;h4>PT测试&lt;/h4>
 &lt;/figcaption>
 &lt;/figure></description></item><item><title>在网络的荒山野岭</title><link>https://blog.heysh.xyz/2017/08/12/2017-08-12-recent/</link><pubDate>Sat, 12 Aug 2017 13:04:03 +0800</pubDate><guid>https://blog.heysh.xyz/2017/08/12/2017-08-12-recent/</guid><description>&lt;p>今年七月从学校滚蛋以后，我来到了某个不能说的国企。住在国民党留下来的建筑物里面，我看着被剪断的网线，感觉自己的指甲在疯狂生长。&lt;/p>
@@ -3015,7 +3054,7 @@ Incognito This Tab&lt;/a>
 &lt;li>有2个G的真4G流量；&lt;/li>
 &lt;li>2G用尽以后，会限速到3G速率，虽然似乎还是用的4G网络。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/speed.png"/>&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/speed.png">&lt;figcaption>
 &lt;h4>而且这速度居然可以看斗鱼&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
