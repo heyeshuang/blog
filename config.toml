@@ -7,7 +7,6 @@ hasCJKLanguage = true
 author = "HeYSH"
 # Shown in the side menu
 canonifyurls = false
-paginate = 10
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = 'manni'
@@ -23,7 +22,8 @@ disqusShortname = "heysh"
     unsafe= true
 [permalinks]
   post = "/:year/:month/:day/:filename/"
-
+[pagination]
+pagerSize = 10
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"

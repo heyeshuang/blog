@@ -12,7 +12,7 @@ categories :
 title: "Beancount试用,半年后"
 description: "冷启动，自动记账，以及“养成记账的习惯”"
 date: 2019-11-07T21:58:22+08:00
-lastmod: 2020-06-13T23:39+08:00
+lastmod: 2020-06-13T23:39:00+08:00
 draft: false
 toc: true
 ---
