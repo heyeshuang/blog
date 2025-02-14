@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%BD%91%E7%BB%9C/</link><description>Recent content in 网络 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Thu, 15 Dec 2022 22:47:11 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml"/><item><title>下载装小蜜监理拍摄的图片</title><link>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</link><pubDate>Thu, 15 Dec 2022 22:47:11 +0800</pubDate><guid>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</guid><description>&lt;blockquote>
-&lt;p>最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p>
-&lt;/blockquote>
+&lt;p>最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p>&lt;/blockquote>
 &lt;p>装小蜜是北京地区比较流行的监理服务，价格比起正规监理（有监理证的那种）要便宜许多，在装修过程中应该也是有作用的。每次上门服务时，监理会在每个房间拍一张全景照片，如果工长不提供水电位置图的话，之后这些照片应该能派上用场。&lt;/p>
 &lt;p>像所有Web2.0之后的公司一样，这家公司主要在APP和微信小程序上提供服务，而且并不具备数据导出功能。这种情况的一般解决方案是抓包，只要配置好xposed、HTTPCanary，解决TLS证书固定之类的问题就行了，我一开始就是这么做的，之后发现了别的方法：只要屏蔽一个特定域名（zxm-oss3.oss-cn-beijing.aliyuncs.com），微信小程序上就会显示图片的实际位置。&lt;/p>
 &lt;p>&lt;img src="url.png" alt="图像实际存放地址">&lt;/p>
@@ -22,8 +21,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>另外，小程序是用&lt;a href="https://pannellum.org/documentation/overview/">Pannellum&lt;/a>进行渲染的。下载到的照片可以用&lt;a href="https://renderstuff.com/tools/360-panorama-web-viewer/">这个网站&lt;/a>查看。好像和直接用小程序没有什么区别……&lt;/p>
 &lt;h2 id="附微信小程序缓存位置">附：微信小程序缓存位置&lt;/h2>
 &lt;blockquote>
-&lt;p>C:\Users\me\AppData\Roaming\Tencent\WeChat\radium\web&lt;/p>
-&lt;/blockquote>
+&lt;p>C:\Users\me\AppData\Roaming\Tencent\WeChat\radium\web&lt;/p>&lt;/blockquote>
 &lt;p>我是用&lt;a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">Process Monitor&lt;/a>监测文件变化发现这个路径的。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>

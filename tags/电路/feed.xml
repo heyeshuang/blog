@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电路 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%94%B5%E8%B7%AF/</link><description>Recent content in 电路 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 18 Oct 2020 12:56:57 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%94%B5%E8%B7%AF/feed.xml" rel="self" type="application/rss+xml"/><item><title>和（基本上）什么也不能连的电脑传递信息</title><link>https://blog.heysh.xyz/2020/10/18/information-exchange-in-extreme-situations/</link><pubDate>Sun, 18 Oct 2020 12:56:57 +0000</pubDate><guid>https://blog.heysh.xyz/2020/10/18/information-exchange-in-extreme-situations/</guid><description>&lt;blockquote>
-&lt;p>有时候你会&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>遇到一些电脑，孤零零的漂浮在互联网络之外，所有USB口都上了锁，要送进去一些文件，必须要找海关盖上十几个章才能够放行。&lt;/p>
-&lt;/blockquote>
+&lt;p>有时候你会&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>遇到一些电脑，孤零零的漂浮在互联网络之外，所有USB口都上了锁，要送进去一些文件，必须要找海关盖上十几个章才能够放行。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>当然，显示器、鼠标和键盘还是可以用的，可以让上个世纪的打字小妹一点一点地敲击按键……或者在敲的同时走神，想一想有没有什么别的办法。&lt;/p>
-&lt;/blockquote>
+&lt;p>当然，显示器、鼠标和键盘还是可以用的，可以让上个世纪的打字小妹一点一点地敲击按键……或者在敲的同时走神，想一想有没有什么别的办法。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>下面就是某一天下午，被锁链铐在工位上的我的白日梦。&lt;/p>
-&lt;/blockquote>
+&lt;p>下面就是某一天下午，被锁链铐在工位上的我的白日梦。&lt;/p>&lt;/blockquote>
 &lt;p>好吧，现在的情况还不算太糟，至少还有输入设备（键盘，或者像是键盘的什么玩意儿），实在不行的话，我们也可以做出一个 &lt;strong>超级打字机器人3000&lt;/strong> 之类的。&lt;/p>
 &lt;p>&lt;img src="5f4.gif" alt="3000">&lt;/p>
 &lt;p>&lt;em>想着这些，我把键盘上的导线扯了下来，我看见线的另一头连着的接口是——&lt;/em>&lt;/p>
@@ -28,8 +25,7 @@
 &lt;p>等我敲完这一批字之后，一定要去试一试。&lt;em>我这样想。&lt;/em>&lt;/p>
 &lt;blockquote>
 &lt;p>免责声明：上面的只是白日梦而已，完全没有测试过。请遵守本地法律法规和公司规章制度，不管你干了什么都跟我没有任何关系。&lt;/p>
-&lt;p>另外，这次的博文让我想起一个笑话，就是我请电脑高手重装系统，但是他只有一张光盘和一根针……哈哈哈，完全笑不出来。&lt;/p>
-&lt;/blockquote>
+&lt;p>另外，这次的博文让我想起一个笑话，就是我请电脑高手重装系统，但是他只有一张光盘和一根针……哈哈哈，完全笑不出来。&lt;/p>&lt;/blockquote>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>

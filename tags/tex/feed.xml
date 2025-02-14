@@ -1,57 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tex on 林中阴影</title><link>https://blog.heysh.xyz/tags/tex/</link><description>Recent content in Tex on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 21 Dec 2012 16:38:48 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/tex/feed.xml" rel="self" type="application/rss+xml"/><item><title>Texlive 在archlinux上的安装，以及中文字体的设置</title><link>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link><pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid><description>&lt;blockquote>
-&lt;p>texmacs已经不能满足我了！&lt;/p>
-&lt;/blockquote>
+&lt;p>texmacs已经不能满足我了！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>
-&lt;/blockquote>
+&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后发现大魔王令人绝望的实力&lt;/p>
-&lt;/blockquote>
+&lt;p>然后发现大魔王令人绝望的实力&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>
-&lt;/blockquote>
+&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>结果我还是不会用tex&lt;/p>
-&lt;/blockquote>
+&lt;p>结果我还是不会用tex&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>所以我下了lyx&lt;/p>
-&lt;/blockquote>
+&lt;p>所以我下了lyx&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>
-&lt;/blockquote>
+&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>#挂科预感up（大）#&lt;/p>
-&lt;/blockquote>
+&lt;p>#挂科预感up（大）#&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>我说这个又没人爱听&lt;/p>
-&lt;/blockquote>
+&lt;p>我说这个又没人爱听&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>反正也不会有人来&lt;/p>
-&lt;/blockquote>
+&lt;p>反正也不会有人来&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>fin&lt;/p>
-&lt;/blockquote>
+&lt;p>fin&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>骗你的&lt;/p>
-&lt;/blockquote>
+&lt;p>骗你的&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>
-&lt;/blockquote>
+&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>
-&lt;/blockquote>
+&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实我一开始以为直接pacman就好了&lt;/p>
-&lt;/blockquote>
+&lt;p>其实我一开始以为直接pacman就好了&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>但是后来我发现自己太甜了&lt;/p>
-&lt;/blockquote>
+&lt;p>但是后来我发现自己太甜了&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>于是我就下了texlive的镜像&lt;/p>
-&lt;/blockquote>
+&lt;p>于是我就下了texlive的镜像&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>后来发现直接安可能也可以？？&lt;/p>
-&lt;/blockquote>
+&lt;p>后来发现直接安可能也可以？？&lt;/p>&lt;/blockquote>
 &lt;p>按照&lt;a href="http://www.road2stat.com/cn/tex/archtex.html">这里&lt;/a>的安装方式\&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>su –
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
@@ -70,8 +52,7 @@
 &lt;blockquote>
 &lt;p>将 texlive-fontconfig.conf 文件复制到
 /etc/fonts/conf.d/09-texlive.conf，
-运行 fc-cache -fsv 以root的名义&lt;/p>
-&lt;/blockquote>
+运行 fc-cache -fsv 以root的名义&lt;/p>&lt;/blockquote>
 &lt;p>接下来xetex就会提示你缺少字体了，是不是很高兴？&lt;/p>
 &lt;p>——才怪咧！&lt;/p>
 &lt;p>然后，你要用yaourt安装ttf-ms-fonts-zh_cn这个包——&lt;/p>
@@ -87,14 +68,10 @@
 &lt;p>然后……要是提示缺少&lt;code>Adobe Song Std&lt;/code>什么的，应该&lt;code>yaourt acroread-font-chinese-simplified&lt;/code>就行了吧……&lt;/p>
 &lt;p>啊啊，从这个过程里，我好像看到了我短暂的人生……越是精于算计，就越可能出现意想不到的状况……&lt;/p>
 &lt;blockquote>
-&lt;p>老子不做人了！TeTe！&lt;/p>
-&lt;/blockquote>
+&lt;p>老子不做人了！TeTe！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>
-&lt;/blockquote>
+&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>
-&lt;/blockquote>
+&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>最后祝你身体健康，再见&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+&lt;p>最后祝你身体健康，再见&lt;/p>&lt;/blockquote></description></item></channel></rss>

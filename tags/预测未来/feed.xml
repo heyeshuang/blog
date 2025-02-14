@@ -59,8 +59,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;h2 id="奥卡姆剃刀以及为什么在现实中可能失效">奥卡姆剃刀，以及为什么在现实中（可能）失效&lt;/h2>
 &lt;p>之前已经提到过&lt;a href="https://zh.wikipedia.org/zh-cn/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80">过拟合&lt;/a>这一概念：&lt;/p>
 &lt;blockquote>
-&lt;p>当可选择的参数的自由度超过数据所包含信息内容时，会减少或破坏模型一般化的能力更甚于适应数据。（维基百科）&lt;/p>
-&lt;/blockquote>
+&lt;p>当可选择的参数的自由度超过数据所包含信息内容时，会减少或破坏模型一般化的能力更甚于适应数据。（维基百科）&lt;/p>&lt;/blockquote>
 &lt;p>一般来说，奥卡姆剃刀是解决过拟合问题的有效途径。在预测能力相似的情况下，引入的假定越少越好。在贝叶斯理论下，可以通过贝叶斯因子（或其不够精确的代替品，&lt;a href="https://zh.wikipedia.org/zh-cn/%E8%B5%A4%E6%B1%A0%E4%BF%A1%E6%81%AF%E9%87%8F%E5%87%86%E5%88%99">赤池信息量准则&lt;/a>等等）来进行判断。现实生活中的噪音比实验数据更多，按理说剃刀会更加锋利，但是，与数学模型不同，生活中：&lt;/p>
 &lt;h3 id="样本仍然不足">样本（仍然）不足&lt;/h3>
 &lt;p>我们再次遇到了这个问题。生活中很多时候，我们获得的信息类似这样：&lt;/p>
@@ -106,8 +105,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>随机性从哪里来？</title><link>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</link><pubDate>Mon, 26 Mar 2018 21:03:21 +0800</pubDate><guid>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</guid><description>&lt;blockquote>
-&lt;p>当然，没准可以预测“真空中的球形未来”。&lt;/p>
-&lt;/blockquote>
+&lt;p>当然，没准可以预测“真空中的球形未来”。&lt;/p>&lt;/blockquote>
 &lt;h2 id="量子力学">量子力学……&lt;/h2>
 &lt;p>我们都听说过“两朵乌云”的故事，其中一朵后来变成了&lt;strong>量子力学&lt;/strong>，告诉我们上帝（也许）是掷骰子的。这是截止到目前，所有苛刻的家伙都承认的“真正随机”。而且，通过一些简单的装置（比如盖格计数器或者一个虐猫狂人），这些随机可以进入宏观的现实生活。&lt;/p>
 &lt;p>&lt;del>或许有一天，我们会发现&lt;code>量子效应只是物质之海表面的涟漪，是物质更深层规律扰动的影子&lt;/code>&lt;/del>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>——但是，这仍不能让我们真正成为预言家，还有一些东西在阻止我们。&lt;/p>

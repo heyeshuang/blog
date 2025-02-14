@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fcitx on 林中阴影</title><link>https://blog.heysh.xyz/tags/fcitx/</link><description>Recent content in Fcitx on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 23 Aug 2013 13:39:02 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/fcitx/feed.xml" rel="self" type="application/rss+xml"/><item><title>fcitx的各种小功能</title><link>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</link><pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</guid><description>&lt;p>首先是吐槽时间：藏得这么深谁找得着啊！！好多帅气的小功能连按钮都没有！！连快捷键都要四个按键一块按！！！&lt;/p>
 &lt;h1 id="颜文字">颜文字&lt;/h1>
 &lt;blockquote>
-&lt;p>钥匙是分号&lt;/p>
-&lt;/blockquote>
+&lt;p>钥匙是分号&lt;/p>&lt;/blockquote>
 &lt;p>对，就是那个不知道怎么回事的“快速输入”。比如说，输入&lt;code>;smile&lt;/code>就是(・∀・)，什么你说你看不懂英文？到&lt;a href="https://fcitx-im.org/wiki/QuickPhrase_Emoji">这里&lt;/a>，复制到一个文件里，然后导入就行了～&lt;/p>
 &lt;p>&lt;img src="%5C11.png" alt="为什么不直接集成呢？谁知道呢……">&lt;/p>
 &lt;h1 id="输入unicode">输入unicode&lt;/h1>
 &lt;blockquote>
-&lt;p>Ctrl+Alt+Shift+U&lt;/p>
-&lt;/blockquote>
+&lt;p>Ctrl+Alt+Shift+U&lt;/p>&lt;/blockquote>
 &lt;p>快跑啊，野生的四按键快捷键出现啦o(≧口≦)o&lt;/p>
 &lt;p>有了这个，&lt;del>某痞子的:│▌就可以打出来了&lt;/del>，输入&lt;code>male&lt;/code>就可以找到可♂口的汉⚣子哦～&lt;/p>
 &lt;p>至于上面那个任务，好像还是用&lt;code>charmap&lt;/code>或者&lt;code>gucharmap&lt;/code>比较妥当……&lt;/p>

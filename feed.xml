@@ -1,7 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 28 Aug 2024 22:06:45 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>林中阴影</title><link>https://blog.heysh.xyz/</link><description>Recent content on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Fri, 14 Feb 2025 15:30:35 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/feed.xml" rel="self" type="application/rss+xml"/><item><title>“智能” 家居笔记：一→两年后的回顾</title><link>https://blog.heysh.xyz/2025/02/14/silly-home-notes-review/</link><pubDate>Fri, 14 Feb 2025 15:30:35 +0800</pubDate><guid>https://blog.heysh.xyz/2025/02/14/silly-home-notes-review/</guid><description>&lt;p>2023年初，我完成了以Home Assistant为基础的智能家居建设，见&lt;a href="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/">这里&lt;/a>和&lt;a href="https://blog.heysh.xyz/2023/03/08/silly-home-notes-detailed/">这里&lt;/a>。 &lt;del>2024年&lt;/del> 2025年,两年过去了，HA系统从22.12升级到25.1，居然还能够正常运行,大概算得上&lt;em>连续发生的奇迹&lt;/em>。&lt;/p>
+&lt;h2 id="主要教训稳定压倒一切">主要教训：稳定压倒一切&lt;/h2>
+&lt;p>在荷尔蒙逐渐消退的三十三岁，对新玩意的追求已经逐渐被确定性所覆盖。而很遗憾，现在我家的配置尚不能称为稳定。特别是绿米ZigBee开关，大概每隔几天就会有某一个断开连接，需要重新配对，不知道是不是由于距离太远的原因。好消息是，这几个开关在没有信号时会由无线开关退回到开关模式，不会出现关不上灯的尴尬情况。&lt;/p>
+&lt;p>据传闻，直接使用小米多模网关连接米家，Zigbee网络是使用星形而不是网状连接，所以我近期（2024年）换成了Zigbee2MQTT模式，&lt;del>正在进一步观察。&lt;/del> 又观察了一年，发现使用ZB Dongle-E和一条短USB线，在稳定性上比小米网关要好的多，除了在重启时会让灯泡闪烁之外。不过，ZigBee2MQTT自带的编组效果甚至不如HA自带的群组功能，不知道所谓的“减少网络压力”体现在哪儿。&lt;/p>
+&lt;p>另外，闲鱼上采购的绿米系列有一个插座坏掉了；另外的廉价ZigBee洋垃圾大都是能用的，但会有一些识别上的问题，不建议在&lt;del>容易挨骂的&lt;/del>关键位置上使用。&lt;/p>
+&lt;h2 id="这玩意有用吗">这玩意有用吗？&lt;/h2>
+&lt;p>有，&lt;del>情绪价值。&lt;/del>&lt;/p>
+&lt;p>开玩笑的。通过软件来弥补硬件的功能，甚至重新定义硬件，是前些年“软件吞噬世界”狂言的部分原因，纯硬件上无法实现的事情，通过外接的无线开关和传感器就可以部分弥补。&lt;/p>
+&lt;p>比如说，在卧室的门框上贴上一个全屋熄灯按钮，在对付不睡觉小朋友的时候很有帮助。自己凑合的&lt;a href="https://blog.heysh.xyz/2023/03/08/silly-home-notes-detailed/#零冷水">零冷水方案&lt;/a>也算管用，虽然效果不如直接安装电热水器。另外，壁挂炉加上屋里的几个温度计，配合简单的&lt;a href="https://github.com/ScratMan/HASmartThermostat">PID算法&lt;/a>，能够让整个屋子变得十分舒服。&lt;/p>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/02/14/silly-home-notes-review/temp.png">&lt;figcaption>
+&lt;h4>我猜其他房子的温差应该会更大一些。这里的P=60，I=0.005，D=3600。Just in case.&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>纯粹提供情绪价值的也有，比如说&lt;a href="https://github.com/jomjol/AI-on-the-edge-device">AI-on-the-edge-device&lt;/a>，ESP32也能跑AI，科技真是神奇啊——实际没什么用就是了。&lt;/p>
+&lt;p>另外，电动窗帘也挺棒的，我突然想起来。&lt;/p>
+&lt;h2 id="智能灯还是智能开关">智能灯还是智能开关？&lt;/h2>
+&lt;p>正如之前说的，我在装修时选择了&lt;a href="https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/#安装和设置">双重智能&lt;/a>的方案。回头来看，只要ZigBee足够稳定，这种方法也有好处，比如可以留一些空的开关位置，在住一段时间之后，为这些开关增加一些功能——比如按键开窗帘、双击开空调，之类。&lt;/p>
+&lt;h2 id="直接用米家怎么样">直接用米家怎么样？&lt;/h2>
+&lt;p>使用Zigbee2MQTT之后，米家不再能够控制开关和灯泡了，只能勉强打开吸顶灯&lt;del>降低骂街音量&lt;/del>。我个人对米家没有任何成见，不过， &lt;em>虽然身处果壳之中，我仍然想当无限宇宙之王。&lt;/em> 或者，无线网络之王？&lt;/p></description></item><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
 &lt;blockquote>
-&lt;p>不要问为什么，工作造就人呀。&lt;/p>
-&lt;/blockquote>
+&lt;p>不要问为什么，工作造就人呀。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>
 &lt;p>首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p>
@@ -85,8 +102,7 @@
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>OK，当我今天没有更新过。&lt;/p></description></item><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
-&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
-&lt;/blockquote>
+&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>&lt;/blockquote>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
 alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>有较强的自我管理意识.png&lt;/p>
@@ -97,19 +113,16 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;ol>
 &lt;li>N1一台；
 &lt;blockquote>
-&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>
-&lt;/blockquote>
+&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>USB公对公数据线一条；
 &lt;blockquote>
-&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>
-&lt;/blockquote>
+&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>视频采集卡一张，配HDMI线一条；
 &lt;blockquote>
 &lt;p>因为N1没有USB3.0接口，MS2109芯片就足够了，可以跑1080p@30Hz。
-&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>
-&lt;/blockquote>
+&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>U盘一块；&lt;/li>
 &lt;li>Linux知识一些；&lt;/li>
@@ -119,8 +132,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;li>USB延长线一条；&lt;/li>
 &lt;li>理想的上网环境。
 &lt;blockquote>
-&lt;p>根据相关法律法规和政策（下略）&lt;/p>
-&lt;/blockquote>
+&lt;p>根据相关法律法规和政策（下略）&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ol>
 &lt;/li>
@@ -131,8 +143,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>Armbian镜像我使用的是&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_jammy_lts_2023.05/Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz">Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz&lt;/a>，其中，&lt;code>S905d&lt;/code>是N1所用的芯片，&lt;code>Jammy&lt;/code>是Ubuntu的版本号，&lt;code>6.1.27&lt;/code>代表使用的是最新版本的Linux内核。如果安装PiKVM，Debian系列（bullseye）的软件包有些太老了。&lt;/p>
 &lt;h2 id="修改dtb文件">修改dtb文件&lt;/h2>
 &lt;blockquote>
-&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>
-&lt;/blockquote>
+&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>&lt;/blockquote>
 &lt;p>在上述的Armbian引导文件中，默认的USB模式是Host，为了模拟鼠标、键盘等设备，需要将&lt;code>dr_mode&lt;/code>从&lt;code>host&lt;/code>更改为&lt;code>peripheral&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。那么，我们需要重新编译dtb文件：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 将dtb编译为dts文件&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dtc -I dtb -O dts -o test.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
@@ -150,8 +161,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>然后重启系统。&lt;/p>
 &lt;h2 id="安装脚本">安装脚本&lt;/h2>
 &lt;blockquote>
-&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>
-&lt;/blockquote>
+&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>&lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git clone https://github.com/toss-a/pikvm-armbian.git
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">cd&lt;/span> pikvm-armbian
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./install.sh
@@ -170,11 +180,9 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
-&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>&lt;/blockquote>
 &lt;h2 id="为什么">为什么&lt;/h2>
 &lt;p>正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">前文&lt;/a>所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p>
 &lt;p>然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>或&lt;a href="https://github.com/heiher/natmap">natmap&lt;/a>，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p>
@@ -194,24 +202,20 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;ol>
 &lt;li>一台长期开启的设备。
 &lt;blockquote>
-&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>
-&lt;/blockquote>
+&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>光猫处于桥接状态。&lt;/li>
 &lt;li>主路由是OpenWRT，或者内网里有DMZ主机。
 &lt;blockquote>
-&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>
-&lt;/blockquote>
+&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>没有公网IPv4，但在路由器处测试NAT类型为NAT1。
 &lt;blockquote>
-&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>
-&lt;/blockquote>
+&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>一个自己的域名，最好是在Cloudflare上托管的。
 &lt;blockquote>
-&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>
-&lt;/blockquote>
+&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ol>
 &lt;p>具体配置部分已经有人写的很详细了。首先按照&lt;a href="https://www.procustodibus.com/blog/2020/11/wireguard-point-to-site-config/">WireGuard Point to Site Configuration&lt;/a>设置点到站点的连接，然后按照&lt;a href="https://github.com/heiher/natmap/wiki/wireguard">natmap Wiki&lt;/a>设置NATMap即可。注意，在路由器上操作的时候，一定要记得在防火墙中&lt;strong>打开对应端口&lt;/strong>。&lt;/p>
@@ -241,8 +245,7 @@ alt="我这里最近一次分配的端口坚持了18天，所以应该不必时�
 &lt;p>Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的&lt;code>High ID&lt;/code>。见&lt;a href="https://github.com/wits-fe/bittorrent-NAT-hole-punching">wits-fe/bittorrent-NAT-hole-punching&lt;/a>。在PT站做种的时候应该会很有用。&lt;/p>
 &lt;h2 id="附性能测试">附：性能测试&lt;/h2>
 &lt;blockquote>
-&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>
-&lt;/blockquote>
+&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>&lt;/blockquote>
 &lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
 &lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
 alt="WireGuard for Android">&lt;figcaption>
@@ -321,8 +324,7 @@ alt="设计水路和买接头全要靠自己了。">&lt;figcaption>
 &lt;ul>
 &lt;li>按下开关 -&amp;gt; 关掉对应的灯
 &lt;blockquote>
-&lt;p>每个灯都要做一次，很无聊。但是设置完之后，每个灯都能缓缓熄灭，就……挺高级的。&lt;/p>
-&lt;/blockquote>
+&lt;p>每个灯都要做一次，很无聊。但是设置完之后，每个灯都能缓缓熄灭，就……挺高级的。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>开关窗帘
 &lt;ul>
@@ -341,8 +343,7 @@ alt="设计水路和买接头全要靠自己了。">&lt;figcaption>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/AlexxIT/XiaomiGateway3/wiki/Handle-BLE-Locks">门从外部被打开&lt;/a> -&amp;gt; 打开门厅灯、打开循环水，如果在8:00-22:00间，小爱播报“欢迎回家”。
 &lt;blockquote>
-&lt;p>就……挺高级的……吧……&lt;/p>
-&lt;/blockquote>
+&lt;p>就……挺高级的……吧……&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -370,8 +371,7 @@ alt="设计水路和买接头全要靠自己了。">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>“智能”家居笔记，其之一</title><link>https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/</link><pubDate>Fri, 10 Feb 2023 20:44:06 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/10/silly-home-notes-1/</guid><description>&lt;blockquote>
-&lt;p>而RK3328的算力与草履虫大约能打成平手。所以，本文中的“智能”指的都是 &lt;em>不用按电钮就能控制™&lt;/em> 级别，当然，如果能够有一点点自动就更好了。&lt;/p>
-&lt;/blockquote>
+&lt;p>而RK3328的算力与草履虫大约能打成平手。所以，本文中的“智能”指的都是 &lt;em>不用按电钮就能控制™&lt;/em> 级别，当然，如果能够有一点点自动就更好了。&lt;/p>&lt;/blockquote>
 &lt;h2 id="前期的准备">前期的准备&lt;/h2>
 &lt;h3 id="考虑一下">考虑一下&lt;/h3>
 &lt;p>其实当个mi boy也不错——全屋小米设备是智能家居方案里面最不坏的选择，做完就可以成为合格的家居up主了&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，如果不想被锁定在米系势力范围内，可以尝试一下Home Assistant，尝试成本也不高：几十块钱的魔百盒或者玩客云，或者直接虚拟机都可以。另外，最好能有一个简单的设备来控制，我觉得带红外遥控的小爱音箱 Pro就挺好的。&lt;/p>
@@ -548,8 +548,7 @@ alt="一个二手安卓触摸屏">&lt;figcaption>
 &lt;/figure>
 &lt;p>开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336">在DDNS服务上也开启Cloudflare代理&lt;/a>。&lt;/p>
 &lt;p>好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p></description></item><item><title>下载装小蜜监理拍摄的图片</title><link>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</link><pubDate>Thu, 15 Dec 2022 22:47:11 +0800</pubDate><guid>https://blog.heysh.xyz/2022/12/15/zhuangxiaomi-download-images/</guid><description>&lt;blockquote>
-&lt;p>最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p>
-&lt;/blockquote>
+&lt;p>最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p>&lt;/blockquote>
 &lt;p>装小蜜是北京地区比较流行的监理服务，价格比起正规监理（有监理证的那种）要便宜许多，在装修过程中应该也是有作用的。每次上门服务时，监理会在每个房间拍一张全景照片，如果工长不提供水电位置图的话，之后这些照片应该能派上用场。&lt;/p>
 &lt;p>像所有Web2.0之后的公司一样，这家公司主要在APP和微信小程序上提供服务，而且并不具备数据导出功能。这种情况的一般解决方案是抓包，只要配置好xposed、HTTPCanary，解决TLS证书固定之类的问题就行了，我一开始就是这么做的，之后发现了别的方法：只要屏蔽一个特定域名（zxm-oss3.oss-cn-beijing.aliyuncs.com），微信小程序上就会显示图片的实际位置。&lt;/p>
 &lt;p>&lt;img src="url.png" alt="图像实际存放地址">&lt;/p>
@@ -571,8 +570,7 @@ alt="一个二手安卓触摸屏">&lt;figcaption>
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>另外，小程序是用&lt;a href="https://pannellum.org/documentation/overview/">Pannellum&lt;/a>进行渲染的。下载到的照片可以用&lt;a href="https://renderstuff.com/tools/360-panorama-web-viewer/">这个网站&lt;/a>查看。好像和直接用小程序没有什么区别……&lt;/p>
 &lt;h2 id="附微信小程序缓存位置">附：微信小程序缓存位置&lt;/h2>
 &lt;blockquote>
-&lt;p>C:\Users\me\AppData\Roaming\Tencent\WeChat\radium\web&lt;/p>
-&lt;/blockquote>
+&lt;p>C:\Users\me\AppData\Roaming\Tencent\WeChat\radium\web&lt;/p>&lt;/blockquote>
 &lt;p>我是用&lt;a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">Process Monitor&lt;/a>监测文件变化发现这个路径的。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -582,21 +580,18 @@ alt="一个二手安卓触摸屏">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>几物互联</title><link>https://blog.heysh.xyz/2022/05/22/connect-every-something/</link><pubDate>Sun, 22 May 2022 22:45:39 +0800</pubDate><guid>https://blog.heysh.xyz/2022/05/22/connect-every-something/</guid><description>&lt;blockquote>
-&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>
-&lt;/blockquote>
+&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>&lt;/blockquote>
 &lt;p>无论是在家里的组装机还是漂泊的笔记本，在工作的时候都能够获得相似的上下文，有的时候甚至可以在家CTRL+C，在公司CTRL+V。除了&lt;em>鸿蒙&lt;/em>系统之外，通过一组软件也是可以实现的。&lt;/p>
 &lt;p>本人现在所使用的方案如下。设置难度由易到难排序。&lt;/p>
 &lt;h2 id="同步存储syncthing">同步存储：Syncthing&lt;/h2>
 &lt;blockquote>
-&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>&lt;/blockquote>
 &lt;p>比起云存储，个人更倾向于Syncthing这样的本地同步方案：至少文件是属于自己的（而且还不用收钱）。安装也很简单：Windows下安装&lt;a href="https://github.com/canton7/SyncTrayzor">SyncTrayzor&lt;/a>，Android下安装&lt;a href="https://github.com/Catfriend1/syncthing-android">Syncthing-Fork&lt;/a>，其他系统移步&lt;a href="https://syncthing.net/downloads/">这里&lt;/a>就可以。安装完以后，在两边选择工作目录，就可以完成双向同步了。得益于STUN服务器，无论是在内网还是外网，文件都可以完成传输。&lt;/p>
 &lt;p>当然，Syncthing也有一定的问题。首先是，因为是进行了同步，同一份文件会在每一个设备上都占用一份空间。在手机这样捉襟见肘的环境下，建议采用“仅发送”模式，只用来备份照片之类的。&lt;/p>
 &lt;p>另外，Syncthing在运行的时候必须要两侧的设备保持开机，电费账单+1。在有一方离线的时候，需要注意文件的版本，不要在两边都修改同一个文件。毕竟不是git，合并功能没有那么强。&lt;/p>
 &lt;h2 id="笔记软件与文献管理">笔记软件与文献管理&lt;/h2>
 &lt;blockquote>
-&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>&lt;/blockquote>
 &lt;p>本人使用&lt;a href="https://joplinapp.org/">Joplin&lt;/a>和&lt;a href="https://www.zotero.org/">Zotero&lt;/a>来做笔记和进行文献管理，这两款软件都可以使用Syncthing作为同步后端&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而且都具有笔记功能。我的习惯是，在Joplin上写一些需要较长篇幅的笔记，文献阅读笔记放在Zotero中。&lt;/p>
 &lt;p>当然，作为一篇讲“互联”的博文，这两款软件当然也是可以相互连接的。我主要用到下面这些：&lt;/p>
 &lt;h3 id="joplin内部">Joplin内部&lt;/h3>
@@ -614,21 +609,17 @@ alt="一个二手安卓触摸屏">&lt;figcaption>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者也可以用&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html">Link Shell Extension&lt;/a>来做这件事。之后，在每台电脑上都可以访问&lt;code>C:\工作\xxx.docx&lt;/code>了。&lt;/p>
 &lt;h2 id="随处ctrlv以及传文件">随处Ctrl+V，以及传文件&lt;/h2>
 &lt;blockquote>
-&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>
-&lt;/blockquote>
+&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>&lt;/blockquote>
 &lt;p>隆重推荐&lt;a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/">KDE connect&lt;/a>，虽然是KDE出品，但是Windows和Android也能用。给手机和电脑装上这个，在同一个局域网下面就可以共享剪贴板了，而且还能够互相传文件。&lt;/p>
 &lt;p>不过，有的时候KDE connect找不到局域网设备，这时候我会用Total Commander (Android)的Wifi传输插件，或者是&lt;code>python -m http.server&lt;/code>。&lt;/p>
 &lt;h2 id="远程访问tailscaletinc或wireguard">远程访问：Tailscale、Tinc或Wireguard&lt;/h2>
 &lt;blockquote>
-&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>&lt;/blockquote>
 &lt;p>像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前&lt;/a>所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p>
 &lt;blockquote>
-&lt;p>来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/">Wireguard&lt;/a>了~&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/">Wireguard&lt;/a>了~&lt;/p>&lt;/blockquote>
 &lt;p>连接Tinc之后，就可以通过&lt;code>Wake On LAN&lt;/code>唤醒自己的其他电脑，然后用&lt;code>samba&lt;/code>、远程桌面之类的软件了。就好象回到家里&lt;del>居家办公&lt;/del>一样！&lt;/p>
 &lt;p>当然，在这种需求下，最简单的应该是&lt;code>Tailscale&lt;/code>，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p>
 &lt;details>
@@ -722,8 +713,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;blockquote>
 &lt;p>按：&lt;/p>
 &lt;p>最近招商银行不再给我发送EML格式的电子邮件账单了，取而代之的是邮件中的PDF附件，&lt;em>仅供人类阅读&lt;/em>，基本上没有办法进行自动处理。于是我故伎重施，试图在IE驱动的网上银行中找到账单，可是找到的却只是用Electron包裹的丑陋电子银行客户端，理所应当地不提供下载服务。&lt;/p>
-&lt;p>紧紧关闭的大门前，仅有一点点光芒透出来：招行的手机版网站仍然可用。&lt;/p>
-&lt;/blockquote>
+&lt;p>紧紧关闭的大门前，仅有一点点光芒透出来：招行的手机版网站仍然可用。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>招商银行信用卡官方网站在&lt;a href="https://xyk.cmbchina.com/credit-express/bill">https://xyk.cmbchina.com/credit-express/bill&lt;/a>。为了假装自己是在用手机访问，请使用Chrome浏览器&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，开启开发者工具，显示设备工具栏（Ctrl+Shift+M），并模拟iPhone或者其他手机。
 &lt;img src="%E7%99%BB%E5%BD%95.png" alt="登录的状态">&lt;/li>
@@ -811,14 +801,12 @@ alt="第一次开机">&lt;figcaption>
 &lt;h2 id="软件">软件&lt;/h2>
 &lt;h3 id="实用软件">实用软件&lt;/h3>
 &lt;blockquote>
-&lt;p>这个分类就好像华军软件园一样……&lt;/p>
-&lt;/blockquote>
+&lt;p>这个分类就好像华军软件园一样……&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;a href="https://github.com/borgbackup/borg">borgbackup/borg&lt;/a>: Deduplicating archiver with compression and authenticated encryption.&lt;/p>
 &lt;blockquote>
-&lt;p>我用RSync就够了&lt;/p>
-&lt;/blockquote>
+&lt;p>我用RSync就够了&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/syncthing/syncthing">syncthing/syncthing&lt;/a>&lt;/strong>: Open Source Continuous File Synchronization&lt;/p>
@@ -835,8 +823,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;li>
 &lt;p>&lt;a href="https://github.com/chriszarate/supergenpass">chriszarate/supergenpass&lt;/a>: A free bookmarklet password generator.&lt;/p>
 &lt;blockquote>
-&lt;p>如果不想使用弱密码，除了使用密码管理器之外的其他选择&lt;/p>
-&lt;/blockquote>
+&lt;p>如果不想使用弱密码，除了使用密码管理器之外的其他选择&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a href="https://github.com/LionelJouin/PiP-Tool">LionelJouin/PiP-Tool&lt;/a>: PiP tool is a software to use the Picture in Picture mode on Windows. This feature allows you to watch content (video for example) in thumbnail format on the screen while continuing to use any other software on Windows.&lt;/p>
@@ -882,8 +869,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;ul>
 &lt;li>&lt;strong>&lt;a href="https://github.com/laurent22/joplin">laurent22/joplin&lt;/a>&lt;/strong>: Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS
 &lt;blockquote>
-&lt;p>我现在在用的笔记软件&lt;/p>
-&lt;/blockquote>
+&lt;p>我现在在用的笔记软件&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="浏览器端">浏览器端&lt;/h3>
@@ -923,8 +909,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;li>&lt;a href="https://github.com/OSCARAdapter/OSCAR">OSCARAdapter/OSCAR&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/Emeryth/iPad3_lcd">Emeryth/iPad3_lcd&lt;/a>: A PCB for attaching an iPad retina LCD to a DisplayPort source
 &lt;blockquote>
-&lt;p>我有一块iPad3用的屏幕，我尝试着把它利用起来，最后买了一块驱动板&lt;/p>
-&lt;/blockquote>
+&lt;p>我有一块iPad3用的屏幕，我尝试着把它利用起来，最后买了一块驱动板&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="javascript-用来做网页的">&lt;del>Javascript&lt;/del> 用来做网页的&lt;/h2>
@@ -945,8 +930,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;li>&lt;a href="https://github.com/mdbootstrap/mdb-ui-kit">mdbootstrap/mdb-ui-kit&lt;/a>: Bootstrap 5 &amp;amp; Material Design 2.0 UI KIT&lt;/li>
 &lt;li>&lt;a href="https://github.com/google/material-design-lite">google/material-design-lite&lt;/a>: Material Design Components in HTML/CSS/JS
 &lt;blockquote>
-&lt;p>最先被干掉的一个？当然是Google自己的了&lt;/p>
-&lt;/blockquote>
+&lt;p>最先被干掉的一个？当然是Google自己的了&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/Dogfalo/materialize">Dogfalo/materialize&lt;/a>: Materialize, a CSS Framework based on Material Design&lt;/li>
 &lt;/ul>
@@ -978,15 +962,13 @@ alt="第一次开机">&lt;figcaption>
 &lt;ul>
 &lt;li>&lt;strong>&lt;a href="https://github.com/lukas-blecher/LaTeX-OCR">LaTeX-OCR&lt;/a>&lt;/strong>
 &lt;blockquote>
-&lt;p>这个很好用的，我一直想把这玩意打包成一个可执行文件……&lt;/p>
-&lt;/blockquote>
+&lt;p>这个很好用的，我一直想把这玩意打包成一个可执行文件……&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.3/README_ch.md">PaddleOCR&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/DayBreak-u/chineseocr_lite/tree/master">chineseocr_lite&lt;/a>
 &lt;blockquote>
 &lt;p>上面两个的中文识别率是比较高的，不像Tesseract
-对了，这两个都有Android客户端Demo，基本上开箱即用&lt;/p>
-&lt;/blockquote>
+对了，这两个都有Android客户端Demo，基本上开箱即用&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/tesseract-ocr/tesseract">tesseract-ocr/tesseract&lt;/a>: Tesseract Open Source OCR Engine (main repository)&lt;/li>
 &lt;li>&lt;a href="https://github.com/naptha/tesseract.js">naptha/tesseract.js&lt;/a>: Pure Javascript OCR for more than 100 Languages 📖🎉🖥&lt;/li>
@@ -994,8 +976,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;/ul>
 &lt;h2 id="量化与虚拟货币">量化与虚拟货币&lt;/h2>
 &lt;blockquote>
-&lt;p>谁都有年轻的时候……&lt;/p>
-&lt;/blockquote>
+&lt;p>谁都有年轻的时候……&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/ccxt/ccxt">ccxt/ccxt&lt;/a>: A JavaScript / Python / PHP cryptocurrency trading API with support for more than 100 bitcoin/altcoin exchanges&lt;/li>
 &lt;li>&lt;a href="https://github.com/barnumbirr/coinmarketcap">barnumbirr/coinmarketcap: A python wrapper around the https://coinmarketcap.com API.&lt;/a>&lt;/li>
@@ -1020,13 +1001,11 @@ alt="第一次开机">&lt;figcaption>
 &lt;li>&lt;a href="https://github.com/microsoft/winfile">microsoft/winfile&lt;/a> - Original Windows File Manager (winfile) with enhancements&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://github.com/5digits/dactyl">5digits/dactyl&lt;/a>&lt;/strong>: Pentadactyl and other related Gecko extensions
 &lt;blockquote>
-&lt;p>后来再也没有能够达到同样高度的扩展了&lt;/p>
-&lt;/blockquote>
+&lt;p>后来再也没有能够达到同样高度的扩展了&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/felixrieseberg/windows95">felixrieseberg/windows95&lt;/a>: 💩🚀 Windows 95 in Electron. Runs on macOS, Linux, and Windows.
 &lt;blockquote>
-&lt;p>这个是&lt;strong>真家伙&lt;/strong>，不是随便画几个网页的那种&lt;/p>
-&lt;/blockquote>
+&lt;p>这个是&lt;strong>真家伙&lt;/strong>，不是随便画几个网页的那种&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ul>
 &lt;hr>
@@ -1054,8 +1033,7 @@ alt="第一次开机">&lt;figcaption>
 &lt;/figure>
 &lt;p>&lt;em>序列化&lt;/em>的光线追迹，或成像光学，完成度很高，甚至自带一个类似Zemax的界面。在其&lt;a href="https://ray-optics.readthedocs.io/en/latest/Introduction.html">手册&lt;/a>上提到：&lt;/p>
 &lt;blockquote>
-&lt;p>Rethink how image forming optical calculations are done absent historical constraints on computer speed and memory.&lt;/p>
-&lt;/blockquote>
+&lt;p>Rethink how image forming optical calculations are done absent historical constraints on computer speed and memory.&lt;/p>&lt;/blockquote>
 &lt;p>我学不会光学设计肯定是因为软件历史包袱太重，嗯。&lt;/p>
 &lt;h3 id="raypier">Raypier&lt;/h3>
 &lt;p>非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）&lt;/p>
@@ -1142,8 +1120,7 @@ alt="我逐渐理解一切" width="30%">
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
-&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>
-&lt;/blockquote>
+&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>&lt;/blockquote>
 &lt;h2 id="准备">准备&lt;/h2>
 &lt;ol>
 &lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>
@@ -1189,14 +1166,11 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>而且加班本身也并不是一件坏事，它会给你&lt;em>充实&lt;/em> ，可以治疗“野胡”的疾病，甚至能让人体验到&lt;em>自由&lt;/em>——&lt;a href="https://zh.wikipedia.org/wiki/%E5%8B%9E%E5%8B%95%E5%B8%B6%E4%BE%86%E8%87%AA%E7%94%B1">&lt;em>Arbeit macht frei&lt;/em>&lt;/a>，就像在集中营入口写道的。&lt;/p>
 &lt;p>于是，回望过去的那一年，就像在火车上急速奔驰，可我并不知道列车的下一站在哪里。窗外和煦的阳光洒在我身上，也许我应该稍稍休息一下。&lt;/p>
 &lt;p>或者，在2021年再多读一些书，赶在睡着，或者成为“无趣的大人”之前。&lt;/p></description></item><item><title>和（基本上）什么也不能连的电脑传递信息</title><link>https://blog.heysh.xyz/2020/10/18/information-exchange-in-extreme-situations/</link><pubDate>Sun, 18 Oct 2020 12:56:57 +0000</pubDate><guid>https://blog.heysh.xyz/2020/10/18/information-exchange-in-extreme-situations/</guid><description>&lt;blockquote>
-&lt;p>有时候你会&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>遇到一些电脑，孤零零的漂浮在互联网络之外，所有USB口都上了锁，要送进去一些文件，必须要找海关盖上十几个章才能够放行。&lt;/p>
-&lt;/blockquote>
+&lt;p>有时候你会&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>遇到一些电脑，孤零零的漂浮在互联网络之外，所有USB口都上了锁，要送进去一些文件，必须要找海关盖上十几个章才能够放行。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>当然，显示器、鼠标和键盘还是可以用的，可以让上个世纪的打字小妹一点一点地敲击按键……或者在敲的同时走神，想一想有没有什么别的办法。&lt;/p>
-&lt;/blockquote>
+&lt;p>当然，显示器、鼠标和键盘还是可以用的，可以让上个世纪的打字小妹一点一点地敲击按键……或者在敲的同时走神，想一想有没有什么别的办法。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>下面就是某一天下午，被锁链铐在工位上的我的白日梦。&lt;/p>
-&lt;/blockquote>
+&lt;p>下面就是某一天下午，被锁链铐在工位上的我的白日梦。&lt;/p>&lt;/blockquote>
 &lt;p>好吧，现在的情况还不算太糟，至少还有输入设备（键盘，或者像是键盘的什么玩意儿），实在不行的话，我们也可以做出一个 &lt;strong>超级打字机器人3000&lt;/strong> 之类的。&lt;/p>
 &lt;p>&lt;img src="5f4.gif" alt="3000">&lt;/p>
 &lt;p>&lt;em>想着这些，我把键盘上的导线扯了下来，我看见线的另一头连着的接口是——&lt;/em>&lt;/p>
@@ -1218,8 +1192,7 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>等我敲完这一批字之后，一定要去试一试。&lt;em>我这样想。&lt;/em>&lt;/p>
 &lt;blockquote>
 &lt;p>免责声明：上面的只是白日梦而已，完全没有测试过。请遵守本地法律法规和公司规章制度，不管你干了什么都跟我没有任何关系。&lt;/p>
-&lt;p>另外，这次的博文让我想起一个笑话，就是我请电脑高手重装系统，但是他只有一张光盘和一根针……哈哈哈，完全笑不出来。&lt;/p>
-&lt;/blockquote>
+&lt;p>另外，这次的博文让我想起一个笑话，就是我请电脑高手重装系统，但是他只有一张光盘和一根针……哈哈哈，完全笑不出来。&lt;/p>&lt;/blockquote>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
@@ -1228,11 +1201,9 @@ alt="我逐渐理解一切" width="30%">
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>我将贻笑于大方之家</title><link>https://blog.heysh.xyz/2020/06/10/to-be-a-laughing-stock/</link><pubDate>Wed, 10 Jun 2020 13:32:25 +0000</pubDate><guid>https://blog.heysh.xyz/2020/06/10/to-be-a-laughing-stock/</guid><description>&lt;blockquote>
-&lt;p>不对，其实应该是“吾长见笑于大方之家”。&lt;/p>
-&lt;/blockquote>
+&lt;p>不对，其实应该是“吾长见笑于大方之家”。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>这体现出我当前在写字上的一些困难。&lt;/p>
-&lt;/blockquote>
+&lt;p>这体现出我当前在写字上的一些困难。&lt;/p>&lt;/blockquote>
 &lt;p>翻了翻自己的博客，上次正经写字大概是半年之前了，而这篇博文也在草稿箱中躺了很久，除了前面的两句引子之外，正文空无一字。&lt;/p>
 &lt;p>一部分原因可能是没有什么东西可以写。因为自己的被害妄想，在这个博客里并不会涉及过多的现实生活。另外，长时间对情感的否认也抹去了自己伤春悲秋的能力。小的时候语文老师教我：“须言之有物。”可是在无尽的将石头推向山顶的旅程中，能够提及的景色也确实十分有限。&lt;/p>
 &lt;p>当然原因并不仅仅在此。我常常幻想自己能够成为一位长文作者（就像&lt;a href="https://waitbutwhy.com/">Tim Urban&lt;/a>一样），但每当我尝试进行这种写作的时候，总会有一种恐惧围绕在身边：如果文中出现了一些&lt;em>简单的&lt;/em>常识性错误该怎么办？&lt;/p>
@@ -1241,8 +1212,7 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>说到这里，我发现自己说不出话来的原因，只是追求完美……或是害怕被喷而已，即使是在完全属于自己的博客。&lt;/p>
 &lt;p>毕竟&lt;/p>
 &lt;blockquote>
-&lt;p>一旦我成为人类，我只会跟你讲一些不太重要或者根本不重要的事，我会尽量避免谈论信仰和政治，因为如果我们意见不统一，你就不会再喜欢我了。&lt;/p>
-&lt;/blockquote>
+&lt;p>一旦我成为人类，我只会跟你讲一些不太重要或者根本不重要的事，我会尽量避免谈论信仰和政治，因为如果我们意见不统一，你就不会再喜欢我了。&lt;/p>&lt;/blockquote>
 &lt;p>顺带一提，这种现象在传播学中可能叫做“沉默的螺旋”。我在准备一些严肃（……）的素材时，发现很多想法已经在传播学中出现过了。比如这个词，是我在《大众传播理论：范式与流派》的目录上发现的。对于一个新闻系的本科生来说，这个理论就是所谓&lt;em>简单的&lt;/em>常识；而我刚刚看到这本大部头的第二章，素材们还要继续在笔记本里吃灰。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -1283,22 +1253,19 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>我没什么好交代的了。下次见。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-1的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>&lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-12的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-12的更新：&lt;/p>&lt;/blockquote>
 &lt;p>终于通过了Hugo Themes的投稿：&lt;a href="https://themes.gohugo.io/hugo-theme-tokiwa/">https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/a>&lt;/p>
 &lt;p>That's a long trip.&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-14的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-14的更新：&lt;/p>&lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -1313,12 +1280,10 @@ alt="我逐渐理解一切" width="30%">
 碳基生物正在庆祝 &lt;br>
 他们所在的行星 &lt;br>
 又在该恒星系里 &lt;br>
-完成了一次公转&lt;/p>
-&lt;/blockquote>
+完成了一次公转&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;p>而这次公转开始得格外颠簸——至少星星上的一部分碳基生物觉得格外颠簸。 &lt;br>
-下面是碳基生物中微不足道的一员，对自己的上一次公转过程进行的总结。&lt;/p>
-&lt;/blockquote>
+下面是碳基生物中微不足道的一员，对自己的上一次公转过程进行的总结。&lt;/p>&lt;/blockquote>
 &lt;p>我觉得2020年亏欠我很多，没有飞出太阳系，没有受控核聚变，甚至连会飞的汽车也没有，只有战争、瘟疫和死亡。2020年可能觉得我不会在乎这些，毕竟我也确实到了应该关心琐碎现实的年纪。所以，我只会在这里提及一些琐碎的事情。&lt;/p>
 &lt;p>在去年我曾经提到，当时我“正在沼泽中慢慢下沉”。一年过去了，同伴们一些人跳出了泥坑，一些人去了…呃…水更深的地方，而我，感觉自己在逐渐长出呼吸根&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。经过了一年的搬砖、填坑、背锅，我逐渐开始适应了这里的节奏，同时，相比于（传说中）其他地方的愁云惨雾&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>，这里的温度在慢慢地暖和起来。&lt;/p>
 &lt;p>问题是，这样的天气还能持续多久？我偶尔会在深夜提醒自己。可是，没有了溺死的压力，学习的动力也随之下降了。2019年，仍然没有完成CS109，作为替代，上半年读了林轩田的《深度学习基石》，然后遇到了这个领域常见的落地问题：我并不知道学完这些能够用来做些什么。&lt;/p>
@@ -1328,8 +1293,7 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>&lt;img src="https://blog.heysh.xyz/img/%E5%A4%9A%E8%82%89.jpg" alt="多肉">&lt;/p>
 &lt;p>至少我们仍然健康地活着。&lt;/p>
 &lt;blockquote>
-&lt;p>在这个碳基生物敲键盘的时候，行星的公转并没有甚至一秒的延迟。它并不在意身上长出了什么，只是被引力牢牢牵住的同时努力向前运动，和它身上的生命一起。&lt;/p>
-&lt;/blockquote>
+&lt;p>在这个碳基生物敲键盘的时候，行星的公转并没有甚至一秒的延迟。它并不在意身上长出了什么，只是被引力牢牢牵住的同时努力向前运动，和它身上的生命一起。&lt;/p>&lt;/blockquote>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
@@ -1414,14 +1378,11 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>如果每个月只要十几分钟就可以获得成就感，习惯也就自然地养成了。&lt;/p>
 &lt;h2 id="又及">又及&lt;/h2>
 &lt;blockquote>
-&lt;p>我跟你港，这次的内容超适合作Python教程的，还能顺便学英语！只要学会了这个，年薪百万不是梦！&lt;/p>
-&lt;/blockquote>
+&lt;p>我跟你港，这次的内容超适合作Python教程的，还能顺便学英语！只要学会了这个，年薪百万不是梦！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>现在诚征 100 个&lt;del>凯子&lt;/del>幸运读者给我打钱，我的支付宝是：……&lt;/p>
-&lt;/blockquote>
+&lt;p>现在诚征 100 个&lt;del>凯子&lt;/del>幸运读者给我打钱，我的支付宝是：……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>呃，对不起。&lt;/p>
-&lt;/blockquote>
+&lt;p>呃，对不起。&lt;/p>&lt;/blockquote>
 &lt;p>以上不代表博主观点。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -1434,17 +1395,13 @@ alt="我逐渐理解一切" width="30%">
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>自动输入剪贴板中的内容</title><link>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</link><pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate><guid>https://blog.heysh.xyz/2019/09/22/klipper-autotype/</guid><description>&lt;blockquote>
-&lt;p>值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然地连不上了。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>正好上次薅的羊毛也快要过期了，又到了交保护费的时间。&lt;/p>
-&lt;/blockquote>
+&lt;p>值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然地连不上了。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>正好上次薅的羊毛也快要过期了，又到了交保护费的时间。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实之前我有两页关于VPS（价格）的笔记，不过计划赶不上变化，今天看到了一个叫Veesp的公司，很便宜，而且速度居然也还不错。&lt;/p>
-&lt;/blockquote>
+&lt;p>其实之前我有两页关于VPS（价格）的笔记，不过计划赶不上变化，今天看到了一个叫Veesp的公司，很便宜，而且速度居然也还不错。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>惟一的缺点是，&lt;del>我买不到红墨水&lt;/del>那里的终端noVNC不支持粘贴。&lt;/p>
-&lt;/blockquote>
+&lt;p>惟一的缺点是，&lt;del>我买不到红墨水&lt;/del>那里的终端noVNC不支持粘贴。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>以上是（无关紧要的）背景。&lt;/p>
-&lt;/blockquote>
+&lt;p>以上是（无关紧要的）背景。&lt;/p>&lt;/blockquote>
 &lt;details>
 &lt;summary>
 &lt;h4 class="inline">
@@ -1487,14 +1444,12 @@ alt="我逐渐理解一切" width="30%">
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
-&lt;p>来自2021-07-24的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2021-07-24的更新：&lt;/p>&lt;/blockquote>
 &lt;p>本文的2021年版本在&lt;a href="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/">这里&lt;/a>。&lt;/p>
 &lt;p>以下是2019年的原文。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>这大概是本博客第一次涉及博主在现实世界中的本职工作，大概算是一个好的开始。&lt;/p>
-&lt;/blockquote>
+&lt;p>这大概是本博客第一次涉及博主在现实世界中的本职工作，大概算是一个好的开始。&lt;/p>&lt;/blockquote>
 &lt;p>在光学设计及模拟的领域，商业软件，比如Zemax/Code V、LASCAD、GLAD等，提供了较为完整的解决方案，对于较为前沿的领域，国内研究的事实标准是，通过MATLAB自行编写可靠性和可维护性都存在较大问题的脚本。但是，对于一些&lt;del>研究经费不足同时工作量不饱和的&lt;/del>课题组，了解这个古老的学科与当今流行语言的交集，可能也具有一定的意义。&lt;/p>
 &lt;p>TL; DR：光学计算是一个很宽泛的话题，针对我的要求，之后我大概会试试&lt;a href="https://github.com/opticspy/lightpipes">LightPipes&lt;/a>.&lt;/p>
 &lt;p>以下是我找到的一些库的对比。&lt;/p>
@@ -1524,15 +1479,13 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>之后，可能会在这个的基础上对激光器进行一些分析——如果计划没有变更的话。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2019-10-23的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2019-10-23的更新：&lt;/p>&lt;/blockquote>
 &lt;h2 id="finesse-and-pykathttpwwwgwopticsorgfinesse">&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>&lt;/h2>
 &lt;p>为了LIGO设计的语言，用于引力波探测器的光路设计。Finesse有一种十分简单而复古的语法，而&lt;a href="http://www.gwoptics.org/pykat">PyKat&lt;/a>与其说是它的 &lt;em>封装&lt;/em> ，倒不如说是拿报纸包了一下。&lt;/p>
 &lt;p>当然，该程序的功能还是挺强大的，甚至还有一些量子光学的内容&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。如果有人想要尝试的话，可以从&lt;a href="http://www.gwoptics.org/learn/">这里&lt;/a>开始。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-1的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>&lt;/blockquote>
 &lt;h2 id="rayopthttpsgithubcomquartiqrayopt">&lt;a href="https://github.com/quartiq/rayopt">RayOpt&lt;/a>&lt;/h2>
 &lt;p>&lt;img src="rayopt.png" alt="rayopt">
 &lt;img src="rayopt2.png" alt="rayopt">&lt;/p>
@@ -1645,8 +1598,7 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>试图将HTML转回markdown，就像是试图将pdf转回TEX、减少宇宙的熵、或者是把石头推上山一样徒劳，不过，仍然有&lt;a href="https://github.com/domchristie/turndown">勇士&lt;/a>在尝试这个任务，效果嘛……差强人意，从两个方面理解都可以。&lt;/p>
 &lt;h2 id="关于为知笔记导出">关于为知笔记导出&lt;/h2>
 &lt;blockquote>
-&lt;p>感觉基本上没什么戏……&lt;/p>
-&lt;/blockquote>
+&lt;p>感觉基本上没什么戏……&lt;/p>&lt;/blockquote>
 &lt;p>为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段
 &lt;code>&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;（下略&lt;/code>
 才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……&lt;/p>
@@ -2124,8 +2076,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;h2 id="奥卡姆剃刀以及为什么在现实中可能失效">奥卡姆剃刀，以及为什么在现实中（可能）失效&lt;/h2>
 &lt;p>之前已经提到过&lt;a href="https://zh.wikipedia.org/zh-cn/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80">过拟合&lt;/a>这一概念：&lt;/p>
 &lt;blockquote>
-&lt;p>当可选择的参数的自由度超过数据所包含信息内容时，会减少或破坏模型一般化的能力更甚于适应数据。（维基百科）&lt;/p>
-&lt;/blockquote>
+&lt;p>当可选择的参数的自由度超过数据所包含信息内容时，会减少或破坏模型一般化的能力更甚于适应数据。（维基百科）&lt;/p>&lt;/blockquote>
 &lt;p>一般来说，奥卡姆剃刀是解决过拟合问题的有效途径。在预测能力相似的情况下，引入的假定越少越好。在贝叶斯理论下，可以通过贝叶斯因子（或其不够精确的代替品，&lt;a href="https://zh.wikipedia.org/zh-cn/%E8%B5%A4%E6%B1%A0%E4%BF%A1%E6%81%AF%E9%87%8F%E5%87%86%E5%88%99">赤池信息量准则&lt;/a>等等）来进行判断。现实生活中的噪音比实验数据更多，按理说剃刀会更加锋利，但是，与数学模型不同，生活中：&lt;/p>
 &lt;h3 id="样本仍然不足">样本（仍然）不足&lt;/h3>
 &lt;p>我们再次遇到了这个问题。生活中很多时候，我们获得的信息类似这样：&lt;/p>
@@ -2171,8 +2122,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>随机性从哪里来？</title><link>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</link><pubDate>Mon, 26 Mar 2018 21:03:21 +0800</pubDate><guid>https://blog.heysh.xyz/2018/03/26/who-will-roll-the-dice/</guid><description>&lt;blockquote>
-&lt;p>当然，没准可以预测“真空中的球形未来”。&lt;/p>
-&lt;/blockquote>
+&lt;p>当然，没准可以预测“真空中的球形未来”。&lt;/p>&lt;/blockquote>
 &lt;h2 id="量子力学">量子力学……&lt;/h2>
 &lt;p>我们都听说过“两朵乌云”的故事，其中一朵后来变成了&lt;strong>量子力学&lt;/strong>，告诉我们上帝（也许）是掷骰子的。这是截止到目前，所有苛刻的家伙都承认的“真正随机”。而且，通过一些简单的装置（比如盖格计数器或者一个虐猫狂人），这些随机可以进入宏观的现实生活。&lt;/p>
 &lt;p>&lt;del>或许有一天，我们会发现&lt;code>量子效应只是物质之海表面的涟漪，是物质更深层规律扰动的影子&lt;/code>&lt;/del>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>——但是，这仍不能让我们真正成为预言家，还有一些东西在阻止我们。&lt;/p>
@@ -2199,8 +2149,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>这次是纽约公共图书馆……而且居然还有第三部分？</title><link>https://blog.heysh.xyz/2018/02/24/nypl3/</link><pubDate>Sat, 24 Feb 2018 00:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/24/nypl3/</guid><description>&lt;blockquote>
-&lt;p>在图书馆的第三天，到了废纸回收环节&lt;/p>
-&lt;/blockquote>
+&lt;p>在图书馆的第三天，到了废纸回收环节&lt;/p>&lt;/blockquote>
 &lt;p>之前下到了一叠厚厚的&lt;a href="https://digitalcollections.nypl.org/collections/trait-des-arbres-et-arbustes-que-lon-cultive-en-france-en-pleine-terre#/?tab=about">图集&lt;/a>，可是要真正用起来，还需要一点点简单的处理，比如说，沿着边线把图案剪下来：
 &lt;figure>&lt;img src="https://blog.heysh.xyz/nypl/before.jpg">&lt;figcaption>
 &lt;h4>加工前&lt;/h4>
@@ -2218,8 +2167,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;li>以及&lt;a href="https://github.com/heyeshuang/Trait-des-arbres-et-arbustes-que-l-on-cultive-en-France-en-pleine-terre/tree/master/batch/France">原图&lt;/a>和修改之后的&lt;a href="https://github.com/heyeshuang/Trait-des-arbres-et-arbustes-que-l-on-cultive-en-France-en-pleine-terre/tree/master/france">结果&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>欢迎下载、使用、或者拿去卖钱，反正是公有领域。&lt;/p></description></item><item><title>这次是纽约公共图书馆……的第二天！</title><link>https://blog.heysh.xyz/2018/02/22/nypl2/</link><pubDate>Thu, 22 Feb 2018 16:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/22/nypl2/</guid><description>&lt;blockquote>
-&lt;p>（精神上）坐在图书馆里，我想：能不能把这些旧书借走呢？&lt;/p>
-&lt;/blockquote>
+&lt;p>（精神上）坐在图书馆里，我想：能不能把这些旧书借走呢？&lt;/p>&lt;/blockquote>
 &lt;p>当然是可以的！贴心的图书管理员已经提供了API接口：&lt;a href="http://api.repo.nypl.org/">http://api.repo.nypl.org/&lt;/a>，申请账号之后，就可以做各种各样的事了~&lt;/p>
 &lt;p>当然，如果只是想下片的话，用&lt;a href="https://github.com/NYPL-publicdomain/api-client">digital-collections&lt;/a>可能会更简单一些：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>digital-collections -t API_TOKEN -s UUID -o OUTPUT.json
@@ -2272,8 +2220,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">print&lt;/span>(_i)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">print&lt;/span>(&lt;span style="color:#366">str&lt;/span>(e))
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>这次是纽约公共图书馆……</title><link>https://blog.heysh.xyz/2018/02/21/nypl/</link><pubDate>Wed, 21 Feb 2018 22:03:59 +0800</pubDate><guid>https://blog.heysh.xyz/2018/02/21/nypl/</guid><description>&lt;blockquote>
-&lt;p>是的，我&lt;a href="https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/">又&lt;/a>去图书馆了，当然这次和戒网瘾没有什么关系。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，我&lt;a href="https://blog.heysh.xyz/2017/09/09/2017-09-03-jour-to-lib/">又&lt;/a>去图书馆了，当然这次和戒网瘾没有什么关系。&lt;/p>&lt;/blockquote>
 &lt;p>纽约公共图书馆建立于1895年，馆藏里有大量古老的资料，古老到超出了版权法的管理范围，进入了&lt;a href="https://en.wikipedia.org/wiki/Public_domain">公有领域&lt;/a>。于是，勤奋的图书管理员们把它们&lt;a href="https://www.nypl.org/blog/2016/01/05/share-public-domain-collections">数字化&lt;/a>，送给了互联网。&lt;/p>
 &lt;p>所以，在春节假期，坐在电脑前面，我也可以来一次纽约公共图书馆了——而且是一百年前的！&lt;/p>
 &lt;p>&lt;a href="https://digitalcollections.nypl.org/">这里&lt;/a>是数字图书馆的首页。如果是一位上世纪的通才，通晓法文、英文拉丁文和其他鸟语，他一定会感觉像是回到了家里一样；当然，即使像我这样的乡巴佬，看一看泛黄的插画，或许也能得到一些乐趣，比如说：&lt;/p>
@@ -2302,14 +2249,11 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;p>Before 2017-12-23.&lt;/p>
 &lt;p>These data (and honor) belong to &lt;a href="http://alt19.com">alt19.com&lt;/a>. This website says:&lt;/p>
 &lt;blockquote>
-&lt;p>Any information on Alt19.com is provided free and &amp;quot;as is&amp;quot; and solely for informational purposes, not for trading purposes or advice, and may be delayed.&lt;/p>
-&lt;/blockquote>
+&lt;p>Any information on Alt19.com is provided free and &amp;quot;as is&amp;quot; and solely for informational purposes, not for trading purposes or advice, and may be delayed.&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>No action should be taken or omitted to be taken in reliance upon information on this site. Use it AT YOUR OWN RISK&lt;/p>
-&lt;/blockquote>
+&lt;p>No action should be taken or omitted to be taken in reliance upon information on this site. Use it AT YOUR OWN RISK&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Digital currencies may be illegal in your jurisdiction. These are high-risk investments with liquidity risks and other financial risks! Some altcoins are inactive or may become inactive in future. Please do your own research.&lt;/p>
-&lt;/blockquote>
+&lt;p>Digital currencies may be illegal in your jurisdiction. These are high-risk investments with liquidity risks and other financial risks! Some altcoins are inactive or may become inactive in future. Please do your own research.&lt;/p>&lt;/blockquote>
 &lt;p>I think he/she is right, and, thank for these data.&lt;/p>
 &lt;hr>
 &lt;p>&lt;a href="https://drive.google.com/file/d/1lp3JkwKLCR_RxI61-jdPcH26UXCnHPuC/view?usp=sharing">Link&lt;/a>&lt;/p>
@@ -2410,11 +2354,9 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;blockquote>
-&lt;p>本文基本上是 &lt;em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/em> 的知识点大纲。&lt;/p>
-&lt;/blockquote>
+&lt;p>本文基本上是 &lt;em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/em> 的知识点大纲。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>具体的公式和理论，可以看&lt;a href="http://binweber.top/tags/ML/">Bin Weber的博客&lt;/a>。&lt;/p>
-&lt;/blockquote>
+&lt;p>具体的公式和理论，可以看&lt;a href="http://binweber.top/tags/ML/">Bin Weber的博客&lt;/a>。&lt;/p>&lt;/blockquote>
 &lt;h2 id="训练开发测试集traindevtest">训练/开发/测试集（Train/dev/test）&lt;/h2>
 &lt;ul>
 &lt;li>数据量10000之内：70/30（免去dev）或60/20/20&lt;/li>
@@ -2479,8 +2421,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;li>提高收敛速度（与对初始值X的操作类似）&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>采用批标准化之后，尽管每一层的z还是在不断变化，但是它们的均值和方差将基本保持不变，这就使得后面的数据更加稳定，减少前面层与后面层的耦合 （via Bin Weber）&lt;/p>
-&lt;/blockquote>
+&lt;p>采用批标准化之后，尽管每一层的z还是在不断变化，但是它们的均值和方差将基本保持不变，这就使得后面的数据更加稳定，减少前面层与后面层的耦合 （via Bin Weber）&lt;/p>&lt;/blockquote>
 &lt;h2 id="softmax">Softmax&lt;/h2>
 &lt;p>当分类器需要分出更多类时使用&lt;/p>
 &lt;h2 id="检验方程的梯度计算是否存在问题梯度检验">检验方程的梯度计算是否存在问题：梯度检验&lt;/h2>
@@ -2623,8 +2564,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;p>With Chinese characters in mind (of course), I have carefully chosen proper fonts for both Chinese and English. Head to &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/hugo">https://heyeshuang.github.io/aeolipile/#/@heyeshuang/hugo&lt;/a> to see a Chinese example! Or, watch &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-update-new-theme-link-generator-and-more">this post on Aeolipile&lt;/a>, if you haven't!&lt;/p>
 &lt;hr>
 &lt;p>And this is not the end, I still have some dark thoughts... Anyway, welcome to fork, push and comment! Your opinions and ideas are precious.&lt;/p></description></item><item><title>社交恐惧症患者也想用Steem，所以我做了Aeolipile</title><link>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</link><pubDate>Sat, 04 Nov 2017 11:55:46 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</guid><description>&lt;blockquote>
-&lt;p>TL;DR: 你可以在&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile">这个链接&lt;/a>看到Aeolipile。&lt;/p>
-&lt;/blockquote>
+&lt;p>TL;DR: 你可以在&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile">这个链接&lt;/a>看到Aeolipile。&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a href="https://steemit.com/cn/@heyeshuang/steem-a-closer-look-to-steem">我曾经说&lt;/a>不会把博客完全搬到Steem上。除了之前说过的原因之外，还有一些感性上的理由。&lt;/p>
 &lt;p>和那些&lt;a href="https://steemit.com/cn/@tumutanzi/5bbm33">网红博主（开玩笑的）&lt;/a>不同，我的博客没有什么人会光顾，这并不是什么坏事：只有这样，我才能感到真正的自由。&lt;/p>
 &lt;p>但是Steemit不同。页面下面的评论框和小数字，这些东西时刻在提醒我，你的文字是有人看的。对其他人来说，这可能是一件好事。可是，对于我来说，意识到有人在看这些东西，让我不自觉地在意起别人的感受了。我在敲键盘的时候，常常会想：“别人是怎么看这段话的？”然后，强烈的自我厌恶就会让我没办法接着写下去了。&lt;/p>
@@ -2652,8 +2592,7 @@ alt="大家喜闻乐见的冰山图.jpg">&lt;figcaption>
 &lt;p>欢迎fork，如果不嫌弃代码写得烂的话。&lt;/p>
 &lt;p>最后，我还想说一句台词：&lt;/p>
 &lt;blockquote>
-&lt;p>I could be bounded in a nutshell and count myself a king of infinite space.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>I could be bounded in a nutshell and count myself a king of infinite space.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;p>当然，没准一个Aeolipile也行。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -2997,8 +2936,7 @@ Incognito This Tab&lt;/a>
 &lt;p>窝在凳子上，我登陆图书馆网站，搜索《哥德尔、艾舍尔、巴赫》，我曾经尝试翻开这本书很多次，今天，它指引我去另外一座建筑，然后拒绝了我。沉迷网络时，我顺着超链接快速前进，可能走得太过遥远了。今天，看着门上“闭馆”的标志，我决定漫无目的地漂流一会儿。于是我找到一本塔罗牌意解释，随便翻了几页。&lt;/p>
 &lt;p>“这张牌的逆位并不是这个意思！异端！”忍住了把这本书送上火刑架的冲动，我离开了图书馆。几个小时之后，我穿过了围墙的缺口。在阴暗的柳林前面，有一条黄狗趴在路上，我们对视了几秒钟。接着，它慢悠悠地爬起来，向着另一边走去。我应该是摇了摇尾巴，跌跌撞撞地穿过泥泞的树林。&lt;/p>
 &lt;blockquote>
-&lt;p>本文部分描写是虚构的。我并不在那种地方；没有什么教官；而且也不想过人类的生活。&lt;/p>
-&lt;/blockquote>
+&lt;p>本文部分描写是虚构的。我并不在那种地方；没有什么教官；而且也不想过人类的生活。&lt;/p>&lt;/blockquote>
 &lt;p>&lt;font color="white">互联网带来了极大量的信息，远远超过了个人的接受能力，于是，通过兴趣、习惯和“智能推荐”，我们选择了部分信息摄入，而这部分信息会使人&lt;a href="http://www.guokr.com/article/437210/" style="color: white">“上瘾”&lt;/a>，对另外的信息视而不见或产生负面的情绪。这可能会造成个人对于人群平均值的距离提高，影响人类社会的基础——同理心。&lt;/p>
 &lt;p>当然，这也是建立在我所获取的微量信息上的偏见，而且我会把这一段隐藏，因为如果我们意见不统一，你就不会再喜欢我了。&lt;/font>&lt;/p></description></item><item><title>关于那个IME helper</title><link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link><pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid><description>&lt;p>&lt;del>昨天&lt;/del>前天我用鸟语写了一篇贼 &lt;em>正经&lt;/em> 的&lt;a href="https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/">说明&lt;/a>，今天，我准备稍微介绍一下那里面的&lt;code>IME helper&lt;/code>。&lt;/p>
 &lt;p>正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p>
@@ -3284,8 +3222,7 @@ Incognito This Tab&lt;/a>
 &lt;p>刚写完，又在中文互联网上找到了另外一种思路：&lt;/p>
 &lt;p>&lt;a href="http://spacekid.me/qart-code/">http://spacekid.me/qart-code/&lt;/a>&lt;/p>
 &lt;p>似乎更漂亮些的样子，不过对于像素控来说还是喜欢上面这个~&lt;/p></description></item><item><title>我失去了heysh.tk域名</title><link>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</link><pubDate>Tue, 24 May 2016 14:35:24 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</guid><description>&lt;blockquote>
-&lt;p>Dear 叶霜 贺,&lt;/p>
-&lt;/blockquote>
+&lt;p>Dear 叶霜 贺,&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;/blockquote>
 &lt;blockquote>
@@ -3300,8 +3237,7 @@ registration,
 an actual working website is needed to complete the registration
 process.&lt;/p>
 &lt;p>We thank you for using Freenom.&lt;/p>
-&lt;p>Freenom Review Team&lt;/p>
-&lt;/blockquote>
+&lt;p>Freenom Review Team&lt;/p>&lt;/blockquote>
 &lt;p>Whatever.&lt;/p>
 &lt;p>之前的heysh.tk页面回到了&lt;a href="http://heyeshuang.github.io">heyeshuang.github.io&lt;/a>，以上。&lt;/p></description></item><item><title>一个简单的在线LRC编辑器</title><link>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link><pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid><description>&lt;p>地址：&lt;a href="http://heyeshuang.github.io/hieda-lrc-editor/">http://heyeshuang.github.io/hieda-lrc-editor/&lt;/a>&lt;/p>
 &lt;p>GITHUB：&lt;a href="https://github.com/heyeshuang/hieda-lrc-editor">https://github.com/heyeshuang/hieda-lrc-editor&lt;/a>&lt;/p>
@@ -3313,14 +3249,11 @@ process.&lt;/p>
 &lt;p>另外的另外，名字来自稗田阿求，&lt;del>也许我应该换一个更萌一点的网页图标……&lt;/del>&lt;/p>
 &lt;p>update: 萌萌的图标已经换了～&lt;/p>
 &lt;p> &lt;/p></description></item><item><title>野路子科研工具二则</title><link>https://blog.heysh.xyz/2016/03/21/%E9%87%8E%E8%B7%AF%E5%AD%90%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7%E4%BA%8C%E5%88%99/</link><pubDate>Mon, 21 Mar 2016 14:28:29 +0000</pubDate><guid>https://blog.heysh.xyz/2016/03/21/%E9%87%8E%E8%B7%AF%E5%AD%90%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7%E4%BA%8C%E5%88%99/</guid><description>&lt;blockquote>
-&lt;p>读书人的事怎能算偷！&lt;/p>
-&lt;/blockquote>
+&lt;p>读书人的事怎能算偷！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&lt;del>——小四&lt;/del>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;del>——小四&lt;/del>&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>&lt;del>——拉比克&lt;/del>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;del>——拉比克&lt;/del>&lt;/p>&lt;/blockquote>
 &lt;h2 id="engauge-digitizerhttpdigitizersourceforgenet">&lt;a href="http://digitizer.sourceforge.net/">engauge digitizer&lt;/a>&lt;/h2>
 &lt;p>一个图表数字化程序，当你&lt;/p>
 &lt;ul>
@@ -3391,8 +3324,7 @@ option master '1'
 &lt;p>唯一值得慰藉的，是我在老实答“没有”的时候，作为回应的，如释重负的眼神。&lt;/p>
 &lt;p>于15年5月17日夜&lt;/p></description></item><item><title>罗马在哪里</title><link>https://blog.heysh.xyz/2015/04/09/%E7%BD%97%E9%A9%AC%E5%9C%A8%E5%93%AA%E9%87%8C/</link><pubDate>Thu, 09 Apr 2015 14:12:01 +0000</pubDate><guid>https://blog.heysh.xyz/2015/04/09/%E7%BD%97%E9%A9%AC%E5%9C%A8%E5%93%AA%E9%87%8C/</guid><description>&lt;p>这是关于2月2号&lt;a href="https://blog.heysh.xyz/sentences/#roma">果壳和国王&lt;/a>小剧场的故事。&lt;/p>
 &lt;blockquote>
-&lt;p>我记得念过这样的怪诗：\&lt;/p>
-&lt;/blockquote>
+&lt;p>我记得念过这样的怪诗：\&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;p>匈奴族的首长阿底拉&lt;br>
 骑着马，&lt;br>
@@ -3401,16 +3333,14 @@ option master '1'
 在无人境中行走。&lt;br>
 他的背后有一队乌云一样的大军在追寻着叫喊：&lt;br>
 “何处是罗马？何处是雄伟的罗马？”&lt;/p>
-&lt;p>——高尔基，《在人间》&lt;/p>
-&lt;/blockquote>
+&lt;p>——高尔基，《在人间》&lt;/p>&lt;/blockquote>
 &lt;p>这是我很小的时候读过的书。封皮是米黄色的一套三卷，书页之间夹着酥糖的渣子，油渍扩散开来把纸张染成透明的微黄色；而内容却记不太清了，只记得阿廖沙家中无止境的争吵，小小的麻雀祭坛和上面这一首诗，还有，很奇怪的，老家里沙发套子在午后阳光下微黄的颜色。&lt;/p>
 &lt;p>当然，路过的旅行者，如果你也在找这一段文字的话，这首诗应该是波兰诗人约·波·扎列斯基（Józef Bohdan Zaleski，1802—1886）写过的一部抒情长诗《草原的精灵》（&lt;em>Duch od stepu&lt;/em> ，The Spirit from the &lt;a href="http://en.wikipedia.org/wiki/Steppe" title="Steppe">Steppe&lt;/a>）。1877年俄译者译了该诗的一个片断，题为《阿底拉》。高尔基对这首诗的记忆并不准确，而我的记性不会比他更好。 &lt;/p>
 &lt;hr>
 &lt;p>update 150419: &lt;strong>剧透醒目&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>TYPE-MOON / FGO PROJECT计划于今年年内推出智能手机游戏《Fate/Grand
-Order》，近日有关新Servant“Saber”的信息也已经曝光，而这个角色的声优将是能登麻美子。&lt;/p>
-&lt;/blockquote>
+Order》，近日有关新Servant“Saber”的信息也已经曝光，而这个角色的声优将是能登麻美子。&lt;/p>&lt;/blockquote>
 &lt;p>&lt;img src="https://blog.heysh.xyz/%E9%98%BF%E6%8F%90%E6%8B%89.jpg" alt="大胸之王，阿提拉 from 《Fate/Grand Order》">&lt;/p>
 &lt;p>&lt;em>大&lt;del>胸&lt;/del>匈奴王（18才）&lt;/em>&lt;/p>
 &lt;p>&lt;em>请允许我做一个悲伤的表情~&lt;/em>&lt;/p>
@@ -3424,17 +3354,14 @@ Order》，近日有关新Servant“Saber”的信息也已经曝光，而这个
 他面色阴沉，&lt;br>
 像坟墓一样，一语不发。&lt;br>
 他的武士们像一片黑压压的乌云，跟在他后面，大声叫喊：&lt;br>
-哪里是罗马，哪里是强大的罗马？&lt;/p>
-&lt;/blockquote>
+哪里是罗马，哪里是强大的罗马？&lt;/p>&lt;/blockquote>
 &lt;p>稍微有一点押韵的感觉非常适合年幼的我。&lt;/p></description></item><item><title>2014年的总结</title><link>https://blog.heysh.xyz/2015/02/14/2014%E5%B9%B4%E7%9A%84%E6%80%BB%E7%BB%93/</link><pubDate>Sat, 14 Feb 2015 15:44:05 +0000</pubDate><guid>https://blog.heysh.xyz/2015/02/14/2014%E5%B9%B4%E7%9A%84%E6%80%BB%E7%BB%93/</guid><description>&lt;blockquote>
-&lt;p>寒假好闲啊~~~尤其是今天~~~~于是我来写博客了。&lt;/p>
-&lt;/blockquote>
+&lt;p>寒假好闲啊~~~尤其是今天~~~~于是我来写博客了。&lt;/p>&lt;/blockquote>
 &lt;ol>
 &lt;li>完成了毕业设计和毕业论文的撰写&lt;/li>
 &lt;/ol>
 &lt;blockquote>
-&lt;p>等等我得稳定一下情绪……&lt;/p>
-&lt;/blockquote>
+&lt;p>等等我得稳定一下情绪……&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>
 &lt;p>书接上回（2013总结——啊我没写）；&lt;/p>
@@ -3545,14 +3472,12 @@ Order》，近日有关新Servant“Saber”的信息也已经曝光，而这个
 }
 &lt;/code>&lt;/pre>
 &lt;blockquote>
-&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
-&lt;/blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>&lt;/blockquote>
 &lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
 &lt;blockquote>
 &lt;p>update150409:
 增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
-&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>&lt;/blockquote>
 &lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
 &lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
 &lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>
@@ -3576,19 +3501,15 @@ route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
 &lt;p>8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。&lt;/p></description></item><item><title>红色楼梯</title><link>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link><pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate><guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid><description>&lt;p>用three.js试着做了点东西&lt;/p>
 &lt;p>Live demo : &lt;a href="http://heyeshuang.github.io/three-stairs/">http://heyeshuang.github.io/three-stairs/&lt;/a>&lt;/p>
 &lt;blockquote>
-&lt;p>–你的下一句话是：“又做了没用的东西！”\&lt;/p>
-&lt;/blockquote>
+&lt;p>–你的下一句话是：“又做了没用的东西！”\&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>–是啊。\&lt;/p>
-&lt;/blockquote>
+&lt;p>–是啊。\&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>–咦？这算是猜对了吗？&lt;/p>
-&lt;/blockquote></description></item><item><title>用于OPENWRT的流量监控脚本：wrtbwmon</title><link>https://blog.heysh.xyz/2014/03/02/%E7%94%A8%E4%BA%8Eopenwrt%E7%9A%84%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC%EF%BC%9Awrtbwmon/</link><pubDate>Sun, 02 Mar 2014 11:38:02 +0000</pubDate><guid>https://blog.heysh.xyz/2014/03/02/%E7%94%A8%E4%BA%8Eopenwrt%E7%9A%84%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC%EF%BC%9Awrtbwmon/</guid><description>&lt;p>UPDATE at 15年平安夜：&lt;a href="https://wiki.openwrt.org/doc/howto/wrtbwmon">https://wiki.openwrt.org/doc/howto/wrtbwmon&lt;/a>&lt;/p>
+&lt;p>–咦？这算是猜对了吗？&lt;/p>&lt;/blockquote></description></item><item><title>用于OPENWRT的流量监控脚本：wrtbwmon</title><link>https://blog.heysh.xyz/2014/03/02/%E7%94%A8%E4%BA%8Eopenwrt%E7%9A%84%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC%EF%BC%9Awrtbwmon/</link><pubDate>Sun, 02 Mar 2014 11:38:02 +0000</pubDate><guid>https://blog.heysh.xyz/2014/03/02/%E7%94%A8%E4%BA%8Eopenwrt%E7%9A%84%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC%EF%BC%9Awrtbwmon/</guid><description>&lt;p>UPDATE at 15年平安夜：&lt;a href="https://wiki.openwrt.org/doc/howto/wrtbwmon">https://wiki.openwrt.org/doc/howto/wrtbwmon&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>在某次坑爹的网费改革之后校园网的免费流量变成了20G，于是流量监控这一需求变得迫切起来。Google之后，发现了这个脚本：&lt;a href="http://code.google.com/p/wrtbwmon/">wrtbwmon&lt;/a>。不过这个是为dd-wrt设计的，而且也很久没有更新过了，要进行一些小修改才能用。&lt;/p>
 &lt;blockquote>
-&lt;p>比如第24行，&lt;code>nvram&lt;/code>在我这里挂掉了，于是我简单粗暴的把它改成了&lt;code>eth1``br-lan&lt;/code>；还有那个&lt;code>publish&lt;/code>函数，似乎是读取&lt;code>/etc/dnsmasq&lt;/code>工作的，在OpenWRT上的对应文件似乎是&lt;code>/etc/dhcp.leases&lt;/code>什么的，相应的167行也稍稍修改了一下……&lt;/p>
-&lt;/blockquote>
+&lt;p>比如第24行，&lt;code>nvram&lt;/code>在我这里挂掉了，于是我简单粗暴的把它改成了&lt;code>eth1``br-lan&lt;/code>；还有那个&lt;code>publish&lt;/code>函数，似乎是读取&lt;code>/etc/dnsmasq&lt;/code>工作的，在OpenWRT上的对应文件似乎是&lt;code>/etc/dhcp.leases&lt;/code>什么的，相应的167行也稍稍修改了一下……&lt;/p>&lt;/blockquote>
 &lt;p>TL;DR：请在&lt;a href="https://gist.github.com/heyeshuang/9305089">这里&lt;/a>下载修改过的版本，在本人的2成新db-120上测试通过。&lt;/p>
 &lt;p>把上面那东西扔到&lt;code>/bin&lt;/code>里之后，在crontab里添上这么一段：&lt;/p>
 &lt;pre>&lt;code>* * * * * /bin/wrtbwmon setup br0
@@ -3727,14 +3648,12 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;/ul></description></item><item><title>fcitx的各种小功能</title><link>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</link><pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</guid><description>&lt;p>首先是吐槽时间：藏得这么深谁找得着啊！！好多帅气的小功能连按钮都没有！！连快捷键都要四个按键一块按！！！&lt;/p>
 &lt;h1 id="颜文字">颜文字&lt;/h1>
 &lt;blockquote>
-&lt;p>钥匙是分号&lt;/p>
-&lt;/blockquote>
+&lt;p>钥匙是分号&lt;/p>&lt;/blockquote>
 &lt;p>对，就是那个不知道怎么回事的“快速输入”。比如说，输入&lt;code>;smile&lt;/code>就是(・∀・)，什么你说你看不懂英文？到&lt;a href="https://fcitx-im.org/wiki/QuickPhrase_Emoji">这里&lt;/a>，复制到一个文件里，然后导入就行了～&lt;/p>
 &lt;p>&lt;img src="%5C11.png" alt="为什么不直接集成呢？谁知道呢……">&lt;/p>
 &lt;h1 id="输入unicode">输入unicode&lt;/h1>
 &lt;blockquote>
-&lt;p>Ctrl+Alt+Shift+U&lt;/p>
-&lt;/blockquote>
+&lt;p>Ctrl+Alt+Shift+U&lt;/p>&lt;/blockquote>
 &lt;p>快跑啊，野生的四按键快捷键出现啦o(≧口≦)o&lt;/p>
 &lt;p>有了这个，&lt;del>某痞子的:│▌就可以打出来了&lt;/del>，输入&lt;code>male&lt;/code>就可以找到可♂口的汉⚣子哦～&lt;/p>
 &lt;p>至于上面那个任务，好像还是用&lt;code>charmap&lt;/code>或者&lt;code>gucharmap&lt;/code>比较妥当……&lt;/p>
@@ -3748,11 +3667,9 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>更加优雅的答案是去修改&lt;code>C:\Users\me\Application Data\Mozilla\Firefox\Profiles\********.default\user.js&lt;/code>，或者直接把这个干掉。&lt;/p>
 &lt;p>这件事情告诉我们一个道理，firefox已经不再是一个比较小众的浏览器了；然而linux上仍然没有盗号木马。我不禁陷入了沉思。&lt;/p></description></item><item><title>测试VimRepress</title><link>https://blog.heysh.xyz/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</link><pubDate>Sun, 26 May 2013 08:05:33 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/26/%E6%B5%8B%E8%AF%95vimrepress/</guid><description>&lt;p>&lt;em>本来这时候我是应该滚去写实验报告的但却写了博客&lt;/em>&lt;/p>
 &lt;blockquote>
-&lt;p>不过大概这种东西应该花不了多久吧\&lt;/p>
-&lt;/blockquote>
+&lt;p>不过大概这种东西应该花不了多久吧\&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>–我这样安慰着自己&lt;/p>
-&lt;/blockquote>
+&lt;p>–我这样安慰着自己&lt;/p>&lt;/blockquote>
 &lt;p>总而言之，VimRepress是一个在&lt;strong>VIM&lt;/strong>上用&lt;strong>markdown&lt;/strong>写博客的插件，用于替代已经挂掉的VimPress；&lt;/p>
 &lt;p>&lt;a href="http://apt-blog.net/release-of-vimrepress_cn">说明&lt;/a>&lt;/p>
 &lt;p>好吧我滚回去写作业……&lt;/p></description></item><item><title>电路图、流程图：diagram designer及其他</title><link>https://blog.heysh.xyz/2013/05/25/%E7%94%B5%E8%B7%AF%E5%9B%BE%E3%80%81%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%9Adiagram-designer%E5%8F%8A%E5%85%B6%E4%BB%96/</link><pubDate>Sat, 25 May 2013 15:41:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/25/%E7%94%B5%E8%B7%AF%E5%9B%BE%E3%80%81%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%9Adiagram-designer%E5%8F%8A%E5%85%B6%E4%BB%96/</guid><description>&lt;p>一个月后的总结：当我用linux的时候，我会用dia画电路和流程图。yed只能画流程图，不过看起来稍微漂亮一点。\&lt;/p>
@@ -3764,14 +3681,12 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>另外，云端电路图还有&lt;a href="https://www.circuitlab.com/editor/">circuitLab&lt;/a>和&lt;a href="http://www.digikey.com/schemeit">schemeIt&lt;/a>等等。曾经用过一段circuitLab，不过那里的电路符号&lt;em>和我们的画风不一样&lt;/em>；粗略的看了一眼schemeIt，元件种类似乎不少，待会试试？&lt;/p>
 &lt;p>另外值得一提的就是这两个web app似乎都没有用flash。&lt;/p>
 &lt;blockquote>
-&lt;p>HTML5就是正义，真是个好时代啊。【HTML5が正义、いい时代になったものだ。】&lt;/p>
-&lt;/blockquote>
+&lt;p>HTML5就是正义，真是个好时代啊。【HTML5が正义、いい时代になったものだ。】&lt;/p>&lt;/blockquote>
 &lt;p>其实我在写实验报告的时候也&lt;em>领悟了悲伤&lt;/em>……&lt;/p></description></item><item><title>Doppelgänger</title><link>https://blog.heysh.xyz/2013/05/23/doppelganger/</link><pubDate>Wed, 22 May 2013 16:25:05 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/23/doppelganger/</guid><description>&lt;p>分身（德语:Doppelgänger）本意是指某一生者在二地同时出现，由第三者目睹另一个自己的现象。该存在与本人长得一模一样，但不限定为善或恶。民间传说当自己见到自己的分身，代表「其人寿命将尽」。&lt;/p>
 &lt;p>在历史记载上，据说美国第16届总统亚伯拉罕·林肯与日本作家芥川龙之介等名人曾经见过自己的分身。另一种说法是：罹患脑癌的病人丧失了自我认识的感觉，而会感受到好像有肉体以外的「另一个自己」存在。换句话说也可以想成是脑部发生某种功能障碍，死期将尽的人看到了分身，而出现「见到另一个自己的人将会不久於人世」这样的说法。不过该说法仍然只是推测，因为有过「由第三者目击到分身」的案例，与前述说法会有不合逻辑的部分。总体而言，分身大抵上被视为神秘学的现象。&lt;/p>
 &lt;blockquote>
 &lt;p>“你还记得那个德国传说吗？人要是遇到了长得跟他一模一样的幽灵，他就会死的。不记得？那个幽灵在一个孤寂的地方现身，绝望地挥动着他的胳膊。”
-    ——牛虻&lt;/p>
-&lt;/blockquote>
+    ——牛虻&lt;/p>&lt;/blockquote>
 &lt;p>作为结论，通过寻找和自己相似的人来获得自我认同，大概是十分危险的。&lt;/p></description></item><item><title>果壳和国王</title><link>https://blog.heysh.xyz/sentences/</link><pubDate>Sun, 19 May 2013 16:55:35 +0000</pubDate><guid>https://blog.heysh.xyz/sentences/</guid><description>&lt;p>Hi，这里是19年1月份的说明。自从我下载了Twitter客户端之后，这些脑袋里飘舞的落叶都扫到那里面去了。&lt;/p>
 &lt;p>我的Twitter地址在左侧。&lt;del>希望大家多多关注。&lt;/del>&lt;/p>
 &lt;hr>
@@ -3788,15 +3703,13 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>人类是一种群居动物。现在，人类已经进化到没有集体（社会）便无法生存的程度，孤独感也正是群居生活的枷锁。但另一方面，人类却无法在基因库中彻底抹消个体的意识，这造成了社会的混乱，也导致很多孤独的人仍苟活于世。 –6.14&lt;/p>
 &lt;p>我之所以不为猪辩护，是因为我并不担心有一天会被吃掉。 –6.14&lt;/p>
 &lt;blockquote>
-&lt;p>我只认为同情心是道德的基石。要得到同情心，需要一点点想象力——或者稍稍多一点的不那么愉快的经验。&lt;/p>
-&lt;/blockquote>
+&lt;p>我只认为同情心是道德的基石。要得到同情心，需要一点点想象力——或者稍稍多一点的不那么愉快的经验。&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;p>上面那个是谁呀真恶心…另外，最近的新爱好是对着厕所里的大镜子做JOJO立 —6.20&lt;/p>
 &lt;p>&lt;del>短期梦想：把左手改装成机械臂||巨大机器人！！ –6.26&lt;/del>&lt;/p>
 &lt;p>后来，我选择了一条不同的道路。&lt;/p>
 &lt;blockquote>
-&lt;p>这样的话就只能做beam系武器了……残念…… –10.14&lt;/p>
-&lt;/blockquote>
+&lt;p>这样的话就只能做beam系武器了……残念…… –10.14&lt;/p>&lt;/blockquote>
 &lt;p>今日经验：永远不要试探他人。 –7.8&lt;/p>
 &lt;p>—你知道吗？枯叶里面其实很暖和呢！虽然见不到阳光。 —那是因为细菌吧。
 –131004&lt;/p>
@@ -3836,8 +3749,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>真正的自由在拥挤的旷野和空无一人的街头。 -20180424&lt;/p>
 &lt;p> &lt;/p></description></item><item><title>Mortal</title><link>https://blog.heysh.xyz/2013/05/20/mortal/</link><pubDate>Sun, 19 May 2013 16:53:27 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/20/mortal/</guid><description>&lt;p>在我无助的时候，并不会有人来拯救我。这可谓是一种报应：我以冷脸示于人前，从未尝试拯救他人，从未想过被他人拯救。疏离，也许是永生所要的代价；如果真是如此，就让时间成为我唯一的朋友。\&lt;/p>
 &lt;p>然而我仍未得到永生，时间仍是我最大的敌人。&lt;/p></description></item><item><title>vim again</title><link>https://blog.heysh.xyz/2013/05/17/vim-again/</link><pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid><description>&lt;blockquote>
-&lt;p>vim是一种信仰。&lt;/p>
-&lt;/blockquote>
+&lt;p>vim是一种信仰。&lt;/p>&lt;/blockquote>
 &lt;p>上面这句话应该是从某个披头散发1年没洗澡的&lt;em>技术大牛&lt;/em>嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有feel。在下面再带个双语字幕就更好了，英文就写”you are all 渣渣”就行…… 咳咳，跑题了。&lt;/p>
 &lt;hr>
 &lt;p>好吧那么我为什么又开始折腾vim了呢？因为eclipse太水了……&lt;/p>
@@ -3873,8 +3785,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>唯一的区别是，它早了11年。&lt;/p>
 &lt;p>当然，现在流行的是什么平面化设计风格，java applets也被flash挤出了浏览器；而现在flash在换了n次东家之后，也慢慢显出了颓势。&lt;/p>
 &lt;blockquote>
-&lt;p>现在是HTML5的时代了！他们说。&lt;/p>
-&lt;/blockquote>
+&lt;p>现在是HTML5的时代了！他们说。&lt;/p>&lt;/blockquote>
 &lt;p>于是，我们用先进的HTML5，代替了古老的java，然后发现风扇一样狂转。&lt;/p>
 &lt;p>当我们欢欣鼓舞地把frontpage丢进坟墓的时候，绝对不会想到今天的adobe muse。&lt;/p>
 &lt;p>当我们把“三剑客”奉为神器的十一年后，flash已经半死不活，&lt;strong>真正的&lt;/strong>fireworks，刚刚咽下他&lt;a href="http://www.donews.com/it/201305/1491311.shtm">最后&lt;/a>一口气。&lt;/p>
@@ -3952,59 +3863,41 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>即使到了2013年，一到夜里就乱说话的毛病还是没治好。\&lt;/p>
 &lt;p>2013年的愿望是永生，形式不限。其实也想要别人的认同的，不过既然都不切实际，那么还是永生更好一点。\&lt;/p>
 &lt;p>不过13年似乎会很忙，所以要是能慷慨的把时间停止的能力也给我就好了。&lt;/p></description></item><item><title>Texlive 在archlinux上的安装，以及中文字体的设置</title><link>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link><pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid><description>&lt;blockquote>
-&lt;p>texmacs已经不能满足我了！&lt;/p>
-&lt;/blockquote>
+&lt;p>texmacs已经不能满足我了！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>
-&lt;/blockquote>
+&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后发现大魔王令人绝望的实力&lt;/p>
-&lt;/blockquote>
+&lt;p>然后发现大魔王令人绝望的实力&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>
-&lt;/blockquote>
+&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>结果我还是不会用tex&lt;/p>
-&lt;/blockquote>
+&lt;p>结果我还是不会用tex&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>所以我下了lyx&lt;/p>
-&lt;/blockquote>
+&lt;p>所以我下了lyx&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>
-&lt;/blockquote>
+&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>#挂科预感up（大）#&lt;/p>
-&lt;/blockquote>
+&lt;p>#挂科预感up（大）#&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>我说这个又没人爱听&lt;/p>
-&lt;/blockquote>
+&lt;p>我说这个又没人爱听&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>反正也不会有人来&lt;/p>
-&lt;/blockquote>
+&lt;p>反正也不会有人来&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>fin&lt;/p>
-&lt;/blockquote>
+&lt;p>fin&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>骗你的&lt;/p>
-&lt;/blockquote>
+&lt;p>骗你的&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>
-&lt;/blockquote>
+&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>
-&lt;/blockquote>
+&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实我一开始以为直接pacman就好了&lt;/p>
-&lt;/blockquote>
+&lt;p>其实我一开始以为直接pacman就好了&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>但是后来我发现自己太甜了&lt;/p>
-&lt;/blockquote>
+&lt;p>但是后来我发现自己太甜了&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>于是我就下了texlive的镜像&lt;/p>
-&lt;/blockquote>
+&lt;p>于是我就下了texlive的镜像&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>后来发现直接安可能也可以？？&lt;/p>
-&lt;/blockquote>
+&lt;p>后来发现直接安可能也可以？？&lt;/p>&lt;/blockquote>
 &lt;p>按照&lt;a href="http://www.road2stat.com/cn/tex/archtex.html">这里&lt;/a>的安装方式\&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>su –
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
@@ -4023,8 +3916,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;blockquote>
 &lt;p>将 texlive-fontconfig.conf 文件复制到
 /etc/fonts/conf.d/09-texlive.conf，
-运行 fc-cache -fsv 以root的名义&lt;/p>
-&lt;/blockquote>
+运行 fc-cache -fsv 以root的名义&lt;/p>&lt;/blockquote>
 &lt;p>接下来xetex就会提示你缺少字体了，是不是很高兴？&lt;/p>
 &lt;p>——才怪咧！&lt;/p>
 &lt;p>然后，你要用yaourt安装ttf-ms-fonts-zh_cn这个包——&lt;/p>
@@ -4040,17 +3932,13 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>然后……要是提示缺少&lt;code>Adobe Song Std&lt;/code>什么的，应该&lt;code>yaourt acroread-font-chinese-simplified&lt;/code>就行了吧……&lt;/p>
 &lt;p>啊啊，从这个过程里，我好像看到了我短暂的人生……越是精于算计，就越可能出现意想不到的状况……&lt;/p>
 &lt;blockquote>
-&lt;p>老子不做人了！TeTe！&lt;/p>
-&lt;/blockquote>
+&lt;p>老子不做人了！TeTe！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>
-&lt;/blockquote>
+&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>
-&lt;/blockquote>
+&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>最后祝你身体健康，再见&lt;/p>
-&lt;/blockquote></description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>&lt;p>&lt;a href="http://www.texmacs.org/" title="TexMacs">TexMacs&lt;/a>可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\&lt;/p>
+&lt;p>最后祝你身体健康，再见&lt;/p>&lt;/blockquote></description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>&lt;p>&lt;a href="http://www.texmacs.org/" title="TexMacs">TexMacs&lt;/a>可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\&lt;/p>
 &lt;p>其优势：&lt;/p>
 &lt;ul>
 &lt;li>像TEX一样的排版，结构和内容分离&lt;/li>
@@ -4129,8 +4017,7 @@ time.sleep(300);
 &lt;/code>&lt;/pre>
 &lt;p>在openwrt上测试成功。理论上可以加入crontab，现在还没测试（时间不够）&lt;br>
 update :鉴于论坛和路由器双重不给力，给urllib2设了超时&lt;/p></description></item><item><title>断</title><link>https://blog.heysh.xyz/2012/08/04/%E6%96%AD/</link><pubDate>Fri, 03 Aug 2012 21:20:34 +0000</pubDate><guid>https://blog.heysh.xyz/2012/08/04/%E6%96%AD/</guid><description>&lt;blockquote>
-&lt;p>到了夜晚人就变得奇怪了……&lt;/p>
-&lt;/blockquote>
+&lt;p>到了夜晚人就变得奇怪了……&lt;/p>&lt;/blockquote>
 &lt;p>好笑的是，高中三年匆匆过去，我对母校的记忆，竟然是几扇窗户。\&lt;/p>
 &lt;p>这是当我第一次踏入一中的图书馆时，印在我脑海中的景象。排排的书架旁边是窄窄的窗台，窗子里，是灰色高墙围成的天井。书架上，是密密麻麻摆放的书籍。有像“怎样心算快”这样浅显的画册，也有讲解e pi i之间奇妙关系的读本，更有着关于相对论的大部头{现在想起来，脑袋还是会隐隐作痛}。于是，周一的下午，大扫除的空闲，总会在这里随便抽出一本，或有图、或有趣，倚在窗户边上，随便翻看两页。窗中的阳光，让时间变得暧昧，也给回忆涂上了一层蜂蜜一样粘稠的颜色。晚秋的阳光消失的时候，正是第四节课下课铃声拉响的时间。穿过光亮而湿润的楼道，记忆中的是窗边一方并不宽敞的课桌。在书山中奋笔疾书的时候，偶尔会听到沙沙的风声，窗外是墨绿而坚韧的桦树叶子在轻轻的摇动。\&lt;/p>
 &lt;p>……\&lt;/p>
@@ -4138,14 +4025,12 @@ update :鉴于论坛和路由器双重不给力，给urllib2设了超时&lt;/p><
 &lt;p>太阳出来了，充满回忆的夜晚到此结束，今天又会是新的一天，可是我现在还无法迎接她。&lt;/p></description></item><item><title>THU课程表导出，油猴脚本，输出vcal</title><link>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%EF%BC%8C%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%EF%BC%8C%E8%BE%93%E5%87%BAvcal/</link><pubDate>Sat, 14 Jul 2012 08:41:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%EF%BC%8C%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%EF%BC%8C%E8%BE%93%E5%87%BAvcal/</guid><description>&lt;p>脚本下载：&lt;a href="http://userscripts.org/scripts/show/136856">http://userscripts.org/scripts/show/136856&lt;/a>\&lt;/p>
 &lt;p>google code：&lt;a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/&lt;/a>&lt;/p>
 &lt;blockquote>
-&lt;p>为什么自己总是做这些完全不会有人来用的东西啊为什么！&lt;/p>
-&lt;/blockquote>
+&lt;p>为什么自己总是做这些完全不会有人来用的东西啊为什么！&lt;/p>&lt;/blockquote>
 &lt;p>使用的网站：http://zhjwxk.cic.tsinghua.edu.cn/xsxk_index.jsp&lt;/p>
 &lt;p>&lt;em>-&amp;gt;这个网站没几个人能上吧！就算是能连上也没有密码啊！&lt;/em>&lt;/p>
 &lt;p>我写这个的意义到底是什么…………&lt;/p></description></item><item><title>html5-世界变动率计数器（仮）</title><link>https://blog.heysh.xyz/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</link><pubDate>Sat, 14 Jul 2012 08:32:13 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</guid><description>&lt;p>&lt;a href="http://pylab-heysh.rhcloud.com/static/canvas2.html" title="世界变动率计数器">here&lt;/a>&lt;/p>
 &lt;blockquote>
-&lt;p>其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。&lt;/p>
-&lt;/blockquote>
+&lt;p>其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。&lt;/p>&lt;/blockquote>
 &lt;p>代码简单到自己都觉得没有开project的必要，但是就这么点东西就折腾了好长时间，中途还把整个砍掉重练。我果然还是太年轻（?）\&lt;/p>
 &lt;p>如果有需要，请自行抓站，能署名的话本人当然会更高兴。&lt;/p>
 &lt;p>update 2012-9-11：\&lt;/p>
@@ -4153,8 +4038,7 @@ update :鉴于论坛和路由器双重不给力，给urllib2设了超时&lt;/p><
 中文版：&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a href="http://www.ccsa.org.cn/publish/download_bp.php?stdtype=yd1&amp;amp;sno=92" title="总而言之就是标准">政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下略）&lt;/a>&lt;/p>
-&lt;p>&lt;a href="http://wenku.baidu.com/view/c52d284c2e3f5727a5e9621e.html">某人翻译的标准文档（百度文库）&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;a href="http://wenku.baidu.com/view/c52d284c2e3f5727a5e9621e.html">某人翻译的标准文档（百度文库）&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>ical格式大概是这样的：&lt;/p>
 &lt;pre>&lt;code>BEGIN:VCALENDAR
 PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
@@ -4196,8 +4080,7 @@ END:VCALENDAR
 &lt;li>重复事件可用RRLUE字段，具体见所附文档。但是好像不支持“1,2,5-9,13,16周”这样猎奇的重复，所以对本人并没有什么用处&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。&lt;/p>
-&lt;/blockquote>
+&lt;p>还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>我&lt;del>们&lt;/del>尚不知道那天所看到的&lt;del>花的名字&lt;/del>DTSTAMP的用处&lt;/li>
 &lt;/ul>
@@ -4210,8 +4093,7 @@ END:VCALENDAR
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">/****************文件尾****************/&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>全部脚本见&lt;a href="http://code.google.com/p/js-thu-cal-outputer/">http://code.google.com/p/js-thu-cal-outputer/&lt;/a>&lt;/p></description></item><item><title>Hello Again~</title><link>https://blog.heysh.xyz/2012/06/22/hello-again/</link><pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid><description>&lt;blockquote>
 &lt;p>国内的免费主机始终是不靠谱的啊……&lt;/p>
-&lt;p>——以上为结论&lt;/p>
-&lt;/blockquote>
+&lt;p>——以上为结论&lt;/p>&lt;/blockquote>
 &lt;p>由于这样那样的原因，上一个博客化为了&lt;em>时代的眼泪&lt;/em>，确切的说是&lt;em>全灭&lt;/em>。于是，这里作为博客No.3，希望大家（？）——，……&lt;/p>
 &lt;p>算了还是看看这里能坚持到什么时候比较好。&lt;/p>
 &lt;p>又及：博客搭建在redhat
@@ -4229,8 +4111,7 @@ icmp_req=2 ttl=44 time=421 ms&lt;br>
 64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
 icmp_req=3 ttl=44 time=427 ms&lt;br>
 64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
-icmp_req=4 ttl=44 time=426 ms&lt;/p>
-&lt;/blockquote>
+icmp_req=4 ttl=44 time=426 ms&lt;/p>&lt;/blockquote>
 &lt;p>四百多秒的延迟……果然国内连amazon的主机就是悲剧……\&lt;/p>
 &lt;p>希望GFW不要盯上亚马逊啊啊啊啊&lt;/p></description></item><item><title>chicken</title><link>https://blog.heysh.xyz/feed/chicken/</link><pubDate>Fri, 22 Jun 2012 06:32:32 +0000</pubDate><guid>https://blog.heysh.xyz/feed/chicken/</guid><description>&lt;p>Nothing here.&lt;/p></description></item><item><title>关于我</title><link>https://blog.heysh.xyz/about/</link><pubDate>Fri, 22 Jun 2012 06:32:32 +0000</pubDate><guid>https://blog.heysh.xyz/about/</guid><description>&lt;p>下面的介绍大概是2012年留下来的。除了年龄增大之外，我是不是成长了一些呢？&lt;/p>
 &lt;hr>
@@ -4239,8 +4120,7 @@ icmp_req=4 ttl=44 time=426 ms&lt;/p>
 &lt;p>“啊啊啊这样的话还不如去用Evernote，反正也没人会来看啦”，虽然这么想着，但还是像一个抖M一样重新开始了。&lt;/p>
 &lt;p>&lt;del>&lt;a href="http://about.me/heyeshuang">http://about.me/heyeshuang&lt;/a> &amp;lt;–大概这样可以联系到我的样子……&lt;/del>&lt;/p>
 &lt;blockquote>
-&lt;p>来自20191205：其实我弄了个域名邮箱：&lt;code>i at heysh.xyz&lt;/code>。很想炫耀一下，但又不知道贴在哪里。&lt;/p>
-&lt;/blockquote>
+&lt;p>来自20191205：其实我弄了个域名邮箱：&lt;code>i at heysh.xyz&lt;/code>。很想炫耀一下，但又不知道贴在哪里。&lt;/p>&lt;/blockquote>
 &lt;p>另外，到了晚上会变得很奇怪，请勿投喂谢谢&lt;/p>
 &lt;p>update 130525：修改语病，主要是把逗号改成句号&lt;/p>
 &lt;p>update 131004：最近对衬线体产生了浓厚的兴趣，另外，发现大小写是有区别的&lt;/p></description></item></channel></rss>

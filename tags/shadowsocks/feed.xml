@@ -16,14 +16,12 @@
 }
 &lt;/code>&lt;/pre>
 &lt;blockquote>
-&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
-&lt;/blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>&lt;/blockquote>
 &lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
 &lt;blockquote>
 &lt;p>update150409:
 增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
-&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>&lt;/blockquote>
 &lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
 &lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
 &lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>

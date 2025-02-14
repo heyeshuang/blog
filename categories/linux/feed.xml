@@ -89,14 +89,12 @@
 }
 &lt;/code>&lt;/pre>
 &lt;blockquote>
-&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
-&lt;/blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>&lt;/blockquote>
 &lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
 &lt;blockquote>
 &lt;p>update150409:
 增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
-&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>&lt;/blockquote>
 &lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
 &lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
 &lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>
@@ -223,21 +221,18 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;/ul></description></item><item><title>fcitx的各种小功能</title><link>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</link><pubDate>Fri, 23 Aug 2013 13:39:02 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/23/fcitx%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%8F%E5%8A%9F%E8%83%BD/</guid><description>&lt;p>首先是吐槽时间：藏得这么深谁找得着啊！！好多帅气的小功能连按钮都没有！！连快捷键都要四个按键一块按！！！&lt;/p>
 &lt;h1 id="颜文字">颜文字&lt;/h1>
 &lt;blockquote>
-&lt;p>钥匙是分号&lt;/p>
-&lt;/blockquote>
+&lt;p>钥匙是分号&lt;/p>&lt;/blockquote>
 &lt;p>对，就是那个不知道怎么回事的“快速输入”。比如说，输入&lt;code>;smile&lt;/code>就是(・∀・)，什么你说你看不懂英文？到&lt;a href="https://fcitx-im.org/wiki/QuickPhrase_Emoji">这里&lt;/a>，复制到一个文件里，然后导入就行了～&lt;/p>
 &lt;p>&lt;img src="%5C11.png" alt="为什么不直接集成呢？谁知道呢……">&lt;/p>
 &lt;h1 id="输入unicode">输入unicode&lt;/h1>
 &lt;blockquote>
-&lt;p>Ctrl+Alt+Shift+U&lt;/p>
-&lt;/blockquote>
+&lt;p>Ctrl+Alt+Shift+U&lt;/p>&lt;/blockquote>
 &lt;p>快跑啊，野生的四按键快捷键出现啦o(≧口≦)o&lt;/p>
 &lt;p>有了这个，&lt;del>某痞子的:│▌就可以打出来了&lt;/del>，输入&lt;code>male&lt;/code>就可以找到可♂口的汉⚣子哦～&lt;/p>
 &lt;p>至于上面那个任务，好像还是用&lt;code>charmap&lt;/code>或者&lt;code>gucharmap&lt;/code>比较妥当……&lt;/p>
 &lt;h1 id="更多可口的">更♂多♂可♂口♂的♂♂♂♂&lt;/h1>
 &lt;p>这时就要用到fcitx的&lt;a href="https://github.com/felixonmars/fcitx-tsundere">蹭得累插件&lt;/a>了～还有菊҉花҉体҉放送哦～～&lt;/p></description></item><item><title>vim again</title><link>https://blog.heysh.xyz/2013/05/17/vim-again/</link><pubDate>Fri, 17 May 2013 13:38:22 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/17/vim-again/</guid><description>&lt;blockquote>
-&lt;p>vim是一种信仰。&lt;/p>
-&lt;/blockquote>
+&lt;p>vim是一种信仰。&lt;/p>&lt;/blockquote>
 &lt;p>上面这句话应该是从某个披头散发1年没洗澡的&lt;em>技术大牛&lt;/em>嘴里说出来，尾音要长，眼神越死鱼越好。摄像白平衡一定不能调准，要沧桑要有feel。在下面再带个双语字幕就更好了，英文就写”you are all 渣渣”就行…… 咳咳，跑题了。&lt;/p>
 &lt;hr>
 &lt;p>好吧那么我为什么又开始折腾vim了呢？因为eclipse太水了……&lt;/p>
@@ -260,59 +255,41 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>用一张图表达我的感想：&lt;/p>
 &lt;p>&lt;img src="https://blog.heysh.xyz/evil.png" alt="evil">&lt;/p></description></item><item><title>如果你像我一样主力使用xfce但又觉得GNOME3也许会变得好一点于是安装之后才发现果然还是无法接受</title><link>https://blog.heysh.xyz/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</link><pubDate>Fri, 29 Mar 2013 07:21:48 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</guid><description>&lt;p>这时全部删除GNOME却发现xfce变得特别丑陋的原因是GNOME-settings-daemon与xfdsetting冲突于是后者被自动关闭了。只要重新启动xfdsetting，然后去把g-s-d的自启关掉就好。\&lt;/p>
 &lt;p>题外话，lightdm设置好的话十分nice，有空放一份配置文件上来。&lt;/p></description></item><item><title>Texlive 在archlinux上的安装，以及中文字体的设置</title><link>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link><pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid><description>&lt;blockquote>
-&lt;p>texmacs已经不能满足我了！&lt;/p>
-&lt;/blockquote>
+&lt;p>texmacs已经不能满足我了！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>
-&lt;/blockquote>
+&lt;p>其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后发现大魔王令人绝望的实力&lt;/p>
-&lt;/blockquote>
+&lt;p>然后发现大魔王令人绝望的实力&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>
-&lt;/blockquote>
+&lt;p>然后用S/L大法加google作弊器成功——安装了字体&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>结果我还是不会用tex&lt;/p>
-&lt;/blockquote>
+&lt;p>结果我还是不会用tex&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>所以我下了lyx&lt;/p>
-&lt;/blockquote>
+&lt;p>所以我下了lyx&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>
-&lt;/blockquote>
+&lt;p>#期末考试就要到了我还在弄这个#&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>#挂科预感up（大）#&lt;/p>
-&lt;/blockquote>
+&lt;p>#挂科预感up（大）#&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>我说这个又没人爱听&lt;/p>
-&lt;/blockquote>
+&lt;p>我说这个又没人爱听&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>反正也不会有人来&lt;/p>
-&lt;/blockquote>
+&lt;p>反正也不会有人来&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>fin&lt;/p>
-&lt;/blockquote>
+&lt;p>fin&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>骗你的&lt;/p>
-&lt;/blockquote>
+&lt;p>骗你的&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>
-&lt;/blockquote>
+&lt;p>这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>
-&lt;/blockquote>
+&lt;p>好吧让我&lt;del>们&lt;/del>进入正题。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>其实我一开始以为直接pacman就好了&lt;/p>
-&lt;/blockquote>
+&lt;p>其实我一开始以为直接pacman就好了&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>但是后来我发现自己太甜了&lt;/p>
-&lt;/blockquote>
+&lt;p>但是后来我发现自己太甜了&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>于是我就下了texlive的镜像&lt;/p>
-&lt;/blockquote>
+&lt;p>于是我就下了texlive的镜像&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>后来发现直接安可能也可以？？&lt;/p>
-&lt;/blockquote>
+&lt;p>后来发现直接安可能也可以？？&lt;/p>&lt;/blockquote>
 &lt;p>按照&lt;a href="http://www.road2stat.com/cn/tex/archtex.html">这里&lt;/a>的安装方式\&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>su –
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
@@ -331,8 +308,7 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;blockquote>
 &lt;p>将 texlive-fontconfig.conf 文件复制到
 /etc/fonts/conf.d/09-texlive.conf，
-运行 fc-cache -fsv 以root的名义&lt;/p>
-&lt;/blockquote>
+运行 fc-cache -fsv 以root的名义&lt;/p>&lt;/blockquote>
 &lt;p>接下来xetex就会提示你缺少字体了，是不是很高兴？&lt;/p>
 &lt;p>——才怪咧！&lt;/p>
 &lt;p>然后，你要用yaourt安装ttf-ms-fonts-zh_cn这个包——&lt;/p>
@@ -348,17 +324,13 @@ resource://gre/modules/XPIProviderUtils.js:457&lt;/p>
 &lt;p>然后……要是提示缺少&lt;code>Adobe Song Std&lt;/code>什么的，应该&lt;code>yaourt acroread-font-chinese-simplified&lt;/code>就行了吧……&lt;/p>
 &lt;p>啊啊，从这个过程里，我好像看到了我短暂的人生……越是精于算计，就越可能出现意想不到的状况……&lt;/p>
 &lt;blockquote>
-&lt;p>老子不做人了！TeTe！&lt;/p>
-&lt;/blockquote>
+&lt;p>老子不做人了！TeTe！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>
-&lt;/blockquote>
+&lt;p>然后就想起这里还有一篇论文要写……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>
-&lt;/blockquote>
+&lt;p>世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>最后祝你身体健康，再见&lt;/p>
-&lt;/blockquote></description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>&lt;p>&lt;a href="http://www.texmacs.org/" title="TexMacs">TexMacs&lt;/a>可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\&lt;/p>
+&lt;p>最后祝你身体健康，再见&lt;/p>&lt;/blockquote></description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>&lt;p>&lt;a href="http://www.texmacs.org/" title="TexMacs">TexMacs&lt;/a>可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\&lt;/p>
 &lt;p>其优势：&lt;/p>
 &lt;ul>
 &lt;li>像TEX一样的排版，结构和内容分离&lt;/li>

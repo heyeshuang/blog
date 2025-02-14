@@ -2,8 +2,7 @@
 中文版：&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a href="http://www.ccsa.org.cn/publish/download_bp.php?stdtype=yd1&amp;amp;sno=92" title="总而言之就是标准">政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下略）&lt;/a>&lt;/p>
-&lt;p>&lt;a href="http://wenku.baidu.com/view/c52d284c2e3f5727a5e9621e.html">某人翻译的标准文档（百度文库）&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;a href="http://wenku.baidu.com/view/c52d284c2e3f5727a5e9621e.html">某人翻译的标准文档（百度文库）&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>ical格式大概是这样的：&lt;/p>
 &lt;pre>&lt;code>BEGIN:VCALENDAR
 PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
@@ -45,8 +44,7 @@ END:VCALENDAR
 &lt;li>重复事件可用RRLUE字段，具体见所附文档。但是好像不支持“1,2,5-9,13,16周”这样猎奇的重复，所以对本人并没有什么用处&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。&lt;/p>
-&lt;/blockquote>
+&lt;p>还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>我&lt;del>们&lt;/del>尚不知道那天所看到的&lt;del>花的名字&lt;/del>DTSTAMP的用处&lt;/li>
 &lt;/ul>

@@ -27,22 +27,19 @@
 &lt;p>我没什么好交代的了。下次见。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-1的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>&lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-12的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-12的更新：&lt;/p>&lt;/blockquote>
 &lt;p>终于通过了Hugo Themes的投稿：&lt;a href="https://themes.gohugo.io/hugo-theme-tokiwa/">https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/a>&lt;/p>
 &lt;p>That's a long trip.&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-14的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-14的更新：&lt;/p>&lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -76,8 +73,7 @@
 &lt;p>另外，还有一种更加复杂的&lt;code>&amp;lt;shortcode&amp;gt;&lt;/code>&lt;a href="http://www.latkin.org/2016/08/07/better-tex-math-typesetting-in-hugo/">方法&lt;/a>，如果你是完美主义者的话。&lt;/p></description></item><item><title>五年</title><link>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</link><pubDate>Sun, 15 Jan 2017 08:14:45 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/15/%E4%BA%94%E5%B9%B4/</guid><description>&lt;p>&lt;img src="http://i1.piimg.com/1949/c9d69d714fb8671c.png" alt="">&lt;/p>
 &lt;p>距离实现永生：5/∞&lt;/p>
 &lt;p>新的一年也要好好活下去哦~&lt;/p></description></item><item><title>我失去了heysh.tk域名</title><link>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</link><pubDate>Tue, 24 May 2016 14:35:24 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/24/%E6%88%91%E4%B8%A2%E6%8E%89%E4%BA%86heysh-tk%E5%9F%9F%E5%90%8D/</guid><description>&lt;blockquote>
-&lt;p>Dear 叶霜 贺,&lt;/p>
-&lt;/blockquote>
+&lt;p>Dear 叶霜 贺,&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;/blockquote>
 &lt;blockquote>
@@ -92,13 +88,11 @@ registration,
 an actual working website is needed to complete the registration
 process.&lt;/p>
 &lt;p>We thank you for using Freenom.&lt;/p>
-&lt;p>Freenom Review Team&lt;/p>
-&lt;/blockquote>
+&lt;p>Freenom Review Team&lt;/p>&lt;/blockquote>
 &lt;p>Whatever.&lt;/p>
 &lt;p>之前的heysh.tk页面回到了&lt;a href="http://heyeshuang.github.io">heyeshuang.github.io&lt;/a>，以上。&lt;/p></description></item><item><title>blog再次复活</title><link>https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</link><pubDate>Fri, 01 Feb 2013 04:45:08 +0000</pubDate><guid>https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/</guid><description>&lt;p>rhcloud.com被墙了，没办法用wordpress的android版更新实在令人愤怒，幸好我还有个免费域名，虽然不上档次，不过恰好合适。&lt;/p></description></item><item><title>Hello Again~</title><link>https://blog.heysh.xyz/2012/06/22/hello-again/</link><pubDate>Fri, 22 Jun 2012 07:15:48 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/22/hello-again/</guid><description>&lt;blockquote>
 &lt;p>国内的免费主机始终是不靠谱的啊……&lt;/p>
-&lt;p>——以上为结论&lt;/p>
-&lt;/blockquote>
+&lt;p>——以上为结论&lt;/p>&lt;/blockquote>
 &lt;p>由于这样那样的原因，上一个博客化为了&lt;em>时代的眼泪&lt;/em>，确切的说是&lt;em>全灭&lt;/em>。于是，这里作为博客No.3，希望大家（？）——，……&lt;/p>
 &lt;p>算了还是看看这里能坚持到什么时候比较好。&lt;/p>
 &lt;p>又及：博客搭建在redhat
@@ -116,7 +110,6 @@ icmp_req=2 ttl=44 time=421 ms&lt;br>
 64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
 icmp_req=3 ttl=44 time=427 ms&lt;br>
 64 bytes from ec2-50-19-68-176.compute-1.amazonaws.com (50.19.68.176):
-icmp_req=4 ttl=44 time=426 ms&lt;/p>
-&lt;/blockquote>
+icmp_req=4 ttl=44 time=426 ms&lt;/p>&lt;/blockquote>
 &lt;p>四百多秒的延迟……果然国内连amazon的主机就是悲剧……\&lt;/p>
 &lt;p>希望GFW不要盯上亚马逊啊啊啊啊&lt;/p></description></item></channel></rss>

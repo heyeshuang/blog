@@ -49,8 +49,7 @@
 &lt;p>With Chinese characters in mind (of course), I have carefully chosen proper fonts for both Chinese and English. Head to &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/hugo">https://heyeshuang.github.io/aeolipile/#/@heyeshuang/hugo&lt;/a> to see a Chinese example! Or, watch &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-update-new-theme-link-generator-and-more">this post on Aeolipile&lt;/a>, if you haven't!&lt;/p>
 &lt;hr>
 &lt;p>And this is not the end, I still have some dark thoughts... Anyway, welcome to fork, push and comment! Your opinions and ideas are precious.&lt;/p></description></item><item><title>社交恐惧症患者也想用Steem，所以我做了Aeolipile</title><link>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</link><pubDate>Sat, 04 Nov 2017 11:55:46 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</guid><description>&lt;blockquote>
-&lt;p>TL;DR: 你可以在&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile">这个链接&lt;/a>看到Aeolipile。&lt;/p>
-&lt;/blockquote>
+&lt;p>TL;DR: 你可以在&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile">这个链接&lt;/a>看到Aeolipile。&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a href="https://steemit.com/cn/@heyeshuang/steem-a-closer-look-to-steem">我曾经说&lt;/a>不会把博客完全搬到Steem上。除了之前说过的原因之外，还有一些感性上的理由。&lt;/p>
 &lt;p>和那些&lt;a href="https://steemit.com/cn/@tumutanzi/5bbm33">网红博主（开玩笑的）&lt;/a>不同，我的博客没有什么人会光顾，这并不是什么坏事：只有这样，我才能感到真正的自由。&lt;/p>
 &lt;p>但是Steemit不同。页面下面的评论框和小数字，这些东西时刻在提醒我，你的文字是有人看的。对其他人来说，这可能是一件好事。可是，对于我来说，意识到有人在看这些东西，让我不自觉地在意起别人的感受了。我在敲键盘的时候，常常会想：“别人是怎么看这段话的？”然后，强烈的自我厌恶就会让我没办法接着写下去了。&lt;/p>
@@ -78,8 +77,7 @@
 &lt;p>欢迎fork，如果不嫌弃代码写得烂的话。&lt;/p>
 &lt;p>最后，我还想说一句台词：&lt;/p>
 &lt;blockquote>
-&lt;p>I could be bounded in a nutshell and count myself a king of infinite space.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>I could be bounded in a nutshell and count myself a king of infinite space.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;p>当然，没准一个Aeolipile也行。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>

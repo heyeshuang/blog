@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>内网 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E5%86%85%E7%BD%91/</link><description>Recent content in 内网 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E5%86%85%E7%BD%91/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
-&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
-&lt;/blockquote>
+&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>&lt;/blockquote>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
 alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>有较强的自我管理意识.png&lt;/p>
@@ -11,19 +10,16 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;ol>
 &lt;li>N1一台；
 &lt;blockquote>
-&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>
-&lt;/blockquote>
+&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>USB公对公数据线一条；
 &lt;blockquote>
-&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>
-&lt;/blockquote>
+&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>视频采集卡一张，配HDMI线一条；
 &lt;blockquote>
 &lt;p>因为N1没有USB3.0接口，MS2109芯片就足够了，可以跑1080p@30Hz。
-&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>
-&lt;/blockquote>
+&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>U盘一块；&lt;/li>
 &lt;li>Linux知识一些；&lt;/li>
@@ -33,8 +29,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;li>USB延长线一条；&lt;/li>
 &lt;li>理想的上网环境。
 &lt;blockquote>
-&lt;p>根据相关法律法规和政策（下略）&lt;/p>
-&lt;/blockquote>
+&lt;p>根据相关法律法规和政策（下略）&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ol>
 &lt;/li>
@@ -45,8 +40,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>Armbian镜像我使用的是&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_jammy_lts_2023.05/Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz">Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz&lt;/a>，其中，&lt;code>S905d&lt;/code>是N1所用的芯片，&lt;code>Jammy&lt;/code>是Ubuntu的版本号，&lt;code>6.1.27&lt;/code>代表使用的是最新版本的Linux内核。如果安装PiKVM，Debian系列（bullseye）的软件包有些太老了。&lt;/p>
 &lt;h2 id="修改dtb文件">修改dtb文件&lt;/h2>
 &lt;blockquote>
-&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>
-&lt;/blockquote>
+&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>&lt;/blockquote>
 &lt;p>在上述的Armbian引导文件中，默认的USB模式是Host，为了模拟鼠标、键盘等设备，需要将&lt;code>dr_mode&lt;/code>从&lt;code>host&lt;/code>更改为&lt;code>peripheral&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。那么，我们需要重新编译dtb文件：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 将dtb编译为dts文件&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dtc -I dtb -O dts -o test.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
@@ -64,8 +58,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>然后重启系统。&lt;/p>
 &lt;h2 id="安装脚本">安装脚本&lt;/h2>
 &lt;blockquote>
-&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>
-&lt;/blockquote>
+&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>&lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git clone https://github.com/toss-a/pikvm-armbian.git
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">cd&lt;/span> pikvm-armbian
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./install.sh
@@ -84,11 +77,9 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
-&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>&lt;/blockquote>
 &lt;h2 id="为什么">为什么&lt;/h2>
 &lt;p>正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">前文&lt;/a>所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p>
 &lt;p>然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>或&lt;a href="https://github.com/heiher/natmap">natmap&lt;/a>，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p>
@@ -108,24 +99,20 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;ol>
 &lt;li>一台长期开启的设备。
 &lt;blockquote>
-&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>
-&lt;/blockquote>
+&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>光猫处于桥接状态。&lt;/li>
 &lt;li>主路由是OpenWRT，或者内网里有DMZ主机。
 &lt;blockquote>
-&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>
-&lt;/blockquote>
+&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>没有公网IPv4，但在路由器处测试NAT类型为NAT1。
 &lt;blockquote>
-&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>
-&lt;/blockquote>
+&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>一个自己的域名，最好是在Cloudflare上托管的。
 &lt;blockquote>
-&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>
-&lt;/blockquote>
+&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ol>
 &lt;p>具体配置部分已经有人写的很详细了。首先按照&lt;a href="https://www.procustodibus.com/blog/2020/11/wireguard-point-to-site-config/">WireGuard Point to Site Configuration&lt;/a>设置点到站点的连接，然后按照&lt;a href="https://github.com/heiher/natmap/wiki/wireguard">natmap Wiki&lt;/a>设置NATMap即可。注意，在路由器上操作的时候，一定要记得在防火墙中&lt;strong>打开对应端口&lt;/strong>。&lt;/p>
@@ -155,8 +142,7 @@ alt="我这里最近一次分配的端口坚持了18天，所以应该不必时�
 &lt;p>Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的&lt;code>High ID&lt;/code>。见&lt;a href="https://github.com/wits-fe/bittorrent-NAT-hole-punching">wits-fe/bittorrent-NAT-hole-punching&lt;/a>。在PT站做种的时候应该会很有用。&lt;/p>
 &lt;h2 id="附性能测试">附：性能测试&lt;/h2>
 &lt;blockquote>
-&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>
-&lt;/blockquote>
+&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>&lt;/blockquote>
 &lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
 &lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
 alt="WireGuard for Android">&lt;figcaption>
@@ -211,21 +197,18 @@ alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;/figure>
 &lt;p>开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336">在DDNS服务上也开启Cloudflare代理&lt;/a>。&lt;/p>
 &lt;p>好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p></description></item><item><title>几物互联</title><link>https://blog.heysh.xyz/2022/05/22/connect-every-something/</link><pubDate>Sun, 22 May 2022 22:45:39 +0800</pubDate><guid>https://blog.heysh.xyz/2022/05/22/connect-every-something/</guid><description>&lt;blockquote>
-&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>
-&lt;/blockquote>
+&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>&lt;/blockquote>
 &lt;p>无论是在家里的组装机还是漂泊的笔记本，在工作的时候都能够获得相似的上下文，有的时候甚至可以在家CTRL+C，在公司CTRL+V。除了&lt;em>鸿蒙&lt;/em>系统之外，通过一组软件也是可以实现的。&lt;/p>
 &lt;p>本人现在所使用的方案如下。设置难度由易到难排序。&lt;/p>
 &lt;h2 id="同步存储syncthing">同步存储：Syncthing&lt;/h2>
 &lt;blockquote>
-&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>&lt;/blockquote>
 &lt;p>比起云存储，个人更倾向于Syncthing这样的本地同步方案：至少文件是属于自己的（而且还不用收钱）。安装也很简单：Windows下安装&lt;a href="https://github.com/canton7/SyncTrayzor">SyncTrayzor&lt;/a>，Android下安装&lt;a href="https://github.com/Catfriend1/syncthing-android">Syncthing-Fork&lt;/a>，其他系统移步&lt;a href="https://syncthing.net/downloads/">这里&lt;/a>就可以。安装完以后，在两边选择工作目录，就可以完成双向同步了。得益于STUN服务器，无论是在内网还是外网，文件都可以完成传输。&lt;/p>
 &lt;p>当然，Syncthing也有一定的问题。首先是，因为是进行了同步，同一份文件会在每一个设备上都占用一份空间。在手机这样捉襟见肘的环境下，建议采用“仅发送”模式，只用来备份照片之类的。&lt;/p>
 &lt;p>另外，Syncthing在运行的时候必须要两侧的设备保持开机，电费账单+1。在有一方离线的时候，需要注意文件的版本，不要在两边都修改同一个文件。毕竟不是git，合并功能没有那么强。&lt;/p>
 &lt;h2 id="笔记软件与文献管理">笔记软件与文献管理&lt;/h2>
 &lt;blockquote>
-&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>&lt;/blockquote>
 &lt;p>本人使用&lt;a href="https://joplinapp.org/">Joplin&lt;/a>和&lt;a href="https://www.zotero.org/">Zotero&lt;/a>来做笔记和进行文献管理，这两款软件都可以使用Syncthing作为同步后端&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而且都具有笔记功能。我的习惯是，在Joplin上写一些需要较长篇幅的笔记，文献阅读笔记放在Zotero中。&lt;/p>
 &lt;p>当然，作为一篇讲“互联”的博文，这两款软件当然也是可以相互连接的。我主要用到下面这些：&lt;/p>
 &lt;h3 id="joplin内部">Joplin内部&lt;/h3>
@@ -243,21 +226,17 @@ alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者也可以用&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html">Link Shell Extension&lt;/a>来做这件事。之后，在每台电脑上都可以访问&lt;code>C:\工作\xxx.docx&lt;/code>了。&lt;/p>
 &lt;h2 id="随处ctrlv以及传文件">随处Ctrl+V，以及传文件&lt;/h2>
 &lt;blockquote>
-&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>
-&lt;/blockquote>
+&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>&lt;/blockquote>
 &lt;p>隆重推荐&lt;a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/">KDE connect&lt;/a>，虽然是KDE出品，但是Windows和Android也能用。给手机和电脑装上这个，在同一个局域网下面就可以共享剪贴板了，而且还能够互相传文件。&lt;/p>
 &lt;p>不过，有的时候KDE connect找不到局域网设备，这时候我会用Total Commander (Android)的Wifi传输插件，或者是&lt;code>python -m http.server&lt;/code>。&lt;/p>
 &lt;h2 id="远程访问tailscaletinc或wireguard">远程访问：Tailscale、Tinc或Wireguard&lt;/h2>
 &lt;blockquote>
-&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>
-&lt;/blockquote>
+&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>&lt;/blockquote>
 &lt;p>像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前&lt;/a>所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p>
 &lt;blockquote>
-&lt;p>来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/">Wireguard&lt;/a>了~&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/">Wireguard&lt;/a>了~&lt;/p>&lt;/blockquote>
 &lt;p>连接Tinc之后，就可以通过&lt;code>Wake On LAN&lt;/code>唤醒自己的其他电脑，然后用&lt;code>samba&lt;/code>、远程桌面之类的软件了。就好象回到家里&lt;del>居家办公&lt;/del>一样！&lt;/p>
 &lt;p>当然，在这种需求下，最简单的应该是&lt;code>Tailscale&lt;/code>，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p>
 &lt;details>
@@ -315,8 +294,7 @@ alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
-&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>
-&lt;/blockquote>
+&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>&lt;/blockquote>
 &lt;h2 id="准备">准备&lt;/h2>
 &lt;ol>
 &lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>

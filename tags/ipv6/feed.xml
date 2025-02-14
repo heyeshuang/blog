@@ -35,8 +35,7 @@
 &lt;/figure>
 &lt;p>开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336">在DDNS服务上也开启Cloudflare代理&lt;/a>。&lt;/p>
 &lt;p>好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
-&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>
-&lt;/blockquote>
+&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>&lt;/blockquote>
 &lt;h2 id="准备">准备&lt;/h2>
 &lt;ol>
 &lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>
@@ -134,14 +133,12 @@ option master '1'
 }
 &lt;/code>&lt;/pre>
 &lt;blockquote>
-&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>
-&lt;/blockquote>
+&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>&lt;/blockquote>
 &lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
 &lt;blockquote>
 &lt;p>update150409:
 增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
-&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>&lt;/blockquote>
 &lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
 &lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
 &lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>

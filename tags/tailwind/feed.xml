@@ -27,22 +27,19 @@
 &lt;p>我没什么好交代的了。下次见。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-1的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>&lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-12的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-12的更新：&lt;/p>&lt;/blockquote>
 &lt;p>终于通过了Hugo Themes的投稿：&lt;a href="https://themes.gohugo.io/hugo-theme-tokiwa/">https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/a>&lt;/p>
 &lt;p>That's a long trip.&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-14的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-14的更新：&lt;/p>&lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on 林中阴影</title><link>https://blog.heysh.xyz/tags/android/</link><description>Recent content in Android on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 28 Aug 2024 22:06:45 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/android/feed.xml" rel="self" type="application/rss+xml"/><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
 &lt;blockquote>
-&lt;p>不要问为什么，工作造就人呀。&lt;/p>
-&lt;/blockquote>
+&lt;p>不要问为什么，工作造就人呀。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>
 &lt;p>首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p>

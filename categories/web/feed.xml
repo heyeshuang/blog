@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on 林中阴影</title><link>https://blog.heysh.xyz/categories/web/</link><description>Recent content in Web on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/web/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
-&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>
-&lt;/blockquote>
+&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>&lt;/blockquote>
 &lt;h2 id="为什么">为什么&lt;/h2>
 &lt;p>正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">前文&lt;/a>所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p>
 &lt;p>然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>或&lt;a href="https://github.com/heiher/natmap">natmap&lt;/a>，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p>
@@ -23,24 +21,20 @@ alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延
 &lt;ol>
 &lt;li>一台长期开启的设备。
 &lt;blockquote>
-&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>
-&lt;/blockquote>
+&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>光猫处于桥接状态。&lt;/li>
 &lt;li>主路由是OpenWRT，或者内网里有DMZ主机。
 &lt;blockquote>
-&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>
-&lt;/blockquote>
+&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>没有公网IPv4，但在路由器处测试NAT类型为NAT1。
 &lt;blockquote>
-&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>
-&lt;/blockquote>
+&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>一个自己的域名，最好是在Cloudflare上托管的。
 &lt;blockquote>
-&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>
-&lt;/blockquote>
+&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ol>
 &lt;p>具体配置部分已经有人写的很详细了。首先按照&lt;a href="https://www.procustodibus.com/blog/2020/11/wireguard-point-to-site-config/">WireGuard Point to Site Configuration&lt;/a>设置点到站点的连接，然后按照&lt;a href="https://github.com/heiher/natmap/wiki/wireguard">natmap Wiki&lt;/a>设置NATMap即可。注意，在路由器上操作的时候，一定要记得在防火墙中&lt;strong>打开对应端口&lt;/strong>。&lt;/p>
@@ -70,8 +64,7 @@ alt="我这里最近一次分配的端口坚持了18天，所以应该不必时�
 &lt;p>Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的&lt;code>High ID&lt;/code>。见&lt;a href="https://github.com/wits-fe/bittorrent-NAT-hole-punching">wits-fe/bittorrent-NAT-hole-punching&lt;/a>。在PT站做种的时候应该会很有用。&lt;/p>
 &lt;h2 id="附性能测试">附：性能测试&lt;/h2>
 &lt;blockquote>
-&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>
-&lt;/blockquote>
+&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>&lt;/blockquote>
 &lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
 &lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
 alt="WireGuard for Android">&lt;figcaption>
@@ -126,8 +119,7 @@ alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;/figure>
 &lt;p>开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336">在DDNS服务上也开启Cloudflare代理&lt;/a>。&lt;/p>
 &lt;p>好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
-&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>
-&lt;/blockquote>
+&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>&lt;/blockquote>
 &lt;h2 id="准备">准备&lt;/h2>
 &lt;ol>
 &lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>
@@ -195,22 +187,19 @@ alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;p>我没什么好交代的了。下次见。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-1的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>&lt;/blockquote>
 &lt;p>我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p>
 &lt;p>另外，如果要剪裁字体，而且安装了&lt;code>node.js&lt;/code>的话，可以使用下面的命令：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx fontmin 字体名称.ttf -t &lt;span style="color:#c30">&amp;#34;要用到的字形&amp;#34;&lt;/span> &amp;gt; 字体名称-剪裁后.ttf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-12的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-12的更新：&lt;/p>&lt;/blockquote>
 &lt;p>终于通过了Hugo Themes的投稿：&lt;a href="https://themes.gohugo.io/hugo-theme-tokiwa/">https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/a>&lt;/p>
 &lt;p>That's a long trip.&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-14的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-14的更新：&lt;/p>&lt;/blockquote>
 &lt;p>从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme">专业人士&lt;/a>那里学到了头图的做法。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -478,13 +467,10 @@ option master '1'
 &lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>红色楼梯</title><link>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link><pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate><guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid><description>&lt;p>用three.js试着做了点东西&lt;/p>
 &lt;p>Live demo : &lt;a href="http://heyeshuang.github.io/three-stairs/">http://heyeshuang.github.io/three-stairs/&lt;/a>&lt;/p>
 &lt;blockquote>
-&lt;p>–你的下一句话是：“又做了没用的东西！”\&lt;/p>
-&lt;/blockquote>
+&lt;p>–你的下一句话是：“又做了没用的东西！”\&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>–是啊。\&lt;/p>
-&lt;/blockquote>
+&lt;p>–是啊。\&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>–咦？这算是猜对了吗？&lt;/p>
-&lt;/blockquote></description></item><item><title>个人主页上线</title><link>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link><pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid><description>&lt;p>&lt;a href="http://heyeshuang.github.io">http://heyeshuang.github.io&lt;/a>&lt;/p>
+&lt;p>–咦？这算是猜对了吗？&lt;/p>&lt;/blockquote></description></item><item><title>个人主页上线</title><link>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</link><pubDate>Mon, 12 Aug 2013 06:23:40 +0000</pubDate><guid>https://blog.heysh.xyz/2013/08/12/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A%E7%BA%BF/</guid><description>&lt;p>&lt;a href="http://heyeshuang.github.io">http://heyeshuang.github.io&lt;/a>&lt;/p>
 &lt;p>请使用现代浏览器并开启硬件加速&lt;/p></description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>&lt;p>&lt;a href="https://github.com/heyeshuang/my_tree_2d">github&lt;/a>&lt;/p>
 &lt;p>&lt;a href="http://heyeshuang.github.io/my_tree_2d">live demo(slow)&lt;/a>&lt;/p></description></item></channel></rss>

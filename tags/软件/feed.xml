@@ -23,8 +23,7 @@
 &lt;p>试图将HTML转回markdown，就像是试图将pdf转回TEX、减少宇宙的熵、或者是把石头推上山一样徒劳，不过，仍然有&lt;a href="https://github.com/domchristie/turndown">勇士&lt;/a>在尝试这个任务，效果嘛……差强人意，从两个方面理解都可以。&lt;/p>
 &lt;h2 id="关于为知笔记导出">关于为知笔记导出&lt;/h2>
 &lt;blockquote>
-&lt;p>感觉基本上没什么戏……&lt;/p>
-&lt;/blockquote>
+&lt;p>感觉基本上没什么戏……&lt;/p>&lt;/blockquote>
 &lt;p>为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段
 &lt;code>&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;（下略&lt;/code>
 才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……&lt;/p>

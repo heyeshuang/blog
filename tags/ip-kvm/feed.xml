@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IP-KVM on 林中阴影</title><link>https://blog.heysh.xyz/tags/ip-kvm/</link><description>Recent content in IP-KVM on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ip-kvm/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
-&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>
-&lt;/blockquote>
+&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>&lt;/blockquote>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
 alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>有较强的自我管理意识.png&lt;/p>
@@ -11,19 +10,16 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;ol>
 &lt;li>N1一台；
 &lt;blockquote>
-&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>
-&lt;/blockquote>
+&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>USB公对公数据线一条；
 &lt;blockquote>
-&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>
-&lt;/blockquote>
+&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>视频采集卡一张，配HDMI线一条；
 &lt;blockquote>
 &lt;p>因为N1没有USB3.0接口，MS2109芯片就足够了，可以跑1080p@30Hz。
-&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>
-&lt;/blockquote>
+&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;li>U盘一块；&lt;/li>
 &lt;li>Linux知识一些；&lt;/li>
@@ -33,8 +29,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;li>USB延长线一条；&lt;/li>
 &lt;li>理想的上网环境。
 &lt;blockquote>
-&lt;p>根据相关法律法规和政策（下略）&lt;/p>
-&lt;/blockquote>
+&lt;p>根据相关法律法规和政策（下略）&lt;/p>&lt;/blockquote>
 &lt;/li>
 &lt;/ol>
 &lt;/li>
@@ -45,8 +40,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>Armbian镜像我使用的是&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_jammy_lts_2023.05/Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz">Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz&lt;/a>，其中，&lt;code>S905d&lt;/code>是N1所用的芯片，&lt;code>Jammy&lt;/code>是Ubuntu的版本号，&lt;code>6.1.27&lt;/code>代表使用的是最新版本的Linux内核。如果安装PiKVM，Debian系列（bullseye）的软件包有些太老了。&lt;/p>
 &lt;h2 id="修改dtb文件">修改dtb文件&lt;/h2>
 &lt;blockquote>
-&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>
-&lt;/blockquote>
+&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>&lt;/blockquote>
 &lt;p>在上述的Armbian引导文件中，默认的USB模式是Host，为了模拟鼠标、键盘等设备，需要将&lt;code>dr_mode&lt;/code>从&lt;code>host&lt;/code>更改为&lt;code>peripheral&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。那么，我们需要重新编译dtb文件：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 将dtb编译为dts文件&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dtc -I dtb -O dts -o test.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
@@ -64,8 +58,7 @@ alt="有较强的自我管理意识.png">&lt;figcaption>
 &lt;p>然后重启系统。&lt;/p>
 &lt;h2 id="安装脚本">安装脚本&lt;/h2>
 &lt;blockquote>
-&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>
-&lt;/blockquote>
+&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>&lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git clone https://github.com/toss-a/pikvm-armbian.git
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">cd&lt;/span> pikvm-armbian
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./install.sh

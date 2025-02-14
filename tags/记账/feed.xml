@@ -7,8 +7,7 @@
 &lt;blockquote>
 &lt;p>按：&lt;/p>
 &lt;p>最近招商银行不再给我发送EML格式的电子邮件账单了，取而代之的是邮件中的PDF附件，&lt;em>仅供人类阅读&lt;/em>，基本上没有办法进行自动处理。于是我故伎重施，试图在IE驱动的网上银行中找到账单，可是找到的却只是用Electron包裹的丑陋电子银行客户端，理所应当地不提供下载服务。&lt;/p>
-&lt;p>紧紧关闭的大门前，仅有一点点光芒透出来：招行的手机版网站仍然可用。&lt;/p>
-&lt;/blockquote>
+&lt;p>紧紧关闭的大门前，仅有一点点光芒透出来：招行的手机版网站仍然可用。&lt;/p>&lt;/blockquote>
 &lt;ul>
 &lt;li>招商银行信用卡官方网站在&lt;a href="https://xyk.cmbchina.com/credit-express/bill">https://xyk.cmbchina.com/credit-express/bill&lt;/a>。为了假装自己是在用手机访问，请使用Chrome浏览器&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，开启开发者工具，显示设备工具栏（Ctrl+Shift+M），并模拟iPhone或者其他手机。
 &lt;img src="%E7%99%BB%E5%BD%95.png" alt="登录的状态">&lt;/li>
@@ -149,14 +148,11 @@
 &lt;p>如果每个月只要十几分钟就可以获得成就感，习惯也就自然地养成了。&lt;/p>
 &lt;h2 id="又及">又及&lt;/h2>
 &lt;blockquote>
-&lt;p>我跟你港，这次的内容超适合作Python教程的，还能顺便学英语！只要学会了这个，年薪百万不是梦！&lt;/p>
-&lt;/blockquote>
+&lt;p>我跟你港，这次的内容超适合作Python教程的，还能顺便学英语！只要学会了这个，年薪百万不是梦！&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>现在诚征 100 个&lt;del>凯子&lt;/del>幸运读者给我打钱，我的支付宝是：……&lt;/p>
-&lt;/blockquote>
+&lt;p>现在诚征 100 个&lt;del>凯子&lt;/del>幸运读者给我打钱，我的支付宝是：……&lt;/p>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>呃，对不起。&lt;/p>
-&lt;/blockquote>
+&lt;p>呃，对不起。&lt;/p>&lt;/blockquote>
 &lt;p>以上不代表博主观点。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>

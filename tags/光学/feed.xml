@@ -14,8 +14,7 @@
 &lt;/figure>
 &lt;p>&lt;em>序列化&lt;/em>的光线追迹，或成像光学，完成度很高，甚至自带一个类似Zemax的界面。在其&lt;a href="https://ray-optics.readthedocs.io/en/latest/Introduction.html">手册&lt;/a>上提到：&lt;/p>
 &lt;blockquote>
-&lt;p>Rethink how image forming optical calculations are done absent historical constraints on computer speed and memory.&lt;/p>
-&lt;/blockquote>
+&lt;p>Rethink how image forming optical calculations are done absent historical constraints on computer speed and memory.&lt;/p>&lt;/blockquote>
 &lt;p>我学不会光学设计肯定是因为软件历史包袱太重，嗯。&lt;/p>
 &lt;h3 id="raypier">Raypier&lt;/h3>
 &lt;p>非序列的光学追迹，在几何光学传输的基础上增加了一部分高斯光束和衍射效应，并且可以（通过VTK）生成一些漂亮的三维模型。（之后我一定要想办法成功安装……）&lt;/p>
@@ -102,14 +101,12 @@ alt="我逐渐理解一切" width="30%">
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Python中光学计算相关的库/Awesome Python for Optics</title><link>https://blog.heysh.xyz/2019/08/04/python-for-optics/</link><pubDate>Sun, 04 Aug 2019 20:03:49 +0800</pubDate><guid>https://blog.heysh.xyz/2019/08/04/python-for-optics/</guid><description>&lt;blockquote>
-&lt;p>来自2021-07-24的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2021-07-24的更新：&lt;/p>&lt;/blockquote>
 &lt;p>本文的2021年版本在&lt;a href="https://blog.heysh.xyz/2021/07/21/python-for-optics-in-2021/">这里&lt;/a>。&lt;/p>
 &lt;p>以下是2019年的原文。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>这大概是本博客第一次涉及博主在现实世界中的本职工作，大概算是一个好的开始。&lt;/p>
-&lt;/blockquote>
+&lt;p>这大概是本博客第一次涉及博主在现实世界中的本职工作，大概算是一个好的开始。&lt;/p>&lt;/blockquote>
 &lt;p>在光学设计及模拟的领域，商业软件，比如Zemax/Code V、LASCAD、GLAD等，提供了较为完整的解决方案，对于较为前沿的领域，国内研究的事实标准是，通过MATLAB自行编写可靠性和可维护性都存在较大问题的脚本。但是，对于一些&lt;del>研究经费不足同时工作量不饱和的&lt;/del>课题组，了解这个古老的学科与当今流行语言的交集，可能也具有一定的意义。&lt;/p>
 &lt;p>TL; DR：光学计算是一个很宽泛的话题，针对我的要求，之后我大概会试试&lt;a href="https://github.com/opticspy/lightpipes">LightPipes&lt;/a>.&lt;/p>
 &lt;p>以下是我找到的一些库的对比。&lt;/p>
@@ -139,15 +136,13 @@ alt="我逐渐理解一切" width="30%">
 &lt;p>之后，可能会在这个的基础上对激光器进行一些分析——如果计划没有变更的话。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2019-10-23的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2019-10-23的更新：&lt;/p>&lt;/blockquote>
 &lt;h2 id="finesse-and-pykathttpwwwgwopticsorgfinesse">&lt;a href="http://www.gwoptics.org/finesse/">Finesse and PyKat&lt;/a>&lt;/h2>
 &lt;p>为了LIGO设计的语言，用于引力波探测器的光路设计。Finesse有一种十分简单而复古的语法，而&lt;a href="http://www.gwoptics.org/pykat">PyKat&lt;/a>与其说是它的 &lt;em>封装&lt;/em> ，倒不如说是拿报纸包了一下。&lt;/p>
 &lt;p>当然，该程序的功能还是挺强大的，甚至还有一些量子光学的内容&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。如果有人想要尝试的话，可以从&lt;a href="http://www.gwoptics.org/learn/">这里&lt;/a>开始。&lt;/p>
 &lt;hr>
 &lt;blockquote>
-&lt;p>来自2020-6-1的更新：&lt;/p>
-&lt;/blockquote>
+&lt;p>来自2020-6-1的更新：&lt;/p>&lt;/blockquote>
 &lt;h2 id="rayopthttpsgithubcomquartiqrayopt">&lt;a href="https://github.com/quartiq/rayopt">RayOpt&lt;/a>&lt;/h2>
 &lt;p>&lt;img src="rayopt.png" alt="rayopt">
 &lt;img src="rayopt2.png" alt="rayopt">&lt;/p>
