@@ -13,9 +13,9 @@
 &lt;li>支持同步&lt;/li>
 &lt;/ul>
 &lt;p>这样的话，类似google keep、evernote的软件和收费软件（……）就首先被排除了；在markdown出现之前的老牌笔记软件也自动忽略。然后我试用了当红的boostnote和……什么来着，但这两个软件对附件的支持都不太好。最后，有两个软件满足我的大部分要求：&lt;/p>
-&lt;h2 id="vnotehttpstamlokgithubiovnote">&lt;a href="https://tamlok.github.io/vnote/">VNote&lt;/a>&lt;/h2>
+&lt;h2 id="vnote">&lt;a href="https://tamlok.github.io/vnote/">VNote&lt;/a>&lt;/h2>
 &lt;p>美丽的Qt程序，纯Markdown保存，直接粘贴HTML到笔记，甚至还有Vim按键绑定，一切都很好，除了没有同步和Android客户端；当然，纯文本文件可以很容易地用git同步，所以问题变成了另外两个：没有合适的git Android，以及没有Android上的Markdown阅读器&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
-&lt;h2 id="joplinhttpsjoplincozicnet">&lt;a href="https://joplin.cozic.net">Joplin&lt;/a>&lt;/h2>
+&lt;h2 id="joplin">&lt;a href="https://joplin.cozic.net">Joplin&lt;/a>&lt;/h2>
 &lt;p>用javascript写应用虽然被很多人鄙视，但确实真正解决了跨平台运行的问题。这个程序似乎连Android客户端都在同一个代码仓库里，如果不在意肉眼可见的卡顿的话，react native能够让人少写好多代码，反观qt-Android……&lt;/p>
 &lt;p>咳咳，扯远了。总之Joplin有Android客户端，而且自带onedrive同步功能。Nothing to complain&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>.&lt;/p>
 &lt;p>另外还有两个小问题。&lt;/p>
