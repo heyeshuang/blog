@@ -80,7 +80,7 @@
 &lt;li>&lt;a href="https://www.printables.com/model/720124-stand-for-hp-elitedesk-800-g8-sff?lang=en">SFF支架&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.thingiverse.com/thing:3119803/comments">Mellanox ConnectX-2 半高挡板&lt;/a>（7块1个）&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="10G_eth.png">&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/10G_eth.png">&lt;figcaption>
 &lt;h4>PLA打印的半高挡板，暂时还没有融化&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -91,7 +91,7 @@
 &lt;li>&lt;code>OpenMediaVault&lt;/code>直通SATA控制器。24年8月买的二手&lt;code>HC530&lt;/code>暂时还能用。&lt;/li>
 &lt;li>&lt;code>docker-host&lt;/code>用来放一些小服务，因为docker会在iptables里搞东搞西，可能会把&lt;code>gateway&lt;/code>里的服务弄坏。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="gateway.png">&lt;figcaption>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/gateway.png">&lt;figcaption>
 &lt;h4>按照惯例（？），放一张服务的图&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -120,7 +120,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>之后，运行&lt;code>update-grub&lt;/code>和&lt;code>systemctl enable serial-getty@ttyS4.service&lt;/code>，就能通过&lt;code>meshcommander&lt;/code>访问主机了。&lt;/li>
 &lt;/ul>
-&lt;figure>&lt;img src="MeshCommander-1.png">
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/MeshCommander-1.png">
 &lt;/figure>
 &lt;p>突然想到，对于普通电脑，只要搞两根USB转RS-232串口线交叉连结，就可以实现 &lt;a href="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/">IP-KVM&lt;/a> 80%的效果——就是有点过于low-tech。&lt;/p>
 &lt;h2 id="另外的一些小问题">另外的一些小问题&lt;/h2>
