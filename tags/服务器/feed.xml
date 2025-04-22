@@ -96,7 +96,7 @@
 &lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="远程控制">远程控制&lt;/h2>
-&lt;p>另外，因为是企业级系统，800G4支持Intel vPro，配合8500以上级别的CPU可以开启AMT，实现类似IPMI、IjmP-KVM的“带外”远程控制功能。不过还有一个问题：在开启GPU直通之后，HDMI的输出不再来自主机，远程控制没有图像信号。&lt;/p>
+&lt;p>另外，因为是企业级系统，800G4支持Intel vPro，配合8500以上级别的CPU可以开启AMT，实现类似IPMI、IP-KVM的“带外”远程控制功能。不过还有一个问题：在开启GPU直通之后，HDMI的输出不再来自主机，远程控制没有图像信号。&lt;/p>
 &lt;p>为了解决这个问题，可以使用AMT的Serial-Over-LAN功能，使用串口和主机通信。反正没有人会在PVE主机上安装GUI程序对吧。&lt;/p>
 &lt;p>首先，在BIOS里开启AMT和SOL，记得设置静态IP地址，不需要和PVE系统地址一致；密码要设的长一些，应该包含大小写字母和数字。&lt;/p>
 &lt;p>控制上建议使用&lt;a href="https://www.meshcommander.com/meshcommander/meshcmd">meshcmd&lt;/a>，在ARM、x86上都可以运行。&lt;code>./meshcmd meshcommander&lt;/code>会开启一个服务器，算是远程访问的远程访问。&lt;/p>
