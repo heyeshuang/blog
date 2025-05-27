@@ -99,7 +99,7 @@ alt="Nebula，对端部署在路由器上">&lt;figcaption>
 &lt;h2 id="caddy">Caddy&lt;/h2>
 &lt;p>安装&lt;a href="https://caddyserver.com/download?package=github.com%2Fcaddy-dns%2Fcloudflare">包含Cloudflare DNS插件的Caddy&lt;/a>。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Caddyfile" data-lang="Caddyfile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">## cat /etc/caddy/Caddyfile
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span>(cloudflare) {
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span>&lt;span style="color:#033">(cloudflare)&lt;/span> {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">tls&lt;/span> {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">dns&lt;/span> &lt;span style="color:#c30">cloudflare&lt;/span> &lt;span style="color:#c30">abcdefgh&lt;/span>&lt;span style="color:#09f;font-style:italic"> #刚才说的Cloudflare的token
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> }

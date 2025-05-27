@@ -160,7 +160,7 @@
 &lt;p>插显示器的时候，不要用&lt;a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free">SecondScreen&lt;/a> APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的状态栏对我来说没有必要。
+&lt;p>只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的选项对我来说没有必要。（在Android 15上，选项叫做“在辅助显示屏上启用可自由调整的窗口”）
 &lt;img src="develop.jpg" alt="开发者模式选项">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -173,7 +173,8 @@
 &lt;li>
 &lt;p>按理说Moonlight也可以，不过还是RDP协议对4G友好点。&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
+&lt;/ul>
+&lt;p>来自2025.5.27的更新：在升级到Android 15之后，外接鼠标无法在辅助显示屏上使用了。解决方法来自Gemini：将手机切换成横屏模式；或者进入手机的 “设置” &amp;gt; “连接的设备” &amp;gt; “外部显示屏”，将显示方向从 “标准” 更改为90度，然后再改回 “标准”。&lt;/p></description></item><item><title>一些矿渣的耗电量</title><link>https://blog.heysh.xyz/2023/08/10/energy-cost/</link><pubDate>Thu, 10 Aug 2023 20:35:54 +0800</pubDate><guid>https://blog.heysh.xyz/2023/08/10/energy-cost/</guid><description>&lt;p>最近在小黄鱼上淘到一个支持电量统计的插排（&lt;a href="https://post.smzdm.com/p/a304w8vk/p3/?sort_tab=hot/#comments">这个&lt;/a>），卖家还贴心地刷好了ESPHome固件。&lt;/p>
 &lt;figure>&lt;img src="https://blog.heysh.xyz/2023/08/10/energy-cost/figure.png">&lt;figcaption>
 &lt;h4>数据就不标了，有兴趣的可以自行使用Engauge Digitizer&lt;/h4>
 &lt;/figcaption>
