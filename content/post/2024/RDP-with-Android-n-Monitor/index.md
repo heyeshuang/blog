@@ -26,10 +26,12 @@ draft: false
   - 如果是高贵的三星用户，就请当我没说过这句话。
   - 另外，别用Oxygen OS，桌面模式布局一团乱麻；也别用`Pixel Experience`，直接把手机干成`Qualcomm CrashDump MODE`，我还以为200块白修了。
 - 插显示器的时候，不要用[SecondScreen](https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free) APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。
-- 只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的状态栏对我来说没有必要。
+- 只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的选项对我来说没有必要。（在Android 15上，选项叫做“在辅助显示屏上启用可自由调整的窗口”）
 ![开发者模式选项](develop.jpg)
 - 之后，连上显示器以后的Android桌面长这样。
 ![桌面](desktop.png)
 - 关于RDP客户端，建议不要用[微软出品的APP](https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx)。据我测试，只有[Remote Desktop Manager](https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager)和[aRDP Free](https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP)支持鼠标中键。后面那个是[开源](https://github.com/iiordanov/remote-desktop-clients/)的。
 
 - 按理说Moonlight也可以，不过还是RDP协议对4G友好点。
+
+来自2025.5.27的更新：在升级到Android 15之后，外接鼠标无法在辅助显示屏上使用了。解决方法来自Gemini：将手机切换成横屏模式；或者进入手机的 “设置” > “连接的设备” > “外部显示屏”，将显示方向从 “标准” 更改为90度，然后再改回 “标准”。
