@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IPv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in IPv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Tue, 07 Feb 2023 17:29:00 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IPv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in IPv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 04 Jun 2025 21:13:09 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>与IPv6地址战斗</title><link>https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/</link><pubDate>Wed, 04 Jun 2025 21:13:09 +0800</pubDate><guid>https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/</guid><description>&lt;blockquote>
+&lt;p>捣腾家里服务器的另一些副产品。&lt;/p>&lt;/blockquote>
+&lt;h2 id="配置ula前缀">配置ULA前缀&lt;/h2>
+&lt;p>当你需要设置IPv6网关时，常常需要一个不随着运营商前缀变化的内网地址，这时候设置ULA很好用。&lt;/p>
+&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/LuCI.png"
+alt="OpenWrt设置ULA前缀">&lt;figcaption>
+&lt;p>OpenWrt设置ULA前缀&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>这样，在需要临时修改网关时，可以直接&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo ip -6 route del default &lt;span style="color:#555">&amp;amp;&amp;amp;&lt;/span> sudo ip -6 route add default via fd22:9:30::88:88 metric &lt;span style="color:#f60">100&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>fd22:9:30::88:88&lt;/code>是网关地址。&lt;/p>
+&lt;h2 id="自定义后缀">自定义后缀&lt;/h2>
+&lt;p>相比于&lt;code>60d1:24e0:fe4a:5c66&lt;/code>这样的后缀，还是&lt;code>::88&lt;/code>更帅一些。&lt;del>回字&lt;/del>自定义后缀有4种写法，我们Linux真是太厉害辣。&lt;/p>
+&lt;p>如果是原生Debian，用ifupdown的话：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># /etc/network/interfaces&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>iface &amp;lt;你的ensXX&amp;gt; inet6 auto
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> post-up /sbin/ip token &lt;span style="color:#366">set&lt;/span> ::88 dev &lt;span style="color:#033">$IFACE&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果是Ubuntu（或者Ubuntu味道的Armbian），一般使用networkmanager:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.addr-gen-mode eui64
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.token &lt;span style="color:#c30">&amp;#34;::88&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果是（直接安装的）OpenMediaVault，它使用netplan:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-YAML" data-lang="YAML">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># touch /etc/netplan/30-fix-token.yaml&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#309;font-weight:bold">network&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">ethernets&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">ens18&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">ipv6-address-token&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#c30">&amp;#34;::123:123&amp;#34;&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#09f;font-style:italic"># sudo netplan apply&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>应该还会有人用&lt;a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.network.html#Token=1">systemd-networkd&lt;/a>配置网络，自己读manpage去吧，祝你成功。&lt;/p>
+&lt;h2 id="更快地推送ipv6地址">更快地推送IPv6地址&lt;/h2>
+&lt;p>&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">之前&lt;/a>的DDNS更新脚本，或者&lt;a href="https://github.com/jeessy2/ddns-go">ddns-go&lt;/a>，都是使用cron来轮询的。而&lt;code>ip monitor&lt;/code>命令不需要轮询，在IP地址变更的第一时间就会发送消息。配合靠谱的推送服务，可以比别人提前……呃……大概五分钟。&lt;/p>
+&lt;p>&lt;del>所以没什么用处，建议直接ddns-go。&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>#cat /etc/systemd/system/dns-updater.service
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[Unit]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Description=Dynamic DNS updater
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>DefaultDependencies=no
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Wants=local-fs.target
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>After=local-fs.target
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Wants=network-pre.target
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Before=network-pre.target
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[Service]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Type=exec
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ExecStart=/opt/ddns-updater
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[Install]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>WantedBy=sysinit.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#cat /opt/ddns-updater&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#!/bin/sh -e&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ip -o -6 monitor address |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">read&lt;/span> index iface proto addr dummy scope temporary dummy; &lt;span style="color:#069;font-weight:bold">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">case&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$iface&lt;/span>&lt;span style="color:#c30">:&lt;/span>&lt;span style="color:#033">$proto&lt;/span>&lt;span style="color:#c30">:&lt;/span>&lt;span style="color:#033">$scope&lt;/span>&lt;span style="color:#c30">:&lt;/span>&lt;span style="color:#033">$temporary&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> in
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ens18:inet6:global:dynamic&lt;span style="color:#555">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">addr&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">addr&lt;/span>%/*&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">case&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> in
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> f*&lt;span style="color:#555">)&lt;/span> &lt;span style="color:#069;font-weight:bold">continue&lt;/span> ;; &lt;span style="color:#09f;font-style:italic"># 跳过以 f 开头的地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> !&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$current&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#09f;font-style:italic"># 我这里发送到了企业微信机器人，也可以用bark、nfty.sh之类&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> curl &lt;span style="color:#c30">&amp;#39;https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxx&amp;#39;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#39;Content-Type: application/json&amp;#39;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -d &lt;span style="color:#c30">&amp;#34;{
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> \&amp;#34;msgtype\&amp;#34;: \&amp;#34;text\&amp;#34;,
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> \&amp;#34;text\&amp;#34;: {
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> \&amp;#34;content\&amp;#34;: \&amp;#34;IPv6地址已更新：&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">\&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> }
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> }&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;已通知企业微信，新地址：&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">current&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">fi&lt;/span>;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
 &lt;p>在这种场景，如果：&lt;/p>
 &lt;ol>
 &lt;li>有一台常开的NAS、矿渣或whatever，&lt;/li>
