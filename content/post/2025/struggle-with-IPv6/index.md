@@ -38,7 +38,8 @@ iface <你的ensXX> inet6 auto
 
 如果是Ubuntu（或者Ubuntu味道的Armbian），一般使用networkmanager:
 ```bash
-sudo nmcli connection modify "Wired connection 1"     ipv6.addr-gen-mode eui64
+sudo nmcli connection modify "Wired connection 1" ipv6.addr-gen-mode eui64
+sudo nmcli connection modify "Wired connection 1" ipv6.ip6-privacy 0
 sudo nmcli connection modify "Wired connection 1" ipv6.token "::88"
 ```
 
