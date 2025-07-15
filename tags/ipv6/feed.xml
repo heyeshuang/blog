@@ -18,6 +18,7 @@ alt="OpenWrt设置ULA前缀">&lt;figcaption>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> post-up /sbin/ip token &lt;span style="color:#366">set&lt;/span> ::88 dev &lt;span style="color:#033">$IFACE&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果是Ubuntu（或者Ubuntu味道的Armbian），一般使用networkmanager:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.addr-gen-mode eui64
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.ip6-privacy &lt;span style="color:#f60">0&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.token &lt;span style="color:#c30">&amp;#34;::88&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果是（直接安装的）OpenMediaVault，它使用netplan:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-YAML" data-lang="YAML">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># touch /etc/netplan/30-fix-token.yaml&lt;/span>&lt;span style="color:#bbb">
