@@ -1,165 +1,167 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IPv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in IPv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 04 Jun 2025 21:13:09 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>与IPv6地址战斗</title><link>https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/</link><pubDate>Wed, 04 Jun 2025 21:13:09 +0800</pubDate><guid>https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/</guid><description>&lt;blockquote>
-&lt;p>捣腾家里服务器的另一些副产品。&lt;/p>&lt;/blockquote>
-&lt;h2 id="配置ula前缀">配置ULA前缀&lt;/h2>
-&lt;p>当你需要设置IPv6网关时，常常需要一个不随着运营商前缀变化的内网地址，这时候设置ULA很好用。&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/LuCI.png"
-alt="OpenWrt设置ULA前缀">&lt;figcaption>
-&lt;p>OpenWrt设置ULA前缀&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>这样，在需要临时修改网关时，可以直接&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo ip -6 route del default &lt;span style="color:#555">&amp;amp;&amp;amp;&lt;/span> sudo ip -6 route add default via fd22:9:30::88:88 metric &lt;span style="color:#f60">100&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;code>fd22:9:30::88:88&lt;/code>是网关地址。&lt;/p>
-&lt;h2 id="自定义后缀">自定义后缀&lt;/h2>
-&lt;p>相比于&lt;code>60d1:24e0:fe4a:5c66&lt;/code>这样的后缀，还是&lt;code>::88&lt;/code>更帅一些。&lt;del>回字&lt;/del>自定义后缀有4种写法，我们Linux真是太厉害辣。&lt;/p>
-&lt;p>如果是原生Debian，用ifupdown的话：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># /etc/network/interfaces&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>iface &amp;lt;你的ensXX&amp;gt; inet6 auto
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> post-up /sbin/ip token &lt;span style="color:#366">set&lt;/span> ::88 dev &lt;span style="color:#033">$IFACE&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果是Ubuntu（或者Ubuntu味道的Armbian），一般使用networkmanager:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.addr-gen-mode eui64
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.ip6-privacy &lt;span style="color:#f60">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo nmcli connection modify &lt;span style="color:#c30">&amp;#34;Wired connection 1&amp;#34;&lt;/span> ipv6.token &lt;span style="color:#c30">&amp;#34;::88&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果是（直接安装的）OpenMediaVault，它使用netplan:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-YAML" data-lang="YAML">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># touch /etc/netplan/30-fix-token.yaml&lt;/span>&lt;span style="color:#bbb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#309;font-weight:bold">network&lt;/span>:&lt;span style="color:#bbb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">ethernets&lt;/span>:&lt;span style="color:#bbb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">ens18&lt;/span>:&lt;span style="color:#bbb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#309;font-weight:bold">ipv6-address-token&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#c30">&amp;#34;::123:123&amp;#34;&lt;/span>&lt;span style="color:#bbb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#09f;font-style:italic"># sudo netplan apply&lt;/span>&lt;span style="color:#bbb">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>应该还会有人用&lt;a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.network.html#Token=1">systemd-networkd&lt;/a>配置网络，自己读manpage去吧，祝你成功。&lt;/p>
-&lt;h2 id="更快地推送ipv6地址">更快地推送IPv6地址&lt;/h2>
-&lt;p>&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">之前&lt;/a>的DDNS更新脚本，或者&lt;a href="https://github.com/jeessy2/ddns-go">ddns-go&lt;/a>，都是使用cron来轮询的。而&lt;code>ip monitor&lt;/code>命令不需要轮询，在IP地址变更的第一时间就会发送消息。配合靠谱的推送服务，可以比别人提前……呃……大概五分钟。&lt;/p>
-&lt;p>&lt;del>所以没什么用处，建议直接ddns-go。&lt;/del>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>#cat /etc/systemd/system/dns-updater.service
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[Unit]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Description=Dynamic DNS updater
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>DefaultDependencies=no
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Wants=local-fs.target
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>After=local-fs.target
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Wants=network-pre.target
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Before=network-pre.target
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[Service]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Type=exec
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ExecStart=/opt/ddns-updater
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[Install]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>WantedBy=sysinit.target
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#cat /opt/ddns-updater&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">#!/bin/sh -e&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ip -o -6 monitor address |
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">while&lt;/span> &lt;span style="color:#366">read&lt;/span> index iface proto addr dummy scope temporary dummy; &lt;span style="color:#069;font-weight:bold">do&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">case&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$iface&lt;/span>&lt;span style="color:#c30">:&lt;/span>&lt;span style="color:#033">$proto&lt;/span>&lt;span style="color:#c30">:&lt;/span>&lt;span style="color:#033">$scope&lt;/span>&lt;span style="color:#c30">:&lt;/span>&lt;span style="color:#033">$temporary&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> in
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ens18:inet6:global:dynamic&lt;span style="color:#555">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">addr&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#a00">${&lt;/span>&lt;span style="color:#033">addr&lt;/span>%/*&lt;span style="color:#a00">}&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">case&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> in
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> f*&lt;span style="color:#555">)&lt;/span> &lt;span style="color:#069;font-weight:bold">continue&lt;/span> ;; &lt;span style="color:#09f;font-style:italic"># 跳过以 f 开头的地址&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">esac&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">if&lt;/span> &lt;span style="color:#555">[&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> !&lt;span style="color:#555">=&lt;/span> &lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$current&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span> &lt;span style="color:#555">]&lt;/span>; &lt;span style="color:#069;font-weight:bold">then&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">NEW_IP&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#09f;font-style:italic"># 我这里发送到了企业微信机器人，也可以用bark、nfty.sh之类&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> curl &lt;span style="color:#c30">&amp;#39;https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxx&amp;#39;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -H &lt;span style="color:#c30">&amp;#39;Content-Type: application/json&amp;#39;&lt;/span> &lt;span style="color:#c30;font-weight:bold">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30;font-weight:bold">&lt;/span> -d &lt;span style="color:#c30">&amp;#34;{
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> \&amp;#34;msgtype\&amp;#34;: \&amp;#34;text\&amp;#34;,
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> \&amp;#34;text\&amp;#34;: {
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> \&amp;#34;content\&amp;#34;: \&amp;#34;IPv6地址已更新：&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">\&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> }
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c30"> }&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#366">echo&lt;/span> &lt;span style="color:#c30">&amp;#34;已通知企业微信，新地址：&lt;/span>&lt;span style="color:#033">$NEW_IP&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#033">current&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>&lt;span style="color:#033">$addr&lt;/span>&lt;span style="color:#c30">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">fi&lt;/span>;;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">esac&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">done&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p>是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p>
-&lt;p>在这种场景，如果：&lt;/p>
-&lt;ol>
-&lt;li>有一台常开的NAS、矿渣或whatever，&lt;/li>
-&lt;li>在Cloudflare上有一个自己的域名，&lt;/li>
-&lt;li>家里的宽带有IPv6，而且防火墙可以自己控制（aka 光猫桥接），&lt;/li>
-&lt;li>不想或者不能打开80、443端口，没办法直接使用Cloudflare代理；&lt;/li>
-&lt;/ol>
-&lt;p>那么可以通过本文的方案，获得高位端口的CF代理。这样，在没有IPv6的地方也能够访问家里的服务了。&lt;/p>
-&lt;p>如果上面的条件不满足的话，可以尝试&lt;code>FRP&lt;/code>和&lt;code>Cloudflare Tunnel&lt;/code>之类的东西。&lt;/p>
-&lt;h2 id="打开端口ddns">打开端口、DDNS&lt;/h2>
-&lt;p>首先我们需要保证NAS上的IPv6端口能从公网访问，并把域名指向家里的IPv6地址。打开端口的部分可以看看&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前的博文&lt;/a>；DDNS我在使用&lt;a href="https://github.com/jeessy2/ddns-go">ddns-go&lt;/a>（这里可能需要科学上网）。注意，此时先不要开启Cloudflare代理。&lt;/p>
-&lt;p>完成这部分之后，我们的域名（比如说home.example.net）指向了家里的IP，并且防火墙打开了端口（比如38000）。可以在NAS上开个&lt;code>python -m http.server 38000&lt;/code>，并用移动网络测试一下。&lt;/p>
-&lt;p>对了，Cloudflare的token不要扔，待会还有用。&lt;/p>
-&lt;h2 id="caddy">Caddy&lt;/h2>
-&lt;p>安装&lt;a href="https://caddyserver.com/download?package=github.com%2Fcaddy-dns%2Fcloudflare">包含Cloudflare DNS插件的Caddy&lt;/a>。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Caddyfile" data-lang="Caddyfile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">## cat /etc/caddy/Caddyfile
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span>&lt;span style="color:#033">(cloudflare)&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">tls&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">dns&lt;/span> &lt;span style="color:#c30">cloudflare&lt;/span> &lt;span style="color:#c30">abcdefgh&lt;/span>&lt;span style="color:#09f;font-style:italic"> #刚才说的Cloudflare的token
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#030;font-weight:bold">home.example.net:38000&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#069;font-weight:bold">reverse_proxy&lt;/span> http://localhost:&lt;span style="color:#f60">1234&lt;/span>&lt;span style="color:#09f;font-style:italic"> #这里是内网服务的地址
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">import&lt;/span> cloudflare&lt;span style="color:#09f;font-style:italic"> #申请证书的部分
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code>https://home.example.net:38000&lt;/code>访问服务了。&lt;/p>
-&lt;h2 id="cloudflare">Cloudflare&lt;/h2>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/SSL_TLS.png">&lt;figcaption>
-&lt;h4>把SSL/TLS加密模式改为完全；&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/Origin_Rules.png">&lt;figcaption>
-&lt;h4>添加Origin Rules，把请求转至高位端口；&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336">在DDNS服务上也开启Cloudflare代理&lt;/a>。&lt;/p>
-&lt;p>好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
-&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>&lt;/blockquote>
-&lt;h2 id="准备">准备&lt;/h2>
-&lt;ol>
-&lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>
-&lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
-&lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
-&lt;/ol>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png">&lt;figcaption>
-&lt;h4>比如这样&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;h2 id="打开端口">打开端口&lt;/h2>
-&lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png">&lt;figcaption>
-&lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>如果对安全要求更高的话，可以参考&lt;a href="https://blog.ptsang.net/match-ipv6-dynamic-addresses-in-iptables?utm_source=pocket_mylist">这里&lt;/a>匹配IPv6地址的末几位，就像&lt;code>::abcd:1234:5678:90ef/::ffff:ffff:ffff:ffff&lt;/code>这样。&lt;/p>
-&lt;p>在这个时候，你应该已经可以通过手机移动网络用SSH连接回自己主机的IPv6地址了。就和公网一模一样。&lt;/p>
-&lt;h2 id="绑定域名">绑定域名&lt;/h2>
-&lt;p>任何一个支持IPv6的AAAA地址绑定的DDNS服务都可以。我家里恰好有一个长期开机的矿渣&lt;code>贝壳云&lt;/code>，是某次水逆之后想要买树莓派四，忍住了却又没有完全忍住的结果；之前写的&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">cloudflare脚本&lt;/a>刚好能用。&lt;/p>
-&lt;h2 id="跳板机自称">跳板机（自称）&lt;/h2>
-&lt;p>如果想对内网完全控制，而不是仅仅几个端口的话，可能需要所谓跳板机的配合。仔细想想，这是一个跨越&lt;code>防火墙.little&lt;/code>的活动，对付&lt;code>防火墙 the Great&lt;/code>的软件也完全适用。所以我在内网设备（aka矿渣）上部署了某个V开头的软件，通过Android客户端连回家里完全没有问题&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
-&lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
-&lt;hr>
-&lt;p>来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/">这篇教程&lt;/a>在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/">ARP代理&lt;/a>用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:3">
-&lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>短消息：联通IPV6</title><link>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</link><pubDate>Sun, 03 Sep 2017 23:11:32 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid><description>&lt;p>似乎是使用teredo。Good Job！&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/ipv6-test.png">&lt;figcaption>
-&lt;h4>IPV6测试&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/torrent.png">&lt;figcaption>
-&lt;h4>PT测试&lt;/h4>
-&lt;/figcaption>
-&lt;/figure></description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p>背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p>
-&lt;p>大概上思路和&lt;a href="http://talk.withme.me/?p=51">这里&lt;/a>一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code>6ndp&lt;/code>,&lt;code>ndppd&lt;/code>和&lt;code>radvd&lt;/code>都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code>/etc/config/dhcp&lt;/code>的关键几行大概应该是这样：&lt;/p>
-&lt;pre>&lt;code># /etc/config/dhcp:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IPv6 on 林中阴影</title><link>https://blog.heysh.xyz/tags/ipv6/</link><description>Recent content in IPv6 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Wed, 04 Jun 2025 21:13:09 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/ipv6/feed.xml" rel="self" type="application/rss+xml"/><item><title>与IPv6地址战斗</title><link>https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/</link><pubDate>Wed, 04 Jun 2025 21:13:09 +0800</pubDate><guid>https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;捣腾家里服务器的另一些副产品。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="配置ula前缀"&gt;配置ULA前缀&lt;/h2&gt;
+&lt;p&gt;当你需要设置IPv6网关时，常常需要一个不随着运营商前缀变化的内网地址，这时候设置ULA很好用。&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/06/04/struggle-with-ipv6/LuCI.png"
+alt="OpenWrt设置ULA前缀"&gt;&lt;figcaption&gt;
+&lt;p&gt;OpenWrt设置ULA前缀&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;这样，在需要临时修改网关时，可以直接&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo ip -6 route del default &lt;span style="color:#555"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo ip -6 route add default via fd22:9:30::88:88 metric &lt;span style="color:#f60"&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中，&lt;code&gt;fd22:9:30::88:88&lt;/code&gt;是网关地址。&lt;/p&gt;
+&lt;h2 id="自定义后缀"&gt;自定义后缀&lt;/h2&gt;
+&lt;p&gt;相比于&lt;code&gt;60d1:24e0:fe4a:5c66&lt;/code&gt;这样的后缀，还是&lt;code&gt;::88&lt;/code&gt;更帅一些。&lt;del&gt;回字&lt;/del&gt;自定义后缀有4种写法，我们Linux真是太厉害辣。&lt;/p&gt;
+&lt;p&gt;如果是原生Debian，用ifupdown的话：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# /etc/network/interfaces&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;iface &amp;lt;你的ensXX&amp;gt; inet6 auto
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; post-up /sbin/ip token &lt;span style="color:#366"&gt;set&lt;/span&gt; ::88 dev &lt;span style="color:#033"&gt;$IFACE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果是Ubuntu（或者Ubuntu味道的Armbian），一般使用networkmanager:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmcli connection modify &lt;span style="color:#c30"&gt;&amp;#34;Wired connection 1&amp;#34;&lt;/span&gt; ipv6.addr-gen-mode eui64
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmcli connection modify &lt;span style="color:#c30"&gt;&amp;#34;Wired connection 1&amp;#34;&lt;/span&gt; ipv6.ip6-privacy &lt;span style="color:#f60"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmcli connection modify &lt;span style="color:#c30"&gt;&amp;#34;Wired connection 1&amp;#34;&lt;/span&gt; ipv6.token &lt;span style="color:#c30"&gt;&amp;#34;::88&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果是（直接安装的）OpenMediaVault，它使用netplan:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-YAML" data-lang="YAML"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# touch /etc/netplan/30-fix-token.yaml&lt;/span&gt;&lt;span style="color:#bbb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bbb"&gt;&lt;/span&gt;&lt;span style="color:#309;font-weight:bold"&gt;network&lt;/span&gt;:&lt;span style="color:#bbb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bbb"&gt; &lt;/span&gt;&lt;span style="color:#309;font-weight:bold"&gt;ethernets&lt;/span&gt;:&lt;span style="color:#bbb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bbb"&gt; &lt;/span&gt;&lt;span style="color:#309;font-weight:bold"&gt;ens18&lt;/span&gt;:&lt;span style="color:#bbb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bbb"&gt; &lt;/span&gt;&lt;span style="color:#309;font-weight:bold"&gt;ipv6-address-token&lt;/span&gt;:&lt;span style="color:#bbb"&gt; &lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;::123:123&amp;#34;&lt;/span&gt;&lt;span style="color:#bbb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bbb"&gt;&lt;/span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# sudo netplan apply&lt;/span&gt;&lt;span style="color:#bbb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;应该还会有人用&lt;a href="https://www.freedesktop.org/software/systemd/man/latest/systemd.network.html#Token=1"&gt;systemd-networkd&lt;/a&gt;配置网络，自己读manpage去吧，祝你成功。&lt;/p&gt;
+&lt;h2 id="更快地推送ipv6地址"&gt;更快地推送IPv6地址&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/"&gt;之前&lt;/a&gt;的DDNS更新脚本，或者&lt;a href="https://github.com/jeessy2/ddns-go"&gt;ddns-go&lt;/a&gt;，都是使用cron来轮询的。而&lt;code&gt;ip monitor&lt;/code&gt;命令不需要轮询，在IP地址变更的第一时间就会发送消息。配合靠谱的推送服务，可以比别人提前……呃……大概五分钟。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;所以没什么用处，建议直接ddns-go。&lt;/del&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;#cat /etc/systemd/system/dns-updater.service
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[Unit]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Description=Dynamic DNS updater
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;DefaultDependencies=no
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Wants=local-fs.target
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;After=local-fs.target
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Wants=network-pre.target
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Before=network-pre.target
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[Service]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Type=exec
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ExecStart=/opt/ddns-updater
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[Install]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WantedBy=sysinit.target
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;#cat /opt/ddns-updater&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;#!/bin/sh -e&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ip -o -6 monitor address |
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;while&lt;/span&gt; &lt;span style="color:#366"&gt;read&lt;/span&gt; index iface proto addr dummy scope temporary dummy; &lt;span style="color:#069;font-weight:bold"&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;case&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#033"&gt;$iface&lt;/span&gt;&lt;span style="color:#c30"&gt;:&lt;/span&gt;&lt;span style="color:#033"&gt;$proto&lt;/span&gt;&lt;span style="color:#c30"&gt;:&lt;/span&gt;&lt;span style="color:#033"&gt;$scope&lt;/span&gt;&lt;span style="color:#c30"&gt;:&lt;/span&gt;&lt;span style="color:#033"&gt;$temporary&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt; in
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ens18:inet6:global:dynamic&lt;span style="color:#555"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#033"&gt;addr&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#a00"&gt;${&lt;/span&gt;&lt;span style="color:#033"&gt;addr&lt;/span&gt;%/*&lt;span style="color:#a00"&gt;}&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;case&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#033"&gt;$addr&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt; in
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; f*&lt;span style="color:#555"&gt;)&lt;/span&gt; &lt;span style="color:#069;font-weight:bold"&gt;continue&lt;/span&gt; ;; &lt;span style="color:#09f;font-style:italic"&gt;# 跳过以 f 开头的地址&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;esac&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;if&lt;/span&gt; &lt;span style="color:#555"&gt;[&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#033"&gt;$addr&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt; !&lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#033"&gt;$current&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;]&lt;/span&gt;; &lt;span style="color:#069;font-weight:bold"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#033"&gt;NEW_IP&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#033"&gt;$addr&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#09f;font-style:italic"&gt;# 我这里发送到了企业微信机器人，也可以用bark、nfty.sh之类&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; curl &lt;span style="color:#c30"&gt;&amp;#39;https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxx&amp;#39;&lt;/span&gt; &lt;span style="color:#c30;font-weight:bold"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30;font-weight:bold"&gt;&lt;/span&gt; -H &lt;span style="color:#c30"&gt;&amp;#39;Content-Type: application/json&amp;#39;&lt;/span&gt; &lt;span style="color:#c30;font-weight:bold"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30;font-weight:bold"&gt;&lt;/span&gt; -d &lt;span style="color:#c30"&gt;&amp;#34;{
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30"&gt; \&amp;#34;msgtype\&amp;#34;: \&amp;#34;text\&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30"&gt; \&amp;#34;text\&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30"&gt; \&amp;#34;content\&amp;#34;: \&amp;#34;IPv6地址已更新：&lt;/span&gt;&lt;span style="color:#033"&gt;$NEW_IP&lt;/span&gt;&lt;span style="color:#c30"&gt;\&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30"&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#c30"&gt; }&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#366"&gt;echo&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;已通知企业微信，新地址：&lt;/span&gt;&lt;span style="color:#033"&gt;$NEW_IP&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#033"&gt;current&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#033"&gt;$addr&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;fi&lt;/span&gt;;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;esac&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>仅IPv6家庭内网服务实现v6+v4双栈访问</title><link>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</link><pubDate>Tue, 07 Feb 2023 17:29:00 +0800</pubDate><guid>https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/</guid><description>&lt;p&gt;是的，连回家里NAS的正常手段，当然是ZeroTier/Tinc/OpenVPN之类。但是如果还有其他人想要看照片的话，不要期待手机上会有除了浏览器之外的东西。&lt;/p&gt;
+&lt;p&gt;在这种场景，如果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;有一台常开的NAS、矿渣或whatever，&lt;/li&gt;
+&lt;li&gt;在Cloudflare上有一个自己的域名，&lt;/li&gt;
+&lt;li&gt;家里的宽带有IPv6，而且防火墙可以自己控制（aka 光猫桥接），&lt;/li&gt;
+&lt;li&gt;不想或者不能打开80、443端口，没办法直接使用Cloudflare代理；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那么可以通过本文的方案，获得高位端口的CF代理。这样，在没有IPv6的地方也能够访问家里的服务了。&lt;/p&gt;
+&lt;p&gt;如果上面的条件不满足的话，可以尝试&lt;code&gt;FRP&lt;/code&gt;和&lt;code&gt;Cloudflare Tunnel&lt;/code&gt;之类的东西。&lt;/p&gt;
+&lt;h2 id="打开端口ddns"&gt;打开端口、DDNS&lt;/h2&gt;
+&lt;p&gt;首先我们需要保证NAS上的IPv6端口能从公网访问，并把域名指向家里的IPv6地址。打开端口的部分可以看看&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/"&gt;之前的博文&lt;/a&gt;；DDNS我在使用&lt;a href="https://github.com/jeessy2/ddns-go"&gt;ddns-go&lt;/a&gt;（这里可能需要科学上网）。注意，此时先不要开启Cloudflare代理。&lt;/p&gt;
+&lt;p&gt;完成这部分之后，我们的域名（比如说home.example.net）指向了家里的IP，并且防火墙打开了端口（比如38000）。可以在NAS上开个&lt;code&gt;python -m http.server 38000&lt;/code&gt;，并用移动网络测试一下。&lt;/p&gt;
+&lt;p&gt;对了，Cloudflare的token不要扔，待会还有用。&lt;/p&gt;
+&lt;h2 id="caddy"&gt;Caddy&lt;/h2&gt;
+&lt;p&gt;安装&lt;a href="https://caddyserver.com/download?package=github.com%2Fcaddy-dns%2Fcloudflare"&gt;包含Cloudflare DNS插件的Caddy&lt;/a&gt;。因为家里没有80和443端口，所以需要用DNS-01方式申请TLS证书：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-Caddyfile" data-lang="Caddyfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;## cat /etc/caddy/Caddyfile
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#033"&gt;(cloudflare)&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;tls&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;dns&lt;/span&gt; &lt;span style="color:#c30"&gt;cloudflare&lt;/span&gt; &lt;span style="color:#c30"&gt;abcdefgh&lt;/span&gt;&lt;span style="color:#09f;font-style:italic"&gt; #刚才说的Cloudflare的token
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;home.example.net:38000&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;reverse_proxy&lt;/span&gt; http://localhost:&lt;span style="color:#f60"&gt;1234&lt;/span&gt;&lt;span style="color:#09f;font-style:italic"&gt; #这里是内网服务的地址
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;&lt;/span&gt; &lt;span style="color:#069;font-weight:bold"&gt;import&lt;/span&gt; cloudflare&lt;span style="color:#09f;font-style:italic"&gt; #申请证书的部分
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;开启Caddy。这里结束后，移动网络（就是有IPv6地址的网络）应该能够通过&lt;code&gt;https://home.example.net:38000&lt;/code&gt;访问服务了。&lt;/p&gt;
+&lt;h2 id="cloudflare"&gt;Cloudflare&lt;/h2&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/SSL_TLS.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;把SSL/TLS加密模式改为完全；&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/02/07/beyond-nat-2023/Origin_Rules.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;添加Origin Rules，把请求转至高位端口；&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;开启Cloudflare代理。&lt;a href="https://github.com/jeessy2/ddns-go/issues/336"&gt;在DDNS服务上也开启Cloudflare代理&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;好了，大概就是这样。通过CF，也许自家的网络也能稍微安全一点。&lt;/p&gt;</description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code&gt;114.*.*.*&lt;/code&gt;，换来了&lt;code&gt;100.64.*.*&lt;/code&gt;&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。不过，IPv6地址仍然是&lt;code&gt;2404::****&lt;/code&gt;，这个应该也算是所谓的 &lt;em&gt;公网IP&lt;/em&gt; 吧？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="准备"&gt;准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li&gt;
+&lt;li&gt;找一个稍微新一点的路由器，我用的是刷了&lt;code&gt;OpenWRT&lt;/code&gt;的，&lt;strong&gt;非常贵的&lt;/strong&gt;跑路K3；&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://test-ipv6.com"&gt;test-ipv6.com&lt;/a&gt;显示了IPv6地址而且没有给你打零分。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;比如这样&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="打开端口"&gt;打开端口&lt;/h2&gt;
+&lt;p&gt;虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;如果对安全要求更高的话，可以参考&lt;a href="https://blog.ptsang.net/match-ipv6-dynamic-addresses-in-iptables?utm_source=pocket_mylist"&gt;这里&lt;/a&gt;匹配IPv6地址的末几位，就像&lt;code&gt;::abcd:1234:5678:90ef/::ffff:ffff:ffff:ffff&lt;/code&gt;这样。&lt;/p&gt;
+&lt;p&gt;在这个时候，你应该已经可以通过手机移动网络用SSH连接回自己主机的IPv6地址了。就和公网一模一样。&lt;/p&gt;
+&lt;h2 id="绑定域名"&gt;绑定域名&lt;/h2&gt;
+&lt;p&gt;任何一个支持IPv6的AAAA地址绑定的DDNS服务都可以。我家里恰好有一个长期开机的矿渣&lt;code&gt;贝壳云&lt;/code&gt;，是某次水逆之后想要买树莓派四，忍住了却又没有完全忍住的结果；之前写的&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/"&gt;cloudflare脚本&lt;/a&gt;刚好能用。&lt;/p&gt;
+&lt;h2 id="跳板机自称"&gt;跳板机（自称）&lt;/h2&gt;
+&lt;p&gt;如果想对内网完全控制，而不是仅仅几个端口的话，可能需要所谓跳板机的配合。仔细想想，这是一个跨越&lt;code&gt;防火墙.little&lt;/code&gt;的活动，对付&lt;code&gt;防火墙 the Great&lt;/code&gt;的软件也完全适用。所以我在内网设备（aka矿渣）上部署了某个V开头的软件，通过Android客户端连回家里完全没有问题&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code&gt;SocksCap64&lt;/code&gt;&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;。把&lt;code&gt;MSTSC.exe&lt;/code&gt;加到列表里，就可以愉快地远程桌面了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/"&gt;这篇教程&lt;/a&gt;在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/"&gt;ARP代理&lt;/a&gt;用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80"&gt;维基百科&lt;/a&gt;上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;记住客户端不要&lt;code&gt;绕过局域网地址&lt;/code&gt;，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item><item><title>短消息：联通IPV6</title><link>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</link><pubDate>Sun, 03 Sep 2017 23:11:32 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/03/2017-09-03-ipv6-for-unicomm/</guid><description>&lt;p&gt;似乎是使用teredo。Good Job！&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/ipv6-test.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;IPV6测试&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/torrent.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;PT测试&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;</description></item><item><title>IPv6 season 2: 在DHCPv6网络环境下的OpenWRT Chaos Calmer</title><link>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</link><pubDate>Wed, 09 Sep 2015 13:58:27 +0000</pubDate><guid>https://blog.heysh.xyz/2015/09/09/ipv6-season-2-%E5%9C%A8dhcpv6%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84openwrt-chaos-calmer/</guid><description>&lt;p&gt;背景：桥接3秒断一次的渣网，以及经常在我博客中出现的5手db120；还有经常更新以后把老版本脚本删掉的OpenWRT，这里用的是Chaos Calmer 15.05-rc3。&lt;/p&gt;
+&lt;p&gt;大概上思路和&lt;a href="http://talk.withme.me/?p=51"&gt;这里&lt;/a&gt;一样，因为学校给的地址位数只有/64，不够再去划分子网，所以要去启用邻居发现协议；但是因为&lt;code&gt;6ndp&lt;/code&gt;,&lt;code&gt;ndppd&lt;/code&gt;和&lt;code&gt;radvd&lt;/code&gt;都已经被始乱终弃，现在它们的功能被odhcpd给代替了。具体上，&lt;code&gt;/etc/config/dhcp&lt;/code&gt;的关键几行大概应该是这样：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# /etc/config/dhcp:
 config dhcp 'lan'
 option interface 'lan'
 option start '100'
@@ -175,28 +177,28 @@ config dhcp 'wan6'
 option ra 'relay'
 option ndp 'relay'
 option master '1'
-&lt;/code>&lt;/pre>
-&lt;p>另外，还需要把&lt;code>luci&lt;/code>的&lt;code>interface&lt;/code>页面下的&lt;code>IPv6 ULA-Prefix&lt;/code>删掉。&lt;/p>
-&lt;p>现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启&lt;code>/etc/init.d/odhcpd&lt;/code>；不管了，我先在这里存个盘。&lt;/p>
-&lt;p>有人说relay-&amp;gt;hybrid也能成功的样子……我还没有测试过。&lt;/p>
-&lt;p>参考：&lt;/p>
-&lt;p>&lt;a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1">http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1&lt;/a>&lt;/p>
-&lt;p>&lt;a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/">http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/&lt;/a>（链接不知道为什么已经失效了）&lt;/p>
-&lt;p>20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6">这里&lt;/a>&lt;/p></description></item><item><title>为什么我的手机用不了IPV6？</title><link>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/</link><pubDate>Sun, 23 Aug 2015 14:25:21 +0000</pubDate><guid>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/</guid><description>&lt;p>背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之前也是可以用的，直到某次更新ROM前后，可能是5.1出没但CM组没人更新LG G2的那段时间。&lt;/p>
-&lt;p>症状：&lt;code>ip addr&lt;/code>告诉我学校确确实实发来了（2402开头的真正的）IPV6地址，但是&lt;code>ping6 google.com&lt;/code>显示&lt;code>Network unreachable&lt;/code>，继续查找发现&lt;code>ip -6 route&lt;/code>没有默认网关，就像&lt;a href="https://code.google.com/p/android/issues/detail?id=39052">这条ISSUE&lt;/a>所说的一样。&lt;/p>
-&lt;p>解决方案：把内核参数改了就行。在su以后&lt;code>sysctl -w net.ipv6.conf.wlan0.accept_ra_defrtr=1&lt;/code>可以坚持到下次启动。&lt;/p>
-&lt;p>更详细的说明见&lt;a href="http://www.cnfy.me/2013/04/miuiwifiipv6.html">这里&lt;/a>。简单概括一下，你需要在&lt;code>/etc/sysctl.conf&lt;/code>里加上&lt;/p>
-&lt;pre>&lt;code>net.ipv6.conf.wlan0.accept_ra_defrtr=1
-&lt;/code>&lt;/pre>
-&lt;p>这一行，然后每次启动&lt;em>尽量晚的&lt;/em>以su身份运行&lt;code>sysctl -p&lt;/code>就行，因为&lt;code>/init_qcom.sh&lt;/code>运行的就挺晚的，所以直接写在&lt;code>/etc/init.d/&lt;/code>里是不行的。&lt;/p>
-&lt;p>另外，这次应该是高通不知道在想什么user space，小米只是背锅。&lt;/p>
-&lt;p>另外，虽然可能看不出来，但是这个博客的后台已经换了一个。&lt;/p></description></item><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocks%EF%BC%8Cipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocks%EF%BC%8Cipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>&lt;p>那个……我还活着呢。&lt;/p>
-&lt;p>前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树。&lt;/p>
-&lt;p>……算了过几天写一页年终总结来写这些充满腐烂气息的东西吧。今天是正经的技术环节，当然是剪切链接形式的技术。&lt;/p>
-&lt;p>那么首先是VPS，用的是便宜的&lt;a href="https://bandwagonhost.com/aff.php?aff=1656">Bandwagon&lt;/a>（搬瓦工），因为穷，只买了64M内存的版本；因为没有信用卡（穷），用不了paypal，于是去淘宝找了一家代购，入手价格29￥/年。&lt;/p>
-&lt;p>然后是shadowsocks，按照&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">这里&lt;/a>的办法安装。根据&lt;a href="http://blog.robotshell.org/2014/about-shadowsocks/">这里&lt;/a>的说法，就用python版的服务端就好。&lt;/p>
-&lt;p>为了看起来像是技术文档的样子，下面是&lt;code>/etc/shadowsocks.json&lt;/code>:&lt;/p>
-&lt;pre>&lt;code>{
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;另外，还需要把&lt;code&gt;luci&lt;/code&gt;的&lt;code&gt;interface&lt;/code&gt;页面下的&lt;code&gt;IPv6 ULA-Prefix&lt;/code&gt;删掉。&lt;/p&gt;
+&lt;p&gt;现在的问题是，LAN口和WAN口的IP地址是一样的，而且客户机必须先ping一下这个地址才能连接外网，有时候路由还要重启&lt;code&gt;/etc/init.d/odhcpd&lt;/code&gt;；不管了，我先在这里存个盘。&lt;/p&gt;
+&lt;p&gt;有人说relay-&amp;gt;hybrid也能成功的样子……我还没有测试过。&lt;/p&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1"&gt;http://bbs.pku.edu.cn/new/bbs/article/showthread/Networking/15501646?1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/"&gt;http://ict.jingyan.info/openwrt-%e7%94%a8odpcpd%e9%85%8d%e7%bd%aerelay-%e6%96%b9%e5%bc%8f-ipv6/&lt;/a&gt;（链接不知道为什么已经失效了）&lt;/p&gt;
+&lt;p&gt;20160321更新：odhcp烂的抠脚，转用邪恶的IPV6 NAT，见&lt;a href="https://wiki.openwrt.org/doc/howto/ipv6.nat6"&gt;这里&lt;/a&gt;&lt;/p&gt;</description></item><item><title>为什么我的手机用不了IPV6？</title><link>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/</link><pubDate>Sun, 23 Aug 2015 14:25:21 +0000</pubDate><guid>https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/</guid><description>&lt;p&gt;背景：宿舍的无线是桥接模式，使用学校的DHCP服务器，另一台Android设备（寨板，4.4，Intel 3735）可以愉快地上网；这台设备之前也是可以用的，直到某次更新ROM前后，可能是5.1出没但CM组没人更新LG G2的那段时间。&lt;/p&gt;
+&lt;p&gt;症状：&lt;code&gt;ip addr&lt;/code&gt;告诉我学校确确实实发来了（2402开头的真正的）IPV6地址，但是&lt;code&gt;ping6 google.com&lt;/code&gt;显示&lt;code&gt;Network unreachable&lt;/code&gt;，继续查找发现&lt;code&gt;ip -6 route&lt;/code&gt;没有默认网关，就像&lt;a href="https://code.google.com/p/android/issues/detail?id=39052"&gt;这条ISSUE&lt;/a&gt;所说的一样。&lt;/p&gt;
+&lt;p&gt;解决方案：把内核参数改了就行。在su以后&lt;code&gt;sysctl -w net.ipv6.conf.wlan0.accept_ra_defrtr=1&lt;/code&gt;可以坚持到下次启动。&lt;/p&gt;
+&lt;p&gt;更详细的说明见&lt;a href="http://www.cnfy.me/2013/04/miuiwifiipv6.html"&gt;这里&lt;/a&gt;。简单概括一下，你需要在&lt;code&gt;/etc/sysctl.conf&lt;/code&gt;里加上&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net.ipv6.conf.wlan0.accept_ra_defrtr=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这一行，然后每次启动&lt;em&gt;尽量晚的&lt;/em&gt;以su身份运行&lt;code&gt;sysctl -p&lt;/code&gt;就行，因为&lt;code&gt;/init_qcom.sh&lt;/code&gt;运行的就挺晚的，所以直接写在&lt;code&gt;/etc/init.d/&lt;/code&gt;里是不行的。&lt;/p&gt;
+&lt;p&gt;另外，这次应该是高通不知道在想什么user space，小米只是背锅。&lt;/p&gt;
+&lt;p&gt;另外，虽然可能看不出来，但是这个博客的后台已经换了一个。&lt;/p&gt;</description></item><item><title>shadowsocks，ipv6和便宜的VPS，还有OpenVPN</title><link>https://blog.heysh.xyz/2015/01/07/shadowsocks%EF%BC%8Cipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</link><pubDate>Wed, 07 Jan 2015 15:05:56 +0000</pubDate><guid>https://blog.heysh.xyz/2015/01/07/shadowsocks%EF%BC%8Cipv6%E5%92%8C%E4%BE%BF%E5%AE%9C%E7%9A%84vps/</guid><description>&lt;p&gt;那个……我还活着呢。&lt;/p&gt;
+&lt;p&gt;前几天睡不着的时候翻了一下这个博客，最后发布时间是去年的5月份。七个月的话应该是很多草本植物的一生了吧？幸好这里种的是树。&lt;/p&gt;
+&lt;p&gt;……算了过几天写一页年终总结来写这些充满腐烂气息的东西吧。今天是正经的技术环节，当然是剪切链接形式的技术。&lt;/p&gt;
+&lt;p&gt;那么首先是VPS，用的是便宜的&lt;a href="https://bandwagonhost.com/aff.php?aff=1656"&gt;Bandwagon&lt;/a&gt;（搬瓦工），因为穷，只买了64M内存的版本；因为没有信用卡（穷），用不了paypal，于是去淘宝找了一家代购，入手价格29￥/年。&lt;/p&gt;
+&lt;p&gt;然后是shadowsocks，按照&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"&gt;这里&lt;/a&gt;的办法安装。根据&lt;a href="http://blog.robotshell.org/2014/about-shadowsocks/"&gt;这里&lt;/a&gt;的说法，就用python版的服务端就好。&lt;/p&gt;
+&lt;p&gt;为了看起来像是技术文档的样子，下面是&lt;code&gt;/etc/shadowsocks.json&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
 &amp;quot;server&amp;quot;:[&amp;quot;[::0]&amp;quot;,&amp;quot;0.0.0.0&amp;quot;],
 &amp;quot;server_port&amp;quot;:443,
 &amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
@@ -206,32 +208,34 @@ option master '1'
 &amp;quot;method&amp;quot;:&amp;quot;aes-256-cfb&amp;quot;,
 &amp;quot;fast_open&amp;quot;: false
 }
-&lt;/code>&lt;/pre>
-&lt;blockquote>
-&lt;p>update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p>&lt;/blockquote>
-&lt;p>最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/">TB-TUN&lt;/a>弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/">这里&lt;/a>~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html">这里&lt;/a>和&lt;a href="http://ichon.me/post/659.html">这里&lt;/a>，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/">自启动脚本&lt;/a>。&lt;/p>
-&lt;blockquote>
-&lt;p>update150409:
-增加一个&lt;a href="https://github.com/rejsmont/ustun">UStun&lt;/a>的链接；更换了Googlecode的链接&lt;/p>
-&lt;p>&lt;del>Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del>&lt;/p>&lt;/blockquote>
-&lt;p>另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog">SSH&lt;/a>很好用，可以算是&lt;em>刚换电脑还没有买SSD装arch的人&lt;/em>的福音。&lt;/p>
-&lt;p>update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu">这里&lt;/a>。&lt;/p>
-&lt;p>update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks">这里&lt;/a>看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p>
-&lt;p>在服务器运行这个：&lt;/p>
-&lt;pre>&lt;code>wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh
-&lt;/code>&lt;/pre>
-&lt;p>然后设中转：&lt;/p>
-&lt;pre>&lt;code>iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;update150208: “server” 行只写::0的话就是纯v6连接了……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最后是ipv6，在he.net申请tunnel breaker，因为便宜的VPS动不了内核，于是用&lt;a href="https://github.com/heyeshuang/tb-tun/"&gt;TB-TUN&lt;/a&gt;弄一个用户态隧道，见~~&lt;a href="http://www.yangyaping.cn/2014/08/21/ipv6tunnel/"&gt;这里&lt;/a&gt;~~&lt;a href="http://daili.ml/centos_shadowsocks_ipv6.html"&gt;这里&lt;/a&gt;和&lt;a href="http://ichon.me/post/659.html"&gt;这里&lt;/a&gt;，还有init.d的&lt;a href="http://www.cybermilitia.net/2013/07/22/ipv6-tunnel-on-openvz/"&gt;自启动脚本&lt;/a&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;update150409:
+增加一个&lt;a href="https://github.com/rejsmont/ustun"&gt;UStun&lt;/a&gt;的链接；更换了Googlecode的链接&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Google带着小姨子code跑了！你王八蛋！你还我血汗码！&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;另外，chrome的&lt;a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo/related?utm_source=chrome-app-launcher-info-dialog"&gt;SSH&lt;/a&gt;很好用，可以算是&lt;em&gt;刚换电脑还没有买SSD装arch的人&lt;/em&gt;的福音。&lt;/p&gt;
+&lt;p&gt;update：听说libev版本的可以节省内存，安装方法在&lt;a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu"&gt;这里&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;update2：从&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks"&gt;这里&lt;/a&gt;看到可以在shadowsocks上飞OPENVPN，于是：&lt;/p&gt;
+&lt;p&gt;在服务器运行这个：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;wget git.io/vpn --no-check-certificate -O openvpn-install.sh; bash openvpn-install.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后设中转：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;iptables -A INPUT -s 10.8.0.0/24 -j ACCEPT
 iptables -I FORWARD 1 -s 10.8.0.0/24 -j ACCEPT
 iptables -I FORWARD 2 -d 10.8.0.0/24 -j ACCEPT
 iptables -I FORWARD 3 -j LOG --log-prefix &amp;quot;FORWARD-LOG &amp;quot;
 iptables -I FORWARD 4 -j DROP
-&lt;/code>&lt;/pre>
-&lt;p>把在&lt;code>/root/&lt;/code>生成的&lt;code>.ovpn&lt;/code>文件复制到本机，这时我发现chrome并没有自带SCP……&lt;/p>
-&lt;p>在得到的&lt;code>.ovpn&lt;/code>文件里加两行：&lt;/p>
-&lt;pre>&lt;code>socks-proxy 127.0.0.1 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;把在&lt;code&gt;/root/&lt;/code&gt;生成的&lt;code&gt;.ovpn&lt;/code&gt;文件复制到本机，这时我发现chrome并没有自带SCP……&lt;/p&gt;
+&lt;p&gt;在得到的&lt;code&gt;.ovpn&lt;/code&gt;文件里加两行：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;socks-proxy 127.0.0.1 1080
 route [SHADOWSOCKS服务器地址] 255.255.255.255 net_gateway
-&lt;/code>&lt;/pre>
-&lt;p>然后去下&lt;a href="https://openvpn.net/index.php/open-source/downloads.html">客户端&lt;/a>，不要手贱点xp版本，否则今天下午就没空写作业了~&lt;/p>
-&lt;p>如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的&lt;code>.ovpn&lt;/code>文件（&lt;code>etcopenvpnserver.ovpn&lt;/code>）修改为tcp模式。&lt;/p>
-&lt;p>8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后去下&lt;a href="https://openvpn.net/index.php/open-source/downloads.html"&gt;客户端&lt;/a&gt;，不要手贱点xp版本，否则今天下午就没空写作业了~&lt;/p&gt;
+&lt;p&gt;如果windows的shadowsocks客户端支持UDP转发的话，这里就是终点了，否则，请将本机和服务端的&lt;code&gt;.ovpn&lt;/code&gt;文件（&lt;code&gt;etcopenvpnserver.ovpn&lt;/code&gt;）修改为tcp模式。&lt;/p&gt;
+&lt;p&gt;8.23：谨以此博文对领路人致敬。身处寒夜，你们为我们带来了微光。&lt;/p&gt;</description></item></channel></rss>

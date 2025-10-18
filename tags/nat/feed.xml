@@ -1,125 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NAT on 林中阴影</title><link>https://blog.heysh.xyz/tags/nat/</link><description>Recent content in NAT on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/nat/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote>
-&lt;p>是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">这次&lt;/a>和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">这次&lt;/a>之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>是的，在酒店里仍然没有IPv6地址。&lt;/p>&lt;/blockquote>
-&lt;h2 id="为什么">为什么&lt;/h2>
-&lt;p>正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard">前文&lt;/a>所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p>
-&lt;p>然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>或&lt;a href="https://github.com/heiher/natmap">natmap&lt;/a>，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p>
-&lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping1.png"
-alt="从广东联通到北京联通。">&lt;figcaption>
-&lt;p>从广东联通到北京联通。&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping2.png"
-alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。">&lt;figcaption>
-&lt;p>从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;h2 id="怎么做">怎么做&lt;/h2>
-&lt;p>在开始之前，首先检查是否满足以下要求：&lt;/p>
-&lt;ol>
-&lt;li>一台长期开启的设备。
-&lt;blockquote>
-&lt;p>既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>光猫处于桥接状态。&lt;/li>
-&lt;li>主路由是OpenWRT，或者内网里有DMZ主机。
-&lt;blockquote>
-&lt;p>或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>没有公网IPv4，但在路由器处测试NAT类型为NAT1。
-&lt;blockquote>
-&lt;p>这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9">Natter&lt;/a>自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>一个自己的域名，最好是在Cloudflare上托管的。
-&lt;blockquote>
-&lt;p>需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ol>
-&lt;p>具体配置部分已经有人写的很详细了。首先按照&lt;a href="https://www.procustodibus.com/blog/2020/11/wireguard-point-to-site-config/">WireGuard Point to Site Configuration&lt;/a>设置点到站点的连接，然后按照&lt;a href="https://github.com/heiher/natmap/wiki/wireguard">natmap Wiki&lt;/a>设置NATMap即可。注意，在路由器上操作的时候，一定要记得在防火墙中&lt;strong>打开对应端口&lt;/strong>。&lt;/p>
-&lt;p>完成以上步骤之后，应该已经可以从移动网络访问内网的Wireguard Peer了。&lt;/p>
-&lt;h2 id="一点问题">一点问题&lt;/h2>
-&lt;p>由于运营商网关不受我们控制，外网的IP和端口号都是随机分配的，每当地址变化时，NATMap将执行自定义脚本。在上面的Wiki中，利用DDNS，把IPv4地址和端口编码进IPv6的AAAA记录中。这并不是一种标准的技术，不过既然&lt;code>2001::&lt;/code>就是给&lt;code>teredo&lt;/code>使用的，在这里随便用用也无所谓。&lt;/p>
-&lt;p>对于Windows下的Wireguard客户端，我（和ChatGPT一起）写了一个&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-wg-ps1">PowerShell脚本&lt;/a>，能够自动修改配置文件的&lt;code>Endpoint&lt;/code>并调用&lt;code>wireguard.exe&lt;/code>进行连接。&lt;/p>
-&lt;p>使用方法：&lt;/p>
-&lt;ol>
-&lt;li>安装&lt;a href="https://github.com/WireGuard/wireguard-windows/blob/master/docs/enterprise.md">wireguard-windows&lt;/a>，用客户端连接测试成功。&lt;/li>
-&lt;li>在文件夹&lt;code>C:\example&lt;/code>下建立&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-wg-ps1">wg.ps1&lt;/a>和&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nat-conf">nat.conf&lt;/a>，粘贴Gist内容。&lt;/li>
-&lt;li>按照实际情况修改&lt;code>nat.conf&lt;/code>，以及&lt;code>wg.ps1&lt;/code>中&lt;code>$Hostname&lt;/code>部分。&lt;code>Endpoint&lt;/code>不必修改。&lt;/li>
-&lt;li>以管理员身份运行&lt;code>PowerShell&lt;/code>&lt;/li>
-&lt;li>设置&lt;code>ps1&lt;/code>脚本运行权限：&lt;code>Set-ExecutionPolicy RemoteSigned&lt;/code>（或Unrestricted）&lt;/li>
-&lt;li>启动、重启Wireguard：&lt;code>C:\example\wg.ps1 -up&lt;/code>&lt;/li>
-&lt;li>停止Wireguard：&lt;code>C:\example\wg.ps1 -down&lt;/code>&lt;/li>
-&lt;/ol>
-&lt;p>在Windows 11, Powershell 5.1.22621.963测试通过，也可以配合Windows下的&lt;a href="https://bjansen.github.io/scoop-apps/main/sudo/">sudo&lt;/a>使用。&lt;/p>
-&lt;p>另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh">nm-echo.sh&lt;/a>来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4.png"
-alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。">&lt;figcaption>
-&lt;p>我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>如果需要更为稳定的访问，可以参考&lt;a href="https://gist.github.com/z0mb1e-kgd/54aede86adf2e30e390dba13886d18e1">reresolve-dns.ps1&lt;/a>，这个脚本可以在上一次握手时间过久时刷新DNS，但是因为要添加计划任务，有一点过于复杂了。&lt;/p>
-&lt;h2 id="bonus">Bonus&lt;/h2>
-&lt;p>Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的&lt;code>High ID&lt;/code>。见&lt;a href="https://github.com/wits-fe/bittorrent-NAT-hole-punching">wits-fe/bittorrent-NAT-hole-punching&lt;/a>。在PT站做种的时候应该会很有用。&lt;/p>
-&lt;h2 id="附性能测试">附：性能测试&lt;/h2>
-&lt;blockquote>
-&lt;p>随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code>iperf3&lt;/code>测速。&lt;/p>&lt;/blockquote>
-&lt;p>由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p>
-&lt;p>&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
-alt="WireGuard for Android">&lt;figcaption>
-&lt;p>WireGuard for Android&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-2.svg"
-alt="NB4A提供的Wireguard Outbound">&lt;figcaption>
-&lt;p>NB4A提供的Wireguard Outbound&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-3.svg"
-alt="Nebula，对端部署在路由器上">&lt;figcaption>
-&lt;p>Nebula，对端部署在路由器上&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;p>很难想象，对于访问内网这样一个简单的需求，我居然花费了如此多的精力。不过，这次应该算是当前比较满意的方案，应该能坚持到下次水逆开始。&lt;/p></description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote>
-&lt;p>最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code>114.*.*.*&lt;/code>，换来了&lt;code>100.64.*.*&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。不过，IPv6地址仍然是&lt;code>2404::****&lt;/code>，这个应该也算是所谓的 &lt;em>公网IP&lt;/em> 吧？&lt;/p>&lt;/blockquote>
-&lt;h2 id="准备">准备&lt;/h2>
-&lt;ol>
-&lt;li>和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li>
-&lt;li>找一个稍微新一点的路由器，我用的是刷了&lt;code>OpenWRT&lt;/code>的，&lt;strong>非常贵的&lt;/strong>跑路K3；&lt;/li>
-&lt;li>&lt;a href="https://test-ipv6.com">test-ipv6.com&lt;/a>显示了IPv6地址而且没有给你打零分。&lt;/li>
-&lt;/ol>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png">&lt;figcaption>
-&lt;h4>比如这样&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;h2 id="打开端口">打开端口&lt;/h2>
-&lt;p>虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png">&lt;figcaption>
-&lt;h4>就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>如果对安全要求更高的话，可以参考&lt;a href="https://blog.ptsang.net/match-ipv6-dynamic-addresses-in-iptables?utm_source=pocket_mylist">这里&lt;/a>匹配IPv6地址的末几位，就像&lt;code>::abcd:1234:5678:90ef/::ffff:ffff:ffff:ffff&lt;/code>这样。&lt;/p>
-&lt;p>在这个时候，你应该已经可以通过手机移动网络用SSH连接回自己主机的IPv6地址了。就和公网一模一样。&lt;/p>
-&lt;h2 id="绑定域名">绑定域名&lt;/h2>
-&lt;p>任何一个支持IPv6的AAAA地址绑定的DDNS服务都可以。我家里恰好有一个长期开机的矿渣&lt;code>贝壳云&lt;/code>，是某次水逆之后想要买树莓派四，忍住了却又没有完全忍住的结果；之前写的&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/">cloudflare脚本&lt;/a>刚好能用。&lt;/p>
-&lt;h2 id="跳板机自称">跳板机（自称）&lt;/h2>
-&lt;p>如果想对内网完全控制，而不是仅仅几个端口的话，可能需要所谓跳板机的配合。仔细想想，这是一个跨越&lt;code>防火墙.little&lt;/code>的活动，对付&lt;code>防火墙 the Great&lt;/code>的软件也完全适用。所以我在内网设备（aka矿渣）上部署了某个V开头的软件，通过Android客户端连回家里完全没有问题&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
-&lt;p>如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code>SocksCap64&lt;/code>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。把&lt;code>MSTSC.exe&lt;/code>加到列表里，就可以愉快地远程桌面了。&lt;/p>
-&lt;hr>
-&lt;p>来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/">这篇教程&lt;/a>在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/">ARP代理&lt;/a>用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80">维基百科&lt;/a>上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>记住客户端不要&lt;code>绕过局域网地址&lt;/code>，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:3">
-&lt;p>TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NAT on 林中阴影</title><link>https://blog.heysh.xyz/tags/nat/</link><description>Recent content in NAT on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Wed, 10 May 2023 21:05:13 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/nat/feed.xml" rel="self" type="application/rss+xml"/><item><title>内网访问第三季：在运营商的CGNAT网络下</title><link>https://blog.heysh.xyz/2023/05/10/through-nat/</link><pubDate>Wed, 10 May 2023 21:05:13 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/10/through-nat/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;是的，在&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/"&gt;这次&lt;/a&gt;和&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard"&gt;这次&lt;/a&gt;之后，在酒店里百无聊赖的现在，我又开始折腾起VPN来了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;是的，在酒店里仍然没有IPv6地址。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="为什么"&gt;为什么&lt;/h2&gt;
+&lt;p&gt;正如&lt;a href="https://blog.heysh.xyz/2022/05/22/connect-every-something//#%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEtailscaletinc%E6%88%96wireguard"&gt;前文&lt;/a&gt;所述，无论是Tailscale/Headscale、Nebula或Netmaker，原理均大同小异，都是在Wireguard基础上，用类STUN协议来穿越NAT，或利用TURN（DERP）服务器进行转发。在国内家庭宽带网络环境下，一般存在路由器、光猫、运营商三重NAT防火墙，STUN需要跨越多重阻碍，自动穿越希望渺茫；另一方面，公开转发服务多在国外，延迟高居不下，而国内私有云价格亦是高不可攀，自建服务并非经济的选择。&lt;/p&gt;
+&lt;p&gt;然而，三重NAT也并非坚不可摧。光猫一级，只要改为桥接，便可迎刃而解；路由一级，可以通过端口映射来绕过；而运营商级多为NAT1，通过&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9"&gt;Natter&lt;/a&gt;或&lt;a href="https://github.com/heiher/natmap"&gt;natmap&lt;/a&gt;，可以获得近似公网的效果。这样，使用纯粹的Wireguard，也能够直接回到家庭网络内部，免去国外中转的烦恼。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping1.png"
+alt="从广东联通到北京联通。"&gt;&lt;figcaption&gt;
+&lt;p&gt;从广东联通到北京联通。&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/ping2.png"
+alt="从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。"&gt;&lt;figcaption&gt;
+&lt;p&gt;从广东联通经北京联通到甘肃移动。个人觉得，在这种延迟下追求Full Mesh也不再重要了。&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id="怎么做"&gt;怎么做&lt;/h2&gt;
+&lt;p&gt;在开始之前，首先检查是否满足以下要求：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一台长期开启的设备。
+&lt;blockquote&gt;
+&lt;p&gt;既然有远程访问的要求，远处有一台服务器是很自然的吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;光猫处于桥接状态。&lt;/li&gt;
+&lt;li&gt;主路由是OpenWRT，或者内网里有DMZ主机。
+&lt;blockquote&gt;
+&lt;p&gt;或者，你是端口转发专家，可以从光猫外侧一路转发到最内部。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;没有公网IPv4，但在路由器处测试NAT类型为NAT1。
+&lt;blockquote&gt;
+&lt;p&gt;这里可以用&lt;a href="https://github.com/MikeWang000000/Natter/tree/v0.9"&gt;Natter&lt;/a&gt;自带的功能来测试。如果你有公网IPv4的话，直接打开端口就好，而且我会很羡慕你。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;一个自己的域名，最好是在Cloudflare上托管的。
+&lt;blockquote&gt;
+&lt;p&gt;需要DDNS功能实时更新域名。如果没有域名的话，可能需要一些别的手段来实时得到端口。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;具体配置部分已经有人写的很详细了。首先按照&lt;a href="https://www.procustodibus.com/blog/2020/11/wireguard-point-to-site-config/"&gt;WireGuard Point to Site Configuration&lt;/a&gt;设置点到站点的连接，然后按照&lt;a href="https://github.com/heiher/natmap/wiki/wireguard"&gt;natmap Wiki&lt;/a&gt;设置NATMap即可。注意，在路由器上操作的时候，一定要记得在防火墙中&lt;strong&gt;打开对应端口&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;完成以上步骤之后，应该已经可以从移动网络访问内网的Wireguard Peer了。&lt;/p&gt;
+&lt;h2 id="一点问题"&gt;一点问题&lt;/h2&gt;
+&lt;p&gt;由于运营商网关不受我们控制，外网的IP和端口号都是随机分配的，每当地址变化时，NATMap将执行自定义脚本。在上面的Wiki中，利用DDNS，把IPv4地址和端口编码进IPv6的AAAA记录中。这并不是一种标准的技术，不过既然&lt;code&gt;2001::&lt;/code&gt;就是给&lt;code&gt;teredo&lt;/code&gt;使用的，在这里随便用用也无所谓。&lt;/p&gt;
+&lt;p&gt;对于Windows下的Wireguard客户端，我（和ChatGPT一起）写了一个&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-wg-ps1"&gt;PowerShell脚本&lt;/a&gt;，能够自动修改配置文件的&lt;code&gt;Endpoint&lt;/code&gt;并调用&lt;code&gt;wireguard.exe&lt;/code&gt;进行连接。&lt;/p&gt;
+&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装&lt;a href="https://github.com/WireGuard/wireguard-windows/blob/master/docs/enterprise.md"&gt;wireguard-windows&lt;/a&gt;，用客户端连接测试成功。&lt;/li&gt;
+&lt;li&gt;在文件夹&lt;code&gt;C:\example&lt;/code&gt;下建立&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-wg-ps1"&gt;wg.ps1&lt;/a&gt;和&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nat-conf"&gt;nat.conf&lt;/a&gt;，粘贴Gist内容。&lt;/li&gt;
+&lt;li&gt;按照实际情况修改&lt;code&gt;nat.conf&lt;/code&gt;，以及&lt;code&gt;wg.ps1&lt;/code&gt;中&lt;code&gt;$Hostname&lt;/code&gt;部分。&lt;code&gt;Endpoint&lt;/code&gt;不必修改。&lt;/li&gt;
+&lt;li&gt;以管理员身份运行&lt;code&gt;PowerShell&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;设置&lt;code&gt;ps1&lt;/code&gt;脚本运行权限：&lt;code&gt;Set-ExecutionPolicy RemoteSigned&lt;/code&gt;（或Unrestricted）&lt;/li&gt;
+&lt;li&gt;启动、重启Wireguard：&lt;code&gt;C:\example\wg.ps1 -up&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;停止Wireguard：&lt;code&gt;C:\example\wg.ps1 -down&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在Windows 11, Powershell 5.1.22621.963测试通过，也可以配合Windows下的&lt;a href="https://bjansen.github.io/scoop-apps/main/sudo/"&gt;sudo&lt;/a&gt;使用。&lt;/p&gt;
+&lt;p&gt;另外，在Android下，也可以用termux运行&lt;a href="https://gist.github.com/heyeshuang/0054c73e3f2762f12a16165a5cfe8213#file-nm-echo-sh"&gt;nm-echo.sh&lt;/a&gt;来获得IP地址，手动修改Wireguard官方客户端中的IP。甚至，可以使用你喜欢的代理客户端（比如NB4A），配置好Wireguard Outbond和路由就可以了~&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4.png"
+alt="我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。"&gt;&lt;figcaption&gt;
+&lt;p&gt;我这里最近一次分配的端口坚持了18天，所以应该不必时常刷新。&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;如果需要更为稳定的访问，可以参考&lt;a href="https://gist.github.com/z0mb1e-kgd/54aede86adf2e30e390dba13886d18e1"&gt;reresolve-dns.ps1&lt;/a&gt;，这个脚本可以在上一次握手时间过久时刷新DNS，但是因为要添加计划任务，有一点过于复杂了。&lt;/p&gt;
+&lt;h2 id="bonus"&gt;Bonus&lt;/h2&gt;
+&lt;p&gt;Natmap的另一种用法是映射BT客户端，从而使外来连接能够主动发起连接，获得所谓的&lt;code&gt;High ID&lt;/code&gt;。见&lt;a href="https://github.com/wits-fe/bittorrent-NAT-hole-punching"&gt;wits-fe/bittorrent-NAT-hole-punching&lt;/a&gt;。在PT站做种的时候应该会很有用。&lt;/p&gt;
+&lt;h2 id="附性能测试"&gt;附：性能测试&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;随便找了一个公共WiFi，用手机（一加7T）上Termux中的&lt;code&gt;iperf3&lt;/code&gt;测速。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;由于多层NAT的限制，Nebula类组网工具必须部署在路由器位置。可以看出，对路由器（万元级，K3）带来的压力还是比较大的。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-1.svg"
+alt="WireGuard for Android"&gt;&lt;figcaption&gt;
+&lt;p&gt;WireGuard for Android&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-2.svg"
+alt="NB4A提供的Wireguard Outbound"&gt;&lt;figcaption&gt;
+&lt;p&gt;NB4A提供的Wireguard Outbound&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/10/through-nat/iperf-3.svg"
+alt="Nebula，对端部署在路由器上"&gt;&lt;figcaption&gt;
+&lt;p&gt;Nebula，对端部署在路由器上&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;很难想象，对于访问内网这样一个简单的需求，我居然花费了如此多的精力。不过，这次应该算是当前比较满意的方案，应该能坚持到下次水逆开始。&lt;/p&gt;</description></item><item><title>你可能并不需要内网穿透</title><link>https://blog.heysh.xyz/2021/07/20/beyond-nat/</link><pubDate>Tue, 20 Jul 2021 17:03:31 +0800</pubDate><guid>https://blog.heysh.xyz/2021/07/20/beyond-nat/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;最近搬家了，互联网从联通变成了便宜一些的电信。于是，我失去了之前的公网IP&lt;code&gt;114.*.*.*&lt;/code&gt;，换来了&lt;code&gt;100.64.*.*&lt;/code&gt;&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。不过，IPv6地址仍然是&lt;code&gt;2404::****&lt;/code&gt;，这个应该也算是所谓的 &lt;em&gt;公网IP&lt;/em&gt; 吧？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="准备"&gt;准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;和安装网络的大叔说，我需要把光猫改成桥接模式，并保证“咱是专业的，不会弄坏网线，弄坏了也不会去投诉”；&lt;/li&gt;
+&lt;li&gt;找一个稍微新一点的路由器，我用的是刷了&lt;code&gt;OpenWRT&lt;/code&gt;的，&lt;strong&gt;非常贵的&lt;/strong&gt;跑路K3；&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://test-ipv6.com"&gt;test-ipv6.com&lt;/a&gt;显示了IPv6地址而且没有给你打零分。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-test.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;比如这样&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="打开端口"&gt;打开端口&lt;/h2&gt;
+&lt;p&gt;虽然没有了NAT，但是防火墙还是必不可少的，毕竟在互联网上随意敞开自己的端口和裸奔没有什么区别。当然，稍微露出一点点的话没有什么问题，所以我开了几个五位数的端口，用来SSH。&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2021/07/20/beyond-nat/ipv6-firewall.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;就像这样（图像经过处理，实际上有更多规则，而且端口也不是这几个）&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;如果对安全要求更高的话，可以参考&lt;a href="https://blog.ptsang.net/match-ipv6-dynamic-addresses-in-iptables?utm_source=pocket_mylist"&gt;这里&lt;/a&gt;匹配IPv6地址的末几位，就像&lt;code&gt;::abcd:1234:5678:90ef/::ffff:ffff:ffff:ffff&lt;/code&gt;这样。&lt;/p&gt;
+&lt;p&gt;在这个时候，你应该已经可以通过手机移动网络用SSH连接回自己主机的IPv6地址了。就和公网一模一样。&lt;/p&gt;
+&lt;h2 id="绑定域名"&gt;绑定域名&lt;/h2&gt;
+&lt;p&gt;任何一个支持IPv6的AAAA地址绑定的DDNS服务都可以。我家里恰好有一个长期开机的矿渣&lt;code&gt;贝壳云&lt;/code&gt;，是某次水逆之后想要买树莓派四，忍住了却又没有完全忍住的结果；之前写的&lt;a href="https://blog.heysh.xyz/2018/07/05/cloudflare-ddns/"&gt;cloudflare脚本&lt;/a&gt;刚好能用。&lt;/p&gt;
+&lt;h2 id="跳板机自称"&gt;跳板机（自称）&lt;/h2&gt;
+&lt;p&gt;如果想对内网完全控制，而不是仅仅几个端口的话，可能需要所谓跳板机的配合。仔细想想，这是一个跨越&lt;code&gt;防火墙.little&lt;/code&gt;的活动，对付&lt;code&gt;防火墙 the Great&lt;/code&gt;的软件也完全适用。所以我在内网设备（aka矿渣）上部署了某个V开头的软件，通过Android客户端连回家里完全没有问题&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;如果外面的Windows想要进来的话，我现在用的是已经跑路的&lt;code&gt;SocksCap64&lt;/code&gt;&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;。把&lt;code&gt;MSTSC.exe&lt;/code&gt;加到列表里，就可以愉快地远程桌面了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;来自210805的更新：后来我按照&lt;a href="https://chanix.github.io/TincCookbook/introduction/"&gt;这篇教程&lt;/a&gt;在矿渣上部署了tinc，并且增加了&lt;a href="https://tinc-vpn.org/examples/proxy-arp/"&gt;ARP代理&lt;/a&gt;用来访问内网。我又不能直接把家里的老光猫换掉……&lt;/p&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;用于在电信级NAT环境中服务提供商与其用户通信，&lt;a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%95%99IP%E5%9C%B0%E5%9D%80"&gt;维基百科&lt;/a&gt;上说的。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;记住客户端不要&lt;code&gt;绕过局域网地址&lt;/code&gt;，我们用的就是局域网。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;TODO：急求一款没有跑路的、免费的、Windows下的全局代理软件。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item></channel></rss>

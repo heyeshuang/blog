@@ -1,146 +1,154 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sun, 22 May 2022 22:45:39 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%AC%94%E8%AE%B0/feed.xml" rel="self" type="application/rss+xml"/><item><title>几物互联</title><link>https://blog.heysh.xyz/2022/05/22/connect-every-something/</link><pubDate>Sun, 22 May 2022 22:45:39 +0800</pubDate><guid>https://blog.heysh.xyz/2022/05/22/connect-every-something/</guid><description>&lt;blockquote>
-&lt;p>我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p>&lt;/blockquote>
-&lt;p>无论是在家里的组装机还是漂泊的笔记本，在工作的时候都能够获得相似的上下文，有的时候甚至可以在家CTRL+C，在公司CTRL+V。除了&lt;em>鸿蒙&lt;/em>系统之外，通过一组软件也是可以实现的。&lt;/p>
-&lt;p>本人现在所使用的方案如下。设置难度由易到难排序。&lt;/p>
-&lt;h2 id="同步存储syncthing">同步存储：Syncthing&lt;/h2>
-&lt;blockquote>
-&lt;p>前置条件：两台（或以上）容量较高的电子设备&lt;/p>&lt;/blockquote>
-&lt;p>比起云存储，个人更倾向于Syncthing这样的本地同步方案：至少文件是属于自己的（而且还不用收钱）。安装也很简单：Windows下安装&lt;a href="https://github.com/canton7/SyncTrayzor">SyncTrayzor&lt;/a>，Android下安装&lt;a href="https://github.com/Catfriend1/syncthing-android">Syncthing-Fork&lt;/a>，其他系统移步&lt;a href="https://syncthing.net/downloads/">这里&lt;/a>就可以。安装完以后，在两边选择工作目录，就可以完成双向同步了。得益于STUN服务器，无论是在内网还是外网，文件都可以完成传输。&lt;/p>
-&lt;p>当然，Syncthing也有一定的问题。首先是，因为是进行了同步，同一份文件会在每一个设备上都占用一份空间。在手机这样捉襟见肘的环境下，建议采用“仅发送”模式，只用来备份照片之类的。&lt;/p>
-&lt;p>另外，Syncthing在运行的时候必须要两侧的设备保持开机，电费账单+1。在有一方离线的时候，需要注意文件的版本，不要在两边都修改同一个文件。毕竟不是git，合并功能没有那么强。&lt;/p>
-&lt;h2 id="笔记软件与文献管理">笔记软件与文献管理&lt;/h2>
-&lt;blockquote>
-&lt;p>前置条件：同步的话需要Syncthing，或者云存储。&lt;/p>&lt;/blockquote>
-&lt;p>本人使用&lt;a href="https://joplinapp.org/">Joplin&lt;/a>和&lt;a href="https://www.zotero.org/">Zotero&lt;/a>来做笔记和进行文献管理，这两款软件都可以使用Syncthing作为同步后端&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，而且都具有笔记功能。我的习惯是，在Joplin上写一些需要较长篇幅的笔记，文献阅读笔记放在Zotero中。&lt;/p>
-&lt;p>当然，作为一篇讲“互联”的博文，这两款软件当然也是可以相互连接的。我主要用到下面这些：&lt;/p>
-&lt;h3 id="joplin内部">Joplin内部&lt;/h3>
-&lt;p>当然Joplin不是为了双链笔记而设计的，但是通过插件&lt;a href="https://github.com/ylc395/joplin-plugin-note-link-system">plugin-note-link-system&lt;/a>也可以获得一部分双链笔记的功能，比如说，方便地在一篇笔记里引用另外一篇笔记的某个小标题；或者是在另一篇笔记里看到backlinks。&lt;/p>
-&lt;h3 id="笔记引用zotero参考文献">笔记引用Zotero参考文献&lt;/h3>
-&lt;p>通过&lt;a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero&lt;/a>的&lt;code>Quick Copy&lt;/code>功能，按下&lt;code>Ctrl+Shift+C&lt;/code>，就可以把当前文献复制成类似&lt;code>[xxx](zotero://select/library/items/AAAAAA)&lt;/code>的链接。这种方式对别的笔记软件也适用，只要它能够打开&lt;code>URL Scheme&lt;/code>。&lt;/p>
-&lt;p>如果把链接改写为&lt;code>zotero://open-pdf/library/items/AAAAAA?page=114&lt;/code>，可以直接打开文件的第114页。
-&lt;img src="p114.png" alt="p114">&lt;/p>
-&lt;p>另外，Calibre也有类似的链接功能。我一般用Calibre来管理那些杂书。&lt;/p>
-&lt;p>&lt;img src="calibre.png" alt="calibre">&lt;/p>
-&lt;h3 id="引用计算机上的其他内容">引用计算机上的其他内容&lt;/h3>
-&lt;p>肯定没有人想把所有文件都塞进笔记本的数据库里，总是要引用一些外部文件的，这时候还是需要用万能的链接。这里的链接格式类似&lt;code>[xxx](file://C:\工作\xxx.docx)&lt;/code>，在Windows系统下既有斜杠也有反斜杠，但是很神奇地能够正确找到。&lt;/p>
-&lt;p>实际上还有一个问题，通过Syncthing同步后，文件在每台电脑上的链接地址是不一样的。所以，我在每台电脑的C盘做了一个文件夹链接&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。在Powershell下：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">New-Item&lt;/span> -ItemType Junction -Path &lt;span style="color:#c30">&amp;#34;C:\工作&amp;#34;&lt;/span> -Target &lt;span style="color:#c30">&amp;#34;C:\实际的\工作\目录&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者也可以用&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html">Link Shell Extension&lt;/a>来做这件事。之后，在每台电脑上都可以访问&lt;code>C:\工作\xxx.docx&lt;/code>了。&lt;/p>
-&lt;h2 id="随处ctrlv以及传文件">随处Ctrl+V，以及传文件&lt;/h2>
-&lt;blockquote>
-&lt;p>是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p>&lt;/blockquote>
-&lt;p>隆重推荐&lt;a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/">KDE connect&lt;/a>，虽然是KDE出品，但是Windows和Android也能用。给手机和电脑装上这个，在同一个局域网下面就可以共享剪贴板了，而且还能够互相传文件。&lt;/p>
-&lt;p>不过，有的时候KDE connect找不到局域网设备，这时候我会用Total Commander (Android)的Wifi传输插件，或者是&lt;code>python -m http.server&lt;/code>。&lt;/p>
-&lt;h2 id="远程访问tailscaletinc或wireguard">远程访问：Tailscale、Tinc或Wireguard&lt;/h2>
-&lt;blockquote>
-&lt;p>前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p>&lt;/blockquote>
-&lt;p>像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/">之前&lt;/a>所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p>
-&lt;blockquote>
-&lt;p>来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/">Wireguard&lt;/a>了~&lt;/p>&lt;/blockquote>
-&lt;p>连接Tinc之后，就可以通过&lt;code>Wake On LAN&lt;/code>唤醒自己的其他电脑，然后用&lt;code>samba&lt;/code>、远程桌面之类的软件了。就好象回到家里&lt;del>居家办公&lt;/del>一样！&lt;/p>
-&lt;p>当然，在这种需求下，最简单的应该是&lt;code>Tailscale&lt;/code>，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p>
-&lt;details>
-&lt;summary>
-&lt;h4 class="inline">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sun, 22 May 2022 22:45:39 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E7%AC%94%E8%AE%B0/feed.xml" rel="self" type="application/rss+xml"/><item><title>几物互联</title><link>https://blog.heysh.xyz/2022/05/22/connect-every-something/</link><pubDate>Sun, 22 May 2022 22:45:39 +0800</pubDate><guid>https://blog.heysh.xyz/2022/05/22/connect-every-something/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;我被封在外面了。这种时候非常想念192.168.1.1……也非常适合写博客来回忆熟悉的网络。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;无论是在家里的组装机还是漂泊的笔记本，在工作的时候都能够获得相似的上下文，有的时候甚至可以在家CTRL+C，在公司CTRL+V。除了&lt;em&gt;鸿蒙&lt;/em&gt;系统之外，通过一组软件也是可以实现的。&lt;/p&gt;
+&lt;p&gt;本人现在所使用的方案如下。设置难度由易到难排序。&lt;/p&gt;
+&lt;h2 id="同步存储syncthing"&gt;同步存储：Syncthing&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前置条件：两台（或以上）容量较高的电子设备&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;比起云存储，个人更倾向于Syncthing这样的本地同步方案：至少文件是属于自己的（而且还不用收钱）。安装也很简单：Windows下安装&lt;a href="https://github.com/canton7/SyncTrayzor"&gt;SyncTrayzor&lt;/a&gt;，Android下安装&lt;a href="https://github.com/Catfriend1/syncthing-android"&gt;Syncthing-Fork&lt;/a&gt;，其他系统移步&lt;a href="https://syncthing.net/downloads/"&gt;这里&lt;/a&gt;就可以。安装完以后，在两边选择工作目录，就可以完成双向同步了。得益于STUN服务器，无论是在内网还是外网，文件都可以完成传输。&lt;/p&gt;
+&lt;p&gt;当然，Syncthing也有一定的问题。首先是，因为是进行了同步，同一份文件会在每一个设备上都占用一份空间。在手机这样捉襟见肘的环境下，建议采用“仅发送”模式，只用来备份照片之类的。&lt;/p&gt;
+&lt;p&gt;另外，Syncthing在运行的时候必须要两侧的设备保持开机，电费账单+1。在有一方离线的时候，需要注意文件的版本，不要在两边都修改同一个文件。毕竟不是git，合并功能没有那么强。&lt;/p&gt;
+&lt;h2 id="笔记软件与文献管理"&gt;笔记软件与文献管理&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前置条件：同步的话需要Syncthing，或者云存储。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本人使用&lt;a href="https://joplinapp.org/"&gt;Joplin&lt;/a&gt;和&lt;a href="https://www.zotero.org/"&gt;Zotero&lt;/a&gt;来做笔记和进行文献管理，这两款软件都可以使用Syncthing作为同步后端&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;，而且都具有笔记功能。我的习惯是，在Joplin上写一些需要较长篇幅的笔记，文献阅读笔记放在Zotero中。&lt;/p&gt;
+&lt;p&gt;当然，作为一篇讲“互联”的博文，这两款软件当然也是可以相互连接的。我主要用到下面这些：&lt;/p&gt;
+&lt;h3 id="joplin内部"&gt;Joplin内部&lt;/h3&gt;
+&lt;p&gt;当然Joplin不是为了双链笔记而设计的，但是通过插件&lt;a href="https://github.com/ylc395/joplin-plugin-note-link-system"&gt;plugin-note-link-system&lt;/a&gt;也可以获得一部分双链笔记的功能，比如说，方便地在一篇笔记里引用另外一篇笔记的某个小标题；或者是在另一篇笔记里看到backlinks。&lt;/p&gt;
+&lt;h3 id="笔记引用zotero参考文献"&gt;笔记引用Zotero参考文献&lt;/h3&gt;
+&lt;p&gt;通过&lt;a href="https://retorque.re/zotero-better-bibtex/"&gt;Better BibTeX for Zotero&lt;/a&gt;的&lt;code&gt;Quick Copy&lt;/code&gt;功能，按下&lt;code&gt;Ctrl+Shift+C&lt;/code&gt;，就可以把当前文献复制成类似&lt;code&gt;[xxx](zotero://select/library/items/AAAAAA)&lt;/code&gt;的链接。这种方式对别的笔记软件也适用，只要它能够打开&lt;code&gt;URL Scheme&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;如果把链接改写为&lt;code&gt;zotero://open-pdf/library/items/AAAAAA?page=114&lt;/code&gt;，可以直接打开文件的第114页。
+&lt;img src="p114.png" alt="p114"&gt;&lt;/p&gt;
+&lt;p&gt;另外，Calibre也有类似的链接功能。我一般用Calibre来管理那些杂书。&lt;/p&gt;
+&lt;p&gt;&lt;img src="calibre.png" alt="calibre"&gt;&lt;/p&gt;
+&lt;h3 id="引用计算机上的其他内容"&gt;引用计算机上的其他内容&lt;/h3&gt;
+&lt;p&gt;肯定没有人想把所有文件都塞进笔记本的数据库里，总是要引用一些外部文件的，这时候还是需要用万能的链接。这里的链接格式类似&lt;code&gt;[xxx](file://C:\工作\xxx.docx)&lt;/code&gt;，在Windows系统下既有斜杠也有反斜杠，但是很神奇地能够正确找到。&lt;/p&gt;
+&lt;p&gt;实际上还有一个问题，通过Syncthing同步后，文件在每台电脑上的链接地址是不一样的。所以，我在每台电脑的C盘做了一个文件夹链接&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;。在Powershell下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#366"&gt;New-Item&lt;/span&gt; -ItemType Junction -Path &lt;span style="color:#c30"&gt;&amp;#34;C:\工作&amp;#34;&lt;/span&gt; -Target &lt;span style="color:#c30"&gt;&amp;#34;C:\实际的\工作\目录&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或者也可以用&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html"&gt;Link Shell Extension&lt;/a&gt;来做这件事。之后，在每台电脑上都可以访问&lt;code&gt;C:\工作\xxx.docx&lt;/code&gt;了。&lt;/p&gt;
+&lt;h2 id="随处ctrlv以及传文件"&gt;随处Ctrl+V，以及传文件&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;是这样的张总：你在家里的电脑上按了CTRL+C,然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前置条件：需要在同一个局域网下面——所以确实不行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;隆重推荐&lt;a href="https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/"&gt;KDE connect&lt;/a&gt;，虽然是KDE出品，但是Windows和Android也能用。给手机和电脑装上这个，在同一个局域网下面就可以共享剪贴板了，而且还能够互相传文件。&lt;/p&gt;
+&lt;p&gt;不过，有的时候KDE connect找不到局域网设备，这时候我会用Total Commander (Android)的Wifi传输插件，或者是&lt;code&gt;python -m http.server&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id="远程访问tailscaletinc或wireguard"&gt;远程访问：Tailscale、Tinc或Wireguard&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前置条件：家里24小时开机的矿渣/跳板机/树莓派/NAS；有公网IP的VPS&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;像&lt;a href="https://blog.heysh.xyz/2021/07/20/beyond-nat/"&gt;之前&lt;/a&gt;所说的那样，当前，如果我想要在外面访问家里的局域网，我会使用Tinc来建立隧道。运气好（外面有IPv6地址，大多是手机分享Wifi）的时候，可以直接连到自己的、IPv6地址与某个域名绑定的“跳板机”（ARM矿渣）上；运气不好的话，会自动有一台国外VPS进行转发，速度大概在~100K/s。如果用Wireguard的话性能会更好，可是我一直没有找到像Tinc一样简单的节点转发方案。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来自2023年的更新：现在我用回&lt;a href="https://blog.heysh.xyz/2023/05/10/through-nat/"&gt;Wireguard&lt;/a&gt;了~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;连接Tinc之后，就可以通过&lt;code&gt;Wake On LAN&lt;/code&gt;唤醒自己的其他电脑，然后用&lt;code&gt;samba&lt;/code&gt;、远程桌面之类的软件了。就好象回到家里&lt;del&gt;居家办公&lt;/del&gt;一样！&lt;/p&gt;
+&lt;p&gt;当然，在这种需求下，最简单的应该是&lt;code&gt;Tailscale&lt;/code&gt;，但是由于迫害妄想，我一直没有尝试，而是另外找了类似的东西：&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+&lt;h4 class="inline"&gt;
 剧透：最后这些我都没用
-&lt;/h4>
-&lt;/summary>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/slackhq/nebula">https://github.com/slackhq/nebula&lt;/a>
-&lt;ul>
-&lt;li>&lt;del>无法通过公共节点转发&lt;/del>现在可以了&lt;/li>
-&lt;li>两个Android客户端在移动网络、甚至是同一个无线网络都无法连接，离谱&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/tonarino/innernet">https://github.com/tonarino/innernet&lt;/a>
-&lt;ul>
-&lt;li>只实现了STUN，没有实现TURN&lt;/li>
-&lt;li>也无法通过公共节点转发&lt;/li>
-&lt;li>无Android支持&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/juanfont/headscale">https://github.com/juanfont/headscale&lt;/a>
-&lt;ul>
-&lt;li>&lt;del>无Android支持&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/gravitl/netmaker/">https://github.com/gravitl/netmaker/&lt;/a>
-&lt;ul>
-&lt;li>构建需要docker和干净的服务器&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/netbirdio/netbird">https://github.com/netbirdio/netbird&lt;/a>
-&lt;ul>
-&lt;li>&lt;del>无Android支持&lt;/del>&lt;/li>
-&lt;li>Wireguard客户端无法使用&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/dswd/vpncloud">vpncloud&lt;/a>
-&lt;ul>
-&lt;li>只支持Linux&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/details>
-&lt;p>好了，这次我想说的就是这些。办公室冰冷的行军床正在等着我。&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>Joplin使用&lt;code>File System&lt;/code>作为同步目标，Zotero使用&lt;a href="http://zotfile.com/">Zotfile&lt;/a>插件。就我自己而言，Joplin用了OneDrive，在手机上同步比起SyncThing更方便一些；Zotero那边，我自建了WebDAV服务，这纯粹是因为那时候我还没找到插件。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>其实是&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html#junctions">Junction&lt;/a>，对于应用来说完全透明，两边的文件是完全一样的。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>笔记软件踩雷</title><link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link><pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid><description>&lt;p>大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。&lt;/p>
-&lt;p>如果对自己的要求有清楚的认识，当查找 &lt;em>poor man's somewares&lt;/em> 时，&lt;a href="https://alternativeto.net/software/evernote/">AlternativeTo&lt;/a>和&lt;a href="https://www.slant.co/topics/2463/~best-evernote-alternatives">Slant&lt;/a>这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：&lt;/p>
-&lt;ul>
-&lt;li>（扩展的）Markdown格式，支持代码块和公式&lt;/li>
-&lt;li>支持多种格式的附件，而不是只支持图片
-&lt;ul>
-&lt;li>附件的链接可以插入笔记中&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>导入导出方便，不要像臭名昭著的有道笔记一样&lt;/li>
-&lt;li>网页剪辑&lt;/li>
-&lt;li>跨平台&lt;/li>
-&lt;li>支持同步&lt;/li>
-&lt;/ul>
-&lt;p>这样的话，类似google keep、evernote的软件和收费软件（……）就首先被排除了；在markdown出现之前的老牌笔记软件也自动忽略。然后我试用了当红的boostnote和……什么来着，但这两个软件对附件的支持都不太好。最后，有两个软件满足我的大部分要求：&lt;/p>
-&lt;h2 id="vnote">&lt;a href="https://tamlok.github.io/vnote/">VNote&lt;/a>&lt;/h2>
-&lt;p>美丽的Qt程序，纯Markdown保存，直接粘贴HTML到笔记，甚至还有Vim按键绑定，一切都很好，除了没有同步和Android客户端；当然，纯文本文件可以很容易地用git同步，所以问题变成了另外两个：没有合适的git Android，以及没有Android上的Markdown阅读器&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
-&lt;h2 id="joplin">&lt;a href="https://joplin.cozic.net">Joplin&lt;/a>&lt;/h2>
-&lt;p>用javascript写应用虽然被很多人鄙视，但确实真正解决了跨平台运行的问题。这个程序似乎连Android客户端都在同一个代码仓库里，如果不在意肉眼可见的卡顿的话，react native能够让人少写好多代码，反观qt-Android……&lt;/p>
-&lt;p>咳咳，扯远了。总之Joplin有Android客户端，而且自带onedrive同步功能。Nothing to complain&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>.&lt;/p>
-&lt;p>另外还有两个小问题。&lt;/p>
-&lt;h2 id="关于文章剪辑">关于文章剪辑&lt;/h2>
-&lt;p>试图将HTML转回markdown，就像是试图将pdf转回TEX、减少宇宙的熵、或者是把石头推上山一样徒劳，不过，仍然有&lt;a href="https://github.com/domchristie/turndown">勇士&lt;/a>在尝试这个任务，效果嘛……差强人意，从两个方面理解都可以。&lt;/p>
-&lt;h2 id="关于为知笔记导出">关于为知笔记导出&lt;/h2>
-&lt;blockquote>
-&lt;p>感觉基本上没什么戏……&lt;/p>&lt;/blockquote>
-&lt;p>为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段
-&lt;code>&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;（下略&lt;/code>
-才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……&lt;/p>
-&lt;p>理论上，这些都可以用一个脚本来解决，不过我看着自己一百多篇各种格式的笔记，决定还是把它们扔在硬盘里吧。“反正以后光纤也跟我没关系了……”……大概。&lt;/p>
-&lt;hr>
-&lt;p>来自2019-09-18的更新：&lt;/p>
-&lt;p>最近在V2EX上看到了一个叫&lt;a href="https://github.com/notable/notable">notable&lt;/a>的软件，思路上和VNote类似，也是使用文件夹代替数据库，笔记用纯文本格式保存在磁盘中，而且对于图片和附件的位置处理得也很聪明。&lt;/p>
-&lt;p>另外，在这个项目的主页上还列出了很多常见的笔记软件，而且画了个漂亮的表格（在&lt;a href="https://raw.githubusercontent.com/notable/notable/master/resources/comparison/table.png">这里&lt;/a>），来比较他们的区别，对某些功能有执念的朋友可以去看看。&lt;/p>
-&lt;p>当然我还是继续用joplin。&lt;em>feels good man.&lt;/em>&lt;/p>
-&lt;hr>
-&lt;p>来自2019-9-18更晚些时候的更新：&lt;/p>
-&lt;p>我又翻了一下那个项目的README，发现那个项目不再开源了。好吧，当我今天没有更新。&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>在VNote的某个Issue里提到过&lt;a href="https://github.com/gsantner/markor">Markor&lt;/a>，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>除了导出文件时的一个&lt;a href="https://github.com/laurent22/joplin/issues/853">issue&lt;/a>。It looks like Chinese to me. &lt;em>18-11-20更新：&lt;/em> 开发者回复我了！开心～&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item></channel></rss>
+&lt;/h4&gt;
+&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/slackhq/nebula"&gt;https://github.com/slackhq/nebula&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;无法通过公共节点转发&lt;/del&gt;现在可以了&lt;/li&gt;
+&lt;li&gt;两个Android客户端在移动网络、甚至是同一个无线网络都无法连接，离谱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tonarino/innernet"&gt;https://github.com/tonarino/innernet&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;只实现了STUN，没有实现TURN&lt;/li&gt;
+&lt;li&gt;也无法通过公共节点转发&lt;/li&gt;
+&lt;li&gt;无Android支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/juanfont/headscale"&gt;https://github.com/juanfont/headscale&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;无Android支持&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gravitl/netmaker/"&gt;https://github.com/gravitl/netmaker/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;构建需要docker和干净的服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/netbirdio/netbird"&gt;https://github.com/netbirdio/netbird&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;无Android支持&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Wireguard客户端无法使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dswd/vpncloud"&gt;vpncloud&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;只支持Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;p&gt;好了，这次我想说的就是这些。办公室冰冷的行军床正在等着我。&lt;/p&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Joplin使用&lt;code&gt;File System&lt;/code&gt;作为同步目标，Zotero使用&lt;a href="http://zotfile.com/"&gt;Zotfile&lt;/a&gt;插件。就我自己而言，Joplin用了OneDrive，在手机上同步比起SyncThing更方便一些；Zotero那边，我自建了WebDAV服务，这纯粹是因为那时候我还没找到插件。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;其实是&lt;a href="https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html#junctions"&gt;Junction&lt;/a&gt;，对于应用来说完全透明，两边的文件是完全一样的。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item><item><title>笔记软件踩雷</title><link>https://blog.heysh.xyz/2018/11/17/which-notebook/</link><pubDate>Sat, 17 Nov 2018 18:26:30 +0800</pubDate><guid>https://blog.heysh.xyz/2018/11/17/which-notebook/</guid><description>&lt;p&gt;大概是2017年的时候，我一直在使用的为知笔记开始收费了。在交了一年的订阅费（并写了小于10篇笔记）之后，我决定换一款新的笔记软件。&lt;/p&gt;
+&lt;p&gt;如果对自己的要求有清楚的认识，当查找 &lt;em&gt;poor man's somewares&lt;/em&gt; 时，&lt;a href="https://alternativeto.net/software/evernote/"&gt;AlternativeTo&lt;/a&gt;和&lt;a href="https://www.slant.co/topics/2463/~best-evernote-alternatives"&gt;Slant&lt;/a&gt;这两个网站经常能够带来一些灵感。对于我来说，笔记软件需要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;（扩展的）Markdown格式，支持代码块和公式&lt;/li&gt;
+&lt;li&gt;支持多种格式的附件，而不是只支持图片
+&lt;ul&gt;
+&lt;li&gt;附件的链接可以插入笔记中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;导入导出方便，不要像臭名昭著的有道笔记一样&lt;/li&gt;
+&lt;li&gt;网页剪辑&lt;/li&gt;
+&lt;li&gt;跨平台&lt;/li&gt;
+&lt;li&gt;支持同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样的话，类似google keep、evernote的软件和收费软件（……）就首先被排除了；在markdown出现之前的老牌笔记软件也自动忽略。然后我试用了当红的boostnote和……什么来着，但这两个软件对附件的支持都不太好。最后，有两个软件满足我的大部分要求：&lt;/p&gt;
+&lt;h2 id="vnote"&gt;&lt;a href="https://tamlok.github.io/vnote/"&gt;VNote&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;美丽的Qt程序，纯Markdown保存，直接粘贴HTML到笔记，甚至还有Vim按键绑定，一切都很好，除了没有同步和Android客户端；当然，纯文本文件可以很容易地用git同步，所以问题变成了另外两个：没有合适的git Android，以及没有Android上的Markdown阅读器&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h2 id="joplin"&gt;&lt;a href="https://joplin.cozic.net"&gt;Joplin&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;用javascript写应用虽然被很多人鄙视，但确实真正解决了跨平台运行的问题。这个程序似乎连Android客户端都在同一个代码仓库里，如果不在意肉眼可见的卡顿的话，react native能够让人少写好多代码，反观qt-Android……&lt;/p&gt;
+&lt;p&gt;咳咳，扯远了。总之Joplin有Android客户端，而且自带onedrive同步功能。Nothing to complain&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;另外还有两个小问题。&lt;/p&gt;
+&lt;h2 id="关于文章剪辑"&gt;关于文章剪辑&lt;/h2&gt;
+&lt;p&gt;试图将HTML转回markdown，就像是试图将pdf转回TEX、减少宇宙的熵、或者是把石头推上山一样徒劳，不过，仍然有&lt;a href="https://github.com/domchristie/turndown"&gt;勇士&lt;/a&gt;在尝试这个任务，效果嘛……差强人意，从两个方面理解都可以。&lt;/p&gt;
+&lt;h2 id="关于为知笔记导出"&gt;关于为知笔记导出&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;感觉基本上没什么戏……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;为知笔记的markdown格式笔记不是纯文本，而是用HTML储存的，这就是说，打开笔记之后，需要看一整段
+&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;（下略&lt;/code&gt;
+才能看到自己的笔记。导出txt格式可能会好一些，代价是损失所有图片；另外，导出时是没有附件的……&lt;/p&gt;
+&lt;p&gt;理论上，这些都可以用一个脚本来解决，不过我看着自己一百多篇各种格式的笔记，决定还是把它们扔在硬盘里吧。“反正以后光纤也跟我没关系了……”……大概。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;来自2019-09-18的更新：&lt;/p&gt;
+&lt;p&gt;最近在V2EX上看到了一个叫&lt;a href="https://github.com/notable/notable"&gt;notable&lt;/a&gt;的软件，思路上和VNote类似，也是使用文件夹代替数据库，笔记用纯文本格式保存在磁盘中，而且对于图片和附件的位置处理得也很聪明。&lt;/p&gt;
+&lt;p&gt;另外，在这个项目的主页上还列出了很多常见的笔记软件，而且画了个漂亮的表格（在&lt;a href="https://raw.githubusercontent.com/notable/notable/master/resources/comparison/table.png"&gt;这里&lt;/a&gt;），来比较他们的区别，对某些功能有执念的朋友可以去看看。&lt;/p&gt;
+&lt;p&gt;当然我还是继续用joplin。&lt;em&gt;feels good man.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;来自2019-9-18更晚些时候的更新：&lt;/p&gt;
+&lt;p&gt;我又翻了一下那个项目的README，发现那个项目不再开源了。好吧，当我今天没有更新。&lt;/p&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;在VNote的某个Issue里提到过&lt;a href="https://github.com/gsantner/markor"&gt;Markor&lt;/a&gt;，不过问题没有这么简单：git从来都没有自动同步功能，所以每次写完笔记之后还要push一次。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;除了导出文件时的一个&lt;a href="https://github.com/laurent22/joplin/issues/853"&gt;issue&lt;/a&gt;。It looks like Chinese to me. &lt;em&gt;18-11-20更新：&lt;/em&gt; 开发者回复我了！开心～&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item></channel></rss>

@@ -1,138 +1,139 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>服务器 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><description>Recent content in 服务器 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 12 Apr 2025 11:37:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/feed.xml" rel="self" type="application/rss+xml"/><item><title>半年前的NAS升级</title><link>https://blog.heysh.xyz/2025/04/12/hp-800g4/</link><pubDate>Sat, 12 Apr 2025 11:37:49 +0800</pubDate><guid>https://blog.heysh.xyz/2025/04/12/hp-800g4/</guid><description>&lt;p>2024年10月，我决定把之前的垃圾一号锐角云和垃圾二号蜗牛星际退役，整点性能更高的东西，从海鲜市场捡了一套HP Elitedesk 800G4 SFF。&lt;/p>
-&lt;details>
-&lt;summary>
-&lt;h4 class="inline">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>服务器 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><description>Recent content in 服务器 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sat, 12 Apr 2025 11:37:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/feed.xml" rel="self" type="application/rss+xml"/><item><title>半年前的NAS升级</title><link>https://blog.heysh.xyz/2025/04/12/hp-800g4/</link><pubDate>Sat, 12 Apr 2025 11:37:49 +0800</pubDate><guid>https://blog.heysh.xyz/2025/04/12/hp-800g4/</guid><description>&lt;p&gt;2024年10月，我决定把之前的垃圾一号锐角云和垃圾二号蜗牛星际退役，整点性能更高的东西，从海鲜市场捡了一套HP Elitedesk 800G4 SFF。&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+&lt;h4 class="inline"&gt;
 当时的价格是这样：
-&lt;/h4>
-&lt;/summary>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>型号&lt;/th>
-&lt;th>价格&lt;/th>
-&lt;th>渠道&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>准系统&lt;/td>
-&lt;td>800G4&lt;/td>
-&lt;td>330&lt;/td>
-&lt;td>闲鱼&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>CPU&lt;/td>
-&lt;td>I5-8500&lt;/td>
-&lt;td>289&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>内存&lt;/td>
-&lt;td>金龙惠宇16G*2&lt;/td>
-&lt;td>200&lt;/td>
-&lt;td>PDD&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>SSD&lt;/td>
-&lt;td>1T&lt;/td>
-&lt;td>400&lt;/td>
-&lt;td>JD&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>万兆网卡&lt;/td>
-&lt;td>MNPA19-XTR*2&lt;/td>
-&lt;td>71&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>交换机&lt;/td>
-&lt;td>SE106Pro&lt;/td>
-&lt;td>129&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>网线&lt;/td>
-&lt;td>光纤AOC线*2&lt;/td>
-&lt;td>19&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>SATA线&lt;/td>
-&lt;td>单弯头的比较好&lt;/td>
-&lt;td>19&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>合计&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>1457&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;/details>
-&lt;p>不算万兆互联和SSD的部分大概是800块。听说我下单之后这套准系统就开始涨价了，B站带货真可怕啊。&lt;/p>
-&lt;p>这台NAS（或者家用服务器）在这半年的服役中效果良好，得益于白金电源，加上万兆网卡和3.5硬盘×2、2.5×1，平均耗电大概只有40W左右。因为是品牌机，据说不支持9代CPU，但互联网上的技术支持比一般的山寨主板要好的多，甚至有完整的&lt;a href="https://h10032.www1.hp.com/ctg/Manual/c06472102.pdf">维护手册&lt;/a>。硬盘螺钉之类的小配件JS会单卖，不过如果有3D打印机的话，也可以自己打：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.printables.com/model/817439-hp-prodesk-hard-drive-grommet-for-6-32-screws?lang=en">3.5寸硬盘螺钉&lt;/a>（5块钱4个）&lt;/li>
-&lt;li>&lt;a href="https://www.printables.com/model/252727-hp-hard-drive-mounting-grommet?lang=en">2.5寸硬盘螺钉&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.printables.com/model/720124-stand-for-hp-elitedesk-800-g8-sff?lang=en">SFF支架&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.thingiverse.com/thing:3119803/comments">Mellanox ConnectX-2 半高挡板&lt;/a>（7块1个）&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/10G_eth.png">&lt;figcaption>
-&lt;h4>PLA打印的半高挡板，暂时还没有融化&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>软件方面，使用大家都喜欢的Proxmox VE，一共开了4个虚拟机，没有LXC容器：&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>HAOS&lt;/code>给“智能”家居用，直通了ZBDongle-P。&lt;/li>
-&lt;li>&lt;code>gateway&lt;/code>用来和互联网联系。用&lt;code>cloudflared&lt;/code>和&lt;code>caddy&lt;/code>代理内网服务，&lt;code>wireguard&lt;/code>和&lt;code>natmap&lt;/code>来访问内网。&lt;/li>
-&lt;li>&lt;code>OpenMediaVault&lt;/code>直通SATA控制器。24年8月买的二手&lt;code>HC530&lt;/code>暂时还能用。&lt;/li>
-&lt;li>&lt;code>docker-host&lt;/code>用来放一些小服务，因为docker会在iptables里搞东搞西，可能会把&lt;code>gateway&lt;/code>里的服务弄坏。&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/gateway.png">&lt;figcaption>
-&lt;h4>按照惯例（？），放一张服务的图&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;h2 id="远程控制">远程控制&lt;/h2>
-&lt;p>另外，因为是企业级系统，800G4支持Intel vPro，配合8500以上级别的CPU可以开启AMT，实现类似IPMI、IP-KVM的“带外”远程控制功能。不过还有一个问题：在开启GPU直通之后，HDMI的输出不再来自主机，远程控制没有图像信号。&lt;/p>
-&lt;p>为了解决这个问题，可以使用AMT的Serial-Over-LAN功能，使用串口和主机通信。反正没有人会在PVE主机上安装GUI程序对吧。&lt;/p>
-&lt;p>首先，在BIOS里开启AMT和SOL，记得设置静态IP地址，不需要和PVE系统地址一致；密码要设的长一些，应该包含大小写字母和数字。&lt;/p>
-&lt;p>控制上建议使用&lt;a href="https://www.meshcommander.com/meshcommander/meshcmd">meshcmd&lt;/a>，在ARM、x86上都可以运行。&lt;code>./meshcmd meshcommander&lt;/code>会开启一个服务器，算是远程访问的远程访问。&lt;/p>
-&lt;p>BIOS、GRUB和PVE都需要通过串口控制，因为是企业级，HP的BIOS直接支持串口访问；GRUB和Linux&lt;a href="https://forum.proxmox.com/threads/retain-host-video-output-when-passing-through-igpu.154855/post-705409">开启串口访问&lt;/a>需要&lt;/p>
-&lt;ul>
-&lt;li>找到TTY端口，我这里是TTY4&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>root@pve-hp:~# dmesg|grep tty
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span> 0.419539&lt;span style="color:#555">]&lt;/span> 0000:00:16.3: ttyS4 at I/O 0x3088 &lt;span style="color:#555">(&lt;/span>&lt;span style="color:#033">irq&lt;/span> &lt;span style="color:#555">=&lt;/span> 19, &lt;span style="color:#033">base_baud&lt;/span> &lt;span style="color:#555">=&lt;/span> 115200&lt;span style="color:#555">)&lt;/span> is a 16550A
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>在&lt;code>/etc/default/grub&lt;/code>里添加串口设置&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># cat /etc/default/grub&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">GRUB_CMDLINE_LINUX_DEFAULT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;quiet console=tty4 console=ttyS4,115200n8&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#在原始参数后追加&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">GRUB_TERMINAL&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;console serial&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#GRUB自身也采用串口输出&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">GRUB_SERIAL_COMMAND&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;serial --unit=4 --speed=115200&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>之后，运行&lt;code>update-grub&lt;/code>和&lt;code>systemctl enable serial-getty@ttyS4.service&lt;/code>，就能通过&lt;code>meshcommander&lt;/code>访问主机了。&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/MeshCommander-1.png">
-&lt;/figure>
-&lt;p>突然想到，对于普通电脑，只要搞两根USB转RS-232串口线交叉连结，就可以实现 &lt;a href="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/">IP-KVM&lt;/a> 80%的效果——就是有点过于low-tech。&lt;/p>
-&lt;h2 id="另外的一些小问题">另外的一些小问题&lt;/h2>
-&lt;ul>
-&lt;li>I219-LM网络问题：&lt;a href="https://forum.proxmox.com/threads/e1000-driver-hang.58284/page-4#post-303366">e1000e drvier hang&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>NETDEV WATCHDOG: enp0s31f6 (e1000e): transmit queue 0 timed out&lt;/p>&lt;/blockquote>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># /etc/network/interfaces&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>iface eno1 inet manual
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> post-up ethtool -K eno1 tso off gso off
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>GPU直通：&lt;a href="https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-passthrough-to-vm/?utm_source=pocket_saves#proxmox-configuration-for-igpu-full-passthrough">iGPU Passthrough to VM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>建议使用GRUB，不建议用sysctl方式设置，万一搞坏了系统，在GRUB界面改回去就能取消直通。&lt;/p></description></item></channel></rss>
+&lt;/h4&gt;
+&lt;/summary&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;型号&lt;/th&gt;
+&lt;th&gt;价格&lt;/th&gt;
+&lt;th&gt;渠道&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;准系统&lt;/td&gt;
+&lt;td&gt;800G4&lt;/td&gt;
+&lt;td&gt;330&lt;/td&gt;
+&lt;td&gt;闲鱼&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td&gt;I5-8500&lt;/td&gt;
+&lt;td&gt;289&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td&gt;金龙惠宇16G*2&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;PDD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SSD&lt;/td&gt;
+&lt;td&gt;1T&lt;/td&gt;
+&lt;td&gt;400&lt;/td&gt;
+&lt;td&gt;JD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;万兆网卡&lt;/td&gt;
+&lt;td&gt;MNPA19-XTR*2&lt;/td&gt;
+&lt;td&gt;71&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;交换机&lt;/td&gt;
+&lt;td&gt;SE106Pro&lt;/td&gt;
+&lt;td&gt;129&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;网线&lt;/td&gt;
+&lt;td&gt;光纤AOC线*2&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SATA线&lt;/td&gt;
+&lt;td&gt;单弯头的比较好&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;合计&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1457&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/details&gt;
+&lt;p&gt;不算万兆互联和SSD的部分大概是800块。听说我下单之后这套准系统就开始涨价了，B站带货真可怕啊。&lt;/p&gt;
+&lt;p&gt;这台NAS（或者家用服务器）在这半年的服役中效果良好，得益于白金电源，加上万兆网卡和3.5硬盘×2、2.5×1，平均耗电大概只有40W左右。因为是品牌机，据说不支持9代CPU，但互联网上的技术支持比一般的山寨主板要好的多，甚至有完整的&lt;a href="https://h10032.www1.hp.com/ctg/Manual/c06472102.pdf"&gt;维护手册&lt;/a&gt;。硬盘螺钉之类的小配件JS会单卖，不过如果有3D打印机的话，也可以自己打：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.printables.com/model/817439-hp-prodesk-hard-drive-grommet-for-6-32-screws?lang=en"&gt;3.5寸硬盘螺钉&lt;/a&gt;（5块钱4个）&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.printables.com/model/252727-hp-hard-drive-mounting-grommet?lang=en"&gt;2.5寸硬盘螺钉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.printables.com/model/720124-stand-for-hp-elitedesk-800-g8-sff?lang=en"&gt;SFF支架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.thingiverse.com/thing:3119803/comments"&gt;Mellanox ConnectX-2 半高挡板&lt;/a&gt;（7块1个）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/10G_eth.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;PLA打印的半高挡板，暂时还没有融化&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;软件方面，使用大家都喜欢的Proxmox VE，一共开了4个虚拟机，没有LXC容器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HAOS&lt;/code&gt;给“智能”家居用，直通了ZBDongle-P。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gateway&lt;/code&gt;用来和互联网联系。用&lt;code&gt;cloudflared&lt;/code&gt;和&lt;code&gt;caddy&lt;/code&gt;代理内网服务，&lt;code&gt;wireguard&lt;/code&gt;和&lt;code&gt;natmap&lt;/code&gt;来访问内网。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OpenMediaVault&lt;/code&gt;直通SATA控制器。24年8月买的二手&lt;code&gt;HC530&lt;/code&gt;暂时还能用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker-host&lt;/code&gt;用来放一些小服务，因为docker会在iptables里搞东搞西，可能会把&lt;code&gt;gateway&lt;/code&gt;里的服务弄坏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/gateway.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;按照惯例（？），放一张服务的图&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="远程控制"&gt;远程控制&lt;/h2&gt;
+&lt;p&gt;另外，因为是企业级系统，800G4支持Intel vPro，配合8500以上级别的CPU可以开启AMT，实现类似IPMI、IP-KVM的“带外”远程控制功能。不过还有一个问题：在开启GPU直通之后，HDMI的输出不再来自主机，远程控制没有图像信号。&lt;/p&gt;
+&lt;p&gt;为了解决这个问题，可以使用AMT的Serial-Over-LAN功能，使用串口和主机通信。反正没有人会在PVE主机上安装GUI程序对吧。&lt;/p&gt;
+&lt;p&gt;首先，在BIOS里开启AMT和SOL，记得设置静态IP地址，不需要和PVE系统地址一致；密码要设的长一些，应该包含大小写字母和数字。&lt;/p&gt;
+&lt;p&gt;控制上建议使用&lt;a href="https://www.meshcommander.com/meshcommander/meshcmd"&gt;meshcmd&lt;/a&gt;，在ARM、x86上都可以运行。&lt;code&gt;./meshcmd meshcommander&lt;/code&gt;会开启一个服务器，算是远程访问的远程访问。&lt;/p&gt;
+&lt;p&gt;BIOS、GRUB和PVE都需要通过串口控制，因为是企业级，HP的BIOS直接支持串口访问；GRUB和Linux&lt;a href="https://forum.proxmox.com/threads/retain-host-video-output-when-passing-through-igpu.154855/post-705409"&gt;开启串口访问&lt;/a&gt;需要&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;找到TTY端口，我这里是TTY4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;root@pve-hp:~# dmesg|grep tty
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#555"&gt;[&lt;/span&gt; 0.419539&lt;span style="color:#555"&gt;]&lt;/span&gt; 0000:00:16.3: ttyS4 at I/O 0x3088 &lt;span style="color:#555"&gt;(&lt;/span&gt;&lt;span style="color:#033"&gt;irq&lt;/span&gt; &lt;span style="color:#555"&gt;=&lt;/span&gt; 19, &lt;span style="color:#033"&gt;base_baud&lt;/span&gt; &lt;span style="color:#555"&gt;=&lt;/span&gt; 115200&lt;span style="color:#555"&gt;)&lt;/span&gt; is a 16550A
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;在&lt;code&gt;/etc/default/grub&lt;/code&gt;里添加串口设置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# cat /etc/default/grub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#033"&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;quiet console=tty4 console=ttyS4,115200n8&amp;#34;&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#在原始参数后追加&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#033"&gt;GRUB_TERMINAL&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;console serial&amp;#34;&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#GRUB自身也采用串口输出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#033"&gt;GRUB_SERIAL_COMMAND&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;serial --unit=4 --speed=115200&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;之后，运行&lt;code&gt;update-grub&lt;/code&gt;和&lt;code&gt;systemctl enable serial-getty@ttyS4.service&lt;/code&gt;，就能通过&lt;code&gt;meshcommander&lt;/code&gt;访问主机了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/MeshCommander-1.png"&gt;
+&lt;/figure&gt;
+&lt;p&gt;突然想到，对于普通电脑，只要搞两根USB转RS-232串口线交叉连结，就可以实现 &lt;a href="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/"&gt;IP-KVM&lt;/a&gt; 80%的效果——就是有点过于low-tech。&lt;/p&gt;
+&lt;h2 id="另外的一些小问题"&gt;另外的一些小问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I219-LM网络问题：&lt;a href="https://forum.proxmox.com/threads/e1000-driver-hang.58284/page-4#post-303366"&gt;e1000e drvier hang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NETDEV WATCHDOG: enp0s31f6 (e1000e): transmit queue 0 timed out&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# /etc/network/interfaces&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;iface eno1 inet manual
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; post-up ethtool -K eno1 tso off gso off
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;GPU直通：&lt;a href="https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-passthrough-to-vm/?utm_source=pocket_saves#proxmox-configuration-for-igpu-full-passthrough"&gt;iGPU Passthrough to VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;建议使用GRUB，不建议用sysctl方式设置，万一搞坏了系统，在GRUB界面改回去就能取消直通。&lt;/p&gt;</description></item></channel></rss>

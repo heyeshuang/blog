@@ -1,255 +1,264 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>远程控制 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</link><description>Recent content in 远程控制 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA&lt;/a></copyright><lastBuildDate>Sat, 12 Apr 2025 11:37:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>半年前的NAS升级</title><link>https://blog.heysh.xyz/2025/04/12/hp-800g4/</link><pubDate>Sat, 12 Apr 2025 11:37:49 +0800</pubDate><guid>https://blog.heysh.xyz/2025/04/12/hp-800g4/</guid><description>&lt;p>2024年10月，我决定把之前的垃圾一号锐角云和垃圾二号蜗牛星际退役，整点性能更高的东西，从海鲜市场捡了一套HP Elitedesk 800G4 SFF。&lt;/p>
-&lt;details>
-&lt;summary>
-&lt;h4 class="inline">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>远程控制 on 林中阴影</title><link>https://blog.heysh.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</link><description>Recent content in 远程控制 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sat, 12 Apr 2025 11:37:49 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/feed.xml" rel="self" type="application/rss+xml"/><item><title>半年前的NAS升级</title><link>https://blog.heysh.xyz/2025/04/12/hp-800g4/</link><pubDate>Sat, 12 Apr 2025 11:37:49 +0800</pubDate><guid>https://blog.heysh.xyz/2025/04/12/hp-800g4/</guid><description>&lt;p&gt;2024年10月，我决定把之前的垃圾一号锐角云和垃圾二号蜗牛星际退役，整点性能更高的东西，从海鲜市场捡了一套HP Elitedesk 800G4 SFF。&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+&lt;h4 class="inline"&gt;
 当时的价格是这样：
-&lt;/h4>
-&lt;/summary>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>型号&lt;/th>
-&lt;th>价格&lt;/th>
-&lt;th>渠道&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>准系统&lt;/td>
-&lt;td>800G4&lt;/td>
-&lt;td>330&lt;/td>
-&lt;td>闲鱼&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>CPU&lt;/td>
-&lt;td>I5-8500&lt;/td>
-&lt;td>289&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>内存&lt;/td>
-&lt;td>金龙惠宇16G*2&lt;/td>
-&lt;td>200&lt;/td>
-&lt;td>PDD&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>SSD&lt;/td>
-&lt;td>1T&lt;/td>
-&lt;td>400&lt;/td>
-&lt;td>JD&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>万兆网卡&lt;/td>
-&lt;td>MNPA19-XTR*2&lt;/td>
-&lt;td>71&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>交换机&lt;/td>
-&lt;td>SE106Pro&lt;/td>
-&lt;td>129&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>网线&lt;/td>
-&lt;td>光纤AOC线*2&lt;/td>
-&lt;td>19&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>SATA线&lt;/td>
-&lt;td>单弯头的比较好&lt;/td>
-&lt;td>19&lt;/td>
-&lt;td>淘宝&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>合计&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>1457&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;/details>
-&lt;p>不算万兆互联和SSD的部分大概是800块。听说我下单之后这套准系统就开始涨价了，B站带货真可怕啊。&lt;/p>
-&lt;p>这台NAS（或者家用服务器）在这半年的服役中效果良好，得益于白金电源，加上万兆网卡和3.5硬盘×2、2.5×1，平均耗电大概只有40W左右。因为是品牌机，据说不支持9代CPU，但互联网上的技术支持比一般的山寨主板要好的多，甚至有完整的&lt;a href="https://h10032.www1.hp.com/ctg/Manual/c06472102.pdf">维护手册&lt;/a>。硬盘螺钉之类的小配件JS会单卖，不过如果有3D打印机的话，也可以自己打：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.printables.com/model/817439-hp-prodesk-hard-drive-grommet-for-6-32-screws?lang=en">3.5寸硬盘螺钉&lt;/a>（5块钱4个）&lt;/li>
-&lt;li>&lt;a href="https://www.printables.com/model/252727-hp-hard-drive-mounting-grommet?lang=en">2.5寸硬盘螺钉&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.printables.com/model/720124-stand-for-hp-elitedesk-800-g8-sff?lang=en">SFF支架&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.thingiverse.com/thing:3119803/comments">Mellanox ConnectX-2 半高挡板&lt;/a>（7块1个）&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/10G_eth.png">&lt;figcaption>
-&lt;h4>PLA打印的半高挡板，暂时还没有融化&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>软件方面，使用大家都喜欢的Proxmox VE，一共开了4个虚拟机，没有LXC容器：&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>HAOS&lt;/code>给“智能”家居用，直通了ZBDongle-P。&lt;/li>
-&lt;li>&lt;code>gateway&lt;/code>用来和互联网联系。用&lt;code>cloudflared&lt;/code>和&lt;code>caddy&lt;/code>代理内网服务，&lt;code>wireguard&lt;/code>和&lt;code>natmap&lt;/code>来访问内网。&lt;/li>
-&lt;li>&lt;code>OpenMediaVault&lt;/code>直通SATA控制器。24年8月买的二手&lt;code>HC530&lt;/code>暂时还能用。&lt;/li>
-&lt;li>&lt;code>docker-host&lt;/code>用来放一些小服务，因为docker会在iptables里搞东搞西，可能会把&lt;code>gateway&lt;/code>里的服务弄坏。&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/gateway.png">&lt;figcaption>
-&lt;h4>按照惯例（？），放一张服务的图&lt;/h4>
-&lt;/figcaption>
-&lt;/figure>
-&lt;h2 id="远程控制">远程控制&lt;/h2>
-&lt;p>另外，因为是企业级系统，800G4支持Intel vPro，配合8500以上级别的CPU可以开启AMT，实现类似IPMI、IP-KVM的“带外”远程控制功能。不过还有一个问题：在开启GPU直通之后，HDMI的输出不再来自主机，远程控制没有图像信号。&lt;/p>
-&lt;p>为了解决这个问题，可以使用AMT的Serial-Over-LAN功能，使用串口和主机通信。反正没有人会在PVE主机上安装GUI程序对吧。&lt;/p>
-&lt;p>首先，在BIOS里开启AMT和SOL，记得设置静态IP地址，不需要和PVE系统地址一致；密码要设的长一些，应该包含大小写字母和数字。&lt;/p>
-&lt;p>控制上建议使用&lt;a href="https://www.meshcommander.com/meshcommander/meshcmd">meshcmd&lt;/a>，在ARM、x86上都可以运行。&lt;code>./meshcmd meshcommander&lt;/code>会开启一个服务器，算是远程访问的远程访问。&lt;/p>
-&lt;p>BIOS、GRUB和PVE都需要通过串口控制，因为是企业级，HP的BIOS直接支持串口访问；GRUB和Linux&lt;a href="https://forum.proxmox.com/threads/retain-host-video-output-when-passing-through-igpu.154855/post-705409">开启串口访问&lt;/a>需要&lt;/p>
-&lt;ul>
-&lt;li>找到TTY端口，我这里是TTY4&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>root@pve-hp:~# dmesg|grep tty
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#555">[&lt;/span> 0.419539&lt;span style="color:#555">]&lt;/span> 0000:00:16.3: ttyS4 at I/O 0x3088 &lt;span style="color:#555">(&lt;/span>&lt;span style="color:#033">irq&lt;/span> &lt;span style="color:#555">=&lt;/span> 19, &lt;span style="color:#033">base_baud&lt;/span> &lt;span style="color:#555">=&lt;/span> 115200&lt;span style="color:#555">)&lt;/span> is a 16550A
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>在&lt;code>/etc/default/grub&lt;/code>里添加串口设置&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># cat /etc/default/grub&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">GRUB_CMDLINE_LINUX_DEFAULT&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;quiet console=tty4 console=ttyS4,115200n8&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#在原始参数后追加&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">GRUB_TERMINAL&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;console serial&amp;#34;&lt;/span> &lt;span style="color:#09f;font-style:italic">#GRUB自身也采用串口输出&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#033">GRUB_SERIAL_COMMAND&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;serial --unit=4 --speed=115200&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>之后，运行&lt;code>update-grub&lt;/code>和&lt;code>systemctl enable serial-getty@ttyS4.service&lt;/code>，就能通过&lt;code>meshcommander&lt;/code>访问主机了。&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/MeshCommander-1.png">
-&lt;/figure>
-&lt;p>突然想到，对于普通电脑，只要搞两根USB转RS-232串口线交叉连结，就可以实现 &lt;a href="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/">IP-KVM&lt;/a> 80%的效果——就是有点过于low-tech。&lt;/p>
-&lt;h2 id="另外的一些小问题">另外的一些小问题&lt;/h2>
-&lt;ul>
-&lt;li>I219-LM网络问题：&lt;a href="https://forum.proxmox.com/threads/e1000-driver-hang.58284/page-4#post-303366">e1000e drvier hang&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>NETDEV WATCHDOG: enp0s31f6 (e1000e): transmit queue 0 timed out&lt;/p>&lt;/blockquote>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># /etc/network/interfaces&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>iface eno1 inet manual
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> post-up ethtool -K eno1 tso off gso off
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>GPU直通：&lt;a href="https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-passthrough-to-vm/?utm_source=pocket_saves#proxmox-configuration-for-igpu-full-passthrough">iGPU Passthrough to VM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>建议使用GRUB，不建议用sysctl方式设置，万一搞坏了系统，在GRUB界面改回去就能取消直通。&lt;/p></description></item><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p>这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p>
-&lt;blockquote>
-&lt;p>不要问为什么，工作造就人呀。&lt;/p>&lt;/blockquote>
-&lt;ul>
-&lt;li>
-&lt;p>首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>然后，如果显示器没有type-c一线通，还需要搞一个扩展坞。
-&lt;img src="dock.png" alt="dock">&lt;/p>
-&lt;ul>
-&lt;li>这种（盛惠25元）有各种贴牌，在充电时USB口是用不了的。建议另找一套蓝牙鼠标。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>把系统升级到Lineage OS 21，或者其他Android 14版本。每次更新，日志都说升级了桌面模式，每次都是一样的难用。&lt;/p>
-&lt;ul>
-&lt;li>如果是高贵的三星用户，就请当我没说过这句话。&lt;/li>
-&lt;li>另外，别用Oxygen OS，桌面模式布局一团乱麻；也别用&lt;code>Pixel Experience&lt;/code>，直接把手机干成&lt;code>Qualcomm CrashDump MODE&lt;/code>，我还以为200块白修了。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>插显示器的时候，不要用&lt;a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free">SecondScreen&lt;/a> APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的选项对我来说没有必要。（在Android 15上，选项叫做“在辅助显示屏上启用可自由调整的窗口”）
-&lt;img src="develop.jpg" alt="开发者模式选项">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>之后，连上显示器以后的Android桌面长这样。
-&lt;img src="desktop.png" alt="桌面">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>关于RDP客户端，建议不要用&lt;a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx">微软出品的APP&lt;/a>。据我测试，只有&lt;a href="https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager">Remote Desktop Manager&lt;/a>和&lt;a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP">aRDP Free&lt;/a>支持鼠标中键。后面那个是&lt;a href="https://github.com/iiordanov/remote-desktop-clients/">开源&lt;/a>的。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>按理说Moonlight也可以，不过还是RDP协议对4G友好点。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>来自2025.5.27的更新：在升级到Android 15之后，外接鼠标无法在辅助显示屏上使用了。解决方法来自Gemini：将手机切换成横屏模式；或者进入手机的 “设置” &amp;gt; “连接的设备” &amp;gt; “外部显示屏”，将显示方向从 “标准” 更改为90度，然后再改回 “标准”。&lt;/p></description></item><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote>
-&lt;p>说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm">PiKVM&lt;/a>以及一系列衍生项目，可是对于&lt;del>那些把钱投入庞氏骗局的&lt;/del>穷人来说，RPI4已经远不能称为&lt;em>inexpensive&lt;/em>。近几天，我从垃圾堆里翻出了&lt;strong>同样&lt;/strong>昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p>&lt;/blockquote>
-&lt;figure>&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
-alt="有较强的自我管理意识.png">&lt;figcaption>
-&lt;p>有较强的自我管理意识.png&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>把远程控制取名叫作IP-KVM，这对于SEO来说过于不友好了。每当搜索Google的时候，总会看到有人试图在N1上跑虚拟化（aka KVM），可能是对2G内存有些什么不切实际的幻想。最后，在GitHub上找到了在N1上安装PiKVM的脚本：&lt;a href="https://github.com/toss-a/pikvm-armbian">toss-a/pikvm-armbian&lt;/a>。不过这里的&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD">说明&lt;/a>也稍微有些简略，我会努力稍微详细一点点，尽量。&lt;/p>
-&lt;p>那么，需要准备下面这些东西：&lt;/p>
-&lt;ol>
-&lt;li>N1一台；
-&lt;blockquote>
-&lt;p>我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82">更好的选择&lt;/a>。注意，这些选择需要能够OTG。&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>USB公对公数据线一条；
-&lt;blockquote>
-&lt;p>因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>视频采集卡一张，配HDMI线一条；
-&lt;blockquote>
-&lt;p>因为N1没有USB3.0接口，MS2109芯片就足够了，可以跑1080p@30Hz。
-&lt;img src="ms2109.webp" alt="大概长这样：">&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;li>U盘一块；&lt;/li>
-&lt;li>Linux知识一些；&lt;/li>
-&lt;li>可能会需要：
-&lt;ol>
-&lt;li>USB键盘一个；&lt;/li>
-&lt;li>USB延长线一条；&lt;/li>
-&lt;li>理想的上网环境。
-&lt;blockquote>
-&lt;p>根据相关法律法规和政策（下略）&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;p>不需要准备Arduino、BadUSB、USB Rubber Ducky，或者其他的单片机，虽然我的垃圾堆里也有不少。&lt;/p>
-&lt;h2 id="安装系统armbianubuntu口味的">安装系统：Armbian（Ubuntu口味的）&lt;/h2>
-&lt;p>这部分已经有很多人写过了，大概步骤是降级—BalenaEcther镜像写入U盘—Armbian写入EMMC。可以参考&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/README.cn.md#%E5%AE%89%E8%A3%85-armbian-%E5%88%B0-emmc">GitHub说明&lt;/a>、&lt;a href="https://ethanblog.com/tips/play-with-n1-box.html">其他人的博客&lt;/a>或者&lt;a href="https://www.bilibili.com/video/BV1QJ411k7AH/">B站&lt;/a>。要注意，在盒子的原始系统尚未关机时不要插入U盘，Android系统会破坏U盘文件的权限。&lt;/p>
-&lt;p>Armbian镜像我使用的是&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_jammy_lts_2023.05/Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz">Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz&lt;/a>，其中，&lt;code>S905d&lt;/code>是N1所用的芯片，&lt;code>Jammy&lt;/code>是Ubuntu的版本号，&lt;code>6.1.27&lt;/code>代表使用的是最新版本的Linux内核。如果安装PiKVM，Debian系列（bullseye）的软件包有些太老了。&lt;/p>
-&lt;h2 id="修改dtb文件">修改dtb文件&lt;/h2>
-&lt;blockquote>
-&lt;p>好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p>&lt;/blockquote>
-&lt;p>在上述的Armbian引导文件中，默认的USB模式是Host，为了模拟鼠标、键盘等设备，需要将&lt;code>dr_mode&lt;/code>从&lt;code>host&lt;/code>更改为&lt;code>peripheral&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。那么，我们需要重新编译dtb文件：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 将dtb编译为dts文件&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dtc -I dtb -O dts -o test.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#09f;font-style:italic"># 用你喜欢的编辑器打开这个文件&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vim test.dts
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在&lt;code>test.dts&lt;/code>中搜索&lt;code>dr_mode&lt;/code>，寻找首个&lt;code>dr_mode = &amp;quot;host&amp;quot;;&lt;/code>，改为&lt;code>dr_mode = &amp;quot;peripheral&amp;quot;;&lt;/code>。
+&lt;/h4&gt;
+&lt;/summary&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;型号&lt;/th&gt;
+&lt;th&gt;价格&lt;/th&gt;
+&lt;th&gt;渠道&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;准系统&lt;/td&gt;
+&lt;td&gt;800G4&lt;/td&gt;
+&lt;td&gt;330&lt;/td&gt;
+&lt;td&gt;闲鱼&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td&gt;I5-8500&lt;/td&gt;
+&lt;td&gt;289&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td&gt;金龙惠宇16G*2&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;PDD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SSD&lt;/td&gt;
+&lt;td&gt;1T&lt;/td&gt;
+&lt;td&gt;400&lt;/td&gt;
+&lt;td&gt;JD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;万兆网卡&lt;/td&gt;
+&lt;td&gt;MNPA19-XTR*2&lt;/td&gt;
+&lt;td&gt;71&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;交换机&lt;/td&gt;
+&lt;td&gt;SE106Pro&lt;/td&gt;
+&lt;td&gt;129&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;网线&lt;/td&gt;
+&lt;td&gt;光纤AOC线*2&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SATA线&lt;/td&gt;
+&lt;td&gt;单弯头的比较好&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;淘宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;合计&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1457&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/details&gt;
+&lt;p&gt;不算万兆互联和SSD的部分大概是800块。听说我下单之后这套准系统就开始涨价了，B站带货真可怕啊。&lt;/p&gt;
+&lt;p&gt;这台NAS（或者家用服务器）在这半年的服役中效果良好，得益于白金电源，加上万兆网卡和3.5硬盘×2、2.5×1，平均耗电大概只有40W左右。因为是品牌机，据说不支持9代CPU，但互联网上的技术支持比一般的山寨主板要好的多，甚至有完整的&lt;a href="https://h10032.www1.hp.com/ctg/Manual/c06472102.pdf"&gt;维护手册&lt;/a&gt;。硬盘螺钉之类的小配件JS会单卖，不过如果有3D打印机的话，也可以自己打：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.printables.com/model/817439-hp-prodesk-hard-drive-grommet-for-6-32-screws?lang=en"&gt;3.5寸硬盘螺钉&lt;/a&gt;（5块钱4个）&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.printables.com/model/252727-hp-hard-drive-mounting-grommet?lang=en"&gt;2.5寸硬盘螺钉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.printables.com/model/720124-stand-for-hp-elitedesk-800-g8-sff?lang=en"&gt;SFF支架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.thingiverse.com/thing:3119803/comments"&gt;Mellanox ConnectX-2 半高挡板&lt;/a&gt;（7块1个）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/10G_eth.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;PLA打印的半高挡板，暂时还没有融化&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;软件方面，使用大家都喜欢的Proxmox VE，一共开了4个虚拟机，没有LXC容器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HAOS&lt;/code&gt;给“智能”家居用，直通了ZBDongle-P。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gateway&lt;/code&gt;用来和互联网联系。用&lt;code&gt;cloudflared&lt;/code&gt;和&lt;code&gt;caddy&lt;/code&gt;代理内网服务，&lt;code&gt;wireguard&lt;/code&gt;和&lt;code&gt;natmap&lt;/code&gt;来访问内网。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OpenMediaVault&lt;/code&gt;直通SATA控制器。24年8月买的二手&lt;code&gt;HC530&lt;/code&gt;暂时还能用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker-host&lt;/code&gt;用来放一些小服务，因为docker会在iptables里搞东搞西，可能会把&lt;code&gt;gateway&lt;/code&gt;里的服务弄坏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/gateway.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;按照惯例（？），放一张服务的图&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="远程控制"&gt;远程控制&lt;/h2&gt;
+&lt;p&gt;另外，因为是企业级系统，800G4支持Intel vPro，配合8500以上级别的CPU可以开启AMT，实现类似IPMI、IP-KVM的“带外”远程控制功能。不过还有一个问题：在开启GPU直通之后，HDMI的输出不再来自主机，远程控制没有图像信号。&lt;/p&gt;
+&lt;p&gt;为了解决这个问题，可以使用AMT的Serial-Over-LAN功能，使用串口和主机通信。反正没有人会在PVE主机上安装GUI程序对吧。&lt;/p&gt;
+&lt;p&gt;首先，在BIOS里开启AMT和SOL，记得设置静态IP地址，不需要和PVE系统地址一致；密码要设的长一些，应该包含大小写字母和数字。&lt;/p&gt;
+&lt;p&gt;控制上建议使用&lt;a href="https://www.meshcommander.com/meshcommander/meshcmd"&gt;meshcmd&lt;/a&gt;，在ARM、x86上都可以运行。&lt;code&gt;./meshcmd meshcommander&lt;/code&gt;会开启一个服务器，算是远程访问的远程访问。&lt;/p&gt;
+&lt;p&gt;BIOS、GRUB和PVE都需要通过串口控制，因为是企业级，HP的BIOS直接支持串口访问；GRUB和Linux&lt;a href="https://forum.proxmox.com/threads/retain-host-video-output-when-passing-through-igpu.154855/post-705409"&gt;开启串口访问&lt;/a&gt;需要&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;找到TTY端口，我这里是TTY4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;root@pve-hp:~# dmesg|grep tty
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#555"&gt;[&lt;/span&gt; 0.419539&lt;span style="color:#555"&gt;]&lt;/span&gt; 0000:00:16.3: ttyS4 at I/O 0x3088 &lt;span style="color:#555"&gt;(&lt;/span&gt;&lt;span style="color:#033"&gt;irq&lt;/span&gt; &lt;span style="color:#555"&gt;=&lt;/span&gt; 19, &lt;span style="color:#033"&gt;base_baud&lt;/span&gt; &lt;span style="color:#555"&gt;=&lt;/span&gt; 115200&lt;span style="color:#555"&gt;)&lt;/span&gt; is a 16550A
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;在&lt;code&gt;/etc/default/grub&lt;/code&gt;里添加串口设置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# cat /etc/default/grub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#033"&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;quiet console=tty4 console=ttyS4,115200n8&amp;#34;&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#在原始参数后追加&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#033"&gt;GRUB_TERMINAL&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;console serial&amp;#34;&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#GRUB自身也采用串口输出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#033"&gt;GRUB_SERIAL_COMMAND&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;serial --unit=4 --speed=115200&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;之后，运行&lt;code&gt;update-grub&lt;/code&gt;和&lt;code&gt;systemctl enable serial-getty@ttyS4.service&lt;/code&gt;，就能通过&lt;code&gt;meshcommander&lt;/code&gt;访问主机了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2025/04/12/hp-800g4/MeshCommander-1.png"&gt;
+&lt;/figure&gt;
+&lt;p&gt;突然想到，对于普通电脑，只要搞两根USB转RS-232串口线交叉连结，就可以实现 &lt;a href="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/"&gt;IP-KVM&lt;/a&gt; 80%的效果——就是有点过于low-tech。&lt;/p&gt;
+&lt;h2 id="另外的一些小问题"&gt;另外的一些小问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I219-LM网络问题：&lt;a href="https://forum.proxmox.com/threads/e1000-driver-hang.58284/page-4#post-303366"&gt;e1000e drvier hang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NETDEV WATCHDOG: enp0s31f6 (e1000e): transmit queue 0 timed out&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# /etc/network/interfaces&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;iface eno1 inet manual
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; post-up ethtool -K eno1 tso off gso off
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;GPU直通：&lt;a href="https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-passthrough-to-vm/?utm_source=pocket_saves#proxmox-configuration-for-igpu-full-passthrough"&gt;iGPU Passthrough to VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;建议使用GRUB，不建议用sysctl方式设置，万一搞坏了系统，在GRUB界面改回去就能取消直通。&lt;/p&gt;</description></item><item><title>旧手机做RDP客户端的一些尝试</title><link>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</link><pubDate>Wed, 28 Aug 2024 22:06:45 +0800</pubDate><guid>https://blog.heysh.xyz/2024/08/28/rdp-with-android-n-monitor/</guid><description>&lt;p&gt;这样的话旧手机就可以作为瘦客户机用了，而且自带4G模块。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不要问为什么，工作造就人呀。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;首先，为了连接显示器，旧手机的USB口需要支持DP-alt模式，至少USB2.0是没戏了。我用的是一加7T，并且血亏200大洋修好了虚焊。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然后，如果显示器没有type-c一线通，还需要搞一个扩展坞。
+&lt;img src="dock.png" alt="dock"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这种（盛惠25元）有各种贴牌，在充电时USB口是用不了的。建议另找一套蓝牙鼠标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把系统升级到Lineage OS 21，或者其他Android 14版本。每次更新，日志都说升级了桌面模式，每次都是一样的难用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果是高贵的三星用户，就请当我没说过这句话。&lt;/li&gt;
+&lt;li&gt;另外，别用Oxygen OS，桌面模式布局一团乱麻；也别用&lt;code&gt;Pixel Experience&lt;/code&gt;，直接把手机干成&lt;code&gt;Qualcomm CrashDump MODE&lt;/code&gt;，我还以为200块白修了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插显示器的时候，不要用&lt;a href="https://play.google.com/store/apps/details?id=com.farmerbb.secondscreen.free"&gt;SecondScreen&lt;/a&gt; APP，那个是给旧版本Android用的，挖孔屏使用的时候，显示器上会有黑边。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;只需要在开发者选项里勾选“强制执行桌面模式”就可以了，其他的选项对我来说没有必要。（在Android 15上，选项叫做“在辅助显示屏上启用可自由调整的窗口”）
+&lt;img src="develop.jpg" alt="开发者模式选项"&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;之后，连上显示器以后的Android桌面长这样。
+&lt;img src="desktop.png" alt="桌面"&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于RDP客户端，建议不要用&lt;a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx"&gt;微软出品的APP&lt;/a&gt;。据我测试，只有&lt;a href="https://play.google.com/store/apps/details?id=com.devolutions.remotedesktopmanager"&gt;Remote Desktop Manager&lt;/a&gt;和&lt;a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP"&gt;aRDP Free&lt;/a&gt;支持鼠标中键。后面那个是&lt;a href="https://github.com/iiordanov/remote-desktop-clients/"&gt;开源&lt;/a&gt;的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按理说Moonlight也可以，不过还是RDP协议对4G友好点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;来自2025.5.27的更新：在升级到Android 15之后，外接鼠标无法在辅助显示屏上使用了。解决方法来自Gemini：将手机切换成横屏模式；或者进入手机的 “设置” &amp;gt; “连接的设备” &amp;gt; “外部显示屏”，将显示方向从 “标准” 更改为90度，然后再改回 “标准”。&lt;/p&gt;</description></item><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm"&gt;PiKVM&lt;/a&gt;以及一系列衍生项目，可是对于&lt;del&gt;那些把钱投入庞氏骗局的&lt;/del&gt;穷人来说，RPI4已经远不能称为&lt;em&gt;inexpensive&lt;/em&gt;。近几天，我从垃圾堆里翻出了&lt;strong&gt;同样&lt;/strong&gt;昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
+alt="有较强的自我管理意识.png"&gt;&lt;figcaption&gt;
+&lt;p&gt;有较强的自我管理意识.png&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;把远程控制取名叫作IP-KVM，这对于SEO来说过于不友好了。每当搜索Google的时候，总会看到有人试图在N1上跑虚拟化（aka KVM），可能是对2G内存有些什么不切实际的幻想。最后，在GitHub上找到了在N1上安装PiKVM的脚本：&lt;a href="https://github.com/toss-a/pikvm-armbian"&gt;toss-a/pikvm-armbian&lt;/a&gt;。不过这里的&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD"&gt;说明&lt;/a&gt;也稍微有些简略，我会努力稍微详细一点点，尽量。&lt;/p&gt;
+&lt;p&gt;那么，需要准备下面这些东西：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;N1一台；
+&lt;blockquote&gt;
+&lt;p&gt;我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82"&gt;更好的选择&lt;/a&gt;。注意，这些选择需要能够OTG。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;USB公对公数据线一条；
+&lt;blockquote&gt;
+&lt;p&gt;因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;视频采集卡一张，配HDMI线一条；
+&lt;blockquote&gt;
+&lt;p&gt;因为N1没有USB3.0接口，MS2109芯片就足够了，可以跑1080p@30Hz。
+&lt;img src="ms2109.webp" alt="大概长这样："&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;U盘一块；&lt;/li&gt;
+&lt;li&gt;Linux知识一些；&lt;/li&gt;
+&lt;li&gt;可能会需要：
+&lt;ol&gt;
+&lt;li&gt;USB键盘一个；&lt;/li&gt;
+&lt;li&gt;USB延长线一条；&lt;/li&gt;
+&lt;li&gt;理想的上网环境。
+&lt;blockquote&gt;
+&lt;p&gt;根据相关法律法规和政策（下略）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不需要准备Arduino、BadUSB、USB Rubber Ducky，或者其他的单片机，虽然我的垃圾堆里也有不少。&lt;/p&gt;
+&lt;h2 id="安装系统armbianubuntu口味的"&gt;安装系统：Armbian（Ubuntu口味的）&lt;/h2&gt;
+&lt;p&gt;这部分已经有很多人写过了，大概步骤是降级—BalenaEcther镜像写入U盘—Armbian写入EMMC。可以参考&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/README.cn.md#%E5%AE%89%E8%A3%85-armbian-%E5%88%B0-emmc"&gt;GitHub说明&lt;/a&gt;、&lt;a href="https://ethanblog.com/tips/play-with-n1-box.html"&gt;其他人的博客&lt;/a&gt;或者&lt;a href="https://www.bilibili.com/video/BV1QJ411k7AH/"&gt;B站&lt;/a&gt;。要注意，在盒子的原始系统尚未关机时不要插入U盘，Android系统会破坏U盘文件的权限。&lt;/p&gt;
+&lt;p&gt;Armbian镜像我使用的是&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_jammy_lts_2023.05/Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz"&gt;Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz&lt;/a&gt;，其中，&lt;code&gt;S905d&lt;/code&gt;是N1所用的芯片，&lt;code&gt;Jammy&lt;/code&gt;是Ubuntu的版本号，&lt;code&gt;6.1.27&lt;/code&gt;代表使用的是最新版本的Linux内核。如果安装PiKVM，Debian系列（bullseye）的软件包有些太老了。&lt;/p&gt;
+&lt;h2 id="修改dtb文件"&gt;修改dtb文件&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在上述的Armbian引导文件中，默认的USB模式是Host，为了模拟鼠标、键盘等设备，需要将&lt;code&gt;dr_mode&lt;/code&gt;从&lt;code&gt;host&lt;/code&gt;更改为&lt;code&gt;peripheral&lt;/code&gt;&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。那么，我们需要重新编译dtb文件：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# 将dtb编译为dts文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dtc -I dtb -O dts -o test.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# 用你喜欢的编辑器打开这个文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vim test.dts
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;test.dts&lt;/code&gt;中搜索&lt;code&gt;dr_mode&lt;/code&gt;，寻找首个&lt;code&gt;dr_mode = &amp;quot;host&amp;quot;;&lt;/code&gt;，改为&lt;code&gt;dr_mode = &amp;quot;peripheral&amp;quot;;&lt;/code&gt;。
 这里的上下文大概是这样：
-&lt;img src="carbon.png" alt="注意红字位置">
-后面的&lt;code>dr_mode&lt;/code>不必修改。不要问我为什么，这部分超出了我的能力。之后重新把dts编译回去，移动到&lt;code>/boot/dtb/amlogic/&lt;/code>，并且修改启动项：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>dtc -I dts -O dtb -o n1-test.dtb test.dts
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo mv n1-test.dtb /boot/dtb/amlogic/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo vim /boot/uEnv.txt
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>把&lt;code>FDT&lt;/code>一行改为&lt;code>FDT=/dtb/amlogic/n1-test.dtb&lt;/code>：
-&lt;img src="carbon2.png" alt="最近觉得carbon.now.sh还挺棒哒">&lt;/p>
-&lt;p>然后重启系统。&lt;/p>
-&lt;h2 id="安装脚本">安装脚本&lt;/h2>
-&lt;blockquote>
-&lt;p>此时，假设你能够透明地访问github和其他网站，&lt;code>curl google.com&lt;/code>返回&lt;code>302&lt;/code>或者&lt;code>200&lt;/code>。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy">zfl9/ss-tproxy&lt;/a>，让N1同时承担旁路网关的功能。&lt;/p>&lt;/blockquote>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>git clone https://github.com/toss-a/pikvm-armbian.git
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#366">cd&lt;/span> pikvm-armbian
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./install.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在提示&lt;code>&amp;quot;Do you want to apply custom patches? [y/n] &amp;quot;&lt;/code>时，选择N。&lt;/p>
-&lt;p>接下来，重启系统，再次运行&lt;code>install.sh&lt;/code>，然后关机。&lt;/p>
-&lt;h2 id="连线和启动">连线和启动&lt;/h2>
-&lt;p>N1靠近HDMI接口的USB口已经改为OTG从机模式，把双公头USB线插在这里，另一头插到被控计算机上。这时候，如果视频采集卡插不上的话，拿出提前准备好的延长线。下面的照片来自&lt;a href="https://pockies.github.io/2019/03/07/phicomm-n1/">这里&lt;/a>，照相技术牛逼疯了。&lt;/p>
-&lt;p>&lt;img src="n1.excalidraw.png" alt="牛逼疯了！">&lt;/p>
-&lt;p>重新插入电源，用随便的浏览器访问N1的IP地址，并忽略证书错误提示。初始用户名和密码都是&lt;code>admin&lt;/code>，别忘了修改登录密码，用&lt;code>sudo kvmd-htpasswd set admin&lt;/code>。&lt;/p>
-&lt;p>另外，感谢&lt;a href="https://github.com/pikvm/pikvm">pikvm&lt;/a>项目，有钱的话就去支持&lt;a href="https://pikvm.org/">他们的硬件&lt;/a>吧！&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>Ref：&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#%E7%AC%AC%E4%BA%8C%E6%AD%A5">README&lt;/a>，这个写的其实挺清楚的，比我的好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item></channel></rss>
+&lt;img src="carbon.png" alt="注意红字位置"&gt;
+后面的&lt;code&gt;dr_mode&lt;/code&gt;不必修改。不要问我为什么，这部分超出了我的能力。之后重新把dts编译回去，移动到&lt;code&gt;/boot/dtb/amlogic/&lt;/code&gt;，并且修改启动项：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dtc -I dts -O dtb -o n1-test.dtb test.dts
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo mv n1-test.dtb /boot/dtb/amlogic/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vim /boot/uEnv.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把&lt;code&gt;FDT&lt;/code&gt;一行改为&lt;code&gt;FDT=/dtb/amlogic/n1-test.dtb&lt;/code&gt;：
+&lt;img src="carbon2.png" alt="最近觉得carbon.now.sh还挺棒哒"&gt;&lt;/p&gt;
+&lt;p&gt;然后重启系统。&lt;/p&gt;
+&lt;h2 id="安装脚本"&gt;安装脚本&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此时，假设你能够透明地访问github和其他网站，&lt;code&gt;curl google.com&lt;/code&gt;返回&lt;code&gt;302&lt;/code&gt;或者&lt;code&gt;200&lt;/code&gt;。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy"&gt;zfl9/ss-tproxy&lt;/a&gt;，让N1同时承担旁路网关的功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/toss-a/pikvm-armbian.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#366"&gt;cd&lt;/span&gt; pikvm-armbian
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;./install.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在提示&lt;code&gt;&amp;quot;Do you want to apply custom patches? [y/n] &amp;quot;&lt;/code&gt;时，选择N。&lt;/p&gt;
+&lt;p&gt;接下来，重启系统，再次运行&lt;code&gt;install.sh&lt;/code&gt;，然后关机。&lt;/p&gt;
+&lt;h2 id="连线和启动"&gt;连线和启动&lt;/h2&gt;
+&lt;p&gt;N1靠近HDMI接口的USB口已经改为OTG从机模式，把双公头USB线插在这里，另一头插到被控计算机上。这时候，如果视频采集卡插不上的话，拿出提前准备好的延长线。下面的照片来自&lt;a href="https://pockies.github.io/2019/03/07/phicomm-n1/"&gt;这里&lt;/a&gt;，照相技术牛逼疯了。&lt;/p&gt;
+&lt;p&gt;&lt;img src="n1.excalidraw.png" alt="牛逼疯了！"&gt;&lt;/p&gt;
+&lt;p&gt;重新插入电源，用随便的浏览器访问N1的IP地址，并忽略证书错误提示。初始用户名和密码都是&lt;code&gt;admin&lt;/code&gt;，别忘了修改登录密码，用&lt;code&gt;sudo kvmd-htpasswd set admin&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;另外，感谢&lt;a href="https://github.com/pikvm/pikvm"&gt;pikvm&lt;/a&gt;项目，有钱的话就去支持&lt;a href="https://pikvm.org/"&gt;他们的硬件&lt;/a&gt;吧！&lt;/p&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Ref：&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#%E7%AC%AC%E4%BA%8C%E6%AD%A5"&gt;README&lt;/a&gt;，这个写的其实挺清楚的，比我的好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item></channel></rss>
