@@ -21,7 +21,7 @@ disqusShortname = "heysh"
   [markup.goldmark.renderer]
     unsafe= true
 [permalinks]
-  post = "/:year/:month/:day/:filename/"
+  post = "/:year/:month/:day/:contentbasename/"
 [pagination]
 pagerSize = 10
 [outputFormats]
