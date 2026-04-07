@@ -1,233 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 林中阴影</title><link>https://blog.heysh.xyz/tags/hugo/</link><description>Recent content in Hugo on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/hugo/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p&gt;&lt;img src="mockup2.png" alt="mockup"&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 林中阴影</title><link>https://blog.heysh.xyz/tags/hugo/</link><description>Recent content in Hugo on 林中阴影</description><generator>Hugo</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sun, 17 May 2020 20:05:46 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/hugo/feed.xml" rel="self" type="application/rss+xml"/><item><title>一个新主题</title><link>https://blog.heysh.xyz/2020/05/17/a-new-theme/</link><pubDate>Sun, 17 May 2020 20:05:46 +0800</pubDate><guid>https://blog.heysh.xyz/2020/05/17/a-new-theme/</guid><description>&lt;p&gt;&lt;img src="mockup2.png" alt="mockup"&gt;&lt;/p&gt;
 &lt;p&gt;项目地址：&lt;a href="https://github.com/heyeshuang/hugo-theme-tokiwa"&gt;https://github.com/heyeshuang/hugo-theme-tokiwa&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;大概是3月末，我在例行的&lt;code&gt;检查博客有没有自己偷偷更新&lt;/code&gt;的活动中，开始对这个网页感到厌烦了。同时，我在一个月的高强度&lt;del&gt;打牌&lt;/del&gt;&lt;a href="https://store.steampowered.com/app/582010/MONSTER_HUNTER_WORLD/"&gt;狩猎&lt;/a&gt;之后，自我厌恶感达到了又一个峰值。又到了做些什么的时间了。&lt;/p&gt;
-&lt;p&gt;中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;
-&lt;h4 class="inline"&gt;
-（万一我在很久之后换掉了主题，这里还有一些截图。）
-&lt;/h4&gt;
-&lt;/summary&gt;
-&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot1.png"&gt;&lt;figcaption&gt;
-&lt;h4&gt;主页的样子&lt;/h4&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot2.png"&gt;&lt;figcaption&gt;
-&lt;h4&gt;内文的样子&lt;/h4&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2020/05/17/a-new-theme/screenshot3.png"&gt;&lt;figcaption&gt;
-&lt;h4&gt;在手机上的样子&lt;/h4&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/details&gt;
-&lt;p&gt;新主题继承了之前的配色，也以配色而命名。记得&lt;a href="https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/"&gt;当时&lt;/a&gt;我选了主题&lt;code&gt;blackburn&lt;/code&gt;，又觉得默认的蓝色有些“默认”，于是自己挑了一种，恰好是现在所说的常磐色。嗯，看起来绿油油的。&lt;/p&gt;
-&lt;p&gt;其他的方面，用了现在流行的、尽情浪费显示器空间的布局，还用了尽情浪费网路流量的网页字体。用2M流量换一个帅气的标题，feels good man&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;另外，现在正在试图向&lt;a href="https://github.com/gohugoio/hugoThemes/issues/850"&gt;gohugoio/hugoThemes&lt;/a&gt;投稿，当前（2020-5-19）的进度是在与老外激情对线。都2020年了，我居然因为开源许可证气得睡不着觉，感觉自己的青春又回来了。&lt;/p&gt;
-&lt;p&gt;我没什么好交代的了。下次见。&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;来自2020-6-1的更新：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我突然发现自己连项目的主页都没有写……放在前面了。&lt;/p&gt;
-&lt;p&gt;另外，如果要剪裁字体，而且安装了&lt;code&gt;node.js&lt;/code&gt;的话，可以使用下面的命令：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npx fontmin 字体名称.ttf -t &lt;span style="color:#c30"&gt;&amp;#34;要用到的字形&amp;#34;&lt;/span&gt; &amp;gt; 字体名称-剪裁后.ttf
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;因为我一直没有一台特别可靠的服务器，正文用的字体就不自动剪裁了。也算是给5G一个应用场景吧？虽然还没有用上。&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;来自2020-6-12的更新：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;终于通过了Hugo Themes的投稿：&lt;a href="https://themes.gohugo.io/hugo-theme-tokiwa/"&gt;https://themes.gohugo.io/hugo-theme-tokiwa/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;That's a long trip.&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;来自2020-6-14的更新：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;从&lt;a href="https://blog.shuiba.co/lots-stuff-of-new-theme"&gt;专业人士&lt;/a&gt;那里学到了头图的做法。&lt;/p&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;说笑的，待会我就会把字体裁好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮"&gt;用chroma进行语法高亮&lt;/h2&gt;
+&lt;p&gt;中间的事情，比如说连续加班21天啊，往肋间插了根管子啊，暂且按下不表。作为结果，我的博客变成了现在的样子。&lt;/p&gt;</description></item><item><title>最近对博客的改动</title><link>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</link><pubDate>Mon, 04 Dec 2017 20:56:49 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/04/2017-12-04-%E6%9C%80%E8%BF%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%94%B9%E5%8A%A8/</guid><description>&lt;h2 id="用chroma进行语法高亮"&gt;用chroma进行语法高亮&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.30"&gt;最近&lt;/a&gt;hugo内置了&lt;a href="https://github.com/alecthomas/chroma"&gt;chroma&lt;/a&gt;，这是类似Pygments的语法高亮引擎，但是纯粹用GO完成，可以方便地集成在hugo中。今后，在生成的页面中可以不需要&lt;code&gt;highlight.js&lt;/code&gt;等脚本文件，理论上可以提高网页加载的速度。&lt;/p&gt;
 &lt;h3 id="使用方法"&gt;使用方法&lt;/h3&gt;
 &lt;p&gt;在&lt;code&gt;config.toml&lt;/code&gt;中加入以下内容：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-TOML" data-lang="TOML"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pygmentsCodefences = &lt;span style="color:#069;font-weight:bold"&gt;true&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#高亮markdown的代码块&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-TOML" data-lang="TOML"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pygmentsCodefences = &lt;span style="color:#069;font-weight:bold"&gt;true&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#高亮markdown的代码块&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pygmentsCodefencesGuessSyntax = &lt;span style="color:#069;font-weight:bold"&gt;true&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#高亮markdown中没有标注语言的代码块&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pygmentsStyle = &lt;span style="color:#c30"&gt;&amp;#39;manni&amp;#39;&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#高亮主题&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;可用的主题见&lt;a href="http://help.farbox.com/pygments.html"&gt;这里&lt;/a&gt;。更多的设置可以参见hugo&lt;a href="https://gohugo.io/content-management/syntax-highlighting/"&gt;帮助&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id="用typographyjs修改样式"&gt;用typography.js修改样式&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://kyleamathews.github.io/typography.js/"&gt;Typography.js&lt;/a&gt;是生成网页字体排印格式的库。只要简单地利用已有的主题，就可以生成较为完善的CSS格式。当然，如果需要更精确的中文排版，请移步&lt;a href="https://hanzi.pro/"&gt;汉字标准格式&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：&lt;a href="https://github.com/heyeshuang/typography2css"&gt;typography2CSS&lt;/a&gt;，用来直接生成CSS文件。&lt;/p&gt;
-&lt;p&gt;之后，经过少量修改，即可用于现有的主题，效果如此博客所示。&lt;/p&gt;</description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p&gt;数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p&gt;
+&lt;p&gt;Typography.js本身不提供直接输出CSS的功能，必须引入npm库，降低了网页加载速度。为了解决这个问题，我写了一个简单的脚本：&lt;a href="https://github.com/heyeshuang/typography2css"&gt;typography2CSS&lt;/a&gt;，用来直接生成CSS文件。&lt;/p&gt;</description></item><item><title>为hugo加入数学公式支持</title><link>https://blog.heysh.xyz/2017/10/22/added-math-support/</link><pubDate>Sun, 22 Oct 2017 13:37:58 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/22/added-math-support/</guid><description>&lt;p&gt;数学学渣也要公式？其实我也不清楚我要这个有什么用……反正先弄了再说。&lt;/p&gt;
 &lt;p&gt;官方文档中其实有&lt;a href="https://gohugo.io/content-management/formats/#mathjax-with-hugo"&gt;这一部分内容&lt;/a&gt;，但是那里是用MathJax的，而且在标准markdown文件里需要进行额外的设置。如果像&lt;a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/"&gt;这里&lt;/a&gt;一样使用KaTeX+Mmark，写起来会方便许多。&lt;/p&gt;
-&lt;p&gt;Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code&gt;.mmark&lt;/code&gt;后缀就行：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new post/some-name.mmark
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这种格式是markdown的超集，本来是用来写IETF文档的。具体支持的语法可以看&lt;a href="https://github.com/miekg/mmark/wiki/Syntax"&gt;这里&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;用这种渲染器，用&lt;code&gt;$$&lt;/code&gt;包裹的文字会自动转成用&lt;code&gt;\[&lt;/code&gt;或者&lt;code&gt;\(&lt;/code&gt;包裹，比如，&lt;code&gt; inline $$\sqrt{b^2-4ac}$$&lt;/code&gt;会转成&lt;code&gt;\(\sqrt{b^2-4ac}\)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;之后，只要修改主题，把$$\KaTeX$$引用进去就好了。对我自己使用的主题，改动见&lt;a href="https://github.com/heyeshuang/blackburn/commit/d265e4556238628203eb6de7d3a3f88e4f392a42"&gt;这里&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;效果如下：&lt;/p&gt;
-&lt;p&gt;行内公式：$$\sqrt{b^2-4ac}$$&lt;/p&gt;
-&lt;p&gt;单行公式：&lt;/p&gt;
-&lt;p&gt;$$\hat{y}= \sigma(\omega^T X+b)=\frac{1}{1+e^{-(\omega^T X+b)}}$$&lt;/p&gt;
-&lt;p&gt;另外，还有一种更加复杂的&lt;code&gt;&amp;lt;shortcode&amp;gt;&lt;/code&gt;&lt;a href="http://www.latkin.org/2016/08/07/better-tex-math-typesetting-in-hugo/"&gt;方法&lt;/a&gt;，如果你是完美主义者的话。&lt;/p&gt;</description></item><item><title>在Hugo中折叠部分内容</title><link>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</link><pubDate>Sat, 07 Oct 2017 22:25:35 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</guid><description>&lt;p&gt;之前疯狂粘贴自己的&lt;a href="https://blog.heysh.xyz/2017/10/01/firefox-to-quantum/"&gt;扩展&lt;/a&gt; &lt;del&gt;凑字数&lt;/del&gt; 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 &lt;code&gt;shortcode&lt;/code&gt; 功能自己写了一个。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Shortcode&lt;/code&gt; 的介绍在&lt;a href="https://gohugo.io/templates/shortcode-templates/"&gt;这里&lt;/a&gt;，主要难度在于go的html模板引擎。&lt;/p&gt;
-&lt;p&gt;折叠部分用了 HTML5 的新特性：&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"&gt;&amp;lt;details&amp;gt;&lt;/a&gt;，不支持 edge，这个浏览器应该没有人用吧……&lt;/p&gt;
-&lt;p&gt;下面是shortcode的代码，放在&lt;code&gt;/themes/&amp;lt;THEME&amp;gt;/layouts/shortcodes/spoiler.html&lt;/code&gt;下：&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;
-&lt;h4 class="inline"&gt;
-shortcode，点击展开
-&lt;/h4&gt;
-&lt;/summary&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;details&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;summary&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;h4&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ with .Get 0}}{{.}}{{else}}click to expand{{ end }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;h4&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;summary&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{{.Inner}}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;details&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;用法是这样的：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{{% spoiler &amp;#34;You killed my father!&amp;#34; %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;I am your father.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;NOOOOOOO!
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{{% /spoiler %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当然，我还稍微改了一下CSS，之后会在模板里面更新。&lt;/p&gt;
-&lt;p&gt;spoiler在steemit社区的讨论：https://github.com/steemit/condenser/issues/8&lt;/p&gt;</description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p&gt;之前在 &lt;a href="http://heyeshuang.tk"&gt;http://heyeshuang.tk&lt;/a&gt; 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/"&gt;http://heyeshuang.tk/feed/&lt;/a&gt; ，但是hugo提供的RSS地址是&lt;code&gt;index.xml&lt;/code&gt;样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p&gt;
-&lt;p&gt;所以只能改模版了，思路是把&lt;code&gt;/feed&lt;/code&gt;目录的列表页渲染成RSS的样子，我是直接在主题里面改的：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;\themes\&amp;lt;主题名字&amp;gt;\layouts\feed\list.html&lt;/code&gt;：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;rss&lt;/span&gt; &lt;span style="color:#309"&gt;version&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;2.0&amp;#34;&lt;/span&gt; &lt;span style="color:#309"&gt;xmlns:atom&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;channel&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;title&lt;/span&gt;&amp;gt;{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;title&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;link&lt;/span&gt;&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;link&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;description&lt;/span&gt;&amp;gt;Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;description&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;generator&lt;/span&gt;&amp;gt;Hugo -- gohugo.io&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;generator&lt;/span&gt;&amp;gt;{{ with .Site.LanguageCode }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;language&lt;/span&gt;&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;language&lt;/span&gt;&amp;gt;{{end}}{{ with .Site.Author.email }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;managingEditor&lt;/span&gt;&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;managingEditor&lt;/span&gt;&amp;gt;{{end}}{{ with .Site.Author.email }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;webMaster&lt;/span&gt;&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;webMaster&lt;/span&gt;&amp;gt;{{end}}{{ with .Site.Copyright }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;copyright&lt;/span&gt;&amp;gt;{{.}}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;copyright&lt;/span&gt;&amp;gt;{{end}}{{ if not .Date.IsZero }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;lastBuildDate&lt;/span&gt;&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;lastBuildDate&lt;/span&gt;&amp;gt;{{ end }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;atom:link&lt;/span&gt; &lt;span style="color:#309"&gt;href&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;{{.Permalink}}&amp;#34;&lt;/span&gt; &lt;span style="color:#309"&gt;rel&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;self&amp;#34;&lt;/span&gt; &lt;span style="color:#309"&gt;type&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;application/rss+xml&amp;#34;&lt;/span&gt; /&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ range .Site.RegularPages }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;item&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;title&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;title&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;link&lt;/span&gt;&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;link&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;pubDate&lt;/span&gt;&amp;gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;pubDate&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ with .Site.Author.email }}&amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;author&lt;/span&gt;&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;author&lt;/span&gt;&amp;gt;{{end}}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;guid&lt;/span&gt;&amp;gt;{{ .Permalink }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;guid&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;&lt;span style="color:#309;font-weight:bold"&gt;description&lt;/span&gt;&amp;gt;{{ .Content | html }}&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;description&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;item&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ end }}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;channel&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#309;font-weight:bold"&gt;rss&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;基本上就是hugo自带的RSS模板，除了把&lt;code&gt;{{ range .Data.Pages }}&lt;/code&gt;改成了&lt;code&gt;{{ range .Site.RegularPages }}&lt;/code&gt;，因为我需要生成整个网站的RSS。另外，修改过的主题在&lt;a href="https://github.com/yoshiharuyamashita/blackburn"&gt;https://github.com/yoshiharuyamashita/blackburn&lt;/a&gt;，稍微改了一些小bug，还换了个颜色。&lt;del&gt;哪天我要把名字改成greenfreeze。&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;然后别忘了新建一个&lt;code&gt;\content\feed\chicken.md&lt;/code&gt;：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;title: &amp;#39;chicken&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;author: HeYSH
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;date: 2012-06-22T06:32:32+00:00
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;aliases:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /%3ffeed%3drss2
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nothing here.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当然，类似&lt;code&gt;/?feed=rss2&lt;/code&gt;这样的地址就用不了了，我试过的。&lt;/p&gt;</description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p&gt;我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/"&gt;上次&lt;/a&gt;我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p&gt;
+&lt;p&gt;Hugo自带Mmark的支持，只要在新建文章的时候使用&lt;code&gt;.mmark&lt;/code&gt;后缀就行：&lt;/p&gt;</description></item><item><title>在Hugo中折叠部分内容</title><link>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</link><pubDate>Sat, 07 Oct 2017 22:25:35 +0800</pubDate><guid>https://blog.heysh.xyz/2017/10/07/collapsible-contents-for-hugo/</guid><description>&lt;p&gt;之前疯狂粘贴自己的&lt;a href="https://blog.heysh.xyz/2017/10/01/firefox-to-quantum/"&gt;扩展&lt;/a&gt; &lt;del&gt;凑字数&lt;/del&gt; 的时候，我发现这种又臭又长的列表需要稍微隐藏一下，但是这里用的静态博客生成器 Hugo 并不原生支持折叠。所以，我利用 &lt;code&gt;shortcode&lt;/code&gt; 功能自己写了一个。&lt;/p&gt;</description></item><item><title>迁移到hugo，第三部分：可是我想要更多的feed地址…</title><link>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</link><pubDate>Mon, 12 Jun 2017 22:25:07 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/12/moving-to-hugo-3/</guid><description>&lt;p&gt;之前在 &lt;a href="http://heyeshuang.tk"&gt;http://heyeshuang.tk&lt;/a&gt; 这个域名下的时候，wordpress提供的RSS feed地址格式类似 &lt;a href="http://heyeshuang.tk/feed/"&gt;http://heyeshuang.tk/feed/&lt;/a&gt; ，但是hugo提供的RSS地址是&lt;code&gt;index.xml&lt;/code&gt;样子的，而且我翻遍了manual也没看到给RSS加alias的方法。&lt;/p&gt;</description></item><item><title>由wordpress到hugo：I</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</link><pubDate>Wed, 07 Jun 2017 22:14:47 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo/</guid><description>&lt;p&gt;我之前的wordpress博客是建在redhat公司的OpenShift服务上的，距&lt;a href="https://blog.heysh.xyz/2015/08/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%A8%E4%B8%8D%E4%BA%86ipv6%EF%BC%9F/"&gt;上次&lt;/a&gt;我更换博客后台过了快两年时间，wordpress（或是PHP）再次把空间占满了，而不懂PHP的我只能对着SFTP干瞪眼。于是，我又种了一棵新的树苗。&lt;/p&gt;
 &lt;p&gt;wordpress的文章是通过&lt;a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter"&gt;wordpress-to-hugo-exporter&lt;/a&gt;导出的，但是导出的文件有一些小问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;标题里都是&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;正文还是&lt;code&gt;HTML&lt;/code&gt;格式&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;img&lt;/code&gt;和&lt;code&gt;code&lt;/code&gt;需要修改&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;对于正文，可以用&lt;code&gt;pandoc&lt;/code&gt;和&lt;code&gt;pypandoc&lt;/code&gt;转换：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#0cf;font-weight:bold"&gt;pypandoc&lt;/span&gt;&lt;span style="color:#555"&gt;,&lt;/span&gt;&lt;span style="color:#0cf;font-weight:bold"&gt;os&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;root &lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;./content&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;for&lt;/span&gt; rt, dirs, files &lt;span style="color:#000;font-weight:bold"&gt;in&lt;/span&gt; os&lt;span style="color:#555"&gt;.&lt;/span&gt;walk(root):
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;for&lt;/span&gt; filename &lt;span style="color:#000;font-weight:bold"&gt;in&lt;/span&gt; files:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;with&lt;/span&gt; &lt;span style="color:#366"&gt;open&lt;/span&gt;(os&lt;span style="color:#555"&gt;.&lt;/span&gt;path&lt;span style="color:#555"&gt;.&lt;/span&gt;join(rt, filename), &lt;span style="color:#c30"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;, encoding&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style="color:#069;font-weight:bold"&gt;as&lt;/span&gt; fin:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; data &lt;span style="color:#555"&gt;=&lt;/span&gt; fin&lt;span style="color:#555"&gt;.&lt;/span&gt;read()
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ds &lt;span style="color:#555"&gt;=&lt;/span&gt; data&lt;span style="color:#555"&gt;.&lt;/span&gt;split(&lt;span style="color:#c30"&gt;&amp;#39;---&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ds[&lt;span style="color:#f60"&gt;2&lt;/span&gt;] &lt;span style="color:#555"&gt;=&lt;/span&gt; pypandoc&lt;span style="color:#555"&gt;.&lt;/span&gt;convert_text(ds[&lt;span style="color:#f60"&gt;2&lt;/span&gt;], &lt;span style="color:#c30"&gt;&amp;#39;md&amp;#39;&lt;/span&gt;, &lt;span style="color:#366"&gt;format&lt;/span&gt;&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#39;html&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; do &lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#39;---&lt;/span&gt;&lt;span style="color:#c30;font-weight:bold"&gt;\n&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#39;&lt;/span&gt;&lt;span style="color:#555"&gt;.&lt;/span&gt;join(ds)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;with&lt;/span&gt; &lt;span style="color:#366"&gt;open&lt;/span&gt;(filename, &lt;span style="color:#c30"&gt;&amp;#39;w&amp;#39;&lt;/span&gt;, encoding&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style="color:#069;font-weight:bold"&gt;as&lt;/span&gt; file:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; file&lt;span style="color:#555"&gt;.&lt;/span&gt;write(do)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其他的……手改保平安……&lt;/p&gt;
-&lt;p&gt;……&lt;/p&gt;
-&lt;p&gt;……………&lt;/p&gt;
-&lt;p&gt;漫长的修改过后，用&lt;code&gt;hugo server -w&lt;/code&gt;预览。&lt;/p&gt;
-&lt;p&gt;这时候还有一个小问题：&lt;code&gt;hugo&lt;/code&gt;生成URL不一定遵循文件头&lt;code&gt;url&lt;/code&gt;定义，比如，对
-&lt;code&gt;/2016/06/13/qart-coder：更友好的qr码/&lt;/code&gt;，&lt;code&gt;hugo&lt;/code&gt;会解析为&lt;code&gt;/2016/06/13/qart-coder更友好的qr码/&lt;/code&gt;。看出区别了吗？&lt;/p&gt;
-&lt;p&gt;为了保证（不知道和谁的）兼容性，可以在文件头中增加&lt;code&gt;aliases&lt;/code&gt;行，可以将原来的地址转发到新地址。&lt;/p&gt;
-&lt;p&gt;同样的，我也写了一个辣鸡脚本：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#0cf;font-weight:bold"&gt;pypandoc&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#0cf;font-weight:bold"&gt;os&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;root &lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;./content&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;for&lt;/span&gt; rt, dirs, files &lt;span style="color:#000;font-weight:bold"&gt;in&lt;/span&gt; os&lt;span style="color:#555"&gt;.&lt;/span&gt;walk(root):
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;for&lt;/span&gt; filename &lt;span style="color:#000;font-weight:bold"&gt;in&lt;/span&gt; files:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;with&lt;/span&gt; &lt;span style="color:#366"&gt;open&lt;/span&gt;(os&lt;span style="color:#555"&gt;.&lt;/span&gt;path&lt;span style="color:#555"&gt;.&lt;/span&gt;join(rt, filename), &lt;span style="color:#c30"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;, encoding&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style="color:#069;font-weight:bold"&gt;as&lt;/span&gt; fin:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; data &lt;span style="color:#555"&gt;=&lt;/span&gt; fin&lt;span style="color:#555"&gt;.&lt;/span&gt;readlines()
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;try&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; urlIndex &lt;span style="color:#555"&gt;=&lt;/span&gt; [n &lt;span style="color:#069;font-weight:bold"&gt;for&lt;/span&gt; n, l &lt;span style="color:#000;font-weight:bold"&gt;in&lt;/span&gt; &lt;span style="color:#366"&gt;enumerate&lt;/span&gt;(data) &lt;span style="color:#069;font-weight:bold"&gt;if&lt;/span&gt; l&lt;span style="color:#555"&gt;.&lt;/span&gt;find(&lt;span style="color:#c30"&gt;&amp;#34;url:&amp;#34;&lt;/span&gt;) &lt;span style="color:#555"&gt;!=&lt;/span&gt; &lt;span style="color:#555"&gt;-&lt;/span&gt;&lt;span style="color:#f60"&gt;1&lt;/span&gt;][&lt;span style="color:#f60"&gt;0&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; url &lt;span style="color:#555"&gt;=&lt;/span&gt; data[urlIndex]&lt;span style="color:#555"&gt;.&lt;/span&gt;split(&lt;span style="color:#c30"&gt;&amp;#34;url:&amp;#34;&lt;/span&gt;)[&lt;span style="color:#f60"&gt;1&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; aliasLine &lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34; -&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; url
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; data&lt;span style="color:#555"&gt;.&lt;/span&gt;insert(urlIndex &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#f60"&gt;1&lt;/span&gt;, aliasLine)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; data&lt;span style="color:#555"&gt;.&lt;/span&gt;insert(urlIndex &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#f60"&gt;1&lt;/span&gt;, &lt;span style="color:#c30"&gt;&amp;#34;aliases:&lt;/span&gt;&lt;span style="color:#c30;font-weight:bold"&gt;\n&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;except&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;pass&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;with&lt;/span&gt; &lt;span style="color:#366"&gt;open&lt;/span&gt;(filename, &lt;span style="color:#c30"&gt;&amp;#39;w&amp;#39;&lt;/span&gt;, encoding&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;) &lt;span style="color:#069;font-weight:bold"&gt;as&lt;/span&gt; file:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;for&lt;/span&gt; d &lt;span style="color:#000;font-weight:bold"&gt;in&lt;/span&gt; data:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; file&lt;span style="color:#555"&gt;.&lt;/span&gt;write(d)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p&gt;书接上文 &lt;del&gt;（虽然我是先写的这一篇）&lt;/del&gt;，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code&gt;/public&lt;/code&gt;目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code&gt;master&lt;/code&gt;分支保存源文件，&lt;code&gt;gh-page&lt;/code&gt;分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/"&gt;这里&lt;/a&gt;说的那样。&lt;/p&gt;
-&lt;p&gt;这里假设你已经&lt;code&gt;init&lt;/code&gt;过了你的&lt;code&gt;hugo&lt;/code&gt;目录：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Create a new orphand branch (no commit history) named gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout --orphan gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Unstage all files
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git rm --cached $(git ls-files)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Grab one file from the master branch so we can make a commit
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout master README.md
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Add and commit that file
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git add .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &amp;#34;INIT: initial commit on gh-pages branch&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Push to remote gh-pages branch
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push origin gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Return to master branch
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout master
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Remove the public folder to make room for the gh-pages subtree
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm -rf public
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Add the gh-pages branch of the repository. It will look like a folder named public
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git subtree add --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages --squash
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Pull down the file we just committed. This helps avoid merge conflicts
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# 这里我先push了一次，否则会出现fatal: refusing to merge unrelated histories
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# 好像是git的bug
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git subtree pull --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Add everything
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git add -A
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Commit and push to master
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &amp;#34;Updating site&amp;#34; &amp;amp;&amp;amp; git push origin master
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Push the public subtree to the gh-pages branch
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后每次更新需要&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git add -A
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &amp;#34;some messages&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push origin master
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git subtree push --prefix=public &amp;lt;你的.git地址&amp;gt; gh-pages
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;像我这样的强迫症可以把主题也做一个&lt;code&gt;subtree&lt;/code&gt;出来。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;对于正文，可以用&lt;code&gt;pandoc&lt;/code&gt;和&lt;code&gt;pypandoc&lt;/code&gt;转换：&lt;/p&gt;</description></item><item><title>迁移到hugo，第二部分：部署到github</title><link>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</link><pubDate>Wed, 07 Jun 2017 22:07:44 +0800</pubDate><guid>https://blog.heysh.xyz/2017/06/07/moving-to-hugo-with-git/</guid><description>&lt;p&gt;书接上文 &lt;del&gt;（虽然我是先写的这一篇）&lt;/del&gt;，当我们有了一个可用的hugo目录后，就可以把它部署到github等静态网页托管服务了。如果你的强迫症不是很严重的话，可以把&lt;code&gt;/public&lt;/code&gt;目录直接push到新的repo里；不过如果为了得到一个整洁的主页，可以用同一个repo的&lt;code&gt;master&lt;/code&gt;分支保存源文件，&lt;code&gt;gh-page&lt;/code&gt;分支来展示，像&lt;a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/"&gt;这里&lt;/a&gt;说的那样。&lt;/p&gt;</description></item></channel></rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Paas on 林中阴影</title><link>https://blog.heysh.xyz/tags/paas/</link><description>Recent content in Paas on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Fri, 29 Mar 2013 08:47:24 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/paas/feed.xml" rel="self" type="application/rss+xml"/><item><title>我的云上逃亡，或，google reader的替代品</title><link>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link><pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid><description>&lt;p&gt;&lt;a href="https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/"&gt;之前&lt;/a&gt;也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Paas on 林中阴影</title><link>https://blog.heysh.xyz/tags/paas/</link><description>Recent content in Paas on 林中阴影</description><generator>Hugo</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Fri, 29 Mar 2013 08:47:24 +0000</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/paas/feed.xml" rel="self" type="application/rss+xml"/><item><title>我的云上逃亡，或，google reader的替代品</title><link>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</link><pubDate>Fri, 29 Mar 2013 08:47:24 +0000</pubDate><guid>https://blog.heysh.xyz/2013/03/29/%E6%88%91%E7%9A%84%E4%BA%91%E4%B8%8A%E9%80%83%E4%BA%A1/</guid><description>&lt;p&gt;&lt;a href="https://blog.heysh.xyz/2013/02/01/blog%E5%86%8D%E6%AC%A1%E5%A4%8D%E6%B4%BB/"&gt;之前&lt;/a&gt;也说过一次，openshift的域名被做掉了，于是这里顶着一个tk招摇过市，就像顶着叶子的狸猫，没有一个搜索引擎能看见。f××k G×W！&lt;/p&gt;
 &lt;p&gt;不过这次折腾PaaS是因为Google Reader &lt;em&gt;也&lt;/em&gt; 被干掉了，寻找到以下替代方案：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -8,32 +8,4 @@
 &lt;p&gt;&lt;a href="http://tt-rss.org/redmine/projects/tt-rss/wiki"&gt;Tiny Tiny RSS&lt;/a&gt; based on PHP&amp;amp;MySQL&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;似乎PHP比较常见的样子，于是准备先试试TT-rss。&lt;/p&gt;
-&lt;p&gt;现在的进度是，appfog|CloundFoundry|openshift|dotcloud|heroku的账号集齐了，再加个GAE和主机屋（不要用！很麻烦！），就可以召唤神龙了？&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;过会放测试结果，如果没有下文的话，就是我被什么龙给吃掉了～&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;update：直接google找到了&lt;a href="http://projectdelphai.github.com/2013/03/15/replacing-google-reader-with-tt-rss-on-heroku/"&gt;这个&lt;/a&gt;，还贴心的放出了&lt;a href="https://github.com/projectdelphai/ttrss-on-heroku/blob/master/ttrss_heroku_setup.sh"&gt;脚本&lt;/a&gt;。heroku，就决定是你了！&lt;br&gt;
-&lt;a href="http://www.quora.com/Is-there-anything-like-Heroku-I-can-use-for-a-PHP-site"&gt;这里&lt;/a&gt;还有一大把PHP云，大概够了？\&lt;/p&gt;
-&lt;p&gt;update 2013-3-31:TT-RSS的数据库用量已经达到90%了……另外，又找到两个可能的选择：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://fofredux.sourceforge.net/"&gt;FoFRedux&lt;/a&gt;似乎已经好久没更新了，还提到了&lt;a href="http://baike.baidu.com/view/236935.htm"&gt;Nokia770&lt;/a&gt;，2005年？&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://getlilina.org/"&gt;Lilina&lt;/a&gt;，官网似乎很帅气，而且也不用数据库……~~下次试一下这个？~~一般paas都不支持直接写入……&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;update 2013-04-04 还有：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://owncloud.org/"&gt;owncloud&lt;/a&gt;，全能型选手，各路大神推荐&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://selfoss.aditu.de/"&gt;selfoss&lt;/a&gt;，要求写入权限，不知道怎么样&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;4-6再次更新：最后（？），在openshift上用脚本搭了ttrss（并绑定了域名），对owncloud采取持续观望的态度。&lt;/p&gt;
-&lt;p&gt;5-29 另外：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Athou/commafeed"&gt;CommaFeed&lt;/a&gt;，并贴心的提供了“Deployment on OpenShift”的教程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;又及：测试VimRepress的编辑能力&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;似乎PHP比较常见的样子，于是准备先试试TT-rss。&lt;/p&gt;</description></item></channel></rss>

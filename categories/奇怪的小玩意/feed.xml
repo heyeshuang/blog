@@ -1,181 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>奇怪的小玩意 on 林中阴影</title><link>https://blog.heysh.xyz/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F/</link><description>Recent content in 奇怪的小玩意 on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sun, 12 Nov 2017 22:12:00 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F/feed.xml" rel="self" type="application/rss+xml"/><item><title>Aeolipile boiling: Your blog (with code and formula) on Steem!</title><link>https://blog.heysh.xyz/2017/11/12/2017-11-12-aeolipile-boiling/</link><pubDate>Sun, 12 Nov 2017 22:12:00 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/12/2017-11-12-aeolipile-boiling/</guid><description>&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>奇怪的小玩意 on 林中阴影</title><link>https://blog.heysh.xyz/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F/</link><description>Recent content in 奇怪的小玩意 on 林中阴影</description><generator>Hugo</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sun, 12 Nov 2017 22:12:00 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F/feed.xml" rel="self" type="application/rss+xml"/><item><title>Aeolipile boiling: Your blog (with code and formula) on Steem!</title><link>https://blog.heysh.xyz/2017/11/12/2017-11-12-aeolipile-boiling/</link><pubDate>Sun, 12 Nov 2017 22:12:00 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/12/2017-11-12-aeolipile-boiling/</guid><description>&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem"&gt;Aeolipile: your code and formula on Steem&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-update-new-theme-link-generator-and-more"&gt;Aeolipile update: new theme, link generator and more!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These days I was busy tinkering with Aeolipile. Now it has more exciting features! Wanna know what is Aeolipile? See the posts above!&lt;/p&gt;
 &lt;h2 id="now-we-have-author-page"&gt;Now we have author page!&lt;/h2&gt;
 &lt;p&gt;It has been at the checklist for a long time! A big fan of a Steemian? Here's a place for his/her any post at &lt;code&gt;https://heyeshuang.github.io/aeolipile/#/@&amp;lt;USERNAME&amp;gt;&lt;/code&gt;!&lt;/p&gt;
-&lt;p&gt;For example, you can find @Elear's posts at &lt;a href="https://heyeshuang.github.io/aeolipile/#/@elear"&gt;https://heyeshuang.github.io/aeolipile/#/@elear&lt;/a&gt;, or my posts (contain some Chinese) at &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang"&gt;https://heyeshuang.github.io/aeolipile/#/@heyeshuang&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="and-finally-aeolipile-as-your-own-blog"&gt;And finally, Aeolipile as your own blog!&lt;/h2&gt;
-&lt;p&gt;Like aeolipile? Now you can bring it home!&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; I have added blog mode to the page, which makes it possible to deploy aeolipile for your post only! In other words, a personal blog!&lt;/p&gt;
-&lt;p&gt;Check the instance of aeolipile-blog at &lt;a href="https://aeolipile-blog.netlify.com/"&gt;https://aeolipile-blog.netlify.com/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;See the difference? A tidy URL without anyone else, like other blog systems do! You can modify the domain name, the title and anything you can imagine!&lt;/p&gt;
-&lt;h3 id="so-how-can-i-get-one"&gt;So, how can I get one?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download &lt;code&gt;dist.zip&lt;/code&gt; from &lt;a href="https://github.com/heyeshuang/aeolipile/releases"&gt;this link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;extract that zip file&lt;/li&gt;
-&lt;li&gt;open config.js with any text editor&lt;/li&gt;
-&lt;li&gt;find &amp;quot;heyeshuang&amp;quot; (that's me) and replace to your username&lt;/li&gt;
-&lt;li&gt;And upload this folder to wherever you can deploy static websites, like &lt;a href="http://www.netlify.com"&gt;netlify&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And that's all! Enjoy!&lt;/p&gt;
-&lt;h3 id="or-if-you-are-a-guru-developer"&gt;Or if you are a guru developer...&lt;/h3&gt;
-&lt;p&gt;Feel free (as in freedom) to star, fork and contribute to &lt;a href="https://github.com/heyeshuang/aeolipile/"&gt;https://github.com/heyeshuang/aeolipile/&lt;/a&gt;! Basic config is at &lt;code&gt;/src/config.js&lt;/code&gt;, and the CSS file &lt;code&gt;/src/typo/typo-fangsong.css&lt;/code&gt; is for the typography. Transform aeolipile to your favourite! And don't forget to pull your code to me!&lt;/p&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;Not responsible for damage, theft, etc. It bites!&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>Aeolipile update: new theme, link generator and more!</title><link>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</link><pubDate>Mon, 06 Nov 2017 19:17:38 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</guid><description>&lt;p&gt;A few days ago I introduced &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem"&gt;Aeolipile&lt;/a&gt;, a steem post reader designed for coders, providing some advanced features. And now, it becomes more powerful!&lt;/p&gt;
+&lt;p&gt;For example, you can find @Elear's posts at &lt;a href="https://heyeshuang.github.io/aeolipile/#/@elear"&gt;https://heyeshuang.github.io/aeolipile/#/@elear&lt;/a&gt;, or my posts (contain some Chinese) at &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang"&gt;https://heyeshuang.github.io/aeolipile/#/@heyeshuang&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Aeolipile update: new theme, link generator and more!</title><link>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</link><pubDate>Mon, 06 Nov 2017 19:17:38 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/06/2017-11-06-aeolipile-more-powerful/</guid><description>&lt;p&gt;A few days ago I introduced &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem"&gt;Aeolipile&lt;/a&gt;, a steem post reader designed for coders, providing some advanced features. And now, it becomes more powerful!&lt;/p&gt;
 &lt;p&gt;As usual, you could see this post &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-update-new-theme-link-generator-and-more"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="link-generator"&gt;Link Generator&lt;/h2&gt;
 &lt;p&gt;You may wonder how did I get the post link before submit the post. The answer is: &lt;a href="https://heyeshuang.github.io/aeolipile/#/linkgen"&gt;&lt;em&gt;link generator&lt;/em&gt;&lt;/a&gt;. Just input your username and post title, and you'll have the Aeolipile Link(tm)!&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1509976066/lsnzzxkvprdxr4m12qbd.gif" alt="2.gif"&gt;&lt;/p&gt;
-&lt;p&gt;The generator uses the identical technology with Steemit, and is compatible with any language.&lt;/p&gt;
-&lt;p&gt;So, next time you write your post at Steemit (or other) editor, you may want to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;create a good title for your article&lt;/li&gt;
-&lt;li&gt;type your name and title into &lt;a href="https://heyeshuang.github.io/aeolipile/#/linkgen"&gt;&lt;em&gt;link generator&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;copy the Aeolipile Link before your post&lt;/li&gt;
-&lt;li&gt;and hit &amp;quot;Post!&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And this article will link to Aeolipile even before publish!&lt;/p&gt;
-&lt;h2 id="new-loading-page"&gt;New loading page&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1509976296/hrkxodskky1ncg8enm8m.gif" alt="1.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Stops everyone from getting bored!&lt;/p&gt;
-&lt;h2 id="and-brand-new-theme"&gt;and brand new theme!&lt;/h2&gt;
-&lt;p&gt;With Chinese characters in mind (of course), I have carefully chosen proper fonts for both Chinese and English. Head to &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/hugo"&gt;https://heyeshuang.github.io/aeolipile/#/@heyeshuang/hugo&lt;/a&gt; to see a Chinese example! Or, watch &lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-update-new-theme-link-generator-and-more"&gt;this post on Aeolipile&lt;/a&gt;, if you haven't!&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;And this is not the end, I still have some dark thoughts... Anyway, welcome to fork, push and comment! Your opinions and ideas are precious.&lt;/p&gt;</description></item><item><title>社交恐惧症患者也想用Steem，所以我做了Aeolipile</title><link>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</link><pubDate>Sat, 04 Nov 2017 11:55:46 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;The generator uses the identical technology with Steemit, and is compatible with any language.&lt;/p&gt;</description></item><item><title>社交恐惧症患者也想用Steem，所以我做了Aeolipile</title><link>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</link><pubDate>Sat, 04 Nov 2017 11:55:46 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/04/2017-11-04-aeolipile/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;TL;DR: 你可以在&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile"&gt;这个链接&lt;/a&gt;看到Aeolipile。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://steemit.com/cn/@heyeshuang/steem-a-closer-look-to-steem"&gt;我曾经说&lt;/a&gt;不会把博客完全搬到Steem上。除了之前说过的原因之外，还有一些感性上的理由。&lt;/p&gt;
 &lt;p&gt;和那些&lt;a href="https://steemit.com/cn/@tumutanzi/5bbm33"&gt;网红博主（开玩笑的）&lt;/a&gt;不同，我的博客没有什么人会光顾，这并不是什么坏事：只有这样，我才能感到真正的自由。&lt;/p&gt;
-&lt;p&gt;但是Steemit不同。页面下面的评论框和小数字，这些东西时刻在提醒我，你的文字是有人看的。对其他人来说，这可能是一件好事。可是，对于我来说，意识到有人在看这些东西，让我不自觉地在意起别人的感受了。我在敲键盘的时候，常常会想：“别人是怎么看这段话的？”然后，强烈的自我厌恶就会让我没办法接着写下去了。&lt;/p&gt;
-&lt;p&gt;而那些小数字更是推波助澜，它们直接给我的文字标上了一个价码，然后跟我说：“大家好像不太喜欢你的东西啊，这次只有这些，下次继续努力吧。”&lt;/p&gt;
-&lt;p&gt;可是我是因为喜欢才踢罐子的啊。&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;如果我的内心能够更强大一点的话，我当然可以说：“F**k yourself，老子乐意”。但是显然现在的我还不行。所以，我做了这个&lt;code&gt;Aeolipile&lt;/code&gt;，来 &lt;em&gt;暂时&lt;/em&gt; 平复一下内心的情绪。&lt;/p&gt;
-&lt;p&gt;言归正传。Aeolipile是一个Steem文章的渲染工具，（明面上的）用途是为了增强Steemit的Markdown功能，比如说代码、公式什么的。比如这篇文章，可能也需要访问&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/steem-aeolipile"&gt;这个页面&lt;/a&gt;才能看到脚注。具体支持的功能，可以看&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem"&gt;这篇文章&lt;/a&gt;。大体上说，你可以在这里使用几乎所有Markdown的扩展语法。（而且之后我可能会把页面做得更好看些……也许）&lt;/p&gt;
-&lt;p&gt;已有的文章都可以用Aeolipile渲染，只要访问这个页面就行：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;https://heyeshuang.github.io/aeolipile/#/@作者名字/文章链接/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;和Steemit本身链接的构成差不多。&lt;/p&gt;
-&lt;p&gt;如果你也想使用这个工具的话，我建议：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;先为你的文章起个名字，名字中需要有英文单词——否则会产生随机的链接&lt;/li&gt;
-&lt;li&gt;在&lt;a href="https://jsfiddle.net/6p7n7dks/2/"&gt;这里&lt;/a&gt;输入标题，得到你文章的链接地址
-&lt;ul&gt;
-&lt;li&gt;过几天我可能会做一个单独的页面，可能&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;还是在Steemit的编辑器里写下内容&lt;/li&gt;
-&lt;li&gt;把Aeolipile的地址写在文章前面&lt;/li&gt;
-&lt;li&gt;点击发送，不需要做什么其他的工作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个工具本身是开源的：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/heyeshuang/aeolipile"&gt;https://github.com/heyeshuang/aeolipile&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;欢迎fork，如果不嫌弃代码写得烂的话。&lt;/p&gt;
-&lt;p&gt;最后，我还想说一句台词：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I could be bounded in a nutshell and count myself a king of infinite space.&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;当然，没准一个Aeolipile也行。&lt;/p&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://www.zhihu.com/question/19575136/answer/14470032"&gt;https://www.zhihu.com/question/19575136/answer/14470032&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;Hamlet: Act 2, Scene 2, Page 11&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>Aeolipile: your code and formula on Steem</title><link>https://blog.heysh.xyz/2017/11/02/2017-11-02-aeolipile-your-code-and-formula-on-steem/</link><pubDate>Thu, 02 Nov 2017 19:17:38 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/02/2017-11-02-aeolipile-your-code-and-formula-on-steem/</guid><description>&lt;p&gt;&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem"&gt;https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但是Steemit不同。页面下面的评论框和小数字，这些东西时刻在提醒我，你的文字是有人看的。对其他人来说，这可能是一件好事。可是，对于我来说，意识到有人在看这些东西，让我不自觉地在意起别人的感受了。我在敲键盘的时候，常常会想：“别人是怎么看这段话的？”然后，强烈的自我厌恶就会让我没办法接着写下去了。&lt;/p&gt;</description></item><item><title>Aeolipile: your code and formula on Steem</title><link>https://blog.heysh.xyz/2017/11/02/2017-11-02-aeolipile-your-code-and-formula-on-steem/</link><pubDate>Thu, 02 Nov 2017 19:17:38 +0800</pubDate><guid>https://blog.heysh.xyz/2017/11/02/2017-11-02-aeolipile-your-code-and-formula-on-steem/</guid><description>&lt;p&gt;&lt;a href="https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem"&gt;https://heyeshuang.github.io/aeolipile/#/@heyeshuang/aeolipile-your-code-and-formula-on-steem&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Please click ↑ to read the post!&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://steemit.com/"&gt;Steem&lt;/a&gt; is a blockchain-based rewards platform for publishers to monetize content and grow community. However, the Steemit editor does not provide advanced markdown features, like code highlight, mathematical notation, etc. The lack makes it hard to write technical posts on Steem.&lt;/p&gt;
-&lt;p&gt;So I made this webpage to render Steem discussion with more markdown syntax enabled. Then we can use Steem for some...boring contents.&lt;/p&gt;
-&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
-&lt;p&gt;You can easily append author name and post link after &lt;a href="https://heyeshuang.github.io/aeolipile/#/"&gt;https://heyeshuang.github.io/aeolipile/#/&lt;/a&gt;, like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;https://heyeshuang.github.io/aeolipile/#/@USERNAME/PERMLINK/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similar with the Steemit URL. And you can simply add this link before your post, just like me. :wink:&lt;/p&gt;
-&lt;h3 id="features"&gt;Features&lt;/h3&gt;
-&lt;p&gt;With &lt;a href="https://github.com/markdown-it/markdown-it"&gt;markdown-it&lt;/a&gt;, you can get almost every feature for &lt;a href="https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown"&gt;GitHub Flavored Markdown
-&lt;/a&gt;.&lt;/p&gt;
-&lt;h4 id="code"&gt;Code!&lt;/h4&gt;
-&lt;p&gt;Place your code between ``` like &lt;a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/"&gt;this&lt;/a&gt;, then you'll get a codeblock:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#366"&gt;require&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#39;redcarpet&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;markdown &lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#360"&gt;Redcarpet&lt;/span&gt;&lt;span style="color:#555"&gt;.&lt;/span&gt;new(&lt;span style="color:#c30"&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#366"&gt;puts&lt;/span&gt; markdown&lt;span style="color:#555"&gt;.&lt;/span&gt;to_html
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="math"&gt;Math!&lt;/h4&gt;
-&lt;p&gt;You can write TeX between &lt;code&gt;$$&lt;/code&gt; tags.&lt;/p&gt;
-&lt;p&gt;$$\hat{y}= \sigma(\omega^T X+b)=\frac{1}{1+e^{-(\omega^T X+b)}}$$&lt;/p&gt;
-&lt;h4 id="emoji"&gt;Emoji!&lt;/h4&gt;
-&lt;p&gt;:)&lt;/p&gt;
-&lt;h4 id="other-advanced-stynax"&gt;Other advanced stynax!&lt;/h4&gt;
-&lt;p&gt;You can check &lt;a href="https://heyeshuang.github.io/aeolipile/#/@sean0010/markdown-test"&gt;https://heyeshuang.github.io/aeolipile/#/@sean0010/markdown-test&lt;/a&gt; for the markdown test. Almost everything!&lt;/p&gt;
-&lt;h4 id="and-"&gt;and ...&lt;/h4&gt;
-&lt;p&gt;This page is not a replacement of steemit.com or else, so I will keep it simple &amp;amp; stupid. Welcome to fork me at &lt;a href="https://github.com/heyeshuang/aeolipile"&gt;https://github.com/heyeshuang/aeolipile&lt;/a&gt;!&lt;/p&gt;</description></item><item><title>关于那个IME helper</title><link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link><pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid><description>&lt;p&gt;&lt;del&gt;昨天&lt;/del&gt;前天我用鸟语写了一篇贼 &lt;em&gt;正经&lt;/em&gt; 的&lt;a href="https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/"&gt;说明&lt;/a&gt;，今天，我准备稍微介绍一下那里面的&lt;code&gt;IME helper&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p&gt;
-&lt;p&gt;嗯，这种需求，我听过一个叫AHK的语言……&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;;来自https://github.com/lspcieee/lspcieee_ahk/blob/master/IME.ahk
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;;没有任何要黑别人的意思，将来报道出了偏差，你们（下略）
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;setChineseLayout(){
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ;发送中文输入法切换快捷键，请根据实际情况设置。
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; send {Ctrl Down}{Shift}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; send {Ctrl Down},
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; send {Ctrl Down}{Shift}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; send {Ctrl Down},
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; send {Ctrl Up}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;哇这语言真的是发送快捷键的哦！就没有什么更高级的方法吗？快捷键在win10里可是改了啊( &amp;gt;﹏&amp;lt;。)&lt;/p&gt;
-&lt;p&gt;然后就愉快地决定用 Python+ctypes 干这种脏活了，然后发现：windows API真是太难写了！一个更改输入法有4种写法！而且都不能用！&lt;/p&gt;
-&lt;p&gt;最后居然还是抄的&lt;a href="http://www.ahk8.com/thread-3751.html?highlight=%E8%BE%93%E5%85%A5%E6%B3%95"&gt;AHK社区的东西&lt;/a&gt;……亏我还像白痴一样疯狂翻MSDN……&lt;/p&gt;
-&lt;p&gt;另外，pyinstaller生成的单文件exe&lt;del&gt;跑得不够快&lt;/del&gt;用起来有延迟，大概是因为解压吧……&lt;/p&gt;</description></item><item><title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title><link>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</link><pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</guid><description>&lt;p&gt;Update 2018-5: Now vim-mode-plus introduced &lt;a href="https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300"&gt;new method&lt;/a&gt; to disable IME in the setting page. It's time for this post to retire.&lt;/p&gt;
+&lt;p&gt;So I made this webpage to render Steem discussion with more markdown syntax enabled. Then we can use Steem for some...boring contents.&lt;/p&gt;</description></item><item><title>关于那个IME helper</title><link>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</link><pubDate>Wed, 06 Sep 2017 19:46:55 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/06/gossip_about_ime_helper/</guid><description>&lt;p&gt;&lt;del&gt;昨天&lt;/del&gt;前天我用鸟语写了一篇贼 &lt;em&gt;正经&lt;/em&gt; 的&lt;a href="https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/"&gt;说明&lt;/a&gt;，今天，我准备稍微介绍一下那里面的&lt;code&gt;IME helper&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;正如之前所说，那东西是为了配合atom插件自动开关输入法用的。问题明确、思路清晰，google一下肯定有人做过……才怪呢&lt;/p&gt;</description></item><item><title>Auto-Switch IME in Vim-Mode-Plus for Atom Editor</title><link>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</link><pubDate>Tue, 05 Sep 2017 21:03:41 +0800</pubDate><guid>https://blog.heysh.xyz/2017/09/05/atom-vim-mode-auto-switch-ime/</guid><description>&lt;p&gt;Update 2018-5: Now vim-mode-plus introduced &lt;a href="https://github.com/t9md/atom-vim-mode-plus/blob/master/CHANGELOG.md#1300"&gt;new method&lt;/a&gt; to disable IME in the setting page. It's time for this post to retire.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;As a vim-user and Chinese-speaker, I prefer &lt;a href="https://atom.io/packages/vim-mode-plus"&gt;vim-mode-plus&lt;/a&gt; for Atom editor, but always disrupted by the IME in normal mode, like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.heysh.xyz/IME-in-atom.png" alt="IME-in-atom"&gt;&lt;/p&gt;
-&lt;p&gt;If we could &lt;a href="https://github.com/t9md/atom-vim-mode-plus/issues/446"&gt;disable IMEs in normal mode&lt;/a&gt; then everything will be fine again. However, due to &lt;a href="https://github.com/atom/atom/issues/1092"&gt;the lack of the APIs&lt;/a&gt;, it is hardly possible to solve the problem in the editor.&lt;/p&gt;
-&lt;p&gt;Thus, we could solve it &lt;em&gt;out of the box&lt;/em&gt;. There is a package named &lt;a href="https://atom.io/packages/vim-mode-plus-auto-ime"&gt;atom-vim-mode-plus-auto-ime&lt;/a&gt;, which could run a custom command when the mode changes. The goal now is to find some commands to control the IME:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;macOS users can use &lt;a href="https://github.com/vovkasm/input-source-switcher"&gt;input-source-switcher&lt;/a&gt; to toogle the IME.&lt;/li&gt;
-&lt;li&gt;For Linux, the IME &lt;code&gt;fcitx&lt;/code&gt; has a command &lt;code&gt;fcitx-remote&lt;/code&gt; to control itself.&lt;/li&gt;
-&lt;li&gt;And for Windows, I wrote a &lt;a href="https://github.com/heyeshuang/ime_helper"&gt;python script&lt;/a&gt; to switch the IME of the &lt;em&gt;foreground window&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then we could configure this package.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;#windows:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python E:&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;path&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;to&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;ime_helper.py --current &lt;span style="color:#09f;font-style:italic"&gt;#Get Current Input Source&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python E:&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;path&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;to&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;ime_helper.py --dec &lt;span style="color:#a00"&gt;${&lt;/span&gt;&lt;span style="color:#033"&gt;source&lt;/span&gt;&lt;span style="color:#a00"&gt;}&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#insert&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python E:&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;path&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;to&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic"&gt;#normal&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python E:&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;path&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;to&lt;span style="color:#c30;font-weight:bold"&gt;\\&lt;/span&gt;ime_helper.py --locale en_US &lt;span style="color:#09f;font-style:italic"&gt;#visual&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;#linux:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/usr/bin/fcitx-remote &lt;span style="color:#09f;font-style:italic"&gt;#Get Current Input Source&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;if&lt;/span&gt; &lt;span style="color:#555"&gt;((&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#a00"&gt;${&lt;/span&gt;&lt;span style="color:#033"&gt;source&lt;/span&gt;&lt;span style="color:#a00"&gt;}&lt;/span&gt;&lt;span style="color:#c30"&gt;&amp;#34;&lt;/span&gt; &amp;lt;&lt;span style="color:#555"&gt;=&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;))&lt;/span&gt;;&lt;span style="color:#069;font-weight:bold"&gt;then&lt;/span&gt; /usr/bin/fcitx-remote -c; &lt;span style="color:#069;font-weight:bold"&gt;else&lt;/span&gt; /usr/bin/fcitx-remote -o ;&lt;span style="color:#069;font-weight:bold"&gt;fi&lt;/span&gt; &lt;span style="color:#09f;font-style:italic"&gt;#insert&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic"&gt;#normal&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/usr/bin/fcitx-remote -c &lt;span style="color:#09f;font-style:italic"&gt;#visual&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;#macOS: just use the default config&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://blog.heysh.xyz/atom-vim-configure.png" alt="configure"&gt;&lt;/p&gt;</description></item><item><title>Dota 2里，什么技能的冷却时间最短？</title><link>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</link><pubDate>Sat, 25 Mar 2017 13:13:15 +0000</pubDate><guid>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</guid><description>&lt;p&gt;答案是各种法球~开玩笑的~&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.heysh.xyz/IME-in-atom.png" alt="IME-in-atom"&gt;&lt;/p&gt;</description></item><item><title>Dota 2里，什么技能的冷却时间最短？</title><link>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</link><pubDate>Sat, 25 Mar 2017 13:13:15 +0000</pubDate><guid>https://blog.heysh.xyz/2017/03/25/what_has_shortest_cooldown_in_dota2/</guid><description>&lt;p&gt;答案是各种法球~开玩笑的~&lt;/p&gt;
 &lt;p&gt;最近沉迷Dota2的一个RPG： &lt;a href="https://steamcommunity.com/sharedfiles/filedetails/?id=717356279"&gt;Legends of Dota:Redux&lt;/a&gt;（当然是人机），在挑技能的时候常常需要一些短cd的技能，但是&lt;a href="http://dota2.gamepedia.com/Abilities"&gt;wiki&lt;/a&gt;里居然没有技能冷却时间的排序！&lt;/p&gt;
-&lt;p&gt;所以我就自己排了一个：&lt;a href="https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6"&gt;https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;数据来源是客户端里面&lt;code&gt;\dota2\steamapps\common\dota 2 beta\game\dota\scripts\npc\npc\_abilities.txt&lt;/code&gt;，在下可不是页游玩家！&lt;/p&gt;
-&lt;p&gt;这个文件看起来特别像是JSON，但是是用空格分割的，而且还有\\注释。本来把这东西转换成JSON才是工作的大头，可是我懒了：找到了另一个玩家的&lt;a href="http://uglyvpn.com/2015/03/01/dota-2-items-txt-to-xmljson-tool/"&gt;Dota 2 items.txt/npc_abilities.txt to xml/json tool v1.1&lt;/a&gt;，然后就是简单的排序了~&lt;/p&gt;
-&lt;p&gt;另外，除了法球，还有许多技能也是0秒CD的哦，比如幽鬼的降临什么的~&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#309;font-weight:bold"&gt;&amp;#34;Name&amp;#34;&lt;/span&gt;: &lt;span style="color:#c30"&gt;&amp;#34; reality&amp;#34;&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#309;font-weight:bold"&gt;&amp;#34;HeroName&amp;#34;&lt;/span&gt;: &lt;span style="color:#c30"&gt;&amp;#34;spectre&amp;#34;&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#309;font-weight:bold"&gt;&amp;#34;ID&amp;#34;&lt;/span&gt;: &lt;span style="color:#c30"&gt;&amp;#34;5338&amp;#34;&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#309;font-weight:bold"&gt;&amp;#34;Cooldown&amp;#34;&lt;/span&gt;: &lt;span style="color:#f60"&gt;0.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;span style="color:#a00;background-color:#faa"&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>一个简单的在线LRC编辑器</title><link>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link><pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid><description>&lt;p&gt;地址：&lt;a href="http://heyeshuang.github.io/hieda-lrc-editor/"&gt;http://heyeshuang.github.io/hieda-lrc-editor/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所以我就自己排了一个：&lt;a href="https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6"&gt;https://gist.github.com/heyeshuang/8499513305ff5c92b16329f57a0f29c6&lt;/a&gt;&lt;/p&gt;</description></item><item><title>一个简单的在线LRC编辑器</title><link>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</link><pubDate>Tue, 03 May 2016 17:01:02 +0000</pubDate><guid>https://blog.heysh.xyz/2016/05/04/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9C%A8%E7%BA%BFlrc%E7%BC%96%E8%BE%91%E5%99%A8/</guid><description>&lt;p&gt;地址：&lt;a href="http://heyeshuang.github.io/hieda-lrc-editor/"&gt;http://heyeshuang.github.io/hieda-lrc-editor/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;GITHUB：&lt;a href="https://github.com/heyeshuang/hieda-lrc-editor"&gt;https://github.com/heyeshuang/hieda-lrc-editor&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;和依云&lt;a href="http://lilydjwg.is-programmer.com/2016/4/30/aisareruhana.200019.html"&gt;这里&lt;/a&gt;差不多，我听到了一首悲伤的歌（&lt;a href="http://music.163.com/#/song?id=766522"&gt;精霊流し&lt;/a&gt;），也去找了&lt;a href="http://bulo.hujiang.com/diary/111537/"&gt;歌词&lt;/a&gt;。在想要把歌词做成LRC文件的时候，我突然想起来，今年，2015年，千千静听已经不再存在了，而且我也不再有勇气到各种软件站下载来路不明的程序。&lt;/p&gt;
 &lt;p&gt;那么，就去做一个LRC编辑器吧！&lt;/p&gt;
 &lt;p&gt;——以上，是半年之前的事情了。&lt;/p&gt;
 &lt;p&gt;也许是拖延症的&lt;a href="https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/"&gt;治疗&lt;/a&gt;有效果了，半年以后这东西居然真的跑了起来。这半年里我都跑了好几次……&lt;/p&gt;
 &lt;p&gt;另外，写前端/GUI真恶心……&lt;/p&gt;
-&lt;p&gt;另外的另外，名字来自稗田阿求，&lt;del&gt;也许我应该换一个更萌一点的网页图标……&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;update: 萌萌的图标已经换了～&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;</description></item><item><title>红色楼梯</title><link>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link><pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate><guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid><description>&lt;p&gt;用three.js试着做了点东西&lt;/p&gt;
+&lt;p&gt;另外的另外，名字来自稗田阿求，&lt;del&gt;也许我应该换一个更萌一点的网页图标……&lt;/del&gt;&lt;/p&gt;</description></item><item><title>红色楼梯</title><link>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</link><pubDate>Fri, 16 May 2014 15:09:05 +0000</pubDate><guid>https://blog.heysh.xyz/2014/05/16/%E7%BA%A2%E8%89%B2%E6%A5%BC%E6%A2%AF/</guid><description>&lt;p&gt;用three.js试着做了点东西&lt;/p&gt;
 &lt;p&gt;Live demo : &lt;a href="http://heyeshuang.github.io/three-stairs/"&gt;http://heyeshuang.github.io/three-stairs/&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;–你的下一句话是：“又做了没用的东西！”\&lt;/p&gt;
@@ -187,39 +43,13 @@
 &lt;p&gt;–咦？这算是猜对了吗？&lt;/p&gt;
 &lt;/blockquote&gt;</description></item><item><title>用于OPENWRT的流量监控脚本：wrtbwmon</title><link>https://blog.heysh.xyz/2014/03/02/%E7%94%A8%E4%BA%8Eopenwrt%E7%9A%84%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC%EF%BC%9Awrtbwmon/</link><pubDate>Sun, 02 Mar 2014 11:38:02 +0000</pubDate><guid>https://blog.heysh.xyz/2014/03/02/%E7%94%A8%E4%BA%8Eopenwrt%E7%9A%84%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC%EF%BC%9Awrtbwmon/</guid><description>&lt;p&gt;UPDATE at 15年平安夜：&lt;a href="https://wiki.openwrt.org/doc/howto/wrtbwmon"&gt;https://wiki.openwrt.org/doc/howto/wrtbwmon&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;在某次坑爹的网费改革之后校园网的免费流量变成了20G，于是流量监控这一需求变得迫切起来。Google之后，发现了这个脚本：&lt;a href="http://code.google.com/p/wrtbwmon/"&gt;wrtbwmon&lt;/a&gt;。不过这个是为dd-wrt设计的，而且也很久没有更新过了，要进行一些小修改才能用。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;比如第24行，&lt;code&gt;nvram&lt;/code&gt;在我这里挂掉了，于是我简单粗暴的把它改成了&lt;code&gt;eth1``br-lan&lt;/code&gt;；还有那个&lt;code&gt;publish&lt;/code&gt;函数，似乎是读取&lt;code&gt;/etc/dnsmasq&lt;/code&gt;工作的，在OpenWRT上的对应文件似乎是&lt;code&gt;/etc/dhcp.leases&lt;/code&gt;什么的，相应的167行也稍稍修改了一下……&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;TL;DR：请在&lt;a href="https://gist.github.com/heyeshuang/9305089"&gt;这里&lt;/a&gt;下载修改过的版本，在本人的2成新db-120上测试通过。&lt;/p&gt;
-&lt;p&gt;把上面那东西扔到&lt;code&gt;/bin&lt;/code&gt;里之后，在crontab里添上这么一段：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* * * * * /bin/wrtbwmon setup br0
-*/30 0-3 * * * /bin/wrtbwmon update /tmp/usage.db peak
-*/30,59 4-8 * * * /bin/wrtbwmon update /tmp/usage.db offpeak
-*/30 9-23 * * * /bin/wrtbwmon update /tmp/usage.db peak
-*/30 * * * * /bin/wrtbwmon publish /tmp/usage.db /tmp/usage.htm /tmp/dhcp.leases
-30 * * * * cp /tmp/usage.db /root/usage.db
-* * * * * [ ! -f /tmp/usage.db ] &amp;amp;&amp;amp; cp /root/usage.db /tmp/usage.db
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href="http://code.google.com/p/wrtbwmon/wiki/Deploying"&gt;自带的教程&lt;/a&gt;写的crontab似乎跟OpenWRT不兼容……&lt;em&gt;这里的一定是雨林木风精简版OpenWRT！&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;又及：为了凑字数，关于如何在nat后面使用isatap的方法参见&lt;a href="http://wiki.tuna.tsinghua.edu.cn/IsatapBehindNat"&gt;这里&lt;/a&gt;&lt;/p&gt;</description></item><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>&lt;p&gt;&lt;a href="https://greasyfork.org/scripts/4245-sfw"&gt;在这里安装&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在某次坑爹的网费改革之后校园网的免费流量变成了20G，于是流量监控这一需求变得迫切起来。Google之后，发现了这个脚本：&lt;a href="http://code.google.com/p/wrtbwmon/"&gt;wrtbwmon&lt;/a&gt;。不过这个是为dd-wrt设计的，而且也很久没有更新过了，要进行一些小修改才能用。&lt;/p&gt;</description></item><item><title>SFW：治疗拖延症的一次有益尝试</title><link>https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</link><pubDate>Sat, 21 Dec 2013 07:24:39 +0000</pubDate><guid>https://blog.heysh.xyz/2013/12/21/sfw%EF%BC%9A%E6%B2%BB%E7%96%97%E6%8B%96%E5%BB%B6%E7%97%87%E7%9A%84%E4%B8%80%E6%AC%A1%E6%9C%89%E7%9B%8A%E5%B0%9D%E8%AF%95/</guid><description>&lt;p&gt;&lt;a href="https://greasyfork.org/scripts/4245-sfw"&gt;在这里安装&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/heyeshuang/sfw"&gt;源码&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;总而言之，是一个（某种程度上）减缓拖延症症状的脚本。&lt;/p&gt;
 &lt;p&gt;在“再刷15分钟论坛/微博/人人/豆瓣/etc.我就滚去写作业”这一情境下适用。&lt;/p&gt;
 &lt;p&gt;截图大概是这样的：
 &lt;img src="https://blog.heysh.xyz/sfw1.png" alt="1"&gt;
-&lt;img src="https://blog.heysh.xyz/sfw2.png" alt="2"&gt;&lt;/p&gt;
-&lt;p&gt;效果？在某些时候会有点用吧……&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;注意一下github的最后更改时间和这篇日志的写作时间就知道上面一句是假话&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;出现了！拖延小五郎的名推理！&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;鸣谢：&lt;a href="http://stylechen.com/easydialog-v2-0.html"&gt;easydialog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;对了，差不多又到了年终总结的时间了呢……&lt;/p&gt;</description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>&lt;p&gt;&lt;a href="https://github.com/heyeshuang/my_tree_2d"&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;img src="https://blog.heysh.xyz/sfw2.png" alt="2"&gt;&lt;/p&gt;</description></item><item><title>贺叶霜的树</title><link>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</link><pubDate>Sat, 27 Apr 2013 08:22:17 +0000</pubDate><guid>https://blog.heysh.xyz/2013/04/27/%E8%B4%BA%E5%8F%B6%E9%9C%9C%E7%9A%84%E6%A0%91/</guid><description>&lt;p&gt;&lt;a href="https://github.com/heyeshuang/my_tree_2d"&gt;github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://heyeshuang.github.io/my_tree_2d"&gt;live demo(slow)&lt;/a&gt;&lt;/p&gt;</description></item><item><title>texmacs相关</title><link>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</link><pubDate>Fri, 23 Nov 2012 17:18:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/11/24/texmacs%E7%9B%B8%E5%85%B3/</guid><description>&lt;p&gt;&lt;a href="http://www.texmacs.org/" title="TexMacs"&gt;TexMacs&lt;/a&gt;可以快速排版文章，效果拔群，而且不必使用word式空格大法，实乃尔等强迫症患者之福音。\&lt;/p&gt;
 &lt;p&gt;其优势：&lt;/p&gt;
 &lt;ul&gt;
@@ -229,31 +59,16 @@
 &lt;li&gt;公式漂亮&lt;/li&gt;
 &lt;li&gt;内置gnuplot，matlab，maxima接口，可以方便的画图，推公式，算算术，直接输入到文档中&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;然而，作为一个（不挣钱的）开源软件，要用上也要下一番功夫。&lt;/p&gt;
-&lt;p&gt;对于windows，推荐（向谁？）使用itexmacs，对中文支持据说好了很多？&lt;/p&gt;
-&lt;p&gt;对于archlinux，community源和AUR上的包都太旧了，似乎无法正常输入中文的样子。不过这个bug已经解决，推荐直接编译安装SVN代码（仓库：svn://svn.savannah.gnu.org/texmacs/trunk/src）\&lt;/p&gt;
-&lt;p&gt;本人写了一个pkgbuild传到了AUR上，不过因为是第一次（羞），可能会出现“rm -rf /”的餐具……\&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;对于ubuntu，推荐换成archlinux&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;程序自带的手册很详细，不过因为中文化好像出了一些小问题，那么可以直接去&lt;a href="http://www.texmacs.org/tmweb/manual/web-manual.en.html"&gt;http://www.texmacs.org/tmweb/manual/web-manual.en.html&lt;/a&gt;\&lt;/p&gt;
-&lt;p&gt;关于字体，见http://www.texmacs.org/tmweb/download/fonts.en.html ，大概就是要下一个字体放到～/.TeXmacs/fonts/truetype里面然后运行&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;texmacs --delete-font-cache &amp;amp;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;亲测Simsun，wqy可用～&lt;/p&gt;
-&lt;p&gt;关于插入图片，似乎在win下只能插入png的样子，然后更改宽高还要写成”800px”，谁知道还要加单位啊……&lt;/p&gt;
-&lt;p&gt;至今尚未解决的问题：linux下一导出pdf就crash，好像只对中文有效，自带help无压力，什么时候我去报个bug……&lt;/p&gt;</description></item><item><title>THU课程表导出，油猴脚本，输出vcal</title><link>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%EF%BC%8C%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%EF%BC%8C%E8%BE%93%E5%87%BAvcal/</link><pubDate>Sat, 14 Jul 2012 08:41:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%EF%BC%8C%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%EF%BC%8C%E8%BE%93%E5%87%BAvcal/</guid><description>&lt;p&gt;脚本下载：&lt;a href="http://userscripts.org/scripts/show/136856"&gt;http://userscripts.org/scripts/show/136856&lt;/a&gt;\&lt;/p&gt;
+&lt;p&gt;然而，作为一个（不挣钱的）开源软件，要用上也要下一番功夫。&lt;/p&gt;</description></item><item><title>THU课程表导出，油猴脚本，输出vcal</title><link>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%EF%BC%8C%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%EF%BC%8C%E8%BE%93%E5%87%BAvcal/</link><pubDate>Sat, 14 Jul 2012 08:41:26 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/thu%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%AF%BC%E5%87%BA%EF%BC%8C%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%EF%BC%8C%E8%BE%93%E5%87%BAvcal/</guid><description>&lt;p&gt;脚本下载：&lt;a href="http://userscripts.org/scripts/show/136856"&gt;http://userscripts.org/scripts/show/136856&lt;/a&gt;\&lt;/p&gt;
 &lt;p&gt;google code：&lt;a href="http://code.google.com/p/js-thu-cal-outputer/"&gt;http://code.google.com/p/js-thu-cal-outputer/&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;为什么自己总是做这些完全不会有人来用的东西啊为什么！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;使用的网站：http://zhjwxk.cic.tsinghua.edu.cn/xsxk_index.jsp&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;-&amp;gt;这个网站没几个人能上吧！就算是能连上也没有密码啊！&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;我写这个的意义到底是什么…………&lt;/p&gt;</description></item><item><title>html5-世界变动率计数器（仮）</title><link>https://blog.heysh.xyz/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</link><pubDate>Sat, 14 Jul 2012 08:32:13 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</guid><description>&lt;p&gt;&lt;a href="http://pylab-heysh.rhcloud.com/static/canvas2.html" title="世界变动率计数器"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用的网站：http://zhjwxk.cic.tsinghua.edu.cn/xsxk_index.jsp&lt;/p&gt;</description></item><item><title>html5-世界变动率计数器（仮）</title><link>https://blog.heysh.xyz/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</link><pubDate>Sat, 14 Jul 2012 08:32:13 +0000</pubDate><guid>https://blog.heysh.xyz/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</guid><description>&lt;p&gt;&lt;a href="http://pylab-heysh.rhcloud.com/static/canvas2.html" title="世界变动率计数器"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;代码简单到自己都觉得没有开project的必要，但是就这么点东西就折腾了好长时间，中途还把整个砍掉重练。我果然还是太年轻（?）\&lt;/p&gt;
-&lt;p&gt;如果有需要，请自行抓站，能署名的话本人当然会更高兴。&lt;/p&gt;
-&lt;p&gt;update 2012-9-11：\&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://heyeshuang.github.com/Divergence-Meter/" title="Divergence-Meter"&gt;github page&lt;/a&gt;&lt;/p&gt;</description></item><item><title>总结：简单的vCal/iCalendar/.ics格式说明</title><link>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%EF%BC%9A%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</link><pubDate>Mon, 25 Jun 2012 08:12:57 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%EF%BC%9A%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</guid><description>&lt;p&gt;E文好的话建议去看直接去看IETF的&lt;a href="http://tools.ietf.org/html/rfc5545"&gt;RFC5545&lt;/a&gt;定义;&lt;br&gt;
+&lt;p&gt;代码简单到自己都觉得没有开project的必要，但是就这么点东西就折腾了好长时间，中途还把整个砍掉重练。我果然还是太年轻（?）\&lt;/p&gt;</description></item><item><title>总结：简单的vCal/iCalendar/.ics格式说明</title><link>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%EF%BC%9A%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</link><pubDate>Mon, 25 Jun 2012 08:12:57 +0000</pubDate><guid>https://blog.heysh.xyz/2012/06/25/%E6%80%BB%E7%BB%93%EF%BC%9A%E7%AE%80%E5%8D%95%E7%9A%84vcalicalendar-ics%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</guid><description>&lt;p&gt;E文好的话建议去看直接去看IETF的&lt;a href="http://tools.ietf.org/html/rfc5545"&gt;RFC5545&lt;/a&gt;定义;&lt;br&gt;
 中文版：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href="http://www.ccsa.org.cn/publish/download_bp.php?stdtype=yd1&amp;amp;sno=92" title="总而言之就是标准"&gt;政府文件：中华人民共和国通信行业标准移动互联网可移动终端数据同步业务技…（下略）&lt;/a&gt;&lt;/p&gt;
@@ -261,55 +76,65 @@
 &lt;/blockquote&gt;
 &lt;p&gt;ical格式大概是这样的：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;BEGIN:VCALENDAR
+
 PRODID:-//HeYSH//HeYSH Calendar 70.9054//CN
+
 VERSION:2.0
+
 CALSCALE:GREGORIAN
+
 METHOD:PUBLISH
+
 X-WR-CALNAME:课程表
+
 X-WR-TIMEZONE:Asia/Shanghai
+
 X-WR-CALDESC:
+
 BEGIN:VTIMEZONE
+
 TZID:Asia/Shanghai
+
 X-LIC-LOCATION:Asia/Shanghai
+
 BEGIN:STANDARD
+
 TZOFFSETFROM:+0800
+
 TZOFFSETTO:+0800
+
 TZNAME:CST
+
 DTSTART:19700101T000000
+
 END:STANDARD
+
 END:VTIMEZONE
+
 BEGIN:VEVENT
+
 DTSTART;TZID=Asia/Shanghai:20120901T092000
+
 DTEND;TZID=Asia/Shanghai:20120901T105000
+
 DTSTAMP:20120622T160054Z
+
 UID:%u4F20%u70ED%u5B66%20%u5BF9%u6D41%u5B9E%u9A8C35@第 1 次
+
 CREATED:20120622T154824Z
+
 DESCRIPTION:教师：王五n
+
 LAST-MODIFIED:20120622T160041Z
+
 LOCATION:大礼堂
+
 STATUS:CONFIRMED
+
 SUMMARY:实验2
+
 END:VEVENT
+
 END:VCALENDAR
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;基本上只要修改中文部分的内容就好了&lt;/p&gt;
-&lt;h4 id="tips"&gt;tips：&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;PRODID按照格式随意改就好&lt;/li&gt;
-&lt;li&gt;UID是一件事情的绝对标识，对格式没有要求，只要不重复即可&lt;/li&gt;
-&lt;li&gt;重复事件可用RRLUE字段，具体见所附文档。但是好像不支持“1,2,5-9,13,16周”这样猎奇的重复，所以对本人并没有什么用处&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;还是老老实实一个一个添加吧……不过删除起来也相应的麻烦了许多。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;我&lt;del&gt;们&lt;/del&gt;尚不知道那天所看到的&lt;del&gt;花的名字&lt;/del&gt;DTSTAMP的用处&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;最后补一些相关代码段（javascript）：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$vCalArea.append(&lt;span style="color:#c30"&gt;&amp;#39;BEGIN:VCALENDARnPRODID:-//HeYSH//THU Calendar 0.0002//CNnVERSION:2.0nCALSCALE:GREGORIANnMETHOD:PUBLISHnX-WR-CALNAME:课程表nX-WR-TIMEZONE:Asia/ShanghainX-WR-CALDESC:nBEGIN:VTIMEZONEnTZID:Asia/ShanghainX-LIC-LOCATION:Asia/ShanghainBEGIN:STANDARDnTZOFFSETFROM:+0800nTZOFFSETTO:+0800nTZNAME:CSTnDTSTART:19700101T000000nEND:STANDARDnEND:VTIMEZONEn&amp;#39;&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;/***************生成文件头****************/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$vCalArea.append(&lt;span style="color:#c30"&gt;&amp;#34;BEGIN:VEVENTnDTSTART;TZID=Asia/Shanghai:&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; strBT &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;nDTEND;TZID=Asia/Shanghai:&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; strET &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;nDTSTAMP:20120622T160054ZnUID:&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; uid &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;nCREATED:20120622T154824ZnDESCRIPTION:&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; Data.courseInfo &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;nLAST-MODIFIED:20120622T160041ZnLOCATION:&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; Data.place &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;nSTATUS:CONFIRMEDnSUMMARY:&amp;#34;&lt;/span&gt; &lt;span style="color:#555"&gt;+&lt;/span&gt; Data.courseName &lt;span style="color:#555"&gt;+&lt;/span&gt; &lt;span style="color:#c30"&gt;&amp;#34;nEND:VEVENTn&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;/****************VEVENT部分***************/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$vCalArea.append(&lt;span style="color:#c30"&gt;&amp;#39;END:VCALENDAR&amp;#39;&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;/****************文件尾****************/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;全部脚本见&lt;a href="http://code.google.com/p/js-thu-cal-outputer/"&gt;http://code.google.com/p/js-thu-cal-outputer/&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;基本上只要修改中文部分的内容就好了&lt;/p&gt;</description></item></channel></rss>

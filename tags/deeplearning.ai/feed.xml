@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deeplearning.ai on 林中阴影</title><link>https://blog.heysh.xyz/tags/deeplearning.ai/</link><description>Recent content in Deeplearning.ai on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sat, 09 Dec 2017 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/deeplearning.ai/feed.xml" rel="self" type="application/rss+xml"/><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deeplearning.ai on 林中阴影</title><link>https://blog.heysh.xyz/tags/deeplearning.ai/</link><description>Recent content in Deeplearning.ai on 林中阴影</description><generator>Hugo</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sat, 09 Dec 2017 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/deeplearning.ai/feed.xml" rel="self" type="application/rss+xml"/><item><title>学习笔记：神经网络的优化策略</title><link>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2017 16:53:50 +0800</pubDate><guid>https://blog.heysh.xyz/2017/12/09/2017-12-09-%E6%B7%B1%E5%B1%82%E6%AC%A1%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;本文基本上是 &lt;em&gt;Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/em&gt; 的知识点大纲。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -36,54 +36,4 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="提高梯度下降速度mini-batch"&gt;提高梯度下降速度：mini-batch&lt;/h2&gt;
-&lt;p&gt;由于内存/计算单元不够（always），每次计算部分数据&lt;/p&gt;
-&lt;h3 id="提高mini-batch的稳定性减小摆动"&gt;提高mini-batch的稳定性，减小摆动&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;将每个batch的优化结果进行指数加权平均（Momentum）&lt;/li&gt;
-&lt;li&gt;RMSPROP&lt;/li&gt;
-&lt;li&gt;Adam：综合以上两种方法&lt;/li&gt;
-&lt;li&gt;学习率衰减&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="超参数的选择"&gt;超参数的选择&lt;/h2&gt;
-&lt;h3 id="需要的超参数"&gt;需要的超参数&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;α，学习率/learning rate&lt;/li&gt;
-&lt;li&gt;β1&lt;del&gt;0.9，β2&lt;/del&gt;0.999，ε~1e-8（Adam中的参数）&lt;/li&gt;
-&lt;li&gt;层数&lt;/li&gt;
-&lt;li&gt;每层单元&lt;/li&gt;
-&lt;li&gt;学习率衰减&lt;/li&gt;
-&lt;li&gt;mini-batch 尺寸（2的整数次方，大概是512之内？）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="选择方案"&gt;选择方案&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;随机&lt;/li&gt;
-&lt;li&gt;对于α和β，以对数形式随机&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;r&lt;span style="color:#555"&gt;=-&lt;/span&gt;&lt;span style="color:#f60"&gt;4&lt;/span&gt;&lt;span style="color:#555"&gt;*&lt;/span&gt;np&lt;span style="color:#555"&gt;.&lt;/span&gt;random&lt;span style="color:#555"&gt;.&lt;/span&gt;rand()
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#555"&gt;=&lt;/span&gt;&lt;span style="color:#f60"&gt;10&lt;/span&gt;&lt;span style="color:#555"&gt;**&lt;/span&gt;r
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="batch-norm"&gt;Batch-Norm&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;对每一层的线性计算结果Z进行标准化&lt;/li&gt;
-&lt;li&gt;每层标准化的参数γ和β通过学习得到&lt;/li&gt;
-&lt;li&gt;提高收敛速度（与对初始值X的操作类似）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;采用批标准化之后，尽管每一层的z还是在不断变化，但是它们的均值和方差将基本保持不变，这就使得后面的数据更加稳定，减少前面层与后面层的耦合 （via Bin Weber）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="softmax"&gt;Softmax&lt;/h2&gt;
-&lt;p&gt;当分类器需要分出更多类时使用&lt;/p&gt;
-&lt;h2 id="检验方程的梯度计算是否存在问题梯度检验"&gt;检验方程的梯度计算是否存在问题：梯度检验&lt;/h2&gt;
-&lt;p&gt;用计算斜率的方式近似梯度&lt;/p&gt;
-&lt;h2 id="深度学习是否会陷入局部最优问题"&gt;深度学习是否会陷入局部最优问题？&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;由于参数很多，对所有参数都为峰值基本上不可能&lt;/li&gt;
-&lt;li&gt;相比而言，鞍点更加普遍&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;意义似乎略有不同&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item></channel></rss>
+&lt;p&gt;由于内存/计算单元不够（always），每次计算部分数据&lt;/p&gt;</description></item></channel></rss>

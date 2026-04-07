@@ -1,68 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on 林中阴影</title><link>https://blog.heysh.xyz/tags/windows/</link><description>Recent content in Windows on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Fri, 04 Mar 2022 16:43:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/windows/feed.xml" rel="self" type="application/rss+xml"/><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p&gt;在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p&gt;
-&lt;p&gt;刚好赶上网课热潮，最近安卓系统的新平板还挺多的，比如小米平板5啊、小新pad啊、华为平板啊什么的，可是都有一些这样那样的问题&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-&lt;p&gt;那就去看看Windows系统的平板吧。（自从我的寨板坏掉以后已经过去好多年了，&lt;del&gt;最近的技术一定进步了很多吧。&lt;/del&gt;）&lt;/p&gt;
-&lt;p&gt;然后我看到了2022年的上网本们，根据我五年之前的经验，那种东西大概率不是为Windows设计的。唯一看起来配置像是20年代的&lt;a href="https://item.jd.com/10043396524201.html#none"&gt;寨板&lt;/a&gt;，又听说有&lt;a href="https://www.notebookcheck.net/Alldocube-iWork-GT-i5.594533.0.html"&gt;屏闪&lt;/a&gt;的问题。&lt;/p&gt;
-&lt;p&gt;再然后，找来找去，发现淘宝上居然有自称“官翻”的戴尔平板卖，2018年的I5-8250U大概也许会和2022年的I3-1115G3&lt;a href="https://cpu.userbenchmark.com/Compare/Intel-Core-i5-8350U-vs-Intel-Core-i3-1115G4/m388461vsm1333512"&gt;差不多&lt;/a&gt;？&lt;/p&gt;
-&lt;p&gt;时间回到今天，我收到这台&lt;a href="https://www.dell.com/en-my/shop/cty/pdp/spd/latitude-12-5290-2-in-1-laptop"&gt;Latitude 5290&lt;/a&gt;刚满一个月，而且还没有爆炸，我感到十分欣慰：&lt;/p&gt;
-&lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2022/03/04/new-tablet/BIOS.png"
-alt="第一次开机"&gt;&lt;figcaption&gt;
-&lt;p&gt;第一次开机&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;屏幕上有几道小划痕，没有贴膜留下的气泡明显；&lt;/li&gt;
-&lt;li&gt;电池健康度95%（自称），SSD通电9天（自称），板载内存是8G的LPDDR3，&lt;code&gt;又不是不能用.jpg&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;重达899g，阅读？没有锻炼身体重要！&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;据说&lt;/del&gt;比surface好拆，&lt;del&gt;我还没试，主要是还没有蹲到便宜的SSD&lt;/del&gt; M.2 2280的铠侠RD20效果良好；
-&lt;img src="%E6%8B%86%E6%9C%BA.png" alt="拆机"&gt;&lt;/li&gt;
-&lt;li&gt;第八代Intel是官方支持Windows11的&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors"&gt;最老版本&lt;/a&gt;，目前还没有遇到什么问题，Android模拟器也能用；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;scoop&lt;/code&gt;处理文件关联太头疼了，而且&lt;code&gt;winget&lt;/code&gt;已经可以识别系统代理了，还是用&lt;code&gt;winget&lt;/code&gt;吧，另外，&lt;code&gt;Windows Terminal&lt;/code&gt;也不错。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;啊，扯远了。大概现在就想到这些，再想起别的什么，或者平板真的爆炸了的话，我会再来更新的。&lt;/p&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;小米平板5没有USB3.0；联想小新系列国外版型号挺混乱的，估计不会有lineageOS支持了；华为……沸腾了，有点过热。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title><link>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</link><pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate><guid>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</guid><description>&lt;p&gt;呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。&lt;/p&gt;
-&lt;p&gt;事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href="https://www.ext2fsd.com/"&gt;Ext2fsd&lt;/a&gt;来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p&gt;
-&lt;p&gt;于是，我……我做了一个linux虚拟机来帮我读这个分区。&lt;/p&gt;
-&lt;p&gt;具体来说，VirtualBox支持将单独的分区视为虚拟磁盘&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;。你需要在 &lt;strong&gt;具有管理员权限&lt;/strong&gt; 的命令提示符中运行：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后，&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;同样是用 &lt;strong&gt;管理员权限&lt;/strong&gt; 运行VirtualBox&lt;/li&gt;
-&lt;li&gt;把网卡模式改为桥接&lt;/li&gt;
-&lt;li&gt;挂载刚才生成的VMDK文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;在另一个虚拟磁盘上&lt;/strong&gt; 安装Linux（这里我用的是Alpine Linux Extended）&lt;/li&gt;
-&lt;li&gt;设置Samba&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;就可以在宿主机上用网络硬盘访问Ext4分区了。&lt;/p&gt;
-&lt;p&gt;而且能够收获一次反思：我为什么要浪费宝贵的时间干这个？&lt;/p&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://www.virtualbox.org/manual/ch09.html#rawdisk"&gt;https://www.virtualbox.org/manual/ch09.html#rawdisk&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html"&gt;https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&lt;/a&gt;&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:3"&gt;
-&lt;p&gt;&lt;a href="https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server"&gt;https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&lt;/a&gt;&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p&gt;把EMF里的所有文字转换成路径就能解决了&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on 林中阴影</title><link>https://blog.heysh.xyz/tags/windows/</link><description>Recent content in Windows on 林中阴影</description><generator>Hugo</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Fri, 04 Mar 2022 16:43:55 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/windows/feed.xml" rel="self" type="application/rss+xml"/><item><title>整了个“新”平板</title><link>https://blog.heysh.xyz/2022/03/04/new-tablet/</link><pubDate>Fri, 04 Mar 2022 16:43:55 +0800</pubDate><guid>https://blog.heysh.xyz/2022/03/04/new-tablet/</guid><description>&lt;p&gt;在过年期间，我突然想买一个大一些的平板。（PDF看不下去一定是因为小米平板4尺寸太小！）&lt;/p&gt;
+&lt;p&gt;刚好赶上网课热潮，最近安卓系统的新平板还挺多的，比如小米平板5啊、小新pad啊、华为平板啊什么的，可是都有一些这样那样的问题&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</description></item><item><title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title><link>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</link><pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate><guid>https://blog.heysh.xyz/2019/03/02/hard-way-for-ext4-on-windows/</guid><description>&lt;p&gt;呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。&lt;/p&gt;
+&lt;p&gt;事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href="https://www.ext2fsd.com/"&gt;Ext2fsd&lt;/a&gt;来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p&gt;</description></item><item><title>为什么已经在Word里用M$的EMF格式了，图像还是不清楚？</title><link>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</link><pubDate>Fri, 13 Jan 2017 11:44:43 +0000</pubDate><guid>https://blog.heysh.xyz/2017/01/13/ms-word-vector-support-sucks/</guid><description>&lt;p&gt;把EMF里的所有文字转换成路径就能解决了&lt;/p&gt;
 &lt;p&gt;应该是辣鸡windows的文字渲染问题&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://p1.bqimg.com/1949/3cdbc7407efbe04a.png" alt="使用前"&gt;
 &lt;img src="http://p1.bqimg.com/1949/3fc7d26cd830bc93.png" alt="使用后"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;Word的bug在哪里报，挺急的&lt;/del&gt;&lt;/p&gt;</description></item><item><title>firefox主页被绑架</title><link>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link><pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid><description>&lt;p&gt;如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样&lt;strong&gt;恼羞成怒&lt;/strong&gt;，抱着“就是不让你挣钱”的扭曲心态，直接修改&lt;code&gt;C:\Windows\System32\drivers\etc\hosts&lt;/code&gt;加上一行：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;127.0.0.1 ww w.dyy55.c om
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;（去掉空格）&lt;/p&gt;
-&lt;p&gt;这样虽然有效，但是过于简单粗暴（But I’m lovin’ it）&lt;/p&gt;
-&lt;p&gt;更加优雅的答案是去修改&lt;code&gt;C:\Users\me\Application Data\Mozilla\Firefox\Profiles\********.default\user.js&lt;/code&gt;，或者直接把这个干掉。&lt;/p&gt;
-&lt;p&gt;这件事情告诉我们一个道理，firefox已经不再是一个比较小众的浏览器了；然而linux上仍然没有盗号木马。我不禁陷入了沉思。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;del&gt;Word的bug在哪里报，挺急的&lt;/del&gt;&lt;/p&gt;</description></item><item><title>firefox主页被绑架</title><link>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</link><pubDate>Tue, 28 May 2013 08:48:31 +0000</pubDate><guid>https://blog.heysh.xyz/2013/05/28/firefox%E4%B8%BB%E9%A1%B5%E8%A2%AB%E7%BB%91%E6%9E%B6/</guid><description>&lt;p&gt;如果你的firefox首页被绑架了（我是被dyy55），请不要像我一样&lt;strong&gt;恼羞成怒&lt;/strong&gt;，抱着“就是不让你挣钱”的扭曲心态，直接修改&lt;code&gt;C:\Windows\System32\drivers\etc\hosts&lt;/code&gt;加上一行：&lt;/p&gt;</description></item></channel></rss>

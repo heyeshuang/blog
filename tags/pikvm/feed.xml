@@ -1,86 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PiKVM on 林中阴影</title><link>https://blog.heysh.xyz/tags/pikvm/</link><description>Recent content in PiKVM on 林中阴影</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/pikvm/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PiKVM on 林中阴影</title><link>https://blog.heysh.xyz/tags/pikvm/</link><description>Recent content in PiKVM on 林中阴影</description><generator>Hugo</generator><language>zh-cn</language><copyright>&amp;copy;贺叶霜，&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"&gt;CC BY-SA&lt;/a&gt;</copyright><lastBuildDate>Sat, 20 May 2023 16:06:47 +0800</lastBuildDate><atom:link href="https://blog.heysh.xyz/tags/pikvm/feed.xml" rel="self" type="application/rss+xml"/><item><title>穷人的IP-KVM远程访问</title><link>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</link><pubDate>Sat, 20 May 2023 16:06:47 +0800</pubDate><guid>https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;说起DIY的IP-KVM，当然是&lt;a href="https://github.com/pikvm/pikvm"&gt;PiKVM&lt;/a&gt;以及一系列衍生项目，可是对于&lt;del&gt;那些把钱投入庞氏骗局的&lt;/del&gt;穷人来说，RPI4已经远不能称为&lt;em&gt;inexpensive&lt;/em&gt;。近几天，我从垃圾堆里翻出了&lt;strong&gt;同样&lt;/strong&gt;昂贵的Phicomm N1和一张30块的视频采集卡，发现正好也能用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure&gt;&lt;img src="https://blog.heysh.xyz/2023/05/20/ipkvm_4_poor_man/pikvm.png"
-alt="有较强的自我管理意识.png"&gt;&lt;figcaption&gt;
-&lt;p&gt;有较强的自我管理意识.png&lt;/p&gt;
-&lt;/figcaption&gt;
+ alt="有较强的自我管理意识.png"&gt;&lt;figcaption&gt;
+ &lt;p&gt;有较强的自我管理意识.png&lt;/p&gt;
+ &lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;p&gt;把远程控制取名叫作IP-KVM，这对于SEO来说过于不友好了。每当搜索Google的时候，总会看到有人试图在N1上跑虚拟化（aka KVM），可能是对2G内存有些什么不切实际的幻想。最后，在GitHub上找到了在N1上安装PiKVM的脚本：&lt;a href="https://github.com/toss-a/pikvm-armbian"&gt;toss-a/pikvm-armbian&lt;/a&gt;。不过这里的&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD"&gt;说明&lt;/a&gt;也稍微有些简略，我会努力稍微详细一点点，尽量。&lt;/p&gt;
-&lt;p&gt;那么，需要准备下面这些东西：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;N1一台；
-&lt;blockquote&gt;
-&lt;p&gt;我的N1是从垃圾堆里捡回来的，如果是新购的话，应该会有一些更新、&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#1%E9%80%89%E6%8B%A9%E5%8E%9F%E7%94%9F%E5%B8%A6%E6%9C%89otg%E7%9A%84%E5%BC%80%E5%8F%91%E7%89%88-%E4%BE%8B%E5%A6%82"&gt;更好的选择&lt;/a&gt;。注意，这些选择需要能够OTG。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;USB公对公数据线一条；
-&lt;blockquote&gt;
-&lt;p&gt;因为N1的USB口有OTG功能，直接连接被控电脑就可以模拟鼠标和键盘。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;视频采集卡一张，配HDMI线一条；
-&lt;blockquote&gt;
-&lt;p&gt;因为N1没有USB3.0接口，MS2109芯片就足够了，可以跑1080p@30Hz。
-&lt;img src="ms2109.webp" alt="大概长这样："&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;U盘一块；&lt;/li&gt;
-&lt;li&gt;Linux知识一些；&lt;/li&gt;
-&lt;li&gt;可能会需要：
-&lt;ol&gt;
-&lt;li&gt;USB键盘一个；&lt;/li&gt;
-&lt;li&gt;USB延长线一条；&lt;/li&gt;
-&lt;li&gt;理想的上网环境。
-&lt;blockquote&gt;
-&lt;p&gt;根据相关法律法规和政策（下略）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;不需要准备Arduino、BadUSB、USB Rubber Ducky，或者其他的单片机，虽然我的垃圾堆里也有不少。&lt;/p&gt;
-&lt;h2 id="安装系统armbianubuntu口味的"&gt;安装系统：Armbian（Ubuntu口味的）&lt;/h2&gt;
-&lt;p&gt;这部分已经有很多人写过了，大概步骤是降级—BalenaEcther镜像写入U盘—Armbian写入EMMC。可以参考&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/README.cn.md#%E5%AE%89%E8%A3%85-armbian-%E5%88%B0-emmc"&gt;GitHub说明&lt;/a&gt;、&lt;a href="https://ethanblog.com/tips/play-with-n1-box.html"&gt;其他人的博客&lt;/a&gt;或者&lt;a href="https://www.bilibili.com/video/BV1QJ411k7AH/"&gt;B站&lt;/a&gt;。要注意，在盒子的原始系统尚未关机时不要插入U盘，Android系统会破坏U盘文件的权限。&lt;/p&gt;
-&lt;p&gt;Armbian镜像我使用的是&lt;a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_jammy_lts_2023.05/Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz"&gt;Armbian_23.05.0_amlogic_s905d_jammy_6.1.27_server_2023.05.13.img.gz&lt;/a&gt;，其中，&lt;code&gt;S905d&lt;/code&gt;是N1所用的芯片，&lt;code&gt;Jammy&lt;/code&gt;是Ubuntu的版本号，&lt;code&gt;6.1.27&lt;/code&gt;代表使用的是最新版本的Linux内核。如果安装PiKVM，Debian系列（bullseye）的软件包有些太老了。&lt;/p&gt;
-&lt;h2 id="修改dtb文件"&gt;修改dtb文件&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;好，到这里时，我会假设：N1已经刷成了Ubuntu风味的Armbian系统；连接好网络，有线无线都可以；能够输入命令——不管是直接插键盘显示器，或是通过SSH，还是直接从电路板上引出导线。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在上述的Armbian引导文件中，默认的USB模式是Host，为了模拟鼠标、键盘等设备，需要将&lt;code&gt;dr_mode&lt;/code&gt;从&lt;code&gt;host&lt;/code&gt;更改为&lt;code&gt;peripheral&lt;/code&gt;&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。那么，我们需要重新编译dtb文件：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# 将dtb编译为dts文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dtc -I dtb -O dts -o test.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#09f;font-style:italic"&gt;# 用你喜欢的编辑器打开这个文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vim test.dts
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在&lt;code&gt;test.dts&lt;/code&gt;中搜索&lt;code&gt;dr_mode&lt;/code&gt;，寻找首个&lt;code&gt;dr_mode = &amp;quot;host&amp;quot;;&lt;/code&gt;，改为&lt;code&gt;dr_mode = &amp;quot;peripheral&amp;quot;;&lt;/code&gt;。
-这里的上下文大概是这样：
-&lt;img src="carbon.png" alt="注意红字位置"&gt;
-后面的&lt;code&gt;dr_mode&lt;/code&gt;不必修改。不要问我为什么，这部分超出了我的能力。之后重新把dts编译回去，移动到&lt;code&gt;/boot/dtb/amlogic/&lt;/code&gt;，并且修改启动项：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dtc -I dts -O dtb -o n1-test.dtb test.dts
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo mv n1-test.dtb /boot/dtb/amlogic/
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vim /boot/uEnv.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把&lt;code&gt;FDT&lt;/code&gt;一行改为&lt;code&gt;FDT=/dtb/amlogic/n1-test.dtb&lt;/code&gt;：
-&lt;img src="carbon2.png" alt="最近觉得carbon.now.sh还挺棒哒"&gt;&lt;/p&gt;
-&lt;p&gt;然后重启系统。&lt;/p&gt;
-&lt;h2 id="安装脚本"&gt;安装脚本&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;此时，假设你能够透明地访问github和其他网站，&lt;code&gt;curl google.com&lt;/code&gt;返回&lt;code&gt;302&lt;/code&gt;或者&lt;code&gt;200&lt;/code&gt;。如果不行的话，可以尝试在N1上安装&lt;a href="https://github.com/zfl9/ss-tproxy"&gt;zfl9/ss-tproxy&lt;/a&gt;，让N1同时承担旁路网关的功能。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/toss-a/pikvm-armbian.git
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#366"&gt;cd&lt;/span&gt; pikvm-armbian
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;./install.sh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在提示&lt;code&gt;&amp;quot;Do you want to apply custom patches? [y/n] &amp;quot;&lt;/code&gt;时，选择N。&lt;/p&gt;
-&lt;p&gt;接下来，重启系统，再次运行&lt;code&gt;install.sh&lt;/code&gt;，然后关机。&lt;/p&gt;
-&lt;h2 id="连线和启动"&gt;连线和启动&lt;/h2&gt;
-&lt;p&gt;N1靠近HDMI接口的USB口已经改为OTG从机模式，把双公头USB线插在这里，另一头插到被控计算机上。这时候，如果视频采集卡插不上的话，拿出提前准备好的延长线。下面的照片来自&lt;a href="https://pockies.github.io/2019/03/07/phicomm-n1/"&gt;这里&lt;/a&gt;，照相技术牛逼疯了。&lt;/p&gt;
-&lt;p&gt;&lt;img src="n1.excalidraw.png" alt="牛逼疯了！"&gt;&lt;/p&gt;
-&lt;p&gt;重新插入电源，用随便的浏览器访问N1的IP地址，并忽略证书错误提示。初始用户名和密码都是&lt;code&gt;admin&lt;/code&gt;，别忘了修改登录密码，用&lt;code&gt;sudo kvmd-htpasswd set admin&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;另外，感谢&lt;a href="https://github.com/pikvm/pikvm"&gt;pikvm&lt;/a&gt;项目，有钱的话就去支持&lt;a href="https://pikvm.org/"&gt;他们的硬件&lt;/a&gt;吧！&lt;/p&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;Ref：&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD#%E7%AC%AC%E4%BA%8C%E6%AD%A5"&gt;README&lt;/a&gt;，这个写的其实挺清楚的，比我的好。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item></channel></rss>
+
+&lt;p&gt;把远程控制取名叫作IP-KVM，这对于SEO来说过于不友好了。每当搜索Google的时候，总会看到有人试图在N1上跑虚拟化（aka KVM），可能是对2G内存有些什么不切实际的幻想。最后，在GitHub上找到了在N1上安装PiKVM的脚本：&lt;a href="https://github.com/toss-a/pikvm-armbian"&gt;toss-a/pikvm-armbian&lt;/a&gt;。不过这里的&lt;a href="https://github.com/toss-a/pikvm-armbian/blob/master/README-zh-CN.MD"&gt;说明&lt;/a&gt;也稍微有些简略，我会努力稍微详细一点点，尽量。&lt;/p&gt;</description></item></channel></rss>
