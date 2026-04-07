@@ -64,7 +64,7 @@ fi
 {{% spoiler "IPv6的情况，放在两个不同的脚本里面可以共存"%}}
 ```bash
 #!/bin/sh
-NEW_IP=$(ip -6 addr | grep inet6 | awk -F '[ \t]+|/' '{print $3}' | grep -v ^::1 | grep -v ^fe80 | head -n 1)
+NEW_IP=$(ip -6 addr | grep inet6 | grep -v deprecated | awk -F '[ \t]+|/' '{print $3}' | grep -v ^::1 | grep -v ^fe80 | head -n 1)
 CURRENT_IP=$(cat /var/tmp/current_ip_6.txt)
 if [ "$NEW_IP" = "$CURRENT_IP" ]
 then
