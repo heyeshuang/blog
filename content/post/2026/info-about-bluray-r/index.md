@@ -17,7 +17,11 @@ draft: false
 
 那么硬盘呢？很遗憾，现在是2026年，700块14T的矿渣硬盘已经一去不复返了，主流的价格是200元/TB──和BD-R的价格差不多，倒车接人了属于是。
 
-接下来终于要提到本次带我入坑的罪魁祸首，紫晶存储的100G/200G BD-R，已经可以在淘宝上买到了，今天的价格大概是8.8¥/13¥一片。根据[维基百科](https://zh.wikipedia.org/wiki/%E7%B4%AB%E6%99%B6%E5%AD%98%E5%82%A8)的介绍，这家公司大概是在2021年前倒闭的。这批光盘的生产日期想来不会晚于2020年，6年后的今天，我手里的几片还能够正常写入。一位lui_gough先生对这些光盘[不是十分信任](https://goughlui.com/2025/09/07/tested-amethystum-storage-technology-100gb-2-6x-tl-bdxl-bd-r-bdr-m100baz/)，我对此的意见是多刻几张。
+接下来终于要提到本次带我入坑的罪魁祸首，紫晶存储的100G/200G BD-R，已经可以在淘宝上买到了，今天的价格大概是8.8¥/13¥一片。
+
+![100G“档案级”](ame100.png)
+
+根据[维基百科](https://zh.wikipedia.org/wiki/%E7%B4%AB%E6%99%B6%E5%AD%98%E5%82%A8)的介绍，这家公司大概是在2021年前倒闭的。这批光盘的生产日期想来不会晚于2020年，6年后的今天，我手里的几片还能够正常写入。一位lui_gough先生对这些光盘[不是十分信任](https://goughlui.com/2025/09/07/tested-amethystum-storage-technology-100gb-2-6x-tl-bdxl-bd-r-bdr-m100baz/)，我对此的意见是多刻几张。
 
 作为这家公司最新的（精神）股东，蓝光刻录机我也采购了紫晶定制款[BDR-PR1AME](http://static.sse.com.cn/stock/disclosure/announcement/c/201905/000034_20190510_62J9.pdf)，盛惠350¥，而且前面板上有[Optical Archive Group](https://www.disc-group.com/company/optical-archive-group/)的高贵标志──正好和我的“档案级”光盘适配。
 
