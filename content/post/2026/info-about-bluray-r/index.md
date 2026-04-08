@@ -1,9 +1,9 @@
 ---
 author : "HeYSH"
 type : "post"
-tags :
-    - 折腾
 categories :
+    - 折腾
+tags :
     - 硬件
     - 电视购物
 title: "关于蓝光刻录的一些调查"
