@@ -21,6 +21,6 @@ draft: false
 
 作为这家公司最新的（精神）股东，蓝光刻录机我也采购了紫晶定制款[BDR-PR1AME](http://static.sse.com.cn/stock/disclosure/announcement/c/201905/000034_20190510_62J9.pdf)，盛惠350¥，而且前面板上有[Optical Archive Group](https://www.disc-group.com/company/optical-archive-group/)的高贵标志──正好和我的“档案级”光盘适配。
 
-当然，如果你对你的珍贵数据抱着更加严肃的态度，光驱仍然可以用上面那一款（毕竟是先锋出品），但光盘还有正常厂商2¥/25G（铼德）、30¥/100G（三菱、JVC）之类别的选择。刻好，塞到床底下，然后20年后再见，还挺浪漫的是不是？也许只属于90后吧。
+当然，如果你对你的珍贵数据抱着更加严肃的态度，光驱仍然可以用上面那一款（毕竟是先锋出品），但光盘还有正常厂商2¥/25G（铼德）、30¥/100G（三菱、JVC）之类别的选择。添加[ECC](https://github.com/speed47/dvdisaster)数据，用[imgburn](https://www.imgburn.com/index.php?act=download)刻好，塞到床底下，然后20年后再见，还挺浪漫的是不是？也许只属于90后吧。
 
 对于不那么浪漫的人，[加拿大人](https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/longevity-recordable-cds-dvds.html)和[法国人](https://www.lne.fr/sites/default/files/inline-files/etude-qualite-bd-r.pdf#:~:text=Cela%20est%20vrai%20pour%20les%20BD%2DR%20classiques%2C,deux%20mod%C3%A8les%20de%20ce%20type%20dans%20l'%C3%A9tude.)分别对蓝光光盘进行了湿热存储试验，获得了不算一致的结果。法国人的说法和Reddit老哥们比较类似。
